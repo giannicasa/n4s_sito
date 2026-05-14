@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://not4.sale/api/sitemap.xml
