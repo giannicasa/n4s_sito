@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { SERVICES } from "../data/services";
 import useLocale from "../hooks/useLocale";
+import { CharReveal } from "./CharReveal";
 
 export const Footer = () => {
   const { t, r, locale } = useLocale();
@@ -15,12 +16,19 @@ export const Footer = () => {
             <p className="text-xs font-mono uppercase tracking-[0.28em] text-violet-400 mb-6">
               {t.footer.manifesto}
             </p>
-            <p className="font-display text-3xl md:text-5xl font-black uppercase leading-[0.95] tracking-tight text-balance">
-              {t.footer.manifestoLines[0]}<br />
-              {t.footer.manifestoLines[1]}<br />
-              <span className="text-violet-500">{t.footer.manifestoLines[2]}</span>{" "}
-              {t.footer.manifestoLines[3]}
-            </p>
+            <CharReveal
+              lines={[
+                t.footer.manifestoLines[0],
+                t.footer.manifestoLines[1],
+                [
+                  { text: t.footer.manifestoLines[2], highlight: true },
+                  { text: ` ${t.footer.manifestoLines[3]}` },
+                ],
+              ]}
+              className="font-display text-3xl md:text-5xl font-black uppercase leading-[0.95] tracking-tight text-balance"
+              stagger={0.022}
+              duration={0.85}
+            />
           </div>
           <div className="md:col-span-3">
             <p className="text-xs font-mono uppercase tracking-[0.28em] text-neutral-500 mb-6">
