@@ -67,8 +67,8 @@ export const SEOHead = ({
 
     // Basic meta
     if (description) setMeta('meta[name="description"]', { name: "description", content: description });
-    if (keywords) setMeta('meta[name="keywords"][data-n4s-seo]', { name: "keywords", content: keywords });
-    setMeta(`link[rel="canonical"][${MARK}]`, { rel: "canonical", href: url });
+    if (keywords) setMeta('meta[name="keywords"]', { name: "keywords", content: keywords });
+    setMeta('link[rel="canonical"]', { rel: "canonical", href: url });
 
     // hreflang
     if (alternatePath) {
@@ -87,21 +87,21 @@ export const SEOHead = ({
     document.head.appendChild(xd);
 
     // Open Graph
-    setMeta('meta[property="og:type"][data-n4s-seo]', { property: "og:type", content: type });
-    setMeta('meta[property="og:title"][data-n4s-seo]', { property: "og:title", content: fullTitle });
-    if (description) setMeta('meta[property="og:description"][data-n4s-seo]', { property: "og:description", content: description });
-    setMeta('meta[property="og:url"][data-n4s-seo]', { property: "og:url", content: url });
-    setMeta('meta[property="og:image"][data-n4s-seo]', { property: "og:image", content: ogImage });
-    setMeta('meta[property="og:image:width"][data-n4s-seo]', { property: "og:image:width", content: "1200" });
-    setMeta('meta[property="og:image:height"][data-n4s-seo]', { property: "og:image:height", content: "630" });
-    setMeta('meta[property="og:locale"][data-n4s-seo]', { property: "og:locale", content: locale === "it" ? "it_IT" : "en_US" });
-    setMeta('meta[property="og:site_name"][data-n4s-seo]', { property: "og:site_name", content: "not4sale" });
+    setMeta('meta[property="og:type"]', { property: "og:type", content: type });
+    setMeta('meta[property="og:title"]', { property: "og:title", content: fullTitle });
+    if (description) setMeta('meta[property="og:description"]', { property: "og:description", content: description });
+    setMeta('meta[property="og:url"]', { property: "og:url", content: url });
+    setMeta('meta[property="og:image"]', { property: "og:image", content: ogImage });
+    setMeta('meta[property="og:image:width"]', { property: "og:image:width", content: "1200" });
+    setMeta('meta[property="og:image:height"]', { property: "og:image:height", content: "630" });
+    setMeta('meta[property="og:locale"]', { property: "og:locale", content: locale === "it" ? "it_IT" : "en_US" });
+    setMeta('meta[property="og:site_name"]', { property: "og:site_name", content: "not4sale" });
 
     // Twitter
-    setMeta('meta[name="twitter:card"][data-n4s-seo]', { name: "twitter:card", content: "summary_large_image" });
-    setMeta('meta[name="twitter:title"][data-n4s-seo]', { name: "twitter:title", content: fullTitle });
-    if (description) setMeta('meta[name="twitter:description"][data-n4s-seo]', { name: "twitter:description", content: description });
-    setMeta('meta[name="twitter:image"][data-n4s-seo]', { name: "twitter:image", content: ogImage });
+    setMeta('meta[name="twitter:card"]', { name: "twitter:card", content: "summary_large_image" });
+    setMeta('meta[name="twitter:title"]', { name: "twitter:title", content: fullTitle });
+    if (description) setMeta('meta[name="twitter:description"]', { name: "twitter:description", content: description });
+    setMeta('meta[name="twitter:image"]', { name: "twitter:image", content: ogImage });
 
     // JSON-LD
     if (jsonLd) setJsonLd("page", jsonLd);

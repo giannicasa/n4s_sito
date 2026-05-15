@@ -3,66 +3,65 @@
 ## Original Problem Statement
 > Voglio costruire un sito con 3d scroll, super attraente, minimale, stile dark (fondo nero) x uno studio di Marketing a Cattolica chiamato not4sale. Per i colori e logo guarda https://not4.sale (logo [NOT4SALE] bianco con parentesi viola su nero). Il sito deve essere minimal ma di impatto grafico travolgente. Tratta tutti i principali servizi (growth hacking, strategie digitali). Tutto in movimento, multi-pagina, ottimizzato SEO/GEO/AEO/LLM. Pagine che si compongono, 3D scroll bellissimi. Home con sezioni minimal, scritte, hero super. Fuori dal normale, super eroe.
 
-## User Choices (gathered)
-- Contenuti placeholder professionali italiani — generati lato agente
-- Pagine: Home, Servizi (hub) + 1 pagina per servizio (10 totali), Case Studies, Chi Siamo (4 soci inventati), Contatti
-- Form contatti → salvati in MongoDB
-- AI Chat con Claude Sonnet 4.5 (Universal Key)
-- Stile 3D: mix Three.js + parallax cinematografico (option C)
-
 ## Architecture
-- **Backend**: FastAPI + MongoDB + emergentintegrations (Claude Sonnet 4.5)
-- **Frontend**: React 19 + React Router 7 + Tailwind + Framer Motion + Lenis + raw Three.js
+- **Backend**: FastAPI + MongoDB + emergentintegrations (Claude Sonnet 4.5) + Pillow (OG image gen)
+- **Frontend**: React 19 + React Router 7 + Tailwind + Framer Motion + Lenis + raw Three.js + GSAP (ScrollTrigger) + react-markdown
 - **Universal Key**: EMERGENT_LLM_KEY in /app/backend/.env
 
-## Endpoints
-- `GET /api/health` — health/ping
-- `POST /api/contact` — create lead
-- `GET /api/leads` — list leads (desc by created_at, limit 100)
-- `POST /api/chat` — Claude Sonnet 4.5 (anthropic/claude-sonnet-4-5-20250929), persists to MongoDB
-- `GET /api/chat/history/{session_id}` — chat transcript
-- `GET /api/sitemap.xml` — dynamic sitemap
+## Backend endpoints
+- `GET /api/health`
+- `POST /api/contact` · `GET /api/leads`
+- `POST /api/chat` (locale=it|en) · `GET /api/chat/history/{sid}`
+- `POST /api/quote/estimate` (calls Claude → JSON estimate, persists lead)
+- `GET /api/articles?locale=it|en` · `GET /api/articles/{slug}?locale=it|en`
+- `GET /api/og?title=&subtitle=&kicker=` → PNG 1200x630 via Pillow
+- `GET /api/sitemap.xml`
 
-## Pages
-- `/` Home — 3D hero + philosophy + services bento + case study preview + CTA
-- `/servizi` — services hub (10 services as huge list)
-- `/servizi/:slug` — detail (seo, aeo, geo, growth-hacking, brand-strategy, performance-marketing, social, content, web-design, ai-marketing)
-- `/case-studies` — bespoke philosophy + 5 case studies
-- `/chi-siamo` — 4 invented founders + manifesto + Cattolica section
-- `/contatti` — form + sidebar info
-- `*` — 404 page
+## Frontend routes
+**IT (default):** `/`, `/servizi`, `/servizi/:slug` (10 services), `/case-studies`, `/chi-siamo`, `/contatti`, `/preventivo`, `/insights`, `/insights/:slug`
+
+**EN:** `/en`, `/en/services`, `/en/services/:slug`, `/en/case-studies`, `/en/about`, `/en/contact`, `/en/quote`, `/en/insights`, `/en/insights/:slug`
+
+## Features implemented
+
+### Phase 1 (Dec 2025) — MVP
+- 15 rotte Italian, raw Three.js hero (morphing sphere + rings + stars), Lenis smooth scroll, custom violet cursor, glass sticky nav, AI chat widget (Claude Sonnet 4.5) bottom-right, contact form → MongoDB
+- SEO Italian: JSON-LD ProfessionalService + Service + FAQPage, geo meta tags, sitemap dinamica, robots.txt
+- testing_agent_v3 iter1: 100% backend + 100% frontend
+
+### Phase 2 (Dec 2025) — Growth Features
+- **Quote Calculator** `/preventivo` (4-step wizard + Claude qualification + lead persistence, range stimato + fit score 0-100)
+- **Blog/Insights** `/insights` + `/insights/:slug` con 4 articoli IT + 4 EN (markdown + ReactMarkdown + remark-gfm)
+- **GSAP ScrollTrigger** orizzontale pinned su Home (desktop ≥1024px) per la sezione servizi
+- **i18n EN completo** con dictionary, switcher lingua nel nav, routing parallelo `/en/*`, content data files bilingual
+- **OG image dinamiche** via Pillow `/api/og` con brand `[NOT4SALE]` su nero + glow viola
+- **SEOHead React-19-safe** (sostituito react-helmet-async con manager imperativo `document.head`)
+- testing_agent_v3 iter2: 18/18 backend, 1 issue head-injection → fixed iter3 confirmed all SEO tags correctly present + de-duplicated
 
 ## Personas
-- **Founder DTC / B2B SaaS** cerca crescita strutturata
-- **Imprenditore locale / professionale** vuole presenza digitale forte ma non commodity
-- **Visitor curioso del settore** valuta partner marketing premium
-
-## SEO / AEO / GEO
-- react-helmet-async per og:/twitter:/canonical/keywords per pagina
-- JSON-LD `ProfessionalService` + `LocalBusiness` Cattolica RN
-- Per servizio: JSON-LD `Service` con `OfferCatalog` + `FAQPage`
-- `geo.region` / `ICBM` / `geo.placename` meta tags
-- `/robots.txt` + `/api/sitemap.xml` linkato
+- Founder DTC / B2B SaaS (crescita strutturata)
+- Imprenditore locale / professionale (presenza digitale premium)
+- Visitatore IT/EN che valuta partner marketing
 
 ## Implemented (Dec 2025)
-- Backend Claude chat + lead form + sitemap (all tested)
-- Frontend complete 15 pages route map, raw Three.js hero, Lenis smooth scroll, custom violet cursor, glass nav, AI chat widget bottom-right, contact form with toast feedback, Italian copy across all pages
-- Data-testid on every interactive element
-- 100% backend + 100% frontend tests (testing_agent_v3 iteration 1)
+- Backend: 11 endpoints REST + Claude chat IT/EN + quote estimator + article CMS + dynamic OG + bilingual sitemap
+- Frontend: 18 route, GSAP horizontal pin, full IT+EN i18n, dynamic OG meta per page, JSON-LD per page type (ProfessionalService / Service+FAQPage / Article / ItemList)
 
 ## Backlog
 **P1**
 - Email notification on new lead (Resend integration)
-- Admin dashboard route /admin to view leads (with simple auth)
-- Cookie banner / privacy policy page (Italian)
-- Real founder photos / portraits
+- Admin dashboard `/admin` (auth-protected) for leads + chat sessions + article CRUD
+- Privacy/cookie page (IT + EN)
+- Real founder photos
+- A/B test the quote calculator step copy
+- Sticky CTA "Calcola un preventivo" su scroll su tutti i mobile
 
 **P2**
-- Blog / Insights section (long-form SEO content)
+- 3D ScrollTrigger hero sequences (pinned camera moves)
+- Per-article OG image variants
+- More EN articles
+- Service-specific case studies pages
 - Newsletter integration
-- Pagine localizzate EN
-- Sostituzione "Made with Emergent" badge per dominio produzione
-- True scroll-pinned 3D sequences (gsap ScrollTrigger)
-- Open Graph image generation
+- "Made with Emergent" badge — gestito dalla piattaforma sul preview; sul dominio di produzione si toglie dalla config di deploy
 
-**Done Dec 2025**: MVP complete + e2e tested.
+**Done Dec 2025**: MVP + Phase 2 complete + tested.
