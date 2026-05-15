@@ -37,10 +37,16 @@ const ChiSiamoPage = () => {
       <section className="py-24 md:py-32 bg-ink-100">
         <div className="max-w-[1600px] mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10 border border-white/10">
           {FOUNDERS.map((f, i) => (
-            <Reveal as="div" key={f.name} delay={i * 0.1} className="bg-ink p-8 md:p-12 hover:bg-violet-900/10 transition-colors">
-              <div className="w-14 h-14 mb-8 rounded-sm grid place-items-center font-display font-black text-2xl"
-                   style={{ backgroundColor: f.color, color: f.color === "#ffffff" ? "#0a0a0a" : "#ffffff" }}>
-                {f.name.split(" ").map((n) => n[0]).join("")}
+            <Reveal as="div" key={f.name} delay={i * 0.08} className="bg-ink p-8 md:p-12 hover:bg-violet-900/10 transition-colors group" data-testid={`founder-card-${i}`}>
+              <div className="flex items-start justify-between mb-8">
+                <div className="w-14 h-14 rounded-sm grid place-items-center font-display font-black text-2xl"
+                     style={{ backgroundColor: f.color, color: f.color === "#ffffff" ? "#0a0a0a" : "#ffffff" }}>
+                  {f.name.split(" ").map((n) => n[0]).join("")}
+                </div>
+                <div className="text-right">
+                  <div className="font-display font-black text-violet-500 text-5xl md:text-6xl leading-none tracking-tight">{f.years}</div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.28em] text-neutral-500 mt-2">{f.yearsLabel[locale]}</div>
+                </div>
               </div>
               <div className="text-[10px] font-mono uppercase tracking-[0.28em] text-violet-400 mb-3">
                 {f.role[locale]}
@@ -48,7 +54,17 @@ const ChiSiamoPage = () => {
               <h2 className="font-display text-3xl md:text-5xl font-black uppercase tracking-tight text-white leading-none mb-6">
                 {f.name}
               </h2>
-              <p className="text-neutral-300 leading-relaxed max-w-md">{f.bio[locale]}</p>
+              <p className="text-neutral-300 leading-relaxed max-w-md mb-8">{f.bio[locale]}</p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {f.skills[locale].map((s) => (
+                  <span key={s} className="text-[10px] font-mono uppercase tracking-[0.18em] text-neutral-300 border border-white/15 px-3 py-1.5 hover:border-violet-500 hover:text-violet-300 transition-colors">
+                    {s}
+                  </span>
+                ))}
+              </div>
+              <div className="pt-6 border-t border-white/10 text-sm font-mono italic text-violet-300/80">
+                « {f.vibe[locale]} »
+              </div>
             </Reveal>
           ))}
         </div>

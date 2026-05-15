@@ -72,7 +72,7 @@ export const DICT = {
     about: {
       kicker: "Studio · 4 soci · Cattolica",
       headlineLines: ["quattro teste.", "una macchina."],
-      body: "Siamo nati come studio nel 2021 a Cattolica. Quattro soci, profili complementari: strategia, creatività, tecnologia, dati. Niente piramide infinita di account. Quando lavori con noi, lavori con noi.",
+      body: "Siamo nati come studio nel 2021 a Cattolica. Quattro soci, profili complementari: crescita, vendite, immagine, strategia commerciale. Niente piramide infinita di account. Quando lavori con noi, lavori con noi.",
       manifestoLines: ["Non siamo", "in vendita.", "Il tuo brand", "sì."],
       manifestoP: [
         "Lavoriamo con clienti, non con loghi. Selezioniamo i progetti su cui possiamo davvero fare la differenza. Diciamo no più spesso di quanto vorresti, e questa è la migliore garanzia che il sì lo prendiamo sul serio.",
@@ -247,7 +247,7 @@ export const DICT = {
     about: {
       kicker: "Studio · 4 partners · Cattolica",
       headlineLines: ["four heads.", "one machine."],
-      body: "We started as a studio in 2021 in Cattolica. Four co-founders, complementary profiles: strategy, creativity, technology, data. No endless pyramid of account managers. When you work with us, you work with us.",
+      body: "We started as a studio in 2021 in Cattolica. Four co-founders, complementary profiles: growth, sales, image, commercial strategy. No endless pyramid of account managers. When you work with us, you work with us.",
       manifestoLines: ["We're not", "for sale.", "Your brand", "is."],
       manifestoP: [
         "We work with clients, not with logos. We select projects where we can really make a difference. We say no more often than you'd like — and that's the best guarantee that our yes is serious.",
