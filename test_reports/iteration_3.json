@@ -1,0 +1,44 @@
+{
+  "summary": "Phase 2 retest — SEOHead React-19 imperative head manager VERIFIED on all 5 required routes. All 18 backend pytest cases still pass (100%). Quote wizard, AI chat (IT+EN), language switcher, and GSAP horizontal-scroll pin (pin-spacer detected in DOM) all working in regression. One open issue: SEOHead's setMeta uses [data-n4s-seo] marker in its selector for og:*/canonical/twitter:*, which means the static counterparts in public/index.html are never updated/removed → duplicate meta tags coexist (static index.html copy + dynamic SEOHead copy). The dynamic ones are correct and present (so the spec criteria pass), but crawlers will see 2 canonicals on every page (e.g. /preventivo has both https://not4.sale/ and https://not4.sale/preventivo) and 2 og:locale, og:title, og:description, og:type, og:site_name, twitter:card, twitter:title. meta[name=description] is correctly de-duplicated (selector has no marker).",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [
+      {
+        "flow": "SEO head injection — duplicate tags from static index.html not cleaned up",
+        "issue": "SEOHead.jsx queries og:*/canonical/twitter:* with [data-n4s-seo] marker, so the static <link rel=canonical href='https://not4.sale/'> and <meta property=og:locale|og:type|og:title|og:description|og:site_name|twitter:card|twitter:title> in public/index.html remain in <head> alongside the new dynamic tags. Result: every route emits 2 of each. Confirmed on /preventivo: canonical appears as ['https://not4.sale/', 'https://not4.sale/preventivo']. Crawlers will use the FIRST canonical (the static one) which is wrong for non-root pages, hurting SEO. Likely fix: either drop the [data-n4s-seo] suffix from the og/canonical/twitter selectors in SEOHead.jsx so setMeta updates the existing static tag in place (same pattern as meta[name=description] which works correctly), OR strip those static tags from public/index.html.",
+        "affected_selectors": ["link[rel='canonical']", "meta[property='og:locale']", "meta[property='og:title']", "meta[property='og:description']", "meta[property='og:type']", "meta[property='og:site_name']", "meta[name='twitter:card']", "meta[name='twitter:title']"]
+      }
+    ],
+    "design_issues": [
+      {"screen": "Global", "issues": ["Lenis non-static position warning still printed in console (cosmetic, no functional impact)", "WebGL Hero3D ReadPixels GPU stall log (cosmetic perf log)"]}
+    ]
+  },
+  "test_report_links": [
+    "/app/backend/tests/backend_test.py",
+    "/app/test_reports/pytest/pytest_results.xml"
+  ],
+  "action_items": [
+    "HIGH (SEO correctness): In /app/frontend/src/components/SEOHead.jsx, change the og/canonical/twitter setMeta selectors to NOT include the [data-n4s-seo] marker so they update the existing static index.html tags in place instead of appending duplicates. E.g.: setMeta('link[rel=\"canonical\"]', {...}), setMeta('meta[property=\"og:locale\"]', {...}), etc. The cleanupAdded() call must then also be careful — switch from per-route remove-by-marker to track-and-restore-or-update. Simplest path: remove the static <link rel=canonical>, <meta property=og:*>, <meta name=twitter:*> from public/index.html (keep only <meta name=description> as a fallback) and let SEOHead own them.",
+    "MEDIUM (cosmetic): Add non-static position to Lenis wrapper container to silence console warning (carried over from prior iterations)."
+  ],
+  "critical_code_review_comments": [
+    "SEOHead.jsx mixes two patterns: meta[name=description] selector has NO marker (correct — updates static tag in place), but canonical and og/twitter selectors include [data-n4s-seo] marker (creates duplicates). Unify to one pattern.",
+    "cleanupAdded() removes ALL tagged elements before re-creating them on every effect run — fine for unmount but causes a flash where canonical/og are momentarily absent during route changes. Low priority.",
+    "Verified on /, /en, /preventivo, /insights/aeo-vs-seo-cosa-cambia, /en/services/seo: all 9 required tags present (title, html[lang], description, canonical, og:image→/api/og, 2x alternate including x-default, og:locale, JSON-LD with @context=https://schema.org).",
+    "og:image URL correctly built from REACT_APP_BACKEND_URL + /api/og?title=&subtitle=&kicker= on every route.",
+    "html[lang] now correctly toggles between 'it' and 'en' per route (was broken in iter2).",
+    "alternate hreflang correctly points to the opposite-locale path (e.g. /preventivo↔/en/quote, /servizi/seo↔/en/services/seo).",
+    "Quote wizard 4-step flow still works end-to-end with live Claude estimate (range €8.000-12.000/mese, recommended approach, next_steps, fit_score, CTA href=/contatti).",
+    "AI chat works on both / (Italian reply) and /en (English reply) with N4S persona via Claude Sonnet 4.5.",
+    "GSAP ScrollTrigger pin-spacer present in DOM (.pin-spacer count=1) — horizontal scroll pin is active. gsap is not exposed on window (tree-shaken module), which is normal."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "100% (18/18)", "frontend": "~95% — SEOHead injection works, but duplicate canonical/og tags due to static index.html overlap"},
+  "test_credentials": "N/A — no auth in this app",
+  "seed_data_creation": "1 TEST_ quote lead via /preventivo end-to-end submit (TEST_reg3@example.com); 2 chat sessions (IT + EN, 1 user msg + 1 assistant reply each); 18 backend tests created 1 contact lead + 1 quote lead + 2 chat sessions.",
+  "retest_needed": true,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "SEOHead fix (react-helmet-async → imperative useEffect document.head mutation) is WORKING — verified all 9 required tags present on /, /en, /preventivo, /insights/aeo-vs-seo-cosa-cambia, /en/services/seo via Playwright document.head inspection. The remaining bug is duplicate tags: SEOHead's selectors for og/canonical/twitter use [data-n4s-seo] marker so it never finds the matching static tags in public/index.html (lines 11-23 of index.html: og:type/locale/title/description/site_name, twitter:card/title/description, link rel=canonical) — they coexist as duplicates. meta[name=description] is the only one correctly handled (selector has no marker → updates in place). Fix is small in SEOHead.jsx OR strip statics from index.html. AI chat toggle button is force-clickable via JS but Playwright .click(force=True) sometimes misses due to CustomCursor overlay — use page.evaluate(\"document.querySelector('[data-testid=\\\"ai-chat-toggle\\\"]').click()\") as workaround. Quote wizard needs explicit [data-testid=\"quote-next\"] click between steps (4 steps, not auto-advance).",
+  "rca of the issue": "RCA — duplicate SEO tags: SEOHead.jsx setMeta() builds the selector with the [data-n4s-seo] attribute filter for canonical/og/twitter tags (lines 71, 90-104). On first render, document.head.querySelector(`link[rel=\"canonical\"][data-n4s-seo]`) returns null (only the static tag from public/index.html exists, without marker), so a NEW dynamic tag is appended. The static one is never touched. document.head.querySelector('link[rel=\"canonical\"]') therefore returns the static one first → reads as https://not4.sale/. Reproduction: navigate to https://scroll-hero-4.preview.emergentagent.com/preventivo, open DevTools Console, run `Array.from(document.head.querySelectorAll('link[rel=\"canonical\"]')).map(l=>l.href)` → returns ['https://not4.sale/', 'https://not4.sale/preventivo']. Mitigation: (a) Remove [data-n4s-seo] from selectors in setMeta calls so it updates the existing static tag in place (same pattern as meta[name=description] in SEOHead.jsx:69 which works), or (b) Delete the static <link rel=canonical> and og/twitter tags from public/index.html and let SEOHead own all dynamic SEO. Approach (b) is safer (no risk of double-update during unmount cleanup)."
+}
