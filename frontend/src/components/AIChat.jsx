@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageSquare, X, Send } from "lucide-react";
 import axios from "axios";
+import useLocale from "../hooks/useLocale";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
@@ -16,24 +17,23 @@ const getSessionId = () => {
   return sid;
 };
 
-const initialBubble = {
-  role: "assistant",
-  content:
-    "Ciao, sono N4S — l'assistente AI di not4sale. Dimmi il tuo obiettivo (più lead, più brand, più ricavi) e ti dico da dove partiremmo."
-};
-
 export const AIChat = () => {
+  const { t, locale } = useLocale();
   const [open, setOpen] = useState(false);
-  const [messages, setMessages] = useState([initialBubble]);
+  const [messages, setMessages] = useState([{ role: "assistant", content: t.chat.hello }]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const scrollRef = useRef(null);
   const sessionId = getSessionId();
 
   useEffect(() => {
-    if (open && scrollRef.current) {
-      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
-    }
+    // reset hello on locale change if the only message is the hello
+    setMessages((m) => (m.length === 1 ? [{ role: "assistant", content: t.chat.hello }] : m));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [locale]);
+
+  useEffect(() => {
+    if (open && scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
   }, [open, messages]);
 
   const send = async () => {
@@ -43,17 +43,10 @@ export const AIChat = () => {
     setMessages((m) => [...m, { role: "user", content: text }]);
     setLoading(true);
     try {
-      const res = await axios.post(`${API}/chat`, { session_id: sessionId, message: text });
+      const res = await axios.post(`${API}/chat`, { session_id: sessionId, message: text, locale });
       setMessages((m) => [...m, { role: "assistant", content: res.data.reply }]);
     } catch (e) {
-      setMessages((m) => [
-        ...m,
-        {
-          role: "assistant",
-          content:
-            "Mi sono perso un secondo. Riprova tra poco, o scrivici da /contatti."
-        }
-      ]);
+      setMessages((m) => [...m, { role: "assistant", content: t.chat.fail }]);
     } finally {
       setLoading(false);
     }
@@ -71,7 +64,7 @@ export const AIChat = () => {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        aria-label={open ? "Chiudi assistente AI" : "Apri assistente AI"}
+        aria-label={open ? t.chat.close : t.chat.open}
         data-testid="ai-chat-toggle"
         className="fixed bottom-6 right-6 z-[9700] w-14 h-14 rounded-full bg-violet-500 text-white grid place-items-center violet-glow-soft animate-pulse-violet hover:scale-105 transition-transform"
       >
@@ -88,7 +81,7 @@ export const AIChat = () => {
             className="fixed bottom-24 right-4 md:right-6 z-[9600] w-[calc(100vw-2rem)] sm:w-[400px] h-[560px] glass-strong border border-violet-500/30 rounded-sm overflow-hidden flex flex-col"
             data-testid="ai-chat-widget"
             role="dialog"
-            aria-label="Assistente AI not4sale"
+            aria-label="not4sale AI assistant"
           >
             <div className="px-5 py-4 border-b border-white/10 flex items-center gap-3">
               <span className="w-2 h-2 rounded-full bg-violet-500 animate-pulse" />
@@ -108,10 +101,8 @@ export const AIChat = () => {
                   data-testid={`chat-message-${m.role}`}
                 >
                   <div
-                    className={`max-w-[85%] px-4 py-3 text-sm leading-relaxed ${
-                      m.role === "user"
-                        ? "bg-white text-black"
-                        : "bg-white/5 border border-white/10 text-neutral-200"
+                    className={`max-w-[85%] px-4 py-3 text-sm leading-relaxed whitespace-pre-wrap ${
+                      m.role === "user" ? "bg-white text-black" : "bg-white/5 border border-white/10 text-neutral-200"
                     }`}
                   >
                     {m.content}
@@ -133,8 +124,8 @@ export const AIChat = () => {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={onKeyDown}
                 rows={1}
-                placeholder="Scrivi al nostro AI..."
-                aria-label="Messaggio per l'assistente"
+                placeholder={t.chat.placeholder}
+                aria-label="Message"
                 data-testid="ai-chat-input"
                 className="flex-1 resize-none bg-transparent border-b border-white/10 focus:border-violet-500 outline-none text-sm text-white placeholder-neutral-600 py-2 px-1 max-h-28"
               />
@@ -142,7 +133,7 @@ export const AIChat = () => {
                 type="button"
                 onClick={send}
                 disabled={loading || !input.trim()}
-                aria-label="Invia messaggio"
+                aria-label={t.chat.send}
                 data-testid="ai-chat-send"
                 className="w-10 h-10 grid place-items-center bg-violet-500 disabled:bg-neutral-800 disabled:text-neutral-500 text-white hover:bg-violet-400 transition-colors"
               >

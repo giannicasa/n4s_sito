@@ -182,3 +182,74 @@
         border-bottom-color: inherit;
     }
 }
+
+/* Article markdown styling (Insights) */
+.article-md {
+    color: #d4d4d4;
+    font-size: 1.05rem;
+    line-height: 1.85;
+}
+.article-md h2 {
+    font-family: 'Cabinet Grotesk', system-ui, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1.05;
+    margin-top: 3.5rem;
+    margin-bottom: 1.25rem;
+}
+.article-md h3 {
+    font-family: 'Cabinet Grotesk', system-ui, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1.45rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+.article-md p { margin-bottom: 1.4rem; }
+.article-md strong { color: #ffffff; font-weight: 700; }
+.article-md em { color: #9D4CDD; font-style: normal; }
+.article-md a { color: #9D4CDD; text-decoration: underline; text-decoration-color: rgba(157,76,221,0.4); }
+.article-md a:hover { color: #ffffff; text-decoration-color: #ffffff; }
+.article-md ul, .article-md ol { margin: 1rem 0 1.5rem 1.25rem; }
+.article-md ul { list-style: none; }
+.article-md ul li { position: relative; padding-left: 1.25rem; margin-bottom: 0.65rem; }
+.article-md ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    width: 0.5rem;
+    height: 1px;
+    background: #9D4CDD;
+}
+.article-md ol { list-style: decimal; color: #9D4CDD; }
+.article-md ol li { color: #d4d4d4; margin-bottom: 0.65rem; padding-left: 0.5rem; }
+.article-md ol li::marker { color: #9D4CDD; font-family: 'JetBrains Mono', monospace; }
+.article-md blockquote {
+    border-left: 2px solid #9D4CDD;
+    padding-left: 1.25rem;
+    margin: 2rem 0;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-style: normal;
+}
+.article-md code {
+    font-family: 'JetBrains Mono', monospace;
+    background: rgba(157,76,221,0.12);
+    color: #9D4CDD;
+    padding: 0.15rem 0.4rem;
+    font-size: 0.9em;
+}
+.article-md pre {
+    background: #0a0a0a;
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 1.25rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+}
+.article-md hr { border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 3rem 0; }

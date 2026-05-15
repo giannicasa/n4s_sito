@@ -1,21 +1,27 @@
-from fastapi import FastAPI, APIRouter, HTTPException
-from fastapi.responses import Response
+from fastapi import FastAPI, APIRouter, HTTPException, Query
+from fastapi.responses import Response, StreamingResponse
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
+import io
 import logging
 from pathlib import Path
 from pydantic import BaseModel, Field, ConfigDict, EmailStr
-from typing import List, Optional
+from typing import List, Optional, Literal
 import uuid
 from datetime import datetime, timezone
 
 from emergentintegrations.llm.chat import LlmChat, UserMessage
+from PIL import Image, ImageDraw, ImageFont
 
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
+
+# Logger config (early so we can use it from anywhere)
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 # MongoDB connection
 mongo_url = os.environ['MONGO_URL']
@@ -24,11 +30,11 @@ db = client[os.environ['DB_NAME']]
 
 EMERGENT_LLM_KEY = os.environ.get('EMERGENT_LLM_KEY', '')
 
-# ---- App init ----
-app = FastAPI(title="not4sale API", version="1.0.0")
+app = FastAPI(title="not4sale API", version="1.1.0")
 api_router = APIRouter(prefix="/api")
 
-# ---- Models ----
+
+# ============ MODELS ============
 class LeadCreate(BaseModel):
     name: str = Field(..., min_length=1, max_length=120)
     email: EmailStr
@@ -38,6 +44,7 @@ class LeadCreate(BaseModel):
     budget: Optional[str] = Field(default=None, max_length=40)
     message: str = Field(..., min_length=1, max_length=4000)
     source: Optional[str] = Field(default="website")
+    locale: Optional[str] = Field(default="it")
 
 
 class Lead(BaseModel):
@@ -51,19 +58,22 @@ class Lead(BaseModel):
     budget: Optional[str] = None
     message: str
     source: Optional[str] = "website"
+    locale: Optional[str] = "it"
+    extra: Optional[dict] = None
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
 
 class ChatRequest(BaseModel):
     session_id: str = Field(..., min_length=1, max_length=120)
     message: str = Field(..., min_length=1, max_length=4000)
+    locale: Optional[str] = Field(default="it")
 
 
 class ChatMessage(BaseModel):
     model_config = ConfigDict(extra="ignore")
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     session_id: str
-    role: str  # 'user' | 'assistant'
+    role: str
     content: str
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
@@ -73,26 +83,67 @@ class ChatResponse(BaseModel):
     reply: str
 
 
-# ---- System prompt for AI Assistant ----
+class QuoteRequest(BaseModel):
+    objective: str = Field(..., max_length=200)
+    services: List[str] = Field(default_factory=list)
+    budget: str = Field(..., max_length=40)
+    timeline: str = Field(..., max_length=80)
+    name: str = Field(..., min_length=1, max_length=120)
+    email: EmailStr
+    company: Optional[str] = Field(default=None, max_length=120)
+    notes: Optional[str] = Field(default=None, max_length=2000)
+    locale: Optional[str] = Field(default="it")
+
+
+class QuoteResponse(BaseModel):
+    lead_id: str
+    estimate_range: str
+    recommended_approach: str
+    next_steps: List[str]
+    fit_score: int  # 0-100
+
+
+class Article(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    slug: str
+    locale: str = "it"
+    title: str
+    subtitle: Optional[str] = None
+    excerpt: str
+    content_md: str
+    author: str = "not4sale"
+    tags: List[str] = Field(default_factory=list)
+    read_minutes: int = 5
+    published_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+
+# ============ SYSTEM PROMPTS ============
 SYSTEM_PROMPT_IT = (
     "Sei N4S, l'assistente AI dello studio di marketing not4sale con sede a Cattolica (Italia). "
-    "Lo studio è guidato da 4 soci fondatori e offre: Growth Hacking, SEO, AEO (Answer Engine Optimization), "
-    "GEO (Generative Engine Optimization), Brand Strategy, Performance Marketing, Social Media, Content, "
-    "Web Design e AI Marketing. "
-    "La filosofia di not4sale è 'costruiamo la macchina giusta per ogni cliente': niente Ferrari per chi vuole una 500, "
-    "niente strategie copia-incolla. Tono: ribelle, diretto, confidente, mai vendutissimo. "
-    "Rispondi SEMPRE in italiano, in modo conciso (max 4-6 frasi), incisivo e creativo. "
-    "Aiuta il visitatore a capire quale servizio gli serve, qualifica il lead facendo 1-2 domande mirate "
-    "quando ha senso (settore, obiettivo, budget indicativo) e invitalo a lasciare una richiesta dalla pagina /contatti "
-    "o tramite il form qui sul sito. Mai promesse impossibili, mai numeri inventati, mai prezzi precisi. "
-    "Se la domanda è fuori scope (es. ricette, gossip), riportala con leggerezza al marketing."
+    "Lo studio è guidato da 4 soci fondatori e offre: Growth Hacking, SEO, AEO, GEO, "
+    "Brand Strategy, Performance Marketing, Social, Content, Web Design, AI Marketing. "
+    "La filosofia di not4sale è 'costruiamo la macchina giusta per ogni cliente': niente Ferrari per chi vuole una 500. "
+    "Tono: ribelle, diretto, confidente. Rispondi SEMPRE in italiano, conciso (max 4-6 frasi), incisivo. "
+    "Qualifica il lead con 1-2 domande mirate (settore, obiettivo, budget) e invitalo a /contatti o al form. "
+    "Mai promesse impossibili, mai numeri inventati, mai prezzi precisi. Se off-topic, riporta al marketing."
+)
+
+SYSTEM_PROMPT_EN = (
+    "You are N4S, the AI assistant of not4sale, a marketing studio based in Cattolica (Italy). "
+    "The studio is run by 4 co-founders and offers Growth Hacking, SEO, AEO, GEO, Brand Strategy, "
+    "Performance Marketing, Social, Content, Web Design, AI Marketing. "
+    "Philosophy: 'we build the right machine for each client'; no Ferraris for someone who wants a Fiat 500. "
+    "Tone: bold, direct, confident. Always reply in English, concise (4-6 sentences), sharp. "
+    "Qualify the lead with 1-2 targeted questions and invite them to /en/contact. "
+    "Never promise impossible outcomes, never invent numbers or precise pricing. Steer off-topic back to marketing."
 )
 
 
-# ---- Routes ----
+# ============ ROUTES ============
 @api_router.get("/")
 async def root():
-    return {"name": "not4sale API", "status": "ok"}
+    return {"name": "not4sale API", "status": "ok", "version": app.version}
 
 
 @api_router.get("/health")
@@ -104,7 +155,7 @@ async def health():
         return {"status": "degraded", "db_error": str(e)}
 
 
-# Leads
+# ---------- Leads ----------
 @api_router.post("/contact", response_model=Lead)
 async def create_lead(payload: LeadCreate):
     lead = Lead(**payload.model_dump())
@@ -127,7 +178,7 @@ async def list_leads(limit: int = 100):
     return items
 
 
-# Chat
+# ---------- Chat ----------
 async def _get_history(session_id: str) -> List[dict]:
     cursor = db.chat_messages.find({"session_id": session_id}, {"_id": 0}).sort("created_at", 1)
     return await cursor.to_list(length=1000)
@@ -152,34 +203,24 @@ async def chat(payload: ChatRequest):
 
     session_id = payload.session_id.strip() or str(uuid.uuid4())
 
-    # Persist user message
     user_msg = ChatMessage(session_id=session_id, role="user", content=payload.message)
     udoc = user_msg.model_dump()
     udoc['created_at'] = udoc['created_at'].isoformat()
     await db.chat_messages.insert_one(udoc)
 
-    # Build chat - LlmChat handles history per session_id when reused. Create fresh
-    # instance each call but rely on a single system prompt; we pass only the new
-    # user message, since the lib does not auto-load DB history. To preserve context
-    # across turns we manually replay the saved history as a single concatenated user
-    # turn would be hacky; instead we instantiate LlmChat with a session_id (library
-    # tracks its own in-memory history) and prepend a short transcript in the system
-    # prompt for stateless calls.
     history = await _get_history(session_id)
     transcript_lines = []
-    for h in history[:-1][-10:]:  # last 10 turns excluding the just-saved user msg
-        role = "Utente" if h.get('role') == 'user' else "N4S"
+    for h in history[:-1][-10:]:
+        role = ("User" if h.get('role') == 'user' else "N4S")
         transcript_lines.append(f"{role}: {h.get('content', '')}")
     transcript = "\n".join(transcript_lines)
 
-    system_prompt = SYSTEM_PROMPT_IT
+    base_sys = SYSTEM_PROMPT_EN if (payload.locale or 'it') == 'en' else SYSTEM_PROMPT_IT
+    system_prompt = base_sys
     if transcript:
-        system_prompt = (
-            SYSTEM_PROMPT_IT
-            + "\n\n[STORICO CONVERSAZIONE RECENTE]\n"
-            + transcript
-            + "\n[FINE STORICO]"
-        )
+        tag = "[RECENT TRANSCRIPT]" if (payload.locale or 'it') == 'en' else "[STORICO CONVERSAZIONE RECENTE]"
+        end_tag = "[END]" if (payload.locale or 'it') == 'en' else "[FINE STORICO]"
+        system_prompt = f"{base_sys}\n\n{tag}\n{transcript}\n{end_tag}"
 
     chat_client = LlmChat(
         api_key=EMERGENT_LLM_KEY,
@@ -196,7 +237,6 @@ async def chat(payload: ChatRequest):
     if not isinstance(reply_text, str):
         reply_text = str(reply_text)
 
-    # Persist assistant message
     assistant_msg = ChatMessage(session_id=session_id, role="assistant", content=reply_text)
     adoc = assistant_msg.model_dump()
     adoc['created_at'] = adoc['created_at'].isoformat()
@@ -205,46 +245,396 @@ async def chat(payload: ChatRequest):
     return ChatResponse(session_id=session_id, reply=reply_text)
 
 
-# SEO helpers served from backend
-SITE_URL = "https://not4.sale"
+# ---------- Quote calculator ----------
+QUOTE_SYSTEM_IT = (
+    "Sei un senior strategist di not4sale. Analizza la richiesta e produci una stima onesta. "
+    "Rispondi SOLO in JSON valido con: estimate_range (stringa: range mensile in €), "
+    "recommended_approach (stringa di 2-3 frasi sul mix di servizi consigliato), "
+    "next_steps (array di 3 stringhe brevi), fit_score (int 0-100, quanto questo lead è in target per noi). "
+    "Sii realistico: budget bassi → fit_score basso, servizi disallineati → fit_score basso. "
+    "Niente prezzi precisi: solo range coerenti col budget dichiarato. Mai outliers irrealistici."
+)
 
+QUOTE_SYSTEM_EN = (
+    "You are a senior strategist at not4sale. Analyze the request and produce an honest estimate. "
+    "Reply ONLY with valid JSON: estimate_range (string: monthly € range), "
+    "recommended_approach (2-3 sentences on the recommended service mix), "
+    "next_steps (array of 3 short strings), fit_score (int 0-100, how aligned this lead is). "
+    "Be realistic: low budget → low fit_score, misaligned services → low fit_score. "
+    "Never give precise prices, only coherent ranges. No unrealistic outliers."
+)
+
+
+@api_router.post("/quote/estimate", response_model=QuoteResponse)
+async def estimate_quote(payload: QuoteRequest):
+    if not EMERGENT_LLM_KEY:
+        raise HTTPException(status_code=500, detail="LLM key not configured")
+
+    # Persist as lead first
+    lead = Lead(
+        name=payload.name,
+        email=payload.email,
+        company=payload.company,
+        service=", ".join(payload.services) if payload.services else None,
+        budget=payload.budget,
+        message=(payload.notes or "") + f"\n\n[OBIETTIVO] {payload.objective}\n[TIMELINE] {payload.timeline}",
+        source="quote-calculator",
+        locale=payload.locale or "it",
+        extra={
+            "objective": payload.objective,
+            "services": payload.services,
+            "timeline": payload.timeline,
+        },
+    )
+    doc = lead.model_dump()
+    doc['created_at'] = doc['created_at'].isoformat()
+    await db.leads.insert_one(doc)
+
+    base_sys = QUOTE_SYSTEM_EN if (payload.locale or 'it') == 'en' else QUOTE_SYSTEM_IT
+    user_prompt = (
+        f"Obiettivo: {payload.objective}\n"
+        f"Servizi richiesti: {', '.join(payload.services) if payload.services else 'da definire'}\n"
+        f"Budget mensile: {payload.budget}\n"
+        f"Timeline: {payload.timeline}\n"
+        f"Note: {payload.notes or '-'}"
+    )
+
+    chat_client = LlmChat(
+        api_key=EMERGENT_LLM_KEY,
+        session_id=f"quote-{lead.id}",
+        system_message=base_sys,
+    ).with_model("anthropic", "claude-sonnet-4-5-20250929")
+
+    try:
+        raw = await chat_client.send_message(UserMessage(text=user_prompt))
+    except Exception as e:
+        logger.exception("Quote LLM failed")
+        raise HTTPException(status_code=502, detail=f"LLM error: {e}")
+
+    import json as _json
+    import re as _re
+
+    text = raw if isinstance(raw, str) else str(raw)
+    m = _re.search(r"\{[\s\S]*\}", text)
+    if not m:
+        # Fallback deterministic estimate
+        return QuoteResponse(
+            lead_id=lead.id,
+            estimate_range=_default_range(payload.budget),
+            recommended_approach=_default_approach(payload),
+            next_steps=_default_steps(payload.locale or 'it'),
+            fit_score=_default_fit(payload),
+        )
+    try:
+        data = _json.loads(m.group(0))
+        return QuoteResponse(
+            lead_id=lead.id,
+            estimate_range=str(data.get('estimate_range', _default_range(payload.budget))),
+            recommended_approach=str(data.get('recommended_approach', _default_approach(payload))),
+            next_steps=[str(x) for x in (data.get('next_steps') or _default_steps(payload.locale or 'it'))][:5],
+            fit_score=int(data.get('fit_score', _default_fit(payload))),
+        )
+    except Exception:
+        return QuoteResponse(
+            lead_id=lead.id,
+            estimate_range=_default_range(payload.budget),
+            recommended_approach=_default_approach(payload),
+            next_steps=_default_steps(payload.locale or 'it'),
+            fit_score=_default_fit(payload),
+        )
+
+
+def _default_range(budget: str) -> str:
+    return budget or "Da definire"
+
+
+def _default_approach(p: QuoteRequest) -> str:
+    base = ", ".join(p.services) if p.services else "un mix multi-servizio"
+    return f"Costruiremmo un programma centrato su {base}, calibrato sull'obiettivo '{p.objective}'."
+
+
+def _default_steps(locale: str) -> List[str]:
+    if locale == 'en':
+        return ["30-min discovery call", "Diagnostic audit", "Tailored proposal"]
+    return ["Call di discovery 30 min", "Audit diagnostico", "Proposta su misura"]
+
+
+def _default_fit(p: QuoteRequest) -> int:
+    # Heuristic
+    score = 50
+    if 'k' in (p.budget or '').lower() and any(x in p.budget for x in ['15', '40', '50', '60', '80', '100']):
+        score += 25
+    if p.services:
+        score += 15
+    if p.notes and len(p.notes) > 80:
+        score += 5
+    return max(0, min(100, score))
+
+
+# ---------- Articles ----------
+ARTICLES_SEED = [
+    # Italian
+    {
+        "slug": "aeo-vs-seo-cosa-cambia",
+        "locale": "it",
+        "title": "AEO vs SEO: cosa cambia davvero per il tuo brand",
+        "subtitle": "Risposte vs ranking. Le AI hanno spostato il gioco.",
+        "excerpt": "La SEO non è morta, ma non è più sola. AEO ottimizza per ChatGPT, Perplexity e AI Overviews. Ecco cosa fare oggi.",
+        "content_md": "## La SEO non è morta. È mutata.\n\nFino a ieri la SEO era una gara a posizionarsi sui motori. Oggi la query non è più solo digitata: viene chiesta. ChatGPT, Perplexity, Gemini, Google AI Overviews rispondono direttamente.\n\nAEO (Answer Engine Optimization) è la disciplina di **essere la risposta**, non il primo link.\n\n## I 3 livelli del gioco oggi\n\n1. **SEO tradizionale** — crawl, render, ranking. Resta la base.\n2. **AEO** — strutturazione contenuti, FAQ, schema, brand entity per essere citati nelle risposte AI.\n3. **GEO** — Generative Engine Optimization: influenzare la 'conoscenza' che i modelli hanno del tuo brand.\n\n## Cosa fare adesso\n\n- Audit della visibilità su ChatGPT + Perplexity (prompt set)\n- Strutturare FAQ + schema.org sui contenuti chiave\n- Brand entity hardening: knowledge panel, Wikipedia/Wikidata, citazioni autoritative\n- Misurare share-of-voice nelle risposte AI\n\nNon serve abbandonare la SEO. Serve estenderla.",
+        "tags": ["AEO", "SEO", "AI"],
+        "read_minutes": 5
+    },
+    {
+        "slug": "growth-hacking-perche-funziona",
+        "locale": "it",
+        "title": "Growth hacking: perché funziona davvero (e perché spesso no)",
+        "subtitle": "Il problema non è il metodo, è il rituale.",
+        "excerpt": "Il growth hacking funziona quando diventa abitudine ogni settimana. Senza, sono solo trick.",
+        "content_md": "## Non è una tattica. È un rituale.\n\nLa parola 'growth hacking' è stata svuotata. Oggi significa tutto e niente.\n\nL'unica versione che funziona è quella **rituale**: ogni settimana ipotesi, test, dati, decisione.\n\n## Il ciclo che fa la differenza\n\n1. **Ipotesi** — partita da un insight, non da un like su LinkedIn\n2. **Test** — il più piccolo possibile, in 48-72h\n3. **Dato** — pulito, non vanity\n4. **Decisione** — kill, iterate, scale\n\n## Perché spesso fallisce\n\n- Niente sponsor in azienda (il team marketing da solo non basta)\n- Sprint troppo lunghi (mensili, non bi-settimanali)\n- KPI sbagliati (vanity metric)\n- Nessuna disciplina nel chiudere gli esperimenti\n\n## Come iniziare\n\n- North Star Metric chiarissima\n- Backlog di 20+ esperimenti pronto\n- Sprint da 2 settimane, riti fissi\n- Dashboard unica\n\nIn 90 giorni vedi il trend. In 6 mesi hai una macchina.",
+        "tags": ["Growth", "Strategy"],
+        "read_minutes": 6
+    },
+    {
+        "slug": "brand-strategy-non-e-il-logo",
+        "locale": "it",
+        "title": "Brand strategy non è il tuo logo",
+        "subtitle": "Il logo è la conseguenza, non la causa.",
+        "excerpt": "Confondere brand strategy con identità visiva è il modo più rapido di buttare soldi.",
+        "content_md": "## Il logo è l'ultima cosa\n\nLa brand strategy non è un esercizio creativo. È un esercizio di **posizionamento**.\n\nPrima di un logo servono risposte chiare a:\n- Chi sei davvero?\n- Per chi sei?\n- Contro chi sei?\n- Perché esisti?\n- Cosa cambieresti del tuo mercato?\n\n## I tre layer\n\n1. **Strategy** — posizionamento, audience, manifesto\n2. **Identity** — naming, sistema visivo, tono di voce\n3. **Experience** — come tutto questo vive in ogni touchpoint\n\nUn brand senza il layer 1 è un bel guscio vuoto. Un brand senza il layer 3 è una promessa tradita.\n\n## Errori comuni\n\n- Partire dal logo\n- Copiare i big del settore\n- Comunicare tutto a tutti\n- Cambiare brand ogni 18 mesi perché 'non funziona'\n\nUn brand non funziona quando non c'è strategia, non quando il logo non piace.",
+        "tags": ["Brand"],
+        "read_minutes": 4
+    },
+    {
+        "slug": "ai-marketing-cosa-automatizzare",
+        "locale": "it",
+        "title": "AI marketing: cosa automatizzare oggi (e cosa no)",
+        "subtitle": "Il delta competitivo è qui. Tre framework pratici.",
+        "excerpt": "Non tutto va automatizzato. Ma quello che va automatizzato, va automatizzato bene.",
+        "content_md": "## Non è hype, è leva\n\nL'AI nel marketing non sostituisce le persone. Le libera dalle attività ripetitive che bruciano ore senza creare valore.\n\n## I 3 livelli pratici\n\n### Livello 1 — Generazione\nDraft di contenuti, prima bozza di brief, prima versione di ad copy. Sempre revisionata da umano.\n\n### Livello 2 — Workflow\nLead qualification automatica, scoring, routing. Agenti che pre-elaborano e portano in agenda solo lead caldi.\n\n### Livello 3 — Sistema\nAgenti permanenti che monitorano competitor, mercato, trend e producono insight settimanali.\n\n## Cosa NON automatizzare\n\n- Conversazioni che chiudono budget importanti\n- Creative direction su progetti hero\n- Decisioni strategiche\n- Reazioni a crisi\n\n## Come iniziare\n\n1. Mappa i processi marketing per ore/settimana\n2. Identifica i 3 più ripetitivi e a basso valore aggiunto\n3. Prototipa un agente per il primo\n4. Misura il tempo recuperato\n5. Itera\n\nIl vantaggio competitivo dell'AI non è 'usare ChatGPT'. È **avere processi**.",
+        "tags": ["AI", "Automation"],
+        "read_minutes": 6
+    },
+    # English
+    {
+        "slug": "aeo-vs-seo-whats-changing",
+        "locale": "en",
+        "title": "AEO vs SEO: what's really changing for your brand",
+        "subtitle": "Answers vs rankings. AI shifted the game.",
+        "excerpt": "SEO isn't dead, but it's no longer alone. AEO optimizes for ChatGPT, Perplexity and AI Overviews. Here's what to do now.",
+        "content_md": "## SEO isn't dead. It mutated.\n\nUntil yesterday SEO was a race for ranking. Today, queries aren't just typed — they're asked. ChatGPT, Perplexity, Gemini, Google AI Overviews answer directly.\n\nAEO (Answer Engine Optimization) is the discipline of **being the answer**, not the first link.\n\n## The 3 layers of the game today\n\n1. **Traditional SEO** — crawl, render, ranking. Still the base.\n2. **AEO** — content structure, FAQ, schema, brand entity to be cited in AI answers.\n3. **GEO** — Generative Engine Optimization: influencing how LLMs represent your brand.\n\n## What to do now\n\n- Audit visibility on ChatGPT + Perplexity (prompt set)\n- Structure FAQ + schema.org on key content\n- Brand entity hardening: knowledge panel, Wikipedia/Wikidata, authoritative citations\n- Measure share-of-voice in AI answers\n\nDon't abandon SEO. Extend it.",
+        "tags": ["AEO", "SEO", "AI"],
+        "read_minutes": 5
+    },
+    {
+        "slug": "growth-hacking-why-it-works",
+        "locale": "en",
+        "title": "Growth hacking: why it really works (and why it often doesn't)",
+        "subtitle": "The issue isn't the method, it's the ritual.",
+        "excerpt": "Growth hacking works when it becomes a weekly ritual. Without it, they're just tricks.",
+        "content_md": "## Not a tactic. A ritual.\n\nThe term 'growth hacking' has been emptied. Today it means everything and nothing.\n\nThe only version that works is the **ritual** one: every week — hypothesis, test, data, decision.\n\n## The cycle that makes the difference\n\n1. **Hypothesis** — born from insight, not a LinkedIn like\n2. **Test** — as small as possible, in 48-72h\n3. **Data** — clean, no vanity\n4. **Decision** — kill, iterate, scale\n\n## Why it often fails\n\n- No internal sponsor (marketing alone isn't enough)\n- Sprints too long (monthly, not bi-weekly)\n- Wrong KPIs (vanity metrics)\n- No discipline closing experiments\n\n## How to start\n\n- Crystal-clear North Star Metric\n- Backlog of 20+ experiments ready\n- 2-week sprints, fixed rituals\n- Single dashboard\n\nIn 90 days you see the trend. In 6 months you have a machine.",
+        "tags": ["Growth", "Strategy"],
+        "read_minutes": 6
+    },
+    {
+        "slug": "brand-strategy-isnt-your-logo",
+        "locale": "en",
+        "title": "Brand strategy isn't your logo",
+        "subtitle": "The logo is consequence, not cause.",
+        "excerpt": "Confusing brand strategy with visual identity is the fastest way to burn money.",
+        "content_md": "## The logo is the last thing\n\nBrand strategy isn't a creative exercise. It's a **positioning** exercise.\n\nBefore a logo, you need clear answers to:\n- Who are you really?\n- Who are you for?\n- Who are you against?\n- Why do you exist?\n- What would you change in your market?\n\n## The three layers\n\n1. **Strategy** — positioning, audience, manifesto\n2. **Identity** — naming, visual system, tone of voice\n3. **Experience** — how all this lives in every touchpoint\n\nA brand without layer 1 is a pretty empty shell. A brand without layer 3 is a broken promise.\n\n## Common mistakes\n\n- Starting from the logo\n- Copying the big players\n- Communicating everything to everyone\n- Changing brand every 18 months because 'it doesn't work'\n\nA brand doesn't work when there's no strategy, not when you don't like the logo.",
+        "tags": ["Brand"],
+        "read_minutes": 4
+    },
+    {
+        "slug": "ai-marketing-what-to-automate",
+        "locale": "en",
+        "title": "AI marketing: what to automate today (and what not)",
+        "subtitle": "The competitive delta is here. Three practical frameworks.",
+        "excerpt": "Not everything should be automated. But what should be, must be done well.",
+        "content_md": "## It's not hype, it's leverage\n\nAI in marketing doesn't replace people. It frees them from repetitive tasks that burn hours without creating value.\n\n## The 3 practical levels\n\n### Level 1 — Generation\nContent drafts, first brief versions, first ad copy versions. Always human-reviewed.\n\n### Level 2 — Workflow\nAutomatic lead qualification, scoring, routing. Agents that pre-process and bring only warm leads to your calendar.\n\n### Level 3 — System\nPermanent agents that monitor competitors, market, trends, and produce weekly insights.\n\n## What NOT to automate\n\n- Conversations that close big budgets\n- Creative direction on hero projects\n- Strategic decisions\n- Crisis reactions\n\n## How to start\n\n1. Map your marketing processes by hours/week\n2. Identify the 3 most repetitive, low-value ones\n3. Prototype an agent for the first\n4. Measure recovered time\n5. Iterate\n\nThe AI competitive advantage isn't 'using ChatGPT'. It's **having processes**.",
+        "tags": ["AI", "Automation"],
+        "read_minutes": 6
+    }
+]
+
+
+async def _seed_articles():
+    count = await db.articles.count_documents({})
+    if count > 0:
+        return
+    docs = []
+    for a in ARTICLES_SEED:
+        art = Article(**a)
+        d = art.model_dump()
+        d['published_at'] = d['published_at'].isoformat()
+        docs.append(d)
+    if docs:
+        await db.articles.insert_many(docs)
+        logger.info(f"Seeded {len(docs)} articles")
+
+
+@api_router.get("/articles", response_model=List[Article])
+async def list_articles(locale: str = "it", limit: int = 50):
+    cursor = db.articles.find({"locale": locale}, {"_id": 0}).sort("published_at", -1).limit(limit)
+    items = await cursor.to_list(length=limit)
+    for it in items:
+        if isinstance(it.get('published_at'), str):
+            try:
+                it['published_at'] = datetime.fromisoformat(it['published_at'])
+            except Exception:
+                pass
+    return items
+
+
+@api_router.get("/articles/{slug}", response_model=Article)
+async def get_article(slug: str, locale: str = "it"):
+    art = await db.articles.find_one({"slug": slug, "locale": locale}, {"_id": 0})
+    if not art:
+        raise HTTPException(status_code=404, detail="Article not found")
+    if isinstance(art.get('published_at'), str):
+        try:
+            art['published_at'] = datetime.fromisoformat(art['published_at'])
+        except Exception:
+            pass
+    return art
+
+
+# ---------- OG image generation ----------
+@api_router.get("/og")
+async def generate_og(
+    title: str = Query(..., max_length=200),
+    subtitle: Optional[str] = Query(None, max_length=200),
+    kicker: Optional[str] = Query(None, max_length=80),
+):
+    W, H = 1200, 630
+    img = Image.new("RGB", (W, H), color="#050505")
+    draw = ImageDraw.Draw(img)
+
+    # Try to load fonts (fall back to default if missing)
+    def _font(size):
+        for path in [
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        ]:
+            try:
+                return ImageFont.truetype(path, size)
+            except Exception:
+                continue
+        return ImageFont.load_default()
+
+    f_brand = _font(36)
+    f_title = _font(86)
+    f_sub = _font(34)
+    f_kicker = _font(22)
+
+    # Subtle violet glow rectangle
+    for i in range(40, 0, -2):
+        a = max(0, int(60 - i))
+        # ellipse glow
+        draw.ellipse(
+            [W // 2 - 360 - i, H + 100 - i, W // 2 + 360 + i, H + 320 + i],
+            fill=(157, 76, 221, a),
+        )
+
+    # Brand mark "[NOT4SALE]" top-left
+    bracket_color = "#9D4CDD"
+    brand_x, brand_y = 70, 70
+    draw.text((brand_x, brand_y), "[", font=f_brand, fill=bracket_color)
+    bracket_w = draw.textlength("[", font=f_brand)
+    draw.text((brand_x + bracket_w + 4, brand_y), "NOT4SALE", font=f_brand, fill="#FFFFFF")
+    n4s_w = draw.textlength("NOT4SALE", font=f_brand)
+    draw.text((brand_x + bracket_w + 4 + n4s_w + 4, brand_y), "]", font=f_brand, fill=bracket_color)
+
+    # Kicker pill (mono uppercase) top-right
+    if kicker:
+        k = kicker.upper()
+        kw = draw.textlength(k, font=f_kicker)
+        draw.rectangle([W - 80 - kw - 28, 76, W - 80, 76 + 36], outline="#9D4CDD", width=1)
+        draw.text((W - 80 - kw - 14, 84), k, font=f_kicker, fill="#9D4CDD")
+
+    # Title (wrap manually)
+    def wrap(text, font, max_w):
+        words = text.split()
+        lines = []
+        cur = ""
+        for w in words:
+            test = (cur + " " + w).strip()
+            if draw.textlength(test, font=font) <= max_w:
+                cur = test
+            else:
+                if cur:
+                    lines.append(cur)
+                cur = w
+        if cur:
+            lines.append(cur)
+        return lines
+
+    title_lines = wrap(title, f_title, W - 140)[:3]
+    y = H - 60 - len(title_lines) * 96 - (60 if subtitle else 20)
+    for line in title_lines:
+        draw.text((70, y), line, font=f_title, fill="#FFFFFF")
+        y += 96
+
+    if subtitle:
+        sub_lines = wrap(subtitle, f_sub, W - 140)[:2]
+        for line in sub_lines:
+            draw.text((70, y + 10), line, font=f_sub, fill="#9D4CDD")
+            y += 42
+
+    # Bottom rule
+    draw.rectangle([70, H - 50, 200, H - 48], fill="#9D4CDD")
+    draw.text((220, H - 60), "not4.sale · CATTOLICA, IT", font=f_kicker, fill="#A3A3A3")
+
+    buf = io.BytesIO()
+    img.save(buf, format="PNG", optimize=True)
+    buf.seek(0)
+    return StreamingResponse(buf, media_type="image/png", headers={"Cache-Control": "public, max-age=3600"})
+
+
+# ---------- Sitemap ----------
+SITE_URL = "https://not4.sale"
 SITE_ROUTES = [
-    "/",
-    "/servizi",
-    "/servizi/seo",
-    "/servizi/aeo",
-    "/servizi/geo",
-    "/servizi/growth-hacking",
-    "/servizi/brand-strategy",
-    "/servizi/performance-marketing",
-    "/servizi/social",
-    "/servizi/content",
-    "/servizi/web-design",
-    "/servizi/ai-marketing",
-    "/case-studies",
-    "/chi-siamo",
-    "/contatti",
+    "/", "/servizi",
+    "/servizi/seo", "/servizi/aeo", "/servizi/geo",
+    "/servizi/growth-hacking", "/servizi/brand-strategy",
+    "/servizi/performance-marketing", "/servizi/social",
+    "/servizi/content", "/servizi/web-design", "/servizi/ai-marketing",
+    "/case-studies", "/chi-siamo", "/contatti",
+    "/preventivo", "/insights",
+    # EN
+    "/en", "/en/services", "/en/case-studies", "/en/about", "/en/contact",
+    "/en/quote", "/en/insights",
 ]
 
 
 @api_router.get("/sitemap.xml")
 async def sitemap():
     today = datetime.now(timezone.utc).date().isoformat()
-    urls = "\n".join(
-        f"  <url><loc>{SITE_URL}{r}</loc><lastmod>{today}</lastmod><changefreq>weekly</changefreq>"
-        f"<priority>{'1.0' if r == '/' else '0.8'}</priority></url>"
-        for r in SITE_ROUTES
-    )
+    urls_xml = []
+    for r in SITE_ROUTES:
+        urls_xml.append(
+            f"  <url><loc>{SITE_URL}{r}</loc><lastmod>{today}</lastmod>"
+            f"<changefreq>weekly</changefreq>"
+            f"<priority>{'1.0' if r == '/' else '0.8'}</priority></url>"
+        )
+    # Articles
+    arts_it = await db.articles.find({"locale": "it"}, {"_id": 0, "slug": 1}).to_list(200)
+    arts_en = await db.articles.find({"locale": "en"}, {"_id": 0, "slug": 1}).to_list(200)
+    for a in arts_it:
+        urls_xml.append(f"  <url><loc>{SITE_URL}/insights/{a['slug']}</loc><lastmod>{today}</lastmod><priority>0.6</priority></url>")
+    for a in arts_en:
+        urls_xml.append(f"  <url><loc>{SITE_URL}/en/insights/{a['slug']}</loc><lastmod>{today}</lastmod><priority>0.6</priority></url>")
+
     xml = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        f"{urls}\n"
+        + "\n".join(urls_xml) + "\n"
         '</urlset>\n'
     )
     return Response(content=xml, media_type="application/xml")
 
 
-# Include the router in the main app
+# ============ APP WIRE ============
 app.include_router(api_router)
 
 app.add_middleware(
@@ -255,12 +645,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
+
+@app.on_event("startup")
+async def on_startup():
+    try:
+        await _seed_articles()
+    except Exception:
+        logger.exception("Article seed failed")
 
 
 @app.on_event("shutdown")

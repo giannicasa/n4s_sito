@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const Logo = ({ size = "md", className = "", asLink = true }) => {
+export const Logo = ({ size = "md", className = "", asLink = true, homePath = "/" }) => {
   const sizes = {
     sm: "text-base tracking-[0.18em]",
     md: "text-xl tracking-[0.22em]",
@@ -20,7 +20,7 @@ export const Logo = ({ size = "md", className = "", asLink = true }) => {
   );
   if (!asLink) return inner;
   return (
-    <Link to="/" aria-label="not4sale homepage" data-testid="brand-logo-link">
+    <Link to={homePath} aria-label="not4sale homepage" data-testid="brand-logo-link">
       {inner}
     </Link>
   );

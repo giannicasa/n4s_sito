@@ -1,0 +1,41 @@
+{
+  "summary": "Phase 2 full regression. Backend: 18/18 pytest cases pass (health, contact/lead CRUD, chat IT+EN with Claude Sonnet 4.5, quote/estimate IT incl. lead persistence + invalid email, articles list IT/EN (4+4), article detail IT/EN, article 404, /api/og PNG 1200x630, sitemap.xml with /preventivo, /insights, /en, /en/quote, and article URLs). Frontend: /insights renders 4 cards; clicking navigates to /insights/:slug; article markdown renders (h2 list strong em); CTAs quote+contact present (after article fetch). /preventivo wizard 4-step flow works end-to-end with live Claude estimate (8.000-12.000€/mese range, recommended approach, next steps, fit score, CTA href /contatti). /en homepage shows English nav (Home/Services/Insights/Case Studies/About/Contact); nav-lang-switch toggles to /. /en/services/seo renders English copy correctly. AIChat on /en gets clean English reply from Claude (passes locale='en'). robots.txt reachable with Sitemap directive. ONE BUG: react-helmet-async on home page is not injecting any of the SEOHead tags (og:image, alternate hreflang, og:type, twitter, html lang dynamic). The static index.html meta remain, but SEOHead's dynamic head injection is silently failing — affects every page that depends on Helmet for SEO.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [
+      {
+        "flow": "SEO head injection via react-helmet-async (SEOHead component)",
+        "issue": "On /, /insights and /en routes, document.head does NOT contain og:image, alternate hreflang, twitter:image, or any other tag rendered by <SEOHead/>. Only static tags from public/index.html are present. og:image pointing to /api/og?... is therefore absent (REQUIRED by phase-2 spec). html lang is overridden to empty by Helmet (locale value reaches SEOHead correctly but Helmet output never appears).",
+        "affected_selectors": ["meta[property=\"og:image\"]", "link[rel=\"alternate\"][hreflang]"]
+      }
+    ],
+    "design_issues": [
+      {"screen": "Global", "issues": ["Lenis warning persists: 'Please ensure that the container has a non-static position…' (cosmetic, no functional impact).", "WebGL GPU stall warnings from Hero3D ReadPixels (cosmetic perf log)."]}
+    ]
+  },
+  "test_report_links": [
+    "/app/backend/tests/backend_test.py",
+    "/app/test_reports/pytest/pytest_results.xml"
+  ],
+  "action_items": [
+    "HIGH: Debug react-helmet-async injection. Likely causes: (a) <HelmetProvider> wraps inside another StrictMode/Suspense boundary that strips children, (b) react 19 incompatibility — react-helmet-async historically has issues with React 19 concurrent rendering and may need a replacement like @vueuse/head equivalent, react-helmet, or `react-helmet-async@^2.0.5`. Quick check: open browser devtools, search head for any tags added by Helmet; if none, verify Helmet is mounted (try console: `document.head.querySelectorAll('[data-react-helmet]')`). Fix by upgrading or switching to a modern alternative (e.g., import { Helmet } from 'react-helmet' or use a HeadProvider pattern from a React-19-compatible lib).",
+    "MEDIUM (cosmetic): Add non-static position to Lenis wrapper container to silence console warning (carried over from iteration 1)."
+  ],
+  "critical_code_review_comments": [
+    "SEOHead/Helmet failure is silent — no console error, no fallback. Consider verifying Helmet output in a dev assertion or switching to a maintained alternative.",
+    "QuoteCalculator persists lead BEFORE LLM call — if LLM fails the lead still exists with empty estimate metadata. Acceptable design (lead capture priority) but worth a doc comment.",
+    "estimate_quote default `_default_fit` heuristic considers budget tokens '15', '40', etc. but matching `'k' in budget.lower()` plus substring match like '15' could miss ranges like '5-10k'. Minor; works because LLM nearly always returns valid JSON.",
+    "InsightDetailPage `notFound` state correctly handles 404 with a Link back to /insights — good.",
+    "Sitemap doesn't include hreflang alternates per URL (just lists IT and EN routes separately). Acceptable but could be enhanced with <xhtml:link rel=\"alternate\" hreflang=\"…\"/>.",
+    "AIChat data-testid is `ai-chat-toggle` / `ai-chat-input` / `ai-chat-send` (hyphenated) — review_request mentioned different naming; current implementation works."
+  ],
+  "updated_files": ["/app/backend/tests/backend_test.py"],
+  "success_rate": {"backend": "100%", "frontend": "~92% (SEO meta missing)"},
+  "test_credentials": "N/A — no auth in this app",
+  "seed_data_creation": "Created 1 TEST_ lead via /api/contact and 1 quote lead via /api/quote/estimate (Italian, 5-10k budget) and 1 quote lead via /preventivo UI submission. Created 2 chat sessions (IT + EN) with 2 messages each.",
+  "retest_needed": true,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Backend pytest suite at /app/backend/tests/backend_test.py runs 18 tests in ~18s and validates ALL Phase 2 endpoints. The single open issue is SEOHead/react-helmet-async not injecting tags — verify by curl-rendering the SPA (it'll show only index.html static meta) OR via Playwright `document.head.innerHTML` (no og:image present). Quote wizard testids prefix `quote-objective-`, `quote-service-`, `quote-budget-`, `quote-timeline-`, `quote-input-name|email`, `quote-submit`, `quote-result`, `quote-result-cta`. Insight detail CTAs: `insight-cta-quote`, `insight-cta-contact` — both present but only AFTER article fetch resolves (~500ms after navigation); wait for `[data-testid=\"insight-title\"]` first. AIChat testids: `ai-chat-toggle|widget|input|send`, messages `chat-message-{role}`. Language switcher testid: not exposed via `nav-lang-switch` in original spec — actual implementation uses different selector but works (clicking the Globe/EN button navigates correctly).",
+  "rca of the issue": "RCA — SEOHead not injecting: react-helmet-async@latest may not be fully compatible with React 19's concurrent rendering. The <HelmetProvider> wraps the entire app correctly in App.js, and useLocale returns the correct 'it'/'en' value, but the SideEffects collector in helmet-async fails to push tags to document.head. Reproduction: open https://scroll-hero-4.preview.emergentagent.com/ → DevTools → Elements → <head> shows only the static tags from public/index.html, with no og:image/api/og or hreflang. Same on /insights/:slug. Mitigation: upgrade `react-helmet-async` to a version that supports React 19 (currently 2.0.5 supports React 18 only — pin to a community fork or migrate to `@unhead/react` or `react-helmet`), OR roll a tiny custom hook that imperatively mutates document.head from useEffect."
+}
