@@ -43,6 +43,19 @@
 - Imprenditore locale / professionale (presenza digitale premium)
 - Visitatore IT/EN che valuta partner marketing
 
+### Phase 3 (Dec 2025) — AI Auto-Audit Agent
+- **Quote → mini-audit pipeline** in background (FastAPI BackgroundTasks):
+  1. Quote submit → lead saved + audit job scheduled
+  2. Screenshot via Microlink (free, no key) of `website_url`
+  3. Image base64 → Claude Sonnet 4.5 **vision** (`ImageContent`) with rebel system prompt → JSON `{headline, observations[3], quick_win}`
+  4. Branded HTML+text email rendered (logo `[NOT4SALE]`, screenshot embedded, 3 observations, quick win, estimate range + fit score, CTA)
+  5. Sent via **Resend** API; status persisted in `db.audit_jobs`
+- New endpoint `GET /api/quote/audit/{lead_id}` for status polling
+- Quote wizard step 3 gains `website_url` field + pre-submit notice
+- Result page gains "Bonus · mini-audit AI" banner
+- End-to-end timing measured: ~27s from quote submit to email sent
+- **DOMAIN VERIFICATION**: `not4.sale` is NOT yet verified in Resend → emails work only to the Resend account owner email until DNS records (SPF/DKIM) are added. To verify: Resend dashboard → Domains → Add `not4.sale` → add the 3 DNS records to your registrar.
+
 ## Implemented (Dec 2025)
 - Backend: 11 endpoints REST + Claude chat IT/EN + quote estimator + article CMS + dynamic OG + bilingual sitemap
 - Frontend: 18 route, GSAP horizontal pin, full IT+EN i18n, dynamic OG meta per page, JSON-LD per page type (ProfessionalService / Service+FAQPage / Article / ItemList)

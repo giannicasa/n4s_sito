@@ -1,18 +1,22 @@
-from fastapi import FastAPI, APIRouter, HTTPException, Query
+from fastapi import FastAPI, APIRouter, HTTPException, Query, BackgroundTasks
 from fastapi.responses import Response, StreamingResponse
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
 import io
+import base64
+import asyncio
 import logging
 from pathlib import Path
-from pydantic import BaseModel, Field, ConfigDict, EmailStr
+from pydantic import BaseModel, Field, ConfigDict, EmailStr, HttpUrl
 from typing import List, Optional, Literal
 import uuid
 from datetime import datetime, timezone
+import httpx
+import resend
 
-from emergentintegrations.llm.chat import LlmChat, UserMessage
+from emergentintegrations.llm.chat import LlmChat, UserMessage, ImageContent
 from PIL import Image, ImageDraw, ImageFont
 
 
@@ -29,6 +33,12 @@ client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
 
 EMERGENT_LLM_KEY = os.environ.get('EMERGENT_LLM_KEY', '')
+RESEND_API_KEY = os.environ.get('RESEND_API_KEY', '')
+SENDER_EMAIL = os.environ.get('SENDER_EMAIL', 'onboarding@resend.dev')
+AUDIT_SITE_URL = os.environ.get('AUDIT_SITE_URL', 'https://not4.sale')
+
+if RESEND_API_KEY:
+    resend.api_key = RESEND_API_KEY
 
 app = FastAPI(title="not4sale API", version="1.1.0")
 api_router = APIRouter(prefix="/api")
@@ -91,6 +101,7 @@ class QuoteRequest(BaseModel):
     name: str = Field(..., min_length=1, max_length=120)
     email: EmailStr
     company: Optional[str] = Field(default=None, max_length=120)
+    website_url: Optional[str] = Field(default=None, max_length=500)
     notes: Optional[str] = Field(default=None, max_length=2000)
     locale: Optional[str] = Field(default="it")
 
@@ -101,6 +112,7 @@ class QuoteResponse(BaseModel):
     recommended_approach: str
     next_steps: List[str]
     fit_score: int  # 0-100
+    audit_scheduled: bool = False
 
 
 class Article(BaseModel):
@@ -266,7 +278,7 @@ QUOTE_SYSTEM_EN = (
 
 
 @api_router.post("/quote/estimate", response_model=QuoteResponse)
-async def estimate_quote(payload: QuoteRequest):
+async def estimate_quote(payload: QuoteRequest, background_tasks: BackgroundTasks):
     if not EMERGENT_LLM_KEY:
         raise HTTPException(status_code=500, detail="LLM key not configured")
 
@@ -277,13 +289,14 @@ async def estimate_quote(payload: QuoteRequest):
         company=payload.company,
         service=", ".join(payload.services) if payload.services else None,
         budget=payload.budget,
-        message=(payload.notes or "") + f"\n\n[OBIETTIVO] {payload.objective}\n[TIMELINE] {payload.timeline}",
+        message=(payload.notes or "") + f"\n\n[OBIETTIVO] {payload.objective}\n[TIMELINE] {payload.timeline}\n[URL] {payload.website_url or '-'}",
         source="quote-calculator",
         locale=payload.locale or "it",
         extra={
             "objective": payload.objective,
             "services": payload.services,
             "timeline": payload.timeline,
+            "website_url": payload.website_url,
         },
     )
     doc = lead.model_dump()
@@ -317,31 +330,61 @@ async def estimate_quote(payload: QuoteRequest):
     text = raw if isinstance(raw, str) else str(raw)
     m = _re.search(r"\{[\s\S]*\}", text)
     if not m:
-        # Fallback deterministic estimate
-        return QuoteResponse(
+        result = QuoteResponse(
             lead_id=lead.id,
             estimate_range=_default_range(payload.budget),
             recommended_approach=_default_approach(payload),
             next_steps=_default_steps(payload.locale or 'it'),
             fit_score=_default_fit(payload),
         )
-    try:
-        data = _json.loads(m.group(0))
-        return QuoteResponse(
+    else:
+        try:
+            data = _json.loads(m.group(0))
+            result = QuoteResponse(
+                lead_id=lead.id,
+                estimate_range=str(data.get('estimate_range', _default_range(payload.budget))),
+                recommended_approach=str(data.get('recommended_approach', _default_approach(payload))),
+                next_steps=[str(x) for x in (data.get('next_steps') or _default_steps(payload.locale or 'it'))][:5],
+                fit_score=int(data.get('fit_score', _default_fit(payload))),
+            )
+        except Exception:
+            result = QuoteResponse(
+                lead_id=lead.id,
+                estimate_range=_default_range(payload.budget),
+                recommended_approach=_default_approach(payload),
+                next_steps=_default_steps(payload.locale or 'it'),
+                fit_score=_default_fit(payload),
+            )
+
+    # Schedule the auto-audit email if we have a URL + Resend configured
+    audit_scheduled = False
+    if payload.website_url and RESEND_API_KEY:
+        background_tasks.add_task(
+            _run_audit_job,
             lead_id=lead.id,
-            estimate_range=str(data.get('estimate_range', _default_range(payload.budget))),
-            recommended_approach=str(data.get('recommended_approach', _default_approach(payload))),
-            next_steps=[str(x) for x in (data.get('next_steps') or _default_steps(payload.locale or 'it'))][:5],
-            fit_score=int(data.get('fit_score', _default_fit(payload))),
+            name=payload.name,
+            email=payload.email,
+            website_url=_normalize_url(payload.website_url),
+            company=payload.company,
+            objective=payload.objective,
+            services=payload.services,
+            budget=payload.budget,
+            locale=payload.locale or "it",
+            quote=result.model_dump(),
         )
-    except Exception:
-        return QuoteResponse(
-            lead_id=lead.id,
-            estimate_range=_default_range(payload.budget),
-            recommended_approach=_default_approach(payload),
-            next_steps=_default_steps(payload.locale or 'it'),
-            fit_score=_default_fit(payload),
-        )
+        audit_scheduled = True
+
+    result.audit_scheduled = audit_scheduled
+    return result
+
+
+def _normalize_url(u: str) -> str:
+    u = (u or "").strip()
+    if not u:
+        return u
+    if not u.startswith("http://") and not u.startswith("https://"):
+        return "https://" + u
+    return u
 
 
 def _default_range(budget: str) -> str:
@@ -369,6 +412,409 @@ def _default_fit(p: QuoteRequest) -> int:
     if p.notes and len(p.notes) > 80:
         score += 5
     return max(0, min(100, score))
+
+
+# ============ AUTO-AUDIT JOB ============
+
+AUDIT_SYSTEM_IT = (
+    "Sei un senior strategist di not4sale. Stai analizzando lo screenshot della homepage di un potenziale cliente. "
+    "Produci un mini-audit ONESTO e CONCRETO. NON essere generico. Riferisci dettagli che vedi davvero nello screenshot. "
+    "Rispondi SOLO con JSON valido contenente: "
+    "  observations: array di esattamente 3 oggetti { title (max 60 char), body (max 200 char, concreto, fa riferimento a cosa vedi) }, "
+    "  quick_win: { title (max 60 char), body (max 250 char, 1 azione che possono mettere a terra in 7 giorni) }, "
+    "  headline (1 frase di 12-18 parole che riassume il problema principale). "
+    "Tono diretto, ribelle, mai 'leccaculo'. Niente complimenti vuoti, niente 'il vostro brand è straordinario'. "
+    "Niente promesse di numeri. Mai inventare. Se lo screenshot è povero/illeggibile, dillo onestamente."
+)
+
+AUDIT_SYSTEM_EN = (
+    "You are a senior strategist at not4sale. You're analyzing the homepage screenshot of a prospect. "
+    "Produce an HONEST, CONCRETE mini-audit. Do NOT be generic. Refer to details you actually see in the screenshot. "
+    "Reply ONLY with valid JSON: "
+    "  observations: array of exactly 3 objects { title (max 60 chars), body (max 200 chars, concrete, references what you see) }, "
+    "  quick_win: { title (max 60 chars), body (max 250 chars, 1 action they can ship in 7 days) }, "
+    "  headline (1 sentence, 12-18 words, summarizing the main issue). "
+    "Tone: direct, bold, never sycophantic. No empty compliments, no 'your brand is amazing'. "
+    "No promises of numbers. Never invent. If the screenshot is poor/unreadable, say so honestly."
+)
+
+
+async def _microlink_screenshot(url: str) -> Optional[bytes]:
+    """Fetch a screenshot of `url` via Microlink free API. Returns PNG/JPG bytes or None."""
+    api = "https://api.microlink.io/"
+    params = {
+        "url": url,
+        "screenshot": "true",
+        "meta": "false",
+        "embed": "screenshot.url",
+        "viewport.width": "1280",
+        "viewport.height": "720",
+        "waitForTimeout": "1500",
+    }
+    try:
+        async with httpx.AsyncClient(timeout=45) as hc:
+            # First request returns redirect to image when embed=screenshot.url
+            r = await hc.get(api, params=params, follow_redirects=True)
+            if r.status_code != 200 or not r.content:
+                logger.warning(f"Microlink screenshot failed status={r.status_code} url={url}")
+                return None
+            return r.content
+    except Exception as e:
+        logger.exception(f"Microlink screenshot error: {e}")
+        return None
+
+
+def _safe_b64_image(data: bytes, max_bytes: int = 3_500_000) -> Optional[str]:
+    """Resize/recompress the image so it fits within Anthropic image size limits."""
+    try:
+        im = Image.open(io.BytesIO(data)).convert("RGB")
+        # Resize to max 1280x900 keeping aspect
+        im.thumbnail((1280, 900))
+        buf = io.BytesIO()
+        quality = 82
+        while quality >= 55:
+            buf.seek(0)
+            buf.truncate(0)
+            im.save(buf, format="JPEG", quality=quality, optimize=True)
+            if buf.tell() <= max_bytes:
+                break
+            quality -= 8
+        return base64.b64encode(buf.getvalue()).decode("ascii")
+    except Exception:
+        logger.exception("Image encode failed")
+        return None
+
+
+def _audit_email_html(name: str, website_url: str, screenshot_url: str, audit: dict, locale: str, quote: dict) -> str:
+    """Render branded HTML email with screenshot + 3 observations + quick win + CTA."""
+    L = lambda it, en: en if locale == "en" else it  # noqa: E731
+    obs_html = ""
+    for i, o in enumerate(audit.get("observations", [])[:3]):
+        obs_html += f'''
+        <tr>
+          <td style="padding:18px 0;border-top:1px solid rgba(255,255,255,0.08);">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+              <tr>
+                <td width="42" valign="top" style="font-family:'JetBrains Mono', monospace; font-size:11px; color:#9D4CDD; letter-spacing:0.18em; padding-top:4px;">0{i+1}</td>
+                <td valign="top">
+                  <div style="font-family:'Cabinet Grotesk', Arial, sans-serif; font-weight:800; font-size:18px; color:#ffffff; text-transform:uppercase; letter-spacing:-0.01em; line-height:1.15; margin-bottom:6px;">{o.get('title','')}</div>
+                  <div style="font-family:Arial, sans-serif; font-size:15px; line-height:1.6; color:#cfcfcf;">{o.get('body','')}</div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        '''
+    qw = audit.get("quick_win") or {}
+    headline = audit.get("headline") or L("Una prima lettura della tua homepage.", "A first read of your homepage.")
+    estimate = quote.get("estimate_range") or "-"
+    fit = quote.get("fit_score") or 0
+
+    site_link = website_url
+
+    return f"""<!doctype html>
+<html lang="{locale}"><head><meta charset="utf-8" />
+<title>not4sale · mini-audit</title></head>
+<body style="margin:0;padding:0;background:#050505;font-family:Arial, sans-serif;color:#ffffff;">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#050505" style="background:#050505;">
+  <tr><td align="center" style="padding:40px 16px;">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:640px;background:#0a0a0a;border:1px solid rgba(157,76,221,0.25);">
+
+      <tr><td style="padding:32px 32px 8px 32px;">
+        <div style="font-family:'Cabinet Grotesk', Arial, sans-serif; font-weight:900; letter-spacing:0.16em; font-size:18px; color:#ffffff;">
+          <span style="color:#9D4CDD;">[</span>NOT4SALE<span style="color:#9D4CDD;">]</span>
+        </div>
+        <div style="font-family:'JetBrains Mono', monospace; font-size:10px; color:#9D4CDD; letter-spacing:0.28em; text-transform:uppercase; margin-top:18px;">
+          {L('Mini-audit · gratuito', 'Mini-audit · free')}
+        </div>
+      </td></tr>
+
+      <tr><td style="padding:8px 32px 24px 32px;">
+        <h1 style="font-family:'Cabinet Grotesk', Arial, sans-serif; font-weight:900; font-size:34px; line-height:1.05; color:#ffffff; margin:8px 0 16px; text-transform:uppercase; letter-spacing:-0.02em;">
+          {L('Ciao', 'Hi')} {name.split(' ')[0]}<span style="color:#9D4CDD;">.</span>
+        </h1>
+        <p style="font-family:Arial, sans-serif; font-size:16px; line-height:1.65; color:#cfcfcf; margin:0;">
+          {headline}
+        </p>
+      </td></tr>
+
+      <tr><td style="padding:0 32px 24px 32px;">
+        <a href="{site_link}" target="_blank" style="display:block;">
+          <img src="{screenshot_url}" alt="Screenshot {site_link}" width="576" style="display:block;width:100%;max-width:576px;border:1px solid rgba(255,255,255,0.1);" />
+        </a>
+        <div style="font-family:'JetBrains Mono', monospace; font-size:10px; color:#737373; letter-spacing:0.18em; text-transform:uppercase; margin-top:10px;">
+          {site_link}
+        </div>
+      </td></tr>
+
+      <tr><td style="padding:8px 32px 16px 32px;">
+        <div style="font-family:'JetBrains Mono', monospace; font-size:10px; color:#9D4CDD; letter-spacing:0.28em; text-transform:uppercase; padding-bottom:8px;">
+          {L('3 osservazioni', '3 observations')}
+        </div>
+        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+          {obs_html}
+        </table>
+      </td></tr>
+
+      <tr><td style="padding:24px 32px;">
+        <div style="border:1px solid #9D4CDD; padding:22px; background:rgba(157,76,221,0.08);">
+          <div style="font-family:'JetBrains Mono', monospace; font-size:10px; color:#9D4CDD; letter-spacing:0.28em; text-transform:uppercase;">
+            {L('Quick win · 7 giorni', 'Quick win · 7 days')}
+          </div>
+          <div style="font-family:'Cabinet Grotesk', Arial, sans-serif; font-weight:800; font-size:22px; line-height:1.15; color:#ffffff; text-transform:uppercase; letter-spacing:-0.01em; margin:10px 0 8px;">
+            {qw.get('title', L('Una mossa subito attuabile.', 'One immediate move.'))}
+          </div>
+          <div style="font-family:Arial, sans-serif; font-size:15px; line-height:1.65; color:#e5e5e5;">
+            {qw.get('body','')}
+          </div>
+        </div>
+      </td></tr>
+
+      <tr><td style="padding:8px 32px 24px 32px;">
+        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+          <tr>
+            <td style="padding:14px 0;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);" align="left">
+              <div style="font-family:'JetBrains Mono', monospace; font-size:10px; color:#737373; letter-spacing:0.24em; text-transform:uppercase;">{L('Range stima', 'Estimate range')}</div>
+              <div style="font-family:'Cabinet Grotesk', Arial, sans-serif; font-weight:800; font-size:22px; color:#ffffff;">{estimate}</div>
+            </td>
+            <td style="padding:14px 0;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);" align="right">
+              <div style="font-family:'JetBrains Mono', monospace; font-size:10px; color:#737373; letter-spacing:0.24em; text-transform:uppercase;">{L('Fit score', 'Fit score')}</div>
+              <div style="font-family:'Cabinet Grotesk', Arial, sans-serif; font-weight:800; font-size:22px; color:#9D4CDD;">{fit}/100</div>
+            </td>
+          </tr>
+        </table>
+      </td></tr>
+
+      <tr><td style="padding:8px 32px 36px 32px;" align="center">
+        <a href="{AUDIT_SITE_URL}{('/en/contact' if locale=='en' else '/contatti')}?utm_source=email&utm_medium=audit&utm_campaign=quote" target="_blank"
+           style="display:inline-block;background:#ffffff;color:#050505;font-family:'Cabinet Grotesk', Arial, sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:0.18em;font-size:13px;padding:18px 28px;text-decoration:none;">
+          {L('Prenota una call · 30 min', 'Book a call · 30 min')}
+        </a>
+        <div style="font-family:Arial, sans-serif; font-size:13px; color:#737373; margin-top:18px; line-height:1.6;">
+          {L("Questa email è un mini-assaggio. L'audit completo è dentro la call.", 'This email is a quick taste. The full audit lives inside the call.')}
+        </div>
+      </td></tr>
+
+      <tr><td style="padding:18px 32px;border-top:1px solid rgba(255,255,255,0.08);background:#050505;">
+        <div style="font-family:'JetBrains Mono', monospace; font-size:10px; color:#737373; letter-spacing:0.24em; text-transform:uppercase;">
+          not4sale · Cattolica (RN), {L('Italia', 'Italy')} · 43.962°N · 12.737°E
+        </div>
+      </td></tr>
+
+    </table>
+  </td></tr>
+</table>
+</body></html>"""
+
+
+def _audit_email_text(name: str, audit: dict, quote: dict, locale: str, website_url: str) -> str:
+    L = lambda it, en: en if locale == "en" else it  # noqa: E731
+    obs = "\n\n".join([f"0{i+1}  {o.get('title','')}\n    {o.get('body','')}" for i, o in enumerate(audit.get("observations", [])[:3])])
+    qw = audit.get("quick_win") or {}
+    return f"""[NOT4SALE] {L('Mini-audit gratuito', 'Free mini-audit')}
+
+{L('Ciao', 'Hi')} {name.split(' ')[0]},
+
+{audit.get('headline','')}
+
+{L('Sito analizzato', 'Analyzed site')}: {website_url}
+
+— {L('3 osservazioni', '3 observations')} —
+
+{obs}
+
+— {L('Quick win · 7 giorni', 'Quick win · 7 days')} —
+{qw.get('title','')}
+{qw.get('body','')}
+
+{L('Range stima', 'Estimate range')}: {quote.get('estimate_range','-')}
+{L('Fit score', 'Fit score')}: {quote.get('fit_score',0)}/100
+
+{L('Prenota una call', 'Book a call')}: {AUDIT_SITE_URL}{('/en/contact' if locale=='en' else '/contatti')}
+
+—
+not4sale · Cattolica (RN), {L('Italia', 'Italy')}
+"""
+
+
+async def _claude_vision_audit(image_b64: str, website_url: str, locale: str, context: dict) -> Optional[dict]:
+    import json as _json
+    import re as _re
+    sys_p = AUDIT_SYSTEM_EN if locale == 'en' else AUDIT_SYSTEM_IT
+    chat_client = LlmChat(
+        api_key=EMERGENT_LLM_KEY,
+        session_id=f"audit-{uuid.uuid4().hex[:8]}",
+        system_message=sys_p,
+    ).with_model("anthropic", "claude-sonnet-4-5-20250929")
+
+    user_text = (
+        f"Sito analizzato: {website_url}\n"
+        f"Settore/contesto dichiarato dall'utente: {context.get('objective','-')}\n"
+        f"Servizi che vorrebbe attivare: {', '.join(context.get('services') or []) or '-'}\n"
+        f"Budget indicativo: {context.get('budget','-')}\n\n"
+        "Analizza lo screenshot allegato della homepage e produci il JSON come da istruzioni di sistema."
+    ) if locale != 'en' else (
+        f"Analyzed site: {website_url}\n"
+        f"User-stated context/goal: {context.get('objective','-')}\n"
+        f"Services they want: {', '.join(context.get('services') or []) or '-'}\n"
+        f"Indicative budget: {context.get('budget','-')}\n\n"
+        "Analyze the attached homepage screenshot and produce the JSON per system instructions."
+    )
+
+    try:
+        msg = UserMessage(text=user_text, file_contents=[ImageContent(image_base64=image_b64)])
+        raw = await chat_client.send_message(msg)
+    except Exception as e:
+        logger.exception(f"Claude vision audit failed: {e}")
+        return None
+
+    text = raw if isinstance(raw, str) else str(raw)
+    m = _re.search(r"\{[\s\S]*\}", text)
+    if not m:
+        return None
+    try:
+        return _json.loads(m.group(0))
+    except Exception:
+        logger.warning("Audit JSON parse failed; raw=%s", text[:300])
+        return None
+
+
+def _send_resend(to_email: str, subject: str, html: str, text: str, reply_to: Optional[str] = None) -> Optional[str]:
+    """Synchronous send (called from asyncio.to_thread). Returns email id or None."""
+    if not RESEND_API_KEY:
+        return None
+    params = {
+        "from": f"not4sale <{SENDER_EMAIL}>",
+        "to": [to_email],
+        "subject": subject,
+        "html": html,
+        "text": text,
+    }
+    if reply_to:
+        params["reply_to"] = reply_to
+    try:
+        res = resend.Emails.send(params)
+        return res.get("id") if isinstance(res, dict) else None
+    except Exception as e:
+        logger.exception(f"Resend send failed: {e}")
+        return None
+
+
+async def _run_audit_job(
+    lead_id: str,
+    name: str,
+    email: str,
+    website_url: str,
+    company: Optional[str],
+    objective: str,
+    services: List[str],
+    budget: str,
+    locale: str,
+    quote: dict,
+):
+    job_id = str(uuid.uuid4())
+    job_doc = {
+        "id": job_id,
+        "lead_id": lead_id,
+        "email": email,
+        "website_url": website_url,
+        "locale": locale,
+        "status": "running",
+        "started_at": datetime.now(timezone.utc).isoformat(),
+    }
+    await db.audit_jobs.insert_one(job_doc)
+
+    error_msg = None
+    screenshot_bytes = None
+    audit_data = None
+    email_id = None
+    screenshot_remote_url = None
+
+    try:
+        # 1) Screenshot
+        screenshot_bytes = await _microlink_screenshot(website_url)
+        if not screenshot_bytes:
+            error_msg = "screenshot_failed"
+        else:
+            # Try to also get a hosted URL for embedding in the email
+            # Microlink also returns JSON with a public URL when called without embed=
+            try:
+                async with httpx.AsyncClient(timeout=30) as hc:
+                    r = await hc.get("https://api.microlink.io/", params={
+                        "url": website_url, "screenshot": "true", "meta": "false",
+                        "viewport.width": "1280", "viewport.height": "720",
+                        "waitForTimeout": "1500",
+                    })
+                    if r.status_code == 200:
+                        payload = r.json()
+                        screenshot_remote_url = (
+                            payload.get("data", {}).get("screenshot", {}).get("url")
+                        )
+            except Exception:
+                pass
+
+        # 2) Claude vision
+        if screenshot_bytes:
+            b64 = _safe_b64_image(screenshot_bytes)
+            if b64:
+                audit_data = await _claude_vision_audit(
+                    image_b64=b64,
+                    website_url=website_url,
+                    locale=locale,
+                    context={"objective": objective, "services": services, "budget": budget},
+                )
+            if not audit_data:
+                error_msg = error_msg or "vision_failed"
+
+        # 3) Build + send email
+        if audit_data and screenshot_remote_url:
+            subject = (
+                f"[NOT4SALE] Mini-audit · {website_url}" if locale != "en"
+                else f"[NOT4SALE] Mini-audit · {website_url}"
+            )
+            html = _audit_email_html(
+                name=name,
+                website_url=website_url,
+                screenshot_url=screenshot_remote_url,
+                audit=audit_data,
+                locale=locale,
+                quote=quote,
+            )
+            text = _audit_email_text(
+                name=name, audit=audit_data, quote=quote, locale=locale, website_url=website_url,
+            )
+            email_id = await asyncio.to_thread(
+                _send_resend, email, subject, html, text, "hello@not4.sale"
+            )
+            if not email_id:
+                error_msg = error_msg or "email_failed"
+        elif not error_msg:
+            error_msg = "no_data"
+
+    except Exception as e:
+        logger.exception(f"Audit job failed for lead={lead_id}: {e}")
+        error_msg = str(e)[:200]
+
+    finally:
+        await db.audit_jobs.update_one(
+            {"id": job_id},
+            {"$set": {
+                "status": "sent" if email_id else "failed",
+                "email_id": email_id,
+                "screenshot_url": screenshot_remote_url,
+                "audit_data": audit_data,
+                "error": error_msg,
+                "finished_at": datetime.now(timezone.utc).isoformat(),
+            }}
+        )
+
+
+@api_router.get("/quote/audit/{lead_id}")
+async def get_audit_status(lead_id: str):
+    job = await db.audit_jobs.find_one({"lead_id": lead_id}, {"_id": 0}, sort=[("started_at", -1)])
+    if not job:
+        return {"status": "none"}
+    return job
 
 
 # ---------- Articles ----------

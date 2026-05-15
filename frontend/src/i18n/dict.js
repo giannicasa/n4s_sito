@@ -124,6 +124,7 @@ export const DICT = {
         name: "Nome e cognome",
         email: "Email",
         company: "Azienda",
+        website: "URL del tuo sito (opzionale, ma sblocca il mini-audit AI)",
         notes: "Note (opzionale)"
       },
       objectives: ["Crescere fatturato", "Lanciare un brand", "Riposizionare", "Internazionalizzare", "Generare lead B2B", "Ridurre CAC"],
@@ -141,7 +142,11 @@ export const DICT = {
         fitLabel: "Fit score",
         fitHint: "Quanto questo progetto è in target per noi",
         cta: "Prenota una call",
-        sentInfo: "Abbiamo già ricevuto la tua richiesta. Ti ricontattiamo entro 24h."
+        sentInfo: "Abbiamo già ricevuto la tua richiesta. Ti ricontattiamo entro 24h.",
+        auditKicker: "Bonus · mini-audit AI",
+        auditTitle: "Stiamo scrivendo il tuo mini-audit.",
+        auditBody: "Ti arriva via email entro 60 secondi: 1 screenshot del tuo sito + 3 osservazioni concrete dal nostro agente Claude. Niente fuffa.",
+        auditPending: "Controlla la tua email tra poco (anche lo spam)."
       }
     },
     insights: {
@@ -294,6 +299,7 @@ export const DICT = {
         name: "Full name",
         email: "Email",
         company: "Company",
+        website: "Your website URL (optional — unlocks the AI mini-audit)",
         notes: "Notes (optional)"
       },
       objectives: ["Grow revenue", "Launch a brand", "Reposition", "Go international", "Generate B2B leads", "Reduce CAC"],
@@ -311,7 +317,11 @@ export const DICT = {
         fitLabel: "Fit score",
         fitHint: "How aligned this project is with us",
         cta: "Book a call",
-        sentInfo: "We've already received your request. We'll get back to you within 24h."
+        sentInfo: "We've already received your request. We'll get back to you within 24h.",
+        auditKicker: "Bonus · AI mini-audit",
+        auditTitle: "We're writing your mini-audit.",
+        auditBody: "You'll get an email within 60 seconds: 1 screenshot of your site + 3 concrete observations from our Claude agent. No fluff.",
+        auditPending: "Check your inbox in a moment (and spam)."
       }
     },
     insights: {

@@ -24,6 +24,7 @@ const QuoteCalculatorPage = () => {
     name: "",
     email: "",
     company: "",
+    website_url: "",
     notes: ""
   });
   const [loading, setLoading] = useState(false);
@@ -241,6 +242,7 @@ const QuoteCalculatorPage = () => {
                           <FieldQ label={t.quote.labels.name + " *"} value={form.name} onChange={(v) => update("name", v)} testId="quote-input-name" />
                           <FieldQ label={t.quote.labels.email + " *"} value={form.email} onChange={(v) => update("email", v)} type="email" testId="quote-input-email" />
                           <FieldQ label={t.quote.labels.company} value={form.company} onChange={(v) => update("company", v)} testId="quote-input-company" />
+                          <FieldQ label={t.quote.labels.website} value={form.website_url} onChange={(v) => update("website_url", v)} placeholder="https://" testId="quote-input-website" />
                         </div>
                         <div>
                           <label className="block text-[10px] font-mono uppercase tracking-[0.28em] text-neutral-500 mb-3">
@@ -254,6 +256,16 @@ const QuoteCalculatorPage = () => {
                             className="w-full bg-transparent border-b border-white/15 focus:border-violet-500 outline-none text-white py-3 text-lg"
                           />
                         </div>
+                        {form.website_url && (
+                          <div className="border border-violet-500/30 bg-violet-900/10 p-4 flex items-start gap-3">
+                            <Sparkles size={16} className="text-violet-400 mt-0.5 shrink-0" />
+                            <p className="text-sm text-neutral-200 leading-relaxed">
+                              {locale === "en"
+                                ? "Nice. After you submit, our AI agent will email you a mini-audit of your homepage within 60 seconds — 1 screenshot + 3 concrete observations."
+                                : "Bene. Dopo l'invio, il nostro agente AI ti manderà via email entro 60 secondi un mini-audit della tua homepage — 1 screenshot + 3 osservazioni concrete."}
+                            </p>
+                          </div>
+                        )}
                       </div>
                     )}
                   </motion.div>
@@ -353,6 +365,26 @@ const QuoteCalculatorPage = () => {
                   </Link>
                 </div>
               </div>
+
+              {result.audit_scheduled && (
+                <div className="mt-12 border border-violet-500/40 bg-violet-900/10 p-6 md:p-8" data-testid="quote-audit-banner">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-sm bg-violet-500 grid place-items-center text-white animate-pulse-violet shrink-0">
+                      <Sparkles size={18} />
+                    </div>
+                    <div className="flex-1">
+                      <div className="text-[10px] font-mono uppercase tracking-[0.28em] text-violet-400 mb-2">
+                        {t.quote.result.auditKicker}
+                      </div>
+                      <h3 className="font-display text-2xl md:text-3xl font-black uppercase tracking-tight text-white leading-none mb-3">
+                        {t.quote.result.auditTitle}
+                      </h3>
+                      <p className="text-neutral-300 leading-relaxed mb-2">{t.quote.result.auditBody}</p>
+                      <p className="text-xs font-mono uppercase tracking-[0.2em] text-violet-400">{t.quote.result.auditPending}</p>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </div>
@@ -361,7 +393,7 @@ const QuoteCalculatorPage = () => {
   );
 };
 
-const FieldQ = ({ label, value, onChange, type = "text", testId }) => (
+const FieldQ = ({ label, value, onChange, type = "text", testId, placeholder }) => (
   <div>
     <label className="block text-[10px] font-mono uppercase tracking-[0.28em] text-neutral-500 mb-3">{label}</label>
     <input
@@ -369,7 +401,8 @@ const FieldQ = ({ label, value, onChange, type = "text", testId }) => (
       value={value}
       onChange={(e) => onChange(e.target.value)}
       data-testid={testId}
-      className="w-full bg-transparent border-b border-white/15 focus:border-violet-500 outline-none text-white py-3 text-lg transition-colors"
+      placeholder={placeholder}
+      className="w-full bg-transparent border-b border-white/15 focus:border-violet-500 outline-none text-white py-3 text-lg transition-colors placeholder-neutral-700"
     />
   </div>
 );
