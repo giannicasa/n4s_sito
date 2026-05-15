@@ -54,9 +54,9 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-24 mb-10">
+        <div className="mt-24 mb-10 overflow-hidden">
           <Link to={r.home} aria-label="not4sale" className="block group" data-testid="footer-wordmark">
-            <span className="font-display font-black uppercase leading-none tracking-[-0.04em] block text-white text-[26vw] md:text-[18vw]">
+            <span className="font-display font-black uppercase leading-none tracking-[-0.06em] md:tracking-[-0.04em] block text-white text-[15vw] md:text-[18vw] whitespace-nowrap">
               <span className="text-violet-500">[</span>NOT4SALE<span className="text-violet-500">]</span>
             </span>
           </Link>
