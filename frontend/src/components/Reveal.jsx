@@ -17,9 +17,9 @@ export const Reveal = ({ children, delay = 0, y = 32, className = "", as: Tag = 
   );
 };
 
-// Line-by-line "curtain" reveal that triggers when the parent enters the viewport.
-// Uses whileInView with amount: 0 so the IntersectionObserver fires reliably even when
-// inner spans live inside overflow-hidden parents.
+// Line-by-line "curtain" reveal. The inner motion.span starts at y: 110% (below the
+// overflow-hidden parent), so IntersectionObserver-based whileInView can't see it.
+// Fire on mount instead — animation runs immediately after layout.
 export const RevealLines = ({ lines, className = "", baseDelay = 0 }) => (
   <span className={className}>
     {lines.map((line, i) => (
@@ -27,9 +27,8 @@ export const RevealLines = ({ lines, className = "", baseDelay = 0 }) => (
         <motion.span
           className="block"
           initial={{ y: "110%" }}
-          whileInView={{ y: "0%" }}
-          viewport={{ once: true, amount: 0 }}
-          transition={{ duration: 0.95, delay: baseDelay + i * 0.08, ease: [0.2, 0.65, 0.2, 1] }}
+          animate={{ y: "0%" }}
+          transition={{ duration: 0.9, delay: baseDelay + i * 0.08, ease: [0.2, 0.65, 0.2, 1] }}
         >
           {line}
         </motion.span>
