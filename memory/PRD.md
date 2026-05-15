@@ -56,6 +56,16 @@
 - End-to-end timing measured: ~27s from quote submit to email sent
 - **DOMAIN VERIFICATION**: `not4.sale` is NOT yet verified in Resend → emails work only to the Resend account owner email until DNS records (SPF/DKIM) are added. To verify: Resend dashboard → Domains → Add `not4.sale` → add the 3 DNS records to your registrar.
 
+### Phase 4 (Dec 2025) — Conversational Follow-up Agent
+- **24h follow-up loop**: after audit email delivered, a `followup_jobs` doc is created with `scheduled_for_ts = now + FOLLOWUP_DELAY_SECONDS` (default 86400)
+- **Background worker** `_followup_worker_loop()` started on app startup, polls every 60s for due jobs
+- **Claude follow-up generator** reads the ORIGINAL audit observations and writes a personal email that cites a SPECIFIC detail (no template) + proposes 3 concrete slots (Mar/Gio); JSON output `{subject, preview, body_paragraphs, cta_label, ps}`
+- **Booking detection**: when a lead submits `/api/contact` with same email as a prior `quote-calculator` lead → `has_booked=true` on the lead; worker checks at run-time and marks job as `skipped_booked`
+- **Admin trigger** `POST /api/admin/followups/run-due` (manual cron hook for testing/production)
+- **Status endpoint** `GET /api/quote/followup/{lead_id}`
+- Verified end-to-end: Stripe audit → 24h → personalized follow-up citing "1.64706212% Global GDP" metric → P.S. ironic close → sent via Resend in ~10s of generation time
+- Verified booking skip path: contact form submit → `has_booked=true` → worker marks `skipped_booked`
+
 ## Implemented (Dec 2025)
 - Backend: 11 endpoints REST + Claude chat IT/EN + quote estimator + article CMS + dynamic OG + bilingual sitemap
 - Frontend: 18 route, GSAP horizontal pin, full IT+EN i18n, dynamic OG meta per page, JSON-LD per page type (ProfessionalService / Service+FAQPage / Article / ItemList)

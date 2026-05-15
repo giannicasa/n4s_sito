@@ -174,6 +174,16 @@ async def create_lead(payload: LeadCreate):
     doc = lead.model_dump()
     doc['created_at'] = doc['created_at'].isoformat()
     await db.leads.insert_one(doc)
+
+    # Booking detection: mark any prior quote-calculator lead with same email as has_booked
+    # so the follow-up worker skips it.
+    try:
+        await db.leads.update_many(
+            {"email": payload.email, "source": "quote-calculator", "has_booked": {"$ne": True}},
+            {"$set": {"has_booked": True, "booked_at": datetime.now(timezone.utc).isoformat()}}
+        )
+    except Exception:
+        logger.exception("booking detection update failed")
     return lead
 
 
@@ -808,6 +818,273 @@ async def _run_audit_job(
             }}
         )
 
+        # If audit email was actually delivered, schedule a follow-up
+        if email_id and audit_data:
+            await _schedule_followup(
+                lead_id=lead_id,
+                name=name,
+                email=email,
+                website_url=website_url,
+                locale=locale,
+                audit_data=audit_data,
+                quote=quote,
+            )
+
+
+# ============ FOLLOW-UP AGENT ============
+FOLLOWUP_DELAY_SECONDS = int(os.environ.get('FOLLOWUP_DELAY_SECONDS', '86400'))  # 24h default
+
+FOLLOWUP_SYSTEM_IT = (
+    "Sei un senior strategist di not4sale che scrive una SHORT, PERSONALE email di follow-up 24 ore "
+    "dopo aver inviato un mini-audit. Il destinatario non ha ancora prenotato la call. "
+    "Ti rivolgi a lui per nome, riferisci IN MODO SPECIFICO ad UNA delle 3 osservazioni dell'audit precedente "
+    "(non un riassunto generico — cita un dettaglio concreto), e proponi UN'AZIONE pratica alternativa o un'evoluzione. "
+    "Tono: diretto, ribelle, mai 'leccaculo', senza spam phrases ('per non perdere tempo', 'rapida chiacchierata'). "
+    "Niente promesse di numeri. Lunghezza email: 90-140 parole MAX nel body, in italiano. "
+    "Rispondi SOLO JSON valido: { subject (max 60 char, NESSUN emoji), preview (max 90 char), "
+    "body_paragraphs: array di 3-4 stringhe (paragrafi) — ogni paragrafo NON deve superare 60 parole, "
+    "cta_label (max 30 char), ps (1 frase opzionale, max 120 char, di chiusura ironica e umana — NON 'P.S.:'). "
+    "L'ultimo paragrafo deve proporre uno slot concreto: 'Martedì o Giovedì prossimi, 30 minuti, ti propongo io 3 orari.'"
+)
+
+FOLLOWUP_SYSTEM_EN = (
+    "You are a senior strategist at not4sale writing a SHORT, PERSONAL follow-up email 24 hours after sending a mini-audit. "
+    "The recipient has not booked the call yet. Address them by first name, refer SPECIFICALLY to ONE of the 3 audit observations "
+    "(no generic summary — cite a concrete detail), and propose ONE practical alternative action or evolution. "
+    "Tone: direct, bold, never sycophantic, no spam phrases ('quick chat', 'jump on a call'). "
+    "No number promises. Email length: 90-140 words MAX in body, in English. "
+    "Reply ONLY valid JSON: { subject (max 60 chars, NO emoji), preview (max 90 chars), "
+    "body_paragraphs: array of 3-4 strings (paragraphs) — each paragraph 60 words MAX, "
+    "cta_label (max 30 chars), ps (1 optional closing line, max 120 chars, ironic and human — NOT 'P.S.:'). "
+    "Final paragraph must propose a concrete slot: 'Next Tuesday or Thursday, 30 minutes, I'll send 3 time options.'"
+)
+
+
+async def _schedule_followup(lead_id: str, name: str, email: str, website_url: str, locale: str, audit_data: dict, quote: dict):
+    # Skip if a follow-up is already scheduled or sent for this lead
+    existing = await db.followup_jobs.find_one({"lead_id": lead_id, "status": {"$in": ["scheduled", "sent"]}})
+    if existing:
+        return
+    scheduled_for = datetime.now(timezone.utc).timestamp() + FOLLOWUP_DELAY_SECONDS
+    doc = {
+        "id": str(uuid.uuid4()),
+        "lead_id": lead_id,
+        "name": name,
+        "email": email,
+        "website_url": website_url,
+        "locale": locale,
+        "audit_data": audit_data,
+        "quote": quote,
+        "status": "scheduled",
+        "scheduled_for_ts": scheduled_for,
+        "created_at": datetime.now(timezone.utc).isoformat(),
+    }
+    await db.followup_jobs.insert_one(doc)
+    logger.info(f"Follow-up scheduled for lead={lead_id} in {FOLLOWUP_DELAY_SECONDS}s")
+
+
+async def _claude_followup(lead_name: str, locale: str, audit_data: dict, website_url: str, quote: dict) -> Optional[dict]:
+    import json as _json
+    import re as _re
+    sys_p = FOLLOWUP_SYSTEM_EN if locale == 'en' else FOLLOWUP_SYSTEM_IT
+    chat_client = LlmChat(
+        api_key=EMERGENT_LLM_KEY,
+        session_id=f"followup-{uuid.uuid4().hex[:8]}",
+        system_message=sys_p,
+    ).with_model("anthropic", "claude-sonnet-4-5-20250929")
+
+    obs_block = "\n".join([f"- {o.get('title','')}: {o.get('body','')}" for o in (audit_data.get('observations') or [])[:3]])
+    qw = audit_data.get('quick_win') or {}
+    headline = audit_data.get('headline') or ''
+
+    user_text = (
+        f"Destinatario: {lead_name}\n"
+        f"Sito: {website_url}\n"
+        f"Lingua: {locale}\n\n"
+        f"AUDIT GIA' INVIATO 24h FA:\n"
+        f"Headline: {headline}\n\n"
+        f"3 osservazioni:\n{obs_block}\n\n"
+        f"Quick win: {qw.get('title','')} — {qw.get('body','')}\n\n"
+        f"Range stima dato: {quote.get('estimate_range','-')}\n"
+        f"Fit score: {quote.get('fit_score',0)}/100\n\n"
+        "Scrivi l'email di follow-up rispettando tutti i vincoli del system prompt. JSON valido obbligatorio."
+    )
+
+    try:
+        raw = await chat_client.send_message(UserMessage(text=user_text))
+    except Exception:
+        logger.exception("Claude follow-up failed")
+        return None
+
+    text = raw if isinstance(raw, str) else str(raw)
+    m = _re.search(r"\{[\s\S]*\}", text)
+    if not m:
+        return None
+    try:
+        return _json.loads(m.group(0))
+    except Exception:
+        logger.warning("Follow-up JSON parse failed; raw=%s", text[:300])
+        return None
+
+
+def _followup_email_html(name: str, locale: str, data: dict, website_url: str, audit_data: dict, lead_id: str) -> str:
+    L = lambda it, en: en if locale == 'en' else it  # noqa: E731
+    para_html = "\n".join([
+        f'<p style="font-family:Arial, sans-serif; font-size:16px; line-height:1.7; color:#e5e5e5; margin:0 0 16px;">{p}</p>'
+        for p in (data.get('body_paragraphs') or [])
+    ])
+    ps = data.get('ps') or ''
+    contact_link = f"{AUDIT_SITE_URL}{('/en/contact' if locale=='en' else '/contatti')}?ref=followup&lead_id={lead_id}"
+
+    return f"""<!doctype html>
+<html lang="{locale}"><head><meta charset="utf-8"/><title>{data.get('subject','not4sale')}</title>
+<meta name="x-preview" content="{data.get('preview','')}"/></head>
+<body style="margin:0;padding:0;background:#050505;font-family:Arial,sans-serif;color:#ffffff;">
+<div style="display:none;max-height:0;overflow:hidden;color:#050505;">{data.get('preview','')}</div>
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#050505" style="background:#050505;">
+  <tr><td align="center" style="padding:40px 16px;">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px;background:#0a0a0a;border:1px solid rgba(157,76,221,0.18);">
+
+      <tr><td style="padding:28px 32px 8px 32px;">
+        <div style="font-family:'Cabinet Grotesk', Arial, sans-serif; font-weight:900; letter-spacing:0.16em; font-size:16px;">
+          <span style="color:#9D4CDD;">[</span>NOT4SALE<span style="color:#9D4CDD;">]</span>
+        </div>
+        <div style="font-family:'JetBrains Mono', monospace; font-size:10px; color:#9D4CDD; letter-spacing:0.28em; text-transform:uppercase; margin-top:14px;">
+          {L('Follow-up · 24h dopo', 'Follow-up · 24h later')}
+        </div>
+      </td></tr>
+
+      <tr><td style="padding:8px 32px 0;">
+        <h1 style="font-family:'Cabinet Grotesk', Arial, sans-serif; font-weight:900; font-size:30px; line-height:1.1; color:#ffffff; margin:8px 0 24px; letter-spacing:-0.02em;">
+          {L('Ciao', 'Hi')} {name.split(' ')[0]}<span style="color:#9D4CDD;">.</span>
+        </h1>
+      </td></tr>
+
+      <tr><td style="padding:0 32px 8px 32px;">
+        {para_html}
+      </td></tr>
+
+      <tr><td style="padding:8px 32px 24px 32px;">
+        <a href="{contact_link}" target="_blank"
+           style="display:inline-block;background:#9D4CDD;color:#ffffff;font-family:'Cabinet Grotesk', Arial, sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:0.18em;font-size:13px;padding:16px 26px;text-decoration:none;">
+          {data.get('cta_label') or L('Vediamoci 30 min', "Let's chat 30 min")}
+        </a>
+      </td></tr>
+
+      {f'''<tr><td style="padding:0 32px 24px 32px;">
+        <div style="font-family:Arial, sans-serif; font-size:14px; color:#a3a3a3; font-style:italic; border-top:1px solid rgba(255,255,255,0.08); padding-top:14px;">
+          — {ps}
+        </div>
+      </td></tr>''' if ps else ''}
+
+      <tr><td style="padding:16px 32px 22px;border-top:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:'JetBrains Mono', monospace; font-size:10px; color:#737373; letter-spacing:0.22em; text-transform:uppercase;">
+          not4sale · {L('Mini-audit del', 'Mini-audit of')} {website_url}<br/>
+          Cattolica (RN) · 43.962°N 12.737°E
+        </div>
+      </td></tr>
+
+    </table>
+  </td></tr>
+</table>
+</body></html>"""
+
+
+def _followup_email_text(name: str, locale: str, data: dict, website_url: str, lead_id: str) -> str:
+    L = lambda it, en: en if locale == 'en' else it  # noqa: E731
+    paragraphs = "\n\n".join(data.get('body_paragraphs') or [])
+    link = f"{AUDIT_SITE_URL}{('/en/contact' if locale=='en' else '/contatti')}?ref=followup&lead_id={lead_id}"
+    header_label = L("Follow-up sull'audit di", "Follow-up on the audit of")
+    out = f"""[NOT4SALE] {header_label} {website_url}
+
+{L('Ciao', 'Hi')} {name.split(' ')[0]},
+
+{paragraphs}
+
+{data.get('cta_label') or L('Prenota', 'Book')}: {link}
+"""
+    if data.get('ps'):
+        out += f"\n— {data['ps']}\n"
+    out += "\n—\nnot4sale · Cattolica (RN), Italia"
+    return out
+
+
+async def _run_followup(job: dict):
+    job_id = job["id"]
+    lead_id = job["lead_id"]
+    await db.followup_jobs.update_one({"id": job_id}, {"$set": {"status": "running", "started_at": datetime.now(timezone.utc).isoformat()}})
+
+    # Re-check booking state (the lead may have submitted /contatti in the meantime)
+    lead = await db.leads.find_one({"id": lead_id}, {"_id": 0})
+    if lead and lead.get("has_booked"):
+        await db.followup_jobs.update_one({"id": job_id}, {"$set": {"status": "skipped_booked", "finished_at": datetime.now(timezone.utc).isoformat()}})
+        logger.info(f"Follow-up SKIPPED (booked) lead={lead_id}")
+        return
+
+    locale = job.get("locale") or "it"
+    audit_data = job.get("audit_data") or {}
+    quote = job.get("quote") or {}
+
+    email_id = None
+    error_msg = None
+    followup_data = None
+
+    try:
+        followup_data = await _claude_followup(
+            lead_name=job["name"], locale=locale, audit_data=audit_data,
+            website_url=job["website_url"], quote=quote,
+        )
+        if not followup_data or not followup_data.get("body_paragraphs"):
+            error_msg = "generation_failed"
+        else:
+            subject = followup_data.get("subject") or (
+                f"Ho riguardato {job['website_url']}" if locale != 'en' else f"I had another look at {job['website_url']}"
+            )
+            html = _followup_email_html(
+                name=job["name"], locale=locale, data=followup_data,
+                website_url=job["website_url"], audit_data=audit_data, lead_id=lead_id,
+            )
+            text = _followup_email_text(name=job["name"], locale=locale, data=followup_data, website_url=job["website_url"], lead_id=lead_id)
+            email_id = await asyncio.to_thread(_send_resend, job["email"], subject, html, text, "hello@not4.sale")
+            if not email_id:
+                error_msg = "email_failed"
+    except Exception as e:
+        logger.exception(f"Follow-up failed lead={lead_id}: {e}")
+        error_msg = str(e)[:200]
+
+    await db.followup_jobs.update_one(
+        {"id": job_id},
+        {"$set": {
+            "status": "sent" if email_id else "failed",
+            "email_id": email_id,
+            "followup_data": followup_data,
+            "error": error_msg,
+            "finished_at": datetime.now(timezone.utc).isoformat(),
+        }}
+    )
+
+
+async def _process_due_followups() -> int:
+    now_ts = datetime.now(timezone.utc).timestamp()
+    cursor = db.followup_jobs.find({"status": "scheduled", "scheduled_for_ts": {"$lte": now_ts}}, {"_id": 0})
+    jobs = await cursor.to_list(length=50)
+    for j in jobs:
+        await _run_followup(j)
+    return len(jobs)
+
+
+async def _followup_worker_loop():
+    await asyncio.sleep(20)  # small delay on startup
+    while True:
+        try:
+            await _process_due_followups()
+        except Exception:
+            logger.exception("follow-up worker loop error")
+        await asyncio.sleep(60)
+
+
+# ============ END FOLLOW-UP ============
+
 
 @api_router.get("/quote/audit/{lead_id}")
 async def get_audit_status(lead_id: str):
@@ -815,6 +1092,21 @@ async def get_audit_status(lead_id: str):
     if not job:
         return {"status": "none"}
     return job
+
+
+@api_router.get("/quote/followup/{lead_id}")
+async def get_followup_status(lead_id: str):
+    job = await db.followup_jobs.find_one({"lead_id": lead_id}, {"_id": 0}, sort=[("created_at", -1)])
+    if not job:
+        return {"status": "none"}
+    return job
+
+
+@api_router.post("/admin/followups/run-due")
+async def admin_run_due_followups():
+    """Manual trigger to process all due follow-ups. Used for testing or as a cron hook."""
+    n = await _process_due_followups()
+    return {"processed": n}
 
 
 # ---------- Articles ----------
@@ -1098,6 +1390,9 @@ async def on_startup():
         await _seed_articles()
     except Exception:
         logger.exception("Article seed failed")
+    # Background follow-up worker
+    asyncio.create_task(_followup_worker_loop())
+    logger.info("Follow-up worker scheduled (poll every 60s)")
 
 
 @app.on_event("shutdown")
