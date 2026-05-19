@@ -14,15 +14,33 @@ export const PageWrap = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const prevPath = useRef(location.pathname);
 
+  const scrollTop = () => {
+    // Try Lenis first (it intercepts window.scrollTo). Fall back to native.
+    const lenis = window.__lenis;
+    if (lenis && typeof lenis.scrollTo === "function") {
+      lenis.scrollTo(0, { immediate: true, force: true });
+    }
+    window.scrollTo(0, 0);
+    if (document.scrollingElement) document.scrollingElement.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  };
+
   useEffect(() => {
     if (prevPath.current !== location.pathname) {
       prevPath.current = location.pathname;
       setLoading(true);
-      // Reset scroll instantly so the new page starts at the top.
-      window.scrollTo({ top: 0, behavior: "instant" });
-      // Hide the bar once the new page has had a tick to mount.
-      const t = setTimeout(() => setLoading(false), 550);
-      return () => clearTimeout(t);
+      scrollTop();
+      // Lenis can intercept the first call before the new route mounts;
+      // schedule a second reset on next frame and after a short delay so
+      // it lands after the Suspense fallback resolves.
+      requestAnimationFrame(scrollTop);
+      const t1 = setTimeout(scrollTop, 60);
+      const t2 = setTimeout(() => setLoading(false), 550);
+      return () => {
+        clearTimeout(t1);
+        clearTimeout(t2);
+      };
     }
   }, [location.pathname]);
 

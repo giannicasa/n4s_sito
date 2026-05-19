@@ -5,7 +5,6 @@ export const LenisProvider = ({ children }) => {
   const ref = useRef(null);
 
   useEffect(() => {
-    // Lenis needs a non-static positioned scroll container — body is fine via index.css
     const lenis = new Lenis({
       duration: 1.2,
       smoothWheel: true,
@@ -16,6 +15,8 @@ export const LenisProvider = ({ children }) => {
       content: document.documentElement
     });
     ref.current = lenis;
+    // Expose globally so route changes can reset scroll through Lenis.
+    window.__lenis = lenis;
 
     function raf(time) {
       lenis.raf(time);
@@ -26,6 +27,7 @@ export const LenisProvider = ({ children }) => {
     return () => {
       lenis.destroy();
       ref.current = null;
+      if (window.__lenis === lenis) delete window.__lenis;
     };
   }, []);
 
