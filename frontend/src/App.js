@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "sonner";
@@ -9,17 +9,20 @@ import Footer from "./components/Footer";
 import AIChat from "./components/AIChat";
 import CustomCursor from "./components/CustomCursor";
 import PageWrap from "./components/PageWrap";
+import PageLoader from "./components/PageLoader";
 
-import HomePage from "./pages/HomePage";
-import ServicesHubPage from "./pages/ServicesHubPage";
-import ServiceDetailPage from "./pages/ServiceDetailPage";
-import CaseStudiesPage from "./pages/CaseStudiesPage";
-import ChiSiamoPage from "./pages/ChiSiamoPage";
-import ContattiPage from "./pages/ContattiPage";
-import QuoteCalculatorPage from "./pages/QuoteCalculatorPage";
-import InsightsHubPage from "./pages/InsightsHubPage";
-import InsightDetailPage from "./pages/InsightDetailPage";
-import NotFoundPage from "./pages/NotFoundPage";
+// Code-split pages. Each is fetched only when first visited, then cached.
+// During the fetch React shows <PageLoader /> as Suspense fallback.
+const HomePage = lazy(() => import("./pages/HomePage"));
+const ServicesHubPage = lazy(() => import("./pages/ServicesHubPage"));
+const ServiceDetailPage = lazy(() => import("./pages/ServiceDetailPage"));
+const CaseStudiesPage = lazy(() => import("./pages/CaseStudiesPage"));
+const ChiSiamoPage = lazy(() => import("./pages/ChiSiamoPage"));
+const ContattiPage = lazy(() => import("./pages/ContattiPage"));
+const QuoteCalculatorPage = lazy(() => import("./pages/QuoteCalculatorPage"));
+const InsightsHubPage = lazy(() => import("./pages/InsightsHubPage"));
+const InsightDetailPage = lazy(() => import("./pages/InsightDetailPage"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 
 function App() {
   return (
@@ -29,33 +32,35 @@ function App() {
           <CustomCursor />
           <Nav />
           <main>
-            <PageWrap>
-              <Routes>
-                {/* Italian (default) */}
-                <Route path="/" element={<HomePage />} />
-                <Route path="/servizi" element={<ServicesHubPage />} />
-                <Route path="/servizi/:slug" element={<ServiceDetailPage />} />
-                <Route path="/case-studies" element={<CaseStudiesPage />} />
-                <Route path="/chi-siamo" element={<ChiSiamoPage />} />
-                <Route path="/contatti" element={<ContattiPage />} />
-                <Route path="/preventivo" element={<QuoteCalculatorPage />} />
-                <Route path="/insights" element={<InsightsHubPage />} />
-                <Route path="/insights/:slug" element={<InsightDetailPage />} />
+            <Suspense fallback={<PageLoader />}>
+              <PageWrap>
+                <Routes>
+                  {/* Italian (default) */}
+                  <Route path="/" element={<HomePage />} />
+                  <Route path="/servizi" element={<ServicesHubPage />} />
+                  <Route path="/servizi/:slug" element={<ServiceDetailPage />} />
+                  <Route path="/case-studies" element={<CaseStudiesPage />} />
+                  <Route path="/chi-siamo" element={<ChiSiamoPage />} />
+                  <Route path="/contatti" element={<ContattiPage />} />
+                  <Route path="/preventivo" element={<QuoteCalculatorPage />} />
+                  <Route path="/insights" element={<InsightsHubPage />} />
+                  <Route path="/insights/:slug" element={<InsightDetailPage />} />
 
-                {/* English */}
-                <Route path="/en" element={<HomePage />} />
-                <Route path="/en/services" element={<ServicesHubPage />} />
-                <Route path="/en/services/:slug" element={<ServiceDetailPage />} />
-                <Route path="/en/case-studies" element={<CaseStudiesPage />} />
-                <Route path="/en/about" element={<ChiSiamoPage />} />
-                <Route path="/en/contact" element={<ContattiPage />} />
-                <Route path="/en/quote" element={<QuoteCalculatorPage />} />
-                <Route path="/en/insights" element={<InsightsHubPage />} />
-                <Route path="/en/insights/:slug" element={<InsightDetailPage />} />
+                  {/* English */}
+                  <Route path="/en" element={<HomePage />} />
+                  <Route path="/en/services" element={<ServicesHubPage />} />
+                  <Route path="/en/services/:slug" element={<ServiceDetailPage />} />
+                  <Route path="/en/case-studies" element={<CaseStudiesPage />} />
+                  <Route path="/en/about" element={<ChiSiamoPage />} />
+                  <Route path="/en/contact" element={<ContattiPage />} />
+                  <Route path="/en/quote" element={<QuoteCalculatorPage />} />
+                  <Route path="/en/insights" element={<InsightsHubPage />} />
+                  <Route path="/en/insights/:slug" element={<InsightDetailPage />} />
 
-                <Route path="*" element={<NotFoundPage />} />
-              </Routes>
-            </PageWrap>
+                  <Route path="*" element={<NotFoundPage />} />
+                </Routes>
+              </PageWrap>
+            </Suspense>
           </main>
           <Footer />
           <AIChat />
