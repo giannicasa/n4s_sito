@@ -31,18 +31,30 @@ export const PageWrap = ({ children }) => {
       prevPath.current = location.pathname;
       setLoading(true);
       scrollTop();
-      // Lenis can intercept the first call before the new route mounts;
-      // schedule a second reset on next frame and after a short delay so
-      // it lands after the Suspense fallback resolves.
       requestAnimationFrame(scrollTop);
       const t1 = setTimeout(scrollTop, 60);
       const t2 = setTimeout(() => setLoading(false), 550);
+
+      // GTM/GA4 SPA pageview: fire on next tick so document.title is already
+      // updated by the new route's SEOHead effect.
+      const t3 = setTimeout(() => {
+        if (typeof window === "undefined") return;
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "page_view",
+          page_path: location.pathname + location.search,
+          page_location: window.location.href,
+          page_title: document.title,
+        });
+      }, 80);
+
       return () => {
         clearTimeout(t1);
         clearTimeout(t2);
+        clearTimeout(t3);
       };
     }
-  }, [location.pathname]);
+  }, [location.pathname, location.search]);
 
   return (
     <>
