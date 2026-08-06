@@ -1111,8 +1111,9 @@ async def get_followup_status(lead_id: str):
 
 
 @api_router.post("/admin/followups/run-due")
+@api_router.get("/admin/followups/run-due")
 async def admin_run_due_followups():
-    """Manual trigger to process all due follow-ups. Used for testing or as a cron hook."""
+    """Manual trigger to process all due follow-ups. Used for testing or as a cron hook (Vercel Cron uses GET)."""
     n = await _process_due_followups()
     return {"processed": n}
 
@@ -1398,9 +1399,13 @@ async def on_startup():
         await _seed_articles()
     except Exception:
         logger.exception("Article seed failed")
-    # Background follow-up worker
-    asyncio.create_task(_followup_worker_loop())
-    logger.info("Follow-up worker scheduled (poll every 60s)")
+    if os.environ.get("VERCEL"):
+        # Serverless: niente loop in background, i follow-up li processa il
+        # Vercel Cron che chiama /api/admin/followups/run-due
+        logger.info("Serverless environment: follow-up worker disabled (cron-driven)")
+    else:
+        asyncio.create_task(_followup_worker_loop())
+        logger.info("Follow-up worker scheduled (poll every 60s)")
 
 
 @app.on_event("shutdown")
