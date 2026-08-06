@@ -10,6 +10,7 @@ import AIChat from "./components/AIChat";
 import CustomCursor from "./components/CustomCursor";
 import PageWrap from "./components/PageWrap";
 import PageLoader from "./components/PageLoader";
+import CookieBanner from "./components/CookieBanner";
 
 // Code-split pages. Each is fetched only when first visited, then cached.
 // During the fetch React shows <PageLoader /> as Suspense fallback.
@@ -23,6 +24,8 @@ const QuoteCalculatorPage = lazy(() => import("./pages/QuoteCalculatorPage"));
 const InsightsHubPage = lazy(() => import("./pages/InsightsHubPage"));
 const InsightDetailPage = lazy(() => import("./pages/InsightDetailPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
+const PrivacyPolicyPage = lazy(() => import("./pages/PrivacyPolicyPage"));
+const CookiePolicyPage = lazy(() => import("./pages/CookiePolicyPage"));
 
 function App() {
   return (
@@ -45,6 +48,8 @@ function App() {
                   <Route path="/preventivo" element={<QuoteCalculatorPage />} />
                   <Route path="/insights" element={<InsightsHubPage />} />
                   <Route path="/insights/:slug" element={<InsightDetailPage />} />
+                  <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+                  <Route path="/cookie-policy" element={<CookiePolicyPage />} />
 
                   {/* English */}
                   <Route path="/en" element={<HomePage />} />
@@ -56,6 +61,8 @@ function App() {
                   <Route path="/en/quote" element={<QuoteCalculatorPage />} />
                   <Route path="/en/insights" element={<InsightsHubPage />} />
                   <Route path="/en/insights/:slug" element={<InsightDetailPage />} />
+                  <Route path="/en/privacy-policy" element={<PrivacyPolicyPage />} />
+                  <Route path="/en/cookie-policy" element={<CookiePolicyPage />} />
 
                   <Route path="*" element={<NotFoundPage />} />
                 </Routes>
@@ -64,6 +71,7 @@ function App() {
           </main>
           <Footer />
           <AIChat />
+          <CookieBanner />
           <Toaster
             theme="dark"
             richColors

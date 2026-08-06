@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { SERVICES } from "../data/services";
 import useLocale from "../hooks/useLocale";
 import { CharReveal } from "./CharReveal";
+import { COMPANY, companyFullAddress } from "../data/company";
+import { openPreferences } from "../lib/consent";
 
 export const Footer = () => {
   const { t, r, locale } = useLocale();
@@ -70,14 +72,34 @@ export const Footer = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between gap-4 text-xs font-mono uppercase tracking-[0.24em] text-neutral-500">
-          <div>© {year} not4sale · Cattolica (RN), {locale === "it" ? "Italia" : "Italy"}</div>
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs font-mono uppercase tracking-[0.18em] text-neutral-500 border-t border-white/5 pt-8">
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
+            <Link to={r.privacy} data-testid="footer-link-privacy" className="hover:text-violet-400 transition-colors">
+              {t.footer.privacy}
+            </Link>
+            <Link to={r.cookiePolicy} data-testid="footer-link-cookies" className="hover:text-violet-400 transition-colors">
+              {t.footer.cookies}
+            </Link>
+            <button
+              type="button"
+              onClick={openPreferences}
+              data-testid="footer-cookie-prefs"
+              className="uppercase tracking-[0.18em] hover:text-violet-400 transition-colors"
+            >
+              {t.footer.cookiePrefs}
+            </button>
+          </div>
           <div className="flex gap-6">
             <span>43.962°N · 12.737°E</span>
-            <a href="mailto:hello@not4.sale" className="hover:text-violet-400" data-testid="footer-email">
-              hello@not4.sale
+            <a href={`mailto:${COMPANY.email}`} className="hover:text-violet-400" data-testid="footer-email">
+              {COMPANY.email}
             </a>
           </div>
+        </div>
+
+        <div className="mt-6 text-[11px] font-mono uppercase tracking-[0.18em] text-neutral-600" data-testid="footer-company-info">
+          © {year} {COMPANY.name} · {companyFullAddress(locale)}
+          {COMPANY.piva ? ` · P.IVA ${COMPANY.piva}` : ""}
         </div>
       </div>
     </footer>

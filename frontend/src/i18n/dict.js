@@ -166,6 +166,10 @@ export const DICT = {
       manifestoLines: ["non siamo", "in vendita.", "il tuo brand", "sì."],
       studio: "Studio",
       services: "Servizi",
+      legal: "Legale",
+      privacy: "Privacy Policy",
+      cookies: "Cookie Policy",
+      cookiePrefs: "Preferenze cookie",
       langSwitch: "EN"
     },
     chat: {
@@ -341,6 +345,10 @@ export const DICT = {
       manifestoLines: ["we're not", "for sale.", "your brand", "is."],
       studio: "Studio",
       services: "Services",
+      legal: "Legal",
+      privacy: "Privacy Policy",
+      cookies: "Cookie Policy",
+      cookiePrefs: "Cookie preferences",
       langSwitch: "IT"
     },
     chat: {
@@ -363,7 +371,9 @@ export const PATH_MAP = {
     "/chi-siamo": "/en/about",
     "/contatti": "/en/contact",
     "/preventivo": "/en/quote",
-    "/insights": "/en/insights"
+    "/insights": "/en/insights",
+    "/privacy-policy": "/en/privacy-policy",
+    "/cookie-policy": "/en/cookie-policy"
   },
   en_to_it: {
     "/en": "/",
@@ -372,7 +382,9 @@ export const PATH_MAP = {
     "/en/about": "/chi-siamo",
     "/en/contact": "/contatti",
     "/en/quote": "/preventivo",
-    "/en/insights": "/insights"
+    "/en/insights": "/insights",
+    "/en/privacy-policy": "/privacy-policy",
+    "/en/cookie-policy": "/cookie-policy"
   }
 };
 
@@ -386,7 +398,9 @@ export const ROUTES = {
     contact: "/contatti",
     quote: "/preventivo",
     insights: "/insights",
-    insightDetail: (slug) => `/insights/${slug}`
+    insightDetail: (slug) => `/insights/${slug}`,
+    privacy: "/privacy-policy",
+    cookiePolicy: "/cookie-policy"
   },
   en: {
     home: "/en",
@@ -397,6 +411,8 @@ export const ROUTES = {
     contact: "/en/contact",
     quote: "/en/quote",
     insights: "/en/insights",
-    insightDetail: (slug) => `/en/insights/${slug}`
+    insightDetail: (slug) => `/en/insights/${slug}`,
+    privacy: "/en/privacy-policy",
+    cookiePolicy: "/en/cookie-policy"
   }
 };
