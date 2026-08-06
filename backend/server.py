@@ -311,6 +311,31 @@ QUOTE_SYSTEM_EN = (
     "Never give precise prices, only coherent ranges. No unrealistic outliers."
 )
 
+# Email per lead SENZA sito da auditare (es. brand nuovo): consigli personalizzati.
+QUOTE_TIPS_SYSTEM_IT = (
+    "Sei un senior strategist di not4sale. Un potenziale cliente ha appena richiesto un preventivo "
+    "dal nostro calcolatore ma NON ha un sito da analizzare (spesso è un brand o progetto nuovo). "
+    "Scrivi contenuti per un'email di benvenuto con consigli CONCRETI e personalizzati sul suo progetto, "
+    "basati su obiettivo, servizi richiesti, budget e timeline. Tono not4sale: diretto, ribelle, zero fuffa, "
+    "niente frasi da venditore. Rispondi SOLO con JSON valido: "
+    "headline (1-2 frasi di apertura che agganciano il suo obiettivo specifico), "
+    "observations (array di ESATTAMENTE 3 oggetti {title, body}: 3 consigli pratici e specifici per il suo caso, "
+    "title max 6 parole, body 2-3 frasi operative), "
+    "quick_win ({title, body}: la PRIMA cosa da fare questa settimana, ancora prima di firmare con noi)."
+)
+
+QUOTE_TIPS_SYSTEM_EN = (
+    "You are a senior strategist at not4sale. A potential client just requested a quote from our calculator "
+    "but has NO website to analyze (often a brand-new project). "
+    "Write content for a welcome email with CONCRETE, personalized advice on their project, "
+    "based on their goal, requested services, budget and timeline. not4sale tone: direct, rebellious, zero fluff, "
+    "no salesy phrases. Reply ONLY with valid JSON: "
+    "headline (1-2 opening sentences hooking their specific goal), "
+    "observations (array of EXACTLY 3 objects {title, body}: 3 practical, case-specific tips, "
+    "title max 6 words, body 2-3 actionable sentences), "
+    "quick_win ({title, body}: the FIRST thing to do this week, even before signing with us)."
+)
+
 
 @api_router.post("/quote/estimate", response_model=QuoteResponse)
 async def estimate_quote(payload: QuoteRequest, background_tasks: BackgroundTasks):
@@ -402,6 +427,21 @@ async def estimate_quote(payload: QuoteRequest, background_tasks: BackgroundTask
             quote=result.model_dump(),
         )
         audit_scheduled = True
+    elif RESEND_API_KEY:
+        # Nessun sito da auditare (es. brand nuovo): email immediata con stima + consigli AI
+        background_tasks.add_task(
+            _run_quote_email_job,
+            lead_id=lead.id,
+            name=payload.name,
+            email=payload.email,
+            objective=payload.objective,
+            services=payload.services,
+            budget=payload.budget,
+            timeline=payload.timeline,
+            notes=payload.notes,
+            locale=payload.locale or "it",
+            quote=result.model_dump(),
+        )
 
     result.audit_scheduled = audit_scheduled
     return result
@@ -700,6 +740,225 @@ async def _claude_vision_audit(image_b64: str, website_url: str, locale: str, co
     except Exception:
         logger.warning("Audit JSON parse failed; raw=%s", text[:300])
         return None
+
+
+def _quote_email_html(name: str, tips: dict, locale: str, quote: dict) -> str:
+    """Email brandizzata per lead senza sito: stima + 3 consigli + quick win + CTA."""
+    L = lambda it, en: en if locale == "en" else it  # noqa: E731
+    obs_html = ""
+    for i, o in enumerate(tips.get("observations", [])[:3]):
+        obs_html += f'''
+        <tr>
+          <td style="padding:18px 0;border-top:1px solid rgba(255,255,255,0.08);">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+              <tr>
+                <td width="42" valign="top" style="font-family:'JetBrains Mono', monospace; font-size:11px; color:#9D4CDD; letter-spacing:0.18em; padding-top:4px;">0{i+1}</td>
+                <td valign="top">
+                  <div style="font-family:'Cabinet Grotesk', Arial, sans-serif; font-weight:800; font-size:18px; color:#ffffff; text-transform:uppercase; letter-spacing:-0.01em; line-height:1.15; margin-bottom:6px;">{o.get('title','')}</div>
+                  <div style="font-family:Arial, sans-serif; font-size:15px; line-height:1.6; color:#cfcfcf;">{o.get('body','')}</div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        '''
+    qw = tips.get("quick_win") or {}
+    headline = tips.get("headline") or L("La tua stima è pronta. E ti abbiamo preparato qualche consiglio.", "Your estimate is ready. And we prepared some advice.")
+    estimate = quote.get("estimate_range") or "-"
+    fit = quote.get("fit_score") or 0
+    approach = quote.get("recommended_approach") or ""
+
+    return f"""<!doctype html>
+<html lang="{locale}"><head><meta charset="utf-8" />
+<title>not4sale · {L('la tua stima', 'your estimate')}</title></head>
+<body style="margin:0;padding:0;background:#050505;font-family:Arial, sans-serif;color:#ffffff;">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#050505" style="background:#050505;">
+  <tr><td align="center" style="padding:40px 16px;">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:640px;background:#0a0a0a;border:1px solid rgba(157,76,221,0.25);">
+
+      <tr><td style="padding:32px 32px 8px 32px;">
+        <div style="font-family:'Cabinet Grotesk', Arial, sans-serif; font-weight:900; letter-spacing:0.16em; font-size:18px; color:#ffffff;">
+          <span style="color:#9D4CDD;">[</span>NOT4SALE<span style="color:#9D4CDD;">]</span>
+        </div>
+        <div style="font-family:'JetBrains Mono', monospace; font-size:10px; color:#9D4CDD; letter-spacing:0.28em; text-transform:uppercase; margin-top:18px;">
+          {L('La tua stima · preventivo', 'Your estimate · quote')}
+        </div>
+      </td></tr>
+
+      <tr><td style="padding:8px 32px 24px 32px;">
+        <h1 style="font-family:'Cabinet Grotesk', Arial, sans-serif; font-weight:900; font-size:34px; line-height:1.05; color:#ffffff; margin:8px 0 16px; text-transform:uppercase; letter-spacing:-0.02em;">
+          {L('Ciao', 'Hi')} {name.split(' ')[0]}<span style="color:#9D4CDD;">.</span>
+        </h1>
+        <p style="font-family:Arial, sans-serif; font-size:16px; line-height:1.65; color:#cfcfcf; margin:0;">
+          {headline}
+        </p>
+      </td></tr>
+
+      <tr><td style="padding:8px 32px 24px 32px;">
+        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+          <tr>
+            <td style="padding:14px 0;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);" align="left">
+              <div style="font-family:'JetBrains Mono', monospace; font-size:10px; color:#737373; letter-spacing:0.24em; text-transform:uppercase;">{L('Range stima', 'Estimate range')}</div>
+              <div style="font-family:'Cabinet Grotesk', Arial, sans-serif; font-weight:800; font-size:22px; color:#ffffff;">{estimate}</div>
+            </td>
+            <td style="padding:14px 0;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);" align="right">
+              <div style="font-family:'JetBrains Mono', monospace; font-size:10px; color:#737373; letter-spacing:0.24em; text-transform:uppercase;">{L('Fit score', 'Fit score')}</div>
+              <div style="font-family:'Cabinet Grotesk', Arial, sans-serif; font-weight:800; font-size:22px; color:#9D4CDD;">{fit}/100</div>
+            </td>
+          </tr>
+        </table>
+        {f'<p style="font-family:Arial, sans-serif; font-size:15px; line-height:1.65; color:#cfcfcf; margin:16px 0 0;">{approach}</p>' if approach else ''}
+      </td></tr>
+
+      <tr><td style="padding:8px 32px 16px 32px;">
+        <div style="font-family:'JetBrains Mono', monospace; font-size:10px; color:#9D4CDD; letter-spacing:0.28em; text-transform:uppercase; padding-bottom:8px;">
+          {L('3 consigli per partire', '3 tips to get started')}
+        </div>
+        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+          {obs_html}
+        </table>
+      </td></tr>
+
+      <tr><td style="padding:24px 32px;">
+        <div style="border:1px solid #9D4CDD; padding:22px; background:rgba(157,76,221,0.08);">
+          <div style="font-family:'JetBrains Mono', monospace; font-size:10px; color:#9D4CDD; letter-spacing:0.28em; text-transform:uppercase;">
+            {L('Quick win · questa settimana', 'Quick win · this week')}
+          </div>
+          <div style="font-family:'Cabinet Grotesk', Arial, sans-serif; font-weight:800; font-size:22px; line-height:1.15; color:#ffffff; text-transform:uppercase; letter-spacing:-0.01em; margin:10px 0 8px;">
+            {qw.get('title', L('Una mossa subito attuabile.', 'One immediate move.'))}
+          </div>
+          <div style="font-family:Arial, sans-serif; font-size:15px; line-height:1.65; color:#e5e5e5;">
+            {qw.get('body','')}
+          </div>
+        </div>
+      </td></tr>
+
+      <tr><td style="padding:8px 32px 36px 32px;" align="center">
+        <a href="{AUDIT_SITE_URL}{('/en/contact' if locale=='en' else '/contatti')}?utm_source=email&utm_medium=quote&utm_campaign=quote_no_site" target="_blank"
+           style="display:inline-block;background:#ffffff;color:#050505;font-family:'Cabinet Grotesk', Arial, sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:0.18em;font-size:13px;padding:18px 28px;text-decoration:none;">
+          {L('Prenota una call · 30 min', 'Book a call · 30 min')}
+        </a>
+        <div style="font-family:Arial, sans-serif; font-size:13px; color:#737373; margin-top:18px; line-height:1.6;">
+          {L('La stima è indicativa: il piano vero lo costruiamo in call, sul tuo progetto.', 'The estimate is indicative: the real plan gets built in the call, on your project.')}
+        </div>
+      </td></tr>
+
+      <tr><td style="padding:18px 32px;border-top:1px solid rgba(255,255,255,0.08);background:#050505;">
+        <div style="font-family:'JetBrains Mono', monospace; font-size:10px; color:#737373; letter-spacing:0.24em; text-transform:uppercase;">
+          not4sale · Cattolica (RN), {L('Italia', 'Italy')} · 43.962°N · 12.737°E
+        </div>
+      </td></tr>
+
+    </table>
+  </td></tr>
+</table>
+</body></html>"""
+
+
+def _quote_email_text(name: str, tips: dict, quote: dict, locale: str) -> str:
+    L = lambda it, en: en if locale == "en" else it  # noqa: E731
+    obs = "\n\n".join([f"0{i+1}  {o.get('title','')}\n    {o.get('body','')}" for i, o in enumerate(tips.get("observations", [])[:3])])
+    qw = tips.get("quick_win") or {}
+    return f"""[NOT4SALE] {L('La tua stima + 3 consigli', 'Your estimate + 3 tips')}
+
+{L('Ciao', 'Hi')} {name.split(' ')[0]},
+
+{tips.get('headline','')}
+
+{L('Range stima', 'Estimate range')}: {quote.get('estimate_range','-')}
+{L('Fit score', 'Fit score')}: {quote.get('fit_score',0)}/100
+{quote.get('recommended_approach','')}
+
+— {L('3 consigli per partire', '3 tips to get started')} —
+
+{obs}
+
+— {L('Quick win · questa settimana', 'Quick win · this week')} —
+{qw.get('title','')}
+{qw.get('body','')}
+
+{L('Prenota una call', 'Book a call')}: {AUDIT_SITE_URL}{('/en/contact' if locale=='en' else '/contatti')}
+
+—
+not4sale · Cattolica (RN), {L('Italia', 'Italy')}
+"""
+
+
+async def _run_quote_email_job(
+    lead_id: str,
+    name: str,
+    email: str,
+    objective: str,
+    services: List[str],
+    budget: str,
+    timeline: str,
+    notes: Optional[str],
+    locale: str,
+    quote: dict,
+):
+    """Email immediata con stima + consigli AI per lead senza sito da auditare."""
+    import json as _json
+    import re as _re
+
+    job_id = str(uuid.uuid4())
+    await db.quote_email_jobs.insert_one({
+        "id": job_id,
+        "lead_id": lead_id,
+        "email": email,
+        "locale": locale,
+        "status": "running",
+        "started_at": datetime.now(timezone.utc).isoformat(),
+    })
+
+    email_id = None
+    error_msg = None
+    tips = None
+    try:
+        sys_p = QUOTE_TIPS_SYSTEM_EN if locale == "en" else QUOTE_TIPS_SYSTEM_IT
+        user_text = (
+            f"Nome: {name}\n"
+            f"Obiettivo: {objective}\n"
+            f"Servizi richiesti: {', '.join(services) if services else 'da definire'}\n"
+            f"Budget mensile: {budget}\n"
+            f"Timeline: {timeline}\n"
+            f"Note del lead: {notes or '-'}\n"
+            f"Range stima già comunicato a video: {quote.get('estimate_range','-')}\n"
+            "Il lead NON ha un sito web da analizzare. Produci il JSON come da istruzioni."
+        )
+        raw = await llm_complete(sys_p, user_text)
+        m = _re.search(r"\{[\s\S]*\}", raw)
+        if m:
+            try:
+                tips = _json.loads(m.group(0))
+            except Exception:
+                tips = None
+        if not tips or not tips.get("observations"):
+            error_msg = "tips_generation_failed"
+        else:
+            subject = (
+                f"{name.split(' ')[0]}, la tua stima not4sale + 3 consigli per partire"
+                if locale != "en"
+                else f"{name.split(' ')[0]}, your not4sale estimate + 3 tips to start"
+            )
+            html = _quote_email_html(name=name, tips=tips, locale=locale, quote=quote)
+            text = _quote_email_text(name=name, tips=tips, quote=quote, locale=locale)
+            email_id = await asyncio.to_thread(_send_resend, email, subject, html, text, "hello@not4.sale")
+            if not email_id:
+                error_msg = "email_failed"
+    except Exception as e:
+        logger.exception(f"Quote email job failed for lead={lead_id}: {e}")
+        error_msg = str(e)[:200]
+    finally:
+        await db.quote_email_jobs.update_one(
+            {"id": job_id},
+            {"$set": {
+                "status": "sent" if email_id else "failed",
+                "email_id": email_id,
+                "tips": tips,
+                "error": error_msg,
+                "finished_at": datetime.now(timezone.utc).isoformat(),
+            }}
+        )
 
 
 def _send_resend(to_email: str, subject: str, html: str, text: str, reply_to: Optional[str] = None) -> Optional[str]:
