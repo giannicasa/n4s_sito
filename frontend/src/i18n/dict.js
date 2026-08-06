@@ -125,7 +125,9 @@ export const DICT = {
         email: "Email",
         company: "Azienda",
         website: "URL del tuo sito (opzionale, ma sblocca il mini-audit AI)",
-        notes: "Note (opzionale)"
+        notes: "Raccontaci il tuo brand e le tue idee",
+        notesHint: "Chi sei, cosa vendi, a chi, cosa hai già provato. Più contesto ci dai, più la stima e i consigli che riceverai via email saranno precisi.",
+        notesPlaceholder: "Es. Brand di ceramiche artigianali, vendo a privati alle fiere, voglio partire online..."
       },
       objectives: ["Crescere fatturato", "Lanciare un brand", "Riposizionare", "Internazionalizzare", "Generare lead B2B", "Ridurre CAC"],
       budgets: ["< 5k€/mese", "5-15k€/mese", "15-40k€/mese", "40k€+/mese", "Da definire"],
@@ -304,7 +306,9 @@ export const DICT = {
         email: "Email",
         company: "Company",
         website: "Your website URL (optional — unlocks the AI mini-audit)",
-        notes: "Notes (optional)"
+        notes: "Tell us about your brand and your ideas",
+        notesHint: "Who you are, what you sell, to whom, what you've already tried. The more context you give us, the more precise the estimate and the tips you'll receive by email.",
+        notesPlaceholder: "E.g. Handmade ceramics brand, selling at fairs, want to start online..."
       },
       objectives: ["Grow revenue", "Launch a brand", "Reposition", "Go international", "Generate B2B leads", "Reduce CAC"],
       budgets: ["< €5k/month", "€5-15k/month", "€15-40k/month", "€40k+/month", "To be defined"],

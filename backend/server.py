@@ -960,6 +960,19 @@ async def _run_quote_email_job(
             }}
         )
 
+        # Email consegnata → follow-up 24h anche per i lead senza sito
+        if email_id and tips:
+            await _schedule_followup(
+                lead_id=lead_id,
+                name=name,
+                email=email,
+                website_url="",
+                locale=locale,
+                audit_data=tips,
+                quote=quote,
+                kind="no_site",
+            )
+
 
 def _send_resend(to_email: str, subject: str, html: str, text: str, reply_to: Optional[str] = None) -> Optional[str]:
     """Synchronous send (called from asyncio.to_thread). Returns email id or None."""
@@ -1132,7 +1145,37 @@ FOLLOWUP_SYSTEM_EN = (
 )
 
 
-async def _schedule_followup(lead_id: str, name: str, email: str, website_url: str, locale: str, audit_data: dict, quote: dict):
+FOLLOWUP_NOSITE_SYSTEM_IT = (
+    "Sei un senior strategist di not4sale che scrive una SHORT, PERSONALE email di follow-up 24 ore "
+    "dopo aver inviato una stima con 3 consigli a un lead che NON ha ancora un sito (brand/progetto nuovo). "
+    "Il destinatario non ha ancora prenotato la call. "
+    "Ti rivolgi a lui per nome, riferisci IN MODO SPECIFICO ad UNO dei 3 consigli inviati ieri "
+    "(non un riassunto generico — cita un dettaglio concreto) e chiedi a che punto è col progetto, "
+    "proponendo UN'AZIONE pratica successiva. "
+    "Tono: diretto, ribelle, mai 'leccaculo', senza spam phrases ('per non perdere tempo', 'rapida chiacchierata'). "
+    "Niente promesse di numeri. Lunghezza email: 90-140 parole MAX nel body, in italiano. "
+    "Rispondi SOLO JSON valido: { subject (max 60 char, NESSUN emoji), preview (max 90 char), "
+    "body_paragraphs: array di 3-4 stringhe (paragrafi) — ogni paragrafo NON deve superare 60 parole, "
+    "cta_label (max 30 char), ps (1 frase opzionale, max 120 char, di chiusura ironica e umana — NON 'P.S.:'). "
+    "L'ultimo paragrafo deve proporre uno slot concreto: 'Martedì o Giovedì prossimi, 30 minuti, ti propongo io 3 orari.'"
+)
+
+FOLLOWUP_NOSITE_SYSTEM_EN = (
+    "You are a senior strategist at not4sale writing a SHORT, PERSONAL follow-up email 24 hours after sending "
+    "an estimate with 3 tips to a lead who does NOT have a website yet (brand-new project). "
+    "The recipient has not booked the call yet. Address them by first name, refer SPECIFICALLY to ONE of the 3 tips "
+    "sent yesterday (no generic summary — cite a concrete detail), ask how the project is going, "
+    "and propose ONE practical next action. "
+    "Tone: direct, bold, never sycophantic, no spam phrases ('quick chat', 'jump on a call'). "
+    "No number promises. Email length: 90-140 words MAX in body, in English. "
+    "Reply ONLY valid JSON: { subject (max 60 chars, NO emoji), preview (max 90 chars), "
+    "body_paragraphs: array of 3-4 strings (paragraphs) — each paragraph 60 words MAX, "
+    "cta_label (max 30 chars), ps (1 optional closing line, max 120 chars, ironic and human — NOT 'P.S.:'). "
+    "Final paragraph must propose a concrete slot: 'Next Tuesday or Thursday, 30 minutes, I'll send 3 time options.'"
+)
+
+
+async def _schedule_followup(lead_id: str, name: str, email: str, website_url: str, locale: str, audit_data: dict, quote: dict, kind: str = "audit"):
     # Skip if a follow-up is already scheduled or sent for this lead
     existing = await db.followup_jobs.find_one({"lead_id": lead_id, "status": {"$in": ["scheduled", "sent"]}})
     if existing:
@@ -1147,6 +1190,7 @@ async def _schedule_followup(lead_id: str, name: str, email: str, website_url: s
         "locale": locale,
         "audit_data": audit_data,
         "quote": quote,
+        "kind": kind,
         "status": "scheduled",
         "scheduled_for_ts": scheduled_for,
         "created_at": datetime.now(timezone.utc).isoformat(),
@@ -1155,22 +1199,27 @@ async def _schedule_followup(lead_id: str, name: str, email: str, website_url: s
     logger.info(f"Follow-up scheduled for lead={lead_id} in {FOLLOWUP_DELAY_SECONDS}s")
 
 
-async def _claude_followup(lead_name: str, locale: str, audit_data: dict, website_url: str, quote: dict) -> Optional[dict]:
+async def _claude_followup(lead_name: str, locale: str, audit_data: dict, website_url: str, quote: dict, kind: str = "audit") -> Optional[dict]:
     import json as _json
     import re as _re
-    sys_p = FOLLOWUP_SYSTEM_EN if locale == 'en' else FOLLOWUP_SYSTEM_IT
+    if kind == "no_site":
+        sys_p = FOLLOWUP_NOSITE_SYSTEM_EN if locale == 'en' else FOLLOWUP_NOSITE_SYSTEM_IT
+    else:
+        sys_p = FOLLOWUP_SYSTEM_EN if locale == 'en' else FOLLOWUP_SYSTEM_IT
 
     obs_block = "\n".join([f"- {o.get('title','')}: {o.get('body','')}" for o in (audit_data.get('observations') or [])[:3]])
     qw = audit_data.get('quick_win') or {}
     headline = audit_data.get('headline') or ''
 
+    sent_label = "CONSIGLI GIA' INVIATI 24h FA" if kind == "no_site" else "AUDIT GIA' INVIATO 24h FA"
+    obs_label = "3 consigli" if kind == "no_site" else "3 osservazioni"
     user_text = (
         f"Destinatario: {lead_name}\n"
-        f"Sito: {website_url}\n"
+        f"Sito: {website_url or 'nessuno — brand/progetto nuovo'}\n"
         f"Lingua: {locale}\n\n"
-        f"AUDIT GIA' INVIATO 24h FA:\n"
+        f"{sent_label}:\n"
         f"Headline: {headline}\n\n"
-        f"3 osservazioni:\n{obs_block}\n\n"
+        f"{obs_label}:\n{obs_block}\n\n"
         f"Quick win: {qw.get('title','')} — {qw.get('body','')}\n\n"
         f"Range stima dato: {quote.get('estimate_range','-')}\n"
         f"Fit score: {quote.get('fit_score',0)}/100\n\n"
@@ -1246,7 +1295,7 @@ def _followup_email_html(name: str, locale: str, data: dict, website_url: str, a
 
       <tr><td style="padding:16px 32px 22px;border-top:1px solid rgba(255,255,255,0.06);">
         <div style="font-family:'JetBrains Mono', monospace; font-size:10px; color:#737373; letter-spacing:0.22em; text-transform:uppercase;">
-          not4sale · {L('Mini-audit del', 'Mini-audit of')} {website_url}<br/>
+          not4sale · {(L('Mini-audit del', 'Mini-audit of') + ' ' + website_url) if website_url else L('Il tuo progetto', 'Your project')}<br/>
           Cattolica (RN) · 43.962°N 12.737°E
         </div>
       </td></tr>
@@ -1261,8 +1310,11 @@ def _followup_email_text(name: str, locale: str, data: dict, website_url: str, l
     L = lambda it, en: en if locale == 'en' else it  # noqa: E731
     paragraphs = "\n\n".join(data.get('body_paragraphs') or [])
     link = f"{AUDIT_SITE_URL}{('/en/contact' if locale=='en' else '/contatti')}?ref=followup&lead_id={lead_id}"
-    header_label = L("Follow-up sull'audit di", "Follow-up on the audit of")
-    out = f"""[NOT4SALE] {header_label} {website_url}
+    if website_url:
+        header = L("Follow-up sull'audit di", "Follow-up on the audit of") + " " + website_url
+    else:
+        header = L("Follow-up sul tuo progetto", "Follow-up on your project")
+    out = f"""[NOT4SALE] {header}
 
 {L('Ciao', 'Hi')} {name.split(' ')[0]},
 
@@ -1296,17 +1348,22 @@ async def _run_followup(job: dict):
     error_msg = None
     followup_data = None
 
+    kind = job.get("kind") or "audit"
     try:
         followup_data = await _claude_followup(
             lead_name=job["name"], locale=locale, audit_data=audit_data,
-            website_url=job["website_url"], quote=quote,
+            website_url=job["website_url"], quote=quote, kind=kind,
         )
         if not followup_data or not followup_data.get("body_paragraphs"):
             error_msg = "generation_failed"
         else:
-            subject = followup_data.get("subject") or (
-                f"Ho riguardato {job['website_url']}" if locale != 'en' else f"I had another look at {job['website_url']}"
-            )
+            if kind == "no_site" or not job.get("website_url"):
+                default_subject = "A che punto sei col progetto?" if locale != 'en' else "How is the project going?"
+            else:
+                default_subject = (
+                    f"Ho riguardato {job['website_url']}" if locale != 'en' else f"I had another look at {job['website_url']}"
+                )
+            subject = followup_data.get("subject") or default_subject
             html = _followup_email_html(
                 name=job["name"], locale=locale, data=followup_data,
                 website_url=job["website_url"], audit_data=audit_data, lead_id=lead_id,

@@ -245,15 +245,19 @@ const QuoteCalculatorPage = () => {
                           <FieldQ label={t.quote.labels.website} value={form.website_url} onChange={(v) => update("website_url", v)} placeholder="https://" testId="quote-input-website" />
                         </div>
                         <div>
-                          <label className="block text-[10px] font-mono uppercase tracking-[0.28em] text-neutral-500 mb-3">
+                          <label className="block text-[10px] font-mono uppercase tracking-[0.28em] text-neutral-500 mb-2">
                             {t.quote.labels.notes}
                           </label>
+                          <p className="text-sm text-neutral-400 leading-relaxed mb-3">
+                            {t.quote.labels.notesHint}
+                          </p>
                           <textarea
                             value={form.notes}
                             onChange={(e) => update("notes", e.target.value)}
-                            rows={3}
+                            rows={4}
+                            placeholder={t.quote.labels.notesPlaceholder}
                             data-testid="quote-input-notes"
-                            className="w-full bg-transparent border-b border-white/15 focus:border-violet-500 outline-none text-white py-3 text-lg"
+                            className="w-full bg-transparent border-b border-white/15 focus:border-violet-500 outline-none text-white py-3 text-lg placeholder-neutral-600"
                           />
                         </div>
                         {form.website_url && (
