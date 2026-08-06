@@ -33,6 +33,23 @@ export const AIChat = () => {
   }, [locale]);
 
   useEffect(() => {
+    // ripristina la conversazione salvata per questa sessione
+    let cancelled = false;
+    axios
+      .get(`${API}/chat/history/${sessionId}`)
+      .then((res) => {
+        if (!cancelled && Array.isArray(res.data) && res.data.length > 0) {
+          setMessages(res.data.map((m) => ({ role: m.role, content: m.content })));
+        }
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
     if (open && scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
   }, [open, messages]);
 
@@ -87,9 +104,6 @@ export const AIChat = () => {
               <span className="w-2 h-2 rounded-full bg-violet-500 animate-pulse" />
               <div className="leading-tight">
                 <div className="font-display font-bold tracking-wide text-white">N4S · AI</div>
-                <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-neutral-500">
-                  Claude Sonnet 4.5
-                </div>
               </div>
             </div>
 
