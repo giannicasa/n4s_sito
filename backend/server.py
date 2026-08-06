@@ -5,6 +5,7 @@ from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
 import io
+import re
 import base64
 import asyncio
 import logging
@@ -16,7 +17,7 @@ from datetime import datetime, timezone
 import httpx
 import resend
 
-from emergentintegrations.llm.chat import LlmChat, UserMessage, ImageContent
+from openai import AsyncOpenAI
 from PIL import Image, ImageDraw, ImageFont
 
 
@@ -32,10 +33,40 @@ mongo_url = os.environ['MONGO_URL']
 client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
 
-EMERGENT_LLM_KEY = os.environ.get('EMERGENT_LLM_KEY', '')
+OPENROUTER_API_KEY = os.environ.get('OPENROUTER_API_KEY', '')
+LLM_MODEL = os.environ.get('LLM_MODEL', 'qwen/qwen3-8b')
+LLM_VISION_MODEL = os.environ.get('LLM_VISION_MODEL', 'qwen/qwen3-vl-8b-instruct')
 RESEND_API_KEY = os.environ.get('RESEND_API_KEY', '')
 SENDER_EMAIL = os.environ.get('SENDER_EMAIL', 'onboarding@resend.dev')
 AUDIT_SITE_URL = os.environ.get('AUDIT_SITE_URL', 'https://not4.sale')
+
+llm_client = AsyncOpenAI(base_url="https://openrouter.ai/api/v1", api_key=OPENROUTER_API_KEY)
+
+_THINK_RE = re.compile(r"<think>[\s\S]*?</think>\s*")
+
+
+async def llm_complete(system_message: str, user_text: str, image_b64: Optional[str] = None) -> str:
+    """Single-turn completion via OpenRouter. With image_b64 uses the vision model."""
+    if image_b64 is None:
+        content = user_text
+        model = LLM_MODEL
+    else:
+        content = [
+            {"type": "text", "text": user_text},
+            {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{image_b64}"}},
+        ]
+        model = LLM_VISION_MODEL
+    resp = await llm_client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": system_message},
+            {"role": "user", "content": content},
+        ],
+    )
+    text = resp.choices[0].message.content or ""
+    # Qwen thinking-mode può includere blocchi <think> nel testo
+    return _THINK_RE.sub("", text).strip()
+
 
 if RESEND_API_KEY:
     resend.api_key = RESEND_API_KEY
@@ -220,7 +251,7 @@ async def get_chat_history(session_id: str):
 
 @api_router.post("/chat", response_model=ChatResponse)
 async def chat(payload: ChatRequest):
-    if not EMERGENT_LLM_KEY:
+    if not OPENROUTER_API_KEY:
         raise HTTPException(status_code=500, detail="LLM key not configured")
 
     session_id = payload.session_id.strip() or str(uuid.uuid4())
@@ -244,14 +275,8 @@ async def chat(payload: ChatRequest):
         end_tag = "[END]" if (payload.locale or 'it') == 'en' else "[FINE STORICO]"
         system_prompt = f"{base_sys}\n\n{tag}\n{transcript}\n{end_tag}"
 
-    chat_client = LlmChat(
-        api_key=EMERGENT_LLM_KEY,
-        session_id=session_id,
-        system_message=system_prompt,
-    ).with_model("anthropic", "claude-sonnet-4-5-20250929")
-
     try:
-        reply_text = await chat_client.send_message(UserMessage(text=payload.message))
+        reply_text = await llm_complete(system_prompt, payload.message)
     except Exception as e:
         logger.exception("LLM call failed")
         raise HTTPException(status_code=502, detail=f"LLM error: {e}")
@@ -289,7 +314,7 @@ QUOTE_SYSTEM_EN = (
 
 @api_router.post("/quote/estimate", response_model=QuoteResponse)
 async def estimate_quote(payload: QuoteRequest, background_tasks: BackgroundTasks):
-    if not EMERGENT_LLM_KEY:
+    if not OPENROUTER_API_KEY:
         raise HTTPException(status_code=500, detail="LLM key not configured")
 
     # Persist as lead first
@@ -322,14 +347,8 @@ async def estimate_quote(payload: QuoteRequest, background_tasks: BackgroundTask
         f"Note: {payload.notes or '-'}"
     )
 
-    chat_client = LlmChat(
-        api_key=EMERGENT_LLM_KEY,
-        session_id=f"quote-{lead.id}",
-        system_message=base_sys,
-    ).with_model("anthropic", "claude-sonnet-4-5-20250929")
-
     try:
-        raw = await chat_client.send_message(UserMessage(text=user_prompt))
+        raw = await llm_complete(base_sys, user_prompt)
     except Exception as e:
         logger.exception("Quote LLM failed")
         raise HTTPException(status_code=502, detail=f"LLM error: {e}")
@@ -651,11 +670,6 @@ async def _claude_vision_audit(image_b64: str, website_url: str, locale: str, co
     import json as _json
     import re as _re
     sys_p = AUDIT_SYSTEM_EN if locale == 'en' else AUDIT_SYSTEM_IT
-    chat_client = LlmChat(
-        api_key=EMERGENT_LLM_KEY,
-        session_id=f"audit-{uuid.uuid4().hex[:8]}",
-        system_message=sys_p,
-    ).with_model("anthropic", "claude-sonnet-4-5-20250929")
 
     user_text = (
         f"Sito analizzato: {website_url}\n"
@@ -672,10 +686,9 @@ async def _claude_vision_audit(image_b64: str, website_url: str, locale: str, co
     )
 
     try:
-        msg = UserMessage(text=user_text, file_contents=[ImageContent(image_base64=image_b64)])
-        raw = await chat_client.send_message(msg)
+        raw = await llm_complete(sys_p, user_text, image_b64=image_b64)
     except Exception as e:
-        logger.exception(f"Claude vision audit failed: {e}")
+        logger.exception(f"Vision audit failed: {e}")
         return None
 
     text = raw if isinstance(raw, str) else str(raw)
@@ -887,11 +900,6 @@ async def _claude_followup(lead_name: str, locale: str, audit_data: dict, websit
     import json as _json
     import re as _re
     sys_p = FOLLOWUP_SYSTEM_EN if locale == 'en' else FOLLOWUP_SYSTEM_IT
-    chat_client = LlmChat(
-        api_key=EMERGENT_LLM_KEY,
-        session_id=f"followup-{uuid.uuid4().hex[:8]}",
-        system_message=sys_p,
-    ).with_model("anthropic", "claude-sonnet-4-5-20250929")
 
     obs_block = "\n".join([f"- {o.get('title','')}: {o.get('body','')}" for o in (audit_data.get('observations') or [])[:3]])
     qw = audit_data.get('quick_win') or {}
@@ -911,9 +919,9 @@ async def _claude_followup(lead_name: str, locale: str, audit_data: dict, websit
     )
 
     try:
-        raw = await chat_client.send_message(UserMessage(text=user_text))
+        raw = await llm_complete(sys_p, user_text)
     except Exception:
-        logger.exception("Claude follow-up failed")
+        logger.exception("LLM follow-up failed")
         return None
 
     text = raw if isinstance(raw, str) else str(raw)

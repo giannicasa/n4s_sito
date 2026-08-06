@@ -34,22 +34,6 @@ export const FOUNDERS = [
     color: "#ffffff"
   },
   {
-    name: "Valentino Piemonti",
-    role: T("Digital Photo Strategist · Communication", "Digital Photo Strategist · Communication"),
-    years: "20Y",
-    yearsLabel: T("dietro la lente", "behind the lens"),
-    bio: T(
-      "20 anni a guardare il mondo da dietro una lente — e a capire prima degli altri come voleva farsi raccontare. Ha lavorato con brand di fascia alta su progetti nazionali, costruendo immagini che non sono solo 'belle': sono posizionamento. Per lui un'immagine ha un solo lavoro: cambiare la percezione che il mercato ha di te. Tutto il resto è stock photo.",
-      "20 years looking at the world through a lens — and figuring out before everyone else how it wanted to be told. He's worked with premium brands on national-scale projects, crafting images that aren't just 'pretty': they're positioning. To him an image has one job — change how the market sees you. Everything else is stock photo."
-    ),
-    skills: T(
-      ["Strategia visiva", "Produzione foto · video", "Brand communication", "Direzione creativa"],
-      ["Visual strategy", "Photo · video production", "Brand communication", "Creative direction"]
-    ),
-    vibe: T("Estetica solo se è anche strategia.", "Aesthetics only if they're also strategy."),
-    color: "#9D4CDD"
-  },
-  {
     name: "Gianluca Venturini",
     role: T("Strategist · Commercial Mind", "Strategist · Commercial Mind"),
     years: "25Y",
