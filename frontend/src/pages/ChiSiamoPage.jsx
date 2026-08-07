@@ -11,7 +11,7 @@ const ChiSiamoPage = () => {
   return (
     <>
       <SEOHead
-        title={locale === "en" ? "About · 4 partners, one vision" : "Chi siamo · 4 soci, una visione"}
+        title={locale === "en" ? "About · 3 partners, one vision" : "Chi siamo · 3 soci, una visione"}
         description={t.about.body}
         path={r.about}
         ogKicker={t.nav.about}
