@@ -6,8 +6,7 @@ export const COMPANY = {
   city: "Cattolica",
   province: "RN",
   country: { it: "Italia", en: "Italy" },
-  // TODO: inserire la partita IVA reale appena disponibile
-  piva: "",
+  piva: "04870280403",
   email: "hello@not4.sale",
 };
 

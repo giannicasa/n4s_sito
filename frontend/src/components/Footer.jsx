@@ -64,11 +64,29 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-24 mb-10 overflow-hidden">
+        <div className="mt-24 mb-10">
           <Link to={r.home} aria-label="not4sale" className="block group" data-testid="footer-wordmark">
-            <span className="font-display font-black uppercase leading-none tracking-[-0.06em] md:tracking-[-0.04em] block text-white text-[15vw] md:text-[18vw] whitespace-nowrap">
-              <span className="text-violet-500">[</span>NOT4SALE<span className="text-violet-500">]</span>
-            </span>
+            {/* SVG fluido: textLength forza la scritta a occupare esattamente
+                la larghezza disponibile, su qualsiasi viewport */}
+            <svg
+              viewBox="0 38 1200 118"
+              className="block w-full h-auto select-none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <text
+                x="600"
+                y="150"
+                textAnchor="middle"
+                textLength="1190"
+                lengthAdjust="spacingAndGlyphs"
+                fontSize="150"
+                className="font-display font-black uppercase"
+                fill="#ffffff"
+              >
+                <tspan fill="#9D4CDD">[</tspan>NOT4SALE<tspan fill="#9D4CDD">]</tspan>
+              </text>
+            </svg>
           </Link>
         </div>
 
