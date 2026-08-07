@@ -1,10 +1,60 @@
-import React from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { SERVICES } from "../data/services";
 import useLocale from "../hooks/useLocale";
 import { CharReveal } from "./CharReveal";
 import { COMPANY, companyFullAddress } from "../data/company";
 import { openPreferences } from "../lib/consent";
+
+const WORDMARK_CLASSES =
+  "font-display font-black uppercase leading-none tracking-[-0.04em] whitespace-nowrap";
+
+// Scala il wordmark alla larghezza disponibile SENZA deformare i glifi:
+// misura la larghezza naturale del testo a una font-size campione e
+// calcola la font-size esatta che riempie la riga.
+const Wordmark = () => {
+  const wrapRef = useRef(null);
+  const measureRef = useRef(null);
+  const [fontSize, setFontSize] = useState(null);
+
+  useLayoutEffect(() => {
+    const BASE = 100; // px campione per la misurazione
+    const fit = () => {
+      const wrap = wrapRef.current;
+      const probe = measureRef.current;
+      if (!wrap || !probe) return;
+      const natural = probe.getBoundingClientRect().width;
+      if (natural > 0) {
+        setFontSize((wrap.clientWidth / natural) * BASE * 0.995);
+      }
+    };
+    fit();
+    const ro = new ResizeObserver(fit);
+    ro.observe(wrapRef.current);
+    if (document.fonts?.ready) document.fonts.ready.then(fit);
+    return () => ro.disconnect();
+  }, []);
+
+  return (
+    <div ref={wrapRef} className="relative w-full overflow-hidden">
+      {/* sonda invisibile a font-size fissa, solo per misurare */}
+      <span
+        ref={measureRef}
+        aria-hidden="true"
+        className={`${WORDMARK_CLASSES} absolute invisible left-0 top-0`}
+        style={{ fontSize: 100 }}
+      >
+        [NOT4SALE]
+      </span>
+      <span
+        className={`${WORDMARK_CLASSES} block text-white`}
+        style={{ fontSize: fontSize ? `${fontSize}px` : "12vw", visibility: fontSize ? "visible" : "hidden" }}
+      >
+        <span className="text-violet-500">[</span>NOT4SALE<span className="text-violet-500">]</span>
+      </span>
+    </div>
+  );
+};
 
 export const Footer = () => {
   const { t, r, locale } = useLocale();
@@ -66,27 +116,7 @@ export const Footer = () => {
 
         <div className="mt-24 mb-10">
           <Link to={r.home} aria-label="not4sale" className="block group" data-testid="footer-wordmark">
-            {/* SVG fluido: textLength forza la scritta a occupare esattamente
-                la larghezza disponibile, su qualsiasi viewport */}
-            <svg
-              viewBox="0 38 1200 118"
-              className="block w-full h-auto select-none"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <text
-                x="600"
-                y="150"
-                textAnchor="middle"
-                textLength="1190"
-                lengthAdjust="spacingAndGlyphs"
-                fontSize="150"
-                className="font-display font-black uppercase"
-                fill="#ffffff"
-              >
-                <tspan fill="#9D4CDD">[</tspan>NOT4SALE<tspan fill="#9D4CDD">]</tspan>
-              </text>
-            </svg>
+            <Wordmark />
           </Link>
         </div>
 
