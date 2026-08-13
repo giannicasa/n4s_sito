@@ -23,6 +23,7 @@ const QuoteCalculatorPage = () => {
     timeline: "",
     name: "",
     email: "",
+    phone: "",
     company: "",
     website_url: "",
     notes: ""
@@ -43,7 +44,7 @@ const QuoteCalculatorPage = () => {
     if (step === 0) return !!form.objective;
     if (step === 1) return form.services.length > 0;
     if (step === 2) return !!form.budget && !!form.timeline;
-    if (step === 3) return !!form.name && !!form.email;
+    if (step === 3) return !!form.name && !!form.email && form.phone.trim().length >= 6;
     return false;
   };
 
@@ -241,6 +242,7 @@ const QuoteCalculatorPage = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                           <FieldQ label={t.quote.labels.name + " *"} value={form.name} onChange={(v) => update("name", v)} testId="quote-input-name" />
                           <FieldQ label={t.quote.labels.email + " *"} value={form.email} onChange={(v) => update("email", v)} type="email" testId="quote-input-email" />
+                          <FieldQ label={t.quote.labels.phone + " *"} value={form.phone} onChange={(v) => update("phone", v)} type="tel" placeholder="+39" testId="quote-input-phone" />
                           <FieldQ label={t.quote.labels.company} value={form.company} onChange={(v) => update("company", v)} testId="quote-input-company" />
                           <FieldQ label={t.quote.labels.website} value={form.website_url} onChange={(v) => update("website_url", v)} placeholder="https://" testId="quote-input-website" />
                         </div>

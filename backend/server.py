@@ -39,6 +39,7 @@ LLM_VISION_MODEL = os.environ.get('LLM_VISION_MODEL', 'qwen/qwen3-vl-8b-instruct
 RESEND_API_KEY = os.environ.get('RESEND_API_KEY', '')
 SENDER_EMAIL = os.environ.get('SENDER_EMAIL', 'onboarding@resend.dev')
 AUDIT_SITE_URL = os.environ.get('AUDIT_SITE_URL', 'https://not4.sale')
+N8N_LEAD_WEBHOOK_URL = os.environ.get('N8N_LEAD_WEBHOOK_URL', '')
 
 llm_client = AsyncOpenAI(base_url="https://openrouter.ai/api/v1", api_key=OPENROUTER_API_KEY)
 
@@ -131,6 +132,9 @@ class QuoteRequest(BaseModel):
     timeline: str = Field(..., max_length=80)
     name: str = Field(..., min_length=1, max_length=120)
     email: EmailStr
+    # Obbligatorio lato frontend; qui opzionale per non rompere le sessioni
+    # aperte prima del deploy (SPA già caricata senza il campo)
+    phone: Optional[str] = Field(default=None, max_length=40)
     company: Optional[str] = Field(default=None, max_length=120)
     website_url: Optional[str] = Field(default=None, max_length=500)
     notes: Optional[str] = Field(default=None, max_length=2000)
@@ -346,6 +350,7 @@ async def estimate_quote(payload: QuoteRequest, background_tasks: BackgroundTask
     lead = Lead(
         name=payload.name,
         email=payload.email,
+        phone=payload.phone,
         company=payload.company,
         service=", ".join(payload.services) if payload.services else None,
         budget=payload.budget,
@@ -410,6 +415,24 @@ async def estimate_quote(payload: QuoteRequest, background_tasks: BackgroundTask
                 fit_score=_default_fit(payload),
             )
 
+    # Notifica il CRM via webhook n8n (best-effort, dopo la risposta all'utente)
+    background_tasks.add_task(_notify_n8n_lead, {
+        "name": payload.name,
+        "email": payload.email,
+        "phone": payload.phone,
+        "company": payload.company,
+        "message": payload.notes,
+        "raw": {
+            "lead_id": lead.id,
+            "obiettivo": payload.objective,
+            "leve": payload.services,
+            "budget": payload.budget,
+            "inizio": payload.timeline,
+            "stima_generata": result.estimate_range,
+            "url_report": None,  # il report non ha un link pubblico: va a video e via email
+        },
+    })
+
     # Schedule the auto-audit email if we have a URL + Resend configured
     audit_scheduled = False
     if payload.website_url and RESEND_API_KEY:
@@ -445,6 +468,24 @@ async def estimate_quote(payload: QuoteRequest, background_tasks: BackgroundTask
 
     result.audit_scheduled = audit_scheduled
     return result
+
+
+async def _notify_n8n_lead(payload: dict):
+    """Invia il lead al webhook n8n (CRM). Best-effort: mai bloccante,
+    salta silenziosamente se N8N_LEAD_WEBHOOK_URL non è configurata,
+    logga i fallimenti lato server."""
+    if not N8N_LEAD_WEBHOOK_URL:
+        return
+    try:
+        async with httpx.AsyncClient(timeout=10) as hc:
+            r = await hc.post(N8N_LEAD_WEBHOOK_URL, json=payload)
+            if r.status_code >= 300:
+                logger.warning(
+                    "n8n webhook non-2xx per lead=%s: status=%s body=%s",
+                    payload.get("raw", {}).get("lead_id"), r.status_code, r.text[:200],
+                )
+    except Exception:
+        logger.exception("n8n webhook failed per lead=%s", payload.get("raw", {}).get("lead_id"))
 
 
 def _normalize_url(u: str) -> str:
