@@ -75,6 +75,8 @@ const QuoteCalculatorPage = () => {
         alternatePath={altPath}
       />
 
+      <CalcOverlay visible={loading} locale={locale} />
+
       <section className="relative pt-40 pb-12 md:pt-56 md:pb-16 grain">
         <div className="max-w-[1600px] mx-auto px-5 md:px-10">
           <Reveal className="text-[10px] font-mono uppercase tracking-[0.32em] text-violet-400 mb-6 flex items-center gap-2">
@@ -396,6 +398,129 @@ const QuoteCalculatorPage = () => {
         </div>
       </section>
     </>
+  );
+};
+
+const CALC_MESSAGES = {
+  it: [
+    "Leggo le tue risposte. Tutte.",
+    "Convoco le tre teste dello studio.",
+    "Scarto le strategie fotocopia.",
+    "Niente Ferrari se ti serve una 500.",
+    "Butto le vanity metric nel cestino.",
+    "Calibro la stima sul tuo budget. Onestamente.",
+    "Controllo il fit score. Senza sconti.",
+    "Ultimi ritocchi. Quasi pronto.",
+  ],
+  en: [
+    "Reading your answers. All of them.",
+    "Summoning the studio's three heads.",
+    "Discarding copy-paste strategies.",
+    "No Ferrari if you need a Fiat 500.",
+    "Throwing vanity metrics in the bin.",
+    "Calibrating the estimate to your budget. Honestly.",
+    "Checking the fit score. No discounts.",
+    "Final touches. Almost there.",
+  ],
+};
+
+const CalcOverlay = ({ visible, locale }) => {
+  const msgs = CALC_MESSAGES[locale] || CALC_MESSAGES.it;
+  const [idx, setIdx] = useState(0);
+  const [progress, setProgress] = useState(0);
+
+  React.useEffect(() => {
+    if (!visible) return;
+    setIdx(0);
+    setProgress(0);
+    // un messaggio ogni ~1.9s, si ferma sull'ultimo
+    const mi = setInterval(() => {
+      setIdx((i) => Math.min(i + 1, msgs.length - 1));
+    }, 1900);
+    // barra pseudo-casuale che si avvicina al 94% senza mai finire da sola
+    const pi = setInterval(() => {
+      setProgress((p) => Math.min(94, p + 2 + Math.random() * 7));
+    }, 600);
+    return () => {
+      clearInterval(mi);
+      clearInterval(pi);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [visible]);
+
+  return (
+    <AnimatePresence>
+      {visible && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0, transition: { duration: 0.35 } }}
+          className="fixed inset-0 z-[9900] bg-black/95 backdrop-blur-md flex items-center justify-center px-6"
+          role="status"
+          aria-live="polite"
+          data-testid="quote-calc-overlay"
+        >
+          <div className="w-full max-w-[720px] text-center">
+            <p className="text-xs font-mono uppercase tracking-[0.32em] text-violet-400 mb-10">
+              {locale === "en" ? "The machine is working" : "La macchina è al lavoro"}
+            </p>
+
+            <div className="flex items-center justify-center gap-3 md:gap-6 mb-12">
+              <motion.span
+                aria-hidden="true"
+                animate={{ scaleY: [1, 1.15, 1] }}
+                transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
+                className="font-display font-black text-6xl md:text-8xl text-violet-500 leading-none"
+              >
+                [
+              </motion.span>
+              <div className="min-h-[4.5rem] md:min-h-[6rem] flex items-center justify-center flex-1">
+                <AnimatePresence mode="wait">
+                  <motion.p
+                    key={idx}
+                    initial={{ opacity: 0, y: 18 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -18 }}
+                    transition={{ duration: 0.35, ease: [0.2, 0.6, 0.2, 1] }}
+                    className="font-display font-black uppercase text-2xl md:text-4xl leading-[1.05] tracking-tight text-white text-balance"
+                  >
+                    {msgs[idx]}
+                  </motion.p>
+                </AnimatePresence>
+              </div>
+              <motion.span
+                aria-hidden="true"
+                animate={{ scaleY: [1, 1.15, 1] }}
+                transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
+                className="font-display font-black text-6xl md:text-8xl text-violet-500 leading-none"
+              >
+                ]
+              </motion.span>
+            </div>
+
+            <div className="max-w-[420px] mx-auto">
+              <div className="h-[3px] bg-white/10 overflow-hidden">
+                <motion.div
+                  className="h-full bg-violet-500"
+                  animate={{ width: `${progress}%` }}
+                  transition={{ ease: "easeOut", duration: 0.5 }}
+                />
+              </div>
+              <div className="flex justify-between mt-3 text-[10px] font-mono uppercase tracking-[0.24em] text-neutral-500">
+                <span>{locale === "en" ? "Honest estimate incoming" : "Stima onesta in arrivo"}</span>
+                <span className="text-violet-400">{Math.round(progress)}%</span>
+              </div>
+            </div>
+
+            <p className="mt-12 text-sm text-neutral-500">
+              {locale === "en"
+                ? "10-15 seconds. Still faster than a 45-minute discovery call."
+                : "10-15 secondi. Sempre meglio di una call conoscitiva da 45 minuti."}
+            </p>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 
