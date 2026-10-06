@@ -24,6 +24,16 @@ const nextConfig: NextConfig = {
       fallback: [],
     }
   },
+  async headers() {
+    return [
+      // *.vercel.app e anteprime non devono finire nell'indice: solo il dominio di produzione
+      {
+        source: '/:path*',
+        missing: [{ type: 'host', value: '(www\\.)?not4\\.sale' }],
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
+      },
+    ]
+  },
   async redirects() {
     return [
       // vecchi endpoint SEO del backend
