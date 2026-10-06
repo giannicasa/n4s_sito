@@ -69,6 +69,9 @@ export interface Config {
   collections: {
     'service-areas': ServiceArea;
     services: Service;
+    locations: Location;
+    'local-services': LocalService;
+    sectors: Sector;
     'case-studies': CaseStudy;
     posts: Post;
     categories: Category;
@@ -86,6 +89,9 @@ export interface Config {
   collectionsSelect: {
     'service-areas': ServiceAreasSelect<false> | ServiceAreasSelect<true>;
     services: ServicesSelect<false> | ServicesSelect<true>;
+    locations: LocationsSelect<false> | LocationsSelect<true>;
+    'local-services': LocalServicesSelect<false> | LocalServicesSelect<true>;
+    sectors: SectorsSelect<false> | SectorsSelect<true>;
     'case-studies': CaseStudiesSelect<false> | CaseStudiesSelect<true>;
     posts: PostsSelect<false> | PostsSelect<true>;
     categories: CategoriesSelect<false> | CategoriesSelect<true>;
@@ -417,6 +423,245 @@ export interface CaseStudy {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "locations".
+ */
+export interface Location {
+  id: string;
+  name: string;
+  province: 'RN' | 'PU';
+  /**
+   * Es. Valconca, Riviera, Montefeltro
+   */
+  zone?: string | null;
+  headline?: string | null;
+  short: string;
+  /**
+   * Paragrafo di 40–60 parole che risponde da solo alla domanda "cos'è / cosa fate / quanto costa". È il blocco che Google AI Overviews e ChatGPT citano.
+   */
+  answer?: string | null;
+  economy?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  challenges?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  body?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Domande reali dei clienti. 5–8 per pagina servizio. Risposte dirette, 40–80 parole.
+   */
+  faq?:
+    | {
+        question: string;
+        answer: string;
+        id?: string | null;
+      }[]
+    | null;
+  distanceKm?: number | null;
+  travelMinutes?: number | null;
+  geo?: {
+    lat?: number | null;
+    lng?: number | null;
+  };
+  highlights?:
+    | {
+        item: string;
+        id?: string | null;
+      }[]
+    | null;
+  sectors?: (string | Sector)[] | null;
+  services?: (string | Service)[] | null;
+  nearby?: (string | Location)[] | null;
+  /**
+   * Parte finale dell'URL. Se vuoto viene generato dal titolo.
+   */
+  slug?: string | null;
+  meta?: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+  };
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "sectors".
+ */
+export interface Sector {
+  id: string;
+  title: string;
+  headline?: string | null;
+  short: string;
+  /**
+   * Paragrafo di 40–60 parole che risponde da solo alla domanda "cos'è / cosa fate / quanto costa". È il blocco che Google AI Overviews e ChatGPT citano.
+   */
+  answer?: string | null;
+  problem?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  process?:
+    | {
+        title: string;
+        description?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  body?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Domande reali dei clienti. 5–8 per pagina servizio. Risposte dirette, 40–80 parole.
+   */
+  faq?:
+    | {
+        question: string;
+        answer: string;
+        id?: string | null;
+      }[]
+    | null;
+  services?: (string | Service)[] | null;
+  locations?: (string | Location)[] | null;
+  caseStudies?: (string | CaseStudy)[] | null;
+  /**
+   * Parte finale dell'URL. Se vuoto viene generato dal titolo.
+   */
+  slug?: string | null;
+  order?: number | null;
+  meta?: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+  };
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "local-services".
+ */
+export interface LocalService {
+  id: string;
+  /**
+   * Es. "Google Ads · Rimini"
+   */
+  title: string;
+  location: string | Location;
+  service: string | Service;
+  headline: string;
+  short: string;
+  /**
+   * Paragrafo di 40–60 parole che risponde da solo alla domanda "cos'è / cosa fate / quanto costa". È il blocco che Google AI Overviews e ChatGPT citano.
+   */
+  answer?: string | null;
+  body?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Domande reali dei clienti. 5–8 per pagina servizio. Risposte dirette, 40–80 parole.
+   */
+  faq?:
+    | {
+        question: string;
+        answer: string;
+        id?: string | null;
+      }[]
+    | null;
+  meta?: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+  };
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "posts".
  */
 export interface Post {
@@ -723,6 +968,18 @@ export interface PayloadLockedDocument {
         value: string | Service;
       } | null)
     | ({
+        relationTo: 'locations';
+        value: string | Location;
+      } | null)
+    | ({
+        relationTo: 'local-services';
+        value: string | LocalService;
+      } | null)
+    | ({
+        relationTo: 'sectors';
+        value: string | Sector;
+      } | null)
+    | ({
         relationTo: 'case-studies';
         value: string | CaseStudy;
       } | null)
@@ -868,6 +1125,127 @@ export interface ServicesSelect<T extends boolean = true> {
   slug?: T;
   order?: T;
   wave?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "locations_select".
+ */
+export interface LocationsSelect<T extends boolean = true> {
+  name?: T;
+  province?: T;
+  zone?: T;
+  headline?: T;
+  short?: T;
+  answer?: T;
+  economy?: T;
+  challenges?: T;
+  body?: T;
+  faq?:
+    | T
+    | {
+        question?: T;
+        answer?: T;
+        id?: T;
+      };
+  distanceKm?: T;
+  travelMinutes?: T;
+  geo?:
+    | T
+    | {
+        lat?: T;
+        lng?: T;
+      };
+  highlights?:
+    | T
+    | {
+        item?: T;
+        id?: T;
+      };
+  sectors?: T;
+  services?: T;
+  nearby?: T;
+  slug?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "local-services_select".
+ */
+export interface LocalServicesSelect<T extends boolean = true> {
+  title?: T;
+  location?: T;
+  service?: T;
+  headline?: T;
+  short?: T;
+  answer?: T;
+  body?: T;
+  faq?:
+    | T
+    | {
+        question?: T;
+        answer?: T;
+        id?: T;
+      };
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "sectors_select".
+ */
+export interface SectorsSelect<T extends boolean = true> {
+  title?: T;
+  headline?: T;
+  short?: T;
+  answer?: T;
+  problem?: T;
+  process?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        id?: T;
+      };
+  body?: T;
+  faq?:
+    | T
+    | {
+        question?: T;
+        answer?: T;
+        id?: T;
+      };
+  services?: T;
+  locations?: T;
+  caseStudies?: T;
+  slug?: T;
+  order?: T;
   meta?:
     | T
     | {

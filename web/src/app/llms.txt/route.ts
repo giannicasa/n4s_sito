@@ -1,4 +1,4 @@
-import { getAreas, getPosts, getServices } from '@/lib/cms'
+import { getAreas, getLocations, getPosts, getSectors, getServices } from '@/lib/cms'
 import { absolute, paths } from '@/lib/paths'
 
 // llms.txt: indice in Markdown dei contenuti principali, pensato per gli assistenti AI.
@@ -6,7 +6,13 @@ import { absolute, paths } from '@/lib/paths'
 export const revalidate = 3600
 
 export async function GET() {
-  const [areas, services, { docs: posts }] = await Promise.all([getAreas('it'), getServices('it'), getPosts({ locale: 'it', limit: 50 })])
+  const [areas, services, { docs: posts }, sectors, locations] = await Promise.all([
+    getAreas('it'),
+    getServices('it'),
+    getPosts({ locale: 'it', limit: 50 }),
+    getSectors(),
+    getLocations(),
+  ])
   const lines: string[] = [
     '# not4sale',
     '',
@@ -24,6 +30,16 @@ export async function GET() {
     for (const s of services.filter((x) => (typeof x.area === 'object' ? x.area?.id : x.area) === a.id)) {
       lines.push(`- [${s.title}](${absolute(paths.service(a.slug!, s.slug!))}): ${s.short}`)
     }
+    lines.push('')
+  }
+  if (sectors.length) {
+    lines.push('## Settori', '')
+    for (const x of sectors) lines.push(`- [${x.title}](${absolute(paths.sector(x.slug!))}): ${x.short}`)
+    lines.push('')
+  }
+  if (locations.length) {
+    lines.push('## Dove lavoriamo', '', `Comuni delle province di Rimini e di Pesaro e Urbino: ${absolute(paths.locations())}`, '')
+    for (const l of locations) lines.push(`- [${l.name}](${absolute(paths.location(l.slug!))})`)
     lines.push('')
   }
   if (posts.length) {

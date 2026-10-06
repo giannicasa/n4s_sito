@@ -6,7 +6,7 @@ import { draftMode } from 'next/headers'
 import { getPayload, type Where } from 'payload'
 import { cache } from 'react'
 
-import type { Author, CaseStudy, Category, Company, Post, Service, ServiceArea } from '@/payload-types'
+import type { Author, CaseStudy, Category, Company, LocalService, Location, Post, Sector, Service, ServiceArea } from '@/payload-types'
 import type { Locale } from './paths'
 
 // Accesso ai contenuti per le pagine pubbliche.
@@ -25,6 +25,16 @@ const isDraft = async () => {
 }
 
 const published: Where = { _status: { equals: 'published' } }
+
+// Dei documenti collegati servono solo i campi per link e card: senza questo filtro
+// una pagina settore si porterebbe dietro il testo integrale di decine di pagine (>2 MB).
+const LINK_FIELDS = {
+  services: { title: true, slug: true, short: true, area: true, _status: true },
+  'service-areas': { title: true, slug: true, code: true },
+  locations: { name: true, slug: true, province: true, zone: true, geo: true, _status: true },
+  sectors: { title: true, slug: true, short: true, _status: true },
+  'case-studies': { code: true, industry: true, title: true, metric: true, excerpt: true, _status: true },
+} as const
 
 const withStatus = (where: Where | undefined, draft: boolean): Where =>
   draft ? (where ?? {}) : where ? { and: [where, published] } : published
@@ -74,6 +84,9 @@ export const getServices = query('services', ['services'], async (draft, locale:
     locale,
     draft,
     depth: 1,
+    // elenchi: niente testi lunghi, solo i campi per card e link
+    select: { title: true, slug: true, short: true, answer: true, area: true, order: true, _status: true },
+    populate: LINK_FIELDS,
     limit: 500,
     pagination: false,
   })
@@ -90,6 +103,7 @@ export const getService = query(
       locale,
       draft,
       depth: 2,
+      populate: LINK_FIELDS,
       limit: 1,
     })
     const doc = res.docs[0] as Service | undefined
@@ -179,11 +193,100 @@ export const getRedirect = query('redirect', ['redirects'], async (_draft, from:
   return res.docs[0] ?? null
 })
 
+// ─── Territorio: comuni, settori, servizi in città (solo italiano) ─────────
+
+
+
+export const getLocations = query('locations', ['local'], async (draft) => {
+  const res = await (await payload()).find({
+    collection: 'locations',
+    where: withStatus(undefined, draft),
+    sort: 'name',
+    draft,
+    depth: 0,
+    limit: 500,
+    pagination: false,
+    select: { name: true, slug: true, province: true, zone: true, short: true, _status: true },
+  })
+  return res.docs as Location[]
+})
+
+export const getLocation = query('location', ['local', 'services'], async (draft, slug: string) => {
+  const res = await (await payload()).find({
+    collection: 'locations',
+    where: withStatus({ slug: { equals: slug } }, draft),
+    draft,
+    depth: 2, populate: LINK_FIELDS,
+    limit: 1,
+  })
+  return (res.docs[0] as Location | undefined) ?? null
+})
+
+export const getLocalServices = query(
+  'local-services',
+  ['local', 'services'],
+  async (draft, filter: { location?: string; service?: string }) => {
+    const and: Where[] = []
+    if (filter.location) and.push({ location: { equals: filter.location } })
+    if (filter.service) and.push({ service: { equals: filter.service } })
+    const res = await (await payload()).find({
+      collection: 'local-services',
+      where: withStatus(and.length ? { and } : undefined, draft),
+      draft,
+      depth: 2, populate: LINK_FIELDS,
+      limit: 500,
+      pagination: false,
+    })
+    return res.docs as LocalService[]
+  },
+)
+
+export const getLocalService = query('local-service', ['local', 'services'], async (draft, locationSlug: string, serviceSlug: string) => {
+  const p = await payload()
+  const [loc, svc] = await Promise.all([
+    p.find({ collection: 'locations', where: withStatus({ slug: { equals: locationSlug } }, draft), draft, depth: 0, limit: 1 }),
+    p.find({ collection: 'services', where: withStatus({ slug: { equals: serviceSlug } }, draft), draft, depth: 0, limit: 1 }),
+  ])
+  if (!loc.docs[0] || !svc.docs[0]) return null
+  const res = await p.find({
+    collection: 'local-services',
+    where: withStatus({ and: [{ location: { equals: loc.docs[0].id } }, { service: { equals: svc.docs[0].id } }] }, draft),
+    draft,
+    depth: 2, populate: LINK_FIELDS,
+    limit: 1,
+  })
+  return (res.docs[0] as LocalService | undefined) ?? null
+})
+
+export const getSectors = query('sectors', ['local'], async (draft) => {
+  const res = await (await payload()).find({
+    collection: 'sectors',
+    where: withStatus(undefined, draft),
+    sort: 'order',
+    draft,
+    depth: 0,
+    limit: 100,
+    pagination: false,
+  })
+  return res.docs as Sector[]
+})
+
+export const getSector = query('sector', ['local', 'services', 'case-studies'], async (draft, slug: string) => {
+  const res = await (await payload()).find({
+    collection: 'sectors',
+    where: withStatus({ slug: { equals: slug } }, draft),
+    draft,
+    depth: 2, populate: LINK_FIELDS,
+    limit: 1,
+  })
+  return (res.docs[0] as Sector | undefined) ?? null
+})
+
 // Per sitemap e generateStaticParams: solo slug pubblicati, senza cache di richiesta.
 export const getPublishedIndex = unstable_cache(
   async () => {
     const p = await payload()
-    const [areas, services, posts, categories, areasEn, servicesEn] = await Promise.all([
+    const [areas, services, posts, categories, areasEn, servicesEn, locations, sectors, localServices] = await Promise.all([
       p.find({ collection: 'service-areas', where: published, depth: 0, limit: 500, pagination: false }),
       p.find({ collection: 'services', where: published, depth: 1, limit: 2000, pagination: false }),
       p.find({ collection: 'posts', where: published, depth: 0, limit: 2000, pagination: false }),
@@ -191,6 +294,9 @@ export const getPublishedIndex = unstable_cache(
       // versione inglese: serve solo a sapere quali pagine hanno davvero un testo in EN
       p.find({ collection: 'service-areas', where: published, locale: 'en', depth: 0, limit: 500, pagination: false }),
       p.find({ collection: 'services', where: published, locale: 'en', depth: 0, limit: 2000, pagination: false }),
+      p.find({ collection: 'locations', where: published, depth: 0, limit: 500, pagination: false, select: { slug: true, updatedAt: true } }),
+      p.find({ collection: 'sectors', where: published, depth: 0, limit: 200, pagination: false, select: { slug: true, updatedAt: true } }),
+      p.find({ collection: 'local-services', where: published, depth: 1, limit: 2000, pagination: false }),
     ])
     const hasEn = (docs: { id: string | number; answer?: string | null }[]) =>
       new Set(docs.filter((d) => d.answer).map((d) => String(d.id)))
@@ -208,8 +314,17 @@ export const getPublishedIndex = unstable_cache(
         })),
       posts: (posts.docs as Post[]).map((p) => ({ slug: p.slug!, updatedAt: p.updatedAt })),
       categories: (categories.docs as Category[]).map((c) => ({ slug: c.slug!, updatedAt: c.updatedAt })),
+      locations: (locations.docs as Location[]).map((l) => ({ slug: l.slug!, updatedAt: l.updatedAt })),
+      sectors: (sectors.docs as Sector[]).map((x) => ({ slug: x.slug!, updatedAt: x.updatedAt })),
+      localServices: (localServices.docs as LocalService[])
+        .filter((ls) => typeof ls.location === 'object' && typeof ls.service === 'object')
+        .map((ls) => ({
+          location: (ls.location as Location).slug!,
+          service: (ls.service as Service).slug!,
+          updatedAt: ls.updatedAt,
+        })),
     }
   },
   ['published-index'],
-  { tags: ['services', 'posts'], revalidate: MAX_AGE },
+  { tags: ['services', 'posts', 'local'], revalidate: MAX_AGE },
 )

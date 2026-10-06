@@ -13,6 +13,12 @@ export const paths = {
   blog: (l: Locale = 'it') => `${prefix(l)}/blog`,
   post: (slug: string, l: Locale = 'it') => `${paths.blog(l)}/${slug}`,
   category: (slug: string, l: Locale = 'it') => `${paths.blog(l)}/${l === 'en' ? 'category' : 'categoria'}/${slug}`,
+  // pagine territoriali: solo in italiano
+  locations: () => '/agenzia-marketing',
+  location: (slug: string) => `/agenzia-marketing/${slug}`,
+  localService: (location: string, service: string) => `/agenzia-marketing/${location}/${service}`,
+  sectors: () => '/settori',
+  sector: (slug: string) => `/settori/${slug}`,
   caseStudies: (l: Locale = 'it') => `${prefix(l)}/case-studies`,
   about: (l: Locale = 'it') => `${prefix(l)}/${l === 'en' ? 'about' : 'chi-siamo'}`,
   contact: (l: Locale = 'it') => `${prefix(l)}/${l === 'en' ? 'contact' : 'contatti'}`,

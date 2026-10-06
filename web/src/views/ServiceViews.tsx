@@ -2,6 +2,7 @@ import { ArrowUpRight, Check } from 'lucide-react'
 import Link from 'next/link'
 
 import { JsonLd } from '@/components/cms/JsonLd'
+import { LocalLinksForService } from '@/components/cms/LocalLinks'
 import { hasRichText, RichText } from '@/components/cms/RichText'
 import ContactForm from '@/components/site/ContactForm'
 import Marquee from '@/components/site/Marquee'
@@ -15,10 +16,10 @@ import { notFoundOrRedirect } from '@/lib/redirects'
 import { buildMetadata } from '@/lib/seo'
 import type { CaseStudy, Post, Service, ServiceArea } from '@/payload-types'
 
-const plain = (title?: string | null) => (title ?? '').replace(/\s·\s.*/, '')
+export const plain = (title?: string | null) => (title ?? '').replace(/\s·\s.*/, '')
 
 // Una pagina è "piena" quando ha almeno la risposta diretta o un testo: le altre restano fuori dall'indice.
-const isThin = (doc: { answer?: string | null; body?: any }) =>
+export const isThin = (doc: { answer?: string | null; body?: any }) =>
   !doc.answer && !hasRichText(doc.body)
 
 // ─── Hub /servizi ──────────────────────────────────────────────────────────
@@ -160,7 +161,7 @@ export const ServicesHub = async ({ locale }: { locale: Locale }) => {
 
 // ─── Blocchi condivisi da area e servizio ──────────────────────────────────
 
-const FaqBlock = ({
+export const FaqBlock = ({
   faq,
   locale,
 }: {
@@ -228,7 +229,7 @@ const PostsBlock = ({ posts, locale }: { posts: Post[]; locale: Locale }) => {
   )
 }
 
-const CasesBlock = ({ cases, locale }: { cases: CaseStudy[]; locale: Locale }) => {
+export const CasesBlock = ({ cases, locale }: { cases: CaseStudy[]; locale: Locale }) => {
   if (!cases.length) return null
   const t = DICT[locale]
   return (
@@ -261,7 +262,7 @@ const CasesBlock = ({ cases, locale }: { cases: CaseStudy[]; locale: Locale }) =
   )
 }
 
-const ContactBlock = ({
+export const ContactBlock = ({
   titlePlain,
   locale,
   aside,
@@ -289,7 +290,7 @@ const ContactBlock = ({
   )
 }
 
-const NextCard = ({
+export const NextCard = ({
   href,
   kicker,
   title,
@@ -317,7 +318,7 @@ const NextCard = ({
 )
 
 // Apertura con H1 e risposta diretta: il blocco che motori e AI leggono per primo.
-const Hero = ({
+export const Hero = ({
   crumbs,
   headline,
   title,
@@ -697,6 +698,7 @@ export const ServiceView = async ({
       )}
 
       <PostsBlock posts={postsRes.docs} locale={locale} />
+      {locale === 'it' && <LocalLinksForService serviceId={s.id} title={titlePlain} />}
       <ContactBlock
         titlePlain={titlePlain}
         locale={locale}

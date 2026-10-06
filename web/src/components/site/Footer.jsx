@@ -92,6 +92,13 @@ export const Footer = () => {
               <li><Link to={r.cases} data-testid="footer-link-cases" className="hover:text-violet-400">{t.nav.caseStudies}</Link></li>
               <li><Link to={r.insights} data-testid="footer-link-insights" className="hover:text-violet-400">{t.nav.insights}</Link></li>
               <li><Link to={r.quote} data-testid="footer-link-quote" className="hover:text-violet-400">{t.nav.quote}</Link></li>
+              {/* pagine territoriali: esistono solo in italiano */}
+              {locale === "it" && (
+                <>
+                  <li><Link to="/agenzia-marketing" data-testid="footer-link-locations" className="hover:text-violet-400">Dove lavoriamo</Link></li>
+                  <li><Link to="/settori" data-testid="footer-link-sectors" className="hover:text-violet-400">Settori</Link></li>
+                </>
+              )}
               <li><Link to={r.contact} data-testid="footer-link-contact" className="hover:text-violet-400">{t.nav.contact}</Link></li>
             </ul>
           </div>
