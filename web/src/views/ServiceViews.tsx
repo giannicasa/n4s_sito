@@ -617,7 +617,9 @@ export const ServiceView = async ({
         <section className="py-24 md:py-32">
           <Container>
             <Kicker className="mb-10">{t.serviceDetail.method}</Kicker>
-            <ol className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 border border-white/10">
+            <ol
+              className={`grid grid-cols-1 md:grid-cols-2 ${s.process.length === 5 ? 'lg:grid-cols-5' : 'lg:grid-cols-4'} gap-px bg-white/10 border border-white/10`}
+            >
               {s.process.map((p, i) => (
                 <li key={p.id ?? i} className="bg-black p-8">
                   <div className="font-mono text-violet-500 text-sm mb-6">
