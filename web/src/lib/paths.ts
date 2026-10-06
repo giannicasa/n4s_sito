@@ -19,6 +19,7 @@ export const paths = {
   localService: (location: string, service: string) => `/agenzia-marketing/${location}/${service}`,
   sectors: () => '/settori',
   sector: (slug: string) => `/settori/${slug}`,
+  sectorService: (sector: string, service: string) => `/settori/${sector}/${service}`,
   caseStudies: (l: Locale = 'it') => `${prefix(l)}/case-studies`,
   about: (l: Locale = 'it') => `${prefix(l)}/${l === 'en' ? 'about' : 'chi-siamo'}`,
   contact: (l: Locale = 'it') => `${prefix(l)}/${l === 'en' ? 'contact' : 'contatti'}`,

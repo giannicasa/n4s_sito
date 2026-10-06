@@ -1,0 +1,507 @@
+{
+  "items": [
+    {
+      "sector": "studi-professionali",
+      "service": "siti-web",
+      "headline": "Siti web per avvocati, commercialisti e studi professionali",
+      "short": "Siti per studi legali, commercialisti e consulenti: aree di competenza chiare, regole deontologiche rispettate, richieste filtrate.",
+      "answer": "I siti web per avvocati, commercialisti e studi professionali progettati da not4sale presentano lo studio per aree di competenza e per professionista, spiegano come si svolge il primo incontro e filtrano le richieste prima che arrivino in segreteria. Scriviamo testi informativi e verificabili, coerenti con le regole deontologiche del tuo ordine, e misuriamo quali richieste diventano incarichi.",
+      "problem": "Il sito tipico di uno studio legale o commerciale si riconosce a colpo d'occhio: la foto della bilancia o di una libreria piena di codici, una pagina \"chi siamo\" con la storia dello studio dal 1985, un elenco di quindici materie messe tutte sullo stesso piano e un modulo che chiede solo nome, email e messaggio.\n\nPer chi arriva, quel sito non risponde a nessuna delle domande che ha davvero in testa. Seguite casi come il mio? Chi se ne occuperebbe? Come funziona il primo appuntamento e cosa devo portare? Come si calcola l'onorario? Senza risposte, la persona torna su Google e apre il sito successivo.\n\nIl conto lo paga lo studio due volte. Arrivano meno contatti di quelli che il passaparola e la reputazione meriterebbero, e quelli che arrivano sono spesso i meno adatti: richieste di un parere gratuito, pratiche fuori dalle tue materie, persone che confrontano solo la tariffa. Ognuna richiede una telefonata, a volte un incontro, e il tempo speso a dire di no è tempo che nessuno fattura.",
+      "process": [
+        {
+          "title": "Mappa delle competenze",
+          "description": "Con i soci decidiamo quali aree mettere in primo piano e quali clienti lo studio vuole davvero ricevere."
+        },
+        {
+          "title": "Interviste ai professionisti",
+          "description": "Raccogliamo in brevi colloqui le domande che i clienti fanno al primo incontro: diventano la struttura delle pagine."
+        },
+        {
+          "title": "Verifica dei contenuti",
+          "description": "Rileggiamo ogni testo alla luce delle regole sulla corretta informazione e lo facciamo approvare al professionista che firma."
+        },
+        {
+          "title": "Sviluppo e modulo filtro",
+          "description": "Costruiamo il sito, il modulo di richiesta con le domande giuste e, se serve, l'area riservata per i documenti."
+        },
+        {
+          "title": "Richieste e incarichi",
+          "description": "Misuriamo le richieste per area e, ogni trimestre, guardiamo con te quante sono diventate pratiche aperte."
+        }
+      ],
+      "body": "## Cosa deve avere un sito web per avvocati e commercialisti?\n\nDeve far capire in pochi passaggi su cosa lo studio è forte, chi ci lavora e come si inizia. Rispetto a un normale [sito aziendale](/servizi/web-app/siti-web), cambiano soprattutto tre cose: la struttura per aree di competenza, il peso dei singoli professionisti e la parte pratica del primo contatto.\n\n- **Una pagina per ogni area**, non un elenco. Per uno studio legale: famiglia, lavoro, recupero crediti, societario. Per un commercialista: forfettari e partite IVA, società, passaggi generazionali, crisi d'impresa. Ogni pagina dice a chi si rivolge, quali situazioni tipiche segue, chi se ne occupa.\n- **Schede dei professionisti** con percorso, iscrizione all'albo, formazione, lingue parlate e materie seguite. Chi sceglie un avvocato sceglie una persona prima che uno studio.\n- **Come si lavora**: cosa succede al primo incontro, quali documenti portare, come si arriva a un preventivo scritto, in quali casi si lavora in videochiamata.\n- **Dati dello studio completi**: ragione sociale o nomi dei professionisti, ordine di appartenenza, partita IVA, PEC, sedi e orari.\n- **Un'area riservata**, quando lo studio scambia molti documenti: più sicura di decine di allegati via email.\n\n## Le regole deontologiche: cosa cambia nei testi\n\nCambia il modo di scrivere, non la possibilità di avere un sito curato. Ogni ordine chiede un'informazione corretta, veritiera e non ingannevole, e alcune regole incidono direttamente sui contenuti. Il codice deontologico forense, per esempio, vieta di indicare nelle comunicazioni pubbliche i nomi dei clienti, anche se acconsentono. E il titolo di \"avvocato specialista\" si può usare solo se è stato effettivamente conseguito secondo le regole forensi: scrivere \"specialisti in diritto di famiglia\" su una home page, senza quel titolo, è un rischio inutile. Anche il codice dei commercialisti ammette una pubblicità informativa purché veritiera e decorosa.\n\nNon siamo un ufficio legale e non diamo pareri: per i casi dubbi la parola finale spetta al tuo ordine. In pratica, scriviamo così:\n\n1. **Fatti al posto degli aggettivi**: materie seguite, anni di iscrizione, pubblicazioni, incarichi di docenza.\n2. **Nessuna promessa di esito** e nessun confronto con altri studi.\n3. **Casi raccontati solo in forma generale**, senza dettagli che rendano riconoscibile il cliente.\n4. **Ogni pagina approvata** dal professionista che ne risponde.\n\nQuesti vincoli sono anche un vantaggio. Google classifica i temi legali e finanziari tra quelli che possono incidere sulla vita e sul patrimonio delle persone, e valuta con più rigore chi li tratta: testi firmati, aggiornati e precisi sono esattamente quello che premia.\n\n## Il modulo di contatto come primo filtro\n\nIl modulo è il punto del sito che fa risparmiare più ore. Invece del classico campo \"messaggio\", poche domande guidate: privato o impresa, area della richiesta, eventuali scadenze, città. In base alle risposte la richiesta arriva al professionista giusto, oppure riceve una risposta cortese che spiega che lo studio non segue quel tipo di pratica.\n\nSe le richieste sono molte, un [assistente sul sito](/servizi/ai-automazione/chatbot) può fare questa prima selezione anche fuori orario e proporre un appuntamento solo a chi è in target. Un limite va chiarito subito: né il modulo né l'assistente danno pareri. Raccolgono informazioni e fissano incontri.\n\n## Errori frequenti nei siti degli studi\n\n- **Le notizie copiate dalle riviste di settore**, che Google considera duplicate e che nessun cliente legge.\n- **Le foto di repertorio**: martelletti da tribunale americano, strette di mano, grattacieli. Meglio foto vere dello studio e delle persone.\n- **Il gergo**: \"contenzioso\", \"adempimenti dichiarativi\", \"due diligence\" vanno spiegati, almeno la prima volta.\n- **Il sito intestato a un ex socio**, o con professionisti che non lavorano più lì: succede più spesso di quanto si pensi.\n- **Nessuna data sugli articoli**: in materie dove le norme cambiano spesso, un testo senza data perde credibilità.\n\n## Come misuriamo un sito per studi professionali\n\nContiamo le richieste per area di competenza e la quota di quelle in target, non le visite. Ogni modulo e ogni clic sul telefono ha una fonte, così sai se arriva da Google, da LinkedIn o da una segnalazione. Il dato che conta di più, cioè quante richieste diventano incarichi, lo ricostruiamo con te ogni trimestre: per molti studi è la prima volta che lo vedono scritto.\n\nLavoriamo da Cattolica con studi della Romagna e delle Marche e, da remoto, con professionisti di tutta Italia. Per il quadro generale del settore c'è la pagina sul [marketing per studi professionali](/settori/studi-professionali); se ti interessa la visibilità nelle ricerche per città, leggi come impostiamo la [SEO per avvocati e commercialisti](/settori/studi-professionali/seo-locale). Per una stima dell'impegno puoi partire dal [preventivo online](/preventivo).",
+      "faq": [
+        {
+          "question": "Posso indicare le tariffe dello studio sul sito?",
+          "answer": "In generale l'informazione sui compensi è ammessa, purché chiara e non usata come richiamo commerciale, ma le sfumature cambiano da ordine a ordine e conviene verificarle. Spesso funziona meglio spiegare come si forma il preventivo, quali fattori lo influenzano e quando viene consegnato per iscritto. Il cliente si sente orientato e tu non ti leghi a una cifra che vale solo per i casi semplici."
+        },
+        {
+          "question": "Possiamo raccontare sul sito le cause vinte o i clienti seguiti?",
+          "answer": "Per gli avvocati il codice deontologico vieta di indicare i nomi dei clienti nelle comunicazioni pubbliche, anche con il loro consenso, e la celebrazione delle vittorie rischia di diventare una promessa implicita. Si possono descrivere le tipologie di pratiche seguite in forma generale e anonima. Per le altre professioni le regole sono diverse: le verifichiamo caso per caso con te."
+        },
+        {
+          "question": "Uno studio con un solo professionista ha bisogno di un sito vero?",
+          "answer": "Sì, ma piccolo. Bastano una pagina per ciascuna delle due o tre materie principali, una presentazione personale credibile, una pagina su come si lavora e un modulo ben fatto. Meglio cinque pagine curate e aggiornate che trenta pagine vuote. Il sito può crescere quando crescono le aree seguite o arrivano nuovi collaboratori."
+        },
+        {
+          "question": "Serve un blog sul sito di uno studio professionale?",
+          "answer": "Serve se diventa un archivio di risposte utili, non un notiziario. Un articolo che spiega cosa fare quando arriva un avviso bonario, o come funziona una separazione consensuale, viene trovato per anni da chi ha quel problema. Le notizie del giorno invece invecchiano in una settimana. Possiamo scrivere i testi partendo da una tua intervista di mezz'ora."
+        },
+        {
+          "question": "L'area riservata per i clienti è sicura?",
+          "answer": "Dipende da come è progettata. La impostiamo con accessi personali, connessione cifrata, permessi separati per cliente e registrazione degli accessi, su server europei. Prima di costruirla però valutiamo se ti serve davvero: molti studi usano già un gestionale con un portale clienti incluso, e in quel caso basta collegarlo bene al sito."
+        },
+        {
+          "question": "Quanto tempo devono dedicare i soci al nuovo sito?",
+          "answer": "Tipicamente un incontro iniziale, un'intervista breve per ogni area di competenza e la revisione dei testi che li riguardano. Il resto, dalla struttura alla scrittura e allo sviluppo, lo seguiamo noi. Chiediamo però di non delegare la revisione: è il momento in cui il professionista verifica che il sito dica cose esatte e che lo rappresentino."
+        }
+      ],
+      "metaTitle": "Siti web per avvocati e commercialisti | not4sale",
+      "metaDescription": "Siti web per avvocati, commercialisti e studi professionali: aree di competenza chiare, testi deontologicamente corretti, richieste filtrate."
+    },
+    {
+      "sector": "studi-professionali",
+      "service": "seo-locale",
+      "headline": "SEO per avvocati e commercialisti: farsi trovare in città",
+      "short": "SEO locale per studi legali, commercialisti e consulenti: schede Google, pagine per materia e recensioni gestite con riservatezza.",
+      "answer": "La SEO per avvocati, commercialisti e studi professionali di not4sale lavora sulle ricerche che uniscono una materia e una città, come \"avvocato separazione Rimini\" o \"commercialista partita IVA Pesaro\". Curiamo le schede Google dello studio e dei professionisti, le pagine per area e sede, le directory e le recensioni, nel rispetto della riservatezza dei clienti.",
+      "problem": "Uno studio professionale ha una caratteristica che complica la SEO locale: non ha una vetrina. Sta al secondo piano di un palazzo, con una targa sul portone, e nessuno lo nota passando. La prima impressione nasce quasi sempre su Google, nella mappa o nei risultati che compaiono sotto.\n\nLì spesso le cose non tornano. La scheda è intestata al fondatore che è andato in pensione, oppure ne esistono due, una aperta da un collaboratore anni fa e mai chiusa. La categoria è generica, gli orari non includono il pomeriggio su appuntamento, il telefono è quello vecchio. Sul sito dell'ordine, sulle directory e su LinkedIn lo studio ha tre indirizzi diversi.\n\nPoi ci sono le recensioni. Il cliente soddisfatto di un commercialista raramente ci pensa, e quello di un avvocato che ha seguito la sua separazione non ha nessuna voglia di firmare con nome e cognome una recensione pubblica. Così lo studio con trent'anni di lavoro alle spalle ha quattro stelle e sei recensioni, mentre il giovane collega dall'altra parte della città ne ha raccolte cento con un cartello in sala d'attesa.",
+      "process": [
+        {
+          "title": "Ricerche per materia",
+          "description": "Individuiamo come i tuoi clienti cercano: quali materie, quali parole, quali città e paesi del circondario."
+        },
+        {
+          "title": "Schede dello studio",
+          "description": "Sistemiamo la scheda principale e, dove ha senso, quelle dei singoli professionisti, eliminando doppioni e dati vecchi."
+        },
+        {
+          "title": "Pagine per area e sede",
+          "description": "Creiamo o riscriviamo le pagine del sito per ogni materia e ogni sede, con dati coerenti con le schede."
+        },
+        {
+          "title": "Recensioni riservate",
+          "description": "Impostiamo una richiesta di recensioni discreta e un protocollo di risposta che non rivela nulla del cliente."
+        },
+        {
+          "title": "Visibilità sul territorio",
+          "description": "Misuriamo in quali zone della città lo studio compare nella mappa e quante chiamate arrivano dalla scheda."
+        }
+      ],
+      "body": "## SEO locale per studi professionali: una scheda o tante?\n\nDipende da come è organizzato lo studio. Le linee guida di Google ammettono un profilo per il singolo professionista che riceve il pubblico ed è reperibile in sede negli orari indicati, accanto a quello dello studio. Per chi lavora da solo, invece, Google chiede un profilo unico, con un nome nella forma \"Studio: nome del professionista\", e vieta di aprire più schede per coprire materie diverse.\n\nNella pratica:\n\n- **Professionista unico**: una sola scheda, curata al massimo, con le materie descritte nei servizi.\n- **Studio associato**: la scheda dello studio come riferimento principale e, per i soci che ricevono clienti con continuità, schede personali coerenti con quella.\n- **Più sedi**: una scheda per ogni sede dove qualcuno riceve davvero il pubblico. Un recapito per la posta non basta, e le schede su indirizzi fittizi rischiano la sospensione.\n\nUna cautela sulle categorie. Google offre categorie molto specifiche per le professioni, ma la categoria descrive l'attività, non attribuisce un titolo: nei testi della scheda e del sito la parola \"specialista\" va usata solo da chi ha il titolo riconosciuto dal proprio ordine.\n\n## Le ricerche che portano clienti a uno studio\n\nLe ricerche più preziose uniscono un bisogno preciso e un luogo. Chi scrive solo \"avvocato\" sta ancora esplorando; chi scrive \"avvocato licenziamento Rimini\" o \"consulente del lavoro per hotel Riccione\" ha già un problema e lo vuole risolvere. Per questo la SEO locale di uno studio non si ferma alla scheda: servono sul sito pagine dedicate alle materie principali, con un riferimento chiaro alla città e al territorio servito.\n\nContano anche i riferimenti istituzionali. Uno studio legale che spiega di seguire pratiche presso il Tribunale di Rimini o di Pesaro dà a Google, e al cliente, un'informazione concreta sulla sua area di lavoro. Uno studio di Cattolica può intercettare anche chi cerca dalla Valconca o da Gabicce, se le pagine del sito parlano davvero di quei luoghi e delle imprese che ci lavorano, senza liste di comuni copiate in fondo alla pagina.\n\nPer le basi tecniche del lavoro sulla mappa trovi la pagina dedicata alla [SEO locale](/servizi/seo/seo-locale); qui conta cosa cambia quando a cercarti è un cliente di uno studio.\n\n## Recensioni e segreto professionale\n\nLe recensioni si possono chiedere, con discrezione. Funziona meglio con i clienti per cui farsi vedere non è un problema: imprese, professionisti, persone seguite per pratiche ordinarie come una dichiarazione o una compravendita. Con chi ha vissuto un contenzioso familiare o penale, meglio non insistere.\n\nPer le risposte vale una regola semplice: **mai confermare che chi scrive sia un cliente** e mai entrare nel merito della pratica, nemmeno davanti a una recensione ingiusta. Per un avvocato il dovere di riservatezza vale anche lì, e per tutti gli altri professionisti è comunque buona prudenza. Si ringrazia, si invita a contattare lo studio e ci si ferma. Ti prepariamo risposte tipo per i casi più frequenti, così chi gestisce la scheda non improvvisa.\n\nNiente scorciatoie: recensioni acquistate, scambi tra colleghi o sconti in cambio di stelle violano le regole di Google e, per un professionista, anche il decoro richiesto dal proprio ordine. Come sempre, sulle questioni deontologiche il riferimento è il tuo ordine: noi non diamo pareri legali.\n\n## Albi, directory e dati coerenti\n\nGoogle confronta le informazioni che trova su di te in giro per il web. Per uno studio le fonti principali sono poche e autorevoli: l'albo pubblicato dal tuo ordine, le directory professionali, la pagina LinkedIn, le associazioni di categoria. Se il nome dello studio, l'indirizzo e il telefono coincidono ovunque, la scheda guadagna fiducia. Se dopo un trasloco o l'uscita di un socio restano versioni diverse, Google ne è confuso e anche il cliente che ti cerca.\n\nIl lavoro qui è di ordine: elenchiamo le fonti, correggiamo quelle che si possono correggere, chiediamo l'aggiornamento delle altre. Sul sito aggiungiamo i [dati strutturati](/servizi/ai-search/dati-strutturati) adatti a uno studio legale o contabile, che aiutano anche gli assistenti AI a capire chi sei e dove lavori.\n\n## Come misuriamo la SEO per avvocati e commercialisti\n\nCon una mappa della visibilità: dividiamo la città in una griglia e verifichiamo in quali punti lo studio compare tra i primi risultati per le ricerche che contano. Accanto, chiamate dalla scheda, richieste di indicazioni e visite alle pagine per materia. Il confronto mese per mese mostra se lo studio sta guadagnando terreno nei quartieri e nei paesi dove vuole lavorare.\n\nPer una visione d'insieme del settore c'è la pagina sul [marketing per studi professionali](/settori/studi-professionali). Se la visibilità c'è ma le richieste no, il problema di solito è il sito: lo spieghiamo nella pagina sui [siti web per avvocati e commercialisti](/settori/studi-professionali/siti-web). Lavoriamo spesso con studi di [Rimini](/agenzia-marketing/rimini) e [Pesaro](/agenzia-marketing/pesaro), e da remoto con il resto d'Italia.",
+      "faq": [
+        {
+          "question": "Ogni avvocato dello studio può avere la sua scheda Google?",
+          "answer": "Sì, se riceve clienti in sede con continuità ed è reperibile negli orari indicati: le linee guida di Google ammettono i profili dei singoli professionisti accanto a quello dello studio. Le schede però vanno tenute coerenti tra loro, con lo stesso indirizzo e lo stesso telefono di riferimento, altrimenti si fanno concorrenza. Per un collaboratore occasionale di solito non conviene."
+        },
+        {
+          "question": "Il mio studio è in un palazzo senza insegna: penalizza la SEO locale?",
+          "answer": "Non direttamente: Google non guarda l'insegna, guarda indirizzo, pertinenza e notorietà. Conta però l'esperienza del cliente che arriva. Nella scheda e sul sito aggiungiamo indicazioni precise, piano, citofono, parcheggi vicini, foto dell'ingresso. Sono dettagli che riducono le telefonate del tipo \"non vi trovo\" e che le persone apprezzano anche nelle recensioni."
+        },
+        {
+          "question": "I miei clienti non lasciano recensioni: come faccio?",
+          "answer": "Si chiedono nel momento giusto e alle persone giuste. Per esempio alla chiusura di una pratica ordinaria, con un messaggio breve e il link diretto alla scheda, rivolto soprattutto ai clienti imprese. Non serve inseguire i numeri dei concorrenti: poche recensioni recenti e circostanziate pesano più di molte frasi vuote. Le pratiche delicate restano fuori da qualsiasi richiesta."
+        },
+        {
+          "question": "Posso comparire anche nelle città dove ho clienti ma non lo studio?",
+          "answer": "Nella mappa è difficile, perché la distanza dallo studio conta molto. Nei risultati classici invece sì, con pagine del sito che parlano davvero di quel territorio e delle sue imprese. Se ricevi regolarmente clienti in un'altra città, per esempio in uno studio condiviso, quella sede può avere una propria scheda, purché ci sia qualcuno che riceve il pubblico."
+        },
+        {
+          "question": "In quanto tempo si vedono risultati?",
+          "answer": "Le correzioni alla scheda e ai dati di base danno spesso i primi segnali nel giro di qualche settimana. Le pagine per materia e le recensioni richiedono più tempo, di solito alcuni mesi, soprattutto nelle città dove molti studi competono sulle stesse ricerche. Per questo misuriamo la visibilità ogni mese: vedi la direzione prima che arrivino i numeri grandi."
+        }
+      ],
+      "metaTitle": "SEO per avvocati e commercialisti | not4sale",
+      "metaDescription": "SEO locale per avvocati, commercialisti e studi professionali: schede Google, pagine per materia e recensioni gestite con riservatezza. Parliamone."
+    },
+    {
+      "sector": "studi-professionali",
+      "service": "google-ads",
+      "headline": "Google Ads per avvocati e commercialisti: richieste, non clic",
+      "short": "Google Ads per studi legali, commercialisti e consulenti: materie scelte, ricerche escluse, annunci informativi, incarichi misurati.",
+      "answer": "Google Ads per avvocati, commercialisti e studi professionali significa comparire quando qualcuno cerca aiuto per un problema preciso, come un licenziamento o l'apertura di una partita IVA. not4sale sceglie le materie su cui investire, esclude le ricerche di chi vuole solo un parere gratuito, scrive annunci informativi e misura quante richieste diventano incarichi.",
+      "problem": "Le campagne Google Ads degli studi professionali hanno un difetto ricorrente: attirano molte persone che non diventeranno mai clienti. Chi cerca \"avvocato gratis\", \"modello lettera di dimissioni\", \"come compilare il 730\" o \"lavoro studio commercialista\" fa clic sull'annuncio esattamente come chi ha bisogno di un professionista. E ogni clic si paga.\n\nNelle materie più contese, come separazioni, risarcimenti o recupero crediti, il costo per clic può essere alto, e basta un mese di parole chiave troppo larghe per bruciare il budget di un trimestre. Spesso l'annuncio porta poi alla home page dello studio, dove la persona deve cercare da sola se quella materia è seguita e da chi.\n\nIl terzo problema è la misura. La campagna conta come \"conversione\" il clic sul numero di telefono, senza sapere se la telefonata è durata dieci secondi o mezz'ora. Nessuno collega le richieste arrivate agli incarichi firmati. Così lo studio non sa se Google Ads gli porta clienti o solo telefonate da smistare, e dopo qualche mese spegne tutto con la sensazione che \"per noi non funziona\".",
+      "process": [
+        {
+          "title": "Materie che rendono",
+          "description": "Scegliamo con i soci le due o tre aree in cui un nuovo cliente vale l'investimento e lo studio ha capacità di lavoro."
+        },
+        {
+          "title": "Esclusioni e zone",
+          "description": "Prepariamo le liste di ricerche da escludere, il raggio geografico e gli orari in cui qualcuno può rispondere."
+        },
+        {
+          "title": "Annunci informativi",
+          "description": "Scriviamo testi che descrivono materie, professionisti e modalità del primo incontro, senza promesse né superlativi."
+        },
+        {
+          "title": "Pagine per materia",
+          "description": "Colleghiamo ogni gruppo di annunci a una pagina dedicata con un modulo che raccoglie le informazioni utili."
+        },
+        {
+          "title": "Incarichi, non clic",
+          "description": "Ogni mese incrociamo richieste e pratiche aperte per spostare il budget sulle ricerche che portano lavoro vero."
+        }
+      ],
+      "body": "## Google Ads per avvocati e commercialisti: quando conviene\n\nConviene quando il bisogno è urgente e la persona cerca subito un professionista. Sono situazioni con una data in testa: una lettera di licenziamento appena ricevuta, una cartella esattoriale, un controllo fiscale, una separazione decisa, un'azienda da aprire entro fine mese. In questi casi il cliente non legge dieci articoli: confronta tre risultati e chiama.\n\nConviene meno per le consulenze che si scelgono con calma e per passaparola, come la tenuta della contabilità di una media impresa o un incarico di revisione. Lì contano reputazione, [contenuti e LinkedIn](/settori/studi-professionali/gestione-social), e le campagne possono al massimo sostenerli.\n\nC'è anche una stagionalità da sfruttare. Per i commercialisti le ricerche su dichiarazioni, partite IVA e regimi fiscali seguono il calendario delle scadenze; per i consulenti del lavoro, nelle zone turistiche come la riviera romagnola, le domande sulle assunzioni stagionali si concentrano prima dell'estate.\n\n## Le ricerche da escludere sono metà del lavoro\n\nSu Google Ads uno studio professionale guadagna più dalle esclusioni che dalle parole chiave. Prima di partire costruiamo liste di parole negative pensate per il tuo settore:\n\n- **chi vuole fare da solo**: modulo, fac simile, fai da te, come compilare;\n- **chi cerca gratis**: gratis, gratuito, consulenza gratuita online;\n- **chi cerca lavoro o studia**: lavoro, stage, praticantato, esame, concorso;\n- **chi cerca informazioni generiche**: significato, definizione, articolo del codice;\n- **chi cerca altri enti**: CAF, patronato, Agenzia delle Entrate, INPS.\n\nPoi le scegliamo in base alle tue regole. Se lo studio offre davvero un primo colloquio senza costi, \"consulenza gratuita\" può restare. Ogni settimana leggiamo i termini di ricerca reali e aggiungiamo le esclusioni nuove: i primi due mesi sono quelli in cui si risparmia di più.\n\n## Annunci, deontologia e regole di Google\n\nGli annunci di uno studio devono rispettare due insiemi di regole: quelle del tuo ordine e quelle della piattaforma. Sul primo fronte valgono i principi di informazione corretta e non ingannevole: niente \"vinci la tua causa\", niente \"il miglior avvocato di Pesaro\", niente confronti con altri studi, e la parola \"specialista\" solo per chi ha il titolo riconosciuto. Non diamo pareri legali sulla tua deontologia: in caso di dubbio, il riferimento è l'ordine.\n\nSul secondo fronte, Google limita la pubblicità personalizzata quando tocca difficoltà personali. Tra gli esempi che indica ci sono divorzi, infortuni e questioni penali: in queste materie il [remarketing](/servizi/advertising/retargeting) basato sulle visite al sito non è consentito, e la campagna deve vivere sulle ricerche. Per le consulenze alle imprese, invece, il remarketing resta uno strumento utile per ricordarsi a chi ha visitato la pagina dei servizi societari.\n\nUn annuncio efficace per uno studio è sorprendentemente sobrio: la materia, la città, chi segue la pratica, come si fissa il primo incontro e, se c'è, la possibilità di farlo in videochiamata.\n\n## La pagina dopo il clic\n\nOgni gruppo di annunci porta a una [landing page](/servizi/web-app/landing-page) sulla materia cercata, non alla home. La pagina spiega in poche righe quali situazioni segue lo studio, presenta il professionista di riferimento, descrive il primo incontro e propone un modulo breve: tipo di problema, eventuali scadenze, comune. Sono le informazioni che servono alla segreteria per capire, prima di richiamare, se la richiesta è in target.\n\n## Come misuriamo Google Ads per uno studio professionale\n\nMisuriamo lungo tutta la catena, perché il costo per clic da solo non dice nulla:\n\n| Livello | Cosa contiamo | Perché conta |\n|---|---|---|\n| Richieste | Moduli inviati e chiamate oltre una durata minima | Separa i contatti veri dai clic per sbaglio |\n| Richieste in target | Quelle che lo studio vuole seguire | Mostra se esclusioni e annunci funzionano |\n| Primi incontri | Appuntamenti fissati | Misura la qualità della pagina e della risposta |\n| Incarichi | Pratiche effettivamente aperte | È il dato su cui spostare il budget |\n\nGli ultimi due livelli li ricostruiamo con la segreteria o dal gestionale dello studio, con un [tracciamento](/servizi/data-analytics/tracking-gtm) che non trasmette a Google alcun dettaglio sulla pratica. Per il funzionamento generale delle campagne c'è la pagina su [Google Ads](/servizi/advertising/google-ads); per il contesto del settore, quella sul [marketing per studi professionali](/settori/studi-professionali). Il costo della gestione dipende da numero di materie, sedi e complessità del tracciamento: puoi stimarlo dal [preventivo online](/preventivo).",
+      "faq": [
+        {
+          "question": "Un avvocato può fare pubblicità su Google Ads?",
+          "answer": "In generale sì: il codice deontologico forense ammette l'informazione sull'attività con qualsiasi mezzo, purché corretta e non ingannevole. Contano quindi il contenuto degli annunci e delle pagine, non il canale. Restano fuori promesse di risultato, confronti, toni enfatici e nomi dei clienti. Per i dubbi specifici il riferimento resta il tuo ordine: noi non diamo pareri legali."
+        },
+        {
+          "question": "Ricevo chiamate di persone che vogliono un parere gratis: come le evito?",
+          "answer": "Con tre interventi insieme. Le parole negative tolgono le ricerche esplicite come \"gratis\" o \"fai da te\". L'annuncio e la pagina dicono con chiarezza come funziona il primo incontro e se è a pagamento. Il modulo chiede qualche informazione in più prima del contatto. Qualche richiesta fuori target arriverà comunque, ma diventa l'eccezione e non la regola."
+        },
+        {
+          "question": "Quanto budget serve per partire?",
+          "answer": "Dipende dalla materia e dalla città: un consulente del lavoro in un centro medio e uno studio di diritto di famiglia in una grande città affrontano costi per clic molto diversi. Partiamo con un budget di prova su una o due materie, abbastanza ampio da raccogliere dati in qualche settimana, e lo allarghiamo solo se le richieste in target arrivano a un costo sostenibile."
+        },
+        {
+          "question": "Meglio Google Ads o la SEO per uno studio?",
+          "answer": "Fanno cose diverse. Google Ads porta richieste da subito sulle materie urgenti, ma si ferma quando smetti di pagare. La SEO costruisce una presenza che dura, soprattutto nelle ricerche locali e informative, ma richiede mesi. Molti studi partono con le campagne su una materia per avere dati e contatti, e intanto lavorano sulla visibilità organica."
+        },
+        {
+          "question": "Possiamo fare remarketing su chi ha visitato il sito dello studio?",
+          "answer": "Dipende dalla materia. Google non consente la pubblicità personalizzata, remarketing compreso, quando riguarda difficoltà personali come divorzi, infortuni o vicende penali. Per le consulenze alle imprese e per molti servizi fiscali, invece, è ammesso e può essere utile. Impostiamo le liste per area, così le pagine sensibili restano escluse fin dall'inizio."
+        }
+      ],
+      "metaTitle": "Google Ads per avvocati e commercialisti | not4sale",
+      "metaDescription": "Google Ads per avvocati, commercialisti e studi professionali: materie scelte, ricerche escluse, annunci conformi e incarichi misurati. Chiedi un preventivo."
+    },
+    {
+      "sector": "studi-professionali",
+      "service": "gestione-social",
+      "headline": "Social media manager per avvocati e commercialisti",
+      "short": "Gestione social per studi legali, commercialisti e consulenti: contenuti che spiegano, voce dei soci, commenti gestiti con prudenza.",
+      "answer": "La gestione social per avvocati, commercialisti e studi professionali di not4sale trasforma le domande che i clienti fanno ogni giorno in contenuti brevi e utili su LinkedIn, Instagram o Facebook. Scegliamo i canali in base ai clienti dello studio, scriviamo con la voce dei professionisti, li facciamo approvare e gestiamo commenti e messaggi senza mai dare pareri in pubblico.",
+      "problem": "I profili social di molti studi professionali raccontano due storie opposte, entrambe inutili. Nella prima, la pagina Facebook dello studio pubblica gli auguri di Natale, la foto della cena di fine anno e, ogni tanto, il link a una circolare. Nella seconda, qualcuno ha deciso di \"fare sul serio\" e ricopia ogni giorno notizie fiscali o sentenze riprese dalle testate di settore, identiche a quelle di centinaia di altri studi.\n\nIn nessuno dei due casi il potenziale cliente capisce cosa sa fare lo studio meglio degli altri, né perché dovrebbe chiamare proprio voi.\n\nC'è poi un timore che blocca molti professionisti: sbagliare. Un post troppo promozionale, un commento a cui si risponde entrando nel merito, una storia girata in studio con un fascicolo leggibile sullo sfondo. Il rischio deontologico e quello di riservatezza esistono, ma si gestiscono con regole chiare. Senza quelle regole, la scelta più comune è non pubblicare nulla, e lasciare la scena ai colleghi che invece hanno imparato a spiegare il proprio lavoro.",
+      "process": [
+        {
+          "title": "Clienti e canali",
+          "description": "Capiamo se lo studio parla soprattutto a imprese o a privati e scegliamo uno o due canali su cui concentrarci."
+        },
+        {
+          "title": "Regole di pubblicazione",
+          "description": "Fissiamo per iscritto cosa si pubblica, cosa no e come si rispondono commenti e messaggi privati."
+        },
+        {
+          "title": "Interviste ai soci",
+          "description": "Ogni mese raccogliamo in mezz'ora con i professionisti i temi caldi e le domande ricevute dai clienti."
+        },
+        {
+          "title": "Scrittura e approvazione",
+          "description": "Produciamo testi, caroselli e video brevi; ogni contenuto tecnico viene approvato dal professionista che lo firma."
+        },
+        {
+          "title": "Report trimestrale",
+          "description": "Misuriamo richieste arrivate dai social, visite alle pagine delle materie e crescita del pubblico in target."
+        }
+      ],
+      "body": "## Gestione social per avvocati e commercialisti: quali canali scegliere\n\nSi sceglie partendo da chi sono i clienti dello studio, non dalla piattaforma di moda. Il criterio è semplice: dove passano tempo le persone che firmano gli incarichi?\n\n| Clientela | Canale principale | Formati che funzionano |\n|---|---|---|\n| Imprese e manager | LinkedIn, sui profili dei soci | Post brevi su una novità normativa, caroselli con scadenze, commenti a casi anonimi |\n| Privati e famiglie | Instagram e Facebook | Video brevi con una domanda e una risposta, guide in più slide, presentazione delle persone dello studio |\n| Partite IVA e giovani professionisti | Instagram, in parte TikTok | Spiegazioni rapide su regimi fiscali, fatturazione, contributi |\n| Clientela mista | Un canale principale e uno di supporto | Gli stessi temi adattati, mai copiati identici |\n\nPer molti studi un canale fatto bene vale più di quattro aperti e abbandonati. La pagina dedicata a [LinkedIn aziendale](/servizi/social/linkedin-aziendale) approfondisce il canale B2B; qui conta come cambia il lavoro quando a pubblicare è un professionista iscritto a un albo.\n\n## Cosa pubblicare: contenuti che dimostrano competenza\n\nIl contenuto migliore per uno studio è la risposta a una domanda che i clienti fanno davvero. Ogni settimana la segreteria e i professionisti ne ricevono decine: sono la miniera da cui partiamo.\n\n- **La norma spiegata in un minuto**: cosa cambia, per chi, da quando, cosa fare adesso.\n- **Lo scadenzario del mese**, per commercialisti e consulenti del lavoro, con un linguaggio comprensibile a un imprenditore.\n- **Il caso tipo**: una situazione ricorrente, costruita in forma generale, senza nessun elemento che renda riconoscibile un cliente reale.\n- **Le persone dello studio**: chi sono, cosa seguono, perché hanno scelto quella materia. Aiuta il cliente a sapere chi troverà al primo incontro.\n- **Gli errori da evitare**, che sono spesso il formato più salvato e condiviso.\n\nPer i video brevi basta poco: un professionista che parla in modo chiaro, una buona luce, un audio pulito. Se serve un salto di qualità, organizziamo sessioni di [video e riprese](/servizi/content/video-spot) che coprono il materiale di più mesi.\n\n## Deontologia, commenti e messaggi privati\n\nLe regole deontologiche valgono su ogni mezzo, social compresi. Il codice forense, per esempio, disciplina il dovere di corretta informazione qualunque sia lo strumento usato, e vieta di indicare i nomi dei clienti anche con il loro consenso. Anche gli altri ordini chiedono una comunicazione veritiera e decorosa. Non siamo consulenti deontologici e non diamo pareri legali: per i dubbi la fonte è il tuo ordine. Quello che facciamo è tradurre questi principi in regole operative:\n\n1. **Niente pareri nei commenti.** A chi descrive il proprio caso sotto un post si risponde ringraziando e invitando a un contatto diretto con lo studio.\n2. **Niente dettagli sui clienti**, nemmeno indiretti: date, luoghi e importi possono bastare a far riconoscere qualcuno.\n3. **Attenzione a cosa si vede**: scrivanie, monitor e fascicoli restano fuori dall'inquadratura.\n4. **Sponsorizzate prudenti**: le piattaforme come Meta vietano gli annunci che presumono una condizione personale di chi li legge, come difficoltà economiche o vicende giudiziarie. \"Stai divorziando?\" è un testo da evitare.\n\nI messaggi privati seguono la stessa logica: si raccolgono i dati per fissare un appuntamento, non si consiglia in chat.\n\n## Quanto tempo chiede ai professionisti\n\nPoco, ma con regolarità: una mezz'ora al mese per l'intervista e qualche minuto a settimana per approvare i contenuti. Sincronizziamo il calendario con quello dello studio, così nei periodi di scadenze fiscali ti chiediamo il minimo e prepariamo prima i contenuti. Se lo studio preferisce i profili personali dei soci a quello istituzionale, li curiamo come ghostwriter, con la tua approvazione su ogni parola.\n\n## Come misuriamo i social di uno studio\n\nNon con i like dei colleghi. Contiamo le richieste che arrivano citando un contenuto, i clic verso le pagine delle materie, le iscrizioni alla [newsletter](/servizi/content/newsletter) dello studio e quante visite ai profili arrivano da persone nel target, per esempio titolari d'azienda della tua provincia. Lavorando da Cattolica seguiamo studi della Romagna e delle Marche, e da remoto di tutta Italia.\n\nIl metodo generale è descritto nella pagina sulla [gestione social media](/servizi/social/gestione-social), il contesto del settore in quella sul [marketing per studi professionali](/settori/studi-professionali).",
+      "faq": [
+        {
+          "question": "Un commercialista deve davvero stare su Instagram?",
+          "answer": "Solo se i suoi clienti ci sono. Per uno studio che lavora con partite IVA giovani, freelance e piccole attività, Instagram è spesso il posto dove nascono le prime domande. Per uno studio che segue società strutturate, LinkedIn rende molto di più. Meglio un canale scelto con criterio che una presenza ovunque senza tempo per curarla."
+        },
+        {
+          "question": "Chi risponde ai commenti con domande tecniche?",
+          "answer": "La prima risposta la diamo noi, seguendo un protocollo concordato: si ringrazia, non si entra nel merito e si invita a scrivere o chiamare lo studio. Le domande generali che interessano a molti diventano spunti per nuovi contenuti, scritti con il professionista. Le questioni personali passano subito alla segreteria, fuori dai social."
+        },
+        {
+          "question": "Possiamo raccontare i casi che abbiamo seguito?",
+          "answer": "Si possono raccontare situazioni tipiche in forma generale, ricostruite in modo che nessun cliente sia riconoscibile. Per gli avvocati vale anche il divieto di indicare i nomi dei clienti nelle comunicazioni pubbliche, consenso compreso. Evitiamo i toni celebrativi sulle cause vinte: oltre ai rischi deontologici, comunicano una promessa che nessuno studio può mantenere."
+        },
+        {
+          "question": "Meglio la pagina dello studio o i profili dei soci?",
+          "answer": "Sui social professionali le persone seguono le persone. I profili dei soci, curati con costanza, raggiungono di solito più pubblico della pagina dello studio, che resta comunque utile come vetrina e punto di riferimento. La combinazione più efficace è quasi sempre questa: contenuti firmati dai professionisti, ripresi e ordinati sulla pagina istituzionale."
+        },
+        {
+          "question": "Ha senso sponsorizzare i post di uno studio professionale?",
+          "answer": "A volte sì: per far conoscere un nuovo servizio, una sede o un evento formativo a un pubblico ben definito, come le imprese di una provincia. Va fatto con annunci informativi e senza riferimenti alla situazione personale di chi legge, che le piattaforme non ammettono. Prima di investire conviene comunque avere contenuti organici che funzionano."
+        }
+      ],
+      "metaTitle": "Social media manager per avvocati e commercialisti | not4sale",
+      "metaDescription": "Gestione social per avvocati, commercialisti e studi professionali: contenuti che spiegano, voce dei soci, deontologia rispettata. Scopri come lavoriamo."
+    },
+    {
+      "sector": "studi-professionali",
+      "service": "logo-identita-visiva",
+      "headline": "Logo per commercialisti, avvocati e studi professionali",
+      "short": "Logo e identità per studi legali, commercialisti e consulenti: oltre bilance e iniziali, pronti per carta intestata, PEC, targa e slide.",
+      "answer": "Il logo per commercialisti, avvocati e studi professionali progettato da not4sale nasce dal posizionamento dello studio, non dai simboli di categoria. Disegniamo marchio, colori e caratteri pensati per documenti lunghi, firme email, targhe, presentazioni e profili social, e consegniamo modelli pronti per Word e PowerPoint, così lo studio resta coerente anche nei pareri e nelle parcelle.",
+      "problem": "Prova a mettere in fila i loghi degli studi della tua città. Le iniziali dei soci intrecciate in un carattere con le grazie, blu scuro o bordeaux. Una bilancia, una colonna greca, un libro aperto. Per i commercialisti, un grafico che sale o una sigla dentro un quadrato. Sono loghi corretti, ma intercambiabili: se togli il nome, non sapresti dire di chi siano.\n\nIl problema vero, però, si vede nell'uso quotidiano. Lo studio produce ogni giorno documenti: pareri, atti, preventivi, parcelle, relazioni, presentazioni per un convegno. Ognuno li impagina come capita, con il logo copiato da una vecchia lettera e un carattere diverso per ogni collaboratore. La firma della PEC è un'immagine sgranata. Sulla targa all'ingresso c'è ancora il nome del socio uscito tre anni fa.\n\nE quando lo studio cambia, con un nuovo socio, una fusione o il passaggio dal fondatore ai figli, il logo diventa un problema politico: chi compare, in che ordine, con quale peso. Senza un'identità pensata per evolvere, ogni cambio significa ripartire da zero.",
+      "process": [
+        {
+          "title": "Posizionamento dello studio",
+          "description": "Chiariamo con i soci per chi lavora lo studio e come vuole essere percepito: istituzionale, vicino alle imprese, giovane, internazionale."
+        },
+        {
+          "title": "Nome e struttura",
+          "description": "Decidiamo se il marchio porta i cognomi dei soci, una sigla o un nome, tenendo conto delle regole dell'ordine e dei cambi futuri."
+        },
+        {
+          "title": "Proposte sui documenti",
+          "description": "Mostriamo le direzioni creative applicate a una parcella, a un parere di dieci pagine, alla targa e all'avatar LinkedIn."
+        },
+        {
+          "title": "Modelli per l'ufficio",
+          "description": "Prepariamo carta intestata digitale, modelli Word e PowerPoint, firme email e PEC già impostati."
+        },
+        {
+          "title": "Consegna e regole",
+          "description": "Consegniamo tutti i file e una guida breve che anche la segreteria può seguire senza chiamarci."
+        }
+      ],
+      "body": "## Logo per commercialisti e avvocati: oltre la bilancia e le iniziali\n\nUn logo per uno studio professionale deve comunicare affidabilità, ma l'affidabilità non passa dai simboli di categoria. Passa dalla cura, dalla coerenza e dalla qualità con cui lo studio si presenta in ogni documento. Bilance, colonne e martelletti sono talmente usati che non distinguono più nessuno, e il martelletto, peraltro, non fa nemmeno parte della tradizione dei tribunali italiani.\n\nLe idee migliori nascono da quello che rende lo studio diverso. Uno studio di commercialisti che lavora soprattutto con le imprese turistiche della Riviera può avere un'identità più luminosa e meno ingessata di uno che segue gruppi industriali. Uno studio legale con una forte vocazione internazionale avrà bisogno di un marchio che funzioni anche in inglese. Il punto di partenza è il [posizionamento](/servizi/strategia/brand-positioning), anche solo in forma semplice: per chi siete e perché vi scelgono.\n\n## Il nome viene prima del logo\n\nNegli studi il nome è spesso la parte più delicata del progetto. Le opzioni tipiche sono tre:\n\n| Soluzione | Quando funziona | Cosa considerare |\n|---|---|---|\n| Cognomi dei soci | Studi con soci noti sul territorio | Va ripensata a ogni ingresso o uscita |\n| Sigla | Studi con molti soci o nati da fusioni | Da sola dice poco: serve un sistema visivo forte |\n| Nome proprio | Società tra professionisti e studi che vogliono crescere oltre i fondatori | Va verificato con le regole del proprio ordine |\n\nOgni ordine ha regole sulla denominazione degli studi e delle società tra professionisti, e vanno controllate prima di innamorarsi di un nome. Non diamo pareri legali: lavoriamo in parallelo con il tuo consulente o con l'ordine. Se serve un nome nuovo, il percorso di [naming](/servizi/branding/naming) include anche le verifiche di disponibilità di dominio e marchio.\n\n## Cosa non mettere nel logo di uno studio\n\nAlcuni elementi è meglio lasciarli fuori, per prudenza o per regola:\n\n- **Simboli e loghi istituzionali**: l'emblema dell'ordine, del consiglio nazionale o della Repubblica non appartengono allo studio e non vanno ripresi né imitati.\n- **Titoli non conseguiti**: una tagline come \"specialisti in diritto tributario\" diventa un problema se manca il titolo riconosciuto.\n- **Promesse e superlativi**: un payoff tipo \"vinciamo per te\" è in contrasto con l'informazione corretta che gli ordini richiedono.\n- **Dettagli troppo fini**: le grazie sottili e i filetti scompaiono sulla targa incisa, sul timbro e nelle fotocopie, che negli studi esistono ancora.\n\n## Dove vive davvero l'identità di uno studio\n\nMolto più nei documenti che nell'insegna. Per questo progettiamo il sistema partendo da lì:\n\n1. **Tipografia per testi lunghi**: un carattere che si legge bene in un parere di venti pagine, con un'alternativa già installata su tutti i computer dello studio.\n2. **Modelli d'ufficio**: lettera, parcella, preventivo, verbale, presentazione, con margini, stili e numerazioni pronti.\n3. **Firme email e PEC** coerenti, leggere, senza immagini che finiscono tra gli allegati.\n4. **Targa e segnaletica**: la versione del marchio per l'ottone o il plexiglass all'ingresso, e per la porta di ogni stanza.\n5. **Avatar e copertine** per LinkedIn e per il sito, dove il marchio deve funzionare anche in un cerchio di pochi millimetri.\n\nTutto questo è il campo dell'[immagine coordinata](/servizi/branding/immagine-coordinata): per uno studio vale quanto il logo, perché è quello che il cliente tiene in mano.\n\n## Restyling e passaggi generazionali\n\nQuando lo studio passa dal fondatore ai figli o ai collaboratori storici, rifare tutto da capo è raramente la scelta giusta. I clienti si fidano di quel nome e di quella presenza da anni. Di solito funziona meglio un restyling graduale: si conserva ciò che è riconosciuto, come un colore o la struttura del nome, e si aggiornano disegno, caratteri e modelli. Il cambio si comunica ai clienti con una lettera, non con un colpo di scena.\n\nLe basi del nostro metodo sono nella pagina su [logo e identità visiva](/servizi/branding/logo-identita-visiva). Per il quadro del settore c'è il [marketing per studi professionali](/settori/studi-professionali), e quando l'identità è pronta il passo naturale è il [sito dello studio](/settori/studi-professionali/siti-web). Presentiamo le proposte di persona agli studi della Romagna e delle Marche, in videochiamata agli altri.",
+      "faq": [
+        {
+          "question": "Il logo deve contenere i nomi dei soci?",
+          "answer": "Non necessariamente. I cognomi rassicurano quando i soci sono conosciuti, ma rendono il marchio fragile: ogni ingresso o uscita richiede un intervento. Una soluzione frequente è separare le cose, con un marchio stabile per lo studio e i nomi dei professionisti in evidenza su carta intestata, sito e targa. Le regole sulla denominazione vanno comunque verificate con il proprio ordine."
+        },
+        {
+          "question": "Possiamo usare la bilancia o altri simboli della professione?",
+          "answer": "Si può, ma raramente conviene: sono simboli usati da moltissimi studi, quindi non aiutano il cliente a ricordarsi di voi. Se un riferimento alla professione è importante per i soci, lo trattiamo in modo meno letterale. Vanno invece evitati gli emblemi istituzionali, come quelli degli ordini o della Repubblica, che non appartengono allo studio."
+        },
+        {
+          "question": "Il logo funzionerà anche sulla targa e sul timbro?",
+          "answer": "Sì, perché lo progettiamo pensando a quelle applicazioni fin dall'inizio. Prepariamo una versione monocromatica e una semplificata per incisioni, timbri e piccole dimensioni, e la proviamo sulle misure reali della targa. Se lo studio ha già una targa in ottone da conservare, ne teniamo conto nella scelta del disegno."
+        },
+        {
+          "question": "Cosa succede al logo se entra o esce un socio?",
+          "answer": "Se l'identità è costruita su un marchio stabile e non sui cognomi, cambiano solo i materiali con i nomi: carta intestata, sito, targa, firme. Lasciamo i modelli in formati che lo studio può aggiornare da solo. Se invece il nome dello studio contiene i soci, prevediamo fin dall'inizio una struttura che regga l'aggiunta o la rimozione di un cognome."
+        },
+        {
+          "question": "Ci preparate anche i modelli per Word e PowerPoint?",
+          "answer": "Sì, ed è una delle parti più utili del lavoro per uno studio. Consegniamo modelli per lettere, pareri, parcelle e presentazioni, con stili già impostati e caratteri disponibili su ogni computer. Chi scrive un documento non deve più preoccuparsi dell'impaginazione: apre il modello e lavora. È così che l'identità resta coerente negli anni."
+        },
+        {
+          "question": "Quanto tempo serve per il logo di uno studio?",
+          "answer": "Dipende soprattutto dai tempi di decisione dei soci: il lavoro creativo richiede alcune settimane, l'allineamento tra più persone a volte di più. Per questo concordiamo all'inizio chi decide e in quali incontri. Se serve anche un nome nuovo, i tempi si allungano per le verifiche. Una stima precisa la puoi chiedere dal preventivo online."
+        }
+      ],
+      "metaTitle": "Logo per commercialisti, avvocati e studi | not4sale",
+      "metaDescription": "Logo per commercialisti, avvocati e studi professionali: marchio distintivo, modelli Word e PowerPoint, targa e firme PEC coerenti. Parliamo del tuo studio."
+    },
+    {
+      "sector": "sanita-privata",
+      "service": "siti-web",
+      "headline": "Siti web per dentisti, studi medici e fisioterapisti",
+      "short": "Siti per studi dentistici, poliambulatori e fisioterapia: prestazioni spiegate, prenotazione semplice, dati dei pazienti protetti.",
+      "answer": "I siti web per dentisti, studi medici e fisioterapisti realizzati da not4sale spiegano ogni prestazione in modo comprensibile, presentano i professionisti con titoli verificabili e rendono semplice chiedere un appuntamento. Scriviamo testi informativi, rivisti dal medico responsabile, e configuriamo moduli e statistiche raccogliendo il minimo indispensabile dei dati dei pazienti.",
+      "problem": "Molti siti di studi dentistici si somigliano in modo impressionante. Una home con il sorriso perfetto preso da una banca immagini, una sezione \"trattamenti\" con dieci voci tecniche, implantologia, endodonzia, parodontologia, e due righe sotto ognuna. Spesso c'è anche un banner con lo sbiancamento in promozione, che nel settore sanitario è proprio il tipo di comunicazione da evitare.\n\nIl paziente che arriva lì ha domande molto più concrete. Fa male? Quanto dura la seduta? Chi mi visita, e che titoli ha? Posso venire con mio figlio? Cosa devo portare? Ricevete anche il sabato? Se il sito non risponde, la persona telefona, e la segreteria passa la mattina a ripetere le stesse informazioni. Oppure non telefona affatto e prenota altrove.\n\nPoi c'è il lato meno visibile. Moduli che chiedono di descrivere i sintomi in un campo libero, spediti a una casella email condivisa. Strumenti di statistica e pixel pubblicitari installati su tutte le pagine, comprese quelle sulle patologie, senza chiedersi quali dati partano verso le piattaforme. Sono scelte fatte in buona fede, che diventano un rischio quando si parla di dati sanitari.",
+      "process": [
+        {
+          "title": "Prestazioni e percorsi",
+          "description": "Mappiamo con i professionisti le prestazioni da mettere in evidenza e il percorso tipico del paziente, dalla prima visita al controllo."
+        },
+        {
+          "title": "Testi rivisti dal medico",
+          "description": "Scriviamo pagine comprensibili per ogni prestazione e professionista; ogni testo viene approvato da chi ha la responsabilità sanitaria."
+        },
+        {
+          "title": "Prenotazione e privacy",
+          "description": "Progettiamo moduli e prenotazione online con dati minimi, informative chiare e strumenti scelti per il trattamento di dati sanitari."
+        },
+        {
+          "title": "Sviluppo accessibile",
+          "description": "Costruiamo un sito leggibile anche per pazienti anziani o con difficoltà visive, veloce da smartphone, in più lingue se serve."
+        },
+        {
+          "title": "Richieste per prestazione",
+          "description": "Misuriamo chiamate e richieste di appuntamento per prestazione e sede, senza inviare informazioni cliniche alle piattaforme."
+        }
+      ],
+      "body": "## Cosa deve avere un sito web per dentisti e studi medici?\n\nDeve rispondere alle domande che i pazienti fanno al telefono, prima che le facciano. Rispetto al sito di un'altra attività, la differenza sta nel livello di spiegazione richiesto e nella responsabilità di ciò che si scrive. Gli elementi irrinunciabili:\n\n- **Una pagina per prestazione**, con cos'è, per chi è indicata, come si svolge, quanto dura, cosa succede dopo e chi la esegue nello studio. Senza promesse sui risultati.\n- **Una scheda per professionista**, con titoli, iscrizione all'albo, formazione, ambiti di attività. È l'informazione che la normativa sulla comunicazione sanitaria mette al centro.\n- **I dati della struttura**: denominazione, sede, autorizzazioni e, dove previsto, il direttore sanitario.\n- **Le informazioni pratiche** sempre aggiornate: orari, chiusure estive, parcheggio, accessibilità, cosa portare alla prima visita, come funzionano le urgenze.\n- **Un modo semplice per chiedere un appuntamento**, da telefono come da computer.\n\nSulla costa conta anche la lingua: chi è in vacanza tra Rimini e Pesaro e ha bisogno di un dentista o di un fisioterapista cerca spesso in inglese o in tedesco. Bastano poche pagine tradotte bene sulle urgenze e sulle informazioni pratiche.\n\n## Siti web per studi medici: le regole che cambiano i testi\n\nLa comunicazione sanitaria in Italia deve essere informativa: la normativa nazionale esclude elementi promozionali o suggestivi, e i codici deontologici di medici, odontoiatri e professioni sanitarie aggiungono regole proprie. Sul sito questo si traduce in scelte precise:\n\n1. **Niente offerte**, sconti, pacchetti o prezzi usati come richiamo.\n2. **Grande cautela con le foto prima e dopo** e con le testimonianze dei pazienti, che possono diventare suggestive e contengono dati sanitari.\n3. **Linguaggio sobrio**: \"trattamento indolore\", \"risultati garantiti\" o \"il miglior centro\" sono espressioni da togliere.\n4. **Revisione del professionista** su ogni pagina che parla di salute, con la data dell'ultimo aggiornamento.\n\nNon siamo un ufficio legale e non diamo pareri: nei casi dubbi il riferimento è il tuo ordine o il tuo consulente. C'è anche un motivo di posizionamento: Google valuta con particolare rigore i contenuti che riguardano la salute, e premia testi firmati, aggiornati e coerenti con le conoscenze mediche condivise.\n\n## Prenotazione online e dati dei pazienti\n\nI dati sanitari sono una categoria particolare per il GDPR, e il sito è il primo punto in cui lo studio li raccoglie. Per questo progettiamo moduli e prenotazioni partendo da una domanda: cosa ci serve davvero sapere prima della visita?\n\n- **Il modulo di richiesta** chiede contatti, prestazione di interesse e disponibilità. Niente campi liberi sui sintomi, se non sono indispensabili.\n- **La prenotazione online** si collega all'agenda o al gestionale dello studio. Si può partire da una semplice richiesta da confermare, senza esporre tutta l'agenda.\n- **Le statistiche** misurano le richieste senza registrare cosa la persona ha scritto, e i pixel pubblicitari restano fuori dalle pagine sulle patologie. Le stesse piattaforme, Meta in testa, stanno limitando l'uso dei dati di navigazione per gli inserzionisti del settore salute.\n\nPer i casi più articolati, come più sedi o più fonti di traffico, impostiamo un [tracciamento lato server](/servizi/data-analytics/server-side-tracking) che dà allo studio il controllo su cosa viene inviato e a chi.\n\n## Errori frequenti nei siti sanitari\n\n- **Le pagine copiate** dal sito del fornitore di impianti o di apparecchiature: identiche su centinaia di siti, ignorate da Google.\n- **Le foto di repertorio** al posto dello studio vero: per un paziente ansioso vedere la sala d'attesa e le persone che incontrerà è rassicurante.\n- **I caratteri piccoli e grigi**: molti pazienti hanno più di sessant'anni. L'[accessibilità web](/servizi/web-app/accessibilita-web) qui non è un dettaglio.\n- **Il telefono non cliccabile** da smartphone, che è il dispositivo da cui arriva la maggior parte delle richieste urgenti.\n\n## Come misuriamo un sito per studi medici\n\nContiamo chiamate, richieste di appuntamento e prenotazioni completate, divise per prestazione e per sede, e controlliamo dove le persone abbandonano il percorso. Ogni trimestre guardiamo con te quali prestazioni portano nuovi pazienti e quali pagine vanno riscritte. Le basi del nostro modo di costruire siti sono nella pagina sulla [realizzazione di siti web](/servizi/web-app/siti-web); il contesto del settore, regole comprese, in quella sul [marketing per la sanità privata](/settori/sanita-privata). Per farsi trovare nelle ricerche in città, il passo successivo è la [SEO per dentisti e studi medici](/settori/sanita-privata/seo-locale).",
+      "faq": [
+        {
+          "question": "Posso indicare i prezzi delle prestazioni sul sito?",
+          "answer": "È un tema su cui conviene essere prudenti. Un'informazione chiara sui costi può essere utile al paziente, ma la normativa esclude gli elementi promozionali e un prezzo usato come richiamo, magari scontato o confrontato, rischia di diventarlo. Molti studi scelgono di spiegare da cosa dipende il preventivo e di consegnarlo dopo la prima visita. Per la tua situazione, il riferimento è il tuo ordine."
+        },
+        {
+          "question": "Possiamo pubblicare foto prima e dopo dei trattamenti?",
+          "answer": "Qui la cautela è massima. Le immagini prima e dopo mostrano dati sanitari, richiedono un consenso specifico del paziente e possono essere considerate suggestive, cioè una promessa di risultato. Per questo, per prudenza, di norma le evitiamo sul sito pubblico. Spiegare bene come si svolge un trattamento, con illustrazioni o foto dello studio, informa senza esporre nessuno."
+        },
+        {
+          "question": "Conviene la prenotazione online per uno studio dentistico?",
+          "answer": "Nella maggior parte dei casi sì, anche solo come richiesta da confermare. Permette al paziente di chiedere un appuntamento la sera, quando ci pensa, e toglie alla segreteria molte telefonate di routine. Per le prime visite si può mantenere la conferma manuale, per i controlli e le igiene periodiche la prenotazione diretta funziona bene."
+        },
+        {
+          "question": "Il sito può collegarsi al nostro gestionale?",
+          "answer": "Spesso sì. Molti gestionali per studi medici e dentistici offrono un modulo di prenotazione o un collegamento con il sito. Prima di progettare verifichiamo cosa permette il tuo, come vengono trattati i dati e dove sono conservati. Se il collegamento diretto non è possibile, impostiamo una richiesta che arriva in modo ordinato alla segreteria."
+        },
+        {
+          "question": "Serve un sito diverso per un poliambulatorio con molte specialità?",
+          "answer": "Serve una struttura diversa. Con molte specialità e professionisti il paziente deve poter cercare per problema, per specialità o per nome del medico, e trovare in ogni pagina come prenotare. Diventa importante anche un sistema che permetta alla segreteria di aggiornare orari e presenze senza chiamare un tecnico. La progettazione richiede più tempo, ma la logica resta la stessa."
+        }
+      ],
+      "metaTitle": "Siti web per dentisti e studi medici | not4sale",
+      "metaDescription": "Siti web per dentisti, studi medici e fisioterapisti: prestazioni spiegate, prenotazione online, dati dei pazienti protetti. Chiedi un preventivo."
+    },
+    {
+      "sector": "sanita-privata",
+      "service": "seo-locale",
+      "headline": "SEO per dentisti e studi medici: farsi trovare da chi ha bisogno",
+      "short": "SEO locale per studi dentistici, poliambulatori e fisioterapisti: schede Google, pagine per prestazione, contenuti firmati dai medici.",
+      "answer": "La SEO per dentisti, studi medici e fisioterapisti di not4sale rende la struttura visibile quando qualcuno cerca una prestazione vicino a sé, come \"dentista Riccione\" o \"fisioterapista mal di schiena Pesaro\". Lavoriamo su schede Google della struttura e dei professionisti, pagine per prestazione e sede, contenuti sanitari firmati e recensioni gestite nel rispetto della riservatezza.",
+      "problem": "Chi cerca un medico privato su Google oggi trova davanti a sé tre ostacoli prima di arrivare al tuo studio. Il primo sono gli annunci a pagamento. Il secondo è la mappa, con tre strutture in evidenza scelte da Google. Il terzo sono i grandi portali di prenotazione e recensione medica, che occupano molti dei risultati classici con le loro pagine per specialità e città.\n\nSe lo studio non compare nella mappa e il suo sito non ha pagine dedicate alle prestazioni, resta solo il portale, dove il paziente ti confronta con altri dieci professionisti nella stessa schermata.\n\nAll'interno degli studi i problemi sono spesso gli stessi. Un poliambulatorio con una sola scheda Google generica, mentre i singoli specialisti hanno schede aperte da sé con indirizzi diversi. Una scheda con la categoria \"Medico\" quando l'attività principale è la fisioterapia. Orari che non dicono nulla sulle aperture estive o sulle urgenze. E un sito senza una pagina per la prestazione che porta più pazienti, per cui Google non ha niente da mostrare a chi la cerca.",
+      "process": [
+        {
+          "title": "Mappa delle prestazioni",
+          "description": "Individuiamo come i pazienti cercano le tue prestazioni: per specialità, per sintomo, per urgenza, per zona."
+        },
+        {
+          "title": "Schede di struttura e medici",
+          "description": "Ordiniamo la scheda della struttura e quelle dei professionisti, con categorie corrette e dati coerenti."
+        },
+        {
+          "title": "Pagine per prestazione e sede",
+          "description": "Creiamo sul sito una pagina per ogni prestazione importante e per ogni sede, con informazioni pratiche reali."
+        },
+        {
+          "title": "Contenuti firmati",
+          "description": "Scriviamo articoli che rispondono alle domande dei pazienti, rivisti e firmati da un professionista della struttura."
+        },
+        {
+          "title": "Prenotazioni tracciate",
+          "description": "Misuriamo chiamate, indicazioni stradali e richieste di appuntamento arrivate dalla ricerca, sede per sede."
+        }
+      ],
+      "body": "## SEO per studi medici: le ricerche da presidiare\n\nLe ricerche che portano pazienti a una struttura privata si dividono in quattro famiglie, e ognuna chiede una risposta diversa:\n\n| Tipo di ricerca | Esempio | Cosa serve |\n|---|---|---|\n| Specialità e città | \"ortopedico Rimini\", \"dentista Fano\" | Scheda Google curata e pagina della specialità |\n| Prestazione | \"visita posturale\", \"bite notturno\" | Pagina dedicata che spiega la prestazione |\n| Sintomo o dubbio | \"dolore alla mandibola quando mastico\" | Contenuto informativo firmato da un professionista |\n| Urgenza | \"dentista aperto sabato\", \"fisioterapista vicino a me\" | Orari corretti, telefono in evidenza, pagina urgenze |\n\nSulla costa si aggiunge una quinta famiglia, le ricerche dei turisti, spesso in inglese o in tedesco e quasi sempre urgenti. Per uno studio di [Riccione](/agenzia-marketing/riccione) o di [Rimini](/agenzia-marketing/rimini) due pagine tradotte bene e una scheda con gli orari estivi corretti valgono più di molti articoli.\n\n## Poliambulatori: una scheda o tante?\n\nGoogle ammette, accanto alla scheda della struttura, profili per i singoli professionisti che ricevono il pubblico e sono reperibili in sede negli orari indicati. Per un poliambulatorio questo può essere un vantaggio: chi cerca il nome di un medico lo trova collegato alla struttura giusta. Diventa un problema quando le schede nascono senza regia.\n\nLe regole che applichiamo:\n\n- **Scheda della struttura come riferimento**, con la categoria principale più vicina all'attività prevalente e le altre come secondarie.\n- **Schede dei professionisti** solo per chi visita con continuità, con lo stesso indirizzo e un riferimento chiaro alla struttura.\n- **Professionista unico**: una sola scheda, perché Google non ammette profili multipli per coprire specialità diverse.\n- **Più sedi**: una scheda per ogni sede dove si ricevono davvero i pazienti, con orari propri.\n\nIl funzionamento generale della mappa è spiegato nella pagina sulla [SEO locale](/servizi/seo/seo-locale); qui conta come applicarlo a una struttura sanitaria con molti professionisti.\n\n## Portali, albi e coerenza dei dati\n\nI portali di prenotazione medica sono un canale utile, ma non sostituiscono il tuo sito: i pazienti ci arrivano, ti confrontano e spesso poi cercano il tuo nome su Google. Quello che conta è che le informazioni coincidano ovunque: nome della struttura, indirizzo, telefono, specialità, nomi dei professionisti. Anche l'albo pubblico del tuo ordine e i siti delle associazioni di categoria sono fonti che Google considera affidabili. Quando un medico lascia la struttura o arriva un nuovo collega, aggiorniamo tutte le fonti nello stesso giorno.\n\nSul sito aggiungiamo [dati strutturati](/servizi/ai-search/dati-strutturati) per struttura, professionisti e prestazioni, utili anche agli assistenti AI che rispondono a domande sulla salute.\n\n## Contenuti sanitari che Google prende sul serio\n\nGoogle applica standard più severi ai contenuti che possono incidere sulla salute delle persone, e nelle risposte generate dall'AI tende a citare fonti autorevoli. Per una struttura privata significa:\n\n1. **Ogni articolo firmato** da un professionista identificabile, con titolo e ruolo.\n2. **Data di aggiornamento visibile** e revisione periodica.\n3. **Niente diagnosi a distanza**: il contenuto spiega e orienta, poi invita a una visita.\n4. **Linguaggio informativo**, senza toni promozionali, come richiede la normativa sulla comunicazione sanitaria.\n\nPochi contenuti di questo tipo, legati alle prestazioni che lo studio offre davvero, possono comparire anche nelle [AI Overviews di Google](/servizi/ai-search/google-ai-overviews). Non diamo pareri legali sulle regole della comunicazione sanitaria: per i dubbi il riferimento è il tuo ordine.\n\n## Recensioni dei pazienti: chiedere senza esporre\n\nLe recensioni pesano molto sulla scelta di un medico, e si possono chiedere: con un messaggio dopo la visita, un link diretto, nessun incentivo. Vanno però evitate le richieste che spingono il paziente a raccontare la propria patologia, e le risposte non devono mai confermare che chi scrive sia stato in cura. Per le recensioni negative ti prepariamo risposte tipo, brevi e senza riferimenti clinici.\n\nMisuriamo tutto per sede e per prestazione: posizioni nella mappa nei diversi quartieri, chiamate, indicazioni stradali, richieste di appuntamento. Per il quadro del settore c'è la pagina sul [marketing per la sanità privata](/settori/sanita-privata); se le visite arrivano ma le richieste no, il lavoro da fare è sui [siti web per dentisti e studi medici](/settori/sanita-privata/siti-web).",
+      "faq": [
+        {
+          "question": "Ha senso la SEO se sono già su un portale di prenotazioni?",
+          "answer": "Sì, perché il portale e il tuo sito fanno lavori diversi. Sul portale il paziente ti confronta con altri professionisti nella stessa pagina, e le regole le decide la piattaforma. La scheda Google e il sito sono spazi tuoi, dove racconti struttura, persone e prestazioni senza concorrenti accanto. Molti pazienti, dopo averti trovato sul portale, cercano comunque il tuo nome su Google."
+        },
+        {
+          "question": "Ogni medico del poliambulatorio deve avere una scheda Google?",
+          "answer": "Non è obbligatorio e non sempre conviene. Ha senso per chi visita nella struttura con continuità e viene cercato per nome. Per i consulenti presenti un giorno al mese spesso basta la pagina sul sito della struttura. In ogni caso le schede dei professionisti devono essere coerenti con quella della struttura, per non disperdere visibilità e recensioni."
+        },
+        {
+          "question": "Possiamo chiedere le recensioni ai pazienti?",
+          "answer": "Sì, con discrezione e senza offrire nulla in cambio, perché Google vieta le recensioni incentivate. Funziona un messaggio breve dopo la visita con il link diretto alla scheda. Meglio non suggerire cosa scrivere e non invitare a raccontare la propria situazione clinica. Le risposte vanno date con tono professionale, senza confermare che la persona sia un paziente."
+        },
+        {
+          "question": "Scrivere articoli su sintomi e patologie è rischioso?",
+          "answer": "È delicato, non vietato. Un articolo che spiega quando un dolore merita una visita, firmato da un professionista e scritto in modo prudente, è utile ai pazienti e apprezzato da Google. Diventa rischioso quando promette guarigioni, minimizza i rischi o si trasforma in pubblicità di un trattamento. Per questo ogni testo passa dalla revisione di chi ha la responsabilità sanitaria."
+        },
+        {
+          "question": "In quanto tempo uno studio medico sale su Google?",
+          "answer": "Le correzioni alla scheda e ai dati di base danno spesso i primi effetti in qualche settimana. Le pagine per prestazione e i contenuti richiedono alcuni mesi, di più nelle specialità molto contese come l'odontoiatria nelle città più grandi. Per questo misuriamo ogni mese la visibilità nella mappa per quartiere: si vede la direzione prima dei risultati pieni."
+        }
+      ],
+      "metaTitle": "SEO per dentisti e studi medici | not4sale",
+      "metaDescription": "SEO per dentisti, studi medici e fisioterapisti: schede Google, pagine per prestazione, contenuti firmati e recensioni gestite con riservatezza."
+    },
+    {
+      "sector": "sanita-privata",
+      "service": "gestione-social",
+      "headline": "Social media manager per dentisti, studi medici e fisioterapisti",
+      "short": "Gestione social per studi dentistici, poliambulatori e fisioterapia: contenuti informativi, privacy dei pazienti, niente promozioni.",
+      "answer": "La gestione social per dentisti, studi medici e fisioterapisti di not4sale produce contenuti informativi su prevenzione, prestazioni e organizzazione dello studio, con i professionisti come protagonisti. Pianifichiamo, giriamo e pubblichiamo nel rispetto delle regole sulla comunicazione sanitaria e della privacy dei pazienti, e gestiamo commenti e messaggi senza mai trasformare la chat in una visita.",
+      "problem": "Sui social la sanità privata oscilla tra due estremi. Da una parte gli studi che copiano le logiche del commercio: sbiancamento in offerta per tutto il mese, foto prima e dopo, video di tendenza con il dentista che balla in camice. Raccolgono like, ma rischiano richiami dall'ordine e trasmettono un'immagine poco coerente con chi deve prendersi cura della salute delle persone.\n\nDall'altra parte gli studi che hanno aperto la pagina e l'hanno lasciata lì, con l'ultimo post di due anni fa sull'arrivo di una nuova apparecchiatura. Il paziente che li cerca dopo averli trovati su Google si chiede se siano ancora aperti.\n\nIn mezzo ci sono rischi meno evidenti. La foto di gruppo scattata in sala operativa con il monitor acceso alle spalle. La storia girata in sala d'attesa con un paziente riconoscibile. Il commento sotto un post in cui qualcuno descrive i propri sintomi e chiede un parere, e la tentazione di rispondere nel merito. I messaggi privati con le foto di una lesione, che finiscono nel telefono di chi gestisce il profilo. Senza regole chiare, la gestione social di uno studio medico è un piccolo campo minato.",
+      "process": [
+        {
+          "title": "Regole e consensi",
+          "description": "Fissiamo cosa si può pubblicare, come si raccolgono i consensi di pazienti e collaboratori e come si gestiscono commenti e messaggi."
+        },
+        {
+          "title": "Piano editoriale sanitario",
+          "description": "Costruiamo un calendario di temi informativi legato alle prestazioni dello studio e alla stagionalità delle richieste."
+        },
+        {
+          "title": "Riprese in studio",
+          "description": "Organizziamo sessioni di foto e video brevi con i professionisti, in orari che non fermano l'attività clinica."
+        },
+        {
+          "title": "Revisione del medico",
+          "description": "Ogni contenuto che parla di salute viene rivisto e approvato dal professionista responsabile prima della pubblicazione."
+        },
+        {
+          "title": "Moderazione e report",
+          "description": "Rispondiamo con protocolli concordati e misuriamo richieste di appuntamento, non solo copertura e like."
+        }
+      ],
+      "body": "## Gestione social per studi medici: cosa si può pubblicare\n\nTutto quello che informa il paziente e lo aiuta a scegliere con consapevolezza. La normativa sulla comunicazione sanitaria esclude i contenuti promozionali o suggestivi, e i codici deontologici delle professioni sanitarie aggiungono regole proprie, ma lo spazio per contenuti utili è ampio:\n\n- **Prevenzione e buone abitudini**: come si lava correttamente uno spazzolino da bambino, quando fare un controllo, quali esercizi evitare dopo una distorsione.\n- **Come funziona una prestazione**: cosa succede durante una seduta di igiene, una visita posturale, una radiografia panoramica.\n- **Le persone**: chi sono i professionisti e gli assistenti, il loro percorso, le lingue che parlano.\n- **Lo studio**: la sterilizzazione spiegata, le nuove apparecchiature descritte per cosa servono, l'accessibilità per chi ha difficoltà motorie.\n- **Informazioni di servizio**: orari estivi, chiusure, nuovi servizi, come prenotare.\n\nRestano fuori sconti, offerte, pacchetti, promesse di risultato e, per prudenza, le foto prima e dopo. Non diamo pareri legali sulle regole della comunicazione sanitaria: per i casi dubbi il riferimento è il tuo ordine.\n\n## Privacy dei pazienti: cosa non deve mai comparire\n\nIl rischio più frequente nei social di uno studio non è il contenuto sbagliato, è il dettaglio involontario. Prima di ogni ripresa controlliamo:\n\n1. **Nessun paziente riconoscibile**, nemmeno di spalle o in sala d'attesa, senza un consenso scritto specifico per quella pubblicazione.\n2. **Schermi, agende e radiografie** fuori dall'inquadratura o resi illeggibili: contengono dati sanitari.\n3. **Etichette, cartelle e fascicoli** lontani dal set.\n4. **Collaboratori** che hanno dato il consenso a comparire, e che possono revocarlo.\n\nSe un paziente vuole raccontare la propria esperienza, valutiamo con te il caso: un racconto spontaneo e informativo è diverso da una testimonianza usata come argomento di vendita.\n\n## Commenti e messaggi: in chat non si fa una visita\n\nSotto un post su un mal di schiena arriverà sempre qualcuno che descrive il proprio dolore e chiede cosa fare. La risposta non entra mai nel merito clinico: si ringrazia, si spiega che per una valutazione serve una visita e si indica come prenotarla. Lo stesso per i messaggi privati, dove chiediamo solo i dati necessari per fissare un appuntamento e scoraggiamo l'invio di foto o referti.\n\nPrepariamo un protocollo con le risposte tipo, i casi da passare subito alla segreteria e quelli da nascondere o eliminare, come i commenti in cui una persona espone i propri dati sanitari. Se il volume di messaggi è alto, ci occupiamo del [community management](/servizi/social/community-management) ogni giorno.\n\n## Le sponsorizzate nel settore sanitario\n\nLe piattaforme hanno regole proprie per la salute, e vanno lette prima di investire. Meta vieta gli annunci che presumono una condizione di salute di chi li legge: un testo come \"Soffri di mal di schiena?\" rischia il rifiuto, mentre \"Fisioterapia per il mal di schiena a Pesaro\" descrive il servizio senza parlare di chi legge. Le opzioni di targeting legate a temi sensibili sono state ridotte, e per gli inserzionisti del settore salute l'uso dei dati di navigazione è sempre più limitato.\n\nIn pratica per uno studio le sponsorizzate funzionano soprattutto per far conoscere una nuova sede, un nuovo professionista o un servizio, a un pubblico definito per zona. Le impostiamo con le logiche delle campagne [Meta Ads](/servizi/advertising/meta-ads), ma con testi sanitari rivisti dal medico.\n\n## Formati che funzionano e come li misuriamo\n\nFunzionano i video brevi con un professionista che risponde a una domanda ricorrente, i caroselli pratici, come \"cosa portare alla prima visita\", e le storie con le informazioni di servizio. Le riprese le organizziamo in mezze giornate, di solito a studio chiuso, per avere materiale per più settimane. Se serve una qualità più alta, la produzione passa dal nostro servizio di [video e spot](/servizi/content/video-spot).\n\nMisuriamo richieste di appuntamento arrivate dai social, clic verso le pagine delle prestazioni, salvataggi e condivisioni dei contenuti di prevenzione. Il metodo generale è nella pagina sulla [gestione social media](/servizi/social/gestione-social); il contesto del settore in quella sul [marketing per la sanità privata](/settori/sanita-privata). Seguiamo studi tra Romagna e Marche di persona, il resto d'Italia da remoto.",
+      "faq": [
+        {
+          "question": "Possiamo mostrare i pazienti nei nostri post?",
+          "answer": "Solo con un consenso scritto, specifico per quella pubblicazione e revocabile, e anche così con molta cautela: l'immagine di una persona in uno studio medico rivela già un dato sanitario. Nella maggior parte dei casi scegliamo di non mostrarli e di raccontare lo studio attraverso i professionisti, gli ambienti e le spiegazioni delle prestazioni."
+        },
+        {
+          "question": "Le foto prima e dopo su Instagram sono vietate?",
+          "answer": "Le regole sulla comunicazione sanitaria escludono i contenuti suggestivi, e le immagini prima e dopo rischiano di esserlo, oltre a esporre dati del paziente. Per prudenza non le pubblichiamo. Se vuoi valutarle per un caso particolare, il riferimento è il tuo ordine: noi non diamo pareri legali."
+        },
+        {
+          "question": "Un medico può stare su TikTok?",
+          "answer": "Può, se il contenuto resta informativo e il tono rispetta la dignità della professione. Alcuni professionisti spiegano la prevenzione o smontano false credenze con video brevi molto efficaci. Sconsigliamo invece balletti, scherzi in camice e tendenze che non c'entrano con la salute. TikTok ha senso se i tuoi pazienti hanno l'età di quel pubblico."
+        },
+        {
+          "question": "Chi risponde ai messaggi privati dei pazienti?",
+          "answer": "Dipende da come è organizzato lo studio. Possiamo gestire noi la prima risposta, seguendo un protocollo concordato, e passare alla segreteria tutto ciò che riguarda appuntamenti o informazioni personali. In nessun caso rispondiamo a domande cliniche: le indirizziamo verso una visita. Quando i messaggi sono molti, conviene collegare i social all'agenda di prenotazione."
+        },
+        {
+          "question": "Quanto tempo devono dedicare i medici ai social?",
+          "answer": "Meno di quanto temono. Servono una mezza giornata di riprese ogni uno o due mesi, una breve intervista per raccogliere i temi e qualche minuto a settimana per approvare i contenuti. Il resto lo facciamo noi. Quello che non possiamo sostituire è la revisione del professionista: un contenuto sanitario va approvato da chi ne ha la responsabilità."
+        }
+      ],
+      "metaTitle": "Social media manager per dentisti e studi medici | not4sale",
+      "metaDescription": "Gestione social per dentisti, studi medici e fisioterapisti: contenuti informativi, privacy dei pazienti tutelata, niente promozioni. Scopri come lavoriamo."
+    },
+    {
+      "sector": "sanita-privata",
+      "service": "logo-identita-visiva",
+      "headline": "Logo per studio dentistico, studi medici e fisioterapia",
+      "short": "Logo e identità per studi dentistici, poliambulatori e fisioterapisti: distintivi, rassicuranti, pronti per camici, insegne e referti.",
+      "answer": "Il logo per studio dentistico, studio medico o centro di fisioterapia progettato da not4sale parte da chi sono i pazienti e da come vuole essere percepita la struttura. Evitiamo simboli protetti e cliché, disegniamo un sistema che funziona su insegna, camici, segnaletica interna, referti e sito, e prepariamo i file per ogni fornitore.",
+      "problem": "Il catalogo dei loghi sanitari è sorprendentemente ripetitivo. Per gli studi dentistici, il dente stilizzato, spesso sorridente, a volte con una scintilla di pulito. Per i poliambulatori, una croce, un cuore con il tracciato dell'elettrocardiogramma, il caduceo. Per la fisioterapia, una silhouette umana in movimento. Il tutto in azzurro, verde acqua o blu. Il paziente che vede tre insegne nella stessa via non riesce a distinguerle.\n\nCi sono poi problemi meno estetici. Alcuni simboli non si possono usare liberamente: la croce rossa su fondo bianco è un emblema protetto, e il suo uso da parte di strutture private non autorizzate è un abuso. Altri, come la croce verde, sono associati nella testa delle persone alle farmacie e creano confusione.\n\nE c'è l'uso quotidiano. Il logo deve stare ricamato sul taschino di un camice, stampato su un referto in bianco e nero, inciso su una targa, visibile su un'insegna a bandiera e leggibile su un cartello che indica la sala raggi. Un marchio disegnato pensando solo allo schermo, con sfumature e dettagli sottili, si perde in metà di questi posti.",
+      "process": [
+        {
+          "title": "Identità della struttura",
+          "description": "Capiamo chi sono i pazienti, quali prestazioni contano e che sensazione deve dare lo studio: famiglia, sport, alta specializzazione."
+        },
+        {
+          "title": "Verifica di simboli e nome",
+          "description": "Escludiamo emblemi protetti e segni che creano confusione, e controlliamo che il nome rispetti le regole della struttura."
+        },
+        {
+          "title": "Proposte in ambiente",
+          "description": "Mostriamo le direzioni creative applicate a insegna, camice, sala d'attesa, referto e profilo social."
+        },
+        {
+          "title": "Segnaletica e documenti",
+          "description": "Sviluppiamo segnaletica interna, modelli per referti, preventivi di cura e promemoria degli appuntamenti."
+        },
+        {
+          "title": "File e guida",
+          "description": "Consegniamo i file per ricamo, stampa, insegna e web, con una guida pensata per segreteria e fornitori."
+        }
+      ],
+      "body": "## Logo per studio dentistico: perché sembrano tutti uguali\n\nPerché partono tutti dalla professione invece che dallo studio. Un dente, una croce o un cuore dicono cosa fai, ma lo dice già l'insegna. Quello che il paziente non sa, e che un buon logo può suggerire, è come lo farai: con quale attenzione, con quale tono, per chi.\n\nUno studio dentistico che lavora soprattutto con le famiglie e i bambini può avere un'identità calda e vicina. Un centro di fisioterapia che segue sportivi, in un territorio come quello tra Rimini e Misano dove sport e motori hanno un peso, può puntare su energia e precisione. Un poliambulatorio con molte specialità ha bisogno di un sistema ordinato e istituzionale, capace di accogliere nuovi servizi senza cambiare ogni volta. Il punto di partenza è una [strategia di marca](/servizi/branding/brand-strategy), anche in forma essenziale.\n\n## Simboli da evitare o da usare con cautela\n\nNel settore sanitario la scelta dei simboli non è solo una questione di gusto. Le principali attenzioni:\n\n- **Croce rossa su fondo bianco**: è l'emblema protetto dalle convenzioni internazionali e dalla legge italiana. Le strutture private non autorizzate non possono usarlo, né in versioni che lo imitano. La Croce Rossa Italiana raccoglie le segnalazioni di uso improprio.\n- **Croce verde**: non è un emblema protetto nello stesso modo, ma è associata alle farmacie e può confondere il paziente.\n- **Caduceo e bastone di Asclepio**: il primo, con due serpenti e le ali, è il simbolo di Mercurio e del commercio, spesso usato per sbaglio al posto del secondo, che ha un solo serpente ed è il simbolo storico della medicina.\n- **Loghi istituzionali**: niente che ricordi il servizio sanitario regionale o quello nazionale. Per una struttura privata può creare confusione su convenzioni che non esistono.\n\nNon diamo pareri legali: per i casi dubbi il riferimento resta l'ordine o il consulente della struttura. Nella pratica, per prudenza, scegliamo segni originali che non si avvicinano a quelli protetti.\n\n## Colori, caratteri e percezione\n\nL'azzurro e il verde acqua sono diffusi nel settore perché comunicano pulizia e calma, ed è proprio per questo che non distinguono più. Si può restare in un territorio rassicurante con scelte meno scontate: un colore principale più caldo, un neutro deciso, un accento usato con misura. Conta anche la leggibilità. Molti pazienti hanno più di sessant'anni, alcuni hanno problemi di vista: i caratteri devono essere chiari, il contrasto alto, le dimensioni generose, in particolare sulla segnaletica.\n\n## Dove vive l'identità di uno studio medico\n\nIn uno studio sanitario l'identità si vede soprattutto dentro, durante la visita. Per questo progettiamo il sistema su:\n\n1. **Camici e divise**, con una versione del marchio adatta al ricamo, senza dettagli troppo piccoli.\n2. **Insegna e targa**, rispettando i regolamenti comunali sulle insegne e le esigenze dei condomini.\n3. **Segnaletica interna**: accettazione, sale, servizi, percorsi per chi ha difficoltà motorie.\n4. **Documenti per il paziente**: referti, piani di cura, preventivi, promemoria degli appuntamenti, informative privacy impaginate in modo leggibile.\n5. **Canali digitali**: avatar, scheda Google, sito e messaggi di prenotazione.\n\nÈ il lavoro dell'[immagine coordinata](/servizi/branding/immagine-coordinata), che per una struttura sanitaria comprende anche gli ambienti.\n\n## Quando lo studio cresce: rebranding senza perdere i pazienti\n\nIl caso tipico è lo \"Studio dentistico Dott. Rossi\" che diventa un centro con più professionisti, o il fisioterapista che apre una seconda sede. Il nome del fondatore può restare come garanzia, oppure lasciare spazio a un nome proprio che permetta allo studio di crescere oltre la singola persona. In entrambi i casi conviene accompagnare il cambio: una comunicazione ai pazienti, un periodo in cui vecchio e nuovo convivono, il sito e la scheda Google aggiornati lo stesso giorno. Le regole sulla denominazione delle strutture sanitarie vanno verificate prima di scegliere.\n\nIl metodo generale è nella pagina su [logo e identità visiva](/servizi/branding/logo-identita-visiva), il contesto del settore in quella sul [marketing per la sanità privata](/settori/sanita-privata). Quando l'identità è pronta, il passo naturale è portarla nel [sito dello studio](/settori/sanita-privata/siti-web). Lavorando da Cattolica presentiamo le proposte di persona alle strutture di Romagna e Marche, in videochiamata alle altre.",
+      "faq": [
+        {
+          "question": "Posso usare una croce nel logo del mio studio medico?",
+          "answer": "La croce rossa su fondo bianco no: è un emblema protetto e una struttura privata non autorizzata non può usarlo, nemmeno in versioni simili. La croce verde non è protetta allo stesso modo, ma è associata alle farmacie e rischia di confondere. Croci di altri colori sono possibili, ma raramente distinguono uno studio: di solito proponiamo segni più originali."
+        },
+        {
+          "question": "Un dente nel logo dello studio dentistico è un errore?",
+          "answer": "Non è un errore, è una scelta molto diffusa, quindi poco distintiva. Se lo studio ci tiene, si può trattare il riferimento in modo meno letterale e più personale. Spesso però l'identità funziona meglio con un marchio che racconta il carattere dello studio, mentre la parola \"dentista\" o \"odontoiatria\" accanto al nome chiarisce l'attività."
+        },
+        {
+          "question": "Meglio il nome del dottore o un nome di fantasia?",
+          "answer": "Il nome del dottore rassicura, soprattutto nei paesi e nei quartieri dove è conosciuto da anni, ma lega lo studio a una persona. Un nome proprio facilita la crescita, l'ingresso di nuovi professionisti e un eventuale passaggio di mano. Spesso si arriva a una soluzione intermedia. Prima di decidere vanno verificate le regole sulla denominazione delle strutture sanitarie."
+        },
+        {
+          "question": "Il logo funzionerà ricamato sui camici?",
+          "answer": "Sì, perché il ricamo è una delle prove che facciamo fin dalle prime proposte. Prepariamo una versione semplificata, con spessori adatti e pochi colori, e la verifichiamo con il fornitore delle divise prima della produzione. Lo stesso vale per targhe incise, adesivi sui vetri e stampa in bianco e nero dei referti."
+        },
+        {
+          "question": "Quanto tempo serve per un nuovo logo?",
+          "answer": "Per un logo con il sistema di base servono di solito alcune settimane, a seconda dei giri di revisione e dei tempi di decisione dei soci o della direzione. Se il progetto comprende segnaletica interna, modelli per i documenti e insegna, i tempi si allungano e coinvolgono anche i fornitori. Una stima più precisa la puoi chiedere dal preventivo online."
+        }
+      ],
+      "metaTitle": "Logo per studio dentistico e studi medici | not4sale",
+      "metaDescription": "Logo per studio dentistico, studi medici e fisioterapia: segni distintivi, niente simboli protetti, file pronti per camici, insegne e referti."
+    }
+  ]
+}

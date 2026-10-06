@@ -33,7 +33,7 @@ const readDir = (dir: string) =>
         .map((f) => JSON.parse(readFileSync(path.join(root, dir, f), 'utf8')))
     : []
 
-type Coll = 'locations' | 'sectors' | 'services' | 'case-studies' | 'local-services'
+type Coll = 'locations' | 'sectors' | 'services' | 'case-studies' | 'local-services' | 'sector-services'
 
 const idsBySlug = async (collection: Coll) => {
   const res = await withRetry(() => payload.find({ collection, limit: 5000, pagination: false, depth: 0, draft: true }))
@@ -50,6 +50,7 @@ const save = async (collection: Coll, existingId: string | undefined, data: Reco
 const locations = readDir('comuni').flatMap((f) => f.locations)
 const sectors = readDir('settori').flatMap((f) => f.sectors)
 const cityFiles = readDir('servizi-citta')
+const sectorServiceFiles = readDir('settori-servizi')
 
 // 1. Comuni e settori, senza relazioni (si collegano dopo, quando esistono tutti)
 let locIds = await idsBySlug('locations')
@@ -159,4 +160,41 @@ for (const f of cityFiles) {
   }
 }
 payload.logger.info(`Servizi in città: ${localCount}`)
+
+// 4. Servizi per settore (chiave: settore + servizio)
+let ssCount = 0
+for (const f of sectorServiceFiles) {
+  for (const it of f.items) {
+    const sectorId = sectorIds.get(it.sector)
+    const serviceId = serviceIds.get(it.service)
+    if (!sectorId || !serviceId) {
+      payload.logger.error(`Settore o servizio non trovato: ${it.sector} / ${it.service}`)
+      continue
+    }
+    const existing = await withRetry(() =>
+      payload.find({
+        collection: 'sector-services',
+        where: { and: [{ sector: { equals: sectorId } }, { service: { equals: serviceId } }] },
+        limit: 1,
+        depth: 0,
+        draft: true,
+      }),
+    )
+    await save('sector-services', existing.docs[0] ? String(existing.docs[0].id) : undefined, {
+      title: `${it.service} · ${it.sector}`,
+      sector: sectorId,
+      service: serviceId,
+      headline: it.headline,
+      short: it.short,
+      answer: it.answer,
+      problem: md(it.problem),
+      process: it.process,
+      body: md(it.body),
+      faq: it.faq,
+      meta: { title: it.metaTitle, description: it.metaDescription },
+    })
+    ssCount++
+  }
+}
+payload.logger.info(`Servizi per settore: ${ssCount}`)
 process.exit(0)

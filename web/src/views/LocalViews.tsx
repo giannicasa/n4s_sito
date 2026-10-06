@@ -5,12 +5,12 @@ import { JsonLd } from '@/components/cms/JsonLd'
 import { hasRichText, RichText } from '@/components/cms/RichText'
 import { Reveal, RevealLines } from '@/components/site/Reveal'
 import { Chips, Container, Kicker, LinkCard } from '@/components/site/ui'
-import { getLocalService, getLocalServices, getLocation, getLocations, getSector, getSectors } from '@/lib/cms'
+import { getLocalService, getLocalServices, getLocation, getLocations, getSector, getSectors, getSectorService, getSectorServices } from '@/lib/cms'
 import { absolute, paths } from '@/lib/paths'
 import { notFoundOrRedirect } from '@/lib/redirects'
-import { breadcrumbNode, faqNode, graph, localServiceNode, locationNode, sectorNode } from '@/lib/schema'
+import { breadcrumbNode, faqNode, graph, localServiceNode, locationNode, sectorNode, sectorServiceNode } from '@/lib/schema'
 import { buildMetadata } from '@/lib/seo'
-import type { CaseStudy, LocalService, Location, Sector, Service } from '@/payload-types'
+import type { CaseStudy, LocalService, Location, Sector, SectorService, Service } from '@/payload-types'
 
 import { CasesBlock, ContactBlock, FaqBlock, Hero, NextCard, plain } from './ServiceViews'
 
@@ -442,7 +442,7 @@ export const SectorView = async ({ slug }: { slug: string }) => {
   const services = objects<Service>(x.services as any)
   const locations = objects<Location>(x.locations as any)
   const cases = objects<CaseStudy>(x.caseStudies as any)
-  const sectors = await getSectors()
+  const [sectors, sectorServices] = await Promise.all([getSectors(), getSectorServices({ sector: x.id })])
   const idx = sectors.findIndex((s) => s.id === x.id)
   const next = sectors.length > 1 ? sectors[(idx + 1) % sectors.length] : null
 
@@ -507,6 +507,20 @@ export const SectorView = async ({ slug }: { slug: string }) => {
         </section>
       )}
 
+      {sectorServices.length > 0 && (
+        <section className="py-24 md:py-32 bg-ink-100">
+          <Container>
+            <Kicker className="mb-10">I nostri servizi per {x.title.toLowerCase()}</Kicker>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-t border-l border-white/10">
+              {sectorServices.map((ss) => {
+                const svc = ss.service as Service
+                return <LinkCard key={ss.id} href={paths.sectorService(slug, svc.slug!)} code={x.title} title={plain(svc.title)} text={ss.short} />
+              })}
+            </div>
+          </Container>
+        </section>
+      )}
+
       {locations.length > 0 && (
         <section className="py-20 border-t border-white/5">
           <Container>
@@ -522,6 +536,135 @@ export const SectorView = async ({ slug }: { slug: string }) => {
         titlePlain={x.title}
         locale="it"
         aside={next && next.id !== x.id ? <NextCard href={paths.sector(next.slug!)} kicker="Prossimo settore" title={next.title} locale="it" /> : null}
+      />
+    </>
+  )
+}
+
+// ─── /settori/{settore}/{servizio} ─────────────────────────────────────────
+
+export const sectorServiceMetadata = async (sectorSlug: string, serviceSlug: string) => {
+  const x = await getSectorService(sectorSlug, serviceSlug)
+  if (!x) return {}
+  return buildMetadata({
+    locale: 'it',
+    title: x.headline,
+    description: x.short,
+    path: paths.sectorService(sectorSlug, serviceSlug),
+    meta: x.meta,
+    ogKicker: `${plain((x.service as Service).title)} · ${(x.sector as Sector).title}`,
+  })
+}
+
+export const SectorServiceView = async ({ sectorSlug, serviceSlug }: { sectorSlug: string; serviceSlug: string }) => {
+  const x = await getSectorService(sectorSlug, serviceSlug)
+  if (!x) return notFoundOrRedirect(paths.sectorService(sectorSlug, serviceSlug))
+  const sec = x.sector as Sector
+  const svc = x.service as Service
+  const [sameSector, sameService] = await Promise.all([getSectorServices({ sector: sec.id }), getSectorServices({ service: svc.id })])
+  const otherServices = sameSector.filter((o) => o.id !== x.id)
+  const otherSectors = sameService.filter((o) => o.id !== x.id)
+
+  return (
+    <>
+      <JsonLd
+        data={graph(
+          sectorServiceNode(x, sec, svc),
+          breadcrumbNode([
+            HOME,
+            SECTORS,
+            { name: sec.title, path: paths.sector(sec.slug!) },
+            { name: plain(svc.title), path: paths.sectorService(sec.slug!, svc.slug!) },
+          ]),
+          faqNode(x.faq),
+        )}
+      />
+      <Hero
+        crumbs={[{ label: 'Settori', href: paths.sectors() }, { label: sec.title, href: paths.sector(sec.slug!) }, { label: plain(svc.title) }]}
+        headline={x.headline}
+        title={plain(svc.title)}
+        answer={x.answer}
+        short={x.short}
+        locale="it"
+      />
+
+      {hasRichText(x.problem) && (
+        <TwoCol
+          kicker="Le sfide"
+          tone="ink"
+          aside={
+            <>
+              <Kicker className="mb-6">Approfondisci</Kicker>
+              <Chips
+                items={[
+                  { href: serviceHref(svc), label: plain(svc.title) },
+                  { href: paths.sector(sec.slug!), label: `Marketing per ${sec.title.toLowerCase()}` },
+                ]}
+              />
+            </>
+          }
+        >
+          <RichText data={x.problem} className="text-lg" />
+        </TwoCol>
+      )}
+
+      {!!x.process?.length && (
+        <section className="py-24 md:py-32">
+          <Container>
+            <Kicker className="mb-10">Come lavoriamo</Kicker>
+            <ol
+              className={`grid grid-cols-1 md:grid-cols-2 ${x.process.length === 5 ? 'lg:grid-cols-5' : 'lg:grid-cols-4'} gap-px bg-white/10 border border-white/10`}
+            >
+              {x.process.map((p, i) => (
+                <li key={p.id ?? i} className="bg-black p-8">
+                  <div className="font-mono text-violet-500 text-sm mb-6">{String(i + 1).padStart(2, '0')}</div>
+                  <h3 className="font-display text-2xl font-black uppercase tracking-tight text-white mb-3 leading-none">{p.title}</h3>
+                  {p.description && <p className="text-neutral-400 leading-relaxed">{p.description}</p>}
+                </li>
+              ))}
+            </ol>
+          </Container>
+        </section>
+      )}
+
+      {hasRichText(x.body) && (
+        <section className="py-24 md:py-32 border-t border-white/5">
+          <Container className="grid grid-cols-1 md:grid-cols-12 gap-12">
+            <div className="md:col-span-3">
+              <Kicker className="md:sticky md:top-32">Approfondimento</Kicker>
+            </div>
+            <div className="md:col-span-8 max-w-3xl">
+              <RichText data={x.body} />
+            </div>
+          </Container>
+        </section>
+      )}
+
+      <FaqBlock faq={x.faq} locale="it" />
+
+      {(otherServices.length > 0 || otherSectors.length > 0) && (
+        <section className="py-20 border-t border-white/5">
+          <Container className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {otherServices.length > 0 && (
+              <div>
+                <Kicker className="mb-6">Altri servizi per {sec.title.toLowerCase()}</Kicker>
+                <Chips items={otherServices.map((o) => ({ href: paths.sectorService(sec.slug!, (o.service as Service).slug!), label: plain((o.service as Service).title) }))} />
+              </div>
+            )}
+            {otherSectors.length > 0 && (
+              <div>
+                <Kicker className="mb-6">{plain(svc.title)} per altri settori</Kicker>
+                <Chips items={otherSectors.map((o) => ({ href: paths.sectorService((o.sector as Sector).slug!, svc.slug!), label: (o.sector as Sector).title }))} />
+              </div>
+            )}
+          </Container>
+        </section>
+      )}
+
+      <ContactBlock
+        titlePlain={`${plain(svc.title)} per ${sec.title.toLowerCase()}`}
+        locale="it"
+        aside={<NextCard href={paths.sector(sec.slug!)} kicker="Il settore" title={sec.title} locale="it" />}
       />
     </>
   )

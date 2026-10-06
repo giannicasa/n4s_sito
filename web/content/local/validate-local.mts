@@ -18,6 +18,11 @@ const SERVICES = new Set(TAXONOMY.flatMap((a) => a.services.map((s) => s.slug)))
 const SERVICE_URL = new Map(TAXONOMY.flatMap((a) => a.services.map((s) => [s.slug, `/servizi/${a.slug}/${s.slug}`])))
 const LS_CITIES: string[] = plan.localServices.cities
 const LS_SERVICES: string[] = plan.localServices.services
+const LS_EXTRA: Record<string, string[]> = plan.localServicesExtra ?? {}
+// servizi attesi per ogni comune: i 6 di base per gli 8 centri + quelli emersi dall'analisi delle ricerche
+const lsFor = (city: string) => [...(LS_CITIES.includes(city) ? LS_SERVICES : []), ...(LS_EXTRA[city] ?? [])]
+const SS_PLAN: Record<string, Record<string, string[]>> = plan.sectorServices ?? {}
+const SS_PAIRS = Object.values(SS_PLAN).flatMap((b) => Object.entries(b).flatMap(([sec, svcs]) => svcs.map((svc) => [sec, svc])))
 
 const VALID_URLS = new Set<string>([
   '/preventivo', '/contatti', '/case-studies', '/chi-siamo', '/servizi', '/blog', '/agenzia-marketing', '/settori',
@@ -25,7 +30,8 @@ const VALID_URLS = new Set<string>([
   ...TAXONOMY.flatMap((a) => [`/servizi/${a.slug}`, ...a.services.map((s) => `/servizi/${a.slug}/${s.slug}`)]),
   ...[...COMUNI.keys()].map((c) => `/agenzia-marketing/${c}`),
   ...[...SECTORS].map((s) => `/settori/${s}`),
-  ...LS_CITIES.flatMap((c) => LS_SERVICES.map((s) => `/agenzia-marketing/${c}/${s}`)),
+  ...[...new Set([...LS_CITIES, ...Object.keys(LS_EXTRA)])].flatMap((c) => lsFor(c).map((s) => `/agenzia-marketing/${c}/${s}`)),
+  ...SS_PAIRS.map(([sec, svc]) => `/settori/${sec}/${svc}`),
 ])
 const CASES = ['cs-001', 'cs-002', 'cs-003', 'cs-004', 'cs-005']
 const BANNED = [/a 360 gradi/i, /nell'era digitale/i, /in continua evoluzione/i, /partner ideale/i, /google partner/i, /la nostra sede di (?!cattolica)/i, /nostr[oa] client[ei] (di|a) /i]
@@ -66,7 +72,7 @@ const pageTexts = new Map<string, string>()
 const addPage = (id: string, d: any, fields: string[]) =>
   pageTexts.set(id, [...fields.map((f) => d[f] ?? ''), ...(d.faq ?? []).map((f: any) => f.answer)].join(' '))
 
-const allFiles = [...list('comuni'), ...list('settori'), ...list('servizi-citta')]
+const allFiles = [...list('comuni'), ...list('settori'), ...list('servizi-citta'), ...list('settori-servizi')]
 const targets = process.argv.slice(2).length ? process.argv.slice(2).map((a) => a.replace(/^content\/local\//, '')) : allFiles
 
 for (const rel of allFiles) {
@@ -75,6 +81,7 @@ for (const rel of allFiles) {
     if (rel.startsWith('comuni/')) for (const l of d.locations ?? []) addPage(`comune:${l.slug}`, l, ['answer', 'economy', 'challenges', 'body'])
     if (rel.startsWith('settori/')) for (const s of d.sectors ?? []) addPage(`settore:${s.slug}`, s, ['answer', 'problem', 'body'])
     if (rel.startsWith('servizi-citta/')) for (const it of d.items ?? []) addPage(`${d.location}/${it.service}`, it, ['answer', 'body'])
+    if (rel.startsWith('settori-servizi/')) for (const it of d.items ?? []) addPage(`settore:${it.sector}/${it.service}`, it, ['answer', 'problem', 'body'])
   } catch { /* JSON non valido: segnalato sotto se è tra i target */ }
 }
 // pagine servizio già pubblicate, per non riciclarne le frasi
@@ -147,9 +154,9 @@ for (const rel of targets) {
     }
   } else if (rel.startsWith('servizi-citta/')) {
     const city = path.basename(rel, '.json')
-    if (!LS_CITIES.includes(city) || d.location !== city) err(rel, `comune non previsto o non corrispondente: ${d.location}`)
+    if (!lsFor(city).length || d.location !== city) err(rel, `comune non previsto o non corrispondente: ${d.location}`)
     const got = (d.items ?? []).map((i: any) => i.service)
-    if (JSON.stringify(got) !== JSON.stringify(LS_SERVICES)) err(rel, `servizi attesi ${LS_SERVICES.join(', ')} — trovati ${got.join(', ')}`)
+    if (JSON.stringify(got) !== JSON.stringify(lsFor(city))) err(rel, `servizi attesi ${lsFor(city).join(', ')} — trovati ${got.join(', ')}`)
     for (const it of d.items ?? []) {
       const where = `${city}/${it.service}`
       common(where, it, 4, 5)
@@ -164,6 +171,29 @@ for (const rel of targets) {
       if (total < 700) err(where, `totale ${total} parole (min 700)`)
       else console.log(`  ✓ ${where} · ${total} parole`)
     }
+  } else if (rel.startsWith('settori-servizi/')) {
+    const batch = path.basename(rel, '.json')
+    const spec = SS_PLAN[batch]
+    if (!spec) { err(rel, 'batch non presente in piano.json → sectorServices'); continue }
+    const expected = Object.entries(spec).flatMap(([sec, svcs]) => svcs.map((svc) => `${sec}/${svc}`))
+    const got = (d.items ?? []).map((i: any) => `${i.sector}/${i.service}`)
+    if (JSON.stringify(expected) !== JSON.stringify(got)) err(rel, `pagine attese ${expected.join(', ')} — trovate ${got.join(', ')}`)
+    for (const it of d.items ?? []) {
+      const where = `settore:${it.sector}/${it.service}`
+      common(where, it, 5, 6)
+      const pw = words(it.problem), bw = words(it.body)
+      if (pw < 110 || pw > 260) err(where, `problem ${pw} parole (110–260)`)
+      if (bw < 550) err(where, `body ${bw} parole (min 550)`)
+      if ((it.body?.match(/^## /gm) ?? []).length < 3) err(where, 'body con meno di 3 sezioni ##')
+      if (!Array.isArray(it.process) || it.process.length < 4 || it.process.length > 5) err(where, `process ${it.process?.length} (4–5)`)
+      const ls = links(it.body)
+      if (!ls.includes(SERVICE_URL.get(it.service)!)) err(where, `manca il link al servizio ${SERVICE_URL.get(it.service)}`)
+      if (!ls.includes(`/settori/${it.sector}`)) err(where, `manca il link al settore /settori/${it.sector}`)
+      checkLinks(where, it.problem, it.body)
+      const total = words(it.answer) + pw + bw + faqWords(it) + (it.process ?? []).reduce((n: number, p: any) => n + words(p.title) + words(p.description), 0)
+      if (total < 1000) err(where, `totale ${total} parole (min 1000)`)
+      else console.log(`  ✓ ${where} · ${total} parole`)
+    }
   } else err(rel, 'percorso non riconosciuto')
 }
 
@@ -174,7 +204,7 @@ for (const rel of targets) {
     const d = read(rel)
     for (const l of d.locations ?? []) targetIds.add(`comune:${l.slug}`)
     for (const s of d.sectors ?? []) targetIds.add(`settore:${s.slug}`)
-    for (const it of d.items ?? []) targetIds.add(`${d.location}/${it.service}`)
+    for (const it of d.items ?? []) targetIds.add(d.location ? `${d.location}/${it.service}` : `settore:${it.sector}/${it.service}`)
   } catch { /* già segnalato */ }
 }
 const owners = new Map<string, Set<string>>()

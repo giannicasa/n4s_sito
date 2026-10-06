@@ -1,27 +1,280 @@
 {
   "batches": {
-    "rn-riviera": { "province": "RN", "comuni": ["Rimini", "Riccione", "Cattolica", "Misano Adriatico", "Bellaria-Igea Marina", "Santarcangelo di Romagna", "Poggio Torriana", "Verucchio", "Coriano"] },
-    "rn-valconca": { "province": "RN", "comuni": ["San Clemente", "Montescudo-Monte Colombo", "Gemmano", "Montefiore Conca", "Morciano di Romagna", "San Giovanni in Marignano", "Saludecio", "Mondaino", "Montegridolfo", "Sassofeltrio"] },
-    "rn-valmarecchia": { "province": "RN", "comuni": ["Novafeltria", "Talamello", "Maiolo", "San Leo", "Pennabilli", "Sant'Agata Feltria", "Casteldelci", "Montecopiolo"] },
-    "pu-costa": { "province": "PU", "comuni": ["Pesaro", "Fano", "Gabicce Mare", "Gradara", "Tavullia", "Vallefoglia", "Montelabbate", "Mombaroccio", "Mondolfo"] },
-    "pu-metauro-cesano": { "province": "PU", "comuni": ["Cartoceto", "San Costanzo", "Monte Porzio", "Colli al Metauro", "Terre Roveresche", "Mondavio", "Fratte Rosa", "San Lorenzo in Campo", "Pergola", "Serra Sant'Abbondio"] },
-    "pu-urbino": { "province": "PU", "comuni": ["Urbino", "Fermignano", "Urbania", "Peglio", "Fossombrone", "Isola del Piano", "Montefelcino", "Sant'Ippolito", "Petriano", "Acqualagna"] },
-    "pu-montefeltro": { "province": "PU", "comuni": ["Montecalvo in Foglia", "Tavoleto", "Sassocorvaro Auditore", "Mercatino Conca", "Monte Grimano Terme", "Monte Cerignone", "Macerata Feltria", "Pietrarubbia", "Frontino", "Carpegna", "Piandimeleto", "Lunano"] },
-    "pu-appennino": { "province": "PU", "comuni": ["Belforte all'Isauro", "Sant'Angelo in Vado", "Mercatello sul Metauro", "Borgo Pace", "Cagli", "Cantiano", "Apecchio", "Piobbico", "Frontone"] }
+    "rn-riviera": {
+      "province": "RN",
+      "comuni": [
+        "Rimini",
+        "Riccione",
+        "Cattolica",
+        "Misano Adriatico",
+        "Bellaria-Igea Marina",
+        "Santarcangelo di Romagna",
+        "Poggio Torriana",
+        "Verucchio",
+        "Coriano"
+      ]
+    },
+    "rn-valconca": {
+      "province": "RN",
+      "comuni": [
+        "San Clemente",
+        "Montescudo-Monte Colombo",
+        "Gemmano",
+        "Montefiore Conca",
+        "Morciano di Romagna",
+        "San Giovanni in Marignano",
+        "Saludecio",
+        "Mondaino",
+        "Montegridolfo",
+        "Sassofeltrio"
+      ]
+    },
+    "rn-valmarecchia": {
+      "province": "RN",
+      "comuni": [
+        "Novafeltria",
+        "Talamello",
+        "Maiolo",
+        "San Leo",
+        "Pennabilli",
+        "Sant'Agata Feltria",
+        "Casteldelci",
+        "Montecopiolo"
+      ]
+    },
+    "pu-costa": {
+      "province": "PU",
+      "comuni": [
+        "Pesaro",
+        "Fano",
+        "Gabicce Mare",
+        "Gradara",
+        "Tavullia",
+        "Vallefoglia",
+        "Montelabbate",
+        "Mombaroccio",
+        "Mondolfo"
+      ]
+    },
+    "pu-metauro-cesano": {
+      "province": "PU",
+      "comuni": [
+        "Cartoceto",
+        "San Costanzo",
+        "Monte Porzio",
+        "Colli al Metauro",
+        "Terre Roveresche",
+        "Mondavio",
+        "Fratte Rosa",
+        "San Lorenzo in Campo",
+        "Pergola",
+        "Serra Sant'Abbondio"
+      ]
+    },
+    "pu-urbino": {
+      "province": "PU",
+      "comuni": [
+        "Urbino",
+        "Fermignano",
+        "Urbania",
+        "Peglio",
+        "Fossombrone",
+        "Isola del Piano",
+        "Montefelcino",
+        "Sant'Ippolito",
+        "Petriano",
+        "Acqualagna"
+      ]
+    },
+    "pu-montefeltro": {
+      "province": "PU",
+      "comuni": [
+        "Montecalvo in Foglia",
+        "Tavoleto",
+        "Sassocorvaro Auditore",
+        "Mercatino Conca",
+        "Monte Grimano Terme",
+        "Monte Cerignone",
+        "Macerata Feltria",
+        "Pietrarubbia",
+        "Frontino",
+        "Carpegna",
+        "Piandimeleto",
+        "Lunano"
+      ]
+    },
+    "pu-appennino": {
+      "province": "PU",
+      "comuni": [
+        "Belforte all'Isauro",
+        "Sant'Angelo in Vado",
+        "Mercatello sul Metauro",
+        "Borgo Pace",
+        "Cagli",
+        "Cantiano",
+        "Apecchio",
+        "Piobbico",
+        "Frontone"
+      ]
+    }
   },
   "sectors": {
     "settori-produzione": [
-      ["immobiliare", "Immobiliare"], ["edilizia", "Edilizia e costruzioni"], ["manifatturiero", "Manifatturiero e meccanica"],
-      ["moda", "Moda e abbigliamento"], ["arredamento", "Arredamento e mobile"], ["nautica", "Nautica"], ["agroalimentare", "Agroalimentare e vino"]
+      [
+        "immobiliare",
+        "Immobiliare"
+      ],
+      [
+        "edilizia",
+        "Edilizia e costruzioni"
+      ],
+      [
+        "manifatturiero",
+        "Manifatturiero e meccanica"
+      ],
+      [
+        "moda",
+        "Moda e abbigliamento"
+      ],
+      [
+        "arredamento",
+        "Arredamento e mobile"
+      ],
+      [
+        "nautica",
+        "Nautica"
+      ],
+      [
+        "agroalimentare",
+        "Agroalimentare e vino"
+      ]
     ],
     "settori-servizi": [
-      ["hotel", "Hotel e strutture ricettive"], ["ristorazione", "Ristorazione"], ["stabilimenti-balneari", "Stabilimenti balneari"],
-      ["studi-professionali", "Studi professionali"], ["sanita-privata", "Sanità privata e studi medici"], ["automotive", "Automotive e concessionarie"],
-      ["wellness", "Wellness, fitness e benessere"]
+      [
+        "hotel",
+        "Hotel e strutture ricettive"
+      ],
+      [
+        "ristorazione",
+        "Ristorazione"
+      ],
+      [
+        "stabilimenti-balneari",
+        "Stabilimenti balneari"
+      ],
+      [
+        "studi-professionali",
+        "Studi professionali"
+      ],
+      [
+        "sanita-privata",
+        "Sanità privata e studi medici"
+      ],
+      [
+        "automotive",
+        "Automotive e concessionarie"
+      ],
+      [
+        "wellness",
+        "Wellness, fitness e benessere"
+      ]
     ]
   },
   "localServices": {
-    "cities": ["rimini", "riccione", "cattolica", "santarcangelo-di-romagna", "bellaria-igea-marina", "pesaro", "fano", "urbino"],
-    "services": ["siti-web", "seo-locale", "gestione-social", "google-ads", "meta-ads", "logo-identita-visiva"]
+    "cities": [
+      "rimini",
+      "riccione",
+      "cattolica",
+      "santarcangelo-di-romagna",
+      "bellaria-igea-marina",
+      "pesaro",
+      "fano",
+      "urbino"
+    ],
+    "services": [
+      "siti-web",
+      "seo-locale",
+      "gestione-social",
+      "google-ads",
+      "meta-ads",
+      "logo-identita-visiva"
+    ]
+  },
+  "localServicesExtra": {
+    "rimini": [
+      "video-spot",
+      "copywriting"
+    ],
+    "pesaro": [
+      "video-spot"
+    ],
+    "fano": [
+      "video-spot"
+    ],
+    "riccione": [
+      "video-spot"
+    ],
+    "misano-adriatico": [
+      "siti-web"
+    ]
+  },
+  "sectorServices": {
+    "settori-a": {
+      "hotel": [
+        "siti-web",
+        "gestione-social",
+        "seo-locale",
+        "google-ads"
+      ],
+      "ristorazione": [
+        "siti-web",
+        "gestione-social",
+        "seo-locale",
+        "google-ads",
+        "logo-identita-visiva"
+      ]
+    },
+    "settori-b": {
+      "studi-professionali": [
+        "siti-web",
+        "seo-locale",
+        "google-ads",
+        "gestione-social",
+        "logo-identita-visiva"
+      ],
+      "sanita-privata": [
+        "siti-web",
+        "seo-locale",
+        "gestione-social",
+        "logo-identita-visiva"
+      ]
+    },
+    "settori-c": {
+      "wellness": [
+        "gestione-social",
+        "siti-web",
+        "logo-identita-visiva"
+      ],
+      "immobiliare": [
+        "siti-web",
+        "gestione-social",
+        "logo-identita-visiva"
+      ],
+      "moda": [
+        "logo-identita-visiva",
+        "gestione-social",
+        "shopify"
+      ]
+    },
+    "settori-d": {
+      "edilizia": [
+        "logo-identita-visiva",
+        "siti-web"
+      ],
+      "agroalimentare": [
+        "siti-web",
+        "logo-identita-visiva"
+      ]
+    }
   }
 }

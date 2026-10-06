@@ -1,0 +1,14 @@
+{
+  "comune": ["agenzia marketing", "agenzia comunicazione", "agenzia pubblicitaria", "web marketing", "consulente marketing"],
+  "siti-web": ["realizzazione siti web", "siti web", "web agency", "creazione siti internet", "web designer"],
+  "seo-locale": ["agenzia seo", "consulente seo", "posizionamento google"],
+  "gestione-social": ["social media manager", "gestione social", "agenzia social"],
+  "google-ads": ["google ads", "consulente google ads"],
+  "meta-ads": ["facebook ads", "consulente facebook ads"],
+  "logo-identita-visiva": ["grafico", "studio grafico", "grafico pubblicitario", "logo"],
+  "video-spot": ["video maker", "videomaker", "video aziendali"],
+  "fotografia": ["fotografo aziendale", "fotografo prodotti", "fotografo still life"],
+  "ecommerce": ["realizzazione ecommerce", "ecommerce"],
+  "copywriting": ["copywriter"],
+  "email-marketing": ["email marketing"]
+}

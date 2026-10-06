@@ -165,6 +165,49 @@ URL ammessi nei link Markdown delle pagine territoriali (oltre a quelli di conte
 - Meta Ads a urbino — /agenzia-marketing/urbino/meta-ads
 - Logo e identità visiva a urbino — /agenzia-marketing/urbino/logo-identita-visiva
 
+## Servizi in città aggiuntivi (da analisi delle ricerche)
+
+- /agenzia-marketing/rimini/video-spot
+- /agenzia-marketing/rimini/copywriting
+- /agenzia-marketing/pesaro/video-spot
+- /agenzia-marketing/fano/video-spot
+- /agenzia-marketing/riccione/video-spot
+- /agenzia-marketing/misano-adriatico/siti-web
+
+## Servizio per settore → /settori/{settore}/{servizio}
+
+- /settori/hotel/siti-web
+- /settori/hotel/gestione-social
+- /settori/hotel/seo-locale
+- /settori/hotel/google-ads
+- /settori/ristorazione/siti-web
+- /settori/ristorazione/gestione-social
+- /settori/ristorazione/seo-locale
+- /settori/ristorazione/google-ads
+- /settori/ristorazione/logo-identita-visiva
+- /settori/studi-professionali/siti-web
+- /settori/studi-professionali/seo-locale
+- /settori/studi-professionali/google-ads
+- /settori/studi-professionali/gestione-social
+- /settori/studi-professionali/logo-identita-visiva
+- /settori/sanita-privata/siti-web
+- /settori/sanita-privata/seo-locale
+- /settori/sanita-privata/gestione-social
+- /settori/sanita-privata/logo-identita-visiva
+- /settori/wellness/gestione-social
+- /settori/wellness/siti-web
+- /settori/wellness/logo-identita-visiva
+- /settori/immobiliare/siti-web
+- /settori/immobiliare/gestione-social
+- /settori/immobiliare/logo-identita-visiva
+- /settori/moda/logo-identita-visiva
+- /settori/moda/gestione-social
+- /settori/moda/shopify
+- /settori/edilizia/logo-identita-visiva
+- /settori/edilizia/siti-web
+- /settori/agroalimentare/siti-web
+- /settori/agroalimentare/logo-identita-visiva
+
 ## Indici
 
 - /agenzia-marketing

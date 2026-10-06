@@ -1,0 +1,2521 @@
+[
+ {
+  "slug": "siti-web",
+  "sector": "hotel",
+  "q": "siti web per hotel",
+  "n": 3,
+  "sugg": [
+   "siti web per hotel",
+   "realizzazione siti web per hotel",
+   "creazione siti web per hotel"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "hotel",
+  "q": "siti web per alberghi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "ristorazione",
+  "q": "siti web per ristoranti",
+  "n": 2,
+  "sugg": [
+   "siti web per ristoranti",
+   "realizzazione siti web per ristoranti"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "immobiliare",
+  "q": "siti web per agenzie immobiliari",
+  "n": 2,
+  "sugg": [
+   "siti web per agenzie immobiliari",
+   "realizzazione siti web per agenzie immobiliari"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "immobiliare",
+  "q": "siti web per immobiliare",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "edilizia",
+  "q": "siti web per imprese edili",
+  "n": 1,
+  "sugg": [
+   "siti web imprese edili"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "edilizia",
+  "q": "siti web per edilizia",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "manifatturiero",
+  "q": "siti web per aziende manifatturiere",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "manifatturiero",
+  "q": "siti web per aziende metalmeccaniche",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "moda",
+  "q": "siti web per abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "moda",
+  "q": "siti web per negozi di abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "arredamento",
+  "q": "siti web per mobilifici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "arredamento",
+  "q": "siti web per arredamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "nautica",
+  "q": "siti web per nautica",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "nautica",
+  "q": "siti web per cantieri navali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "agroalimentare",
+  "q": "siti web per cantine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "agroalimentare",
+  "q": "siti web per aziende agricole",
+  "n": 1,
+  "sugg": [
+   "siti web aziende agricole"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "agroalimentare",
+  "q": "siti web per agriturismi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "stabilimenti-balneari",
+  "q": "siti web per stabilimenti balneari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "studi-professionali",
+  "q": "siti web per avvocati",
+  "n": 3,
+  "sugg": [
+   "siti web per avvocati",
+   "realizzazione siti web per avvocati",
+   "realizzazione siti web per avvocati foggia"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "studi-professionali",
+  "q": "siti web per commercialisti",
+  "n": 2,
+  "sugg": [
+   "siti web per commercialisti",
+   "realizzazione siti web per commercialisti foggia"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "studi-professionali",
+  "q": "siti web per studi professionali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "sanita-privata",
+  "q": "siti web per dentisti",
+  "n": 3,
+  "sugg": [
+   "siti web per dentisti",
+   "realizzazione siti web per dentisti",
+   "realizzazione siti web per dentisti foggia"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "sanita-privata",
+  "q": "siti web per studi medici",
+  "n": 1,
+  "sugg": [
+   "siti web per studi medici"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "sanita-privata",
+  "q": "siti web per fisioterapisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "automotive",
+  "q": "siti web per concessionarie",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "automotive",
+  "q": "siti web per autofficine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "wellness",
+  "q": "siti web per palestre",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "wellness",
+  "q": "siti web per centri estetici",
+  "n": 1,
+  "sugg": [
+   "siti web centri estetici"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "wellness",
+  "q": "siti web per spa",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "hotel",
+  "q": "sito web per hotel",
+  "n": 1,
+  "sugg": [
+   "sito web per hotel"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "hotel",
+  "q": "sito web per alberghi",
+  "n": 1,
+  "sugg": [
+   "sito web per alberghi"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "ristorazione",
+  "q": "sito web per ristoranti",
+  "n": 1,
+  "sugg": [
+   "sito web per ristoranti"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "immobiliare",
+  "q": "sito web per agenzie immobiliari",
+  "n": 1,
+  "sugg": [
+   "sito web per agenzie immobiliari"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "immobiliare",
+  "q": "sito web per immobiliare",
+  "n": 1,
+  "sugg": [
+   "sito web per agenzia immobiliare"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "edilizia",
+  "q": "sito web per imprese edili",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "edilizia",
+  "q": "sito web per edilizia",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "manifatturiero",
+  "q": "sito web per aziende manifatturiere",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "manifatturiero",
+  "q": "sito web per aziende metalmeccaniche",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "moda",
+  "q": "sito web per abbigliamento",
+  "n": 1,
+  "sugg": [
+   "come creare un sito web per vendere abbigliamento"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "moda",
+  "q": "sito web per negozi di abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "arredamento",
+  "q": "sito web per mobilifici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "arredamento",
+  "q": "sito web per arredamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "nautica",
+  "q": "sito web per nautica",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "nautica",
+  "q": "sito web per cantieri navali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "agroalimentare",
+  "q": "sito web per cantine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "agroalimentare",
+  "q": "sito web per aziende agricole",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "agroalimentare",
+  "q": "sito web per agriturismi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "stabilimenti-balneari",
+  "q": "sito web per stabilimenti balneari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "studi-professionali",
+  "q": "sito web per avvocati",
+  "n": 1,
+  "sugg": [
+   "sito web per avvocati"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "studi-professionali",
+  "q": "sito web per commercialisti",
+  "n": 1,
+  "sugg": [
+   "sito web per commercialisti"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "studi-professionali",
+  "q": "sito web per studi professionali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "sanita-privata",
+  "q": "sito web per dentisti",
+  "n": 1,
+  "sugg": [
+   "sito web per dentisti"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "sanita-privata",
+  "q": "sito web per studi medici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "sanita-privata",
+  "q": "sito web per fisioterapisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "automotive",
+  "q": "sito web per concessionarie",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "automotive",
+  "q": "sito web per autofficine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "wellness",
+  "q": "sito web per palestre",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "wellness",
+  "q": "sito web per centri estetici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "wellness",
+  "q": "sito web per spa",
+  "n": 2,
+  "sugg": [
+   "spazio per sito web gratis",
+   "spazio web per sito"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "hotel",
+  "q": "web agency per hotel",
+  "n": 1,
+  "sugg": [
+   "web agency per hotel"
+  ]
+ },
+ {
+  "slug": "siti-web",
+  "sector": "hotel",
+  "q": "web agency per alberghi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "ristorazione",
+  "q": "web agency per ristoranti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "immobiliare",
+  "q": "web agency per agenzie immobiliari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "immobiliare",
+  "q": "web agency per immobiliare",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "edilizia",
+  "q": "web agency per imprese edili",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "edilizia",
+  "q": "web agency per edilizia",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "manifatturiero",
+  "q": "web agency per aziende manifatturiere",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "manifatturiero",
+  "q": "web agency per aziende metalmeccaniche",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "moda",
+  "q": "web agency per abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "moda",
+  "q": "web agency per negozi di abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "arredamento",
+  "q": "web agency per mobilifici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "arredamento",
+  "q": "web agency per arredamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "nautica",
+  "q": "web agency per nautica",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "nautica",
+  "q": "web agency per cantieri navali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "agroalimentare",
+  "q": "web agency per cantine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "agroalimentare",
+  "q": "web agency per aziende agricole",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "agroalimentare",
+  "q": "web agency per agriturismi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "stabilimenti-balneari",
+  "q": "web agency per stabilimenti balneari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "studi-professionali",
+  "q": "web agency per avvocati",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "studi-professionali",
+  "q": "web agency per commercialisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "studi-professionali",
+  "q": "web agency per studi professionali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "sanita-privata",
+  "q": "web agency per dentisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "sanita-privata",
+  "q": "web agency per studi medici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "sanita-privata",
+  "q": "web agency per fisioterapisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "automotive",
+  "q": "web agency per concessionarie",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "automotive",
+  "q": "web agency per autofficine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "wellness",
+  "q": "web agency per palestre",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "wellness",
+  "q": "web agency per centri estetici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "siti-web",
+  "sector": "wellness",
+  "q": "web agency per spa",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "hotel",
+  "q": "social media manager per hotel",
+  "n": 5,
+  "sugg": [
+   "social media manager per hotel",
+   "social media manager hotel",
+   "social media manager hotel jobs",
+   "social media manager hotels",
+   "social.media manager hotellerie"
+  ]
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "hotel",
+  "q": "social media manager per alberghi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "ristorazione",
+  "q": "social media manager per ristoranti",
+  "n": 1,
+  "sugg": [
+   "social media manager per ristoranti"
+  ]
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "immobiliare",
+  "q": "social media manager per agenzie immobiliari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "immobiliare",
+  "q": "social media manager per immobiliare",
+  "n": 2,
+  "sugg": [
+   "social media manager per agenzia immobiliare",
+   "social media manager immobiliare"
+  ]
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "edilizia",
+  "q": "social media manager per imprese edili",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "edilizia",
+  "q": "social media manager per edilizia",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "manifatturiero",
+  "q": "social media manager per aziende manifatturiere",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "manifatturiero",
+  "q": "social media manager per aziende metalmeccaniche",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "moda",
+  "q": "social media manager per abbigliamento",
+  "n": 1,
+  "sugg": [
+   "social media manager abbigliamento"
+  ]
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "moda",
+  "q": "social media manager per negozi di abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "arredamento",
+  "q": "social media manager per mobilifici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "arredamento",
+  "q": "social media manager per arredamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "nautica",
+  "q": "social media manager per nautica",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "nautica",
+  "q": "social media manager per cantieri navali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "agroalimentare",
+  "q": "social media manager per cantine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "agroalimentare",
+  "q": "social media manager per aziende agricole",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "agroalimentare",
+  "q": "social media manager per agriturismi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "stabilimenti-balneari",
+  "q": "social media manager per stabilimenti balneari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "studi-professionali",
+  "q": "social media manager per avvocati",
+  "n": 1,
+  "sugg": [
+   "social media manager per avvocati"
+  ]
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "studi-professionali",
+  "q": "social media manager per commercialisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "studi-professionali",
+  "q": "social media manager per studi professionali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "sanita-privata",
+  "q": "social media manager per dentisti",
+  "n": 1,
+  "sugg": [
+   "social media manager per dentisti"
+  ]
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "sanita-privata",
+  "q": "social media manager per studi medici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "sanita-privata",
+  "q": "social media manager per fisioterapisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "automotive",
+  "q": "social media manager per concessionarie",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "automotive",
+  "q": "social media manager per autofficine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "wellness",
+  "q": "social media manager per palestre",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "wellness",
+  "q": "social media manager per centri estetici",
+  "n": 1,
+  "sugg": [
+   "social media manager per centri estetici"
+  ]
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "wellness",
+  "q": "social media manager per spa",
+  "n": 10,
+  "sugg": [
+   "social media manager spain",
+   "social media manager spanish",
+   "social media manager spa",
+   "social media manager sparkasse",
+   "social media manager sparkasse gehalt",
+   "social media manager space needle",
+   "social media manager spanien",
+   "social media manager spain salary",
+   "social media manager spar",
+   "social media manager space nk"
+  ]
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "hotel",
+  "q": "gestione social per hotel",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "hotel",
+  "q": "gestione social per alberghi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "ristorazione",
+  "q": "gestione social per ristoranti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "immobiliare",
+  "q": "gestione social per agenzie immobiliari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "immobiliare",
+  "q": "gestione social per immobiliare",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "edilizia",
+  "q": "gestione social per imprese edili",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "edilizia",
+  "q": "gestione social per edilizia",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "manifatturiero",
+  "q": "gestione social per aziende manifatturiere",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "manifatturiero",
+  "q": "gestione social per aziende metalmeccaniche",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "moda",
+  "q": "gestione social per abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "moda",
+  "q": "gestione social per negozi di abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "arredamento",
+  "q": "gestione social per mobilifici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "arredamento",
+  "q": "gestione social per arredamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "nautica",
+  "q": "gestione social per nautica",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "nautica",
+  "q": "gestione social per cantieri navali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "agroalimentare",
+  "q": "gestione social per cantine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "agroalimentare",
+  "q": "gestione social per aziende agricole",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "agroalimentare",
+  "q": "gestione social per agriturismi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "stabilimenti-balneari",
+  "q": "gestione social per stabilimenti balneari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "studi-professionali",
+  "q": "gestione social per avvocati",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "studi-professionali",
+  "q": "gestione social per commercialisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "studi-professionali",
+  "q": "gestione social per studi professionali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "sanita-privata",
+  "q": "gestione social per dentisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "sanita-privata",
+  "q": "gestione social per studi medici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "sanita-privata",
+  "q": "gestione social per fisioterapisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "automotive",
+  "q": "gestione social per concessionarie",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "automotive",
+  "q": "gestione social per autofficine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "wellness",
+  "q": "gestione social per palestre",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "wellness",
+  "q": "gestione social per centri estetici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "gestione-social",
+  "sector": "wellness",
+  "q": "gestione social per spa",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "hotel",
+  "q": "marketing per hotel",
+  "n": 10,
+  "sugg": [
+   "marketing per hotel",
+   "marketing per hotel di lusso",
+   "web marketing per hotel",
+   "agenzia marketing per hotel",
+   "piano marketing per hotel",
+   "digital marketing per hotel",
+   "email marketing per hotel",
+   "social media marketing per hotel",
+   "agenzia di marketing per hotel",
+   "fuori stagione web marketing per hotel"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "hotel",
+  "q": "marketing per alberghi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "ristorazione",
+  "q": "marketing per ristoranti",
+  "n": 5,
+  "sugg": [
+   "marketing per ristoranti",
+   "agenzia marketing per ristoranti",
+   "digital marketing per ristoranti",
+   "inserzionisti com marketing per ristoranti",
+   "strategie di marketing per ristoranti"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "immobiliare",
+  "q": "marketing per agenzie immobiliari",
+  "n": 1,
+  "sugg": [
+   "marketing per agenzie immobiliari"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "immobiliare",
+  "q": "marketing per immobiliare",
+  "n": 1,
+  "sugg": [
+   "marketing per agenzia immobiliare"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "edilizia",
+  "q": "marketing per imprese edili",
+  "n": 1,
+  "sugg": [
+   "marketing per imprese edili"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "edilizia",
+  "q": "marketing per edilizia",
+  "n": 1,
+  "sugg": [
+   "marketing per edilizia"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "manifatturiero",
+  "q": "marketing per aziende manifatturiere",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "manifatturiero",
+  "q": "marketing per aziende metalmeccaniche",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "moda",
+  "q": "marketing per abbigliamento",
+  "n": 1,
+  "sugg": [
+   "marketing per negozio abbigliamento"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "moda",
+  "q": "marketing per negozi di abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "arredamento",
+  "q": "marketing per mobilifici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "arredamento",
+  "q": "marketing per arredamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "nautica",
+  "q": "marketing per nautica",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "nautica",
+  "q": "marketing per cantieri navali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "agroalimentare",
+  "q": "marketing per cantine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "agroalimentare",
+  "q": "marketing per aziende agricole",
+  "n": 1,
+  "sugg": [
+   "marketing per aziende agricole"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "agroalimentare",
+  "q": "marketing per agriturismi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "stabilimenti-balneari",
+  "q": "marketing per stabilimenti balneari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "studi-professionali",
+  "q": "marketing per avvocati",
+  "n": 6,
+  "sugg": [
+   "marketing per avvocati",
+   "digital marketing per avvocati",
+   "web marketing per avvocati",
+   "agenzia marketing per avvocati",
+   "oliva consulting marketing per avvocati",
+   "oliva consulting marketing per avvocati recensioni"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "studi-professionali",
+  "q": "marketing per commercialisti",
+  "n": 1,
+  "sugg": [
+   "marketing per commercialisti"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "studi-professionali",
+  "q": "marketing per studi professionali",
+  "n": 1,
+  "sugg": [
+   "marketing per studi professionali"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "sanita-privata",
+  "q": "marketing per dentisti",
+  "n": 4,
+  "sugg": [
+   "marketing per dentisti",
+   "web marketing per dentisti",
+   "marketing per studi dentistici",
+   "agenzia di marketing per dentisti"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "sanita-privata",
+  "q": "marketing per studi medici",
+  "n": 1,
+  "sugg": [
+   "marketing per studi medici"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "sanita-privata",
+  "q": "marketing per fisioterapisti",
+  "n": 1,
+  "sugg": [
+   "marketing per fisioterapisti"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "automotive",
+  "q": "marketing per concessionarie",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "automotive",
+  "q": "marketing per autofficine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "wellness",
+  "q": "marketing per palestre",
+  "n": 1,
+  "sugg": [
+   "marketing per palestre"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "wellness",
+  "q": "marketing per centri estetici",
+  "n": 3,
+  "sugg": [
+   "marketing per centri estetici",
+   "agenzia marketing per centri estetici",
+   "digital estetica marketing per centri estetici"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "wellness",
+  "q": "marketing per spa",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "hotel",
+  "q": "agenzia marketing per hotel",
+  "n": 2,
+  "sugg": [
+   "agenzia marketing per hotel",
+   "agenzia di marketing per hotel"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "hotel",
+  "q": "agenzia marketing per alberghi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "ristorazione",
+  "q": "agenzia marketing per ristoranti",
+  "n": 1,
+  "sugg": [
+   "agenzia marketing per ristoranti"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "immobiliare",
+  "q": "agenzia marketing per agenzie immobiliari",
+  "n": 1,
+  "sugg": [
+   "agenzia marketing per agenzie immobiliari"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "immobiliare",
+  "q": "agenzia marketing per immobiliare",
+  "n": 1,
+  "sugg": [
+   "agenzia marketing per agenzia immobiliare"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "edilizia",
+  "q": "agenzia marketing per imprese edili",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "edilizia",
+  "q": "agenzia marketing per edilizia",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "manifatturiero",
+  "q": "agenzia marketing per aziende manifatturiere",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "manifatturiero",
+  "q": "agenzia marketing per aziende metalmeccaniche",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "moda",
+  "q": "agenzia marketing per abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "moda",
+  "q": "agenzia marketing per negozi di abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "arredamento",
+  "q": "agenzia marketing per mobilifici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "arredamento",
+  "q": "agenzia marketing per arredamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "nautica",
+  "q": "agenzia marketing per nautica",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "nautica",
+  "q": "agenzia marketing per cantieri navali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "agroalimentare",
+  "q": "agenzia marketing per cantine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "agroalimentare",
+  "q": "agenzia marketing per aziende agricole",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "agroalimentare",
+  "q": "agenzia marketing per agriturismi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "stabilimenti-balneari",
+  "q": "agenzia marketing per stabilimenti balneari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "studi-professionali",
+  "q": "agenzia marketing per avvocati",
+  "n": 1,
+  "sugg": [
+   "agenzia marketing per avvocati"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "studi-professionali",
+  "q": "agenzia marketing per commercialisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "studi-professionali",
+  "q": "agenzia marketing per studi professionali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "sanita-privata",
+  "q": "agenzia marketing per dentisti",
+  "n": 1,
+  "sugg": [
+   "agenzia di marketing per dentisti"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "sanita-privata",
+  "q": "agenzia marketing per studi medici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "sanita-privata",
+  "q": "agenzia marketing per fisioterapisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "automotive",
+  "q": "agenzia marketing per concessionarie",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "automotive",
+  "q": "agenzia marketing per autofficine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "wellness",
+  "q": "agenzia marketing per palestre",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "comune",
+  "sector": "wellness",
+  "q": "agenzia marketing per centri estetici",
+  "n": 1,
+  "sugg": [
+   "agenzia marketing per centri estetici"
+  ]
+ },
+ {
+  "slug": "comune",
+  "sector": "wellness",
+  "q": "agenzia marketing per spa",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "hotel",
+  "q": "google ads per hotel",
+  "n": 1,
+  "sugg": [
+   "google ads per hotel"
+  ]
+ },
+ {
+  "slug": "google-ads",
+  "sector": "hotel",
+  "q": "google ads per alberghi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "ristorazione",
+  "q": "google ads per ristoranti",
+  "n": 1,
+  "sugg": [
+   "google ads per ristoranti"
+  ]
+ },
+ {
+  "slug": "google-ads",
+  "sector": "immobiliare",
+  "q": "google ads per agenzie immobiliari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "immobiliare",
+  "q": "google ads per immobiliare",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "edilizia",
+  "q": "google ads per imprese edili",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "edilizia",
+  "q": "google ads per edilizia",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "manifatturiero",
+  "q": "google ads per aziende manifatturiere",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "manifatturiero",
+  "q": "google ads per aziende metalmeccaniche",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "moda",
+  "q": "google ads per abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "moda",
+  "q": "google ads per negozi di abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "arredamento",
+  "q": "google ads per mobilifici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "arredamento",
+  "q": "google ads per arredamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "nautica",
+  "q": "google ads per nautica",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "nautica",
+  "q": "google ads per cantieri navali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "agroalimentare",
+  "q": "google ads per cantine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "agroalimentare",
+  "q": "google ads per aziende agricole",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "agroalimentare",
+  "q": "google ads per agriturismi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "stabilimenti-balneari",
+  "q": "google ads per stabilimenti balneari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "studi-professionali",
+  "q": "google ads per avvocati",
+  "n": 1,
+  "sugg": [
+   "google ads per avvocati"
+  ]
+ },
+ {
+  "slug": "google-ads",
+  "sector": "studi-professionali",
+  "q": "google ads per commercialisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "studi-professionali",
+  "q": "google ads per studi professionali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "sanita-privata",
+  "q": "google ads per dentisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "sanita-privata",
+  "q": "google ads per studi medici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "sanita-privata",
+  "q": "google ads per fisioterapisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "automotive",
+  "q": "google ads per concessionarie",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "automotive",
+  "q": "google ads per autofficine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "wellness",
+  "q": "google ads per palestre",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "wellness",
+  "q": "google ads per centri estetici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "google-ads",
+  "sector": "wellness",
+  "q": "google ads per spa",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "hotel",
+  "q": "seo per hotel",
+  "n": 2,
+  "sugg": [
+   "seo per hotel",
+   "consulente seo per hotel"
+  ]
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "hotel",
+  "q": "seo per alberghi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "ristorazione",
+  "q": "seo per ristoranti",
+  "n": 1,
+  "sugg": [
+   "seo per ristoranti"
+  ]
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "immobiliare",
+  "q": "seo per agenzie immobiliari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "immobiliare",
+  "q": "seo per immobiliare",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "edilizia",
+  "q": "seo per imprese edili",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "edilizia",
+  "q": "seo per edilizia",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "manifatturiero",
+  "q": "seo per aziende manifatturiere",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "manifatturiero",
+  "q": "seo per aziende metalmeccaniche",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "moda",
+  "q": "seo per abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "moda",
+  "q": "seo per negozi di abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "arredamento",
+  "q": "seo per mobilifici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "arredamento",
+  "q": "seo per arredamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "nautica",
+  "q": "seo per nautica",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "nautica",
+  "q": "seo per cantieri navali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "agroalimentare",
+  "q": "seo per cantine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "agroalimentare",
+  "q": "seo per aziende agricole",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "agroalimentare",
+  "q": "seo per agriturismi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "stabilimenti-balneari",
+  "q": "seo per stabilimenti balneari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "studi-professionali",
+  "q": "seo per avvocati",
+  "n": 1,
+  "sugg": [
+   "seo per avvocati"
+  ]
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "studi-professionali",
+  "q": "seo per commercialisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "studi-professionali",
+  "q": "seo per studi professionali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "sanita-privata",
+  "q": "seo per dentisti",
+  "n": 1,
+  "sugg": [
+   "seo per dentisti"
+  ]
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "sanita-privata",
+  "q": "seo per studi medici",
+  "n": 1,
+  "sugg": [
+   "seo per studi medici"
+  ]
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "sanita-privata",
+  "q": "seo per fisioterapisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "automotive",
+  "q": "seo per concessionarie",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "automotive",
+  "q": "seo per autofficine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "wellness",
+  "q": "seo per palestre",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "wellness",
+  "q": "seo per centri estetici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "seo-locale",
+  "sector": "wellness",
+  "q": "seo per spa",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "hotel",
+  "q": "facebook ads per hotel",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "hotel",
+  "q": "facebook ads per alberghi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "ristorazione",
+  "q": "facebook ads per ristoranti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "immobiliare",
+  "q": "facebook ads per agenzie immobiliari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "immobiliare",
+  "q": "facebook ads per immobiliare",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "edilizia",
+  "q": "facebook ads per imprese edili",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "edilizia",
+  "q": "facebook ads per edilizia",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "manifatturiero",
+  "q": "facebook ads per aziende manifatturiere",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "manifatturiero",
+  "q": "facebook ads per aziende metalmeccaniche",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "moda",
+  "q": "facebook ads per abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "moda",
+  "q": "facebook ads per negozi di abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "arredamento",
+  "q": "facebook ads per mobilifici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "arredamento",
+  "q": "facebook ads per arredamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "nautica",
+  "q": "facebook ads per nautica",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "nautica",
+  "q": "facebook ads per cantieri navali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "agroalimentare",
+  "q": "facebook ads per cantine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "agroalimentare",
+  "q": "facebook ads per aziende agricole",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "agroalimentare",
+  "q": "facebook ads per agriturismi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "stabilimenti-balneari",
+  "q": "facebook ads per stabilimenti balneari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "studi-professionali",
+  "q": "facebook ads per avvocati",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "studi-professionali",
+  "q": "facebook ads per commercialisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "studi-professionali",
+  "q": "facebook ads per studi professionali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "sanita-privata",
+  "q": "facebook ads per dentisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "sanita-privata",
+  "q": "facebook ads per studi medici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "sanita-privata",
+  "q": "facebook ads per fisioterapisti",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "automotive",
+  "q": "facebook ads per concessionarie",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "automotive",
+  "q": "facebook ads per autofficine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "wellness",
+  "q": "facebook ads per palestre",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "wellness",
+  "q": "facebook ads per centri estetici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "meta-ads",
+  "sector": "wellness",
+  "q": "facebook ads per spa",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "hotel",
+  "q": "logo per hotel",
+  "n": 1,
+  "sugg": [
+   "logo per hotel"
+  ]
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "hotel",
+  "q": "logo per alberghi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "ristorazione",
+  "q": "logo per ristoranti",
+  "n": 1,
+  "sugg": [
+   "logo per ristoranti"
+  ]
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "immobiliare",
+  "q": "logo per agenzie immobiliari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "immobiliare",
+  "q": "logo per immobiliare",
+  "n": 3,
+  "sugg": [
+   "logo per immobiliare",
+   "logo per agenzia immobiliare",
+   "logo per società immobiliare"
+  ]
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "edilizia",
+  "q": "logo per imprese edili",
+  "n": 1,
+  "sugg": [
+   "logo per imprese edili"
+  ]
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "edilizia",
+  "q": "logo per edilizia",
+  "n": 3,
+  "sugg": [
+   "logo per edilizia",
+   "logo per edilizia gratis",
+   "immagini per logo edilizia"
+  ]
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "manifatturiero",
+  "q": "logo per aziende manifatturiere",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "manifatturiero",
+  "q": "logo per aziende metalmeccaniche",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "moda",
+  "q": "logo per abbigliamento",
+  "n": 8,
+  "sugg": [
+   "logo per abbigliamento",
+   "logo per abbigliamento sportivo",
+   "logo per negozio abbigliamento",
+   "stampa logo per abbigliamento",
+   "logo per brand abbigliamento",
+   "etichette logo per abbigliamento",
+   "crea logo per abbigliamento",
+   "creare un logo per abbigliamento"
+  ]
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "moda",
+  "q": "logo per negozi di abbigliamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "arredamento",
+  "q": "logo per mobilifici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "arredamento",
+  "q": "logo per arredamento",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "nautica",
+  "q": "logo per nautica",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "nautica",
+  "q": "logo per cantieri navali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "agroalimentare",
+  "q": "logo per cantine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "agroalimentare",
+  "q": "logo per aziende agricole",
+  "n": 1,
+  "sugg": [
+   "logo per aziende agricole"
+  ]
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "agroalimentare",
+  "q": "logo per agriturismi",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "stabilimenti-balneari",
+  "q": "logo per stabilimenti balneari",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "studi-professionali",
+  "q": "logo per avvocati",
+  "n": 1,
+  "sugg": [
+   "logo per avvocati"
+  ]
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "studi-professionali",
+  "q": "logo per commercialisti",
+  "n": 1,
+  "sugg": [
+   "logo per commercialisti"
+  ]
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "studi-professionali",
+  "q": "logo per studi professionali",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "sanita-privata",
+  "q": "logo per dentisti",
+  "n": 2,
+  "sugg": [
+   "logo per dentisti",
+   "logo per studio dentistico"
+  ]
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "sanita-privata",
+  "q": "logo per studi medici",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "sanita-privata",
+  "q": "logo per fisioterapisti",
+  "n": 1,
+  "sugg": [
+   "logo per fisioterapisti"
+  ]
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "automotive",
+  "q": "logo per concessionarie",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "automotive",
+  "q": "logo per autofficine",
+  "n": 0,
+  "sugg": []
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "wellness",
+  "q": "logo per palestre",
+  "n": 1,
+  "sugg": [
+   "logo per palestre"
+  ]
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "wellness",
+  "q": "logo per centri estetici",
+  "n": 1,
+  "sugg": [
+   "logo per centri estetici"
+  ]
+ },
+ {
+  "slug": "logo-identita-visiva",
+  "sector": "wellness",
+  "q": "logo per spa",
+  "n": 1,
+  "sugg": [
+   "logo per spa"
+  ]
+ }
+]
