@@ -1,0 +1,400 @@
+{
+  "area": {
+    "slug": "growth",
+    "headline": "Growth marketing: esperimenti, funnel e lead che spostano il fatturato",
+    "short": "Esperimenti, funnel, A/B test e lead generation: il marketing trattato come un sistema da misurare e migliorare ogni settimana.",
+    "answer": "Il growth marketing di not4sale è un metodo per far crescere il fatturato con esperimenti misurati su tutto il funnel: acquisizione, conversione, attivazione e fidelizzazione. Da Cattolica lavoriamo con PMI, e-commerce e SaaS di Romagna, Marche e tutta Italia, combinando growth hacking, ottimizzazione delle conversioni, A/B test, lead generation e product-led growth.",
+    "body": "## Cos'è il growth marketing e quando serve\n\nIl growth marketing è il marketing gestito come un laboratorio: si formula un'ipotesi, la si mette alla prova con il minimo investimento possibile, si guarda il dato e si decide. Non sostituisce il brand, l'advertising o la SEO. Li collega e li rende misurabili, dal primo clic al cliente che torna a comprare.\n\nServe soprattutto in tre situazioni:\n\n- **Il traffico c'è, le vendite no.** Spendi in campagne, le visite arrivano, ma i contatti o gli ordini restano fermi. Il problema è quasi sempre nel funnel, non nel budget.\n- **Non sai cosa funziona.** Fai tante cose insieme e a fine mese nessuno sa dire quale abbia portato clienti.\n- **Sei cresciuto col passaparola e ora non basta.** Il fondatore vende benissimo, ma la crescita dipende da lui. Serve una macchina che porti richieste anche quando lui è in trattativa.\n\n## I servizi dell'area growth\n\nOgni servizio risponde a una domanda diversa. Spesso si parte da uno e si aggiunge il resto quando i numeri lo giustificano.\n\n- [Growth hacking](/servizi/growth/growth-hacking): sprint settimanali di esperimenti su tutto il funnel, con un backlog di ipotesi ordinate per impatto. È il motore che tiene insieme gli altri.\n- [Funnel e CRO](/servizi/growth/funnel-cro): analizziamo dove le persone abbandonano e riprogettiamo le pagine chiave per ottenere più conversioni dallo stesso traffico.\n- [A/B test](/servizi/growth/ab-test): quando una modifica è importante, la verifichiamo con un test progettato per dare una risposta statisticamente valida, non un'impressione.\n- [Lead generation](/servizi/growth/lead-generation): un flusso costante di contatti qualificati per il commerciale, B2B e B2C, misurato sul costo per opportunità e non sul costo per contatto.\n- [Product-led growth](/servizi/growth/product-led-growth): per SaaS e piattaforme digitali, il prodotto diventa il canale di acquisizione con onboarding, attivazione e referral.\n\n## Come lavoriamo: ipotesi, prototipo, test, dato, decisione\n\nIl nostro metodo è sempre lo stesso, cambia solo dove lo applichiamo.\n\n1. **Ipotesi.** Partiamo dai tuoi numeri, non da un pacchetto. Ogni idea diventa una frase verificabile: \"se cambiamo X, ci aspettiamo che Y migliori, perché Z\".\n2. **Prototipo.** Costruiamo la versione minima che basta per imparare: una landing, una sequenza email, un nuovo passaggio del checkout.\n3. **Test.** La mettiamo davanti a utenti veri, con un tracciamento che regge. Se i dati non sono affidabili, sistemiamo prima quelli con il [tracking in Google Tag Manager](/servizi/data-analytics/tracking-gtm).\n4. **Dato.** Leggiamo il risultato con onestà, anche quando smentisce l'idea di partenza.\n5. **Decisione.** Teniamo ciò che sposta il fatturato, scartiamo il resto e documentiamo tutto, così nulla si impara due volte.\n\nSe vuoi capire perché questo approccio batte la campagna \"lanciata e sperata\", lo raccontiamo in [growth hacking: perché funziona](/blog/growth-hacking-perche-funziona).\n\n## Per chi è (e per chi non è)\n\nIl growth marketing dà il meglio a chi ha già un prodotto o un servizio che il mercato compra e vuole venderne di più, in modo prevedibile. Lavoriamo con e-commerce, SaaS, aziende B2B e attività locali della Riviera, da Cattolica a Rimini e Pesaro, e da remoto con il resto d'Italia.\n\nNon è la scelta giusta se il prodotto non ha ancora trovato il suo mercato: lì servono prima [analisi di mercato](/servizi/strategia/analisi-di-mercato) e posizionamento. E non lo è se cerchi un fornitore che \"faccia i post\": qui si lavora sui numeri, e i numeri vanno guardati insieme ogni settimana.\n\n## Cosa ti serve per partire\n\nMeno di quanto pensi. Ci servono l'accesso agli strumenti che usi già (analytics, piattaforme pubblicitarie, CRM o e-commerce), una persona di riferimento che possa decidere in fretta e un obiettivo economico chiaro. Il resto lo costruiamo noi.\n\nIl primo passo è una chiacchierata in cui guardiamo i tuoi numeri e capiamo se siamo il fit giusto. Se preferisci farti un'idea dell'investimento, usa il [calcolatore di preventivo](/preventivo).",
+    "faq": [
+      {
+        "question": "Che differenza c'è tra growth marketing e marketing tradizionale?",
+        "answer": "Il marketing tradizionale pianifica campagne e ne misura i risultati a consuntivo. Il growth marketing lavora per cicli brevi: piccole ipotesi, test rapidi, decisioni basate sul dato. Copre tutto il percorso del cliente, non solo l'acquisizione, e tratta conversione, attivazione e fidelizzazione come leve di crescita allo stesso livello del traffico."
+      },
+      {
+        "question": "Da quale servizio growth conviene partire?",
+        "answer": "Dipende da dove perdi di più. Se hai traffico ma poche conversioni, si parte da funnel e CRO. Se il commerciale ha l'agenda vuota, da lead generation. Se hai un software con molte registrazioni e pochi abbonati, da product-led growth. Il growth hacking ha senso quando vuoi un ritmo continuo di esperimenti su più fronti."
+      },
+      {
+        "question": "Quanto tempo serve per vedere i primi risultati?",
+        "answer": "Le prime evidenze arrivano di solito nelle prime settimane di sprint, perché i test sono piccoli e veloci. Risultati solidi e ripetibili richiedono qualche mese: servono abbastanza dati per distinguere un miglioramento vero da una fluttuazione. Non promettiamo numeri a priori, promettiamo un metodo trasparente e report che dicono cosa ha funzionato e cosa no."
+      },
+      {
+        "question": "Da cosa dipende il costo di un progetto growth?",
+        "answer": "Dal numero di canali e pagine coinvolti, dalla frequenza degli sprint, da quanto c'è da sistemare nel tracciamento e da quanto sviluppo serve per costruire le varianti. Un progetto focalizzato su un funnel costa meno di un programma che tocca acquisizione, CRM e prodotto. Il calcolatore su /preventivo ti dà un ordine di grandezza in pochi minuti."
+      },
+      {
+        "question": "Lavorate solo con aziende della Romagna?",
+        "answer": "No. Abbiamo sede a Cattolica e molti clienti tra Rimini, Riccione, Pesaro e le Marche, perché incontrarsi di persona aiuta. Ma il lavoro di growth si fa sui dati e sugli strumenti, quindi seguiamo senza problemi aziende di tutta Italia da remoto, con call settimanali e report condivisi."
+      }
+    ],
+    "metaTitle": "Growth marketing: esperimenti e funnel | not4sale",
+    "metaDescription": "Growth marketing a Cattolica: growth hacking, CRO, A/B test e lead generation misurati sul fatturato. Scopri il metodo e calcola il tuo preventivo."
+  },
+  "services": [
+    {
+      "slug": "growth-hacking",
+      "headline": "Growth hacking per PMI: sprint di esperimenti che spostano il fatturato",
+      "short": "Sprint settimanali di esperimenti su tutto il funnel: teniamo solo ciò che sposta il fatturato, il resto si scarta.",
+      "answer": "Il growth hacking è un metodo di crescita basato su esperimenti rapidi e misurati lungo tutto il funnel, dall'acquisizione alla fidelizzazione. not4sale organizza sprint settimanali: scegliamo le ipotesi con più impatto, le testiamo con il minimo sforzo e teniamo solo ciò che muove fatturato. Lo applichiamo a PMI, e-commerce e SaaS, da Cattolica e da remoto.",
+      "problem": "Nella maggior parte delle aziende il marketing procede per tentativi non dichiarati. Si cambia la home, si apre un profilo TikTok, si alza il budget delle campagne, si manda una promozione: tutto nello stesso mese. A fine mese le vendite sono salite o scese, e nessuno sa dire perché.\n\nIl risultato è che ogni decisione dipende da chi alza di più la voce in riunione. Le idee buone vengono abbandonate troppo presto, quelle cattive sopravvivono per abitudine, e il budget si disperde su dieci fronti senza che nessuno impari niente.\n\nIl report dell'agenzia non aiuta: impression, copertura, follower. Numeri che salgono sempre e non pagano gli stipendi. Intanto il concorrente che testa in modo ordinato accumula vantaggio settimana dopo settimana, perché sa cosa funziona per i suoi clienti e tu no.\n\nIl problema non è la mancanza di idee. È la mancanza di un sistema per scegliere quali provare, misurarle bene e trasformare i risultati in decisioni.",
+      "process": [
+        {
+          "title": "Audit del funnel",
+          "description": "Mappiamo il percorso del cliente in fasi misurabili e troviamo dove si perde più valore. Verifichiamo che il tracciamento sia affidabile prima di testare qualsiasi cosa."
+        },
+        {
+          "title": "Backlog di ipotesi",
+          "description": "Raccogliamo idee da dati, clienti e team e le ordiniamo per impatto, fiducia e facilità. Ognuna diventa un'ipotesi verificabile con una metrica e una soglia."
+        },
+        {
+          "title": "Sprint settimanali",
+          "description": "Ogni settimana lanciamo pochi esperimenti scelti dal backlog, nella versione minima che basta per imparare."
+        },
+        {
+          "title": "Analisi e decisione",
+          "description": "A fine sprint leggiamo i dati insieme: cosa ha funzionato, cosa no, cosa va ripetuto con più volume. Ogni esito porta a una decisione esplicita."
+        },
+        {
+          "title": "Scala e documenta",
+          "description": "Le tattiche vincenti diventano processi stabili. Quelle perdenti finiscono nell'archivio, così nessuno le ripropone tra sei mesi."
+        }
+      ],
+      "deliverables": [
+        "Mappa del funnel con metriche e tassi di passaggio per ogni fase",
+        "Backlog di esperimenti prioritizzato con punteggio ICE (impatto, fiducia, facilità)",
+        "Scheda di ogni esperimento: ipotesi, metrica, soglia di successo, esito",
+        "Piano di tracciamento degli eventi necessari a misurare i test",
+        "Report di fine sprint con decisioni prese e prossimi passi",
+        "Playbook delle tattiche vincenti, pronto da usare anche internamente"
+      ],
+      "body": "## Cos'è il growth hacking (e cosa non è)\n\nIl growth hacking è un metodo per far crescere un'azienda attraverso esperimenti rapidi, piccoli e misurati, applicati a ogni fase del percorso del cliente. Il termine nasce nel mondo delle startup, ma il principio funziona benissimo anche per una PMI: smettere di indovinare e iniziare a verificare.\n\nNon è una collezione di trucchi per diventare virali. Non è automatizzare messaggi su LinkedIn a migliaia di sconosciuti. E non è \"fare tante cose\": è farne poche alla volta, in modo che il risultato di ognuna sia leggibile.\n\nPer organizzare il lavoro usiamo un modello a fasi, spesso chiamato AARRR o \"pirate funnel\":\n\n| Fase | Domanda | Esempio di esperimento |\n|---|---|---|\n| Acquisizione | Da dove arrivano le persone giuste? | Testare un nuovo pubblico su Meta con lo stesso messaggio |\n| Attivazione | Fanno la prima azione di valore? | Ridurre i campi del modulo di richiesta da otto a quattro |\n| Ricavo | Comprano o firmano? | Offrire una call conoscitiva al posto del preventivo scritto |\n| Retention | Tornano? | Email automatica dopo trenta giorni con un consiglio d'uso |\n| Referral | Ne parlano ad altri? | Chiedere una recensione nel momento di massima soddisfazione |\n\n## Come funziona uno sprint di growth hacking\n\nUno sprint dura di solito una o due settimane, a seconda del volume di traffico e di vendite. La struttura è sempre questa:\n\n1. **Riunione di avvio.** Guardiamo i numeri della settimana e scegliamo dal backlog gli esperimenti da lanciare. Pochi: spesso due o tre.\n2. **Costruzione.** Prepariamo la versione minima: una variante di pagina, un nuovo annuncio, una sequenza email, una modifica al processo commerciale.\n3. **Lancio e monitoraggio.** L'esperimento gira con metriche definite prima di partire, non dopo.\n4. **Revisione.** Chiudiamo lo sprint con una decisione per ogni test: scalare, ripetere con più dati o scartare.\n\nIl valore vero sta nell'accumulo. Dopo qualche mese hai un archivio di cosa funziona per i tuoi clienti, non per quelli di un case study americano. Ne parliamo più a fondo in [growth hacking: perché funziona](/blog/growth-hacking-perche-funziona).\n\n## Quali prerequisiti servono per fare growth hacking?\n\nServono tre cose: un prodotto che il mercato già compra, abbastanza volume per leggere i risultati e dati affidabili.\n\n- **Prodotto validato.** Se nessuno compra, nessun esperimento sul funnel ti salverà. In quel caso si parte da [analisi di mercato](/servizi/strategia/analisi-di-mercato) e posizionamento.\n- **Volume minimo.** Con pochissime visite o vendite, i test statistici non sono praticabili. Si lavora allora con esperimenti qualitativi: interviste, test di usabilità, prove commerciali dirette.\n- **Tracciamento che regge.** Se GA4 conta conversioni doppie o i pixel non scattano, ogni esperimento è viziato. Spesso il primo sprint è proprio sistemare il [tracking con Google Tag Manager](/servizi/data-analytics/tracking-gtm).\n\nSiamo selettivi su questo punto: se mancano le basi, te lo diciamo prima di iniziare.\n\n## Growth hacking, CRO e A/B test: come si combinano\n\nIl growth hacking è il metodo che governa tutto il funnel. Gli altri servizi dell'area sono strumenti che usa quando serve.\n\nSe lo sprint individua che la perdita maggiore è sulla pagina prodotto o sul modulo di contatto, entra in gioco il lavoro di [funnel e CRO](/servizi/growth/funnel-cro). Se un'ipotesi è importante e il traffico lo permette, la verifichiamo con un [A/B test](/servizi/growth/ab-test) statisticamente corretto. Se il collo di bottiglia è il numero di contatti, gli esperimenti si spostano sulla [lead generation](/servizi/growth/lead-generation).\n\nÈ anche il modo in cui abbiamo accompagnato un brand wellness DTC da fondatore che vendeva da solo a una vera macchina di acquisizione: brand, performance marketing e CRM fatti lavorare insieme, con un risultato di +312% di revenue anno su anno.\n\n## Quanto tempo serve per vedere risultati con il growth hacking?\n\nI primi segnali arrivano nelle prime settimane, perché gli esperimenti sono piccoli e veloci. I risultati che contano, quelli che spostano il fatturato in modo stabile, si costruiscono in qualche mese di sprint continui.\n\nIl motivo è semplice: molti esperimenti non vincono. È normale, ed è il motivo per cui il metodo funziona. Ogni esperimento perso ti evita di investire su una cattiva idea su larga scala. Per questo non promettiamo percentuali di crescita: promettiamo un ritmo, una misurazione onesta e decisioni chiare ogni settimana.\n\nVuoi capire quanto può costare un programma di sprint per la tua azienda? Parti dal [calcolatore di preventivo](/preventivo).",
+      "faq": [
+        {
+          "question": "Il growth hacking funziona anche per una PMI tradizionale?",
+          "answer": "Sì, a patto di adattarlo. Una PMI manifatturiera non testa venti varianti di landing a settimana, ma può testare un nuovo argomento commerciale, un diverso canale di contatto o un modulo più corto. Il principio resta: un'ipotesi alla volta, misurata, con una decisione alla fine. Abbiamo applicato il metodo a e-commerce, SaaS, aziende B2B e attività locali."
+        },
+        {
+          "question": "Quanto dura un progetto di growth hacking?",
+          "answer": "Consigliamo di ragionare in trimestri. Il primo mese serve per audit, tracciamento e backlog; poi partono gli sprint settimanali o quindicinali. Dopo tre mesi hai abbastanza esperimenti chiusi per capire quali leve funzionano davvero. Molti clienti proseguono, altri internalizzano il metodo con il playbook che lasciamo."
+        },
+        {
+          "question": "Cosa devo mettere a disposizione io?",
+          "answer": "Accesso agli strumenti (analytics, piattaforme pubblicitarie, sito, CRM), una persona che possa approvare gli esperimenti in tempi brevi e mezz'ora a settimana per la revisione dello sprint. Se gli esperimenti toccano il processo commerciale, serve anche il coinvolgimento di chi vende. Senza decisioni rapide il ritmo si blocca."
+        },
+        {
+          "question": "Da cosa dipende il costo del growth hacking?",
+          "answer": "Dalla frequenza degli sprint, dal numero di canali coinvolti, dallo sviluppo necessario per costruire le varianti e dallo stato del tracciamento di partenza. Il budget pubblicitario per i test è separato e lo decidi tu. Puoi farti un'idea dell'investimento con il calcolatore su /preventivo, poi lo affiniamo dopo aver visto i tuoi numeri."
+        },
+        {
+          "question": "Cosa succede se gli esperimenti non danno risultati?",
+          "answer": "Succede, ed è previsto. Un esperimento che non vince ti dice cosa non fare, e lo scopri spendendo poco. Se però per diversi sprint nessuna ipotesi sposta i numeri, il problema è più a monte: offerta, prezzo o posizionamento. In quel caso te lo diciamo e proponiamo di lavorare su quello, invece di continuare a testare dettagli."
+        },
+        {
+          "question": "Qual è la differenza tra growth hacking e un'agenzia di marketing classica?",
+          "answer": "Un'agenzia classica esegue un piano deciso all'inizio e lo rendiconta a fine mese. Nel growth hacking il piano cambia ogni settimana in base ai dati. Le metriche sono legate al fatturato, non alla visibilità, e ogni attività nasce come ipotesi da verificare. Da noi, inoltre, chi ti segue è uno dei soci, non un account junior."
+        }
+      ],
+      "related": [
+        "funnel-cro",
+        "ab-test",
+        "tracking-gtm",
+        "marketing-automation"
+      ],
+      "caseStudies": [
+        "cs-001"
+      ],
+      "metaTitle": "Growth hacking per PMI: sprint di esperimenti | not4sale",
+      "metaDescription": "Growth hacking per PMI ed e-commerce: sprint settimanali di esperimenti su tutto il funnel, misurati sul fatturato. Scopri come lavoriamo da Cattolica."
+    },
+    {
+      "slug": "funnel-cro",
+      "headline": "Ottimizzazione del funnel e CRO: più conversioni dallo stesso traffico",
+      "short": "Analisi del funnel e ottimizzazione delle pagine chiave per trasformare più visite in clienti, senza alzare il budget.",
+      "answer": "La CRO (Conversion Rate Optimization) è l'ottimizzazione del tasso di conversione: aumentare la quota di visitatori che compra, chiede un preventivo o si iscrive, senza comprare più traffico. not4sale analizza il funnel con dati, heatmap e registrazioni di sessione, trova i punti in cui le persone abbandonano e riprogetta le pagine che pesano di più sul fatturato.",
+      "problem": "Paghi per portare persone sul sito. Google Ads, Meta, magari un po' di SEO. Le visite arrivano, ma i contatti o gli ordini non seguono. La reazione più comune è alzare il budget, sperando che più traffico risolva. Di solito succede il contrario: versi più acqua in un secchio bucato e i buchi restano.\n\nL'altra reazione classica è rifare il sito da capo, scegliendo il nuovo design in base ai gusti del titolare o del grafico. Sei mesi dopo il tasso di conversione è uguale, o peggiore, e nessuno sa dire perché.\n\nIl punto è che non sai dove si perdono le persone. Abbandonano sulla scheda prodotto o al checkout? Il modulo è troppo lungo? Su mobile il pulsante finisce fuori schermo? L'annuncio promette una cosa e la pagina ne racconta un'altra? Senza queste risposte ogni intervento è una scommessa, e ogni punto di conversione perso lo paghi a ogni singolo clic.",
+      "process": [
+        {
+          "title": "Diagnosi dei dati",
+          "description": "Ricostruiamo il funnel in GA4 e negli strumenti che usi, fase per fase, per vedere dove si concentrano gli abbandoni."
+        },
+        {
+          "title": "Ricerca qualitativa",
+          "description": "Heatmap, registrazioni di sessione, sondaggi sul sito e, quando possibile, interviste ai clienti: capiamo perché le persone si fermano."
+        },
+        {
+          "title": "Ipotesi e priorità",
+          "description": "Trasformiamo ogni problema in un'ipotesi di intervento e le ordiniamo per impatto atteso sul fatturato e sforzo di realizzazione."
+        },
+        {
+          "title": "Interventi e test",
+          "description": "Riprogettiamo le pagine chiave. Le modifiche importanti le verifichiamo con un A/B test, quelle ovvie le applichiamo subito."
+        },
+        {
+          "title": "Misura e iterazione",
+          "description": "Confrontiamo i numeri prima e dopo, documentiamo cosa ha funzionato e ripartiamo dal nuovo collo di bottiglia."
+        }
+      ],
+      "deliverables": [
+        "Analisi del funnel step per step con tassi di abbandono per dispositivo e canale",
+        "Heatmap e registrazioni di sessione commentate sulle pagine chiave",
+        "Audit CRO di home, pagine prodotto o servizio, carrello, checkout e moduli",
+        "Roadmap di interventi prioritizzati per impatto e sforzo",
+        "Wireframe e prototipi delle pagine riprogettate",
+        "Report prima/dopo con andamento delle conversioni"
+      ],
+      "body": "## Cos'è la CRO e perché conviene prima di aumentare il budget\n\nLa CRO, o ottimizzazione del tasso di conversione, è il lavoro che aumenta la percentuale di visitatori che compie l'azione che ti interessa: un acquisto, una richiesta di preventivo, una prenotazione. Conviene farla prima di alzare il budget pubblicitario perché moltiplica il valore di tutto il traffico che già paghi.\n\nUn esempio con numeri di fantasia rende l'idea. Un sito riceve 10.000 visite al mese e converte l'1%: 100 richieste. Per arrivare a 150 hai due strade. Portare 5.000 visite in più, pagandole tutte. Oppure portare la conversione all'1,5% con le stesse visite. La seconda strada ha un vantaggio in più: il miglioramento resta anche quando aumenterai il traffico, e ogni euro di advertising futuro renderà di più.\n\n## Dove si perde il funnel: i punti che controlliamo per primi\n\nLa prima risposta è quasi sempre nei passaggi tra una pagina e l'altra, non nella home. Questi sono i punti che guardiamo per primi:\n\n- **Coerenza tra annuncio e pagina.** Se l'annuncio parla di \"consegna in 24 ore\" e la pagina non lo ripete, chi arriva pensa di aver sbagliato posto.\n- **Esperienza mobile.** Spesso la maggior parte del traffico è da smartphone, mentre il sito viene approvato guardandolo da un monitor in ufficio.\n- **Velocità di caricamento.** Ogni secondo di attesa sulla pagina di atterraggio fa perdere persone prima ancora che leggano.\n- **Chiarezza dell'offerta.** In cinque secondi deve essere chiaro cosa vendi, a chi e perché da te.\n- **Moduli e checkout.** Campi inutili, registrazione obbligatoria, costi di spedizione scoperti all'ultimo passaggio.\n- **Segnali di fiducia.** Recensioni, garanzie di reso, contatti visibili, metodi di pagamento riconoscibili.\n\n## Dati quantitativi e qualitativi: come troviamo il problema\n\nI numeri dicono dove le persone abbandonano, l'osservazione dice perché. Servono entrambi.\n\nSul lato quantitativo usiamo le esplorazioni di funnel di [Google Analytics 4](/servizi/data-analytics/google-analytics-4), segmentate per dispositivo, canale e tipo di utente. Se il tracciamento ha buchi, li chiudiamo prima di trarre conclusioni.\n\nSul lato qualitativo usiamo heatmap, che mostrano dove le persone cliccano e fin dove scorrono, e registrazioni di sessione anonime, che fanno vedere esitazioni, clic a vuoto e campi abbandonati. Aggiungiamo brevi sondaggi sulla pagina (\"Cosa ti impedisce di procedere oggi?\") e, quando il cliente ce lo permette, qualche intervista a chi ha comprato e a chi no. Le frasi esatte dei clienti diventano spesso i titoli delle nuove pagine.\n\n## CRO per e-commerce e per siti che generano contatti: cosa cambia\n\nIl metodo è lo stesso, ma le leve e le metriche sono diverse.\n\n| | E-commerce | Siti lead generation |\n|---|---|---|\n| Conversione principale | Ordine completato | Richiesta di contatto o preventivo |\n| Punto critico tipico | Carrello e checkout | Modulo e pagina servizio |\n| Metriche da guardare | Tasso di conversione, valore medio dell'ordine, abbandono carrello | Tasso di invio modulo, qualità del contatto, tasso di chiusura |\n| Leve frequenti | Spedizione chiara, pagamenti, schede prodotto, cross-sell | Proposta di valore, prove sociali, lunghezza del modulo, risposta rapida |\n\nPer i siti che generano contatti c'è una trappola: aumentare le richieste peggiorandone la qualità. Per questo misuriamo anche cosa succede dopo il modulo, fino all'opportunità commerciale. È lo stesso approccio con cui, per uno studio di servizi professionali, abbiamo combinato funnel, sito e un agente AI di qualificazione arrivando a un -58% di costo per lead qualificato.\n\n## Quando serve un A/B test e quando basta intervenire\n\nNon tutto va testato. Se il pulsante \"acquista\" non si vede su mobile, si sistema e basta. Il test serve quando c'è un dubbio vero e la modifica è importante: un nuovo layout della scheda prodotto, una diversa struttura dell'offerta, un checkout a un solo passaggio.\n\nQuando il traffico lo permette usiamo [A/B test](/servizi/growth/ab-test) progettati con campione e durata calcolati prima di partire. Quando non lo permette, procediamo per interventi successivi e confronti prima/dopo, con la prudenza del caso. Se la pagina va rifatta da zero, la costruiamo come una [landing page](/servizi/web-app/landing-page) dedicata o lavoriamo sull'intera esperienza con il servizio di [UX/UI design](/servizi/web-app/ux-ui-design).\n\nPer capire l'investimento in base al numero di pagine e di funnel da analizzare, usa il [calcolatore di preventivo](/preventivo).",
+      "faq": [
+        {
+          "question": "Quanto traffico serve per fare CRO?",
+          "answer": "Per l'analisi e gli interventi correttivi bastano poche migliaia di visite al mese: heatmap e registrazioni mostrano i problemi anche con volumi modesti. Per gli A/B test servono volumi più alti, che dipendono dal tasso di conversione di partenza. Se il traffico è basso lavoriamo con ricerca qualitativa e interventi mirati, misurati con confronti prima e dopo."
+        },
+        {
+          "question": "Devo rifare il sito per migliorare le conversioni?",
+          "answer": "Quasi mai. Nella maggior parte dei casi i guadagni maggiori arrivano da poche pagine: quella su cui atterrano le campagne, la scheda prodotto o servizio, il modulo, il checkout. Rifare tutto il sito senza sapere dove sono i problemi rischia di spostarli, non di risolverli. Se poi il sito ha limiti tecnici seri, lo diciamo chiaramente."
+        },
+        {
+          "question": "In quanto tempo si vedono i risultati della CRO?",
+          "answer": "La diagnosi richiede in genere qualche settimana, il tempo di raccogliere dati qualitativi sufficienti. Gli interventi correttivi evidenti producono effetti misurabili subito dopo la pubblicazione. Le modifiche che passano da un A/B test richiedono il tempo del test, che dipende dal traffico. Ragioniamo per cicli successivi, non per un intervento unico."
+        },
+        {
+          "question": "Da cosa dipende il costo di un progetto di CRO?",
+          "answer": "Dal numero di funnel e di pagine da analizzare, dalla piattaforma del sito, da chi realizza le modifiche (noi o il tuo sviluppatore) e dal fatto che servano A/B test strutturati. Un e-commerce con checkout personalizzato richiede più lavoro di un sito con un solo modulo di contatto. Il calcolatore su /preventivo ti dà un primo riferimento."
+        },
+        {
+          "question": "Le registrazioni di sessione sono compatibili con il GDPR?",
+          "answer": "Sì, se configurate correttamente. Usiamo strumenti che mascherano i campi sensibili e non registrano dati personali digitati nei moduli, e li attiviamo solo nel rispetto del consenso raccolto dal banner cookie. Aggiorniamo con te l'informativa privacy quando serve. L'obiettivo è vedere come si comportano le persone, non chi sono."
+        },
+        {
+          "question": "Lavorate anche su e-commerce Shopify o WooCommerce?",
+          "answer": "Sì. Su entrambe le piattaforme si può intervenire su template di prodotto, carrello e, entro i limiti di ciascuna, sul checkout. Conosciamo i vincoli di ognuna e ne teniamo conto già in fase di ipotesi, così non proponiamo modifiche che la piattaforma non permette o che richiederebbero sviluppi sproporzionati rispetto al beneficio."
+        }
+      ],
+      "related": [
+        "ab-test",
+        "landing-page",
+        "ux-ui-design",
+        "google-analytics-4"
+      ],
+      "caseStudies": [
+        "cs-005"
+      ],
+      "metaTitle": "Funnel e CRO: ottimizzazione delle conversioni | not4sale",
+      "metaDescription": "CRO e ottimizzazione del funnel: troviamo dove i visitatori abbandonano e riprogettiamo le pagine chiave per più vendite dallo stesso traffico."
+    },
+    {
+      "slug": "ab-test",
+      "headline": "A/B test per siti, e-commerce ed email: risposte valide, non opinioni",
+      "short": "A/B test progettati con campione, durata e metriche definiti prima di partire, per decisioni basate sui dati e non sui gusti.",
+      "answer": "Un A/B test confronta due versioni di una pagina, un'email o un annuncio mostrandole a gruppi casuali di utenti, per capire quale funziona meglio con dati statisticamente affidabili. not4sale progetta e gestisce i test: ipotesi, dimensione del campione, durata, configurazione degli strumenti, controllo qualità e lettura dei risultati, così le decisioni non dipendono dalle opinioni.",
+      "problem": "Molte aziende pensano di fare A/B test e in realtà fanno sondaggi travestiti. Si lancia la variante B il lunedì, il giovedì sembra vincere, si ferma il test e si festeggia. Tre mesi dopo le conversioni sono tornate dov'erano, perché quel \"vantaggio\" era rumore statistico.\n\nAltri errori sono altrettanto comuni: cinque varianti su un sito con poco traffico, test che cambiano dieci elementi insieme e non spiegano quale abbia fatto la differenza, metriche scelte a posteriori perché quella principale non si è mossa. Oppure test lanciati ad agosto in Riviera e applicati a novembre, come se il pubblico fosse lo stesso.\n\nIl costo non è solo il tempo perso. Un falso positivo ti porta a pubblicare una pagina peggiore convinto che sia migliore, e a costruirci sopra le decisioni successive. E quando i test \"non funzionano mai\", il team smette di farli e si torna a decidere per gerarchia: vince l'idea di chi conta di più.",
+      "process": [
+        {
+          "title": "Ipotesi e metrica",
+          "description": "Definiamo cosa cambia, perché dovrebbe funzionare e su quale metrica primaria giudicheremo il test, insieme alle metriche di controllo."
+        },
+        {
+          "title": "Calcolo del campione",
+          "description": "Stimiamo quanti visitatori e quanti giorni servono per rilevare l'effetto minimo che vale la pena scoprire. Se i numeri non bastano, lo diciamo subito."
+        },
+        {
+          "title": "Setup e controllo qualità",
+          "description": "Costruiamo le varianti, configuriamo lo strumento di test e verifichiamo su più dispositivi e browser che tutto funzioni e venga tracciato."
+        },
+        {
+          "title": "Esecuzione controllata",
+          "description": "Il test gira per la durata prevista, senza sbirciate che portino a fermarlo in anticipo. Monitoriamo solo anomalie tecniche."
+        },
+        {
+          "title": "Analisi e decisione",
+          "description": "Leggiamo il risultato con il suo margine di incertezza, analizziamo i segmenti principali e trasformiamo l'esito in una decisione documentata."
+        }
+      ],
+      "deliverables": [
+        "Documento di test con ipotesi, metrica primaria e metriche di controllo",
+        "Calcolo della dimensione del campione e della durata prevista",
+        "Varianti progettate e implementate su sito, email o annunci",
+        "Configurazione dello strumento di test e verifica cross-device",
+        "Report di analisi con risultato, intervallo di confidenza e raccomandazione",
+        "Archivio dei test con esiti e insegnamenti, consultabile dal tuo team"
+      ],
+      "body": "## Cos'è un A/B test e cosa misura davvero\n\nUn A/B test è un esperimento controllato: il traffico viene diviso a caso tra la versione attuale (A) e una nuova versione (B), e si confronta quale produce più conversioni. La divisione casuale è il punto chiave, perché garantisce che l'unica differenza sistematica tra i due gruppi sia la modifica che stai testando.\n\nUn test non misura quale versione \"piace di più\". Misura quale versione cambia il comportamento delle persone su una metrica precisa, decisa prima: ordini, richieste, iscrizioni, clic sul pulsante di prenotazione. E restituisce non una certezza, ma una stima con un margine di incertezza. Saper leggere quel margine è la differenza tra un test utile e uno pericoloso.\n\n## Quanto traffico serve per fare un A/B test?\n\nDipende da tre fattori: il tasso di conversione di partenza, l'effetto minimo che vuoi riuscire a rilevare e il livello di affidabilità richiesto. Più la conversione di partenza è bassa e più l'effetto cercato è piccolo, più visitatori servono.\n\nIn pratica:\n\n- Un sito con migliaia di conversioni al mese può testare anche modifiche sottili.\n- Un sito con poche decine di conversioni al mese può testare solo cambiamenti grandi, quelli che ci si aspetta spostino molto il risultato.\n- Sotto una certa soglia, l'A/B test classico non è lo strumento giusto: si lavora con ricerca qualitativa e interventi diretti, come facciamo nei progetti di [funnel e CRO](/servizi/growth/funnel-cro).\n\nPer questo calcoliamo campione e durata prima di costruire qualsiasi variante. Se il calcolo dice che il test durerebbe sei mesi, è meglio saperlo subito e testare qualcosa di più coraggioso, oppure spostare il test su una metrica più frequente.\n\n## Gli errori che rendono inutile un test\n\nLa maggior parte dei test falliti non fallisce per l'idea, ma per il metodo. Questi sono gli errori che preveniamo:\n\n1. **Fermare il test appena \"vince\".** Guardare il risultato ogni giorno e chiudere al primo segnale positivo moltiplica i falsi positivi. La durata si fissa prima.\n2. **Ignorare i cicli settimanali.** Il comportamento del lunedì non è quello del sabato. Un test deve coprire almeno settimane intere.\n3. **Non controllare la divisione del traffico.** Se la variante riceve molto meno traffico del previsto, qualcosa si è rotto nel setup, e il risultato non è affidabile.\n4. **Cambiare tutto insieme.** Se B ha titolo, immagine, prezzo e pulsante diversi, saprai che B vince ma non perché.\n5. **Trascurare la stagionalità.** Per un hotel o un'attività turistica tra Cattolica e Rimini, un test in alta stagione può dare risultati che a marzo non valgono. Ne teniamo conto nella pianificazione.\n6. **Scegliere la metrica a posteriori.** Se la metrica principale non si muove, non si va a cercare quella che si è mossa.\n\nPrima di tutto questo c'è un prerequisito: un [tracciamento affidabile con Google Tag Manager](/servizi/data-analytics/tracking-gtm). Se le conversioni sono contate male, il test confronta numeri sbagliati.\n\n## Cosa si può testare (e con quali strumenti)\n\nSi può testare quasi tutto ciò che un utente vede e su cui deve prendere una decisione.\n\n| Ambito | Esempi di test | Strumento tipico |\n|---|---|---|\n| Pagine del sito | Titolo, struttura dell'offerta, lunghezza del modulo, prove sociali | Piattaforme di test lato client o lato server |\n| E-commerce | Scheda prodotto, soglia di spedizione gratuita, passaggi del checkout | Strumenti di test integrati con la piattaforma |\n| Email | Oggetto, mittente, orario di invio, offerta | Funzioni di test della piattaforma di [email marketing](/servizi/crm-email/email-marketing) |\n| Annunci | Creatività, angolo del messaggio, pubblico | Esperimenti nativi di Google Ads e [Meta Ads](/servizi/advertising/meta-ads) |\n\nDopo la chiusura di Google Optimize nel 2023 non esiste più uno strumento gratuito di riferimento per i test sul sito. Scegliamo con te la soluzione più adatta al volume di traffico e alla piattaforma, senza vincolarti a un fornitore.\n\n## A/B test, test multivariato o test sequenziale: quale scegliere\n\nL'A/B test classico è la scelta giusta nella maggior parte dei casi. Le alternative hanno senso in situazioni specifiche.\n\n| Tipo | Quando usarlo | Limite |\n|---|---|---|\n| A/B (o A/B/n) | Una modifica chiara da verificare | Con molte varianti il traffico si divide troppo |\n| Multivariato | Capire come interagiscono più elementi sulla stessa pagina | Richiede volumi di traffico molto alti |\n| Sequenziale | Volumi medi, quando serve poter chiudere prima in modo corretto | Analisi più complessa da impostare |\n| Prima/dopo | Traffico troppo basso per un test randomizzato | Non isola l'effetto da stagionalità e campagne |\n\nGli A/B test danno il meglio dentro un programma continuo di [growth hacking](/servizi/growth/growth-hacking), dove ogni risultato alimenta l'ipotesi successiva. Per stimare l'investimento in base a numero di test e canali, usa il [calcolatore di preventivo](/preventivo).",
+      "faq": [
+        {
+          "question": "Quanto dura un A/B test?",
+          "answer": "Il tempo necessario a raggiungere il campione calcolato, e comunque settimane intere per assorbire le differenze tra giorni feriali e weekend. Su siti con buon traffico bastano spesso due o quattro settimane. La durata si fissa prima di partire e non si accorcia perché il risultato sembra già chiaro: è proprio così che nascono i falsi positivi."
+        },
+        {
+          "question": "Il mio sito ha poco traffico: posso fare A/B test?",
+          "answer": "Forse sì, ma solo su modifiche grandi e su metriche frequenti, come il clic verso il modulo invece della vendita finale. Se il calcolo del campione dice che servirebbero mesi, ti consigliamo strade più efficaci: ricerca qualitativa, interventi diretti sulle pagine e confronti prima e dopo. Non ha senso pagare un test che non potrà rispondere."
+        },
+        {
+          "question": "Gli A/B test penalizzano la SEO?",
+          "answer": "No, se fatti correttamente. Google stesso indica le buone pratiche: niente cloaking, uso del tag canonical sulle varianti con URL diversi, redirect temporanei e non permanenti, test di durata limitata. Seguiamo queste regole e, a test concluso, pubblichiamo la versione vincente e rimuoviamo il codice dello strumento."
+        },
+        {
+          "question": "Chi realizza le varianti da testare?",
+          "answer": "Possiamo farlo noi: progettazione, testi e sviluppo, sia con l'editor dello strumento di test sia con modifiche al codice del sito. Se hai un tuo sviluppatore o un'agenzia web, prepariamo le specifiche dettagliate e facciamo il controllo qualità prima del lancio. In ogni caso verifichiamo che il tracciamento delle varianti funzioni prima di aprire il traffico."
+        },
+        {
+          "question": "Da cosa dipende il costo degli A/B test?",
+          "answer": "Dal numero di test, dalla complessità delle varianti, dallo strumento scelto (alcuni hanno licenze a pagamento, separate dal nostro lavoro) e dalla necessità di sistemare prima il tracciamento. Un test sull'oggetto di un'email è molto più semplice di un checkout riprogettato. Il calcolatore su /preventivo ti dà un riferimento iniziale."
+        },
+        {
+          "question": "Cosa succede se il test non dà un vincitore chiaro?",
+          "answer": "È un risultato anche quello. Significa che la modifica non sposta i numeri in modo rilevabile, quindi puoi scegliere la versione più semplice da gestire e concentrare le energie altrove. Annotiamo il test nell'archivio, così nessuno lo riproporrà, e passiamo a un'ipotesi con un potenziale effetto più grande."
+        }
+      ],
+      "related": [
+        "funnel-cro",
+        "growth-hacking",
+        "tracking-gtm",
+        "landing-page"
+      ],
+      "caseStudies": [],
+      "metaTitle": "A/B test: risposte valide, non opinioni | not4sale",
+      "metaDescription": "A/B test per siti, e-commerce ed email progettati con campione e durata calcolati prima. Decisioni basate su dati affidabili: scopri il metodo."
+    },
+    {
+      "slug": "lead-generation",
+      "headline": "Lead generation B2B e B2C: contatti qualificati per il tuo commerciale",
+      "short": "Offerta, canali, landing e qualificazione: un flusso costante di contatti che il tuo commerciale vuole davvero chiamare.",
+      "answer": "La lead generation è il processo che porta potenziali clienti interessati a lasciarti i loro dati di contatto. not4sale costruisce sistemi di lead generation B2B e B2C completi: offerta, canali come Google, Meta e LinkedIn, landing page, qualificazione e passaggio al commerciale, misurando il costo per lead qualificato e non solo il costo per contatto.",
+      "problem": "Ci sono due versioni dello stesso problema. Nella prima i contatti arrivano, anche tanti, ma il commerciale li chiama e trova curiosi, studenti, gente che cercava altro o che \"voleva solo un'idea del prezzo\". Il marketing festeggia il costo per lead basso, le vendite si lamentano, e i due reparti smettono di parlarsi.\n\nNella seconda i contatti non arrivano proprio. L'azienda vive di passaparola, fiere, agenti e del fondatore che conosce mezzo distretto. Funziona, finché funziona: basta un anno storto, un agente che se ne va o un mercato nuovo da aprire, e l'agenda si svuota. Molte aziende tra Romagna e Marche crescono così per anni, poi si accorgono di non avere un canale che porti richieste in modo prevedibile.\n\nIn entrambi i casi il costo è doppio: budget speso su contatti che non diventano clienti e ore del commerciale bruciate. E nessuno sa dire quanto costa, davvero, acquisire un cliente.",
+      "process": [
+        {
+          "title": "Profilo e offerta",
+          "description": "Definiamo con te e con chi vende il cliente ideale e cosa rende un contatto \"qualificato\". Poi costruiamo un'offerta d'ingresso che valga la pena di richiedere."
+        },
+        {
+          "title": "Canali e messaggi",
+          "description": "Scegliamo i canali in base a dove si trova il tuo cliente e a come compra, e scriviamo messaggi diversi per pubblici diversi."
+        },
+        {
+          "title": "Pagine e moduli",
+          "description": "Realizziamo landing page dedicate e moduli calibrati: abbastanza domande per qualificare, non così tante da far scappare."
+        },
+        {
+          "title": "Qualificazione e consegna",
+          "description": "Colleghiamo i moduli al CRM, impostiamo punteggi e notifiche, così il commerciale riceve subito i contatti giusti con le informazioni utili."
+        },
+        {
+          "title": "Ottimizzazione sul venduto",
+          "description": "Ogni mese confrontiamo canali e campagne sul costo per opportunità e per cliente, non sul costo per contatto, e spostiamo il budget di conseguenza."
+        }
+      ],
+      "deliverables": [
+        "Profilo del cliente ideale e criteri di lead qualificato condivisi con il commerciale",
+        "Offerta d'ingresso o lead magnet (guida, check-up, demo, consulenza)",
+        "Landing page e moduli con tracciamento delle conversioni",
+        "Campagne attive sui canali scelti, con creatività e testi",
+        "Integrazione dei moduli con il CRM e notifiche automatiche al commerciale",
+        "Dashboard con costo per lead, per lead qualificato e per opportunità"
+      ],
+      "body": "## Cos'è la lead generation (e perché non è \"fare contatti\")\n\nLa lead generation è l'insieme di attività che portano persone interessate a ciò che vendi a lasciarti un recapito, così che il tuo commerciale possa proseguire la conversazione. Un lead è un potenziale cliente che ha alzato la mano. Non è ancora un cliente, e non tutti i lead valgono uguale.\n\nPer questo la metrica che conta non è quanti contatti arrivano, ma quanti diventano opportunità vere e quanti di quelle si chiudono. Mille contatti a basso costo che nessuno richiama valgono meno di cinquanta richieste di aziende nel tuo target. Un buon sistema di lead generation lavora su tutta la catena: chi attiri, cosa offri, cosa chiedi nel modulo, quanto velocemente rispondi.\n\n## Lead generation B2B e B2C: cosa cambia\n\nIl principio è lo stesso, ma tempi, canali e qualificazione sono molto diversi.\n\n| | B2B | B2C |\n|---|---|---|\n| Chi decide | Più persone, spesso con ruoli diversi | Una persona o una coppia |\n| Ciclo di vendita | Settimane o mesi | Ore o giorni |\n| Canali tipici | LinkedIn, Google Search, SEO, contenuti tecnici, eventi | Meta, Google Search e Maps, TikTok, offerte a tempo |\n| Offerta d'ingresso | Check-up, demo, guida tecnica, analisi gratuita | Preventivo rapido, prova, sconto sul primo servizio |\n| Qualificazione | Settore, dimensione azienda, ruolo, budget, tempistica | Zona, tipo di esigenza, urgenza |\n\nNel B2B spesso serve anche un percorso dopo il primo contatto: email e contenuti che accompagnano il lead fino al momento giusto, il lavoro di [lead nurturing](/servizi/crm-email/lead-nurturing). Nel B2C conta di più la velocità: chi chiede un preventivo per una cucina o un impianto contatta spesso più fornitori, e chi risponde per primo parte in vantaggio.\n\n## Quali canali usiamo e come li scegliamo\n\nScegliamo i canali partendo da una domanda semplice: dove il tuo cliente cerca o incontra una soluzione come la tua?\n\n- **Intento esplicito.** Chi cerca \"software gestione magazzino\" o \"ristrutturazione bagno Pesaro\" ha già un bisogno. Qui funzionano [Google Ads](/servizi/advertising/google-ads) sulla rete di ricerca e la SEO.\n- **Domanda latente.** Chi ha il problema ma non cerca ancora la soluzione si intercetta con contenuti e campagne su Meta, TikTok o YouTube, con un'offerta che faccia emergere il bisogno.\n- **Target aziendale preciso.** Quando sai esattamente quali ruoli e quali aziende vuoi raggiungere, [LinkedIn Ads](/servizi/advertising/linkedin-ads) permette di farlo con una precisione che altri canali non hanno.\n- **Territorio.** Per attività locali, Google Business Profile, ricerche su Maps e campagne geolocalizzate. È la combinazione con cui un'attività retail locale ha ottenuto x4 lead qualificati: SEO locale, social e advertising fatti lavorare insieme.\n\nPartiamo da uno o due canali, misuriamo e aggiungiamo gli altri solo quando i primi sono a regime. Ogni campagna atterra su una [landing page](/servizi/web-app/landing-page) costruita per quella specifica offerta, non sulla home.\n\n## Come si qualifica un lead prima che arrivi al commerciale\n\nUn lead si qualifica incrociando chi è con cosa ha fatto. Le informazioni dichiarate nel modulo (settore, dimensione, esigenza, tempistica) si combinano con i comportamenti (pagine visitate, contenuti scaricati, email aperte) in un punteggio che dice al commerciale chi chiamare per primo.\n\nGli strumenti che usiamo più spesso:\n\n1. **Domande filtro nel modulo.** Poche, ben scelte, con risposte chiuse che il CRM può leggere.\n2. **Lead scoring nel CRM.** Regole condivise con chi vende, riviste ogni pochi mesi sulla base dei contratti chiusi.\n3. **Assistenti conversazionali.** Un [chatbot o assistente virtuale](/servizi/ai-automazione/chatbot) sul sito o su WhatsApp fa le domande di qualificazione a qualsiasi ora. Con un approccio simile, per uno studio di servizi professionali, il costo per lead qualificato è sceso del 58%.\n4. **Notifiche immediate.** Il lead caldo arriva al commerciale in tempo reale, con il riepilogo di cosa ha chiesto.\n\n## Quanto costa un lead e come si misura il ritorno\n\nIl costo per lead varia moltissimo per settore, canale, area geografica e valore del prodotto: una cifra media presa da un articolo non ti dice nulla sulla tua azienda. Quello che conta è il rapporto tra quanto spendi per acquisire un cliente e quanto vale quel cliente nel tempo.\n\nPer questo impostiamo fin da subito una misurazione che arriva fino al contratto: costo per lead, per lead qualificato, per opportunità e per cliente acquisito, canale per canale. Con questi numeri le decisioni sul budget diventano aritmetica, non opinioni. Se vuoi un riferimento sull'investimento per costruire il sistema, usa il [calcolatore di preventivo](/preventivo).",
+      "faq": [
+        {
+          "question": "Quanto tempo serve per avere i primi lead?",
+          "answer": "Con le campagne a pagamento i primi contatti arrivano di solito nei primi giorni dal lancio, una volta pronte offerta, landing page e tracciamento. Servono poi alcune settimane per capire quali canali e messaggi portano contatti di qualità e ottimizzare. Con SEO e contenuti i tempi sono più lunghi, ma il flusso è più stabile e meno legato al budget."
+        },
+        {
+          "question": "Comprate liste di contatti o fate invii massivi?",
+          "answer": "No. Le liste acquistate sono quasi sempre di bassa qualità, pongono seri problemi di conformità al GDPR e danneggiano la reputazione del tuo dominio email. Lavoriamo solo con contatti che hanno scelto di lasciarti i loro dati, attraverso campagne, contenuti e offerte. È più lento all'inizio, ma costruisce una base che puoi usare davvero."
+        },
+        {
+          "question": "Il mio commerciale dice che i lead sono di bassa qualità: cosa fate?",
+          "answer": "Partiamo proprio da lui. Rivediamo insieme gli ultimi contatti, dividendoli tra buoni e cattivi, e cerchiamo cosa li distingue: canale, campagna, risposte nel modulo. Da lì cambiano pubblico, messaggio e domande filtro. Spesso basta aggiungere una o due domande al modulo per ridurre molto i contatti inutili, accettandone un po' meno in quantità."
+        },
+        {
+          "question": "Da cosa dipende il costo di un progetto di lead generation?",
+          "answer": "Dal numero di canali, dal numero di offerte e landing page da costruire, dall'integrazione con il CRM che usi e dalla gestione continuativa delle campagne. Il budget pubblicitario è separato e lo decidi tu, in base agli obiettivi. Il calcolatore su /preventivo ti dà un primo ordine di grandezza per la parte di lavoro."
+        },
+        {
+          "question": "Serve per forza un CRM?",
+          "answer": "Per fare lead generation seria, sì: senza un CRM non sai cosa succede ai contatti dopo il modulo e non puoi misurare il costo per cliente. Non serve però un sistema complesso. Se non ne hai uno, ti aiutiamo a scegliere quello adatto alla dimensione del tuo team e a configurarlo con le fasi della tua trattativa."
+        }
+      ],
+      "related": [
+        "google-ads",
+        "linkedin-ads",
+        "lead-nurturing",
+        "chatbot"
+      ],
+      "caseStudies": [
+        "cs-003",
+        "cs-005"
+      ],
+      "metaTitle": "Lead generation B2B e B2C: contatti qualificati | not4sale",
+      "metaDescription": "Lead generation B2B e B2C: offerta, campagne, landing page e qualificazione per portare al commerciale contatti veri. Scopri come lavoriamo."
+    },
+    {
+      "slug": "product-led-growth",
+      "headline": "Product-led growth per SaaS e app: il prodotto come motore di crescita",
+      "short": "Onboarding, attivazione e referral: per SaaS e piattaforme digitali, il prodotto diventa il primo canale di acquisizione.",
+      "answer": "Il product-led growth (PLG) è una strategia in cui il prodotto stesso acquisisce, attiva e trattiene i clienti: prova gratuita o freemium, onboarding che porta in fretta al primo risultato, inviti e referral. not4sale aiuta SaaS, app e piattaforme digitali a misurare l'attivazione, togliere attriti dal percorso e trasformare l'uso del prodotto in crescita.",
+      "problem": "Hai un software o una piattaforma. Le registrazioni arrivano, magari anche grazie a campagne ben fatte. Poi la maggior parte degli utenti entra, guarda un paio di schermate e sparisce. La prova gratuita scade senza che l'utente abbia mai fatto la cosa per cui il prodotto esiste.\n\nIl team reagisce in due modi. Aggiunge funzionalità, convinto che manchi qualcosa. O mette un commerciale a fare demo a chiunque si iscriva, compresi studenti e concorrenti curiosi. Il costo di acquisizione sale, il tasso di conversione da prova a pagamento resta basso, e chi paga se ne va dopo pochi mesi senza che nessuno capisca perché.\n\nIl nodo è quasi sempre lo stesso: nessuno ha definito cosa significhi, per il tuo prodotto, che un utente \"ha capito il valore\". Senza quella definizione non puoi misurarla, e senza misurarla non puoi progettare un onboarding che ci porti più persone, più in fretta.",
+      "process": [
+        {
+          "title": "Analisi dei dati d'uso",
+          "description": "Studiamo cosa fanno nel prodotto gli utenti che diventano clienti paganti rispetto a quelli che abbandonano, partendo dagli eventi già tracciati."
+        },
+        {
+          "title": "Definizione dell'attivazione",
+          "description": "Individuiamo l'azione, o la combinazione di azioni, che segnala il primo valore percepito e la trasformiamo nella metrica guida."
+        },
+        {
+          "title": "Onboarding riprogettato",
+          "description": "Ridisegniamo il percorso dal primo accesso all'attivazione: schermate, checklist, messaggi in-app ed email che accompagnano l'utente."
+        },
+        {
+          "title": "Loop di crescita",
+          "description": "Progettiamo i meccanismi con cui l'uso genera nuovi utenti: inviti, condivisione, collaborazione, referral con incentivi sensati."
+        },
+        {
+          "title": "Misura per coorti",
+          "description": "Monitoriamo attivazione e retention per gruppi di utenti iscritti nello stesso periodo e iteriamo con esperimenti mirati."
+        }
+      ],
+      "deliverables": [
+        "Mappa del percorso utente dalla registrazione al primo pagamento",
+        "Definizione della metrica di attivazione e della North Star Metric",
+        "Piano di tracciamento degli eventi di prodotto",
+        "Onboarding riprogettato con checklist, messaggi in-app e prototipi",
+        "Sequenze email di attivazione, conversione e riattivazione",
+        "Progetto del programma referral o del loop di invito",
+        "Dashboard per coorti con attivazione, conversione e retention"
+      ],
+      "body": "## Cos'è il product-led growth e per chi funziona\n\nIl product-led growth è un modello di crescita in cui il prodotto è il principale strumento di acquisizione, conversione ed espansione. Invece di convincere il cliente con demo e trattative prima che lo usi, gli fai provare il valore subito, e lasci che sia l'esperienza a vendere.\n\nFunziona bene quando tre condizioni sono vere:\n\n- **Il valore si percepisce in fretta.** In minuti o giorni, non dopo un'implementazione di sei mesi.\n- **L'utente può iniziare da solo.** Senza installazioni complesse, formazione o integrazioni obbligatorie.\n- **Il prodotto si diffonde con l'uso.** Più persone lo usano, più diventa utile, oppure chi lo usa ha motivi naturali per coinvolgere altri.\n\nÈ il caso di molti SaaS, app, marketplace e piattaforme di prenotazione o gestione. Non è il modello giusto per un software gestionale che richiede settimane di configurazione dedicata: lì il PLG può aiutare in alcune fasi, ma la vendita resta guidata da persone.\n\n## Free trial, freemium o demo: quale modello scegliere\n\nLa scelta del modello d'ingresso è la prima decisione del PLG, e cambia tutto il resto.\n\n| Modello | Come funziona | Adatto quando | Rischio |\n|---|---|---|---|\n| Prova gratuita a tempo | Accesso completo per un periodo limitato | Il valore emerge in pochi giorni | Utenti che non arrivano al valore prima della scadenza |\n| Freemium | Versione base gratuita senza scadenza | Il prodotto si diffonde con l'uso e ha costi marginali bassi | Molti utenti gratuiti che non passano mai al pagamento |\n| Prova inversa | Si parte con tutte le funzioni, poi si scende al piano gratuito | Le funzioni avanzate sono la ragione per pagare | Frustrazione se il passaggio non è comunicato bene |\n| Demo guidata | Accesso dopo una chiamata con un commerciale | Prodotto complesso, contratti di valore alto | Attrito all'ingresso, costo di vendita alto |\n\nMolti prodotti finiscono con un modello ibrido. Lo decidiamo guardando i tuoi dati di conversione, non le mode del momento.\n\n## Cos'è l'attivazione e perché è la metrica più importante del PLG\n\nL'attivazione è il momento in cui un nuovo utente sperimenta per la prima volta il valore del prodotto. È la metrica che collega il marketing, che porta le registrazioni, al ricavo, che arriva solo da chi resta.\n\nNon esiste una definizione valida per tutti. Per un software di fatturazione può essere \"ha emesso la prima fattura\". Per uno strumento di collaborazione, \"ha invitato almeno un collega e creato un progetto condiviso\". La troviamo confrontando le azioni compiute nei primi giorni da chi è diventato cliente pagante con quelle di chi ha abbandonato.\n\nPer farlo serve un tracciamento degli eventi di prodotto fatto bene: nomi coerenti, proprietà utili, identificazione dell'utente tra sito, app ed email. Spesso il primo lavoro è proprio questo, insieme a una [dashboard](/servizi/data-analytics/dashboard) che mostri attivazione e retention per coorti, cioè per gruppi di utenti iscritti nello stesso periodo.\n\n## Onboarding, email e referral: gli strumenti del PLG\n\nUna volta definita l'attivazione, tutto il lavoro serve a portarci più persone, più in fretta.\n\n1. **Onboarding nel prodotto.** Si toglie tutto ciò che non serve al primo risultato: campi superflui in registrazione, configurazioni rimandabili, tour che spiegano ogni pulsante. Si aggiungono checklist, dati di esempio e stati vuoti che suggeriscono il prossimo passo. Qui il lavoro di [UX/UI design](/servizi/web-app/ux-ui-design) fa la differenza.\n2. **Email e messaggi comportamentali.** Non una sequenza uguale per tutti, ma messaggi inviati in base a cosa l'utente ha fatto o non ha fatto. È [marketing automation](/servizi/crm-email/marketing-automation) applicata al prodotto.\n3. **Loop di crescita.** Inviti ai colleghi, link condivisibili, documenti con il marchio del prodotto, programmi referral con un incentivo che abbia senso per entrambe le parti.\n4. **Esperimenti continui.** Ogni modifica all'onboarding è un'ipotesi. Quando i volumi lo consentono la verifichiamo con un [A/B test](/servizi/growth/ab-test).\n\n## PLG e vendite: non serve scegliere\n\nIl product-led growth non elimina il commerciale. Lo fa lavorare meglio. Quando l'uso del prodotto viene tracciato, il team vendite può concentrarsi sugli account che mostrano segnali forti: molti utenti attivi nella stessa azienda, uso intenso di una funzione avanzata, limiti del piano gratuito raggiunti. È quello che spesso viene chiamato product-led sales.\n\nIl nostro ruolo è costruire questi segnali, portarli nel CRM e definire con te quando un utente va lasciato in autonomia e quando merita una chiamata. In not4sale questi progetti li segue Giovanni Casagrande, che in 25 anni nel digitale ha lavorato su SaaS, funnel di acquisizione e piattaforme su misura; se il prodotto va esteso, lo affianchiamo con il servizio di [web app su misura](/servizi/web-app/web-app). Per capire l'investimento in base allo stato del tuo prodotto, parti dal [calcolatore di preventivo](/preventivo).",
+      "faq": [
+        {
+          "question": "Il product-led growth funziona solo per startup SaaS?",
+          "answer": "No, ma funziona meglio dove l'utente può provare il valore da solo e in fretta. Oltre ai SaaS si applica ad app, marketplace, piattaforme di prenotazione e strumenti digitali venduti in abbonamento. Anche aziende tradizionali che offrono un portale clienti o un configuratore online possono usarne i principi, soprattutto su onboarding e attivazione."
+        },
+        {
+          "question": "Dobbiamo introdurre un piano gratuito?",
+          "answer": "Non necessariamente. Il freemium ha senso quando il prodotto si diffonde con l'uso e servire un utente gratuito costa poco. In molti casi funziona meglio una prova a tempo o una prova inversa. Decidiamo guardando come oggi gli utenti arrivano al valore e quanto costa servirli. Cambiare modello d'ingresso è una scelta di business, non solo di marketing."
+        },
+        {
+          "question": "Serve il coinvolgimento del nostro team di sviluppo?",
+          "answer": "Sì, almeno in parte. Il tracciamento degli eventi e le modifiche all'onboarding toccano il prodotto. Noi prepariamo specifiche, prototipi e piano di tracciamento in modo che il lavoro degli sviluppatori sia chiaro e limitato. Dove possibile usiamo strumenti di messaggistica in-app che permettono di intervenire senza rilasciare nuove versioni del codice."
+        },
+        {
+          "question": "Quanto tempo serve per vedere effetti sull'attivazione?",
+          "answer": "Le modifiche all'onboarding mostrano i primi effetti sulle coorti di utenti che si iscrivono dopo il rilascio, quindi nelle settimane successive. Per misurare l'impatto sulla retention e sui ricavi servono più mesi, perché bisogna aspettare che quelle coorti maturino. Per questo impostiamo da subito dashboard per coorti, così i progressi si leggono senza aspettare la fine del trimestre."
+        },
+        {
+          "question": "Da cosa dipende il costo di un progetto di product-led growth?",
+          "answer": "Dallo stato del tracciamento di partenza, dalla complessità del prodotto, dal numero di percorsi di onboarding da riprogettare e da quanto sviluppo realizziamo noi rispetto al tuo team. Un audit con definizione dell'attivazione è un progetto contenuto; un programma completo con onboarding, email e referral richiede più mesi. Il calcolatore su /preventivo ti dà un primo riferimento."
+        }
+      ],
+      "related": [
+        "marketing-automation",
+        "ux-ui-design",
+        "segmentazione",
+        "dashboard"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Product-led growth per SaaS e app | not4sale",
+      "metaDescription": "Product-led growth per SaaS e app: definiamo l'attivazione, riprogettiamo l'onboarding e costruiamo loop di referral che portano nuovi clienti."
+    }
+  ]
+}

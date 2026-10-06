@@ -1,0 +1,396 @@
+{
+  "area": {
+    "slug": "data-analytics",
+    "headline": "Data & Analytics: misurare il marketing per decidere sui numeri giusti",
+    "short": "GA4, tag manager, tracciamento server-side, dashboard e attribuzione: dati di marketing affidabili per decidere dove investire.",
+    "answer": "Data & Analytics è l'insieme dei servizi con cui not4sale imposta la misurazione del marketing di un'azienda: configurazione di Google Analytics 4, tracciamento con Google Tag Manager conforme al GDPR, server-side tracking, dashboard automatiche e modelli di attribuzione. L'obiettivo è sapere quali canali portano clienti e fatturato, per spostare il budget con cognizione di causa.",
+    "body": "## Perché i dati di marketing di molte aziende non sono affidabili\nLa risposta breve: perché il tracciamento è stato installato una volta, anni fa, e nessuno l'ha più guardato. Nel frattempo è cambiato tutto. Google Analytics 4 ha sostituito Universal Analytics nel 2023, i browser limitano i cookie di terze parti, gli adblocker bloccano gli script, e dal 2024 Google chiede il Consent Mode v2 a chi usa i suoi strumenti pubblicitari nello Spazio Economico Europeo.\n\nIl risultato lo vediamo spesso quando apriamo un account: conversioni contate due volte, form che non vengono registrati, vendite attribuite a \"direct\" senza motivo, Google Ads e Meta che dichiarano ciascuno di aver portato più vendite di quelle avvenute davvero. Con numeri così, ogni decisione sul budget è un tiro di dadi.\n\n## Cosa comprende l'area Data & Analytics\nSono cinque servizi che si appoggiano uno sull'altro, come i piani di una casa:\n\n1. **Raccolta del dato.** La [configurazione di Google Analytics 4](/servizi/data-analytics/google-analytics-4) definisce cosa misurare: eventi, conversioni, valori, segmenti di pubblico.\n2. **Governo dei tag.** Con il [tracking in Google Tag Manager](/servizi/data-analytics/tracking-gtm) mettiamo ordine tra pixel, tag e consenso, in un unico contenitore documentato.\n3. **Qualità del dato.** Il [server-side tracking](/servizi/data-analytics/server-side-tracking) recupera i segnali che il browser perde e li invia alle piattaforme in modo controllato.\n4. **Lettura.** Le [dashboard di reportistica](/servizi/data-analytics/dashboard) mettono in una schermata i numeri che servono per decidere, aggiornati da soli.\n5. **Decisione.** I [modelli di attribuzione](/servizi/data-analytics/attribuzione) rispondono alla domanda che costa di più: quale canale porta davvero le vendite?\n\nNon serve comprarli tutti. Un'attività locale con un sito vetrina spesso ha bisogno solo di GA4 e GTM fatti bene. Un e-commerce che investe in modo importante su più piattaforme pubblicitarie arriva in fretta anche al server-side e all'attribuzione.\n\n## Come lavoriamo sui dati\nPartiamo sempre da una domanda di business, non dallo strumento. \"Quanti preventivi arrivano da Google Ads e quanti diventano contratti?\" è una buona domanda. \"Vogliamo vedere tutto\" non lo è: produce report enormi che nessuno legge.\n\nIl metodo è lo stesso che usiamo in tutto lo studio: ipotesi, prototipo, test, dato, decisione. Applicato alla misurazione diventa:\n\n- **Audit** di quello che c'è: tag, account, consenso, conversioni, discrepanze tra piattaforme.\n- **Piano di misurazione**: un documento che collega obiettivi, KPI ed eventi tecnici. È la mappa che resta a te.\n- **Implementazione** in un ambiente di test, prima di toccare il sito in produzione.\n- **Verifica** incrociata: i numeri di GA4 vengono confrontati con ordini, CRM o gestionale.\n- **Passaggio di consegne**: documentazione e accessi intestati all'azienda, non a noi.\n\nSu quest'ultimo punto siamo rigidi. Account Analytics, contenitori GTM e dashboard devono essere di proprietà del cliente. Se un giorno smetti di lavorare con noi, i tuoi dati restano dove sono.\n\n## Privacy e consenso: misurare senza fare i furbi\nIl tracciamento deve rispettare il GDPR e le linee guida del Garante sui cookie. In pratica: gli strumenti di analisi e pubblicità non necessari si attivano solo dopo il consenso, e il consenso va trasmesso correttamente a Google tramite Consent Mode v2.\n\nUn esempio concreto è questo sito. Tutti i segnali di consenso partono negati di default, e Google Tag Manager viene caricato solo dopo che il visitatore accetta almeno una categoria non necessaria. Si perde qualche dato? Sì. Ma è dato che non avresti potuto raccogliere comunque, e Consent Mode permette a Google di stimare parte delle conversioni mancanti. Non siamo uno studio legale: per informativa e registro dei trattamenti lavoriamo accanto al tuo consulente privacy.\n\n## Per chi è questa area\nÈ per chi spende in marketing e vuole sapere cosa rende. Tipicamente:\n\n- e-commerce che investono su [Google Ads](/servizi/advertising/google-ads) e [Meta Ads](/servizi/advertising/meta-ads) e vedono numeri che non tornano;\n- aziende B2B e di servizi che generano lead dal sito ma non sanno quali diventano clienti;\n- attività di Cattolica, Rimini e della Romagna che fanno pubblicità locale e vogliono capire se le chiamate arrivano da lì.\n\nSe invece non hai ancora un sito che converte o un'offerta chiara, i dati misureranno solo il silenzio: meglio partire dal [funnel e dalla CRO](/servizi/growth/funnel-cro) o da un [piano marketing](/servizi/strategia/piano-marketing). Per capire da dove cominciare nel tuo caso, il [calcolatore di preventivo](/preventivo) è un buon primo passo.",
+    "faq": [
+      {
+        "question": "Da quale servizio conviene partire se il tracciamento è un disastro?",
+        "answer": "Quasi sempre da un audit del tracciamento esistente, seguito da GA4 e Google Tag Manager rifatti con un piano di misurazione. Server-side, dashboard e attribuzione funzionano solo se i dati di base sono puliti: costruirli sopra eventi sbagliati significa automatizzare l'errore. Dopo l'audit ti diciamo cosa sistemare prima e cosa può aspettare."
+      },
+      {
+        "question": "Quanto costa impostare la misurazione del marketing?",
+        "answer": "Dipende da quanti canali e piattaforme pubblicitarie usi, da quanti obiettivi vanno tracciati, dal tipo di sito (vetrina, e-commerce, piattaforma su misura) e da cosa va integrato, come CRM o gestionale. Un sito vetrina con un form è un lavoro molto diverso da un e-commerce multi-canale. Il calcolatore su /preventivo ti dà un ordine di grandezza."
+      },
+      {
+        "question": "Il consenso cookie non mi fa perdere troppi dati?",
+        "answer": "Una parte dei visitatori rifiuta i cookie e quei dati non si possono raccogliere in modo identificativo: è la legge, non un difetto dello strumento. Con Consent Mode v2 configurato bene, Google riceve segnali anonimi e può modellare parte delle conversioni mancanti. Il server-side tracking migliora la qualità dei dati di chi ha accettato, non aggira il rifiuto."
+      },
+      {
+        "question": "I dati e gli account restano di mia proprietà?",
+        "answer": "Sì. Creiamo o sistemiamo proprietà GA4, contenitori Tag Manager, server di tracciamento e dashboard sugli account della tua azienda, e noi lavoriamo con accessi delegati. Alla fine di ogni progetto ricevi la documentazione di cosa è stato configurato. Se cambi fornitore, chi arriva dopo trova tutto in ordine e leggibile."
+      },
+      {
+        "question": "Serve un'azienda grande per avere senso di investire nei dati?",
+        "answer": "No, ma serve proporzione. Una piccola attività locale ha bisogno di poche conversioni misurate bene, non di un data warehouse. Quando la spesa pubblicitaria cresce e i canali diventano tanti, aumenta il costo di decidere al buio, e lì server-side e attribuzione iniziano a ripagarsi. Ti diciamo noi se un servizio è sovradimensionato per te."
+      }
+    ],
+    "metaTitle": "Data & Analytics: GA4, tracking e dashboard | not4sale",
+    "metaDescription": "Data & Analytics per PMI: GA4, Google Tag Manager, server-side tracking, dashboard e attribuzione. Dati affidabili per decidere il budget. Parliamone."
+  },
+  "services": [
+    {
+      "slug": "google-analytics-4",
+      "headline": "Configurazione Google Analytics 4: eventi e conversioni che servono",
+      "short": "GA4 configurato sui tuoi obiettivi: eventi, conversioni, valori e report che rispondono a domande di business.",
+      "answer": "La configurazione di Google Analytics 4 è il lavoro con cui not4sale imposta la proprietà GA4 di un'azienda sui suoi obiettivi reali: piano di misurazione, eventi personalizzati, eventi chiave con valore, filtri del traffico interno, collegamenti a Google Ads e Search Console, report personalizzati. Il risultato è uno strumento che dice cosa porta clienti, non solo quante visite arrivano.",
+      "problem": "Molte aziende hanno GA4 \"installato\" e basta. Qualcuno ha incollato il codice nel 2023, quando Universal Analytics è stato spento, e da allora la proprietà raccoglie pagine viste e poco altro. I form di contatto non sono tracciati, oppure lo sono due volte. Le visite dei dipendenti finiscono nei numeri. La conservazione dei dati è rimasta al valore minimo di due mesi, quindi i confronti anno su anno nelle esplorazioni sono impossibili.\n\nIl costo non si vede in fattura, ma c'è. Le campagne su [Google Ads](/servizi/advertising/google-ads) ottimizzano su conversioni sbagliate e spendono per portare clic, non clienti. Chi decide guarda un report pieno di metriche e non trova la risposta che cerca: quale canale porta richieste che diventano vendite. Così si torna a decidere a sensazione, pagando lo strumento senza usarlo.",
+      "process": [
+        {
+          "title": "Audit della proprietà",
+          "description": "Controlliamo impostazioni, flussi di dati, eventi esistenti, duplicazioni, filtri e collegamenti. Ne esce l'elenco di cosa tenere, correggere o eliminare."
+        },
+        {
+          "title": "Piano di misurazione",
+          "description": "Traduciamo i tuoi obiettivi in KPI ed eventi GA4, con nomi e parametri definiti. È il documento di riferimento per tutto il resto."
+        },
+        {
+          "title": "Implementazione e test",
+          "description": "Configuriamo eventi, eventi chiave e dimensioni personalizzate, quasi sempre tramite Google Tag Manager, e li verifichiamo in DebugView prima della pubblicazione."
+        },
+        {
+          "title": "Report ed esplorazioni",
+          "description": "Costruiamo report e esplorazioni sulle tue domande: canali che convertono, percorsi, pagine che generano contatti."
+        },
+        {
+          "title": "Formazione e consegna",
+          "description": "Una sessione pratica con chi in azienda leggerà i dati, più la documentazione di cosa è stato configurato e perché."
+        }
+      ],
+      "deliverables": [
+        "Audit scritto della proprietà GA4 esistente con priorità di intervento",
+        "Piano di misurazione: obiettivi, KPI, eventi e parametri documentati",
+        "Eventi personalizzati ed eventi chiave configurati e testati",
+        "Collegamenti a Google Ads, Search Console e, se serve, BigQuery",
+        "Filtri del traffico interno e degli sviluppatori, conservazione dati estesa",
+        "Report ed esplorazioni personalizzati nella proprietà",
+        "Sessione di formazione registrata per il team"
+      ],
+      "body": "## Cos'è Google Analytics 4 e perché va configurato\nGoogle Analytics 4 è lo strumento gratuito di Google per misurare cosa fanno le persone su sito e app, ed è l'unica versione disponibile da quando Universal Analytics ha smesso di raccogliere dati nel luglio 2023. La differenza rispetto al passato non è estetica: GA4 ragiona per eventi, non per sessioni e pagine viste. Ogni interazione è un evento con dei parametri, e sta a te decidere quali contano.\n\nQuesto è il motivo per cui un'installazione \"di base\" dice poco. GA4 registra da solo alcune cose, come le pagine viste, gli scroll e i clic in uscita, attraverso la misurazione avanzata. Ma non sa cosa sia un preventivo inviato, una prenotazione confermata o un ordine sopra una certa soglia. Glielo devi dire tu, con nomi coerenti e parametri utili.\n\n## Come impostiamo la configurazione di GA4\nLa risposta breve: partendo dalle domande, non dagli eventi. Prima di toccare il sito scriviamo un piano di misurazione, cioè una tabella che collega ogni obiettivo di business a un KPI e ogni KPI a uno o più eventi tecnici.\n\nUn esempio per un'azienda di servizi B2B:\n\n| Obiettivo | KPI | Evento GA4 |\n|---|---|---|\n| Più richieste di preventivo | Preventivi inviati per canale | generate_lead con parametro tipo_servizio |\n| Contatti più qualificati | Quota di richieste con budget dichiarato | parametro fascia_budget sull'evento |\n| Meno abbandoni del form | Inizi form contro invii | form_start e form_submit |\n| Contatti diretti | Clic su telefono e WhatsApp | click_telefono, click_whatsapp |\n\nPer un e-commerce il cuore sono invece gli eventi standard di Google per il commercio elettronico (view_item, add_to_cart, begin_checkout, purchase) con valore, valuta e prodotti. Seguire la nomenclatura raccomandata da Google non è pignoleria: è quello che fa funzionare i report già pronti e l'importazione delle conversioni in Google Ads.\n\nPoi ci sono le impostazioni che quasi nessuno tocca e che pesano:\n\n- **Conservazione dei dati** portata al massimo consentito dalla versione gratuita, così le esplorazioni coprono più di due mesi.\n- **Traffico interno** escluso con filtri per IP, perché le visite di te e dei tuoi collaboratori non sono clienti.\n- **Esclusione dei referral** per i gateway di pagamento, che altrimenti si \"rubano\" le vendite.\n- **Eventi chiave** (quelli che una volta si chiamavano conversioni) limitati a ciò che conta davvero, con un valore quando possibile.\n\n## Cosa cambia per chi fa pubblicità\nGA4 non vive da solo. Collegato a Google Ads, permette di importare gli eventi chiave come conversioni e di creare segmenti di pubblico per il remarketing. Collegato a Search Console, affianca le query organiche al comportamento sul sito. Se vuoi analisi più profonde, l'esportazione verso BigQuery dà accesso ai dati grezzi evento per evento.\n\nIl punto delicato è la coerenza. Se GA4 conta un lead quando la pagina di ringraziamento si carica, e qualcuno la ricarica tre volte, Google Ads impara che quella campagna rende tre volte tanto. Per questo testiamo ogni evento con DebugView e con l'anteprima di [Google Tag Manager](/servizi/data-analytics/tracking-gtm), e dopo il rilascio confrontiamo i numeri con quelli veri: ordini nel gestionale, contatti nel CRM.\n\nGA4 inoltre rispetta il consenso dell'utente tramite Consent Mode v2: se il visitatore rifiuta i cookie di analisi, i dati identificativi non vengono raccolti. Lo configuriamo insieme al tracciamento, mai come ripensamento.\n\n## Quanto ci vuole e cosa ti serve\nPer un sito aziendale con pochi obiettivi bastano in genere un paio di settimane dalla prima call alla consegna; un e-commerce con catalogo e checkout personalizzati richiede di più, soprattutto se il tema o la piattaforma non espongono i dati di prodotto in modo pulito. Da parte tua servono gli accessi amministrativi (GA4, sito o CMS, eventuale Google Ads) e una persona che sappia dirci cosa succede dopo un contatto.\n\nSe il tuo problema è che i numeri delle piattaforme pubblicitarie non tornano tra loro, GA4 da solo non basta: guarda anche i [modelli di attribuzione](/servizi/data-analytics/attribuzione). Se invece vuoi solo leggere i dati senza entrare in GA4, il passo successivo è una [dashboard automatica](/servizi/data-analytics/dashboard). E se le conversioni che stai misurando sono poche perché il sito non converte, conviene lavorare prima sul [funnel e la CRO](/servizi/growth/funnel-cro).",
+      "faq": [
+        {
+          "question": "Ho già GA4 installato: devo rifare tutto da capo?",
+          "answer": "Quasi mai. I dati storici restano nella proprietà e cancellarla sarebbe uno spreco. Partiamo da un audit: teniamo ciò che è corretto, rinominiamo o eliminiamo gli eventi incoerenti, aggiungiamo quelli mancanti. Si rifà da zero solo quando la proprietà è intestata a un account che non controlli, ad esempio quello di un vecchio fornitore che non risponde."
+        },
+        {
+          "question": "Che differenza c'è tra eventi ed eventi chiave in GA4?",
+          "answer": "Un evento è qualsiasi interazione registrata: una pagina vista, un clic, uno scroll. Un evento chiave è un evento che hai marcato come importante per il business, ad esempio una richiesta di preventivo o un acquisto. Google ha rinominato le conversioni di GA4 in eventi chiave nel 2024; le conversioni vere e proprie ora si gestiscono soprattutto in Google Ads."
+        },
+        {
+          "question": "Da cosa dipende il costo della configurazione di GA4?",
+          "answer": "Dal numero di obiettivi e di eventi da tracciare, dal tipo di piattaforma (un CMS standard o un e-commerce personalizzato), dalla presenza di più domini o sottodomini e dalle integrazioni richieste, come Google Ads, BigQuery o CRM. Un sito vetrina con un form e un e-commerce con checkout esterno sono progetti diversi. Per una stima rapida c'è il calcolatore su /preventivo."
+        },
+        {
+          "question": "Perché GA4 mostra numeri diversi da Shopify o dal mio gestionale?",
+          "answer": "Perché misurano cose diverse in modo diverso. Il gestionale registra ogni ordine; GA4 registra solo i visitatori che hanno accettato i cookie e i cui browser non bloccano lo script. Una differenza c'è sempre. Il problema è quando è grande o instabile: di solito significa eventi duplicati, checkout esterni non tracciati o consenso configurato male, e lì si interviene."
+        },
+        {
+          "question": "Posso usare GA4 senza un banner cookie?",
+          "answer": "In Italia, per le linee guida del Garante, GA4 nella configurazione standard non rientra tra i cookie tecnici esentabili, quindi serve il consenso prima di attivarlo con dati identificativi. Configuriamo GA4 con Consent Mode v2 e un banner che blocca davvero gli script prima della scelta. Per la parte legale, informativa compresa, lavoriamo accanto al tuo consulente privacy."
+        },
+        {
+          "question": "Chi in azienda dovrà usare GA4 dopo la configurazione?",
+          "answer": "Chi prende decisioni di marketing, anche senza competenze tecniche. Per questo la consegna comprende una sessione pratica sui report costruiti per te e una documentazione scritta in italiano semplice. Se nessuno ha tempo di entrare in GA4, possiamo portare gli stessi numeri in una dashboard che arriva aggiornata senza aprire lo strumento."
+        }
+      ],
+      "related": [
+        "tracking-gtm",
+        "dashboard",
+        "google-ads",
+        "funnel-cro"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Configurazione Google Analytics 4 (GA4) | not4sale",
+      "metaDescription": "Configurazione Google Analytics 4 sui tuoi obiettivi: piano di misurazione, eventi chiave, collegamento a Google Ads e report chiari. Chiedi un preventivo."
+    },
+    {
+      "slug": "tracking-gtm",
+      "headline": "Tracking con Google Tag Manager: tag, pixel e consenso in ordine",
+      "short": "Tag, pixel e conversioni riorganizzati in Google Tag Manager, con Consent Mode v2 e documentazione. Niente più script sparsi.",
+      "answer": "Il servizio di tracking con Google Tag Manager di not4sale riorganizza in un unico contenitore tutti i tag di un sito: Google Analytics 4, conversioni Google Ads, pixel Meta, LinkedIn e TikTok. Ogni tag parte solo con il consenso corretto, grazie a Consent Mode v2 e a un banner integrato, ed è documentato, testato e di proprietà dell'azienda.",
+      "problem": "Apri il codice di un sito aziendale e spesso trovi un archivio storico: il pixel di Facebook messo dal primo consulente, un tag di conversione Google Ads incollato nel footer, un secondo GA4 aggiunto da un plugin, un vecchio script di chat che nessuno usa più. Alcuni partono prima che il visitatore abbia accettato i cookie, altri non partono mai.\n\nLe conseguenze sono tre, e costano tutte. Le piattaforme pubblicitarie ricevono conversioni doppie o mancanti, e ottimizzano di conseguenza: male. Ogni modifica richiede uno sviluppatore, quindi il marketing aspetta settimane per tracciare un nuovo form. E il sito è esposto: script che leggono dati prima del consenso sono esattamente ciò che le linee guida del Garante sui cookie chiedono di evitare. Mettere ordine non è una fissazione da tecnici, è la condizione per far funzionare [Meta Ads](/servizi/advertising/meta-ads) e Google Ads.",
+      "process": [
+        {
+          "title": "Inventario dei tag",
+          "description": "Scansioniamo sito e contenitori esistenti per elencare ogni script, pixel e cookie: chi lo ha messo, cosa fa, quando parte."
+        },
+        {
+          "title": "Progetto del contenitore",
+          "description": "Definiamo convenzioni di nome, variabili, attivatori, data layer e regole di consenso per ogni categoria di tag."
+        },
+        {
+          "title": "Migrazione in GTM",
+          "description": "Spostiamo i tag utili in Google Tag Manager, rimuoviamo dal codice quelli duplicati o abbandonati e integriamo il banner cookie."
+        },
+        {
+          "title": "Test e pubblicazione",
+          "description": "Verifichiamo ogni tag in modalità anteprima, con consenso accettato e rifiutato, poi pubblichiamo una versione con note."
+        },
+        {
+          "title": "Documentazione",
+          "description": "Ti consegniamo la mappa del contenitore e le istruzioni per aggiungere un tag nuovo senza rompere il resto."
+        }
+      ],
+      "deliverables": [
+        "Inventario completo di tag, pixel e cookie presenti sul sito",
+        "Contenitore Google Tag Manager riorganizzato con convenzioni di nome",
+        "Specifiche del data layer per sviluppatori o piattaforma e-commerce",
+        "Consent Mode v2 configurato e collegato al banner cookie",
+        "Conversioni Google Ads, pixel Meta e altri tag pubblicitari verificati",
+        "Report di test con consenso accettato, parziale e rifiutato",
+        "Documentazione del contenitore e versioni pubblicate con note"
+      ],
+      "body": "## Cos'è Google Tag Manager e perché conviene usarlo\nGoogle Tag Manager (GTM) è uno strumento gratuito di Google che fa da \"centralino\" per tutti gli script di tracciamento di un sito: invece di incollarli uno per uno nel codice, si installa un solo contenitore e da lì si gestisce tutto il resto. Ogni tag ha un attivatore (quando deve partire) e delle variabili (quali dati deve inviare).\n\nI vantaggi pratici sono tre. Primo, il marketing può aggiungere o modificare un tag senza aspettare un rilascio del sito. Secondo, ogni modifica è versionata: se qualcosa si rompe, si torna alla versione precedente in un clic. Terzo, c'è un unico posto dove applicare le regole di consenso, invece di inseguirle su dieci script diversi.\n\nIl rovescio della medaglia: un contenitore GTM disordinato è peggio del codice incollato a mano, perché dà l'illusione del controllo. Abbiamo visto contenitori con centinaia di tag in pausa, nomi come \"Tag 14 copia\" e attivatori che scattano su tutte le pagine. La parte di valore del servizio non è installare GTM, è progettarlo.\n\n## Come strutturiamo il contenitore\nLa risposta breve: convenzioni di nome, data layer e consenso, in quest'ordine.\n\n**Convenzioni di nome.** Ogni elemento dice cosa fa e per quale piattaforma: \"GA4 · evento · generate_lead\", \"Meta · Lead · form contatti\". Chi apre il contenitore fra due anni capisce senza chiederci niente.\n\n**Data layer.** È l'oggetto in cui il sito scrive le informazioni utili al tracciamento: un form inviato, un prodotto aggiunto al carrello, il valore dell'ordine. Leggere i dati dal data layer è molto più robusto che \"pescarli\" dalla pagina con selettori che si rompono al primo restyling. Se il sito è sviluppato su misura scriviamo le specifiche per lo sviluppatore; su Shopify, WooCommerce e i CMS più diffusi usiamo le integrazioni esistenti dove sono affidabili.\n\n**Consenso.** Ogni tag è legato a una categoria (analisi, marketing) e parte solo se quella categoria è stata accettata. In parallelo, Consent Mode v2 comunica a Google lo stato dei quattro segnali previsti: analytics_storage, ad_storage, ad_user_data e ad_personalization.\n\n## Consent Mode v2 e GDPR: un esempio reale\nConsent Mode v2 è il meccanismo con cui un sito comunica ai tag di Google se l'utente ha dato o negato il consenso; dal marzo 2024 Google lo richiede a chi usa i suoi servizi pubblicitari con utenti dello Spazio Economico Europeo. Esistono due modalità: in quella base i tag Google non si caricano finché non c'è consenso; in quella avanzata si caricano ma, senza consenso, inviano solo segnali anonimi senza cookie.\n\nIl sito che stai leggendo è un esempio concreto di approccio prudente. Al primo caricamento i quattro segnali sono impostati su \"negato\". Google Tag Manager non viene nemmeno scaricato finché il visitatore non accetta almeno una categoria non necessaria, e le categorie analisi e marketing sono separate: chi accetta solo le statistiche non attiva i segnali pubblicitari. La scelta viene ricordata per un periodo limitato, poi il banner ricompare.\n\nQuale modalità scegliere dipende dal tuo rischio, dal tuo consulente privacy e da quanto dipendi dalla pubblicità. Noi ti spieghiamo le conseguenze tecniche di ciascuna; la valutazione legale resta al tuo DPO o legale.\n\n## Cosa tracciamo, in pratica\nDipende dal business, ma i casi più frequenti sono questi:\n\n- invio di form, distinguendo il tipo di richiesta;\n- clic su telefono, email e WhatsApp, utilissimi per le attività locali di Rimini, Riccione o Pesaro che ricevono soprattutto chiamate;\n- prenotazioni da motori esterni e iframe, che richiedono attenzione particolare;\n- eventi e-commerce completi, dal prodotto visto all'acquisto;\n- conversioni per [Google Ads](/servizi/advertising/google-ads), Meta, LinkedIn e TikTok, con deduplicazione dove serve.\n\nIl tracciamento lato browser ha però un limite strutturale: adblocker e restrizioni dei browser fanno perdere una parte dei segnali anche quando il consenso c'è. Se la spesa pubblicitaria è rilevante, il passo successivo è il [server-side tracking](/servizi/data-analytics/server-side-tracking). E se GTM deve alimentare una proprietà Analytics ancora da sistemare, conviene partire insieme dalla [configurazione di GA4](/servizi/data-analytics/google-analytics-4).",
+      "faq": [
+        {
+          "question": "Google Tag Manager rallenta il sito?",
+          "answer": "Il contenitore in sé è leggero; a pesare sono i tag che ci metti dentro. Un contenitore ordinato spesso alleggerisce il sito, perché eliminiamo script duplicati e abbandonati. Facciamo partire i tag solo dove servono, non su tutte le pagine. E con il blocco preventivo, chi non dà il consenso non scarica proprio gli script di tracciamento."
+        },
+        {
+          "question": "Posso gestire il contenitore da solo dopo il vostro lavoro?",
+          "answer": "Sì, è uno degli obiettivi. Il contenitore resta sul tuo account e ti lasciamo convenzioni di nome e istruzioni per aggiungere un tag. Per modifiche semplici, come un nuovo pixel o un nuovo form, bastano le istruzioni. Per cambi strutturali al data layer o al consenso consigliamo comunque un controllo, perché un errore lì si propaga a tutte le piattaforme."
+        },
+        {
+          "question": "Il banner cookie è compreso nel servizio?",
+          "answer": "Integriamo il banner con Google Tag Manager e Consent Mode v2, che sia una piattaforma di gestione del consenso esistente o uno sviluppato sul sito, come quello di not4sale. Testi dell'informativa e scelte legali, come durata del consenso e classificazione dei cookie, vanno validati dal tuo consulente privacy: noi facciamo in modo che il comportamento tecnico corrisponda a quelle scelte, e lo verifichiamo con test documentati."
+        },
+        {
+          "question": "Da cosa dipende il costo del tracking con GTM?",
+          "answer": "Dal numero di piattaforme pubblicitarie da collegare, dalla quantità di conversioni da tracciare, da quanto è disordinata la situazione di partenza e dal tipo di sito. Un e-commerce personalizzato che richiede un data layer scritto da zero impegna più di un sito WordPress con un form. Il calcolatore su /preventivo ti dà una prima indicazione."
+        },
+        {
+          "question": "Ho perso l'accesso al vecchio contenitore GTM: che si fa?",
+          "answer": "Si prova prima a recuperarlo tramite chi lo aveva creato o tramite gli altri amministratori dell'account. Se non è possibile, creiamo un nuovo contenitore intestato alla tua azienda, ricostruiamo i tag utili e sostituiamo il codice sul sito. Si perde solo la cronologia delle versioni precedenti, non i dati già raccolti in GA4 o nelle piattaforme pubblicitarie."
+        }
+      ],
+      "related": [
+        "google-analytics-4",
+        "server-side-tracking",
+        "meta-ads",
+        "siti-web"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Tracking con Google Tag Manager e Consent Mode | not4sale",
+      "metaDescription": "Tracking con Google Tag Manager: tag, pixel e conversioni riordinati, Consent Mode v2 e banner integrati, tutto documentato. Richiedi un preventivo."
+    },
+    {
+      "slug": "server-side-tracking",
+      "headline": "Server-side tracking: dati di conversione più completi per le ads",
+      "short": "Tracciamento lato server con GTM server-side e API di conversione: meno segnali persi, più controllo sui dati inviati.",
+      "answer": "Il server-side tracking è un modo di raccogliere i dati in cui il sito invia gli eventi a un server controllato dall'azienda, che li filtra e li inoltra a GA4, Google Ads e Meta. not4sale lo implementa con Google Tag Manager server-side e le API di conversione, sempre nel rispetto del consenso, per ridurre i segnali persi e controllare quali dati escono dal sito.",
+      "problem": "Con il tracciamento classico, ogni pixel gira nel browser del visitatore e parla direttamente con Google, Meta o TikTok. Funziona finché il browser lo lascia fare. Ma gli adblocker bloccano gli script più noti, Safari limita la durata dei cookie impostati via JavaScript, e alcune estensioni tagliano le richieste verso i domini pubblicitari. Una parte delle conversioni, anche di utenti che hanno accettato i cookie, semplicemente non arriva.\n\nPer chi investe in [Meta Ads](/servizi/advertising/meta-ads) o Google Ads il danno è doppio. I report mostrano meno vendite di quelle reali, quindi campagne che rendono sembrano in perdita e vengono spente. E gli algoritmi, che imparano dalle conversioni ricevute, ottimizzano su un campione più piccolo e meno rappresentativo. Nel frattempo, dieci script di terze parti nel browser leggono più dati di quanti ne dovrebbero, e tu non hai modo di filtrarli.",
+      "process": [
+        {
+          "title": "Verifica di fattibilità",
+          "description": "Valutiamo volumi, piattaforme pubblicitarie, stato del tracciamento attuale e consenso, per capire se il server-side ha senso per te."
+        },
+        {
+          "title": "Infrastruttura del server",
+          "description": "Configuriamo il contenitore GTM server-side su un servizio cloud intestato all'azienda, con un sottodominio del tuo sito."
+        },
+        {
+          "title": "Migrazione dei flussi",
+          "description": "Spostiamo GA4, Google Ads e Meta sul server, attiviamo le API di conversione e impostiamo la deduplicazione con gli eventi browser."
+        },
+        {
+          "title": "Controllo e confronto",
+          "description": "Confrontiamo per alcune settimane conversioni registrate, ordini reali e punteggio di qualità degli eventi nelle piattaforme."
+        },
+        {
+          "title": "Monitoraggio e consegna",
+          "description": "Impostiamo avvisi su errori e costi del server e consegniamo la documentazione di architettura e flussi."
+        }
+      ],
+      "deliverables": [
+        "Analisi di fattibilità con raccomandazione scritta su se e cosa spostare lato server",
+        "Contenitore Google Tag Manager server-side configurato su cloud intestato all'azienda",
+        "Sottodominio di tracciamento di prima parte con certificato attivo",
+        "Meta Conversions API e conversioni Google Ads lato server con deduplicazione",
+        "Regole di filtro e minimizzazione dei dati inviati alle piattaforme",
+        "Report di confronto prima e dopo su conversioni e qualità degli eventi",
+        "Documentazione di architettura, accessi e procedure di manutenzione"
+      ],
+      "body": "## Come funziona il server-side tracking\nIl server-side tracking sposta la distribuzione dei dati dal browser a un server. Invece di caricare cinque pixel che parlano ognuno con la propria piattaforma, il sito invia gli eventi a un unico punto, un contenitore di Google Tag Manager server-side ospitato su un sottodominio come \"dati.tuosito.it\". Il server riceve l'evento, lo arricchisce o lo ripulisce, e lo inoltra a GA4, Google Ads, Meta e alle altre piattaforme.\n\nQuesto cambia due cose. La prima è la robustezza: le richieste vanno verso un dominio tuo, non verso quelli pubblicitari che i blocchi conoscono, e i cookie impostati dal server di prima parte hanno vita più lunga di quelli scritti via JavaScript in alcuni browser. La seconda è il controllo: decidi tu, campo per campo, cosa arriva a ciascuna piattaforma. Puoi togliere l'indirizzo IP, eliminare parametri dalle URL, inviare un dato a Google ma non a Meta.\n\nSi affianca alle API di conversione delle piattaforme. La Conversions API di Meta, per esempio, riceve eventi direttamente dal server; per evitare di contare due volte la stessa vendita, browser e server inviano un identificativo comune e la piattaforma deduplica.\n\n## Server-side tracking e consenso: cosa non fa\nIl server-side tracking non è un modo per tracciare chi ha rifiutato i cookie. Lo diciamo chiaro perché in giro c'è chi lo vende così. Le regole del GDPR non cambiano in base a dove gira lo script: se il visitatore nega il consenso al marketing, il server non deve inviare dati identificativi alle piattaforme pubblicitarie.\n\nNella nostra configurazione lo stato del consenso viaggia insieme a ogni evento, e il server applica le stesse regole del browser. È lo stesso principio che usiamo su questo sito, dove Consent Mode v2 parte con tutti i segnali negati e Google Tag Manager si carica solo dopo il consenso. Quello che migliora è la qualità dei dati di chi ha accettato, non la quantità di persone tracciate. In più, il server è un ottimo punto per applicare la minimizzazione dei dati, cioè inviare solo ciò che serve: un principio che il GDPR chiede esplicitamente.\n\n## Quando conviene, e quando no\nLa risposta breve: conviene quando la pubblicità è una voce importante del bilancio e le decisioni dipendono dalle conversioni misurate. Non conviene quando il sito riceve poco traffico o il tracciamento di base è ancora rotto.\n\n| Situazione | Server-side? |\n|---|---|\n| E-commerce con investimento continuativo su Meta e Google | Sì, è il caso tipico |\n| Lead generation B2B con valore per contatto alto | Sì, soprattutto con conversioni offline dal CRM |\n| Sito vetrina di un'attività locale con poche campagne | Di solito no: meglio GA4 e GTM fatti bene |\n| Tracciamento browser con eventi duplicati o mancanti | Prima si sistema quello |\n\nC'è anche un costo ricorrente da considerare: il server gira su un servizio cloud (Google Cloud o un hosting specializzato per GTM server-side) e il canone cresce con il traffico. Non è enorme per la maggior parte delle PMI, ma va messo in conto, insieme a un minimo di manutenzione quando le piattaforme aggiornano le loro API.\n\n## Cosa cambia per le campagne\nCon più conversioni recuperate e dati più ricchi, gli algoritmi di [Google Ads](/servizi/advertising/google-ads) e Meta hanno più segnali su cui ottimizzare. Meta mostra un punteggio di qualità degli eventi (Event Match Quality) che misura quanto bene riesce ad abbinare gli eventi agli utenti: è uno degli indicatori che teniamo d'occhio prima e dopo l'intervento.\n\nIl server-side apre anche alle conversioni offline: un contatto arrivato da una campagna diventa cliente nel CRM settimane dopo, e il server può rimandare quell'informazione alla piattaforma. Per chi vende servizi è spesso il salto di qualità più grande, perché le campagne iniziano a ottimizzare sui contratti e non sui form.\n\nNon promettiamo una percentuale di dati recuperati: dipende dal pubblico, dai browser usati, dal consenso. Promettiamo un confronto onesto prima e dopo. Se il tuo tracciamento di base è ancora da sistemare, il punto di partenza è il [tracking con Google Tag Manager](/servizi/data-analytics/tracking-gtm); se vuoi usare i dati recuperati per capire quale canale vende davvero, il passo naturale sono i [modelli di attribuzione](/servizi/data-analytics/attribuzione).",
+      "faq": [
+        {
+          "question": "Il server-side tracking aggira l'adblock e il rifiuto dei cookie?",
+          "answer": "Riduce l'effetto di adblock e restrizioni dei browser sugli utenti che hanno dato il consenso, ma non deve aggirare il rifiuto: sarebbe una violazione del GDPR, a prescindere da dove gira il codice. Nella nostra configurazione lo stato del consenso accompagna ogni evento e il server lo rispetta. Chi vende il server-side come scorciatoia sul consenso ti espone a un rischio."
+        },
+        {
+          "question": "Quanto costa mantenere il server di tracciamento?",
+          "answer": "C'è un canone del servizio cloud che dipende dal volume di eventi, quindi dal traffico del sito, e dal fornitore scelto. Per la maggior parte delle PMI è una cifra contenuta, ma è ricorrente. Durante la verifica di fattibilità ti diamo una stima sul tuo traffico reale, insieme al costo della configurazione, che dipende da piattaforme e integrazioni."
+        },
+        {
+          "question": "Quanto tempo serve per vedere la differenza nei dati?",
+          "answer": "La configurazione tecnica richiede in genere qualche settimana. Per valutare l'effetto servono poi almeno due o tre settimane di dati a confronto, per assorbire le oscillazioni dei giorni della settimana e delle campagne. Gli algoritmi pubblicitari hanno anche un loro periodo di apprendimento quando cambiano i segnali ricevuti, quindi evitiamo di tirare conclusioni nei primi giorni."
+        },
+        {
+          "question": "Funziona con Shopify, WooCommerce e siti su misura?",
+          "answer": "Sì, con approcci diversi. Su Shopify e WooCommerce esistono integrazioni e app che inviano gli eventi al server; le valutiamo caso per caso, perché non tutte gestiscono bene consenso e deduplicazione. Su un sito o una piattaforma sviluppati su misura scriviamo le specifiche del data layer per gli sviluppatori, o le implementiamo noi se il sito lo realizziamo noi."
+        },
+        {
+          "question": "Devo togliere i pixel dal browser se passo al server-side?",
+          "answer": "Non necessariamente. La configurazione più comune per Meta è ibrida: pixel nel browser e Conversions API dal server, con un identificativo evento comune per la deduplicazione. Per altri tag si può spostare tutto lato server e alleggerire il sito. Decidiamo flusso per flusso, in base a cosa supporta ogni piattaforma e a quanto vuoi ridurre gli script nel browser."
+        }
+      ],
+      "related": [
+        "tracking-gtm",
+        "meta-ads",
+        "attribuzione",
+        "shopify"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Server-side tracking e Conversions API | not4sale",
+      "metaDescription": "Server-side tracking con GTM server-side e Conversions API: dati di conversione più completi per Google e Meta, nel rispetto del consenso. Valutiamolo."
+    },
+    {
+      "slug": "dashboard",
+      "headline": "Dashboard marketing e reportistica automatica: i numeri che contano",
+      "short": "Un cruscotto unico con vendite, lead e spesa pubblicitaria, aggiornato da solo. Pochi numeri, scelti per decidere.",
+      "answer": "Il servizio di dashboard e reportistica di not4sale costruisce un cruscotto unico che raccoglie in automatico i dati di GA4, piattaforme pubblicitarie, e-commerce e CRM, e li mostra in poche viste leggibili. Lo realizziamo con strumenti come Looker Studio, partendo dalle decisioni che il titolare deve prendere ogni settimana, non da tutte le metriche disponibili.",
+      "problem": "Il lunedì mattina il copione è sempre lo stesso. Qualcuno apre Google Ads, poi Meta, poi GA4, poi il pannello dell'e-commerce, copia i numeri in un foglio Excel e prova a farli tornare. Non tornano mai: ogni piattaforma usa definizioni e finestre temporali diverse. Dopo due ore c'è un file che nessuno legge fino in fondo.\n\nOppure c'è il problema opposto: il fornitore di turno manda un PDF mensile di venti pagine pieno di impression, CTR e follower. Sembrano tanti dati, ma nessuno risponde alla domanda vera: quanto ho speso per ogni cliente acquisito, e sta migliorando o peggiorando? Il costo è doppio: ore di lavoro buttate a compilare, e decisioni prese in ritardo o non prese affatto perché il quadro arriva quando è già vecchio. Le vanity metric fanno sentire informati senza informare.",
+      "process": [
+        {
+          "title": "Domande e KPI",
+          "description": "Partiamo da chi leggerà la dashboard e quali decisioni prende. Fissiamo pochi KPI con una definizione scritta e condivisa."
+        },
+        {
+          "title": "Mappa delle fonti",
+          "description": "Individuiamo da dove arriva ogni numero (GA4, ads, e-commerce, CRM, fogli) e come collegarlo in modo automatico."
+        },
+        {
+          "title": "Prototipo",
+          "description": "Costruiamo una prima versione con dati reali e la usiamo insieme per una o due settimane, prima di rifinirla."
+        },
+        {
+          "title": "Versione definitiva",
+          "description": "Sistemiamo viste, filtri, confronti con i periodi precedenti e controlli di coerenza tra le fonti."
+        },
+        {
+          "title": "Avvio dell'uso",
+          "description": "Formazione per chi la legge, invio programmato via email e un controllo dopo un mese per togliere ciò che non serve."
+        }
+      ],
+      "deliverables": [
+        "Documento dei KPI con definizione, formula e fonte di ogni numero",
+        "Dashboard su Looker Studio o strumento concordato, sull'account aziendale",
+        "Connessioni automatiche a GA4, Google Ads, Meta Ads, e-commerce o CRM",
+        "Vista sintetica per la direzione e viste di dettaglio per canale",
+        "Invio programmato del report via email con cadenza scelta",
+        "Sessione di formazione e guida alla lettura della dashboard"
+      ],
+      "body": "## Cos'è una dashboard marketing utile\nUna dashboard marketing è una schermata che mette insieme i dati di più fonti e li aggiorna in automatico, così chi decide vede lo stato delle cose senza aprire cinque piattaforme. Quella utile ha una caratteristica in più: si capisce in trenta secondi. Se per leggerla serve una riunione, è un report travestito.\n\nPer questo non partiamo dagli strumenti né dalle metriche disponibili, che sono centinaia. Partiamo da una domanda: quali decisioni prendi ogni settimana o ogni mese? Aumentare o tagliare il budget su un canale, spingere una linea di prodotto, assumere un commerciale in più. Ogni numero in dashboard deve servire ad almeno una di queste decisioni. Il resto va in una vista di dettaglio, o da nessuna parte.\n\n## Quali numeri mettere in dashboard\nLa risposta breve: pochi, legati al fatturato, sempre con un confronto. Un numero da solo non dice niente; un numero accanto al mese scorso o allo stesso mese dell'anno prima dice se stai andando bene.\n\nUn esempio per un e-commerce:\n\n| Livello | KPI | Perché c'è |\n|---|---|---|\n| Direzione | Fatturato, ordini, valore medio dell'ordine | Lo stato di salute del business |\n| Direzione | Spesa pubblicitaria totale e MER (fatturato diviso spesa marketing) | Quanto rende ogni euro investito, senza le stime delle piattaforme |\n| Marketing | Costo per acquisizione per canale | Dove spostare il budget |\n| Marketing | Tasso di conversione per dispositivo | Dove il sito perde vendite |\n| Operativo | Prodotti più venduti e più abbandonati nel carrello | Su cosa lavorare la prossima settimana |\n\nPer un'azienda di servizi o B2B la struttura cambia: lead per canale, percentuale di lead qualificati, preventivi inviati, contratti chiusi e tempo medio tra primo contatto e firma. Qui il collegamento con il CRM è decisivo, perché il sito vede il contatto ma solo il CRM sa se è diventato cliente.\n\nOgni KPI ha una definizione scritta. \"Lead\" vuol dire form inviato, o anche telefonata? Il fatturato è lordo o al netto dei resi? Sembrano dettagli, ma sono la causa principale delle discussioni sui numeri nelle riunioni.\n\n## Con quali strumenti la costruiamo\nLo strumento più usato è Looker Studio, gratuito, che si collega in modo nativo a GA4, Google Ads, Search Console e Fogli Google. Per Meta Ads, e-commerce e CRM servono connettori, alcuni nativi e altri di terze parti a pagamento, oppure un passaggio intermedio dei dati.\n\nQuando le fonti sono tante o i volumi alti, conviene raccogliere tutto in un archivio unico, per esempio BigQuery, e costruire la dashboard sopra. Per spostare dati da sistemi che non hanno connettori, come alcuni gestionali, usiamo flussi di [automazione con n8n](/servizi/ai-automazione/automazioni-n8n) che portano i numeri dove servono a orari fissi.\n\nLa scelta dipende da quante fonti hai, da chi deve accedere e da quanto storico serve. Non vendiamo uno strumento: scegliamo quello che regge il tuo caso con il minimo di costi ricorrenti. Qualunque sia, la dashboard sta sull'account della tua azienda.\n\n## Una dashboard vale quanto i dati che la alimentano\nUna dashboard bella sopra dati sbagliati è un modo elegante di sbagliare. Prima di costruirla controlliamo che le fonti siano affidabili: eventi GA4 corretti, conversioni non duplicate, consenso gestito bene. Se non lo sono, il lavoro parte dalla [configurazione di Google Analytics 4](/servizi/data-analytics/google-analytics-4) o dal tracking.\n\nC'è poi un limite da conoscere: ogni piattaforma pubblicitaria attribuisce a sé le vendite secondo le proprie regole, e la somma delle vendite dichiarate supera spesso quelle reali. In dashboard mostriamo entrambe le cose, i numeri delle piattaforme e quelli del gestionale, e indichiamo quale usare per decidere. Per capire davvero il contributo di ogni canale servono i [modelli di attribuzione](/servizi/data-analytics/attribuzione).\n\nLavoriamo con aziende di Cattolica, Rimini e di tutta la Romagna, ma una dashboard si progetta benissimo anche da remoto. Se vuoi vedere che tipo di numeri teniamo sotto controllo nei progetti, dai un'occhiata ai [casi studio](/case-studies).",
+      "faq": [
+        {
+          "question": "Che differenza c'è tra una dashboard e i report di GA4?",
+          "answer": "GA4 mostra solo i dati del sito, e i suoi report richiedono un minimo di dimestichezza. Una dashboard mette insieme più fonti, come piattaforme pubblicitarie, e-commerce e CRM, e mostra solo i numeri scelti per le tue decisioni, con definizioni condivise. È pensata per chi non vuole entrare in cinque strumenti diversi ogni lunedì."
+        },
+        {
+          "question": "Ogni quanto si aggiornano i dati?",
+          "answer": "Dipende dalle fonti e dai connettori. I dati di GA4 e Google Ads arrivano a Looker Studio con un ritardo che va da poche ore a circa un giorno; altre fonti si aggiornano a orari programmati. Per decisioni settimanali o mensili è più che sufficiente. Se ti servono numeri quasi in tempo reale, ad esempio durante un lancio, si progetta diversamente."
+        },
+        {
+          "question": "Da cosa dipende il costo di una dashboard?",
+          "answer": "Dal numero di fonti da collegare, dalla presenza di connettori nativi o dalla necessità di un archivio dati intermedio, dal numero di viste e di persone che la useranno, e dallo stato dei dati di partenza. Una dashboard su GA4 e Google Ads è un lavoro diverso da una che unisce e-commerce, tre piattaforme pubblicitarie e CRM. Il calcolatore su /preventivo dà un ordine di grandezza."
+        },
+        {
+          "question": "Posso modificare la dashboard da solo?",
+          "answer": "Sì. Lo strumento è sul tuo account e ti spieghiamo come aggiungere un grafico o un filtro. Il consiglio è non aggiungere numeri senza una definizione: è il modo più veloce per tornare al caos. Molti clienti ci chiedono una revisione periodica, utile quando cambiano obiettivi, canali o organizzazione interna."
+        },
+        {
+          "question": "I numeri della dashboard non coincidono con quelli di Meta Ads: è un errore?",
+          "answer": "Di solito no. Meta attribuisce a sé le conversioni con le proprie finestre temporali e i propri modelli, che contano anche visualizzazioni senza clic; GA4 e il gestionale ragionano in modo diverso. In dashboard affianchiamo i due punti di vista e scriviamo quale usare per quale decisione. Se lo scarto è anomalo, controlliamo il tracciamento."
+        },
+        {
+          "question": "Cosa serve da parte mia per iniziare?",
+          "answer": "Gli accessi in lettura alle fonti (GA4, piattaforme pubblicitarie, e-commerce, CRM) e un'ora con chi prende le decisioni, per capire quali domande deve risolvere la dashboard. Durante la fase di prototipo ti chiediamo di usarla davvero per una o due settimane e dirci cosa manca o cosa non guardi mai."
+        }
+      ],
+      "related": [
+        "google-analytics-4",
+        "attribuzione",
+        "automazioni-n8n",
+        "piano-marketing"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Dashboard marketing e reportistica automatica | not4sale",
+      "metaDescription": "Dashboard marketing automatica con Looker Studio: GA4, ads, e-commerce e CRM in un unico cruscotto con i KPI che servono a decidere. Richiedi un preventivo."
+    },
+    {
+      "slug": "attribuzione",
+      "headline": "Modelli di attribuzione marketing: quale canale porta le vendite",
+      "short": "Capire quale canale porta davvero clienti e fatturato, confrontando modelli, dati reali e test di incrementalità.",
+      "answer": "Il servizio di modelli di attribuzione di not4sale aiuta un'azienda a capire quale canale marketing contribuisce davvero alle vendite. Confrontiamo i dati di GA4, delle piattaforme pubblicitarie e del CRM, scegliamo il modello di attribuzione adatto e, dove serve, progettiamo test di incrementalità. L'obiettivo è decidere dove spostare il budget con meno intuizioni e più prove.",
+      "problem": "Somma le vendite che Google Ads, Meta e TikTok dicono di averti portato il mese scorso. Ora confrontale con gli ordini veri nel gestionale. Quasi sempre la somma è più alta, a volte di parecchio. Non è una truffa: ogni piattaforma conta come propria la vendita se l'utente ha cliccato o visto un suo annuncio, e lo stesso cliente può averli visti tutti.\n\nIl problema è che con questi numeri il budget si sposta male. Il retargeting sembra il canale più redditizio, ma spesso intercetta persone che avrebbero comprato comunque. La campagna che fa conoscere il brand sembra inutile, perché raramente è l'ultimo clic prima dell'acquisto. Taglia quella, e dopo qualche mese scopri che anche il retargeting rende meno: non c'è più nessuno da recuperare. Senza un modo onesto di attribuire il merito, chi grida più forte nei report vince il budget.",
+      "process": [
+        {
+          "title": "Audit delle fonti",
+          "description": "Verifichiamo tracciamento, parametri UTM, collegamenti con il CRM e coerenza tra piattaforme. Senza dati puliti nessun modello regge."
+        },
+        {
+          "title": "Confronto dei modelli",
+          "description": "Mettiamo a confronto modelli diversi sugli stessi dati per vedere quali canali cambiano di peso e perché."
+        },
+        {
+          "title": "Collegamento al fatturato",
+          "description": "Uniamo i dati di marketing a ordini o contratti reali, anche quelli chiusi offline settimane dopo il primo contatto."
+        },
+        {
+          "title": "Test di incrementalità",
+          "description": "Dove i volumi lo consentono, progettiamo test con gruppi di controllo per misurare cosa succede spegnendo o riducendo un canale."
+        },
+        {
+          "title": "Regole di budget",
+          "description": "Traduciamo i risultati in indicazioni operative: quanto spostare, dove, e con quali soglie rivedere la scelta."
+        }
+      ],
+      "deliverables": [
+        "Audit di tracciamento, UTM e collegamento tra marketing e CRM",
+        "Convenzione UTM documentata per tutto il team e i fornitori",
+        "Report di confronto tra modelli di attribuzione con commento",
+        "Collegamento tra lead o ordini e canale di origine nel CRM",
+        "Piano e risultati di almeno un test di incrementalità, se i volumi lo permettono",
+        "Raccomandazioni di allocazione del budget per canale",
+        "Vista di attribuzione integrata nella dashboard aziendale"
+      ],
+      "body": "## Cos'è un modello di attribuzione\nUn modello di attribuzione è la regola con cui si decide quanto merito dare a ciascun canale per una conversione, quando il cliente ne ha toccati più di uno prima di comprare. Un cliente tipo vede un video su Instagram, qualche giorno dopo cerca il brand su Google, legge una newsletter e infine compra da un annuncio di retargeting. Chi ha portato la vendita? Dipende dalla regola che scegli.\n\nI modelli più noti sono questi:\n\n| Modello | Come assegna il merito | Rischio principale |\n|---|---|---|\n| Ultimo clic | Tutto all'ultimo canale cliccato | Sopravvaluta retargeting e ricerche di brand |\n| Primo clic | Tutto al primo contatto | Ignora chi ha chiuso la vendita |\n| Lineare | In parti uguali a tutti i contatti | Tratta allo stesso modo contatti molto diversi |\n| Basato sui dati | Calcolato da un algoritmo sui percorsi reali | Serve volume e resta una scatola nera della piattaforma |\n\nGA4 oggi usa di default il modello basato sui dati, e nel 2023 Google ha eliminato da GA4 e Google Ads la maggior parte dei modelli basati su regole fisse, come quello lineare. È un buon punto di partenza, ma vede solo ciò che passa dal sito e dai canali che GA4 riesce a tracciare.\n\n## Perché non basta scegliere un modello\nLa risposta breve: tutti i modelli di attribuzione distribuiscono il merito, ma nessuno dimostra la causa. Dicono quali canali erano presenti sul percorso di chi ha comprato, non se quella persona avrebbe comprato anche senza.\n\nPer questo lavoriamo su tre livelli, ognuno dei quali corregge i limiti degli altri:\n\n1. **Attribuzione multi-touch** in GA4, con UTM coerenti, per leggere i percorsi giorno per giorno.\n2. **Un numero di controllo indipendente dalle piattaforme**, come il rapporto tra fatturato totale e spesa marketing totale. Se le piattaforme dicono che tutto migliora e questo numero peggiora, qualcosa non torna.\n3. **Test di incrementalità**: si spegne o si riduce un canale per un gruppo di aree geografiche o di utenti, e si confronta con un gruppo di controllo. È il modo più vicino a una prova. Meta e Google offrono strumenti di misurazione del lift; in alternativa si progettano test geografici, con le stesse regole statistiche che usiamo negli [A/B test](/servizi/growth/ab-test).\n\nCon budget e volumi importanti si può arrivare anche al marketing mix modeling, un'analisi statistica sullo storico di spesa e vendite. Va bene per chi ha anni di dati e molti canali, anche offline; per la maggior parte delle PMI è sovradimensionato, e te lo diciamo.\n\n## L'attribuzione nel B2B e nei servizi\nSe vendi servizi o lavori B2B, il problema è diverso: il sito vede il lead, ma la vendita si chiude settimane dopo, al telefono o in riunione. Un canale può portare tanti contatti e pochi contratti, un altro pochi contatti ma ottimi.\n\nQui la chiave è il CRM. Salviamo canale e campagna di origine su ogni contatto, e quando il commerciale segna la trattativa come vinta, quel valore torna nel report e, se utile, alle piattaforme come conversione offline. Con una [consulenza HubSpot](/servizi/crm-email/hubspot) o con il CRM che usi già, l'attribuzione smette di contare form e inizia a contare fatturato. Per far arrivare a Google e Meta queste conversioni in modo affidabile è spesso utile il [server-side tracking](/servizi/data-analytics/server-side-tracking).\n\n## Cosa ottieni, concretamente\nAlla fine non ricevi un modello matematico da incorniciare. Ricevi risposte operative: quale canale è sopravvalutato dai report, quale sottovalutato, quanto budget spostare e con quale prudenza, cosa testare nel prossimo trimestre. Sono decisioni che si rivedono nel tempo, perché i canali cambiano e la concorrenza pure.\n\nÈ lo stesso approccio che ha guidato il lavoro di acquisizione raccontato nei nostri [casi studio](/case-studies): niente vanity metric, solo numeri che spostano fatturato. Se vuoi applicarlo alle tue campagne di [Google Ads](/servizi/advertising/google-ads) e Meta, il primo passo è un audit delle fonti: ti diciamo subito se i tuoi dati sono pronti o se va prima sistemato il tracciamento.",
+      "faq": [
+        {
+          "question": "Perché la somma delle vendite di Google Ads e Meta supera le vendite reali?",
+          "answer": "Perché ogni piattaforma usa le proprie regole e finestre temporali e si attribuisce la vendita se l'utente ha interagito con un suo annuncio. Meta conta anche le visualizzazioni senza clic. Se lo stesso cliente ha visto annunci su entrambe, entrambe se lo prendono. Per questo usiamo un numero di controllo indipendente, basato su ordini reali e spesa totale."
+        },
+        {
+          "question": "Qual è il modello di attribuzione migliore?",
+          "answer": "Non esiste in assoluto. Il modello basato sui dati di GA4 è un buon default quando c'è volume, ma vede solo ciò che GA4 traccia. L'ultimo clic è semplice ma premia sempre il retargeting e le ricerche di brand. Il punto non è scegliere il modello perfetto, è confrontarli e verificare le conclusioni con test di incrementalità quando possibile."
+        },
+        {
+          "question": "Serve molto traffico per fare attribuzione?",
+          "answer": "Per leggere i percorsi in GA4 e collegare marketing e CRM, no: è utile anche a una PMI con poche centinaia di contatti l'anno. Per i test di incrementalità e il modello basato sui dati serve invece un volume minimo di conversioni, altrimenti i risultati sono rumore. Nella fase di audit ti diciamo quali strumenti hanno senso con i tuoi numeri."
+        },
+        {
+          "question": "Da cosa dipende il costo di un progetto di attribuzione?",
+          "answer": "Dal numero di canali e piattaforme, dallo stato del tracciamento e delle UTM, dalla necessità di collegare CRM o gestionale e dal fatto di includere o no test di incrementalità, che richiedono progettazione e settimane di osservazione. Spesso parte con un audit, che chiarisce il resto. Una prima stima arriva dal calcolatore su /preventivo."
+        },
+        {
+          "question": "Quanto tempo serve per avere indicazioni utili sul budget?",
+          "answer": "Le prime indicazioni arrivano dall'audit e dal confronto tra modelli, in poche settimane, a patto che il tracciamento sia affidabile. Un test di incrementalità richiede in genere diverse settimane di osservazione per dare risultati leggibili, più il tempo per prepararlo. Se il tracciamento va rifatto, quel lavoro viene prima."
+        },
+        {
+          "question": "Cosa devo fare io durante il progetto?",
+          "answer": "Darci accesso a GA4, piattaforme pubblicitarie e CRM o gestionale, e coinvolgere chi gestisce le vendite: è lui che sa quando un lead diventa cliente. Se partono test di incrementalità, serve accettare di ridurre per qualche settimana la spesa su un canale in alcune aree. È un piccolo rischio controllato in cambio di una risposta vera."
+        }
+      ],
+      "related": [
+        "dashboard",
+        "server-side-tracking",
+        "google-ads",
+        "hubspot"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Modelli di attribuzione marketing e budget | not4sale",
+      "metaDescription": "Modelli di attribuzione marketing: scopri quale canale porta davvero vendite, con dati GA4, CRM e test di incrementalità. Sposta il budget con prove."
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "area": {
+    "slug": "ecommerce",
+    "headline": "Agenzia e-commerce: negozi online che vendono, non vetrine ferme",
+    "short": "Dal negozio online ai marketplace: progettiamo, lanciamo e facciamo crescere le vendite del tuo e-commerce.",
+    "answer": "not4sale è un'agenzia e-commerce di Cattolica che progetta, sviluppa e gestisce negozi online su Shopify e WooCommerce, apre e segue la vendita su Amazon e marketplace, integra pagamenti e organizza l'assistenza clienti. Lavoriamo con aziende di Romagna, Marche e tutta Italia, partendo dai margini e misurando ogni passaggio, dal carrello al riacquisto.",
+    "body": "## Quando serve un'agenzia e-commerce (e quando no)\n\nServe quando vendere online è diventato, o deve diventare, una voce seria del fatturato. Non serve se cerchi solo \"un sito con il carrello\" da mettere online e dimenticare: quello lo fa qualsiasi piattaforma in un pomeriggio, e di solito resta lì a prendere polvere.\n\nUn e-commerce che vende è un sistema con quattro pezzi che devono stare in piedi insieme:\n\n1. **Il negozio**: piattaforma, catalogo, schede prodotto, checkout.\n2. **Il traffico**: SEO, advertising, social, email. Senza visite il negozio più bello del mondo incassa zero.\n3. **L'operatività**: ordini, magazzino, spedizioni, resi, assistenza.\n4. **I numeri**: margine per prodotto, costo di acquisizione, valore del cliente nel tempo.\n\nQuasi tutti i negozi che vediamo in difficoltà hanno un pezzo forte e tre trascurati. Il nostro lavoro è rimetterli in equilibrio.\n\n## Shopify o WooCommerce: quale piattaforma scegliere?\n\nDipende da catalogo, integrazioni e da chi gestirà il negozio ogni giorno. Non abbiamo una piattaforma del cuore, abbiamo criteri.\n\n| Criterio | Shopify | WooCommerce |\n|---|---|---|\n| Hosting e sicurezza | Inclusi nella piattaforma | A carico tuo (o nostro) |\n| Costi ricorrenti | Abbonamento mensile + app | Hosting + plugin |\n| Personalizzazione | Ampia, dentro le regole di Shopify | Totale, è codice tuo |\n| Contenuti e blog | Base | Forte, è WordPress |\n| Manutenzione | Leggera | Aggiornamenti da seguire |\n\nSe vuoi partire veloce e non pensare ai server, guarda il nostro lavoro su [e-commerce Shopify](/servizi/ecommerce/shopify). Se hai già un sito WordPress ricco di contenuti o integrazioni particolari con il gestionale, probabilmente ha più senso un [e-commerce WooCommerce](/servizi/ecommerce/woocommerce).\n\n## Cosa facciamo nell'area e-commerce\n\n- **Costruzione del negozio** su Shopify o WooCommerce, dal catalogo al checkout.\n- **[Marketplace e Amazon](/servizi/ecommerce/marketplace-amazon)**: apertura account, schede prodotto, logistica e advertising sul marketplace.\n- **[Gestione e-commerce](/servizi/ecommerce/gestione-ecommerce)**: catalogo, promozioni, calendario commerciale e crescita affidati a un team esterno.\n- **[Integrazione pagamenti](/servizi/ecommerce/pagamenti)**: Stripe, PayPal, Satispay, wallet digitali e checkout che non fa scappare nessuno.\n- **[Customer care e-commerce](/servizi/ecommerce/customer-care)**: assistenza organizzata, anche con AI, per rispondere prima e ridurre resi evitabili.\n\nI servizi si combinano. Un negozio nuovo di solito parte da piattaforma e pagamenti; uno già avviato che fattura ma non cresce parte dalla gestione e dai numeri.\n\n## Come lavoriamo sui negozi online\n\nPartiamo dai margini, non dal design. Prima di disegnare una pagina vogliamo sapere quanto guadagni su ogni prodotto, quanto puoi permetterti di spendere per acquisire un cliente e quanti clienti tornano a comprare. Sono i numeri che decidono tutto il resto: quali prodotti spingere, che soglia di spedizione gratuita ha senso, quanto investire in campagne.\n\nPoi applichiamo il nostro metodo: ipotesi, prototipo, test, dato, decisione. Una nuova scheda prodotto è un'ipotesi. Un checkout più corto è un'ipotesi. Le misuriamo con un tracciamento fatto bene (qui entrano in gioco [Google Analytics 4](/servizi/data-analytics/google-analytics-4) e il tracciamento lato server) e teniamo solo quello che sposta il fatturato.\n\nIl traffico arriva da altri servizi dello studio: [SEO per e-commerce](/servizi/seo/seo-ecommerce) per categorie e schede che si posizionano, [Google Shopping](/servizi/advertising/google-shopping) per intercettare chi cerca un prodotto preciso, [email marketing](/servizi/crm-email/email-marketing) per far tornare chi ha già comprato.\n\n## Per chi è\n\nLavoriamo bene con aziende che hanno un prodotto vero e la voglia di metterci le mani: brand DTC (direct-to-consumer, che vendono direttamente al cliente finale), produttori che vogliono smettere di dipendere solo dai rivenditori, negozi fisici di Rimini, Riccione o Pesaro che vogliono vendere anche fuori zona. Siamo meno adatti a chi cerca il prezzo più basso per un tema preconfezionato: in quel caso te lo diciamo subito, senza perdere tempo a vicenda.\n\nVuoi capire che investimento richiede il tuo progetto? Prova il [calcolatore di preventivo](/preventivo) o [scrivici](/contatti): risponde una persona entro 24 ore lavorative.",
+    "faq": [
+      {
+        "question": "Quanto costa realizzare un e-commerce?",
+        "answer": "Dipende soprattutto da quanti prodotti hai, da quante integrazioni servono (gestionale, magazzino, corrieri, marketplace) e da quanto il design deve essere personalizzato. Un catalogo semplice su tema adattato e un negozio con migliaia di varianti collegato all'ERP sono progetti diversi. Il calcolatore su /preventivo ti dà un ordine di grandezza in pochi minuti, poi ne parliamo con i numeri reali."
+      },
+      {
+        "question": "In quanto tempo si va online con un negozio nuovo?",
+        "answer": "Un negozio con catalogo contenuto e integrazioni standard richiede in genere qualche settimana. Se ci sono migrazioni da un'altra piattaforma, collegamenti al gestionale o centinaia di schede da riscrivere, i tempi si allungano. Il collo di bottiglia più frequente non è lo sviluppo: sono foto, testi e dati prodotto che il cliente deve fornire."
+      },
+      {
+        "question": "Mi seguite anche dopo il lancio?",
+        "answer": "Sì, ed è la parte che conta di più. Un e-commerce appena lanciato è un'ipotesi: i dati veri arrivano con i primi ordini. Possiamo seguire la crescita con il servizio di gestione e-commerce, oppure lasciarti autonomo con formazione e documentazione e intervenire solo quando serve. Decidiamo insieme in base a quanto tempo hai internamente."
+      },
+      {
+        "question": "Conviene vendere sul mio sito o su Amazon?",
+        "answer": "Spesso la risposta è entrambi, con ruoli diversi. Amazon porta volumi e clienti che già cercano il prodotto, ma il cliente resta di Amazon e le commissioni pesano sul margine. Il tuo sito costruisce un rapporto diretto, dati e riacquisti. Prima di scegliere guardiamo margini, categoria e concorrenza sul marketplace."
+      },
+      {
+        "question": "Lavorate solo con aziende della Romagna?",
+        "answer": "No. Siamo a Cattolica e lavoriamo volentieri di persona con aziende di Rimini, Riccione, Pesaro e dintorni, ma la maggior parte del lavoro su un e-commerce si fa bene anche da remoto. Abbiamo clienti in tutta Italia e ci organizziamo con call, documenti condivisi e accessi alla piattaforma."
+      }
+    ],
+    "metaTitle": "Agenzia e-commerce Cattolica: Shopify, Amazon | not4sale",
+    "metaDescription": "Agenzia e-commerce a Cattolica: negozi Shopify e WooCommerce, Amazon, pagamenti e customer care costruiti sui margini. Chiedi un preventivo gratuito."
+  },
+  "services": [
+    {
+      "slug": "shopify",
+      "headline": "E-commerce Shopify: negozi su misura, veloci e pronti a scalare",
+      "short": "Progettiamo e sviluppiamo negozi Shopify personalizzati, veloci e collegati ai tuoi strumenti di marketing.",
+      "answer": "Realizziamo e-commerce Shopify su misura: strategia del catalogo, design del tema, sviluppo, configurazione di pagamenti, spedizioni e app, migrazione da altre piattaforme e tracciamento delle conversioni. not4sale, studio di Cattolica, costruisce negozi Shopify pensati per vendere e per crescere senza dover rifare tutto dopo un anno.",
+      "problem": "Aprire un negozio Shopify è facile. Farlo vendere è un altro mestiere. Il copione tipico: tema comprato a poco, dieci app installate \"perché servivano\", schede prodotto con la descrizione del fornitore incollata, nessun evento di conversione tracciato bene. Il risultato è un sito lento, che sembra uguale a mille altri e che non ti dice perché la gente mette nel carrello e poi sparisce.\n\nOgni app in più è un canone mensile e qualche script che rallenta il caricamento. Ogni scheda copiata è una pagina che Google considera duplicata. Ogni carrello abbandonato senza un dato che spieghi il motivo è fatturato perso due volte: non lo incassi e non impari niente per la prossima volta.\n\nE quando le vendite crescono arrivano i problemi veri: varianti che non bastano, mercati esteri, collegamento col magazzino. Se il negozio è stato montato senza un progetto, a quel punto si rifà da capo.",
+      "process": [
+        {
+          "title": "Analisi e margini",
+          "description": "Studiamo catalogo, margini, clienti e concorrenti. Decidiamo cosa vendere in prima pagina e cosa serve davvero al lancio."
+        },
+        {
+          "title": "Architettura del negozio",
+          "description": "Collezioni, filtri, varianti, metafield e navigazione progettati per come il tuo cliente cerca, non per come è organizzato il magazzino."
+        },
+        {
+          "title": "Design e sviluppo tema",
+          "description": "Tema Online Store 2.0 personalizzato o costruito da zero, con sezioni modificabili da te senza toccare codice."
+        },
+        {
+          "title": "Configurazione e integrazioni",
+          "description": "Pagamenti, spedizioni, imposte, app selezionate, collegamento a gestionale, email e canali di vendita."
+        },
+        {
+          "title": "Lancio e ottimizzazione",
+          "description": "Test completi degli ordini, tracciamento verificato, messa online e prime settimane di correzioni guidate dai dati."
+        }
+      ],
+      "deliverables": [
+        "Documento di architettura: collezioni, filtri, struttura URL e navigazione",
+        "Tema Shopify personalizzato con sezioni e blocchi modificabili dal pannello",
+        "Configurazione di pagamenti, spedizioni, imposte e notifiche email",
+        "Migrazione di prodotti, clienti e ordini con mappa dei redirect 301",
+        "Tracciamento GA4 e pixel pubblicitari con eventi di acquisto verificati",
+        "Guida operativa e sessione di formazione per il tuo team"
+      ],
+      "body": "## Perché scegliere Shopify per il tuo e-commerce\n\nShopify è la scelta giusta quando vuoi concentrarti sul vendere e non sui server. Hosting, sicurezza, aggiornamenti e certificato SSL sono gestiti dalla piattaforma, il checkout è collaudato e aggiornato dalla piattaforma e l'ecosistema di app copre quasi ogni esigenza.\n\nHa senso soprattutto se:\n\n- hai un catalogo da poche decine a qualche migliaio di prodotti;\n- vuoi che il tuo team aggiorni prodotti, banner e promozioni in autonomia;\n- prevedi di vendere su più canali (sito, social, marketplace, punto vendita) con un unico magazzino;\n- vuoi aprire mercati esteri con valute e lingue diverse gestite da Shopify Markets.\n\nHa meno senso se il tuo business vive di contenuti editoriali complessi, se hai logiche di prezzo B2B molto particolari o se vuoi il controllo totale del codice. In quei casi ti diciamo onestamente che un [e-commerce WooCommerce](/servizi/ecommerce/woocommerce) o una piattaforma su misura possono funzionare meglio.\n\n## Tema pronto o tema su misura?\n\nDipende da quanto il design deve distinguerti e da quanto budget vuoi mettere nella fase iniziale. Le due strade non si escludono: spesso partiamo da un tema solido e lo personalizziamo dove conta.\n\n| | Tema pronto adattato | Tema su misura |\n|---|---|---|\n| Tempi | Più brevi | Più lunghi |\n| Distintività | Media | Alta |\n| Velocità di caricamento | Dipende dal tema scelto | Controllata riga per riga |\n| Adatto a | Primo lancio, test di mercato | Brand che puntano sul posizionamento |\n\nIn entrambi i casi lavoriamo su Online Store 2.0: le pagine sono fatte di sezioni che puoi spostare, duplicare e modificare dal pannello. Niente telefonate allo sviluppatore per cambiare un banner.\n\n## Le app: meno sono, meglio è\n\nOgni app installata su Shopify aggiunge un costo mensile e, spesso, script che rallentano il negozio. Prima di installarne una ci chiediamo se la stessa funzione si ottiene con le impostazioni native, con i metafield o con poche righe di codice nel tema.\n\nLe app che teniamo sono quelle che fanno un lavoro che non conviene rifare: recensioni, programmi fedeltà, integrazione col gestionale, gestione resi. Le scegliamo guardando impatto sulla velocità, qualità del supporto e cosa succede ai dati se un giorno le disinstalli.\n\n## Migrare a Shopify senza perdere vendite e posizionamento\n\nSi migra in sicurezza quando si mappa prima ogni URL vecchio sul nuovo. Prodotti, clienti e storico ordini si importano; la parte delicata è il traffico organico. Ogni pagina che oggi riceve visite da Google deve avere un redirect 301 verso la nuova pagina equivalente, altrimenti perdi in pochi giorni posizionamenti costruiti in anni.\n\nPer questo, sui progetti di migrazione, lavoriamo insieme a chi si occupa di [migrazione SEO](/servizi/seo/migrazione-seo): crawl del vecchio sito, mappa dei redirect, controllo dopo il lancio e monitoraggio di Search Console nelle settimane successive.\n\n## Dopo il lancio: tracciamento e crescita\n\nUn negozio Shopify appena online non sa ancora niente dei suoi clienti. Il primo lavoro dopo il lancio è far parlare i dati: eventi di acquisto corretti in [Google Analytics 4](/servizi/data-analytics/google-analytics-4), pixel di Meta e Google configurati con le API di conversione, report che mostrano dove si perdono le persone tra scheda, carrello e checkout.\n\nDa lì si cresce con il metodo che usiamo su tutto: un'ipotesi alla volta, misurata. Una scheda prodotto con più foto d'uso, una soglia di spedizione gratuita diversa, un bundle. Quando il negozio comincia a girare, il traffico si costruisce con [SEO per e-commerce](/servizi/seo/seo-ecommerce) e [Google Shopping](/servizi/advertising/google-shopping).\n\nLavoriamo da Cattolica con brand della Romagna e delle Marche e, da remoto, con aziende di tutta Italia. Una nota di trasparenza: non dichiariamo badge o certificazioni che non abbiamo. Ti mostriamo come lavoriamo, per esempio nel [caso di riposizionamento nella fascia premium](/case-studies), e ti lasciamo giudicare.",
+      "faq": [
+        {
+          "question": "Quanto costa un e-commerce Shopify fatto da un professionista?",
+          "answer": "Il costo dipende da tre cose: tema pronto o su misura, numero di prodotti e varianti da caricare, integrazioni con gestionale, magazzino o marketplace. A questo si aggiungono i costi ricorrenti di Shopify (abbonamento e app), che restano tuoi e che ti aiutiamo a tenere bassi. Con il calcolatore su /preventivo hai una prima stima, poi la affiniamo insieme."
+        },
+        {
+          "question": "Posso gestire il negozio da solo dopo la consegna?",
+          "answer": "Sì, è uno degli obiettivi del progetto. Costruiamo il tema a sezioni modificabili dal pannello, così prodotti, banner, collezioni e promozioni li gestisci tu. Alla consegna fai una sessione di formazione con il tuo team e ricevi una guida operativa. Se poi preferisci delegare la gestione quotidiana, c'è il servizio di gestione e-commerce."
+        },
+        {
+          "question": "Il negozio sarà mio o resto legato a voi?",
+          "answer": "Il negozio Shopify è intestato a te fin dal primo giorno: account, dominio, dati dei clienti e tema sono tuoi. Noi lavoriamo con un accesso da collaboratore che puoi revocare quando vuoi. Non teniamo in ostaggio nessuno: se un giorno decidi di cambiare agenzia, ti consegniamo tutto quello che serve."
+        },
+        {
+          "question": "Shopify va bene per vendere anche all'estero?",
+          "answer": "Sì. Con Shopify Markets puoi gestire più paesi con valute, lingue, prezzi e domini o sottocartelle diverse dallo stesso pannello. Restano da sistemare traduzioni di qualità, tasse, spedizioni internazionali e politiche di reso per ogni mercato. Per posizionarti nei motori di ricerca esteri serve anche una configurazione SEO internazionale corretta, con hreflang e contenuti localizzati."
+        },
+        {
+          "question": "Ho già un negozio su un'altra piattaforma: posso passare a Shopify?",
+          "answer": "Sì, e si fa senza ripartire da zero. Importiamo prodotti, clienti e storico ordini, ricostruiamo le pagine principali e prepariamo la mappa dei redirect 301 per non perdere il traffico da Google. Prima di decidere ti diciamo però se la migrazione conviene davvero: a volte il problema non è la piattaforma, ma come è stato costruito il negozio."
+        },
+        {
+          "question": "Cosa vi serve da parte mia per partire?",
+          "answer": "Un referente che conosca prodotti e clienti, i dati di catalogo (anche un file Excel va bene per iniziare), foto e i numeri essenziali: margini, costi di spedizione, politiche di reso. Se mancano testi o immagini di qualità li possiamo produrre noi. Più i dati sono puliti all'inizio, più veloce è il lancio."
+        }
+      ],
+      "related": [
+        "seo-ecommerce",
+        "google-shopping",
+        "pagamenti",
+        "gestione-ecommerce"
+      ],
+      "caseStudies": [
+        "cs-004"
+      ],
+      "metaTitle": "E-commerce Shopify su misura a Cattolica | not4sale",
+      "metaDescription": "E-commerce Shopify su misura: tema, migrazione, app, pagamenti e tracciamento per un negozio veloce che vende. Studio a Cattolica. Chiedi un preventivo."
+    },
+    {
+      "slug": "woocommerce",
+      "headline": "E-commerce WooCommerce integrato con WordPress e i tuoi gestionali",
+      "short": "Negozi WooCommerce veloci, sicuri e collegati a gestionale, magazzino e corrieri, sul WordPress che già conosci.",
+      "answer": "Sviluppiamo e-commerce WooCommerce su WordPress: progettazione del catalogo, tema, plugin selezionati, integrazione con gestionale, magazzino e corrieri, hosting performante e manutenzione. not4sale, studio di marketing di Cattolica, costruisce negozi WooCommerce per aziende che vogliono controllo totale sul codice e sui dati, con un occhio fisso a velocità e sicurezza.",
+      "problem": "WooCommerce ha una reputazione divisa: c'è chi lo considera il modo più flessibile di vendere online e chi lo ricorda come il sito che si è rotto dopo un aggiornamento. Hanno ragione entrambi. Il plugin è solido; il problema è come viene montato.\n\nLo scenario che troviamo più spesso: quaranta plugin installati negli anni da persone diverse, un tema pesante con il page builder che carica tutto su ogni pagina, hosting condiviso scelto perché costava poco, nessun ambiente di prova. Il negozio ci mette secondi a mostrare una scheda prodotto e ogni aggiornamento è una roulette.\n\nNel frattempo gli ordini vanno ricopiati a mano nel gestionale, le giacenze non coincidono e qualcuno vende un prodotto che non c'è. Ogni ora passata a sistemare è un'ora non spesa a vendere, e ogni pagina lenta è un cliente che torna su Google e compra dal concorrente.",
+      "process": [
+        {
+          "title": "Audit e requisiti",
+          "description": "Analizziamo il sito attuale o i requisiti di partenza: catalogo, integrazioni, flussi di ordine e punti deboli tecnici."
+        },
+        {
+          "title": "Architettura tecnica",
+          "description": "Scegliamo tema, plugin indispensabili, hosting e modalità di integrazione col gestionale, documentando ogni scelta."
+        },
+        {
+          "title": "Sviluppo in staging",
+          "description": "Costruiamo il negozio in un ambiente di prova separato, con dati reali, senza toccare il sito che sta vendendo."
+        },
+        {
+          "title": "Integrazioni e test",
+          "description": "Colleghiamo gestionale, corrieri, pagamenti e email, poi simuliamo ordini, resi e casi limite prima del rilascio."
+        },
+        {
+          "title": "Rilascio e manutenzione",
+          "description": "Messa online controllata, monitoraggio, backup automatici e aggiornamenti testati prima di essere applicati."
+        }
+      ],
+      "deliverables": [
+        "Report di audit tecnico con elenco plugin, criticità e priorità",
+        "Tema WooCommerce leggero, personalizzato sul brand",
+        "Integrazione documentata con gestionale, magazzino o ERP",
+        "Configurazione hosting, cache, CDN e backup automatici",
+        "Ambiente di staging per test e aggiornamenti sicuri",
+        "Tracciamento e-commerce in GA4 con eventi di acquisto verificati",
+        "Piano di manutenzione con calendario aggiornamenti"
+      ],
+      "body": "## Quando WooCommerce è la scelta giusta\n\nWooCommerce conviene quando ti servono controllo totale e integrazione profonda con quello che hai già. È un plugin gratuito e open source di WordPress: il codice è tuo, i dati stanno sul tuo server, non c'è un abbonamento alla piattaforma.\n\nÈ la piattaforma che consigliamo più spesso in questi casi:\n\n- hai già un sito WordPress con molti contenuti e posizionamenti da non perdere;\n- il negozio deve parlare con un gestionale italiano, un ERP o un magazzino esterno con logiche particolari;\n- vendi anche B2B, con listini riservati, sconti per cliente o ordini minimi;\n- il blog e i contenuti editoriali sono una parte importante della tua acquisizione.\n\nSe invece vuoi zero pensieri tecnici e una piattaforma che si aggiorna da sola, un [e-commerce Shopify](/servizi/ecommerce/shopify) è probabilmente più adatto. Lo diciamo prima, non dopo.\n\n## Come rendere veloce un negozio WooCommerce\n\nLa velocità di WooCommerce si decide in tre punti: hosting, tema e numero di plugin. Su tutti e tre lavoriamo prima di scrivere una riga di codice.\n\n1. **Hosting dimensionato sul negozio.** Un e-commerce fa query al database a ogni carrello e checkout: l'hosting condiviso da pochi euro non regge. Scegliamo server adatti al traffico previsto, con cache lato server dove si può e CDN per le immagini.\n2. **Tema leggero.** Niente page builder che caricano librerie intere su ogni pagina. Usiamo temi essenziali e costruiamo i blocchi che servono.\n3. **Plugin ridotti all'osso.** Ogni plugin è codice di terzi da aggiornare e un potenziale problema di sicurezza. Prima di installarne uno verifichiamo se la funzione si ottiene con WooCommerce stesso o con poche righe di codice.\n\nAttiviamo anche le funzioni moderne di WooCommerce, come l'archiviazione ordini ad alte prestazioni (HPOS), che sposta gli ordini in tabelle dedicate e alleggerisce il database. La velocità poi si misura, non si dichiara: Core Web Vitals prima e dopo, sulle pagine che contano.\n\n## Integrare WooCommerce con gestionale e magazzino\n\nUn negozio che non parla col gestionale costa ore di lavoro manuale ogni settimana. L'integrazione si fa in tre modi, a seconda di cosa hai:\n\n| Soluzione | Quando ha senso |\n|---|---|\n| Connettore già esistente | Il tuo gestionale ha un plugin WooCommerce affidabile e mantenuto |\n| Sincronizzazione via API | Servono regole su giacenze, prezzi o clienti che il connettore non copre |\n| Flussi di automazione | Più sistemi da collegare: gestionale, corriere, CRM, fatturazione |\n\nPer i flussi tra più sistemi usiamo spesso [automazioni con n8n](/servizi/ai-automazione/automazioni-n8n): ordini che arrivano nel gestionale, etichette dei corrieri generate in automatico, cliente che entra nel CRM con lo storico acquisti. Ogni integrazione viene documentata, così non dipendi dalla memoria di nessuno.\n\n## Sicurezza e manutenzione: la parte che nessuno vuole fare\n\nUn WooCommerce non aggiornato è un rischio, per te e per i dati dei tuoi clienti. La manutenzione non è facoltativa, è il prezzo della flessibilità.\n\nIl nostro approccio: aggiornamenti testati prima in staging e poi applicati al sito vero, backup automatici giornalieri conservati fuori dal server, monitoraggio di disponibilità ed errori, accessi amministrativi con autenticazione a due fattori. Se preferisci affidare tutto, c'è il servizio di [hosting e manutenzione](/servizi/web-app/hosting-manutenzione).\n\n## Il negozio è online: e adesso?\n\nAdesso serve traffico e serve capire cosa fa chi arriva. WooCommerce ha un vantaggio vero sul fronte contenuti: WordPress è nato per pubblicare, e un blog ben fatto collegato alle categorie del negozio può portare visite qualificate per anni. Lo impostiamo insieme alla [SEO per e-commerce](/servizi/seo/seo-ecommerce), lavorando su categorie, filtri indicizzabili e schede prodotto.\n\nCapita spesso, anche tra le aziende di Romagna e Marche, di trovare un WordPress nato come sito vetrina e poi trasformato in negozio un pezzo alla volta. Se è il tuo caso, partiamo da un audit: a volte basta mettere ordine, a volte conviene ricostruire. In entrambi i casi ti spieghiamo perché, con i numeri davanti.",
+      "faq": [
+        {
+          "question": "WooCommerce è gratis? Quali sono i costi reali?",
+          "answer": "Il plugin WooCommerce è gratuito, ma un negozio professionale ha comunque costi ricorrenti: hosting adeguato, eventuali plugin a pagamento (spedizioni, integrazioni, abbonamenti), certificati e manutenzione. Spesso il totale è paragonabile a una piattaforma in abbonamento, con la differenza che hai il controllo completo. Ti facciamo un prospetto dei costi annuali prima di partire."
+        },
+        {
+          "question": "Il mio WooCommerce è lento: si può sistemare o va rifatto?",
+          "answer": "Nella maggior parte dei casi si sistema. Partiamo da un audit che misura velocità e individua i colpevoli: hosting, tema, plugin, immagini, database appesantito. Spesso cambiare hosting e togliere i plugin inutili dà già un miglioramento visibile. Consigliamo di rifare solo quando il tema o le personalizzazioni rendono impossibile aggiornare in sicurezza."
+        },
+        {
+          "question": "Potete collegare WooCommerce al mio gestionale?",
+          "answer": "Quasi sempre sì. Prima verifichiamo se esiste un connettore affidabile per il tuo gestionale; se non c'è o non basta, sincronizziamo i dati tramite API o file di scambio. Decidiamo insieme cosa deve viaggiare e in che direzione: giacenze, prezzi, ordini, clienti, documenti. Ci servono l'accesso tecnico al gestionale e un referente che conosca i vostri flussi."
+        },
+        {
+          "question": "Chi si occupa degli aggiornamenti dopo la messa online?",
+          "answer": "Puoi farli tu, ma te lo sconsigliamo senza un ambiente di prova. Con il piano di manutenzione aggiornamenti di WordPress, WooCommerce e plugin li testiamo in staging e li applichiamo solo quando tutto funziona. In più ci sono backup, monitoraggio e interventi in caso di problemi. Se hai un tecnico interno, gli lasciamo procedure e documentazione."
+        },
+        {
+          "question": "WooCommerce va bene per vendere ad aziende (B2B)?",
+          "answer": "Sì, è uno dei suoi punti forti. Con le configurazioni giuste puoi avere listini per gruppo di clienti, prezzi visibili solo dopo il login, ordini minimi, pagamento con bonifico o a fine mese e un'area riservata con lo storico ordini. Molte di queste funzioni richiedono estensioni o sviluppo dedicato: le definiamo in fase di requisiti, così non ci sono sorprese."
+        }
+      ],
+      "related": [
+        "seo-ecommerce",
+        "hosting-manutenzione",
+        "automazioni-n8n",
+        "pagamenti"
+      ],
+      "caseStudies": [],
+      "metaTitle": "E-commerce WooCommerce: sviluppo e integrazioni | not4sale",
+      "metaDescription": "E-commerce WooCommerce su WordPress: negozi veloci e sicuri, integrati con gestionale, magazzino e corrieri. Studio a Cattolica. Richiedi un preventivo."
+    },
+    {
+      "slug": "marketplace-amazon",
+      "headline": "Vendere su Amazon e marketplace: apertura, schede, logistica e ads",
+      "short": "Apriamo e gestiamo la tua presenza su Amazon e sugli altri marketplace, con schede, logistica e advertising sotto controllo.",
+      "answer": "Ti aiutiamo a vendere su Amazon e sugli altri marketplace: analisi di convenienza, apertura dell'account venditore, schede prodotto ottimizzate, scelta tra logistica Amazon e gestione propria, campagne Amazon Ads e controllo dei margini. not4sale, studio di Cattolica, segue brand e produttori che vogliono usare i marketplace come canale di vendita, non come una scommessa.",
+      "problem": "Su Amazon ci sono già i clienti, ma anche i concorrenti, e le regole le scrive qualcun altro. Molte aziende ci arrivano così: caricano il catalogo con i testi del sito, scelgono un prezzo a occhio, aspettano. Le vendite non partono, oppure partono e a fine mese scoprono che tra commissioni, costi di logistica, resi e pubblicità il margine è sparito.\n\nAltre volte il problema è opposto: qualcun altro vende già i tuoi prodotti sul marketplace, con foto sbagliate e prezzi che rovinano il posizionamento del brand, e tu non hai il controllo della scheda.\n\nPoi ci sono gli imprevisti: un'inserzione sospesa per una categoria che richiede documenti, un account bloccato per metriche di spedizione fuori soglia, la Buy Box (il riquadro \"Aggiungi al carrello\" che si contendono più venditori) persa senza capire perché. Sui marketplace gli errori si pagano in fretta, e spesso in silenzio.",
+      "process": [
+        {
+          "title": "Analisi di convenienza",
+          "description": "Calcoliamo margine netto per prodotto dopo commissioni, logistica e pubblicità, e studiamo la concorrenza nella tua categoria."
+        },
+        {
+          "title": "Apertura e registrazione",
+          "description": "Account venditore, verifica, impostazioni fiscali e, se hai un marchio registrato, iscrizione al Brand Registry."
+        },
+        {
+          "title": "Schede prodotto",
+          "description": "Titoli, punti elenco, immagini, contenuti A+ e parole chiave di backend scritti per la ricerca interna del marketplace."
+        },
+        {
+          "title": "Logistica e lancio",
+          "description": "Scelta tra logistica di Amazon e spedizione in proprio, invio della merce e campagne di lancio sui prodotti di punta."
+        },
+        {
+          "title": "Gestione e crescita",
+          "description": "Monitoraggio di metriche dell'account, recensioni, ACOS e stock, con un report mensile e le decisioni conseguenti."
+        }
+      ],
+      "deliverables": [
+        "Foglio di calcolo margini per prodotto con tutti i costi del marketplace",
+        "Account venditore configurato e, se possibile, Brand Registry attivo",
+        "Schede prodotto ottimizzate con immagini e contenuti A+",
+        "Piano logistico con scelta motivata tra FBA e spedizione propria",
+        "Campagne Amazon Ads strutturate per prodotto e parola chiave",
+        "Report mensile su vendite, margine, ACOS e salute dell'account"
+      ],
+      "body": "## Conviene vendere su Amazon?\n\nConviene quando il margine regge dopo tutti i costi del marketplace e la tua categoria non è dominata da chi vende sottocosto. Per scoprirlo non serve provare a caso: serve un conto.\n\nSu ogni vendita Amazon trattiene una commissione che varia per categoria. Se usi la logistica di Amazon (FBA, Fulfillment by Amazon) paghi anche lo stoccaggio e la gestione dell'ordine. A questo si aggiungono pubblicità, resi e l'eventuale abbonamento al piano venditore. Il nostro primo lavoro è mettere tutte queste voci in un foglio, prodotto per prodotto, e vedere cosa resta.\n\nSpesso il risultato è misto: alcuni prodotti funzionano benissimo, altri conviene tenerli solo sul tuo sito. Va bene così. Amazon non deve sostituire il tuo [e-commerce Shopify](/servizi/ecommerce/shopify) o WooCommerce, deve affiancarlo.\n\n## Seller o Vendor, FBA o spedizione propria\n\nSono le due scelte che determinano margini e carico di lavoro. Le prendiamo con te, non per abitudine.\n\n| Scelta | Opzione A | Opzione B |\n|---|---|---|\n| Modello | Seller: vendi tu, decidi i prezzi | Vendor: vendi ad Amazon, che rivende (su invito) |\n| Logistica | FBA: Amazon stocca e spedisce, accesso facile a Prime | Spedizione propria: più controllo, più lavoro interno |\n| Adatto a | Prodotti piccoli, alta rotazione | Prodotti voluminosi o a bassa rotazione |\n\nLa maggior parte delle PMI parte come Seller. La logistica si decide prodotto per prodotto: un articolo leggero che vende tutti i giorni ha senso in FBA, un mobile ingombrante che vende due volte al mese no.\n\n## Schede prodotto che si trovano e convincono\n\nSu Amazon la scheda è il negozio, la vetrina e il commesso insieme. Il motore di ricerca interno guarda titolo, punti elenco, parole chiave nascoste di backend e, soprattutto, le vendite e la conversione della scheda.\n\nCosa curiamo:\n\n- **Titolo** chiaro con le parole che i clienti cercano davvero, non con lo slogan del brand.\n- **Immagini**: la principale su sfondo bianco come chiedono le regole, poi foto d'uso, dettagli, dimensioni, confronto.\n- **Contenuti A+**, riservati ai brand registrati: moduli grafici sotto la descrizione che rispondono alle obiezioni e raccontano il marchio.\n- **Recensioni**: le stimoliamo solo con gli strumenti consentiti dal marketplace. Recensioni comprate o incentivate violano le regole e mettono a rischio l'account.\n\n## Amazon Ads: pubblicità che deve ripagarsi\n\nSul marketplace la visibilità organica si costruisce anche con la pubblicità. Le campagne Sponsored Products portano vendite, le vendite migliorano il posizionamento, il posizionamento porta altre vendite. Ma se l'ACOS (spesa pubblicitaria divisa per vendite generate) supera il tuo margine, stai pagando per lavorare.\n\nPer questo fissiamo l'ACOS massimo partendo dal foglio margini, non da una media di settore. La gestione delle campagne la seguiamo con il servizio di [Amazon Ads](/servizi/advertising/amazon-ads): struttura per prodotto, parole chiave negative, campagne di brand difensive per non lasciare il tuo nome ai concorrenti.\n\n## Oltre Amazon: gli altri marketplace\n\nAmazon non è l'unico. A seconda del prodotto valutiamo eBay, Zalando per la moda, ManoMano per bricolage e casa, e marketplace verticali di settore. Ognuno ha pubblico, regole e commissioni diverse; aprirne cinque insieme di solito significa gestirne male cinque.\n\nQuando i canali aumentano, il problema diventa tenere allineati catalogo e giacenze. Lo risolviamo con un feed centralizzato o con [automazioni n8n](/servizi/ai-automazione/automazioni-n8n) che sincronizzano ordini e disponibilità con il gestionale. Per un produttore della Romagna o delle Marche con un buon prodotto e nessuna presenza ordinata sui marketplace, spesso è lì che si trova margine non ancora sfruttato. Vuoi capire se vale per te? Il [calcolatore di preventivo](/preventivo) è il primo passo.",
+      "faq": [
+        {
+          "question": "Cosa serve per aprire un account venditore su Amazon?",
+          "answer": "Servono partita IVA, documento d'identità del legale rappresentante, una carta di credito per gli addebiti, un conto corrente per gli incassi e i dati aziendali. Amazon fa una verifica dell'identità che può richiedere qualche giorno. Se vuoi proteggere il marchio e accedere ai contenuti A+ serve anche un marchio registrato per il Brand Registry. Ti guidiamo in ogni passaggio."
+        },
+        {
+          "question": "Quanto margine mi resta vendendo su Amazon?",
+          "answer": "Dipende dalla categoria, dal prezzo, dal peso del prodotto e dalla logistica scelta. Commissioni, costi FBA, pubblicità e resi possono assorbire una parte importante del prezzo di vendita. Per questo partiamo sempre da un foglio di calcolo prodotto per prodotto: ti mostra il margine netto reale e quali articoli conviene portare sul marketplace e quali no."
+        },
+        {
+          "question": "Altri venditori vendono i miei prodotti su Amazon: cosa posso fare?",
+          "answer": "Se hai un marchio registrato, il Brand Registry ti dà più controllo sui contenuti della scheda e strumenti per segnalare violazioni e contraffazioni. Contro i rivenditori autorizzati che vendono prodotti originali il marketplace interviene poco: lì serve rivedere accordi e politiche di distribuzione. Analizziamo la situazione e ti diciamo cosa si può fare davvero."
+        },
+        {
+          "question": "In quanto tempo arrivano le prime vendite?",
+          "answer": "Un prodotto nuovo parte senza storico e senza recensioni, quindi le prime settimane servono a costruire visibilità con campagne pubblicitarie e una scheda curata. I tempi dipendono molto da concorrenza e domanda nella categoria. Non promettiamo date: ti mostriamo ogni mese vendite, posizionamento sulle parole chiave principali e ACOS, così vedi la direzione."
+        },
+        {
+          "question": "Devo gestire io il magazzino e le spedizioni?",
+          "answer": "Non necessariamente. Con FBA mandi la merce nei magazzini Amazon e loro gestiscono spedizione, resi e assistenza sulla consegna, in cambio di un costo per unità e di stoccaggio. Con la spedizione propria tieni tutto in casa. Si possono anche combinare: prodotti ad alta rotazione in FBA, prodotti ingombranti spediti da te."
+        }
+      ],
+      "related": [
+        "amazon-ads",
+        "gestione-ecommerce",
+        "google-shopping",
+        "automazioni-n8n"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Vendere su Amazon e marketplace: gestione | not4sale",
+      "metaDescription": "Vendere su Amazon e marketplace con margini sotto controllo: apertura account, schede prodotto, logistica FBA e Amazon Ads. Studio a Cattolica."
+    },
+    {
+      "slug": "gestione-ecommerce",
+      "headline": "Gestione e-commerce: catalogo, promozioni e crescita affidati a noi",
+      "short": "Un team esterno che gestisce catalogo, promozioni, calendario commerciale e numeri del tuo negozio online, mese dopo mese.",
+      "answer": "La gestione e-commerce di not4sale è un servizio continuativo: un team dello studio di Cattolica si occupa di catalogo, promozioni, calendario commerciale, ottimizzazione delle pagine e analisi dei numeri del tuo negozio online. Tu mantieni prodotto e magazzino, noi facciamo crescere vendite e valore dei clienti con un piano mensile e report trasparenti.",
+      "problem": "Il negozio online c'è, gli ordini arrivano, ma nessuno ha tempo di occuparsene davvero. Succede nelle PMI dove l'e-commerce è \"di tutti\" e quindi di nessuno: il titolare ci guarda la sera, il magazziniere carica i prodotti nuovi quando può, la promozione di Black Friday si decide il mercoledì prima.\n\nIl risultato si vede nei numeri, se qualcuno li guarda. Schede incomplete che convertono poco, prodotti esauriti ancora in evidenza in homepage, sconti a pioggia che erodono il margine senza portare clienti nuovi, email ai clienti inviate quando capita. E soprattutto nessuno sa rispondere a domande semplici: quanto ci costa acquisire un cliente? Quanti tornano a comprare? Quali prodotti ci fanno guadagnare e quali solo fatturare?\n\nAssumere un e-commerce manager senior è un costo fisso importante, e trovarlo è difficile. Lasciare tutto così costa di più, solo che non compare in nessuna fattura.",
+      "process": [
+        {
+          "title": "Check-up iniziale",
+          "description": "Analizziamo negozio, dati di vendita, margini per prodotto e processi interni per capire dove si perde fatturato."
+        },
+        {
+          "title": "Piano e calendario",
+          "description": "Definiamo obiettivi trimestrali e un calendario commerciale con lanci, promozioni e stagionalità del tuo settore."
+        },
+        {
+          "title": "Esecuzione mensile",
+          "description": "Gestiamo catalogo, pagine, promozioni ed email secondo il piano, coordinandoci con chi in azienda segue magazzino e spedizioni."
+        },
+        {
+          "title": "Test e ottimizzazione",
+          "description": "Ogni mese lanciamo esperimenti su schede, carrello e offerte, e teniamo solo quello che migliora i numeri."
+        },
+        {
+          "title": "Report e decisioni",
+          "description": "Un incontro mensile con dati chiari: cosa ha funzionato, cosa no, cosa facciamo il mese dopo."
+        }
+      ],
+      "deliverables": [
+        "Check-up iniziale con margini per prodotto e priorità di intervento",
+        "Calendario commerciale annuale con promozioni e stagionalità",
+        "Gestione mensile di catalogo, schede prodotto e collezioni",
+        "Campagne promozionali ed email ai clienti pianificate e misurate",
+        "Dashboard con fatturato, margine, tasso di conversione e riacquisto",
+        "Report mensile e call di revisione con le decisioni per il mese successivo"
+      ],
+      "body": "## Cosa comprende la gestione di un e-commerce\n\nComprende tutto quello che fa crescere le vendite del negozio, esclusa la parte fisica di magazzino e spedizioni. In pratica facciamo il lavoro di un e-commerce manager, con dietro le competenze di uno studio intero.\n\nLe attività tipiche di un mese:\n\n- **Catalogo**: nuovi prodotti caricati con schede complete, varianti corrette, collezioni aggiornate, prodotti esauriti gestiti senza pagine morte.\n- **Merchandising**: cosa mettere in homepage e in cima alle categorie, in base a margine, stagionalità e disponibilità.\n- **Promozioni**: pianificate in anticipo, con un obiettivo preciso e un limite allo sconto che il margine può sopportare.\n- **Email e CRM**: comunicazioni ai clienti, flussi automatici di carrello abbandonato e post-acquisto, insieme al servizio di [email marketing](/servizi/crm-email/email-marketing).\n- **Ottimizzazione**: test su schede prodotto, carrello e checkout per convertire meglio il traffico che già hai.\n\nNon gestiamo i tuoi pacchi, ma ci coordiniamo con chi lo fa: un prodotto in promozione senza scorte è un problema, non un successo.\n\n## I numeri che guardiamo ogni mese\n\nGuardiamo pochi numeri e li guardiamo bene. Le visite totali e i follower contano poco: contano i numeri che finiscono in banca.\n\n| Metrica | Perché conta |\n|---|---|\n| Margine per ordine | Il fatturato senza margine è solo lavoro in più |\n| Tasso di conversione | Quante visite diventano ordini, per canale e per dispositivo |\n| Valore medio dell'ordine | Bundle, soglie di spedizione e cross-selling lo spostano |\n| Tasso di riacquisto | Un cliente che torna costa molto meno di uno nuovo |\n| Costo di acquisizione | Quanto spendi per ogni cliente nuovo, tutto compreso |\n\nPer fidarci di questi numeri il tracciamento deve essere giusto. Se non lo è, sistemarlo è la prima cosa che facciamo, con il supporto di [dashboard e reportistica](/servizi/data-analytics/dashboard) che si aggiornano da sole.\n\n## Promozioni che non bruciano il margine\n\nUno sconto deve avere un motivo: acquisire clienti nuovi, smaltire stock, aumentare il valore del carrello, riattivare chi non compra da mesi. Ogni motivo vuole una meccanica diversa.\n\nEsempi concreti: per alzare lo scontrino medio funziona meglio una soglia di spedizione gratuita o un bundle rispetto a uno sconto percentuale su tutto. Per riattivare i clienti dormienti funziona un'offerta riservata via email, non un banner visibile a tutti. Per il Black Friday decidiamo a settembre quali prodotti scontare e di quanto, non la settimana prima.\n\n## Come lavoriamo con il tuo team\n\nLavoriamo come un reparto esterno. All'inizio definiamo chi fa cosa: noi gestiamo il negozio e il piano, tu o un tuo collaboratore ci date informazioni su prodotti, arrivi di merce e vincoli operativi. Un canale condiviso per le comunicazioni quotidiane, una call mensile per decidere.\n\nIl metodo è quello di tutto lo studio: ipotesi, test, dato, decisione. Se un esperimento non funziona lo diciamo e lo togliamo. Il risultato più bello di questo approccio l'abbiamo visto con un brand DTC del benessere passato da azienda guidata dal fondatore a macchina di acquisizione: lo trovi tra i [casi studio](/case-studies).\n\n## Per chi ha senso\n\nHa senso per aziende che fatturano già online e vogliono crescere senza assumere subito una figura senior dedicata. Funziona bene anche come ponte: gestiamo noi mentre formiamo una persona interna, poi le passiamo il testimone. Se ti serve invece una guida strategica più ampia, su tutti i canali e non solo sul negozio, guarda il servizio di [temporary marketing manager](/servizi/strategia/temporary-marketing-manager).\n\nSeguiamo negozi di Rimini, Riccione e del resto della Romagna anche di persona, e da remoto in tutta Italia. Il traffico a pagamento lo coordiniamo con chi gestisce [Google Ads](/servizi/advertising/google-ads) e Meta Ads dentro lo studio, così negozio e campagne parlano la stessa lingua.",
+      "faq": [
+        {
+          "question": "Quanto costa far gestire il proprio e-commerce a un'agenzia?",
+          "answer": "Il costo dipende dalla dimensione del catalogo, dal numero di canali (sito, marketplace, email), dalla frequenza di promozioni e lanci e da quante attività restano a voi internamente. È un canone mensile con un perimetro scritto, non un pacchetto a ore indefinito. Il calcolatore su /preventivo ti dà un primo riferimento, poi definiamo insieme il perimetro."
+        },
+        {
+          "question": "Devo avere già un e-commerce avviato?",
+          "answer": "Sì, questo servizio è pensato per negozi che vendono già e vogliono crescere. Se devi ancora costruire il negozio partiamo da un progetto Shopify o WooCommerce, e la gestione può iniziare subito dopo il lancio. Lavorare da subito con lo stesso team evita di perdere informazioni nel passaggio tra chi costruisce e chi gestisce."
+        },
+        {
+          "question": "Che vincolo di durata c'è?",
+          "answer": "Chiediamo un primo periodo di qualche mese, perché i primi trenta giorni servono a capire il negozio e sistemare i dati, e i risultati dei test arrivano dopo. Passato quel periodo il rapporto continua solo se funziona per entrambi. Tutto il lavoro fatto, dai dati ai contenuti, resta tuo in qualsiasi caso."
+        },
+        {
+          "question": "Chi decide promozioni e prezzi?",
+          "answer": "Decidi tu, con la nostra proposta davanti. Prepariamo il calendario commerciale con obiettivi, meccaniche e impatto previsto sul margine, e lo approvi prima che parta qualsiasi promozione. I prezzi di listino restano una tua decisione: noi ti mostriamo i dati su come rispondono le vendite e quali margini stai effettivamente ottenendo."
+        },
+        {
+          "question": "Gestite anche la pubblicità del negozio?",
+          "answer": "La gestione e-commerce si concentra sul negozio: catalogo, conversione, promozioni, clienti. Le campagne su Google, Meta o Amazon sono servizi separati dello studio, ma le coordiniamo dallo stesso piano mensile. Così chi fa le promozioni e chi compra traffico lavorano sugli stessi obiettivi e leggono gli stessi numeri."
+        }
+      ],
+      "related": [
+        "email-marketing",
+        "funnel-cro",
+        "google-shopping",
+        "marketplace-amazon"
+      ],
+      "caseStudies": [
+        "cs-001"
+      ],
+      "metaTitle": "Gestione e-commerce: un team che fa crescere | not4sale",
+      "metaDescription": "Gestione e-commerce in outsourcing: catalogo, promozioni, email e analisi dei numeri con un team dedicato. Studio a Cattolica, report mensili chiari."
+    },
+    {
+      "slug": "pagamenti",
+      "headline": "Integrazione pagamenti e-commerce: Stripe, PayPal, Satispay",
+      "short": "Checkout e metodi di pagamento integrati senza attriti: Stripe, PayPal, Satispay, wallet digitali e pagamenti B2B.",
+      "answer": "L'integrazione pagamenti per e-commerce di not4sale configura metodi e checkout del tuo negozio: Stripe, PayPal, Satispay, Apple Pay e Google Pay, pagamenti a rate, bonifico e soluzioni B2B. Lo studio di Cattolica sceglie i metodi in base ai tuoi clienti, li collega a Shopify, WooCommerce o piattaforme su misura e verifica che pagamenti, rimborsi e riconciliazione funzionino.",
+      "problem": "Il cliente ha scelto il prodotto, ha inserito l'indirizzo, è arrivato al pagamento. E lì se ne va. Il checkout è il punto in cui si perdono le vendite più costose, perché quella persona l'hai già convinta e magari pagata in pubblicità.\n\nI motivi sono quasi sempre gli stessi: manca il metodo che il cliente usa di solito, il pagamento lo porta su una pagina esterna che sembra un'altra azienda, la verifica 3D Secure fallisce sul telefono, i costi di spedizione compaiono solo alla fine. Ognuno di questi attriti costa ordini veri.\n\nDietro le quinte i problemi continuano: commissioni diverse per ogni gateway che nessuno ha mai confrontato, incassi che in contabilità non tornano con gli ordini, rimborsi fatti a mano da tre pannelli diversi, contestazioni (chargeback) gestite in ritardo e perse. Il pagamento sembra una questione tecnica da sistemare una volta. In realtà incide su conversione, margine e lavoro amministrativo ogni giorno.",
+      "process": [
+        {
+          "title": "Analisi del checkout",
+          "description": "Misuriamo dove si abbandona il pagamento, quali metodi usano i tuoi clienti e quanto paghi oggi in commissioni."
+        },
+        {
+          "title": "Scelta dei metodi",
+          "description": "Selezioniamo gateway e metodi in base a pubblico, ticket medio, mercati serviti e piattaforma del negozio."
+        },
+        {
+          "title": "Integrazione e configurazione",
+          "description": "Colleghiamo i provider al negozio, impostiamo autenticazione forte, notifiche, rimborsi e flussi verso la contabilità."
+        },
+        {
+          "title": "Test completi",
+          "description": "Simuliamo pagamenti riusciti, rifiutati, rimborsi e contestazioni su desktop e smartphone prima di andare live."
+        },
+        {
+          "title": "Monitoraggio",
+          "description": "Controlliamo tasso di pagamenti riusciti e abbandoni nelle settimane successive e interveniamo dove serve."
+        }
+      ],
+      "deliverables": [
+        "Analisi del checkout con punti di abbandono e confronto commissioni",
+        "Configurazione di Stripe, PayPal, Satispay e wallet digitali sul negozio",
+        "Checkout ottimizzato per smartphone con autenticazione forte funzionante",
+        "Flusso di riconciliazione tra incassi, ordini e contabilità",
+        "Procedura documentata per rimborsi e gestione delle contestazioni",
+        "Eventi di pagamento tracciati in GA4 per misurare gli abbandoni"
+      ],
+      "body": "## Quali metodi di pagamento offrire nel tuo e-commerce?\n\nQuelli che usano i tuoi clienti, non tutti quelli disponibili. Un checkout con dodici loghi confonde quanto uno con un solo metodo.\n\nPer un negozio italiano che vende al consumatore la base di solito è questa:\n\n- **Carte** di credito e debito, tramite un gateway come Stripe o il sistema nativo della piattaforma.\n- **PayPal**, che molti usano per non inserire i dati della carta su un sito che non conoscono.\n- **Apple Pay e Google Pay**, che sullo smartphone riducono il pagamento a un tocco.\n- **Satispay**, diffuso in Italia e apprezzato soprattutto da un pubblico giovane.\n\nPoi ci sono metodi che dipendono dal settore: pagamento a rate per ticket alti, bonifico per il B2B, contrassegno dove il pubblico lo chiede ancora (con costi e rischi di mancato ritiro da mettere nel conto). Decidiamo guardando i dati del tuo negozio e dei tuoi concorrenti, non una lista standard.\n\n## Stripe, PayPal o il pagamento nativo della piattaforma?\n\nSpesso la risposta è una combinazione. Ogni soluzione ha punti forti diversi.\n\n| Soluzione | Punti forti | Da valutare |\n|---|---|---|\n| Stripe | Molti metodi in un solo contratto, API flessibili, buona gestione dell'autenticazione forte | Integrazione da configurare bene |\n| PayPal | Fiducia del pubblico, pagamento senza inserire la carta | Commissioni e gestione delle contestazioni |\n| Shopify Payments | Integrato nel checkout Shopify, nessuna commissione extra sulle transazioni | Disponibile solo su Shopify |\n| Satispay | Diffuso in Italia, esperienza rapida da app | Pubblico più ristretto |\n\nSu Shopify c'è un dettaglio che molti scoprono tardi: usando gateway di terze parti al posto di Shopify Payments la piattaforma applica una commissione aggiuntiva sulle transazioni, variabile in base al piano. Su WooCommerce invece ogni gateway è un plugin da scegliere e mantenere. Lavoriamo su entrambe le piattaforme, vedi [e-commerce Shopify](/servizi/ecommerce/shopify) e [e-commerce WooCommerce](/servizi/ecommerce/woocommerce).\n\n## Autenticazione forte e 3D Secure senza perdere clienti\n\nDal 2021 in Europa la direttiva PSD2 richiede l'autenticazione forte del cliente (SCA) per molti pagamenti con carta: il classico passaggio con l'app della banca o il codice via SMS. È una tutela utile, ma se implementata male fa fallire pagamenti validi, soprattutto su smartphone.\n\nVerifichiamo che il flusso 3D Secure funzioni bene sui dispositivi più usati dai tuoi clienti, che le esenzioni previste per gli importi bassi siano gestite dal gateway e che, se un pagamento non va a buon fine, il cliente riceva un messaggio comprensibile e la possibilità di riprovare con un altro metodo. Un errore generico al checkout è il modo più veloce per perdere una vendita.\n\n## Dopo il pagamento: rimborsi, contestazioni e contabilità\n\nLa parte invisibile dei pagamenti è quella che ti fa perdere più tempo. Ogni provider ha un pannello, tempi di accredito e report diversi. Se vendi su più canali, far tornare i conti a fine mese diventa un lavoro.\n\nImpostiamo un flusso chiaro: ogni incasso collegato al suo ordine, rimborsi avviati da un solo punto, report esportabili per il commercialista. Dove serve colleghiamo i dati al gestionale con [automazioni n8n](/servizi/ai-automazione/automazioni-n8n). Per le contestazioni prepariamo una procedura: quali prove raccogliere, entro quando rispondere, come ridurre le frodi con i controlli antifrode del gateway.\n\n## Misurare il checkout\n\nUn checkout si migliora solo se si misura. Tracciamo ogni passaggio, dall'avvio del checkout alla scelta del metodo fino al pagamento completato, con [Google Analytics 4](/servizi/data-analytics/google-analytics-4), così vedi dove si perdono le persone e con quale metodo. Da lì partono i test del servizio di [funnel e CRO](/servizi/growth/funnel-cro).\n\nSpesso non serve rivoluzionare niente: a volte basta aggiungere il wallet digitale giusto o sistemare un passaggio di autenticazione che fallisce. Che tu sia a Rimini, a Pesaro o dall'altra parte d'Italia, si parte sempre da lì: sapere dove guardare.",
+      "faq": [
+        {
+          "question": "Quali sono i metodi di pagamento indispensabili per un e-commerce in Italia?",
+          "answer": "Per un negozio che vende al consumatore la base sono carte di credito e debito, PayPal e i wallet digitali come Apple Pay e Google Pay. Satispay e il pagamento a rate hanno senso a seconda di pubblico e prezzo medio. Per il B2B servono bonifico e condizioni di pagamento dedicate. Scegliamo guardando chi compra da te, non una lista generica."
+        },
+        {
+          "question": "Quanto costano le commissioni sui pagamenti?",
+          "answer": "Le commissioni cambiano per provider, tipo di carta, paese del cliente e piattaforma del negozio, e i listini vengono aggiornati periodicamente. Nel nostro lavoro mettiamo a confronto le condizioni attuali dei provider sul tuo volume reale di transazioni, compresi eventuali costi aggiuntivi della piattaforma, così vedi quanto paghi davvero ogni mese e dove si può risparmiare."
+        },
+        {
+          "question": "Posso aggiungere Satispay o Apple Pay al mio negozio esistente?",
+          "answer": "Nella maggior parte dei casi sì, senza rifare il negozio. Apple Pay e Google Pay si attivano spesso tramite il gateway che già usi, come Stripe o Shopify Payments, con la verifica del dominio. Satispay ha integrazioni per le principali piattaforme. Verifichiamo compatibilità con tema e plugin e testiamo tutto prima di attivarlo per i clienti."
+        },
+        {
+          "question": "Perché alcuni pagamenti con carta falliscono al checkout?",
+          "answer": "Le cause più comuni sono l'autenticazione forte (3D Secure) che non si completa su smartphone, fondi o limiti della carta, controlli antifrode troppo rigidi o errori di integrazione del gateway. Analizzando i codici di rifiuto nel pannello del provider capiamo quale caso è il tuo e interveniamo: spesso basta correggere la configurazione o migliorare i messaggi d'errore."
+        },
+        {
+          "question": "Gestite anche i pagamenti per abbonamenti e ordini ricorrenti?",
+          "answer": "Sì. Abbonamenti, ricariche periodiche e ordini ricorrenti richiedono un gateway che supporti il salvataggio sicuro della carta e i pagamenti senza la presenza del cliente, come Stripe. Configuriamo piani, rinnovi, tentativi automatici in caso di pagamento fallito e le email che avvisano il cliente prima che l'abbonamento si interrompa."
+        }
+      ],
+      "related": [
+        "shopify",
+        "woocommerce",
+        "funnel-cro",
+        "tracking-gtm"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Integrazione pagamenti e-commerce: Stripe, PayPal | not4sale",
+      "metaDescription": "Integrazione pagamenti per e-commerce: Stripe, PayPal, Satispay e wallet digitali con un checkout che non fa scappare clienti. Chiedi un preventivo."
+    },
+    {
+      "slug": "customer-care",
+      "headline": "Customer care e-commerce: assistenza clienti organizzata, anche con AI",
+      "short": "Organizziamo l'assistenza clienti del tuo e-commerce, anche con AI, per rispondere prima e ridurre resi e recensioni negative.",
+      "answer": "Il servizio di customer care e-commerce di not4sale organizza l'assistenza clienti del tuo negozio online: canali di contatto, help desk, risposte pronte, gestione dei resi, assistente AI che risponde h24 alle domande ripetitive e analisi delle richieste. Lo studio di Cattolica imposta il sistema e forma il tuo team, per rispondere prima e ridurre resi e recensioni negative.",
+      "problem": "\"Dov'è il mio ordine?\" È la domanda che riceve ogni e-commerce, decine di volte a settimana, su email, WhatsApp, messaggi Instagram e telefono. In molte aziende risponde chi è libero in quel momento, cercando l'ordine in un pannello e il tracciamento in un altro. Alcuni messaggi restano senza risposta per giorni, altri ricevono due risposte diverse.\n\nIl costo non è solo il tempo. Un cliente che aspetta senza notizie apre una contestazione con la banca o scrive una recensione da una stella. Un cliente che non trova la guida taglie ordina tre misure e ne rende due. Un reso gestito male trasforma un cliente recuperabile in uno perso.\n\nE c'è un costo nascosto: le richieste dei clienti sono la miglior ricerca di mercato che hai, gratis. Se nessuno le raccoglie e le legge, continuerai a ricevere le stesse domande sugli stessi problemi, e a pagare gli stessi resi.",
+      "process": [
+        {
+          "title": "Analisi delle richieste",
+          "description": "Leggiamo e classifichiamo un campione di messaggi, resi e recensioni per capire cosa chiedono i clienti e perché."
+        },
+        {
+          "title": "Canali e strumenti",
+          "description": "Scegliamo i canali da presidiare e un help desk che raccolga email, chat e messaggi social in un'unica casella."
+        },
+        {
+          "title": "Risposte e procedure",
+          "description": "Scriviamo risposte pronte, procedure per resi e rimborsi e pagine di aiuto che risolvono prima della domanda."
+        },
+        {
+          "title": "Assistente AI",
+          "description": "Configuriamo un assistente che risponde alle domande ripetitive collegato a ordini e catalogo, e passa il resto a una persona."
+        },
+        {
+          "title": "Misura e miglioramento",
+          "description": "Monitoriamo tempi di risposta, motivi di contatto e resi, e portiamo i problemi ricorrenti a chi può risolverli."
+        }
+      ],
+      "deliverables": [
+        "Mappa dei motivi di contatto e di reso con priorità di intervento",
+        "Help desk configurato con caselle unificate, tag e regole di smistamento",
+        "Libreria di risposte pronte con il tono di voce del brand",
+        "Centro assistenza e FAQ sul sito su spedizioni, resi e taglie",
+        "Assistente AI collegato a ordini e catalogo, con passaggio a operatore",
+        "Procedura resi e rimborsi documentata, con politica conforme alla normativa",
+        "Report mensile su tempi di risposta, motivi di contatto e resi"
+      ],
+      "body": "## Perché il customer care conta per le vendite online\n\nConta perché online il cliente non può chiederti niente a voce prima di comprare, e dopo l'acquisto l'assistenza è l'unico contatto umano che ha con te. È lì che decide se tornare.\n\nUn'assistenza organizzata incide su tre numeri concreti:\n\n1. **Conversione**: chi riceve una risposta rapida prima dell'acquisto compra più volentieri.\n2. **Resi**: informazioni chiare su taglie, misure e compatibilità evitano ordini sbagliati.\n3. **Recensioni**: un problema risolto bene spesso genera una recensione positiva, uno ignorato quasi sempre una negativa.\n\nNon è un costo da comprimere, è una leva commerciale. Va trattata come tale, con dati e obiettivi.\n\n## Come organizziamo l'assistenza clienti di un e-commerce\n\nPartiamo dalle domande, non dagli strumenti. Prendiamo un campione di messaggi degli ultimi mesi e li classifichiamo: stato dell'ordine, taglie, spedizioni all'estero, resi, prodotto difettoso, richieste prima dell'acquisto. Di solito pochi motivi coprono la gran parte dei contatti.\n\nPoi interveniamo in quest'ordine:\n\n- **Prevenire**: pagine di aiuto chiare, email di conferma e spedizione con il link di tracciamento, guide taglie nelle schede prodotto. Ogni domanda evitata è tempo risparmiato.\n- **Centralizzare**: un help desk che raccoglie email, chat del sito, WhatsApp e messaggi social in un'unica coda, con lo storico del cliente e i suoi ordini sotto mano.\n- **Standardizzare**: risposte pronte per i casi frequenti, scritte con il tono del tuo brand e personalizzabili.\n- **Automatizzare**: solo quello che è davvero ripetitivo, con un assistente AI.\n\n## Assistente AI per il customer care: cosa può fare e cosa no\n\nUn assistente AI ben configurato risponde a domande ripetitive a qualsiasi ora: stato dell'ordine, tempi di spedizione, come fare un reso, quale taglia scegliere in base alla tabella misure. Collegato ai dati del negozio, legge l'ordine del cliente e risponde con informazioni vere, non con frasi generiche.\n\nCosa non gli facciamo fare: decidere su rimborsi fuori procedura, gestire clienti arrabbiati, rispondere a domande su cui non ha informazioni. In questi casi passa la conversazione a una persona, con il riepilogo già pronto. Il cliente deve sempre poter parlare con un umano. Lo costruiamo con il nostro servizio di [chatbot e assistenti virtuali](/servizi/ai-automazione/chatbot); per capire cosa ha senso automatizzare puoi leggere anche [cosa automatizzare con l'AI nel marketing](/blog/ai-marketing-cosa-automatizzare).\n\n## Resi: da costo da subire a dato da usare\n\nNell'Unione Europea il consumatore che compra online ha di norma 14 giorni per recedere dall'acquisto senza dover spiegare il motivo. I resi quindi non si eliminano, ma si possono ridurre e gestire meglio.\n\n| Problema | Intervento |\n|---|---|\n| Taglia o misura sbagliata | Guida taglie più chiara, foto con riferimenti, consigli in scheda |\n| Prodotto diverso dalle attese | Foto e descrizioni più fedeli, video d'uso |\n| Arrivato danneggiato | Verifica di imballaggio e corriere |\n| Procedura di reso confusa | Pagina dedicata, modulo semplice, etichetta prepagata dove conviene |\n\nChiedere sempre il motivo del reso, anche se facoltativo, e leggerlo ogni mese è il modo più economico per migliorare schede prodotto e catalogo. Chi gestisce il negozio con il servizio di [gestione e-commerce](/servizi/ecommerce/gestione-ecommerce) riceve questi dati direttamente nel piano mensile.\n\n## Chi risponde ai clienti: voi o noi?\n\nIl nostro lavoro è costruire il sistema e formare chi lo usa. Impostiamo strumenti, risposte, procedure e assistente AI, poi affianchiamo il tuo team nelle prime settimane. Per un brand la voce che risponde ai clienti è parte dell'identità: crediamo che debba restare dentro l'azienda, con processi solidi dietro.\n\nLe richieste raccolte diventano poi materiale per il marketing: le obiezioni più frequenti finiscono nelle schede prodotto, le domande ricorrenti nelle FAQ, i clienti soddisfatti nei flussi di [email marketing](/servizi/crm-email/email-marketing) post-acquisto. Lavoriamo con negozi della Romagna e delle Marche e da remoto con tutta Italia: per un progetto così bastano accessi agli strumenti e un referente che conosca i clienti.",
+      "faq": [
+        {
+          "question": "Un assistente AI può sostituire completamente il customer care?",
+          "answer": "No, e non è l'obiettivo. Un assistente AI gestisce bene le domande ripetitive e con risposta chiara, come stato dell'ordine, spedizioni e procedura di reso, anche di notte e nei weekend. Casi delicati, reclami e decisioni fuori procedura restano a una persona. L'assistente passa la conversazione con il riepilogo pronto, così il tuo team lavora solo dove serve davvero."
+        },
+        {
+          "question": "Quali canali di assistenza deve avere un e-commerce?",
+          "answer": "Pochi, ma presidiati bene. Di solito email e chat sul sito sono la base; WhatsApp e messaggi social si aggiungono se i tuoi clienti li usano già per scriverti. Il telefono ha senso per prodotti complessi o ticket alti. Meglio due canali con risposte entro poche ore che cinque canali in cui i messaggi restano senza risposta."
+        },
+        {
+          "question": "Quanto tempo serve per organizzare il customer care?",
+          "answer": "Dipende da quanti canali e quante richieste gestisci e da quanto è ordinata la situazione di partenza. Analisi, help desk e risposte pronte richiedono in genere qualche settimana; l'assistente AI arriva dopo, quando le informazioni di base sono scritte e verificate. Si può partire per gradi, cominciando dai motivi di contatto più frequenti."
+        },
+        {
+          "question": "Come si riducono i resi di un negozio online?",
+          "answer": "Si parte dai motivi dei resi, raccolti e letti ogni mese. Se il problema sono le taglie servono guide più chiare e consigli in scheda; se il prodotto delude le attese servono foto e descrizioni più fedeli; se arriva danneggiato va rivisto l'imballaggio. Il diritto di recesso resta, ma i resi evitabili si riducono lavorando su informazioni e aspettative."
+        },
+        {
+          "question": "Il servizio funziona con il mio help desk attuale?",
+          "answer": "Nella maggior parte dei casi sì. Se usi già uno strumento di help desk lavoriamo su quello: riorganizziamo caselle, tag e risposte e verifichiamo se si collega al negozio. Se non usi niente, o usi solo una casella email condivisa, ti proponiamo lo strumento più adatto a volumi, canali e piattaforma, spiegandoti costi e alternative."
+        }
+      ],
+      "related": [
+        "chatbot",
+        "gestione-ecommerce",
+        "email-marketing",
+        "community-management"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Customer care e-commerce: assistenza anche con AI | not4sale",
+      "metaDescription": "Customer care per e-commerce: help desk, risposte pronte, gestione resi e assistente AI h24 per rispondere prima e ridurre i resi. Chiedi un preventivo."
+    }
+  ]
+}

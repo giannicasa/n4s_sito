@@ -1,0 +1,104 @@
+"use client";
+import React from "react";
+import { Link } from "@/lib/router";
+import { ArrowUpRight, MapPin } from "lucide-react";
+import { Reveal, RevealLines } from "@/components/site/Reveal";
+import useLocale from "@/hooks/useLocale";
+
+/** @param {{ founders?: any[] }} props */
+const ChiSiamoPage = ({ founders = [] }) => {
+  const { t, r, locale } = useLocale();
+  return (
+    <>
+
+      <section className="relative pt-40 pb-24 md:pt-56 md:pb-32 grain">
+        <div className="max-w-[1600px] mx-auto px-5 md:px-10">
+          <Reveal className="text-[10px] font-mono uppercase tracking-[0.32em] text-violet-400 mb-6">
+            {t.about.kicker}
+          </Reveal>
+          <h1 className="h-display text-white text-6xl sm:text-8xl md:text-[11vw]" data-testid="about-headline">
+            <RevealLines lines={[t.about.headlineLines[0], <><span key="2" className="text-violet-500">{t.about.headlineLines[1]}</span></>]} />
+          </h1>
+          <Reveal delay={0.3} className="mt-12 max-w-3xl text-lg md:text-xl text-neutral-300 leading-relaxed">
+            {t.about.body}
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="py-24 md:py-32 bg-ink-100">
+        <div className="max-w-[1600px] mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10 border border-white/10">
+          {founders.map((f, i) => (
+            <Reveal as="div" key={f.name} delay={i * 0.08} className="bg-ink p-8 md:p-12 hover:bg-violet-900/10 transition-colors group" data-testid={`founder-card-${i}`}>
+              <div className="flex items-start justify-between mb-8">
+                <div className="w-14 h-14 rounded-sm grid place-items-center font-display font-black text-2xl"
+                     style={{ backgroundColor: f.color, color: f.color === "#ffffff" ? "#0a0a0a" : "#ffffff" }}>
+                  {f.name.split(" ").map((n) => n[0]).join("")}
+                </div>
+                <div className="text-right">
+                  <div className="font-display font-black text-violet-500 text-5xl md:text-6xl leading-none tracking-tight">{f.years}</div>
+                  <div className="text-[10px] font-mono uppercase tracking-[0.28em] text-neutral-500 mt-2">{f.yearsLabel}</div>
+                </div>
+              </div>
+              <div className="text-[10px] font-mono uppercase tracking-[0.28em] text-violet-400 mb-3">
+                {f.role}
+              </div>
+              <h2 className="font-display text-3xl md:text-5xl font-black uppercase tracking-tight text-white leading-none mb-6">
+                {f.name}
+              </h2>
+              <p className="text-neutral-300 leading-relaxed max-w-md mb-8">{f.bio}</p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {(f.skills ?? []).map(({ skill: s }) => (
+                  <span key={s} className="text-[10px] font-mono uppercase tracking-[0.18em] text-neutral-300 border border-white/15 px-3 py-1.5 hover:border-violet-500 hover:text-violet-300 transition-colors">
+                    {s}
+                  </span>
+                ))}
+              </div>
+              <div className="pt-6 border-t border-white/10 text-sm font-mono italic text-violet-300/80">
+                « {f.vibe} »
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="py-24 md:py-32">
+        <div className="max-w-[1600px] mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-12">
+          <div className="md:col-span-4">
+            <Reveal className="text-[10px] font-mono uppercase tracking-[0.32em] text-violet-400 mb-6">
+              {t.common.manifesto}
+            </Reveal>
+            <h2 className="h-display text-white text-4xl md:text-6xl">
+              {t.about.manifestoLines[0]}<br />
+              <span className="stroke-text">{t.about.manifestoLines[1]}</span><br />
+              {t.about.manifestoLines[2]}<br />
+              <span className="text-violet-500">{t.about.manifestoLines[3]}</span>
+            </h2>
+          </div>
+          <div className="md:col-span-8 space-y-8 text-neutral-300 text-lg leading-relaxed">
+            {t.about.manifestoP.map((p, i) => (
+              <Reveal key={i} delay={i * 0.1}>{p}</Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 md:py-32 bg-black border-t border-white/5 text-center">
+        <div className="max-w-[1600px] mx-auto px-5 md:px-10">
+          <Reveal className="text-[10px] font-mono uppercase tracking-[0.32em] text-violet-400 mb-6 inline-flex items-center gap-2 justify-center">
+            <MapPin size={12} /> {t.about.seatKicker}
+          </Reveal>
+          <h2 className="h-display text-white text-4xl md:text-[7vw] leading-[0.9]">
+            <RevealLines lines={[t.about.seatLines[0], <span key="2" className="stroke-text-violet">{t.about.seatLines[1]}</span>]} />
+          </h2>
+          <Reveal delay={0.3} className="mt-10 inline-flex">
+            <Link to={r.contact} data-testid="about-cta" className="inline-flex items-center gap-3 px-8 py-5 bg-white text-black font-display font-bold uppercase tracking-[0.18em] text-sm hover:bg-violet-500 hover:text-white transition-colors">
+              {t.about.seatCta} <ArrowUpRight size={18} />
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default ChiSiamoPage;
