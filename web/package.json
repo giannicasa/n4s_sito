@@ -18,7 +18,9 @@
     "test:int": "cross-env NODE_OPTIONS=--no-deprecation vitest run --config ./vitest.config.mts",
     "seed": "cross-env NODE_OPTIONS=--no-deprecation payload run src/seed/index.ts",
     "content:import": "cross-env NODE_OPTIONS=--no-deprecation payload run content/import.ts",
-    "content:validate": "tsx content/validate.mts"
+    "content:validate": "tsx content/validate.mts",
+    "local:import": "cross-env NODE_OPTIONS=--no-deprecation payload run content/local/import-local.ts",
+    "local:validate": "tsx content/local/validate-local.mts"
   },
   "dependencies": {
     "@payloadcms/db-mongodb": "3.90.2",

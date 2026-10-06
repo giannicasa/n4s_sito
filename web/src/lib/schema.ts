@@ -1,4 +1,4 @@
-import type { Author, Company, Post, Service, ServiceArea } from '@/payload-types'
+import type { Author, Company, LocalService, Location, Post, Sector, Service, ServiceArea } from '@/payload-types'
 import { absolute, paths, SITE_URL, type Locale } from './paths'
 
 // Dati strutturati schema.org. Ogni pagina emette un @graph che rimanda
@@ -157,6 +157,58 @@ export const articleNode = (post: Post, locale: Locale): Node => {
       .map((s) => ({ '@type': 'Thing', name: s.title })),
   }
 }
+
+const PROVINCE = { RN: 'Provincia di Rimini', PU: 'Provincia di Pesaro e Urbino' } as const
+
+// Il comune come luogo servito (non come sede: l'unica sede è Cattolica).
+export const cityPlace = (l: Location) => ({
+  '@type': 'City',
+  name: l.name,
+  ...(l.geo?.lat && l.geo?.lng ? { geo: { '@type': 'GeoCoordinates', latitude: l.geo.lat, longitude: l.geo.lng } } : {}),
+  containedInPlace: {
+    '@type': 'AdministrativeArea',
+    name: PROVINCE[l.province as keyof typeof PROVINCE],
+    containedInPlace: { '@type': 'Country', name: 'Italia' },
+  },
+})
+
+export const locationNode = (l: Location): Node => ({
+  '@type': 'Service',
+  '@id': `${absolute(paths.location(l.slug!))}#service`,
+  name: l.headline || `Agenzia di marketing a ${l.name}`,
+  serviceType: 'Marketing e comunicazione',
+  description: l.answer || l.short,
+  url: absolute(paths.location(l.slug!)),
+  provider: { '@id': ORG_ID },
+  areaServed: cityPlace(l),
+})
+
+export const localServiceNode = (ls: LocalService, l: Location, svc: Service): Node => ({
+  '@type': 'Service',
+  '@id': `${absolute(paths.localService(l.slug!, svc.slug!))}#service`,
+  name: ls.headline,
+  serviceType: svc.title,
+  description: ls.answer || ls.short,
+  url: absolute(paths.localService(l.slug!, svc.slug!)),
+  provider: { '@id': ORG_ID },
+  areaServed: cityPlace(l),
+  isRelatedTo: { '@type': 'Service', name: svc.title, url: absolute(paths.service(typeof svc.area === 'object' ? svc.area!.slug! : '', svc.slug!)) },
+})
+
+export const sectorNode = (x: Sector): Node => ({
+  '@type': 'Service',
+  '@id': `${absolute(paths.sector(x.slug!))}#service`,
+  name: x.headline || `Marketing per ${x.title}`,
+  serviceType: 'Marketing e comunicazione',
+  description: x.answer || x.short,
+  url: absolute(paths.sector(x.slug!)),
+  provider: { '@id': ORG_ID },
+  audience: { '@type': 'BusinessAudience', name: x.title },
+  areaServed: [
+    { '@type': 'AdministrativeArea', name: PROVINCE.RN },
+    { '@type': 'AdministrativeArea', name: PROVINCE.PU },
+  ],
+})
 
 export const graph = (...nodes: (Node | null | undefined)[]) => ({
   '@context': 'https://schema.org',

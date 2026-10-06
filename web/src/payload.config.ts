@@ -17,6 +17,9 @@ import { Media } from './collections/Media'
 import { Posts } from './collections/Posts'
 import { ServiceAreas } from './collections/ServiceAreas'
 import { Services } from './collections/Services'
+import { LocalServices } from './collections/LocalServices'
+import { Locations } from './collections/Locations'
+import { Sectors } from './collections/Sectors'
 import { Users } from './collections/Users'
 import { Company } from './globals/Company'
 import { revalidateCollection } from './hooks/revalidate'
@@ -25,7 +28,7 @@ import { absolute, paths } from './lib/paths'
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
-const SEO_COLLECTIONS = ['service-areas', 'services', 'posts', 'case-studies'] as const
+const SEO_COLLECTIONS = ['service-areas', 'services', 'locations', 'local-services', 'sectors', 'posts', 'case-studies'] as const
 
 // Percorso pubblico di un documento: anteprima SEO e pulsante "Anteprima" nell'admin.
 const docPath = async (doc: any, slug: string | undefined, req: any, locale?: string): Promise<string> => {
@@ -44,6 +47,15 @@ const docPath = async (doc: any, slug: string | undefined, req: any, locale?: st
     }
     case 'posts':
       return paths.post(doc.slug, l)
+    case 'locations':
+      return paths.location(doc.slug)
+    case 'sectors':
+      return paths.sector(doc.slug)
+    case 'local-services': {
+      const loc = typeof doc.location === 'object' ? doc.location : await req.payload.findByID({ collection: 'locations', id: doc.location, depth: 0, draft: true })
+      const svc = typeof doc.service === 'object' ? doc.service : await req.payload.findByID({ collection: 'services', id: doc.service, depth: 0, draft: true })
+      return paths.localService(loc?.slug ?? 'comune', svc?.slug ?? 'servizio')
+    }
     default:
       return paths.caseStudies(l)
   }
@@ -88,7 +100,7 @@ export default buildConfig({
     defaultLocale: 'it',
     fallback: false,
   },
-  collections: [ServiceAreas, Services, CaseStudies, Posts, Categories, Authors, Media, Users].map(withPreview),
+  collections: [ServiceAreas, Services, Locations, LocalServices, Sectors, CaseStudies, Posts, Categories, Authors, Media, Users].map(withPreview),
   globals: [Company],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',

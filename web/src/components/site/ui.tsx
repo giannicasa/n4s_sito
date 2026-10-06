@@ -69,3 +69,18 @@ export const formatDate = (iso: string | null | undefined, locale: 'it' | 'en') 
   iso
     ? new Date(iso).toLocaleDateString(locale === 'en' ? 'en-GB' : 'it-IT', { year: 'numeric', month: 'long', day: 'numeric' })
     : ''
+
+export const Chips = ({ items }: { items: { href: string; label: string }[] }) => (
+  <ul className="flex flex-wrap gap-2">
+    {items.map((it) => (
+      <li key={it.href}>
+        <Link
+          href={it.href}
+          className="inline-block text-xs font-mono uppercase tracking-[0.16em] text-neutral-300 border border-white/10 px-3 py-2 hover:border-violet-500 hover:text-violet-400 transition-colors"
+        >
+          {it.label}
+        </Link>
+      </li>
+    ))}
+  </ul>
+)
