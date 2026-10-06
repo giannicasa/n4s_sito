@@ -1,0 +1,106 @@
+[
+ {
+  "slug": "aeo-vs-seo-cosa-cambia",
+  "locale": "it",
+  "title": "AEO vs SEO: cosa cambia davvero per il tuo brand",
+  "subtitle": "Risposte vs ranking. Le AI hanno spostato il gioco.",
+  "excerpt": "La SEO non è morta, ma non è più sola. AEO ottimizza per ChatGPT, Perplexity e AI Overviews. Ecco cosa fare oggi.",
+  "content_md": "## La SEO non è morta. È mutata.\n\nFino a ieri la SEO era una gara a posizionarsi sui motori. Oggi la query non è più solo digitata: viene chiesta. ChatGPT, Perplexity, Gemini, Google AI Overviews rispondono direttamente.\n\nAEO (Answer Engine Optimization) è la disciplina di **essere la risposta**, non il primo link.\n\n## I 3 livelli del gioco oggi\n\n1. **SEO tradizionale** — crawl, render, ranking. Resta la base.\n2. **AEO** — strutturazione contenuti, FAQ, schema, brand entity per essere citati nelle risposte AI.\n3. **GEO** — Generative Engine Optimization: influenzare la 'conoscenza' che i modelli hanno del tuo brand.\n\n## Cosa fare adesso\n\n- Audit della visibilità su ChatGPT + Perplexity (prompt set)\n- Strutturare FAQ + schema.org sui contenuti chiave\n- Brand entity hardening: knowledge panel, Wikipedia/Wikidata, citazioni autoritative\n- Misurare share-of-voice nelle risposte AI\n\nNon serve abbandonare la SEO. Serve estenderla.",
+  "tags": [
+   "AEO",
+   "SEO",
+   "AI"
+  ],
+  "read_minutes": 5
+ },
+ {
+  "slug": "growth-hacking-perche-funziona",
+  "locale": "it",
+  "title": "Growth hacking: perché funziona davvero (e perché spesso no)",
+  "subtitle": "Il problema non è il metodo, è il rituale.",
+  "excerpt": "Il growth hacking funziona quando diventa abitudine ogni settimana. Senza, sono solo trick.",
+  "content_md": "## Non è una tattica. È un rituale.\n\nLa parola 'growth hacking' è stata svuotata. Oggi significa tutto e niente.\n\nL'unica versione che funziona è quella **rituale**: ogni settimana ipotesi, test, dati, decisione.\n\n## Il ciclo che fa la differenza\n\n1. **Ipotesi** — partita da un insight, non da un like su LinkedIn\n2. **Test** — il più piccolo possibile, in 48-72h\n3. **Dato** — pulito, non vanity\n4. **Decisione** — kill, iterate, scale\n\n## Perché spesso fallisce\n\n- Niente sponsor in azienda (il team marketing da solo non basta)\n- Sprint troppo lunghi (mensili, non bi-settimanali)\n- KPI sbagliati (vanity metric)\n- Nessuna disciplina nel chiudere gli esperimenti\n\n## Come iniziare\n\n- North Star Metric chiarissima\n- Backlog di 20+ esperimenti pronto\n- Sprint da 2 settimane, riti fissi\n- Dashboard unica\n\nIn 90 giorni vedi il trend. In 6 mesi hai una macchina.",
+  "tags": [
+   "Growth",
+   "Strategy"
+  ],
+  "read_minutes": 6
+ },
+ {
+  "slug": "brand-strategy-non-e-il-logo",
+  "locale": "it",
+  "title": "Brand strategy non è il tuo logo",
+  "subtitle": "Il logo è la conseguenza, non la causa.",
+  "excerpt": "Confondere brand strategy con identità visiva è il modo più rapido di buttare soldi.",
+  "content_md": "## Il logo è l'ultima cosa\n\nLa brand strategy non è un esercizio creativo. È un esercizio di **posizionamento**.\n\nPrima di un logo servono risposte chiare a:\n- Chi sei davvero?\n- Per chi sei?\n- Contro chi sei?\n- Perché esisti?\n- Cosa cambieresti del tuo mercato?\n\n## I tre layer\n\n1. **Strategy** — posizionamento, audience, manifesto\n2. **Identity** — naming, sistema visivo, tono di voce\n3. **Experience** — come tutto questo vive in ogni touchpoint\n\nUn brand senza il layer 1 è un bel guscio vuoto. Un brand senza il layer 3 è una promessa tradita.\n\n## Errori comuni\n\n- Partire dal logo\n- Copiare i big del settore\n- Comunicare tutto a tutti\n- Cambiare brand ogni 18 mesi perché 'non funziona'\n\nUn brand non funziona quando non c'è strategia, non quando il logo non piace.",
+  "tags": [
+   "Brand"
+  ],
+  "read_minutes": 4
+ },
+ {
+  "slug": "ai-marketing-cosa-automatizzare",
+  "locale": "it",
+  "title": "AI marketing: cosa automatizzare oggi (e cosa no)",
+  "subtitle": "Il delta competitivo è qui. Tre framework pratici.",
+  "excerpt": "Non tutto va automatizzato. Ma quello che va automatizzato, va automatizzato bene.",
+  "content_md": "## Non è hype, è leva\n\nL'AI nel marketing non sostituisce le persone. Le libera dalle attività ripetitive che bruciano ore senza creare valore.\n\n## I 3 livelli pratici\n\n### Livello 1 — Generazione\nDraft di contenuti, prima bozza di brief, prima versione di ad copy. Sempre revisionata da umano.\n\n### Livello 2 — Workflow\nLead qualification automatica, scoring, routing. Agenti che pre-elaborano e portano in agenda solo lead caldi.\n\n### Livello 3 — Sistema\nAgenti permanenti che monitorano competitor, mercato, trend e producono insight settimanali.\n\n## Cosa NON automatizzare\n\n- Conversazioni che chiudono budget importanti\n- Creative direction su progetti hero\n- Decisioni strategiche\n- Reazioni a crisi\n\n## Come iniziare\n\n1. Mappa i processi marketing per ore/settimana\n2. Identifica i 3 più ripetitivi e a basso valore aggiunto\n3. Prototipa un agente per il primo\n4. Misura il tempo recuperato\n5. Itera\n\nIl vantaggio competitivo dell'AI non è 'usare ChatGPT'. È **avere processi**.",
+  "tags": [
+   "AI",
+   "Automation"
+  ],
+  "read_minutes": 6
+ },
+ {
+  "slug": "aeo-vs-seo-whats-changing",
+  "locale": "en",
+  "title": "AEO vs SEO: what's really changing for your brand",
+  "subtitle": "Answers vs rankings. AI shifted the game.",
+  "excerpt": "SEO isn't dead, but it's no longer alone. AEO optimizes for ChatGPT, Perplexity and AI Overviews. Here's what to do now.",
+  "content_md": "## SEO isn't dead. It mutated.\n\nUntil yesterday SEO was a race for ranking. Today, queries aren't just typed — they're asked. ChatGPT, Perplexity, Gemini, Google AI Overviews answer directly.\n\nAEO (Answer Engine Optimization) is the discipline of **being the answer**, not the first link.\n\n## The 3 layers of the game today\n\n1. **Traditional SEO** — crawl, render, ranking. Still the base.\n2. **AEO** — content structure, FAQ, schema, brand entity to be cited in AI answers.\n3. **GEO** — Generative Engine Optimization: influencing how LLMs represent your brand.\n\n## What to do now\n\n- Audit visibility on ChatGPT + Perplexity (prompt set)\n- Structure FAQ + schema.org on key content\n- Brand entity hardening: knowledge panel, Wikipedia/Wikidata, authoritative citations\n- Measure share-of-voice in AI answers\n\nDon't abandon SEO. Extend it.",
+  "tags": [
+   "AEO",
+   "SEO",
+   "AI"
+  ],
+  "read_minutes": 5
+ },
+ {
+  "slug": "growth-hacking-why-it-works",
+  "locale": "en",
+  "title": "Growth hacking: why it really works (and why it often doesn't)",
+  "subtitle": "The issue isn't the method, it's the ritual.",
+  "excerpt": "Growth hacking works when it becomes a weekly ritual. Without it, they're just tricks.",
+  "content_md": "## Not a tactic. A ritual.\n\nThe term 'growth hacking' has been emptied. Today it means everything and nothing.\n\nThe only version that works is the **ritual** one: every week — hypothesis, test, data, decision.\n\n## The cycle that makes the difference\n\n1. **Hypothesis** — born from insight, not a LinkedIn like\n2. **Test** — as small as possible, in 48-72h\n3. **Data** — clean, no vanity\n4. **Decision** — kill, iterate, scale\n\n## Why it often fails\n\n- No internal sponsor (marketing alone isn't enough)\n- Sprints too long (monthly, not bi-weekly)\n- Wrong KPIs (vanity metrics)\n- No discipline closing experiments\n\n## How to start\n\n- Crystal-clear North Star Metric\n- Backlog of 20+ experiments ready\n- 2-week sprints, fixed rituals\n- Single dashboard\n\nIn 90 days you see the trend. In 6 months you have a machine.",
+  "tags": [
+   "Growth",
+   "Strategy"
+  ],
+  "read_minutes": 6
+ },
+ {
+  "slug": "brand-strategy-isnt-your-logo",
+  "locale": "en",
+  "title": "Brand strategy isn't your logo",
+  "subtitle": "The logo is consequence, not cause.",
+  "excerpt": "Confusing brand strategy with visual identity is the fastest way to burn money.",
+  "content_md": "## The logo is the last thing\n\nBrand strategy isn't a creative exercise. It's a **positioning** exercise.\n\nBefore a logo, you need clear answers to:\n- Who are you really?\n- Who are you for?\n- Who are you against?\n- Why do you exist?\n- What would you change in your market?\n\n## The three layers\n\n1. **Strategy** — positioning, audience, manifesto\n2. **Identity** — naming, visual system, tone of voice\n3. **Experience** — how all this lives in every touchpoint\n\nA brand without layer 1 is a pretty empty shell. A brand without layer 3 is a broken promise.\n\n## Common mistakes\n\n- Starting from the logo\n- Copying the big players\n- Communicating everything to everyone\n- Changing brand every 18 months because 'it doesn't work'\n\nA brand doesn't work when there's no strategy, not when you don't like the logo.",
+  "tags": [
+   "Brand"
+  ],
+  "read_minutes": 4
+ },
+ {
+  "slug": "ai-marketing-what-to-automate",
+  "locale": "en",
+  "title": "AI marketing: what to automate today (and what not)",
+  "subtitle": "The competitive delta is here. Three practical frameworks.",
+  "excerpt": "Not everything should be automated. But what should be, must be done well.",
+  "content_md": "## It's not hype, it's leverage\n\nAI in marketing doesn't replace people. It frees them from repetitive tasks that burn hours without creating value.\n\n## The 3 practical levels\n\n### Level 1 — Generation\nContent drafts, first brief versions, first ad copy versions. Always human-reviewed.\n\n### Level 2 — Workflow\nAutomatic lead qualification, scoring, routing. Agents that pre-process and bring only warm leads to your calendar.\n\n### Level 3 — System\nPermanent agents that monitor competitors, market, trends, and produce weekly insights.\n\n## What NOT to automate\n\n- Conversations that close big budgets\n- Creative direction on hero projects\n- Strategic decisions\n- Crisis reactions\n\n## How to start\n\n1. Map your marketing processes by hours/week\n2. Identify the 3 most repetitive, low-value ones\n3. Prototype an agent for the first\n4. Measure recovered time\n5. Iterate\n\nThe AI competitive advantage isn't 'using ChatGPT'. It's **having processes**.",
+  "tags": [
+   "AI",
+   "Automation"
+  ],
+  "read_minutes": 6
+ }
+]

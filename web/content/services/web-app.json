@@ -1,0 +1,618 @@
+{
+  "area": {
+    "slug": "web-app",
+    "headline": "Realizzazione siti web e app a Cattolica: progetti che lavorano per te",
+    "short": "Siti, landing page, web app e app mobile progettati per generare contatti e vendite, non per fare bella figura in riunione.",
+    "answer": "not4sale progetta e sviluppa siti web, landing page, web app e app mobile per aziende di Cattolica, Rimini, Romagna e Marche e da remoto in tutta Italia. Partiamo da obiettivi misurabili, curiamo UX, velocità, SEO tecnica e accessibilità, poi seguiamo hosting e manutenzione perché il progetto continui a funzionare dopo il lancio.",
+    "body": "## Quando serve rifare il sito (e quando no)\n\nServe un nuovo sito web quando quello che hai non ti porta contatti, non si aggiorna senza chiamare qualcuno o non regge il confronto con i concorrenti. Non serve quando il problema è altrove: traffico che non arriva, offerta poco chiara, commerciale che non richiama. Prima di proporti un progetto lo verifichiamo, e se il sito non è il collo di bottiglia te lo diciamo.\n\nUn sito non è una brochure digitale. È il punto in cui pubblicità, SEO, social e passaparola arrivano a destinazione. Se lì le persone non capiscono cosa fai, quanto vale e cosa devono fare dopo, tutto il resto del marketing perde efficacia.\n\n## Cosa realizziamo nell'area Web & App\n\nI servizi sono pezzi di una stessa macchina. Raramente servono tutti insieme, quasi mai ne basta uno a caso.\n\n- **[Realizzazione siti web](/servizi/web-app/siti-web)**: il sito aziendale, dalla struttura dei contenuti allo sviluppo, pensato per trasformare visite in richieste.\n- **[Landing page](/servizi/web-app/landing-page)**: pagine con un solo obiettivo, per campagne a pagamento, lanci ed eventi.\n- **[UX/UI design](/servizi/web-app/ux-ui-design)**: progettazione delle interfacce partendo da come le persone usano davvero il prodotto.\n- **[Web app su misura](/servizi/web-app/web-app)**: portali clienti, gestionali, configuratori e piattaforme che nessun software pronto copre bene.\n- **[App mobile](/servizi/web-app/app-mobile)**: app iOS e Android quando lo smartphone è il canale giusto, e non solo perché \"ce l'hanno tutti\".\n- **[Headless CMS](/servizi/web-app/headless-cms)**: contenuti gestiti da un pannello e distribuiti veloci su sito, app e altri canali.\n- **[Hosting e manutenzione](/servizi/web-app/hosting-manutenzione)**: aggiornamenti, backup, sicurezza e assistenza dopo la messa online.\n- **[Accessibilità web](/servizi/web-app/accessibilita-web)**: siti usabili da tutti e allineati alle WCAG, oggi richieste anche dall'European Accessibility Act.\n\n## Come lavoriamo sui progetti web\n\nIl metodo è lo stesso che usiamo in tutto lo studio: ipotesi, prototipo, test, dato, decisione. Tradotto in un progetto web:\n\n1. **Obiettivo e misura.** Decidiamo cosa deve fare il sito (richieste di preventivo, prenotazioni, vendite, candidature) e come lo misureremo.\n2. **Architettura dei contenuti.** Pagine, gerarchie e testi prima della grafica. Il design veste i contenuti, non il contrario.\n3. **Prototipo.** Wireframe e prototipi cliccabili per verificare il percorso prima di scrivere codice.\n4. **Sviluppo.** Codice pulito, tempi di caricamento bassi, SEO tecnica impostata dall'inizio, tracciamento delle conversioni configurato.\n5. **Lancio e iterazione.** Dopo la messa online guardiamo i dati e correggiamo. Il lancio è l'inizio della parte interessante.\n\nNon abbiamo un template da rivendere a tutti. Per un'attività locale un sito WordPress ben fatto può essere la scelta giusta; per un'azienda con più canali e molti contenuti ha più senso un'architettura headless; per un processo interno complicato serve una web app vera. Niente Ferrari a chi vuole una 500, e niente 500 a chi deve fare la Mille Miglia.\n\n## Siti che si fanno trovare e si misurano\n\nUn sito che nessuno trova è un costo. Per questo struttura, velocità e dati strutturati nascono già pronti per la [SEO tecnica](/servizi/seo/seo-tecnico) e per essere letti dai motori di risposta basati su AI. E un sito che non misura è un sito su cui non puoi decidere: impostiamo [tracciamento e Google Tag Manager](/servizi/data-analytics/tracking-gtm) in modo che ogni richiesta abbia una fonte.\n\nQuando il sito si collega ad altri sistemi (CRM, gestionale, email) usiamo integrazioni dirette o [automazioni con n8n](/servizi/ai-automazione/automazioni-n8n), così i contatti non restano fermi in una casella di posta.\n\n## Per chi è\n\nLavoriamo con PMI, studi professionali, aziende turistiche, startup e brand che vendono online, a Cattolica, Rimini, Riccione, Pesaro e in tutta Italia da remoto. Andiamo d'accordo con chi vuole capire le scelte e misurare i risultati. Se cerchi solo il prezzo più basso per \"un sito qualsiasi\", probabilmente non siamo il fit giusto, e va bene così.\n\nPer farti un'idea dei costi in base al tipo di progetto puoi usare il [calcolatore di preventivo](/preventivo), oppure guardare come abbiamo lavorato nei [casi studio](/case-studies).",
+    "faq": [
+      {
+        "question": "Quanto costa realizzare un sito web o un'app?",
+        "answer": "Dipende da quante pagine e funzioni servono, da chi produce testi e foto, dalle integrazioni con altri sistemi e dal livello di personalizzazione grafica. Un sito vetrina e una web app gestionale sono due mondi diversi. Con il calcolatore su /preventivo ottieni una stima in pochi minuti, poi la affiniamo insieme dopo una prima call."
+      },
+      {
+        "question": "Quanto tempo serve per avere il sito online?",
+        "answer": "Una landing page può essere pronta in poche settimane, un sito aziendale di solito tra le sei e le dieci settimane, una web app o un'app mobile di più, a seconda delle funzioni. Il fattore che rallenta più spesso è la raccolta dei contenuti da parte del cliente: per questo fissiamo scadenze chiare anche per quella parte."
+      },
+      {
+        "question": "Il sito resta mio o dipendo da voi per sempre?",
+        "answer": "Il sito è tuo: dominio intestato a te, accessi consegnati, codice e contenuti di tua proprietà. Puoi scegliere di affidarci hosting e manutenzione, ma non è un vincolo. Lavoriamo con tecnologie diffuse proprio perché un altro professionista possa metterci mano senza ricominciare da capo."
+      },
+      {
+        "question": "Meglio WordPress, un sito headless o uno sviluppo su misura?",
+        "answer": "WordPress va bene per molti siti aziendali con contenuti semplici. Un'architettura headless conviene quando servono velocità, più canali o più lingue. Lo sviluppo su misura ha senso quando il sito diventa uno strumento di lavoro con logiche specifiche. Scegliamo in base a obiettivi, budget e a chi aggiornerà i contenuti."
+      },
+      {
+        "question": "Vi occupate anche di testi, SEO e campagne?",
+        "answer": "Sì. Possiamo scrivere i testi, impostare la SEO e collegare il sito alle campagne pubblicitarie, perché nello studio lavorano insieme strategia, contenuti e advertising. Se hai già un copywriter o un'agenzia per le campagne, ci coordiniamo con loro e ci concentriamo sulla parte web."
+      }
+    ],
+    "metaTitle": "Realizzazione siti web e app a Cattolica | not4sale",
+    "metaDescription": "Siti web, landing page, web app e app mobile a Cattolica e Rimini: progettati per generare contatti e misurati sui dati. Calcola il tuo preventivo."
+  },
+  "services": [
+    {
+      "slug": "siti-web",
+      "headline": "Realizzazione siti web aziendali che portano contatti",
+      "short": "Siti aziendali veloci, chiari e misurabili, progettati per trasformare le visite in richieste di preventivo.",
+      "answer": "La realizzazione di siti web di not4sale comprende strategia, architettura dei contenuti, design, sviluppo, SEO tecnica e tracciamento delle conversioni. Costruiamo siti aziendali per imprese di Cattolica, Rimini e di tutta Italia con un obiettivo preciso: far capire in pochi secondi cosa offri e portare il visitatore a contattarti.",
+      "problem": "Il sito che hai oggi probabilmente è stato fatto anni fa, in fretta, partendo da un tema grafico e riempiendolo di testi scritti per \"esserci\". Il risultato lo conosci: poche richieste, e quelle che arrivano sono spesso fuori target.\n\nI sintomi tipici sono sempre gli stessi:\n\n- in home page si capisce chi sei, non cosa risolvi;\n- da smartphone è lento e il modulo contatti è scomodo;\n- per cambiare una foto devi chiamare qualcuno;\n- non sai quante richieste arrivano dal sito e da quale canale.\n\nIntanto paghi pubblicità e investi su social e passaparola che finiscono proprio lì. Ogni persona che arriva e se ne va senza contattarti è un costo già sostenuto e non recuperato. Il problema non è l'estetica: è che il sito non è stato progettato per fare un lavoro preciso.",
+      "process": [
+        {
+          "title": "Obiettivi e analisi",
+          "description": "Definiamo cosa deve generare il sito e analizziamo il sito attuale, i dati disponibili e i concorrenti diretti."
+        },
+        {
+          "title": "Architettura e contenuti",
+          "description": "Mappa delle pagine, struttura di ogni pagina e testi orientati alle domande dei clienti, prima di qualsiasi grafica."
+        },
+        {
+          "title": "Design e prototipo",
+          "description": "Layout desktop e mobile coerenti con il brand, validati su un prototipo cliccabile prima dello sviluppo."
+        },
+        {
+          "title": "Sviluppo e collaudo",
+          "description": "Sviluppo, ottimizzazione della velocità, SEO tecnica, tracciamento e test su dispositivi e browser reali."
+        },
+        {
+          "title": "Lancio e ottimizzazione",
+          "description": "Messa online con redirect dal vecchio sito, poi analisi dei dati e correzioni nelle settimane successive."
+        }
+      ],
+      "deliverables": [
+        "Documento di obiettivi, KPI e mappa del sito",
+        "Wireframe e prototipo cliccabile desktop e mobile",
+        "Sito sviluppato, collaudato e messo online sul tuo dominio",
+        "Configurazione SEO tecnica: meta tag, sitemap, dati strutturati, redirect",
+        "Tracciamento delle conversioni su GA4 e Google Tag Manager",
+        "Pannello di gestione dei contenuti con breve formazione per il tuo team",
+        "Report di verifica a trenta giorni dal lancio con le prime correzioni"
+      ],
+      "body": "## Cosa rende un sito aziendale efficace\n\nUn sito aziendale efficace fa tre cose in fretta: dice cosa fai e per chi, dimostra che sei credibile e rende facile il passo successivo. Tutto il resto è contorno.\n\nIn pratica significa:\n\n- **Una promessa chiara sopra la piega.** Chi arriva deve capire in pochi secondi se sei la risposta al suo problema.\n- **Prove, non aggettivi.** Lavori fatti, processi, numeri veri, foto reali del team e dei luoghi al posto delle foto di repertorio.\n- **Un'azione evidente per ogni pagina.** Chiamare, scrivere, chiedere un preventivo, prenotare. Una principale, non sei in competizione tra loro.\n- **Velocità e mobile.** La maggior parte delle visite di un'attività locale arriva da smartphone: un sito lento o scomodo lì perde contatti in silenzio.\n\n## Realizzazione siti web: perché partiamo dai contenuti\n\nPartiamo dai contenuti perché il design deve servire il messaggio, non decorare un testo segnaposto. Molti siti nascono al contrario: si sceglie una grafica, poi si cercano parole per riempire i riquadri. Il risultato sembra bello e non convince nessuno.\n\nNoi facciamo prima la mappa delle pagine e la struttura di ognuna, partendo da cosa chiedono davvero i tuoi clienti al telefono o in negozio. Le domande ricorrenti diventano sezioni, le obiezioni diventano risposte, i dubbi sui tempi diventano un processo spiegato. Se serve, i testi li scrive il nostro [servizio di copywriting](/servizi/content/copywriting); altrimenti lavoriamo sui tuoi, con un editing serio.\n\nQuesto approccio ha anche un effetto SEO: le pagine nascono già organizzate intorno a quello che le persone cercano su Google e chiedono agli assistenti AI.\n\n## Quale tecnologia usiamo\n\nUsiamo la tecnologia più semplice che risolve bene il problema. Non abbiamo un CMS da rivendere a tutti.\n\n| Situazione | Scelta tipica | Perché |\n|---|---|---|\n| Sito vetrina, pochi aggiornamenti, budget contenuto | WordPress ben configurato | Diffuso, facile da gestire, tanti professionisti in grado di metterci mano |\n| Molti contenuti, più lingue, priorità alla velocità | Architettura [headless](/servizi/web-app/headless-cms) | Pannello comodo per chi scrive, front-end veloce e flessibile |\n| Il sito è anche uno strumento di lavoro | [Web app su misura](/servizi/web-app/web-app) | Logiche, aree riservate e integrazioni che un CMS standard non gestisce bene |\n| Vendita online | Shopify o WooCommerce | Gestiti nell'area e-commerce dello studio |\n\nIn ogni caso il dominio è intestato a te e consegniamo tutti gli accessi.\n\n## Rifare il sito senza perdere posizionamenti\n\nRifare un sito che ha già traffico organico senza un piano di redirect è il modo più rapido per perdere posizioni su Google. Prima del lancio mappiamo le pagine esistenti che portano visite e link, e impostiamo i reindirizzamenti verso le nuove. Per siti con molte pagine indicizzate o con un cambio di dominio, il lavoro si fa con un percorso dedicato di [migrazione SEO](/servizi/seo/migrazione-seo).\n\nNei giorni dopo la messa online controlliamo Search Console, errori 404 e andamento delle visite, così i problemi si sistemano prima che diventino cali visibili.\n\n## Dopo il lancio: misurare e correggere\n\nIl sito viene misurato dal primo giorno: moduli inviati, clic su telefono e WhatsApp, prenotazioni, download. Configuriamo GA4 e Google Tag Manager in modo che ogni contatto abbia una fonte. Così puoi capire se le richieste arrivano da Google, dalle campagne o dai social, e smettere di decidere a sensazione.\n\nCon i dati in mano si vede dove le persone si fermano. A quel punto si interviene sulle pagine chiave, e quando il traffico lo permette si passa a un lavoro strutturato di [funnel e CRO](/servizi/growth/funnel-cro). È così che abbiamo lavorato su progetti come quelli raccolti nei [casi studio](/case-studies), dove il sito era una leva tra altre e non un fine.",
+      "faq": [
+        {
+          "question": "Quanto costa realizzare un sito web aziendale?",
+          "answer": "Il costo dipende dal numero di pagine e template, da chi scrive i testi, da foto e video, dalle lingue e dalle integrazioni con CRM o gestionali. Un sito vetrina di poche pagine e un sito multilingua con area riservata hanno budget molto diversi. Il calcolatore su /preventivo ti dà una stima iniziale, che poi precisiamo dopo aver visto il progetto."
+        },
+        {
+          "question": "Quanto tempo serve per realizzare il sito?",
+          "answer": "Per un sito aziendale contiamo di solito da sei a dieci settimane, dalla prima analisi alla messa online. I tempi si allungano se i contenuti arrivano a rilento o se servono integrazioni complesse. Nel piano di lavoro indichiamo le scadenze di entrambe le parti, così sai in anticipo quando ti chiederemo testi, foto e approvazioni."
+        },
+        {
+          "question": "Cosa devo preparare io prima di iniziare?",
+          "answer": "Servono gli accessi a dominio, hosting e statistiche attuali, il materiale di brand che hai (logo, colori, foto) e un'ora del tuo tempo per raccontarci clienti, servizi e obiezioni più frequenti. Testi e foto possiamo produrli noi; se preferisci scriverli tu, ti diamo una struttura da seguire pagina per pagina."
+        },
+        {
+          "question": "Potrò aggiornare il sito da solo?",
+          "answer": "Sì. Ogni sito ha un pannello per modificare testi, immagini, pagine e articoli senza toccare codice. Alla consegna facciamo una sessione di formazione con chi se ne occuperà e lasciamo una breve guida. Le modifiche strutturali, come nuove sezioni o funzioni, restano un lavoro di sviluppo che puoi affidarci o affidare a chi vuoi."
+        },
+        {
+          "question": "Il nuovo sito sarà già ottimizzato per Google?",
+          "answer": "Sì per la parte tecnica: velocità, struttura dei titoli, meta tag, sitemap, dati strutturati e redirect dal vecchio sito sono inclusi. Il posizionamento su ricerche competitive però richiede anche contenuti e autorità nel tempo, che sono un lavoro SEO continuativo. Ti diciamo con chiarezza cosa è compreso nel sito e cosa no."
+        },
+        {
+          "question": "Lavorate solo con aziende di Cattolica e Rimini?",
+          "answer": "No. Molti clienti sono in Romagna e nelle Marche, e con loro ci vediamo volentieri di persona, ma lavoriamo da remoto con aziende di tutta Italia. Riunioni in videochiamata, prototipi condivisi online e un referente unico rendono la distanza un dettaglio. Chi segue la trattativa è anche chi lavora sul progetto."
+        }
+      ],
+      "related": [
+        "ux-ui-design",
+        "copywriting",
+        "seo-tecnico",
+        "hosting-manutenzione"
+      ],
+      "caseStudies": [
+        "cs-004",
+        "cs-005"
+      ],
+      "metaTitle": "Realizzazione siti web aziendali | not4sale",
+      "metaDescription": "Realizzazione siti web aziendali a Cattolica e Rimini: contenuti, design, SEO tecnica e tracciamento per trasformare visite in contatti. Chiedi una stima."
+    },
+    {
+      "slug": "landing-page",
+      "headline": "Landing page che convertono: una pagina, un obiettivo",
+      "short": "Landing page per campagne, lanci ed eventi: un solo obiettivo, testi mirati e test continui per abbassare il costo per contatto.",
+      "answer": "Una landing page è una pagina costruita per far compiere un'unica azione, come lasciare un contatto, prenotare o acquistare, a chi arriva da una campagna. not4sale progetta landing page con testi, design, sviluppo e tracciamento integrati, e le ottimizza con test A/B per ridurre il costo di ogni conversione.",
+      "problem": "Mandare il traffico delle campagne sulla home page è come invitare qualcuno a cena e aprirgli la porta del garage. Chi ha cliccato su un annuncio preciso trova un menu, dieci servizi, il blog, la storia dell'azienda. Si perde, e se ne va.\n\nSuccede continuamente: si investe su Google Ads o Meta Ads, si guardano clic e CTR, e intanto la pagina di destinazione è generica, lenta, con un modulo di otto campi e nessuna risposta alle obiezioni. Il costo per contatto sale e la conclusione è sempre la stessa, sbagliata: \"le campagne non funzionano\".\n\nSpesso le campagne funzionano benissimo, fino al clic. È dopo che il budget si disperde. Una landing page dedicata, coerente con l'annuncio e misurata bene, è spesso l'intervento con il ritorno più rapido che puoi fare sul marketing a pagamento.",
+      "process": [
+        {
+          "title": "Offerta e pubblico",
+          "description": "Chiariamo chi arriva, da quale annuncio, con quale dubbio, e quale azione unica deve compiere."
+        },
+        {
+          "title": "Copy e struttura",
+          "description": "Scriviamo titolo, argomentazioni, prove e risposte alle obiezioni prima di disegnare la pagina."
+        },
+        {
+          "title": "Design e sviluppo",
+          "description": "Pagina leggera, veloce da mobile, con modulo essenziale e tracciamento degli eventi configurato."
+        },
+        {
+          "title": "Lancio collegato",
+          "description": "Colleghiamo la pagina a campagne, CRM o email automatiche e verifichiamo che ogni conversione venga registrata."
+        },
+        {
+          "title": "Test e iterazione",
+          "description": "Test A/B su titolo, offerta o modulo quando i volumi lo permettono, mantenendo solo ciò che migliora i numeri."
+        }
+      ],
+      "deliverables": [
+        "Brief di pagina con pubblico, offerta e obiezioni principali",
+        "Testi completi della landing e varianti di titolo da testare",
+        "Landing page sviluppata, ottimizzata per mobile e online",
+        "Eventi di conversione configurati per GA4 e piattaforme pubblicitarie",
+        "Integrazione del modulo con CRM, email o foglio condiviso",
+        "Piano di test A/B con ipotesi in ordine di priorità",
+        "Report dei risultati con raccomandazioni per la versione successiva"
+      ],
+      "body": "## Cos'è una landing page e in cosa è diversa dal sito\n\nUna landing page è una pagina di destinazione con un solo obiettivo e nessuna distrazione. Il sito aziendale deve servire tanti visitatori diversi; la landing serve una persona precisa, arrivata da un annuncio preciso, con una domanda precisa.\n\n| | Sito aziendale | Landing page |\n|---|---|---|\n| Obiettivo | Presentare l'azienda e più servizi | Una sola conversione |\n| Navigazione | Menu completo | Assente o ridotta al minimo |\n| Pubblico | Eterogeneo | Uno specifico segmento |\n| Durata | Anni | Una campagna, un lancio, una stagione |\n| Come si misura | Contatti totali, traffico | Tasso di conversione e costo per contatto |\n\nPer questo una landing non sostituisce il [sito web aziendale](/servizi/web-app/siti-web): lavorano insieme. Il sito costruisce fiducia nel tempo, la landing raccoglie il risultato di una campagna.\n\n## Come costruiamo una landing page che converte\n\nUna landing che converte risponde alle domande del visitatore nell'ordine in cui se le pone. Prima \"è per me?\", poi \"perché dovrei crederci?\", poi \"cosa succede se lascio i miei dati?\".\n\nLa struttura tipica che usiamo come punto di partenza, poi adattata all'offerta:\n\n1. **Titolo coerente con l'annuncio.** Se l'annuncio promette una consulenza gratuita sul tetto fotovoltaico, la pagina parla di quello, con le stesse parole.\n2. **Il beneficio concreto** in una frase, e il dettaglio di cosa si ottiene.\n3. **Prove**: casi, numeri reali, recensioni verificabili, foto vere.\n4. **Obiezioni affrontate**: tempi, costi da cosa dipendono, cosa succede dopo il contatto.\n5. **Un modulo corto**, con solo i campi che il commerciale usa davvero.\n\nI testi li scriviamo noi, insieme al tuo commerciale quando possibile: è lui che sa quali dubbi bloccano le vendite. Le landing più efficaci nascono dalle telefonate, non dalle riunioni.\n\n## Landing page per Google Ads, Meta Ads e lanci\n\nOgni canale porta un visitatore con una mentalità diversa, e la pagina deve tenerne conto.\n\n- **Da [Google Ads](/servizi/advertising/google-ads)** arriva chi sta già cercando: vuole risposte rapide, prezzi orientativi, tempi, rassicurazioni. Pagine dirette, con l'azione subito visibile.\n- **Da [Meta Ads](/servizi/advertising/meta-ads)** arriva chi non stava cercando nulla: serve più contesto, più storia, più prova sociale prima di chiedere un contatto.\n- **Per lanci ed eventi** la pagina lavora su una data: posti limitati, programma, iscrizione semplice, promemoria automatici.\n\nQuando le campagne sono più di una, conviene una pagina per ogni segmento o offerta. Costa qualche ora in più e di solito si ripaga nel costo per contatto.\n\n## Misurare e testare: la landing non è mai finita\n\nUna landing page si giudica sul tasso di conversione e sul costo per contatto, non su quanto piace al team. Per questo il tracciamento è parte del lavoro: ogni invio di modulo, clic sul telefono o prenotazione viene registrato in GA4 e passato alle piattaforme pubblicitarie, così gli algoritmi ottimizzano sulle conversioni vere.\n\nQuando il traffico è sufficiente avviamo [test A/B](/servizi/growth/ab-test): una variabile alla volta, ipotesi scritta prima, decisione presa sui dati. Con volumi bassi un A/B test non dà risposte affidabili, e allora lavoriamo su registrazioni delle sessioni, mappe di calore e domande dirette al commerciale.\n\n## Cosa succede ai contatti dopo il modulo\n\nUn contatto che aspetta due giorni una risposta è un contatto che nel frattempo ha chiamato qualcun altro. Colleghiamo il modulo al tuo CRM o, se non ne hai uno, a un sistema semplice di notifica e smistamento, anche con [automazioni n8n](/servizi/ai-automazione/automazioni-n8n). Email di conferma, assegnazione al commerciale giusto, promemoria se nessuno ha richiamato.\n\nSembrano dettagli, ma pesano. Nel progetto per uno studio di servizi professionali che trovi tra i [casi studio](/case-studies), web design, funnel e un agente AI che qualifica i lead lavoravano insieme: la pagina era solo il primo anello.",
+      "faq": [
+        {
+          "question": "Quanto costa una landing page?",
+          "answer": "Dipende da quanto lavoro di copy serve, dal numero di varianti, dalle integrazioni con CRM o automazioni e dal fatto che sia una pagina singola o una serie per più campagne. Molto incide anche se c'è una gestione dei test nelle settimane successive. Per una stima puoi usare il calcolatore su /preventivo."
+        },
+        {
+          "question": "In quanto tempo è pronta una landing page?",
+          "answer": "Una landing singola con testi, design, sviluppo e tracciamento si realizza di solito in due o tre settimane, approvazioni comprese. Se c'è una scadenza stretta, come un evento o un lancio, possiamo comprimere i tempi lavorando su una struttura già collaudata e rimandando le varianti di test alla settimana successiva al lancio."
+        },
+        {
+          "question": "Posso usare una pagina del mio sito invece di una landing?",
+          "answer": "A volte sì, se la pagina parla esattamente dell'offerta pubblicizzata, ha un'azione chiara e un modulo semplice. Spesso però le pagine del sito sono pensate per un pubblico più ampio e hanno troppe uscite. Possiamo verificare insieme i dati attuali: se la pagina converte bene, non ha senso rifarla."
+        },
+        {
+          "question": "Dove viene pubblicata la landing page?",
+          "answer": "Di solito su un percorso del tuo dominio o su un sottodominio dedicato, così resta sotto il tuo marchio e i dati sono tuoi. Possiamo svilupparla dentro il CMS del sito, se lo consente senza appesantirla, oppure come pagina indipendente più leggera. La scelta dipende da velocità, frequenza di modifica e strumenti che già usi."
+        },
+        {
+          "question": "Quante visite servono per fare un A/B test?",
+          "answer": "Dipende dal tasso di conversione di partenza e dalla differenza che vuoi rilevare: con poche conversioni a settimana un test può durare mesi senza dare una risposta affidabile. Prima di avviarlo stimiamo la durata necessaria. Se è troppo lunga, preferiamo migliorare la pagina con analisi qualitative e cambiamenti più decisi."
+        },
+        {
+          "question": "Gestite anche le campagne che portano traffico alla landing?",
+          "answer": "Sì, lo studio gestisce campagne Google Ads, Meta Ads e LinkedIn Ads, e avere pagina e campagne nelle stesse mani rende più rapido capire dove intervenire. Se le campagne le segue già un altro professionista, lavoriamo con lui condividendo dati di conversione e calendario dei test."
+        }
+      ],
+      "related": [
+        "funnel-cro",
+        "google-ads",
+        "ab-test",
+        "copywriting"
+      ],
+      "caseStudies": [
+        "cs-005"
+      ],
+      "metaTitle": "Landing page che convertono: realizzazione | not4sale",
+      "metaDescription": "Landing page per Google Ads, Meta Ads e lanci: copy, sviluppo, tracciamento e test A/B per abbassare il costo per contatto. Chiedi un preventivo."
+    },
+    {
+      "slug": "ux-ui-design",
+      "headline": "UX/UI design: interfacce progettate su come le persone le usano",
+      "short": "Ricerca, architettura dell'informazione, prototipi e design system per siti, web app e app che si usano senza manuale.",
+      "answer": "Lo UX/UI design è la progettazione di come funziona un'interfaccia (UX, esperienza utente) e di come appare (UI, interfaccia grafica). not4sale studia come i tuoi utenti usano davvero sito, web app o app, prototipa le soluzioni, le verifica con test reali e consegna un design pronto per lo sviluppo.",
+      "problem": "Le interfacce difficili non si lamentano: perdono utenti in silenzio. Un carrello abbandonato, un modulo di registrazione lasciato a metà, un gestionale interno che i dipendenti aggirano con un foglio Excel, un'app scaricata e aperta una volta sola.\n\nIl motivo di solito è lo stesso: l'interfaccia è stata decisa in riunione, partendo da quello che piaceva al titolare o da come era organizzato il database, non da come le persone ragionano. Poi si scopre il problema quando il prodotto è già sviluppato, e ogni correzione costa il triplo.\n\nC'è anche un costo meno visibile. Senza un sistema di componenti condiviso, ogni nuova pagina viene disegnata da zero: bottoni diversi, colori leggermente diversi, comportamenti incoerenti. Gli utenti si confondono e lo sviluppo rallenta a ogni rilascio. Progettare prima costa meno che correggere dopo.",
+      "process": [
+        {
+          "title": "Ricerca sugli utenti",
+          "description": "Interviste, analisi dei dati e osservazione di come le persone usano oggi il prodotto o quelli concorrenti."
+        },
+        {
+          "title": "Architettura e flussi",
+          "description": "Organizziamo contenuti e funzioni e disegniamo i percorsi principali, passo per passo, in wireframe."
+        },
+        {
+          "title": "Prototipo e test",
+          "description": "Prototipo cliccabile testato con utenti reali su compiti precisi, poi corretto dove si inceppano."
+        },
+        {
+          "title": "Interfaccia e design system",
+          "description": "Design visivo coerente con il brand e libreria di componenti riutilizzabili con i loro stati."
+        },
+        {
+          "title": "Supporto allo sviluppo",
+          "description": "Consegna agli sviluppatori con specifiche chiare e revisione dell'implementazione prima del rilascio."
+        }
+      ],
+      "deliverables": [
+        "Sintesi della ricerca con problemi prioritari e profili degli utenti",
+        "Mappa dell'architettura dell'informazione e flussi utente",
+        "Wireframe dei percorsi principali",
+        "Prototipo interattivo in Figma",
+        "Report dei test di usabilità con le correzioni applicate",
+        "Design system con componenti, colori, tipografia e stati",
+        "File di design pronti per lo sviluppo con specifiche per desktop e mobile"
+      ],
+      "body": "## Che differenza c'è tra UX design e UI design\n\nLa UX (user experience) decide cosa succede e in che ordine; la UI (user interface) decide come appare. Una buona UX con una UI trascurata sembra poco affidabile. Una UI bellissima su una UX sbagliata è un labirinto elegante.\n\n- **UX design**: chi sono gli utenti, cosa vogliono fare, quali passaggi servono, dove possono sbagliare, cosa vedono quando qualcosa va storto.\n- **UI design**: gerarchia visiva, tipografia, colori, spaziature, icone, stati dei bottoni, microinterazioni.\n\nLe facciamo insieme perché separarle crea attriti: il designer visivo riceve wireframe che non capisce, il progettista UX vede tradite le sue scelte. Quando serve, partiamo da un'identità visiva già definita o la sviluppiamo con il servizio di [logo e identità visiva](/servizi/branding/logo-identita-visiva).\n\n## Come si fa ricerca UX senza un budget da multinazionale\n\nLa ricerca UX non richiede laboratori: richiede di guardare persone vere mentre usano il prodotto. Cinque o sei sessioni ben preparate fanno emergere la gran parte dei problemi più gravi di un'interfaccia.\n\nGli strumenti che usiamo più spesso:\n\n1. **Interviste brevi** con clienti, utenti interni o commerciali, per capire obiettivi e frustrazioni.\n2. **Analisi dei dati**: dove si abbandona il funnel in GA4, quali pagine hanno uscite anomale, cosa si cerca nel motore interno.\n3. **Registrazioni di sessione e mappe di calore** per vedere dove si clicca davvero.\n4. **Test di usabilità** sul prototipo: un compito, un utente, noi che osserviamo senza aiutare.\n\nLa regola è semplice: prima si osserva, poi si disegna. Le opinioni del team servono, ma non sostituiscono il comportamento degli utenti.\n\n## Prototipi: sbagliare quando costa poco\n\nUn prototipo cliccabile permette di trovare gli errori prima che diventino codice. Modificare una schermata in Figma richiede minuti; modificare una funzione sviluppata e collegata al database può richiedere giorni.\n\nPer questo, su progetti come una [web app su misura](/servizi/web-app/web-app) o un'[app mobile](/servizi/web-app/app-mobile), il prototipo è il momento in cui si prendono le decisioni importanti: quali dati mostrare in una dashboard, come gestire un errore di pagamento, cosa vede un utente al primo accesso quando non ha ancora nulla. Sono i casi limite, più dei percorsi felici, a decidere se un prodotto sembra solido.\n\n## Il design system: coerenza che fa risparmiare\n\nUn design system è la libreria di componenti e regole da cui nascono tutte le schermate: bottoni, campi, tabelle, messaggi, con i loro stati (normale, attivo, disabilitato, errore, caricamento). Serve a due cose.\n\n- **Coerenza per gli utenti**: lo stesso elemento si comporta sempre allo stesso modo, quindi si impara una volta sola.\n- **Velocità per lo sviluppo**: le nuove pagine si compongono con pezzi già pronti e testati, invece di essere disegnate da zero.\n\nPer un sito di dieci pagine basta una guida essenziale; per una piattaforma che crescerà per anni è un investimento che si ripaga a ogni rilascio. Lo costruiamo includendo fin da subito i requisiti di contrasto, focus e dimensione dei target che servono per l'[accessibilità web](/servizi/web-app/accessibilita-web).\n\n## UX/UI e conversioni\n\nSu siti e e-commerce la UX ha un effetto diretto sui numeri: un checkout con un passaggio inutile, un filtro prodotti che non funziona da mobile, un modulo che non spiega l'errore. Correggere questi attriti è spesso più redditizio che aumentare il budget pubblicitario.\n\nUn riposizionamento nella fascia premium, come quello del brand fashion che trovi nei [casi studio](/case-studies), passa anche da qui: un'interfaccia che comunica il valore del prodotto e rende semplice l'acquisto. Quando l'obiettivo è misurare l'effetto di ogni cambiamento, il lavoro di design prosegue con un percorso di [funnel e CRO](/servizi/growth/funnel-cro).",
+      "faq": [
+        {
+          "question": "Mi serve lo UX/UI design se devo fare solo un sito vetrina?",
+          "answer": "Per un sito vetrina semplice basta una progettazione UX leggera dentro il percorso di realizzazione del sito: struttura, gerarchie, percorsi verso il contatto. Un servizio UX/UI dedicato, con ricerca e test, ha senso per web app, app mobile, e-commerce con molti prodotti o qualsiasi interfaccia in cui gli utenti devono completare compiti articolati."
+        },
+        {
+          "question": "Quanto costa un progetto di UX/UI design?",
+          "answer": "Dipende dal numero di schermate e flussi, dalla quantità di ricerca e test con utenti, dalla necessità di un design system completo e da quante piattaforme coprire, solo web o anche iOS e Android. Possiamo partire da un perimetro limitato, per esempio i flussi principali, e allargarlo. Una stima iniziale la ottieni su /preventivo."
+        },
+        {
+          "question": "Lavorate anche su un prodotto già esistente?",
+          "answer": "Sì, ed è un caso frequente. Partiamo da un'analisi euristica e dai dati d'uso per individuare i problemi principali, poi riprogettiamo per priorità, senza obbligarti a rifare tutto. Spesso pochi interventi mirati su registrazione, ricerca o checkout danno più risultati di un restyling completo."
+        },
+        {
+          "question": "Consegnate anche il codice o solo i file di design?",
+          "answer": "Possiamo fare entrambe le cose. Se lo sviluppo lo seguiamo noi, design e codice restano nello stesso team e i passaggi sono più rapidi. Se hai già sviluppatori interni o un fornitore, consegniamo i file Figma con componenti, specifiche e varianti mobile, e affianchiamo il team con revisioni durante l'implementazione."
+        },
+        {
+          "question": "Chi partecipa ai test di usabilità?",
+          "answer": "Persone il più possibile simili ai tuoi utenti reali: clienti esistenti, utenti interni per un gestionale, o profili reclutati in base a criteri concordati. Tu ci aiuti a trovarli quando si tratta di clienti o dipendenti. Bastano poche sessioni per far emergere i problemi principali, purché i compiti assegnati siano scelti bene."
+        }
+      ],
+      "related": [
+        "web-app",
+        "app-mobile",
+        "funnel-cro",
+        "accessibilita-web"
+      ],
+      "caseStudies": [
+        "cs-004"
+      ],
+      "metaTitle": "UX/UI design per siti, web app e app | not4sale",
+      "metaDescription": "UX/UI design con ricerca sugli utenti, prototipi testati e design system: interfacce chiare per siti, web app e app mobile. Parliamo del tuo progetto."
+    },
+    {
+      "slug": "web-app",
+      "headline": "Web app su misura: portali, gestionali e piattaforme per la tua azienda",
+      "short": "Portali clienti, gestionali, configuratori e piattaforme web sviluppati sui tuoi processi, quando i software pronti non bastano.",
+      "answer": "Una web app su misura è un software che si usa dal browser, sviluppato sui processi specifici di un'azienda: portali clienti, gestionali, configuratori, aree riservate, piattaforme di prenotazione. not4sale analizza il processo, progetta l'interfaccia, sviluppa la piattaforma e la integra con CRM, gestionali e strumenti che usi già.",
+      "problem": "In molte aziende un processo importante vive su un mix di fogli Excel, email, telefonate e un software comprato anni fa che fa metà delle cose. Funziona, finché funziona: poi un file viene sovrascritto, un ordine si perde, un cliente chiede lo stato della pratica e nessuno sa rispondere senza fare tre telefonate.\n\nLe alternative sembrano due, entrambe scomode. Adattare il processo a un software standard che non lo rappresenta, pagando licenze per funzioni che non usi. Oppure continuare così, con persone qualificate che passano ore a copiare dati da un sistema all'altro.\n\nIl costo non appare in nessun bilancio, ma c'è: ore di lavoro ripetitivo, errori, clienti che aspettano, dati che non si possono analizzare perché sparsi ovunque. E quando l'azienda cresce, il sistema fatto di toppe è la prima cosa che si rompe.",
+      "process": [
+        {
+          "title": "Analisi del processo",
+          "description": "Mappiamo il flusso di lavoro attuale con chi lo vive ogni giorno, individuando passaggi manuali, errori e dati duplicati."
+        },
+        {
+          "title": "Specifiche e priorità",
+          "description": "Trasformiamo il processo in requisiti e definiamo una prima versione con le funzioni indispensabili."
+        },
+        {
+          "title": "Prototipo validato",
+          "description": "Prototipo cliccabile delle schermate principali, provato dagli utenti finali prima di scrivere codice."
+        },
+        {
+          "title": "Sviluppo a rilasci",
+          "description": "Sviluppo in cicli brevi con versioni di prova consultabili, così vedi la piattaforma crescere e puoi correggere la rotta."
+        },
+        {
+          "title": "Avvio ed evoluzione",
+          "description": "Migrazione dei dati, formazione degli utenti, messa in produzione e piano per le funzioni successive."
+        }
+      ],
+      "deliverables": [
+        "Documento di analisi del processo e specifiche funzionali",
+        "Prototipo interattivo delle schermate principali",
+        "Web app sviluppata e messa in produzione su infrastruttura cloud",
+        "Integrazioni con CRM, gestionale, pagamenti o email documentate",
+        "Gestione di utenti, ruoli e permessi",
+        "Documentazione tecnica e accesso al codice sorgente",
+        "Sessioni di formazione per gli utenti e piano di evoluzione"
+      ],
+      "body": "## Quando conviene una web app su misura\n\nUna web app su misura conviene quando il processo è un vantaggio competitivo o quando nessun software standard lo copre senza forzature. Se invece il tuo modo di lavorare è simile a quello di migliaia di aziende, probabilmente esiste già un SaaS che fa al caso tuo, e te lo diciamo.\n\nAlcuni segnali che lo sviluppo su misura ha senso:\n\n- usi tre o quattro strumenti diversi e passi il tempo a copiare dati tra uno e l'altro;\n- i clienti ti chiedono continuamente lo stato di ordini, pratiche o lavorazioni;\n- il tuo listino o la tua offerta hanno regole che nessun configuratore standard gestisce;\n- paghi licenze per utente su software di cui usi una piccola parte;\n- vuoi offrire ai clienti un servizio digitale che i concorrenti non hanno.\n\n## Esempi di web app che sviluppiamo\n\nLe web app su misura che hanno più senso per una PMI sono spesso meno spettacolari di quanto si pensi, ma tolgono molto lavoro.\n\n- **Portale clienti**: area riservata dove il cliente vede ordini, documenti, scadenze e stato delle pratiche, senza telefonare.\n- **Gestionale interno**: un'applicazione che sostituisce fogli di calcolo condivisi per commesse, magazzino, turni o pratiche.\n- **Configuratore e preventivatore**: il cliente compone il prodotto o il servizio e riceve una stima, mentre il commerciale riceve un contatto già qualificato. Il [calcolatore di preventivo](/preventivo) di questo sito è un esempio piccolo dello stesso principio.\n- **Piattaforma di prenotazione** con regole specifiche di disponibilità, tariffe e servizi aggiuntivi, utile per esempio nel turismo e nei servizi.\n- **Dashboard operative** che uniscono dati da più fonti in un'unica vista per chi deve decidere.\n\n## Come sviluppiamo una web app senza sorprese\n\nSviluppiamo per rilasci successivi, partendo da una prima versione con le funzioni indispensabili. È il modo più affidabile per tenere sotto controllo tempi e budget: invece di scrivere un capitolato di cento pagine e scoprire a fine progetto cosa non serviva, metti in mano agli utenti una versione funzionante il prima possibile.\n\nOgni ciclo si chiude con una versione di prova consultabile. Le priorità si rivedono insieme in base a cosa emerge dall'uso reale. È il metodo dello studio applicato al software: ipotesi, prototipo, test, dato, decisione.\n\nLa progettazione dell'interfaccia segue i principi del nostro [UX/UI design](/servizi/web-app/ux-ui-design): un gestionale usato otto ore al giorno merita la stessa cura di un sito pubblico, perché ogni clic inutile si moltiplica per tutte le persone e tutti i giorni.\n\n## Tecnologie, sicurezza e proprietà del codice\n\nUsiamo tecnologie web moderne e diffuse, scelte in modo che un altro team possa subentrare se un giorno lo vorrai. Il codice sorgente è accessibile a te e la documentazione tecnica fa parte della consegna.\n\nSulla sicurezza le basi non sono opzionali: autenticazione robusta, ruoli e permessi granulari, comunicazioni cifrate, backup automatici, registro delle operazioni sensibili. Se la piattaforma tratta dati personali, la progettiamo tenendo conto del GDPR fin dall'inizio, con raccolta limitata ai dati che servono davvero.\n\n## Integrazioni: la web app non vive da sola\n\nIl valore di una web app spesso sta nei collegamenti: con il CRM, il gestionale contabile, i sistemi di pagamento, l'email marketing. Usiamo le API dei sistemi esistenti e, dove serve far dialogare più strumenti, flussi di [automazione con n8n](/servizi/ai-automazione/automazioni-n8n).\n\nQuando i dati arrivano tutti nello stesso posto diventano anche analizzabili: da lì a una [dashboard di reportistica](/servizi/data-analytics/dashboard) o a un [agente AI](/servizi/ai-automazione/agenti-ai) che svolge compiti ripetitivi il passo è breve.",
+      "faq": [
+        {
+          "question": "Quanto costa sviluppare una web app su misura?",
+          "answer": "Il costo dipende soprattutto dal numero di funzioni, dai ruoli utente, dalle integrazioni con altri sistemi e dalla complessità delle regole di business. Per questo partiamo con un'analisi e una prima versione essenziale, che permette di investire in modo graduale. Il calcolatore su /preventivo dà un primo ordine di grandezza, da verificare dopo l'analisi."
+        },
+        {
+          "question": "Quanto tempo serve per avere una prima versione funzionante?",
+          "answer": "Dipende dal perimetro, ma l'obiettivo è mettere in mano agli utenti una prima versione utilizzabile in pochi mesi, non dopo un anno. Le funzioni successive arrivano a rilasci regolari. Definiamo tempi e contenuti di ogni rilascio dopo l'analisi del processo, quando sappiamo davvero cosa costruire."
+        },
+        {
+          "question": "Meglio una web app su misura o un software già pronto?",
+          "answer": "Se un software esistente copre bene il tuo processo, di solito conviene quello: costa meno all'inizio e non devi mantenerlo. Il su misura vince quando il processo è particolare, quando le licenze per utente pesano molto o quando vuoi un servizio digitale distintivo per i clienti. Nell'analisi valutiamo entrambe le strade senza preconcetti."
+        },
+        {
+          "question": "Di chi è il codice della web app?",
+          "answer": "Il codice sviluppato per te è tuo, con accesso al repository e documentazione tecnica. Possono restare di terzi solo le librerie open source e i servizi esterni usati, come quelli di pagamento o di invio email, che hanno le loro licenze. Lo mettiamo per iscritto nel contratto prima di iniziare."
+        },
+        {
+          "question": "Chi si occupa della web app dopo il rilascio?",
+          "answer": "Possiamo seguirla noi con un contratto di manutenzione che comprende aggiornamenti di sicurezza, monitoraggio, backup e correzione dei problemi, più un monte ore per nuove funzioni. In alternativa la affidi al tuo team interno: in quel caso facciamo un passaggio di consegne strutturato con documentazione e affiancamento."
+        },
+        {
+          "question": "La web app funziona anche da smartphone?",
+          "answer": "Sì. Progettiamo le interfacce per adattarsi a smartphone e tablet, con attenzione alle schermate che si usano davvero in mobilità, come un tecnico in cantiere o un cliente in viaggio. Se serve, la web app può essere installata sulla schermata home come PWA, senza passare dagli store, e in molti casi evita di sviluppare un'app nativa."
+        }
+      ],
+      "related": [
+        "ux-ui-design",
+        "automazioni-n8n",
+        "agenti-ai",
+        "hosting-manutenzione"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Web app su misura: portali e gestionali | not4sale",
+      "metaDescription": "Sviluppo di web app su misura: portali clienti, gestionali, configuratori e piattaforme integrate con CRM e gestionali. Racconta il tuo processo."
+    },
+    {
+      "slug": "app-mobile",
+      "headline": "Sviluppo app mobile iOS e Android, dal prototipo agli store",
+      "short": "App iOS e Android progettate, sviluppate e pubblicate sugli store, solo quando un'app è davvero il canale giusto per te.",
+      "answer": "Lo sviluppo di app mobile di not4sale copre progettazione, sviluppo per iOS e Android, pubblicazione su App Store e Google Play e aggiornamenti successivi. Prima di scrivere codice verifichiamo che un'app sia davvero la scelta giusta rispetto a un sito o a una web app installabile, e progettiamo come farla scaricare e usare.",
+      "problem": "\"Ci serve un'app\" è una delle frasi che sentiamo più spesso, e una delle più costose se presa alla lettera. Molte app aziendali vengono scaricate da pochi clienti, aperte un paio di volte e dimenticate in una cartella del telefono. Nel frattempo vanno aggiornate a ogni nuova versione di iOS e Android.\n\nIl problema non è l'app in sé. È che spesso nasce da un'idea, non da un bisogno: replica il sito, non offre nulla che giustifichi lo spazio sul telefono, e nessuno ha pianificato come convincere le persone a installarla.\n\nDall'altra parte ci sono casi in cui l'app serve davvero e la sua assenza costa: clienti che riordinano spesso e devono rifare ogni volta lo stesso percorso dal browser, tecnici sul campo che lavorano offline, programmi fedeltà gestiti con tessere di cartone. La differenza tra un investimento e uno spreco sta tutta nella domanda iniziale: cosa farà l'utente con questa app che oggi non può fare?",
+      "process": [
+        {
+          "title": "Verifica del bisogno",
+          "description": "Definiamo casi d'uso, frequenza di utilizzo e alternative possibili, come sito ottimizzato o PWA, prima di decidere."
+        },
+        {
+          "title": "Prototipo e test",
+          "description": "Progettiamo le schermate principali e le testiamo su prototipo con utenti reali, su entrambe le piattaforme."
+        },
+        {
+          "title": "Sviluppo e backend",
+          "description": "Sviluppiamo l'app e i servizi che la alimentano, come account, dati, notifiche e integrazioni."
+        },
+        {
+          "title": "Pubblicazione sugli store",
+          "description": "Prepariamo schede, immagini e documenti richiesti e gestiamo la revisione di App Store e Google Play."
+        },
+        {
+          "title": "Lancio e aggiornamenti",
+          "description": "Monitoriamo uso e crash, raccogliamo feedback e pianifichiamo aggiornamenti e compatibilità con i nuovi sistemi."
+        }
+      ],
+      "deliverables": [
+        "Documento di casi d'uso e scelta della tecnologia motivata",
+        "Prototipo interattivo testato con utenti",
+        "App iOS e Android sviluppata con relativo backend",
+        "Schede store complete di testi, screenshot e informativa privacy",
+        "Pubblicazione su App Store e Google Play con account intestati a te",
+        "Configurazione di analytics, notifiche push e monitoraggio dei crash",
+        "Piano di lancio per spingere i primi download"
+      ],
+      "body": "## Ti serve davvero un'app mobile?\n\nUn'app mobile ha senso quando le persone la useranno spesso, quando servono funzioni del telefono che il browser gestisce male o quando vuoi una relazione continua con i clienti. Se l'utente ti cerca una volta all'anno, un sito veloce fa meglio il lavoro.\n\n| Opzione | Quando conviene | Limiti |\n|---|---|---|\n| Sito ottimizzato per mobile | Contenuti, contatti, uso occasionale | Nessuna presenza sulla schermata home |\n| Web app installabile (PWA) | Area clienti, strumenti di lavoro, budget contenuti | Alcune funzioni di sistema limitate, soprattutto su iPhone |\n| App per iOS e Android | Uso frequente, fedeltà, funzioni native, offline | Costi di sviluppo, pubblicazione e aggiornamento più alti |\n\nMolte esigenze che sembrano richiedere un'app si risolvono con una [web app su misura](/servizi/web-app/web-app) installabile: si aggiorna come un sito, non passa dalla revisione degli store e funziona su qualsiasi dispositivo. Partiamo sempre da questo confronto.\n\n## Nativo o cross-platform: come scegliamo\n\nPer la maggior parte dei progetti aziendali usiamo un approccio cross-platform, cioè un solo codice per iOS e Android, con framework come React Native o Flutter. Si riducono tempi e costi di sviluppo e gli aggiornamenti arrivano contemporaneamente sulle due piattaforme.\n\nLo sviluppo nativo separato, Swift per iOS e Kotlin per Android, ha senso in casi specifici: uso intensivo di hardware, grafica molto complessa, funzioni appena rilasciate dai sistemi operativi. Lo valutiamo nel documento tecnico iniziale, spiegando i compromessi in termini comprensibili anche a chi non è uno sviluppatore.\n\n## Cosa c'è dietro un'app: backend, dati e notifiche\n\nUn'app raramente vive da sola: dietro ci sono account utente, dati da sincronizzare, contenuti da aggiornare, pagamenti, notifiche. Questo backend va progettato con la stessa cura dell'interfaccia, perché è lì che si gioca la sicurezza dei dati e la possibilità di far evolvere il prodotto.\n\nSpesso conviene che app e sito leggano gli stessi contenuti da un unico pannello: è il caso tipico di un [headless CMS](/servizi/web-app/headless-cms), dove aggiorni una volta e pubblichi ovunque. Per le notifiche push vale una regola: poche e utili. Ogni notifica irrilevante avvicina l'utente al tasto \"disinstalla\".\n\n## Pubblicare sugli store e farsi scaricare\n\nLa pubblicazione su App Store e Google Play richiede account sviluppatore, schede descrittive, screenshot, informativa sulla privacy e il superamento della revisione delle piattaforme, che può chiedere modifiche. Gestiamo tutto il processo, con account intestati alla tua azienda.\n\nPubblicare però non basta. Un'app senza un piano di lancio resta invisibile. Alcune leve che usiamo:\n\n- **Inviti nei punti di contatto che hai già**: negozio, email, scontrini, sito, con un motivo concreto per scaricarla.\n- **Un vantaggio riservato a chi la usa**, come prenotazione più rapida, offerte o accumulo punti, collegato a un [programma loyalty](/servizi/crm-email/loyalty).\n- **Scheda store curata** con titolo, descrizione e screenshot che spiegano il beneficio, non le funzioni.\n- **Onboarding breve**: il primo utilizzo deve portare a un risultato in pochi passaggi, principio che riprendiamo dalla [product-led growth](/servizi/growth/product-led-growth).\n\n## Dopo il lancio: misurare l'uso, non i download\n\nI download sono una vanity metric: contano utenti attivi, sessioni ripetute e azioni completate. Configuriamo analytics e monitoraggio dei crash dal primo giorno, così sai quante persone tornano, dove abbandonano e quali funzioni nessuno usa.\n\nOgni anno Apple e Google rilasciano nuove versioni dei sistemi operativi e aggiornano i requisiti degli store: un'app non aggiornata può smettere di funzionare bene o non essere più accettata negli aggiornamenti. Per questo prevediamo sempre un piano di manutenzione, insieme alle evoluzioni suggerite dai dati d'uso.",
+      "faq": [
+        {
+          "question": "Quanto costa sviluppare un'app mobile?",
+          "answer": "Il costo dipende dal numero di schermate e funzioni, dal backend necessario, dalle integrazioni con sistemi esistenti, dai pagamenti in app e dalla scelta tra cross-platform e nativo. Va considerato anche il costo annuale di manutenzione e degli account sviluppatore. Su /preventivo trovi un calcolatore per una prima stima, che precisiamo dopo l'analisi dei casi d'uso."
+        },
+        {
+          "question": "Quanto tempo serve per pubblicare un'app sugli store?",
+          "answer": "Lo sviluppo di una prima versione richiede di solito alcuni mesi, a seconda delle funzioni. A questo si aggiungono i tempi di revisione di Apple e Google, generalmente brevi ma non sotto il nostro controllo, e che possono allungarsi se la piattaforma chiede modifiche. Nel piano di progetto prevediamo un margine per questa fase."
+        },
+        {
+          "question": "Devo sviluppare due app separate per iPhone e Android?",
+          "answer": "Nella maggior parte dei casi no. Con un approccio cross-platform si scrive un solo codice che genera entrambe le app, con un aspetto adattato a ciascun sistema. Le app separate native servono solo quando ci sono requisiti tecnici particolari. Ti spieghiamo la scelta e le sue conseguenze su costi e manutenzione prima di iniziare."
+        },
+        {
+          "question": "Chi è il proprietario dell'app pubblicata sugli store?",
+          "answer": "L'app viene pubblicata con gli account sviluppatore della tua azienda, quindi è a tuo nome e resta tua anche se un giorno cambi fornitore. Ti aiutiamo ad aprire gli account se non li hai. Il codice sorgente e le credenziali dei servizi collegati vengono consegnati e documentati."
+        },
+        {
+          "question": "Un'app sostituisce il sito web?",
+          "answer": "No, lo affianca. Il sito resta il punto in cui ti trovano su Google e dai motori di risposta AI e dove arriva chi non ti conosce ancora. L'app serve soprattutto a chi è già cliente e interagisce con te spesso. Per questo conviene che i due canali condividano contenuti e dati, invece di essere gestiti separatamente."
+        }
+      ],
+      "related": [
+        "web-app",
+        "ux-ui-design",
+        "headless-cms",
+        "loyalty"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Sviluppo app mobile iOS e Android | not4sale",
+      "metaDescription": "Sviluppo app mobile iOS e Android: verifica del bisogno, prototipo, sviluppo, pubblicazione sugli store e piano di lancio. Parliamo della tua idea."
+    },
+    {
+      "slug": "headless-cms",
+      "headline": "Headless CMS: contenuti da un unico pannello, pubblicati ovunque",
+      "short": "Architetture headless per gestire i contenuti da un pannello comodo e pubblicarli veloci su sito, app e altri canali.",
+      "answer": "Un headless CMS è un sistema di gestione dei contenuti separato dalla grafica del sito: i contenuti si scrivono in un pannello e vengono distribuiti tramite API a sito, app e altri canali. not4sale progetta il modello dei contenuti, configura il CMS, sviluppa il front-end e forma chi scrive.",
+      "problem": "Il CMS tradizionale tiene insieme due cose diverse: il posto dove scrivi i contenuti e il sito che li mostra. Finché hai un sito e basta va bene. Poi arrivano la seconda lingua, l'app, il catalogo da mostrare anche sui totem in negozio, la newsletter che riprende le stesse schede. E ogni canale diventa un copia e incolla.\n\nIntanto il sito si appesantisce: plugin su plugin per aggiungere funzioni, aggiornamenti che rompono qualcosa, pagine lente da smartphone. Chi scrive i contenuti lavora dentro un editor pensato per impaginare, non per organizzare informazioni, e finisce per formattare a mano ogni scheda in modo un po' diverso.\n\nIl costo si vede in tre punti: tempo del team speso a duplicare contenuti, errori quando un prezzo o un orario viene aggiornato in un canale e non negli altri, e velocità del sito che pesa sia sulle conversioni sia sulla SEO. Un'architettura headless risolve questi problemi, ma non è la risposta giusta per tutti: per questo va scelta con criterio.",
+      "process": [
+        {
+          "title": "Analisi dei canali",
+          "description": "Mappiamo dove vengono pubblicati i contenuti oggi e domani, chi li scrive e con quale frequenza."
+        },
+        {
+          "title": "Modello dei contenuti",
+          "description": "Definiamo tipi di contenuto, campi, relazioni e lingue, prima di scegliere lo strumento."
+        },
+        {
+          "title": "Scelta e configurazione",
+          "description": "Selezioniamo il CMS adatto, configuriamo ruoli, flussi di approvazione e anteprima delle pagine."
+        },
+        {
+          "title": "Front-end e migrazione",
+          "description": "Sviluppiamo il sito che legge i contenuti via API e trasferiamo i contenuti esistenti con i redirect necessari."
+        },
+        {
+          "title": "Formazione redazionale",
+          "description": "Formiamo chi scrive su pannello, anteprime e pubblicazione, con una guida pensata per il vostro modello."
+        }
+      ],
+      "deliverables": [
+        "Documento del modello dei contenuti con tipi, campi e relazioni",
+        "Headless CMS configurato con ruoli utente e flussi di approvazione",
+        "Front-end del sito sviluppato e collegato al CMS",
+        "Anteprima delle bozze prima della pubblicazione",
+        "Migrazione dei contenuti esistenti e piano di redirect",
+        "Documentazione delle API per app e altri canali",
+        "Guida redazionale e sessione di formazione per il team"
+      ],
+      "body": "## Cos'è un headless CMS, spiegato senza gergo\n\nUn headless CMS è un archivio di contenuti con un pannello di gestione, ma senza un sito incorporato. La \"testa\" (head) è la parte che mostra i contenuti, e viene sviluppata a parte: un sito, un'app, una vetrina digitale. Il CMS si limita a conservare i contenuti in modo ordinato e a consegnarli a chi li chiede, tramite API.\n\nPensa a un magazzino ben organizzato: ogni prodotto ha la sua scheda con campi precisi (nome, descrizione, foto, prezzo, disponibilità). Il sito, l'app e la newsletter vanno a prendere le stesse schede e le presentano ciascuno a modo suo. Se cambi un dato nel magazzino, cambia ovunque.\n\nEsempi diffusi sono Payload, Strapi, Sanity, Contentful e Storyblok, ognuno con punti di forza diversi in termini di hosting, costi di licenza ed esperienza d'uso.\n\n## Headless CMS o WordPress tradizionale?\n\nUn headless CMS conviene quando i contenuti servono su più canali, quando la velocità del sito è una priorità o quando il modello dei contenuti è strutturato. WordPress tradizionale resta una scelta sensata per un sito aziendale semplice gestito da una persona.\n\n| Criterio | WordPress tradizionale | Headless CMS |\n|---|---|---|\n| Canali | Principalmente il sito | Sito, app, altri canali dalla stessa fonte |\n| Velocità del front-end | Dipende da tema e plugin | Front-end leggero, pagine generate in anticipo |\n| Flessibilità del design | Legata al tema | Totale, front-end sviluppato su misura |\n| Costo iniziale | Più basso | Più alto, serve sviluppo del front-end |\n| Autonomia di chi scrive | Alta per impaginare | Alta per contenuti strutturati, meno per impaginazioni libere |\n\nSe stai valutando la [realizzazione di un sito web](/servizi/web-app/siti-web) e non hai più canali né molti contenuti, è probabile che ti consigliamo la via più semplice.\n\n## Il modello dei contenuti viene prima dello strumento\n\nIl vero lavoro di un progetto headless è il modello dei contenuti: quali tipi esistono (servizi, prodotti, sedi, articoli, persone, FAQ), quali campi hanno, come si collegano tra loro. Un buon modello rende facile scrivere e impossibile sbagliare; un modello improvvisato riproduce il caos di prima dentro uno strumento nuovo.\n\nPer esempio, una struttura ricettiva con più sedi può avere un tipo \"sede\" con orari, servizi e foto, richiamato da pagine del sito, app e schede per le campagne. Aggiorni l'orario una volta, cambia ovunque. Questo approccio a dati strutturati aiuta anche a generare markup [schema.org e dati strutturati](/servizi/ai-search/dati-strutturati) coerenti, che motori di ricerca e assistenti AI leggono meglio.\n\n## Velocità, SEO e multilingua\n\nCon un'architettura headless le pagine possono essere generate in anticipo e servite da una rete di distribuzione, il che di solito porta tempi di caricamento bassi e Core Web Vitals migliori. Non è automatico: un front-end scritto male è lento con qualsiasi CMS. Per questo curiamo la [SEO tecnica](/servizi/seo/seo-tecnico) già nello sviluppo, con meta tag, sitemap e URL gestiti dal pannello.\n\nIl multilingua è uno dei casi in cui il modello headless rende di più: ogni contenuto ha le sue versioni linguistiche, collegate tra loro, con traduzioni che non si perdono quando cambi la struttura. Se lavori su più mercati, il progetto si coordina con la [SEO internazionale](/servizi/seo/seo-internazionale).\n\n## Cosa cambia per chi scrive i contenuti\n\nPer chi scrive cambia soprattutto una cosa: si compilano campi invece di impaginare. All'inizio sembra meno libero, poi diventa più veloce, perché non si deve pensare alla grafica e il risultato è sempre coerente. Configuriamo anteprime delle bozze, ruoli diversi per autori ed editor e flussi di approvazione quando servono.\n\nIl pannello diventa anche la fonte per l'[app mobile](/servizi/web-app/app-mobile), se ne hai una o la stai progettando: stessi contenuti, nessun doppio inserimento.",
+      "faq": [
+        {
+          "question": "Quanto costa passare a un headless CMS?",
+          "answer": "Dipende dalla complessità del modello dei contenuti, dal numero di template del front-end, dalla quantità di contenuti da migrare, dalle lingue e dal CMS scelto, che può essere open source in hosting proprio o un servizio con licenza mensile. Rispetto a un sito WordPress semplice l'investimento iniziale è più alto. Una stima di partenza la trovi su /preventivo."
+        },
+        {
+          "question": "Il mio team riuscirà a usarlo senza competenze tecniche?",
+          "answer": "Sì, i pannelli dei principali headless CMS sono pensati per redazioni e marketing, non per sviluppatori. Configuriamo campi con nomi chiari, istruzioni dentro il pannello e anteprima delle pagine. Dopo la formazione chi scrive gestisce testi, immagini e pubblicazioni in autonomia; resta allo sviluppo solo la creazione di nuovi tipi di pagina."
+        },
+        {
+          "question": "Posso migrare i contenuti dal mio WordPress attuale?",
+          "answer": "Sì. Esportiamo pagine, articoli, immagini e metadati, li adattiamo al nuovo modello dei contenuti e li importiamo nel CMS, con script dove i volumi lo richiedono. In parallelo prepariamo i redirect dagli URL vecchi a quelli nuovi, per non perdere il posizionamento su Google. I contenuti obsoleti sono l'occasione giusta per fare pulizia."
+        },
+        {
+          "question": "Un sito headless è migliore per la SEO?",
+          "answer": "Può esserlo, perché permette pagine molto veloci e un controllo preciso di struttura e markup. Ma la SEO dipende da come è sviluppato il front-end: se le pagine non vengono generate lato server o in anticipo, i motori possono faticare a leggerle. Progettiamo il rendering pensando a Google e agli assistenti AI fin dall'inizio."
+        },
+        {
+          "question": "Quale headless CMS scegliete?",
+          "answer": "Scegliamo dopo aver definito il modello dei contenuti, valutando dove deve stare l'hosting, il costo delle licenze nel tempo, il numero di utenti, il multilingua e le preferenze di chi scrive. Per alcuni progetti conviene un CMS open source installato sui tuoi server, per altri un servizio gestito. Ti mostriamo il confronto prima di decidere."
+        }
+      ],
+      "related": [
+        "siti-web",
+        "seo-tecnico",
+        "app-mobile",
+        "seo-internazionale"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Headless CMS: sviluppo e migrazione | not4sale",
+      "metaDescription": "Headless CMS per gestire i contenuti da un unico pannello e pubblicarli su sito, app e altri canali: modello dati, sviluppo e migrazione. Parliamone."
+    },
+    {
+      "slug": "hosting-manutenzione",
+      "headline": "Hosting e manutenzione siti web: aggiornato, sicuro, assistito",
+      "short": "Hosting gestito, aggiornamenti, backup verificati, monitoraggio e assistenza: il sito resta sicuro e veloce anche dopo il lancio.",
+      "answer": "Il servizio di hosting e manutenzione siti web di not4sale comprende server gestito, aggiornamenti di software e plugin, backup verificati, monitoraggio di sicurezza e disponibilità, controllo della velocità e assistenza per modifiche. Seguiamo siti realizzati da noi e da altri, dopo una verifica iniziale del loro stato.",
+      "problem": "Il giorno del lancio il sito è perfetto. Due anni dopo ha venti plugin da aggiornare, una versione di PHP non più supportata, un certificato che qualcuno deve rinnovare e un modulo contatti che non invia email da tre settimane. Nessuno se ne è accorto, perché nessuno guardava.\n\nÈ la situazione più comune che troviamo. Il sito è stato consegnato, l'hosting è stato comprato a basso prezzo da chi l'ha realizzato, e la manutenzione è rimasta un'intenzione. Poi arriva il problema: una pagina che mostra contenuti strani perché il sito è stato compromesso, Google che segnala il dominio come non sicuro, un aggiornamento che manda tutto offline il venerdì sera.\n\nIl costo vero non è la riparazione. Sono i giorni senza richieste, le campagne che pagano clic verso un sito rotto, la reputazione che si incrina con i clienti. E un backup che \"c'è\" ma nessuno ha mai provato a ripristinare non è un backup: è una speranza.",
+      "process": [
+        {
+          "title": "Verifica iniziale",
+          "description": "Controlliamo hosting, versioni software, plugin, sicurezza, backup e velocità e ti diciamo cosa va sistemato subito."
+        },
+        {
+          "title": "Messa in sicurezza",
+          "description": "Risolviamo le criticità, aggiorniamo i componenti e, se serve, spostiamo il sito su un hosting adatto."
+        },
+        {
+          "title": "Monitoraggio continuo",
+          "description": "Attiviamo controlli automatici di disponibilità, certificati, errori e tentativi di accesso."
+        },
+        {
+          "title": "Manutenzione programmata",
+          "description": "Aggiornamenti in ambiente di prova, backup regolari e verifiche periodiche di ripristino."
+        },
+        {
+          "title": "Report e assistenza",
+          "description": "Report periodico su interventi e stato del sito, e un canale diretto per richieste e modifiche."
+        }
+      ],
+      "deliverables": [
+        "Report di verifica iniziale con priorità di intervento",
+        "Hosting gestito con certificato SSL e ambiente di prova",
+        "Backup automatici con conservazione su sede separata e test di ripristino",
+        "Aggiornamenti di CMS, plugin e componenti server",
+        "Monitoraggio di disponibilità e sicurezza con avvisi",
+        "Report periodico su interventi, velocità e problemi rilevati",
+        "Monte ore di assistenza per modifiche e piccoli sviluppi"
+      ],
+      "body": "## Cosa comprende la manutenzione di un sito web\n\nLa manutenzione di un sito web è l'insieme di attività che lo mantengono sicuro, funzionante e veloce dopo la messa online. Non si vede quando funziona, si nota subito quando manca.\n\nLe attività principali:\n\n- **Aggiornamenti** di CMS, plugin, temi, librerie e versioni del server, testati prima di andare in produzione.\n- **Backup** automatici, conservati in un luogo separato dal server e verificati con prove di ripristino.\n- **Sicurezza**: monitoraggio dei file, blocco dei tentativi di accesso ripetuti, controllo dei permessi degli utenti.\n- **Monitoraggio**: avvisi se il sito va offline, se il certificato sta per scadere, se i moduli smettono di inviare.\n- **Prestazioni**: controllo periodico dei tempi di caricamento e dei Core Web Vitals.\n- **Assistenza**: piccole modifiche, nuovi contenuti, risoluzione di problemi.\n\n## Hosting: perché l'offerta più economica spesso costa di più\n\nL'hosting condiviso più economico va bene per un sito personale, molto meno per un sito che deve generare contatti. Su server affollati le prestazioni dipendono dai siti vicini, l'assistenza è generica e le risorse finiscono proprio nei momenti di picco, come durante una campagna.\n\nPer i siti che seguiamo scegliamo l'infrastruttura in base al tipo di progetto: hosting gestito ottimizzato per WordPress, piattaforme cloud per siti headless e [web app su misura](/servizi/web-app/web-app), con ambiente di prova separato da quello pubblico. Il dominio resta sempre intestato a te. Se preferisci tenere il tuo hosting, possiamo occuparci solo della manutenzione, dopo aver verificato che sia adeguato.\n\n## Aggiornamenti senza brutte sorprese\n\nAggiornare un sito direttamente in produzione è la causa più frequente dei siti offline. Un plugin incompatibile, una funzione deprecata, e la pagina diventa bianca.\n\nIl nostro flusso è semplice:\n\n1. backup completo prima di ogni intervento;\n2. aggiornamento su una copia di prova del sito;\n3. controllo delle pagine e delle funzioni principali, moduli compresi;\n4. pubblicazione in produzione;\n5. verifica finale e annotazione nel registro degli interventi.\n\nGli aggiornamenti di sicurezza urgenti hanno una corsia veloce, sempre con backup preventivo.\n\n## Velocità e SEO: la manutenzione che si vede su Google\n\nUn sito trascurato rallenta nel tempo: immagini caricate senza ottimizzazione, plugin che si accumulano, database pieno di dati inutili. La velocità influisce sull'esperienza degli utenti e sulle conversioni, e Google la considera tra i segnali di qualità delle pagine.\n\nNel monitoraggio controlliamo anche errori di scansione in Search Console, pagine non trovate e redirect interrotti. Se emergono problemi strutturali, li affrontiamo con un intervento di [SEO tecnico](/servizi/seo/seo-tecnico) o con un [audit SEO](/servizi/seo/audit-seo) completo.\n\n## Manutenzione di web app e siti headless\n\nLa manutenzione di una web app o di un sito headless segue la stessa logica, con qualche attenzione in più. Oltre al CMS ci sono librerie del front-end, dipendenze del server, chiavi di accesso a servizi esterni e integrazioni con CRM o gestionali che possono cambiare le loro API senza preavviso.\n\nIn questi progetti monitoriamo anche i log degli errori applicativi e le chiamate alle integrazioni, così un collegamento interrotto con il gestionale viene segnalato prima che qualcuno si accorga di ordini mancanti. Le dipendenze vengono aggiornate a cadenza regolare, perché rimandare troppo trasforma un aggiornamento di routine in un piccolo progetto.\n\n## Assistenza: chi ti risponde quando qualcosa non va\n\nL'assistenza funziona se sai chi chiamare e quanto dovrai aspettare. Con il contratto di manutenzione hai un canale diretto con il team che conosce il tuo sito, senza ticket che rimbalzano tra reparti. Rispondiamo alle richieste entro 24 ore lavorative, e i problemi che bloccano il sito hanno la precedenza.\n\nIl monte ore incluso copre le richieste ricorrenti: aggiornare un listino, aggiungere una pagina, cambiare un modulo, collegare un nuovo strumento di tracciamento come [Google Tag Manager](/servizi/data-analytics/tracking-gtm). Quando le richieste diventano progetti veri, come una nuova sezione o un restyling, te lo diciamo e li stimiamo a parte.",
+      "faq": [
+        {
+          "question": "Quanto costa la manutenzione di un sito web?",
+          "answer": "Dipende dal tipo di sito e dalla tecnologia, dal numero di plugin o integrazioni, dalla frequenza dei backup, dall'hosting incluso o meno e dal monte ore di assistenza che ti serve. Un sito vetrina e un e-commerce con molte integrazioni hanno esigenze molto diverse. Dopo la verifica iniziale ti proponiamo un canone chiaro; per una stima parti da /preventivo."
+        },
+        {
+          "question": "Seguite anche siti realizzati da altri?",
+          "answer": "Sì. Prima facciamo una verifica tecnica per capire lo stato del sito: versioni, plugin, sicurezza, backup, codice personalizzato. Se ci sono criticità, le sistemiamo con un intervento iniziale. In rari casi il sito è così compromesso o datato che conviene rifarlo, e in quel caso te lo diciamo prima di firmare un contratto di manutenzione."
+        },
+        {
+          "question": "Cosa succede se il sito viene attaccato o va offline?",
+          "answer": "Il monitoraggio ci avvisa e interveniamo con priorità: isoliamo il problema, ripristiniamo da un backup pulito se serve, chiudiamo la vulnerabilità sfruttata e ti spieghiamo cosa è successo. Se sono coinvolti dati personali, ti aiutiamo a raccogliere le informazioni necessarie per valutare gli obblighi di notifica previsti dal GDPR."
+        },
+        {
+          "question": "Posso cambiare fornitore in futuro?",
+          "answer": "Sì. Dominio, accessi, file e database restano tuoi e te li consegniamo quando vuoi, insieme alle informazioni utili a chi subentra. Il contratto di manutenzione non è un modo per tenerti legato: preferiamo che resti perché il servizio funziona, non perché è complicato andarsene."
+        },
+        {
+          "question": "Il monte ore non usato si accumula?",
+          "answer": "Le condizioni precise le definiamo nel contratto, in base a come lavori. In generale il monte ore copre le piccole richieste del periodo e il report ti mostra sempre quante ore sono state usate e per cosa. Se prevedi mesi intensi e mesi tranquilli, possiamo impostare il canone su una base trimestrale invece che mensile."
+        }
+      ],
+      "related": [
+        "siti-web",
+        "seo-tecnico",
+        "tracking-gtm",
+        "web-app"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Hosting e manutenzione siti web | not4sale",
+      "metaDescription": "Hosting gestito e manutenzione siti web: aggiornamenti testati, backup verificati, monitoraggio e assistenza entro 24 ore lavorative. Chiedi una verifica."
+    },
+    {
+      "slug": "accessibilita-web",
+      "headline": "Accessibilità web: siti conformi a WCAG ed European Accessibility Act",
+      "short": "Audit WCAG, correzioni e progettazione accessibile per siti ed e-commerce usabili da tutti e allineati all'European Accessibility Act.",
+      "answer": "L'accessibilità web è la progettazione di siti e app utilizzabili anche da persone con disabilità visive, motorie, uditive o cognitive. not4sale verifica i siti rispetto alle WCAG, corregge i problemi di design, codice e contenuti e aiuta le aziende a capire cosa richiede l'European Accessibility Act, in vigore dal 28 giugno 2025.",
+      "problem": "Molti siti sono, senza volerlo, chiusi a una parte dei clienti. Un bottone che si vede ma non si raggiunge da tastiera, un testo grigio chiaro su fondo bianco, immagini prodotto senza descrizione, un modulo di checkout che il lettore di schermo legge come una serie di \"campo di testo\" senza etichetta. Per chi usa tecnologie assistive, quel sito semplicemente non funziona.\n\nFino a poco tempo fa per le aziende private era soprattutto una questione di qualità e di clienti persi. Dal 28 giugno 2025 si applica l'European Accessibility Act, recepito in Italia, che estende i requisiti di accessibilità a diversi prodotti e servizi offerti ai consumatori, tra cui il commercio elettronico.\n\nIl problema è che pochi sanno se il proprio sito è conforme, e i plugin che promettono accessibilità \"con un clic\" non risolvono i difetti nel codice e nei contenuti. Nel frattempo il sito continua a escludere persone che vorrebbero comprare o contattarti.",
+      "process": [
+        {
+          "title": "Inquadramento normativo",
+          "description": "Verifichiamo con te se e come l'European Accessibility Act riguarda la tua attività, insieme ai tuoi consulenti legali."
+        },
+        {
+          "title": "Audit WCAG",
+          "description": "Analisi del sito con strumenti automatici e test manuali da tastiera e con lettori di schermo sulle pagine chiave."
+        },
+        {
+          "title": "Piano di correzione",
+          "description": "Elenco dei problemi per gravità e impatto, con indicazioni di intervento su design, codice e contenuti."
+        },
+        {
+          "title": "Correzioni e verifica",
+          "description": "Applichiamo le correzioni o affianchiamo chi gestisce il sito, poi ripetiamo i test sui problemi risolti."
+        },
+        {
+          "title": "Dichiarazione e manutenzione",
+          "description": "Supporto nella redazione delle informazioni sull'accessibilità e controlli periodici sui nuovi contenuti."
+        }
+      ],
+      "deliverables": [
+        "Report di audit con i problemi riferiti ai criteri WCAG",
+        "Piano di correzione ordinato per gravità e sforzo",
+        "Correzioni di codice, componenti e template del sito",
+        "Revisione di contrasti, testi alternativi ed etichette dei moduli",
+        "Bozza delle informazioni sull'accessibilità da pubblicare sul sito",
+        "Linee guida per scrivere e caricare contenuti accessibili",
+        "Report di verifica finale dopo le correzioni"
+      ],
+      "body": "## Cos'è l'accessibilità web e chi riguarda\n\nL'accessibilità web significa che un sito può essere percepito, compreso e usato da tutti, comprese le persone con disabilità e chi usa tecnologie assistive come lettori di schermo, ingranditori o comandi vocali. Riguarda anche situazioni quotidiane: chi legge al sole dallo smartphone, chi ha un braccio ingessato, una persona anziana con la vista che cala.\n\nIl riferimento tecnico internazionale sono le **WCAG** (Web Content Accessibility Guidelines) del W3C, organizzate su quattro principi: percepibile, utilizzabile, comprensibile, robusto. Ogni criterio ha un livello di conformità (A, AA, AAA); il livello AA è quello a cui fanno riferimento le norme europee, attraverso lo standard armonizzato EN 301 549. La versione più recente delle linee guida è la WCAG 2.2, pubblicata nel 2023.\n\n## European Accessibility Act: cosa cambia per le aziende\n\nL'European Accessibility Act (Direttiva UE 2019/882) si applica dal 28 giugno 2025 e richiede che determinati prodotti e servizi offerti ai consumatori nell'Unione siano accessibili. Tra i servizi coinvolti ci sono il commercio elettronico, i servizi bancari, i servizi di trasporto passeggeri, gli e-book e i servizi di comunicazione elettronica. In Italia la direttiva è stata recepita con il decreto legislativo 82 del 2022.\n\nCosa significa in pratica per un'azienda:\n\n- se vendi online ai consumatori, il percorso di acquisto (catalogo, scheda prodotto, carrello, pagamento, account) deve rispettare i requisiti di accessibilità;\n- le informazioni su come il servizio soddisfa i requisiti vanno rese disponibili;\n- sono previste esclusioni, per esempio per alcune microimprese che forniscono servizi, e casi particolari da valutare uno per uno.\n\nNon siamo uno studio legale: ti aiutiamo a capire se il sito rispetta i requisiti tecnici e a sistemarlo. Per stabilire con certezza se e come la norma si applica alla tua attività, il confronto con un consulente legale resta necessario, e lavoriamo volentieri insieme a lui.\n\n## Perché un plugin di accessibilità non basta\n\nI widget che aggiungono una barra di accessibilità al sito non lo rendono conforme. Possono ingrandire il testo o cambiare i colori, ma non aggiungono etichette mancanti ai moduli, non sistemano l'ordine di navigazione da tastiera e non scrivono le descrizioni delle immagini.\n\nL'accessibilità vive in tre livelli, e vanno curati tutti:\n\n1. **Design**: contrasti sufficienti, dimensioni dei target cliccabili, stati di focus visibili, informazioni non affidate solo al colore. Se ne occupa anche il nostro lavoro di [UX/UI design](/servizi/web-app/ux-ui-design).\n2. **Codice**: HTML semantico, struttura dei titoli, etichette dei campi, attributi ARIA solo dove servono, componenti come menu e finestre modali utilizzabili da tastiera.\n3. **Contenuti**: testi alternativi delle immagini, link con testo descrittivo, sottotitoli dei video, linguaggio chiaro.\n\n## Come facciamo un audit di accessibilità\n\nUn audit affidabile combina strumenti automatici e test manuali. Gli strumenti automatici sono rapidi ma intercettano solo una parte dei problemi; il resto emerge navigando il sito come lo farebbe chi usa una tecnologia assistiva.\n\nPartiamo dai percorsi critici: home page, pagine servizio o categorie, scheda prodotto, modulo di contatto, carrello e checkout per gli [e-commerce Shopify](/servizi/ecommerce/shopify) e WooCommerce. Li proviamo solo con la tastiera, con un lettore di schermo, con lo zoom del browser e con i contrasti misurati. Ogni problema nel report è collegato al criterio WCAG di riferimento, con una spiegazione e una proposta di correzione comprensibili anche a chi non è tecnico.\n\n## Accessibilità, SEO e conversioni\n\nUn sito accessibile è quasi sempre un sito migliore per tutti. Struttura dei titoli corretta, testi alternativi e codice semantico sono gli stessi segnali che aiutano Google e gli assistenti AI a capire le pagine, e si sommano al lavoro di [SEO tecnico](/servizi/seo/seo-tecnico). Moduli con etichette chiare e messaggi di errore comprensibili riducono gli abbandoni per chiunque.\n\nL'accessibilità non si fa una volta sola: ogni nuova pagina, immagine o campagna può introdurre problemi. Per questo la includiamo nei controlli periodici del servizio di [hosting e manutenzione](/servizi/web-app/hosting-manutenzione) e forniamo linee guida a chi carica i contenuti. Se stai per rifare il sito, è il momento migliore per progettarlo accessibile dall'inizio: costa molto meno che correggerlo dopo.",
+      "faq": [
+        {
+          "question": "Il mio sito deve essere accessibile per legge?",
+          "answer": "Dipende dal tipo di attività e dai servizi che offri. L'European Accessibility Act riguarda specifici prodotti e servizi destinati ai consumatori, tra cui il commercio elettronico, e prevede alcune esclusioni, per esempio per determinate microimprese che forniscono servizi. Ti aiutiamo a fare una prima valutazione tecnica; per la conferma giuridica conviene coinvolgere un consulente legale."
+        },
+        {
+          "question": "Quanto costa rendere accessibile un sito?",
+          "answer": "Il costo dipende dalle dimensioni del sito, dalla tecnologia, dal numero di template e componenti da correggere e dalla quantità di contenuti da rivedere, come immagini e PDF. Un audit iniziale permette di stimare con precisione l'intervento. Se il sito è molto datato, a volte conviene rifarlo progettandolo accessibile. Una prima stima la trovi su /preventivo."
+        },
+        {
+          "question": "Basta installare un plugin o un widget di accessibilità?",
+          "answer": "No. I widget possono offrire qualche regolazione di testo e colori, ma non correggono i problemi nel codice e nei contenuti, come moduli senza etichette, navigazione da tastiera interrotta o immagini senza descrizione. La conformità alle WCAG si ottiene intervenendo su design, sviluppo e contenuti, e verificando il risultato con test reali."
+        },
+        {
+          "question": "Quale livello WCAG bisogna raggiungere?",
+          "answer": "Le norme europee fanno riferimento allo standard EN 301 549, che rimanda ai criteri WCAG di livello AA. È quindi il livello su cui impostiamo audit e correzioni. Il livello AAA è molto esigente e di solito non viene richiesto per un intero sito, ma alcuni suoi criteri possono essere adottati dove migliorano l'esperienza senza costi sproporzionati."
+        },
+        {
+          "question": "Quanto tempo serve per mettere a norma un sito?",
+          "answer": "Un audit sulle pagine chiave richiede in genere qualche settimana. I tempi delle correzioni dipendono da quanti problemi emergono e da dove si trovano: correggere un componente usato su tutto il sito risolve molte pagine insieme, mentre rivedere centinaia di immagini e documenti richiede più tempo. Il piano di correzione indica priorità e tempi stimati."
+        },
+        {
+          "question": "Dopo le correzioni il sito resta accessibile?",
+          "answer": "Solo se i nuovi contenuti vengono caricati con attenzione. Un'immagine senza testo alternativo o un PDF non strutturato bastano a reintrodurre problemi. Per questo consegniamo linee guida per chi gestisce il sito e, se ci affidi la manutenzione, includiamo controlli periodici di accessibilità sulle pagine più importanti."
+        }
+      ],
+      "related": [
+        "ux-ui-design",
+        "siti-web",
+        "shopify",
+        "hosting-manutenzione"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Accessibilità web WCAG ed EAA | not4sale",
+      "metaDescription": "Accessibilità web: audit WCAG, correzioni di design, codice e contenuti e supporto sull'European Accessibility Act per siti ed e-commerce. Chiedi un audit."
+    }
+  ]
+}

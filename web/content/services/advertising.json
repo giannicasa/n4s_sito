@@ -1,0 +1,596 @@
+{
+  "area": {
+    "slug": "advertising",
+    "headline": "Agenzia advertising a Cattolica: campagne online che si ripagano",
+    "short": "Google, Meta, TikTok, LinkedIn, YouTube e Amazon Ads gestiti sul ritorno economico, con tracciamento che regge.",
+    "answer": "not4sale è un'agenzia di advertising online con sede a Cattolica che progetta e gestisce campagne a pagamento su Google, Meta, TikTok, LinkedIn, YouTube e Amazon. Partiamo dal tracciamento delle conversioni, scegliamo i canali in base a dove si trova la domanda e ottimizziamo sul margine generato, non su clic o impression.",
+    "body": "## Quando ha senso investire in advertising online?\n\nL'advertising online ha senso quando hai un'offerta che già vende e vuoi più domanda di quanta ne porti il passaparola o la SEO. Le campagne a pagamento non aggiustano un prodotto debole o un sito che non converte: lo amplificano. Se il problema è lì, conviene partire da [funnel e CRO](/servizi/growth/funnel-cro) o da una [landing page](/servizi/web-app/landing-page) costruita per la campagna.\n\nI segnali che è il momento giusto:\n\n- conosci il valore medio di un cliente e sai quanto puoi spendere per acquisirne uno;\n- il sito o l'e-commerce registra già vendite o richieste, anche poche;\n- hai bisogno di risultati in settimane, non nei mesi che richiede il posizionamento organico;\n- vuoi testare un nuovo mercato, prodotto o messaggio prima di investirci davvero.\n\n## Quale piattaforma scegliere: Google, Meta, TikTok o LinkedIn?\n\nDipende da dove si trova la tua domanda. Chi cerca \"idraulico Rimini\" su Google ha già un bisogno; chi scorre Instagram no, ma può scoprire che gli serve il tuo prodotto. Per questo i canali non sono intercambiabili.\n\n| Canale | Cosa intercetta | Quando funziona meglio |\n|---|---|---|\n| [Google Ads](/servizi/advertising/google-ads) | Domanda esplicita: chi sta cercando | Servizi, lead locali, prodotti cercati per nome |\n| [Meta Ads](/servizi/advertising/meta-ads) | Domanda latente su Facebook e Instagram | E-commerce, eventi, offerte con una forte componente visiva |\n| [TikTok Ads](/servizi/advertising/tiktok-ads) | Scoperta tramite video brevi | Prodotti che si capiscono in 15 secondi, pubblici giovani e non solo |\n| [LinkedIn Ads](/servizi/advertising/linkedin-ads) | Ruoli e aziende precise | B2B con contratti di valore alto |\n| [YouTube Ads](/servizi/advertising/youtube-ads) | Attenzione video e intenzione di ricerca | Prodotti da spiegare, notorietà con conversioni misurate |\n| [Amazon Ads](/servizi/advertising/amazon-ads) | Acquirenti già dentro il marketplace | Brand che vendono su Amazon |\n| [Google Shopping](/servizi/advertising/google-shopping) | Ricerche di prodotto con prezzo e foto | E-commerce con catalogo |\n\nQuasi mai servono tutti. Di solito si parte da uno o due canali, si misura e si allarga solo quando i numeri lo giustificano. Il [retargeting](/servizi/advertising/retargeting) si aggiunge quando c'è abbastanza traffico da recuperare.\n\n## Come lavoriamo sulle campagne a pagamento\n\nLavoriamo con lo stesso metodo che usiamo ovunque: ipotesi, prototipo, test, dato, decisione. In pratica:\n\n1. **Prima il tracciamento.** Se le conversioni non vengono misurate bene, l'algoritmo ottimizza su segnali sbagliati e tu decidi su numeri falsi. Verifichiamo pixel, tag, consenso e, dove serve, impostiamo il [server-side tracking](/servizi/data-analytics/server-side-tracking).\n2. **Obiettivo economico.** Concordiamo un costo per acquisizione o un ritorno sulla spesa sostenibile per i tuoi margini, non un numero di clic.\n3. **Struttura semplice.** Poche campagne con abbastanza dati per imparare, invece di decine di gruppi che si spartiscono il budget.\n4. **Test creativi continui.** Nelle piattaforme social la creatività è la leva principale del targeting: testiamo angoli, formati e messaggi con una cadenza fissa.\n5. **Report leggibili.** Ti diciamo cosa abbiamo speso, cosa ha reso, cosa cambiamo e perché. Niente vanity metric.\n\n## Per chi è (e per chi no)\n\nLavoriamo con PMI, e-commerce, aziende B2B e attività turistiche tra Romagna e Marche, e da remoto in tutta Italia. Il caso che vediamo più spesso: campagne avviate da soli o con un fornitore precedente, account pieni di prove mai chiuse e nessuno che sappia dire quanto rende davvero ogni euro investito.\n\nNon siamo il fit giusto se cerchi qualcuno che \"faccia girare due post sponsorizzati\" senza guardare i numeri, o se il budget media è così ridotto da non permettere all'algoritmo di imparare. In quel caso te lo diciamo prima, e magari ti suggeriamo di partire da altro.\n\nIl preventivo dipende da numero di canali, complessità del tracciamento e volume creativo da produrre: puoi farti un'idea con il [calcolatore di preventivo](/preventivo).",
+    "faq": [
+      {
+        "question": "Quanto budget serve per partire con le campagne a pagamento?",
+        "answer": "Dipende dal canale e dal costo di una conversione nel tuo settore. Il budget deve permettere alla piattaforma di raccogliere abbastanza conversioni per ottimizzare: se un contatto costa molto, servono più risorse per uscire dalla fase di apprendimento. In fase di analisi stimiamo il budget minimo sensato per i tuoi obiettivi e, se non è sostenibile, te lo diciamo prima di iniziare."
+      },
+      {
+        "question": "Il budget pubblicitario è compreso nel vostro compenso?",
+        "answer": "No. La spesa media la paghi direttamente alle piattaforme (Google, Meta, TikTok e le altre) con il tuo metodo di pagamento, sui tuoi account. Il nostro compenso copre strategia, gestione, creatività e reportistica. Così vedi sempre quanto è stato speso davvero e gli account restano di tua proprietà, anche se un giorno smetti di lavorare con noi."
+      },
+      {
+        "question": "In quanto tempo si vedono i risultati delle campagne?",
+        "answer": "I primi dati arrivano in pochi giorni, ma le campagne di solito si stabilizzano dopo alcune settimane, quando gli algoritmi hanno raccolto abbastanza conversioni. Il primo mese serve a capire cosa funziona; dal secondo in poi si lavora per migliorare il costo per acquisizione. Diffida di chi promette risultati definitivi in una settimana."
+      },
+      {
+        "question": "Gestite anche le creatività o devo fornirle io?",
+        "answer": "Possiamo fare entrambe le cose. Se hai materiale, partiamo da quello e lo adattiamo ai formati di ogni piattaforma. Se manca, produciamo noi immagini, video brevi e testi, appoggiandoci ai servizi di [video e spot](/servizi/content/video-spot) e copywriting dello studio. Nelle campagne social la creatività pesa più del targeting, quindi la consideriamo parte del lavoro, non un extra."
+      },
+      {
+        "question": "Posso affidarvi un account già attivo senza ricominciare da zero?",
+        "answer": "Sì, ed è il caso più frequente. Partiamo da un'analisi dell'account esistente: tracciamento, struttura, termini di ricerca, creatività, storico. Teniamo ciò che funziona, sistemiamo gli errori e chiudiamo ciò che spreca budget. Lo storico di conversioni ha valore per gli algoritmi, quindi evitiamo di azzerarlo senza un motivo."
+      }
+    ],
+    "metaTitle": "Agenzia advertising a Cattolica e Rimini | not4sale",
+    "metaDescription": "Agenzia advertising: campagne Google, Meta, TikTok, LinkedIn e Amazon gestite sul ritorno, con tracciamento affidabile. Richiedi un preventivo gratuito."
+  },
+  "services": [
+    {
+      "slug": "google-ads",
+      "headline": "Agenzia Google Ads: campagne Search e Performance Max sul ritorno",
+      "short": "Campagne Search, Performance Max e Display gestite su costo per acquisizione e margine, non su clic e impression.",
+      "answer": "Gestire Google Ads significa intercettare chi sta già cercando ciò che vendi. not4sale, studio con sede a Cattolica, imposta e gestisce campagne Search, Performance Max e Display partendo dal tracciamento delle conversioni, con offerte e budget calibrati sul costo per acquisizione che i tuoi margini possono sostenere.",
+      "problem": "Il conto Google Ads tipico che riceviamo in analisi ha gli stessi sintomi. Campagne create anni fa, parole chiave a corrispondenza generica che portano ricerche che non c'entrano nulla, conversioni conteggiate due volte o non conteggiate affatto. A volte la \"conversione\" principale è un clic sul numero di telefono, o la visita alla pagina contatti.\n\nIl risultato è che le strategie di offerta automatiche ottimizzano sul segnale sbagliato. Google spende il budget in modo efficiente, ma per raggiungere un obiettivo che non porta fatturato. Intanto il report mensile mostra clic e CTR in crescita e nessuno sa dire quanti clienti sono arrivati davvero.\n\nC'è poi Performance Max, attivata spesso perché suggerita dalla piattaforma: senza feed curato, esclusioni e segnali di pubblico, può finire a spendere sul traffico del tuo stesso brand o su posizionamenti Display di scarsa qualità. Ogni mese così è budget che potevi spendere meglio.",
+      "process": [
+        {
+          "title": "Audit account e tracciamento",
+          "description": "Analizziamo struttura, termini di ricerca, storico e configurazione delle conversioni. Prima di toccare le campagne, sistemiamo cosa viene misurato."
+        },
+        {
+          "title": "Ricerca parole chiave",
+          "description": "Mappiamo le ricerche per intento: chi è pronto a comprare, chi si informa, chi cerca il concorrente. Definiamo cosa presidiare e cosa escludere."
+        },
+        {
+          "title": "Struttura e annunci",
+          "description": "Costruiamo poche campagne con abbastanza dati, annunci adattabili scritti sull'intento di ricerca ed estensioni complete."
+        },
+        {
+          "title": "Ottimizzazione settimanale",
+          "description": "Termini di ricerca, esclusioni, offerte, test sugli annunci e sulle pagine di destinazione, con un registro delle modifiche."
+        },
+        {
+          "title": "Report e decisioni",
+          "description": "Ogni mese un report su costo per acquisizione e ritorno, con le scelte per il mese successivo."
+        }
+      ],
+      "deliverables": [
+        "Audit scritto dell'account con priorità di intervento",
+        "Piano di misurazione delle conversioni con conversioni avanzate e Consent Mode verificati",
+        "Mappa delle parole chiave per intento ed elenchi di parole chiave escluse",
+        "Campagne Search e Performance Max configurate, con annunci ed estensioni",
+        "Registro delle modifiche condiviso",
+        "Report mensile su costo per acquisizione, ritorno sulla spesa e azioni successive"
+      ],
+      "body": "## Cosa fa un'agenzia Google Ads, in concreto?\n\nUn'agenzia Google Ads decide su quali ricerche comparire, quanto offrire e con quale messaggio, e misura quanto rende ogni euro speso. Il lavoro visibile sono gli annunci, ma la parte che sposta i risultati è un'altra: scegliere gli obiettivi giusti, dare all'algoritmo segnali puliti e togliere budget da ciò che non converte.\n\nCon not4sale il lavoro su Google Ads copre:\n\n- **Search**: annunci testuali sulle ricerche, il canale più diretto per servizi e lead;\n- **Performance Max**: una sola campagna che distribuisce gli annunci su Search, Shopping, YouTube, Display, Gmail e Discover, utile soprattutto con un catalogo prodotti;\n- **Display e Demand Gen**: per il [retargeting](/servizi/advertising/retargeting) e per farsi conoscere da pubblici simili ai tuoi clienti;\n- **Shopping**: per gli e-commerce, con un lavoro dedicato sul feed che trovi nella pagina [Google Shopping](/servizi/advertising/google-shopping).\n\n## Perché il tracciamento delle conversioni viene prima di tutto\n\nLe strategie di offerta automatiche di Google, come Massimizza conversioni o ROAS target, imparano dai dati che ricevono. Se il dato è sbagliato, imparano la cosa sbagliata. Per questo il primo passo è sempre il piano di misurazione:\n\n1. definire quali azioni contano davvero (una vendita, un preventivo compilato, una telefonata di almeno qualche secondo) e quali sono solo segnali secondari;\n2. verificare che ogni conversione venga registrata una sola volta;\n3. attivare le conversioni avanzate, che recuperano dati persi a causa di cookie e browser;\n4. configurare Consent Mode v2, obbligatoria per chi fa pubblicità a utenti nello Spazio economico europeo dal 2024;\n5. dove ha senso, importare in Google Ads i contatti che diventano clienti nel CRM, così l'algoritmo ottimizza sui lead buoni e non su tutti i lead.\n\nSu questa parte lavoriamo insieme a [tracking e Google Tag Manager](/servizi/data-analytics/tracking-gtm): è il lavoro meno visibile, ed è quello che rende sensato tutto il resto.\n\n## Search o Performance Max: quale scegliere?\n\nSearch resta la scelta migliore quando vuoi controllare su quali ricerche compari e con quale messaggio. Performance Max funziona bene quando hai un catalogo, molte conversioni e accetti di dare più controllo all'automazione in cambio di copertura.\n\n| | Search | Performance Max |\n|---|---|---|\n| Controllo sulle ricerche | Alto, per parola chiave | Limitato, per temi e segnali |\n| Dove compaiono gli annunci | Risultati di ricerca Google | Tutta la rete Google |\n| Ideale per | Servizi, lead, attività locali | E-commerce, cataloghi ampi |\n| Dati necessari | Pochi per iniziare | Servono conversioni regolari |\n| Rischio principale | Parole chiave troppo larghe | Spesa su brand e posizionamenti deboli |\n\nSpesso la risposta giusta è una combinazione: Search sulle ricerche ad alta intenzione e Performance Max per il catalogo, con le esclusioni del brand impostate per non pagare clic che arriverebbero comunque.\n\n## Google Ads per attività locali e per il turismo\n\nPer un'attività di Cattolica, Rimini o Pesaro, Google Ads è spesso il modo più rapido per presidiare ricerche come \"dentista vicino a me\" o \"hotel per famiglie Riccione\". Qui contano raggio geografico, orari, estensioni di località collegate al profilo dell'attività e chiamate tracciate. Nel turismo pesa anche la stagionalità: il budget va spostato sulle settimane in cui le persone prenotano, non solo su quelle in cui viaggiano.\n\nLe campagne locali rendono di più se vanno di pari passo con la [SEO locale](/servizi/seo/seo-locale): le ricerche in cui sei già primo nella mappa costano meno da presidiare anche a pagamento, e viceversa.\n\n## Cosa succede dopo il primo mese\n\nIl primo mese è di apprendimento: raccogliamo dati, puliamo i termini di ricerca e capiamo quali annunci e pagine convertono. Dal secondo mese il lavoro diventa ottimizzazione: alzare o abbassare gli obiettivi di costo, spostare budget verso ciò che rende, testare nuove pagine di destinazione. Se la pagina è il collo di bottiglia, lo diciamo e proponiamo una [landing page](/servizi/web-app/landing-page) dedicata.\n\nIl preventivo di gestione dipende da numero di campagne, complessità del tracciamento e frequenza dei test. Puoi stimarlo con il [calcolatore di preventivo](/preventivo).",
+      "faq": [
+        {
+          "question": "Quanto devo investire in Google Ads per iniziare?",
+          "answer": "Dipende dal costo per clic del tuo settore e da quante conversioni servono per ottimizzare. In alcuni mercati locali un budget contenuto basta per presidiare le ricerche principali; in settori competitivi come legale o assicurativo un clic costa molto di più. Prima di partire stimiamo volumi e costi con lo strumento di pianificazione delle parole chiave e ti diciamo quale budget minimo ha senso."
+        },
+        {
+          "question": "Gli account restano miei?",
+          "answer": "Sì. Lavoriamo sul tuo account Google Ads, collegato al tuo metodo di pagamento, con accesso concesso al nostro account manager. Se un giorno smetti di lavorare con noi, campagne, storico e conversioni restano tuoi. Se oggi l'account è intestato al fornitore precedente, ti aiutiamo a recuperarlo o a migrare la struttura."
+        },
+        {
+          "question": "Conviene fare annunci sul proprio nome di brand?",
+          "answer": "Spesso sì, se i concorrenti comprano il tuo nome o se in pagina compaiono rivenditori e portali che ti tolgono clic. Il costo per clic sul brand è di solito basso. Va però tenuto separato dal resto, misurato a parte ed escluso da Performance Max, altrimenti gonfia i risultati e nasconde quanto rendono davvero le altre campagne."
+        },
+        {
+          "question": "Che differenza c'è tra Google Ads e SEO?",
+          "answer": "Con Google Ads paghi ogni clic e i risultati arrivano subito, ma si fermano quando spegni le campagne. La SEO richiede mesi, ma il traffico organico non costa per clic. Le due cose si aiutano: i dati di Google Ads dicono quali ricerche convertono e quindi su quali conviene investire anche in SEO. Ne parliamo nella pagina dell'[area SEO](/servizi/seo)."
+        },
+        {
+          "question": "Ogni quanto ricevo un report?",
+          "answer": "Un report mensile scritto, con spesa, conversioni, costo per acquisizione, ritorno e le decisioni per il mese successivo. Hai anche una dashboard aggiornata in automatico per controllare i numeri quando vuoi. Nelle prime settimane di un account nuovo o ristrutturato ci sentiamo più spesso, perché le decisioni vanno prese velocemente."
+        },
+        {
+          "question": "Performance Max è adatta anche a chi genera contatti e non vende online?",
+          "answer": "Può esserlo, ma con cautela. Senza un segnale di qualità sui lead, Performance Max tende a portare moduli compilati in fretta o da utenti poco interessati, soprattutto dalla rete Display. Funziona meglio se importiamo dal CRM quali contatti diventano clienti e se le esclusioni sono impostate bene. Per molti servizi locali, Search resta la base."
+        }
+      ],
+      "related": [
+        "google-shopping",
+        "retargeting",
+        "tracking-gtm",
+        "landing-page"
+      ],
+      "caseStudies": [
+        "cs-003",
+        "cs-001"
+      ],
+      "metaTitle": "Agenzia Google Ads a Cattolica e Rimini | not4sale",
+      "metaDescription": "Agenzia Google Ads: campagne Search e Performance Max ottimizzate su costo per acquisizione e ritorno, con conversioni tracciate bene. Chiedi un'analisi."
+    },
+    {
+      "slug": "meta-ads",
+      "headline": "Meta Ads: campagne Facebook e Instagram con test creativi continui",
+      "short": "Facebook e Instagram Ads gestiti con test creativi a cadenza fissa e Conversions API per un tracciamento che regge.",
+      "answer": "Le campagne Meta Ads mostrano i tuoi annunci su Facebook, Instagram, Messenger e Audience Network a persone che non ti stanno cercando, ma potrebbero comprare. not4sale le gestisce da Cattolica con test creativi a cadenza fissa, Conversions API per misurare le vendite e strutture semplici che lasciano imparare l'algoritmo.",
+      "problem": "Su Facebook e Instagram il problema raramente è il pubblico. Molte aziende passano settimane a costruire interessi dettagliati, poi pubblicano due immagini e le lasciano girare per mesi. Le creatività si consumano, la frequenza sale, il costo per acquisto cresce e la conclusione è \"Meta non funziona per noi\".\n\nL'altro problema è la misurazione. Da quando Apple ha introdotto App Tracking Transparency con iOS 14.5, nel 2021, il solo pixel nel browser perde una parte delle conversioni. Se non c'è la Conversions API, Meta vede meno vendite di quelle che avvengono, ottimizza peggio e i report sottostimano il ritorno: rischi di spegnere campagne che in realtà funzionano.\n\nPoi c'è il \"metti in evidenza il post\", fatto dal telefono quando avanza tempo. Porta like e visualizzazioni, raramente clienti. È budget che non insegna nulla né a te né all'algoritmo.",
+      "process": [
+        {
+          "title": "Tracciamento e catalogo",
+          "description": "Verifichiamo pixel, Conversions API, qualità della corrispondenza degli eventi e, per gli e-commerce, il catalogo prodotti."
+        },
+        {
+          "title": "Angoli e messaggi",
+          "description": "Partiamo da clienti, recensioni e obiezioni per definire gli angoli comunicativi da testare: problema, prova, offerta, confronto."
+        },
+        {
+          "title": "Produzione creativa",
+          "description": "Prepariamo varianti di video brevi, caroselli e immagini nei formati verticali e quadrati, con testi diversi per ogni angolo."
+        },
+        {
+          "title": "Test e scalata",
+          "description": "Lanciamo i test con una cadenza fissa, spegniamo ciò che non rende e spostiamo budget sulle creatività vincenti."
+        },
+        {
+          "title": "Analisi e report",
+          "description": "Ogni mese leggiamo i risultati per angolo e formato, non solo per campagna, e decidiamo i prossimi test."
+        }
+      ],
+      "deliverables": [
+        "Configurazione o verifica di pixel, Conversions API ed eventi standard",
+        "Matrice degli angoli creativi da testare, aggiornata ogni mese",
+        "Set di creatività per test: video brevi, caroselli e immagini con testi",
+        "Struttura delle campagne con pubblici di esclusione e di retargeting",
+        "Catalogo prodotti collegato e set di prodotti per le campagne dinamiche",
+        "Report mensile con risultati per angolo creativo e piano dei test successivi"
+      ],
+      "body": "## Come funzionano oggi le campagne Meta Ads?\n\nLe campagne Meta Ads oggi funzionano soprattutto con pubblici ampi e una buona varietà di creatività: è l'annuncio a selezionare le persone giuste, più del targeting per interessi. Gli strumenti automatici di Meta, come le campagne Advantage+, decidono chi raggiungere in base a chi reagisce agli annunci e a chi converte. Il nostro lavoro è dare all'algoritmo materiale e segnali buoni.\n\nIn pratica significa tre cose:\n\n- **segnali di conversione puliti**, perché Meta ottimizza su ciò che misura;\n- **creatività diverse tra loro**, non dieci versioni dello stesso concetto;\n- **struttura essenziale**, con abbastanza budget per gruppo di inserzioni da superare la fase di apprendimento.\n\n## Perché la creatività conta più del targeting su Facebook e Instagram\n\nSu Facebook e Instagram la creatività è il targeting: un video che parla di mal di schiena da scrivania verrà mostrato a chi passa la giornata in ufficio, anche se non hai impostato quell'interesse. Per questo lavoriamo per angoli comunicativi, non per singoli annunci.\n\nUn angolo è un modo diverso di vendere la stessa cosa:\n\n1. **il problema**: mostrare la situazione che il cliente vuole lasciarsi alle spalle;\n2. **la prova**: recensioni, prima e dopo, numeri reali, dimostrazioni;\n3. **l'offerta**: cosa ottiene, a quali condizioni, entro quando;\n4. **il confronto**: perché tu invece dell'alternativa che sta già usando;\n5. **il volto**: il fondatore o un cliente che racconta, in formato nativo da telefono.\n\nPer ogni angolo produciamo più formati. Spesso il contenuto che rende di più non è il più curato, ma quello che sembra nato sulla piattaforma. Quando servono riprese vere ci appoggiamo al servizio [video e spot](/servizi/content/video-spot) dello studio; per i testi, al [copywriting](/servizi/content/copywriting).\n\n## Conversions API: perché il pixel da solo non basta più\n\nLa Conversions API invia a Meta gli eventi direttamente dal tuo server, non solo dal browser dell'utente. Recupera conversioni che il pixel perde per blocchi, cookie e restrizioni di iOS, e migliora la qualità della corrispondenza tra eventi e persone. Il risultato è un algoritmo che ottimizza meglio e report più vicini alla realtà.\n\nSu Shopify e WooCommerce l'integrazione si attiva con i connettori ufficiali; su siti personalizzati la impostiamo con il [server-side tracking](/servizi/data-analytics/server-side-tracking). In entrambi i casi verifichiamo la deduplicazione degli eventi, che se sbagliata conta ogni acquisto due volte.\n\n## Meta Ads per e-commerce, lead ed eventi\n\nIl lavoro cambia a seconda dell'obiettivo:\n\n| Obiettivo | Cosa usiamo | Cosa guardiamo |\n|---|---|---|\n| Vendite e-commerce | Catalogo, campagne Advantage+ shopping, annunci dinamici | Ritorno sulla spesa, nuovi clienti vs già clienti |\n| Contatti per servizi | Moduli istantanei o landing page dedicate | Costo per contatto qualificato, non per contatto |\n| Eventi e stagionalità | Campagne a calendario, retargeting di chi ha interagito | Prenotazioni e biglietti venduti |\n\nSui moduli istantanei serve attenzione: sono comodi, ma portano anche contatti poco convinti. Una domanda di qualificazione in più abbassa il volume e alza la qualità. Per le attività stagionali della Riviera romagnola, il calendario dei test va preparato prima dell'apertura, non durante.\n\n## Cosa ti chiediamo e cosa ricevi\n\nTi chiediamo l'accesso a Business Manager, al pixel e al catalogo, materiali che hai già (foto, video, recensioni) e un referente che risponda in tempi brevi sulle offerte. In cambio ricevi una gestione con test regolari, un report che spiega cosa ha funzionato e perché, e le idee per il ciclo successivo.\n\nSe il budget è troppo basso per far imparare l'algoritmo, lo vedrai scritto nell'analisi iniziale. Per stimare il costo della gestione c'è il [calcolatore di preventivo](/preventivo); per approfondire come lavoriamo, il nostro articolo sul [growth hacking](/blog/growth-hacking-perche-funziona).",
+      "faq": [
+        {
+          "question": "Meglio pubblicità su Facebook o su Instagram?",
+          "answer": "Di solito non serve scegliere. Una campagna Meta può mostrare gli annunci su entrambe le piattaforme e distribuire il budget dove i risultati sono migliori. Separiamo i posizionamenti solo quando i dati mostrano una differenza netta o quando una creatività funziona solo in un formato, ad esempio un video verticale pensato per Reel e Storie."
+        },
+        {
+          "question": "Quante creatività servono ogni mese?",
+          "answer": "Dipende dal budget: più spendi, più velocemente una creatività si consuma. Con budget contenuti bastano pochi nuovi annunci al mese, purché siano davvero diversi tra loro. Con budget alti servono cicli di test più frequenti. Nella proposta indichiamo il volume creativo previsto, perché incide su risultati e costi di produzione."
+        },
+        {
+          "question": "Perché i risultati di Meta non coincidono con quelli di Google Analytics?",
+          "answer": "Perché misurano in modo diverso. Meta attribuisce una conversione anche a chi ha visto l'annuncio senza cliccarlo, entro una finestra di tempo; Google Analytics tende a dare il merito all'ultimo canale cliccato. Nessuno dei due è la verità assoluta. Noi confrontiamo le fonti con le vendite reali e, se serve, lavoriamo su un [modello di attribuzione](/servizi/data-analytics/attribuzione) condiviso."
+        },
+        {
+          "question": "Devo metterci la faccia nei video?",
+          "answer": "Non è obbligatorio, ma spesso aiuta. I contenuti con una persona reale che parla in camera tendono a sembrare meno pubblicità e a trattenere di più. Se non te la senti, possiamo usare clienti, collaboratori, creator o video di prodotto. Lo decidiamo con i test, non per principio."
+        },
+        {
+          "question": "Cosa succede se l'account pubblicitario viene bloccato?",
+          "answer": "Capita, a volte per errore dei sistemi automatici di Meta. Per ridurre il rischio verifichiamo dominio e Business Manager, rispettiamo le regole sulle categorie sensibili e sui testi degli annunci. Se arriva un blocco, gestiamo la richiesta di revisione e prepariamo un piano per non fermare le vendite, ad esempio spostando budget temporaneamente su altri canali."
+        }
+      ],
+      "related": [
+        "retargeting",
+        "video-spot",
+        "server-side-tracking",
+        "tiktok-ads"
+      ],
+      "caseStudies": [
+        "cs-001",
+        "cs-003"
+      ],
+      "metaTitle": "Meta Ads: agenzia Facebook e Instagram Ads | not4sale",
+      "metaDescription": "Campagne Meta Ads su Facebook e Instagram con test creativi continui e Conversions API per misurare le vendite reali. Richiedi un'analisi del tuo account."
+    },
+    {
+      "slug": "tiktok-ads",
+      "headline": "TikTok Ads: campagne e creatività native per farti scoprire",
+      "short": "Campagne TikTok Ads con video nativi, Spark Ads e tracciamento via Events API, per pubblici che altrove non raggiungi.",
+      "answer": "TikTok Ads è la piattaforma pubblicitaria di TikTok: permette di mostrare video sponsorizzati nel feed Per te a pubblici selezionati per età, interessi e comportamenti. not4sale progetta le campagne e soprattutto le creatività, girate con il linguaggio della piattaforma, e misura le conversioni con pixel ed Events API.",
+      "problem": "L'errore più comune su TikTok è trattarlo come un altro posto dove caricare lo spot. Un video orizzontale con logo nei primi secondi, musica di repertorio e voce da pubblicità televisiva viene saltato prima che succeda qualcosa. Il risultato sono visualizzazioni a basso costo che non portano vendite, e la convinzione che \"TikTok è solo per ragazzini\".\n\nIn realtà su TikTok il pubblico è più ampio di quanto molti pensano, ma ha regole precise: ritmo veloce, persone vere, un gancio nel primo secondo, contenuti che sembrano nati lì. Chi non le rispetta paga l'attenzione più cara di quanto dovrebbe.\n\nC'è anche un problema di misurazione. Molte persone vedono un video su TikTok e comprano giorni dopo, cercando il brand su Google o andando direttamente sul sito. Se guardi solo le conversioni da clic, TikTok sembra non rendere, mentre sta alimentando gli altri canali. Senza un modo per leggere questo effetto, il budget viene tagliato proprio dove stava creando domanda.",
+      "process": [
+        {
+          "title": "Verifica di adattabilità",
+          "description": "Valutiamo se prodotto, pubblico e margini sono adatti a TikTok, guardando cosa fanno i concorrenti nella libreria creativa della piattaforma."
+        },
+        {
+          "title": "Ganci e copioni",
+          "description": "Scriviamo copioni brevi con varianti del primo secondo, il momento che decide se il video viene visto o saltato."
+        },
+        {
+          "title": "Produzione nativa",
+          "description": "Giriamo video verticali con persone vere, in casa, con creator o con il tuo team, montati con il ritmo della piattaforma."
+        },
+        {
+          "title": "Lancio e Spark Ads",
+          "description": "Lanciamo campagne di conversione e, dove funziona, promuoviamo contenuti organici come Spark Ads."
+        },
+        {
+          "title": "Lettura dei risultati",
+          "description": "Analizziamo tenuta del video, costo per risultato ed effetto sulle ricerche del brand, poi rinnoviamo le creatività."
+        }
+      ],
+      "deliverables": [
+        "Analisi di adattabilità del prodotto a TikTok con ricerca sui contenuti dei concorrenti",
+        "Configurazione di TikTok Pixel ed Events API con eventi di conversione",
+        "Copioni con varianti di gancio per ogni ciclo di test",
+        "Video verticali nativi montati per gli annunci",
+        "Campagne e gruppi di annunci configurati, con Spark Ads dove utile",
+        "Report mensile con tenuta dei video, costo per risultato e ricerche del brand"
+      ],
+      "body": "## TikTok Ads funziona anche per aziende non rivolte ai giovanissimi?\n\nSì, a patto che il prodotto si possa capire e desiderare in un video di pochi secondi. TikTok oggi è usato da fasce d'età molto diverse e l'algoritmo mostra i contenuti in base agli interessi più che ai contatti. Funziona bene per prodotti visivi, con un prima e dopo, o che risolvono un fastidio quotidiano; meno per servizi complessi con lunghe trattative B2B, dove [LinkedIn Ads](/servizi/advertising/linkedin-ads) resta più adatto.\n\nPrima di proporre TikTok facciamo una verifica onesta: guardiamo cosa pubblicano i concorrenti nel Creative Center della piattaforma, valutiamo margini e prezzo medio e ti diciamo se ha senso provarci.\n\n## Come si fa un video che funziona come annuncio su TikTok?\n\nUn annuncio TikTok funziona quando non sembra un annuncio nei primi due secondi. La struttura che usiamo come base, poi da testare:\n\n1. **gancio**: una frase, un'immagine o un gesto che fermi lo scorrimento;\n2. **problema o curiosità**: perché dovrebbe interessarti, detto in modo diretto;\n3. **dimostrazione**: il prodotto in uso, non descritto;\n4. **prova**: una reazione, un risultato, un commento reale;\n5. **invito all'azione**: cosa fare adesso, senza giri di parole.\n\nIl gancio è la variabile che testiamo di più. Spesso lo stesso video con tre aperture diverse ha risultati molto lontani tra loro. Per la produzione ci appoggiamo al lavoro di [TikTok marketing](/servizi/social/tiktok) e di [video e spot](/servizi/content/video-spot) dello studio, con una regola: meglio girato bene con il telefono che patinato e finto.\n\n## Spark Ads, creator e contenuti organici\n\nLe Spark Ads permettono di sponsorizzare un video già pubblicato, dal tuo profilo o da quello di un creator che ti dà l'autorizzazione. Il vantaggio è che like, commenti e condivisioni restano sul contenuto originale, che quindi appare più credibile.\n\nPer questo lavoriamo spesso in due tempi: prima pubblichiamo e osserviamo i contenuti organici, poi mettiamo budget su quelli che tengono di più. Se lavori con creator, il passaggio è naturale, e lo coordiniamo con l'[influencer marketing](/servizi/social/influencer-marketing): accordi chiari su diritti d'uso e durata delle autorizzazioni prima di partire.\n\n## Come si misurano i risultati di TikTok Ads?\n\nSi misurano su tre livelli, perché TikTok lavora spesso a metà del percorso d'acquisto:\n\n| Livello | Cosa guardiamo | Perché |\n|---|---|---|\n| Attenzione | Visualizzazioni a 2 e 6 secondi, tenuta media | Dice se il gancio funziona |\n| Azione | Clic, aggiunte al carrello, acquisti tracciati | Il ritorno diretto della campagna |\n| Effetto indiretto | Ricerche del brand, traffico diretto, vendite totali | Quanto TikTok alimenta gli altri canali |\n\nPer l'azione diretta configuriamo TikTok Pixel insieme alla Events API, che invia gli eventi dal server e recupera conversioni perse nel browser. Per l'effetto indiretto confrontiamo l'andamento delle ricerche del brand e delle vendite totali nei periodi con e senza campagne attive.\n\n## Per chi è e da dove si parte\n\nTikTok Ads è adatto a e-commerce, brand di consumo, ristorazione e locali, turismo ed eventi: in Riviera, per esempio, a chi vuole farsi scoprire prima che le persone scelgano dove andare in vacanza. È meno adatto se non hai capacità o voglia di produrre video con regolarità: su TikTok le creatività si consumano in fretta.\n\nIl preventivo dipende soprattutto dal volume di video da produrre ogni mese e dal numero di mercati. Puoi stimarlo con il [calcolatore di preventivo](/preventivo).",
+      "faq": [
+        {
+          "question": "Devo avere un profilo TikTok attivo per fare pubblicità?",
+          "answer": "Non è obbligatorio: si possono fare annunci anche senza pubblicare contenuti organici. Però un profilo curato aiuta, perché chi vede un annuncio spesso apre il profilo prima di comprare. E se pubblichi con regolarità, puoi usare i contenuti che funzionano meglio come Spark Ads, che di solito risultano più credibili di un annuncio creato da zero."
+        },
+        {
+          "question": "Quanti video servono per partire?",
+          "answer": "Per il primo ciclo di test servono alcune idee diverse, ognuna con più varianti di gancio, non un singolo video. Su TikTok le creatività si stancano in fretta, quindi va previsto un rinnovo regolare. Il numero esatto dipende dal budget: più si spende, più alta è la frequenza e prima un video smette di rendere."
+        },
+        {
+          "question": "Meglio usare creator o girare i video internamente?",
+          "answer": "Dipende da cosa vendi e da chi hai in squadra. Un titolare o un dipendente che sa parlare in camera spesso funziona benissimo e costa meno. I creator portano un volto già familiare a un pubblico e linguaggi diversi, ma richiedono accordi sui diritti d'uso. Spesso testiamo entrambe le strade e teniamo quella con i numeri migliori."
+        },
+        {
+          "question": "Gli annunci TikTok portano vendite o solo visualizzazioni?",
+          "answer": "Possono portare entrambe, ma dipende da come imposti la campagna. Se ottimizzi per le visualizzazioni, ottieni visualizzazioni. Noi impostiamo campagne su eventi di conversione tracciati, come acquisti o contatti, e leggiamo anche l'effetto indiretto sulle ricerche del brand. Se dopo i test le vendite non arrivano, lo diciamo e spostiamo il budget altrove."
+        },
+        {
+          "question": "TikTok Ads è adatto a un'attività locale?",
+          "answer": "Può esserlo, soprattutto per ristorazione, locali, eventi, palestre e turismo, dove il prodotto si mostra bene in video. Il targeting geografico permette di limitarsi a una zona. Con raggi molto piccoli però il pubblico diventa ridotto e il costo sale: in quel caso valutiamo se [Meta Ads](/servizi/advertising/meta-ads) o Google non siano un punto di partenza migliore."
+        }
+      ],
+      "related": [
+        "tiktok",
+        "video-spot",
+        "influencer-marketing",
+        "meta-ads"
+      ],
+      "caseStudies": [],
+      "metaTitle": "TikTok Ads: agenzia per campagne su TikTok | not4sale",
+      "metaDescription": "Campagne TikTok Ads con video nativi, Spark Ads e tracciamento via Events API: ti fai scoprire da nuovi pubblici e misuri le vendite. Parliamone."
+    },
+    {
+      "slug": "linkedin-ads",
+      "headline": "LinkedIn Ads: campagne B2B per raggiungere i decisori giusti",
+      "short": "Campagne LinkedIn Ads mirate per ruolo, settore e azienda, con moduli lead e contatti passati al commerciale.",
+      "answer": "LinkedIn Ads è la piattaforma pubblicitaria di LinkedIn, che permette di raggiungere professionisti per ruolo, anzianità, settore, dimensione e nome dell'azienda. not4sale la usa per campagne B2B: definiamo il cliente ideale, costruiamo liste di aziende obiettivo e misuriamo quante conversazioni commerciali nascono, non quanti clic.",
+      "problem": "Su LinkedIn ogni clic costa di più che sulle altre piattaforme, e chi lo scopre di solito reagisce in due modi sbagliati. Il primo: allargare il pubblico per abbassare i costi, finendo a pagare clic di studenti, consulenti e concorrenti. Il secondo: spegnere tutto dopo un mese perché \"costa troppo\", senza aver confrontato il costo con il valore di un cliente B2B.\n\nPoi c'è il passaggio al commerciale. Molte aziende raccolgono contatti tramite i moduli di LinkedIn e li lasciano lì, da scaricare a mano una volta a settimana. Quando qualcuno chiama, il contatto non ricorda più chi sei. Il costo per lead sembra accettabile, il costo per cliente no.\n\nInfine i contenuti: annunci che parlano dell'azienda (\"leader nel settore da trent'anni\") invece che del problema di chi legge. Su un feed pieno di persone che si promuovono, un messaggio autoreferenziale scompare. Il risultato è budget speso per farsi ignorare da esattamente le persone che volevi raggiungere.",
+      "process": [
+        {
+          "title": "Cliente ideale",
+          "description": "Definiamo con te ruoli, settori, dimensioni aziendali e mercati che portano contratti, partendo dai clienti migliori che hai già."
+        },
+        {
+          "title": "Liste e pubblici",
+          "description": "Costruiamo liste di aziende e contatti da caricare come pubblici abbinati, più i pubblici di retargeting di chi ha già interagito."
+        },
+        {
+          "title": "Contenuti e offerte",
+          "description": "Prepariamo annunci e un'offerta che valga il contatto: una guida, un'analisi, una demo, un caso concreto."
+        },
+        {
+          "title": "Integrazione con il CRM",
+          "description": "Colleghiamo i moduli lead al CRM e definiamo con il commerciale come e quando contattare chi risponde."
+        },
+        {
+          "title": "Ottimizzazione sulla pipeline",
+          "description": "Misuriamo opportunità e contratti generati, non solo lead, e spostiamo budget su ruoli e messaggi che li producono."
+        }
+      ],
+      "deliverables": [
+        "Profilo del cliente ideale con criteri di targeting LinkedIn",
+        "Liste di aziende obiettivo caricate come pubblici abbinati",
+        "Insight Tag e conversioni configurati sul sito",
+        "Annunci con contenuto sponsorizzato, documenti e moduli lead",
+        "Collegamento dei moduli lead al CRM con notifica al commerciale",
+        "Report mensile su lead, opportunità e costo per opportunità"
+      ],
+      "body": "## Quando conviene fare pubblicità su LinkedIn?\n\nLinkedIn Ads conviene quando vendi ad aziende e un cliente vale abbastanza da giustificare un costo per contatto più alto rispetto ad altri canali. È l'unica piattaforma in cui puoi scegliere di mostrare un annuncio solo ai responsabili acquisti delle aziende manifatturiere sopra una certa dimensione in Emilia-Romagna e Marche, o solo ai dipendenti di cento aziende che hai in lista.\n\nConviene meno se vendi a consumatori, se il valore di un contratto è basso o se il ciclo di vendita è così breve che una ricerca su Google basta a intercettarlo. In quel caso [Google Ads](/servizi/advertising/google-ads) è spesso più efficiente.\n\n## Quali formati di LinkedIn Ads usiamo e perché\n\nUsiamo pochi formati, scelti in base alla fase del rapporto con l'azienda:\n\n| Formato | Cosa fa | Quando lo usiamo |\n|---|---|---|\n| Contenuto sponsorizzato (immagine, video, carosello) | Annuncio nel feed | Per farsi conoscere e portare traffico al sito |\n| Annunci documento | Un PDF sfogliabile nel feed | Guide e analisi che dimostrano competenza |\n| Moduli lead | Modulo precompilato con i dati del profilo | Per raccogliere contatti senza uscire da LinkedIn |\n| Thought Leader Ads | Sponsorizzazione di un post di una persona | Quando il titolare o un manager ha una voce credibile |\n| Messaggi sponsorizzati | Messaggio nella casella LinkedIn | Inviti mirati, con moderazione |\n\nI post delle persone, sponsorizzati come Thought Leader Ads, spesso funzionano meglio di quelli della pagina aziendale. Per questo il lavoro si lega al [LinkedIn aziendale](/servizi/social/linkedin-aziendale): profili dei manager curati e post che vale la pena promuovere.\n\n## Account-based marketing: annunci per una lista di aziende\n\nL'account-based marketing parte da una lista di aziende che vorresti come clienti e lavora per farti conoscere da più persone dentro ognuna. Su LinkedIn si fa caricando la lista come pubblico abbinato e mostrando annunci solo ai ruoli che partecipano alla decisione: chi usa il prodotto, chi lo approva, chi firma.\n\nFunziona bene quando il commerciale lavora già su quelle aziende: gli annunci preparano il terreno, la telefonata arriva a chi ti ha già visto. Per questo misuriamo anche quante aziende in lista hanno interagito con gli annunci e lo condividiamo con chi vende.\n\n## Dal lead al contratto: come colleghiamo LinkedIn al commerciale\n\nUn lead LinkedIn vale quanto la velocità con cui qualcuno lo richiama. Per questo colleghiamo i moduli al CRM, con una notifica al commerciale e una sequenza di [lead nurturing](/servizi/crm-email/lead-nurturing) per chi non è ancora pronto a parlare. Dove serve, il collegamento lo costruiamo con le [automazioni n8n](/servizi/ai-automazione/automazioni-n8n).\n\nPoi chiudiamo il cerchio: chiediamo al commerciale di segnare quali contatti diventano opportunità e contratti, e usiamo quel dato per decidere dove spendere. Un ruolo che porta molti lead e nessun contratto è un ruolo da togliere.\n\n## Cosa aspettarsi da una campagna LinkedIn\n\nNelle prime settimane si testano pubblici e messaggi. I tempi del B2B sono quelli del ciclo di vendita: se una trattativa dura mesi, anche il ritorno della campagna si legge su mesi, guardando l'andamento delle opportunità aperte. Non ti promettiamo contratti in trenta giorni. Ti promettiamo invece di dirti presto quali ruoli e messaggi non stanno producendo conversazioni, così il budget smette di andarci.\n\nIl preventivo dipende dal numero di pubblici e mercati, dal lavoro sul CRM e dalla produzione di contenuti. Lo puoi stimare con il [calcolatore di preventivo](/preventivo).",
+      "faq": [
+        {
+          "question": "Perché LinkedIn Ads costa più delle altre piattaforme?",
+          "answer": "Perché vende un pubblico che altrove non trovi con la stessa precisione: ruolo, azienda, anzianità, settore. Un clic costa di più, ma raggiunge spesso la persona esatta che decide. Il confronto giusto non è con il costo per clic su Meta, ma tra costo per contratto e valore del contratto. Per molte aziende B2B il conto torna, per altre no."
+        },
+        {
+          "question": "Meglio i moduli lead di LinkedIn o una landing page?",
+          "answer": "I moduli lead portano più contatti perché sono già compilati con i dati del profilo, ma alcuni sono poco convinti. Una landing page porta meno contatti, spesso più motivati. Testiamo entrambi e misuriamo quanti diventano opportunità. Aggiungere una o due domande di qualificazione al modulo è spesso il compromesso migliore."
+        },
+        {
+          "question": "Quanto deve essere grande il pubblico su LinkedIn?",
+          "answer": "LinkedIn richiede un numero minimo di persone per mostrare gli annunci, e pubblici troppo piccoli fanno salire i costi e si saturano in fretta. Per campagne su liste di aziende conviene caricare elenchi abbastanza ampi o combinare più ruoli. Nell'analisi iniziale verifichiamo le dimensioni reali del pubblico prima di proporre un piano."
+        },
+        {
+          "question": "Serve una pagina aziendale curata per fare pubblicità?",
+          "answer": "Serve una pagina aziendale, e conviene che sia curata, perché chi vede un annuncio spesso la apre prima di rispondere. Non deve essere perfetta per partire, ma deve dire chiaramente cosa fate e per chi. Se poi titolare e manager hanno profili attivi, si aprono le Thought Leader Ads, che spesso rendono meglio degli annunci della pagina."
+        },
+        {
+          "question": "I contatti arrivano direttamente nel nostro CRM?",
+          "answer": "Sì, se lo impostiamo. LinkedIn ha integrazioni dirette con alcuni CRM, tra cui HubSpot, e per gli altri usiamo un'automazione che passa i dati in tempo reale. Il commerciale riceve una notifica e il contatto entra nella sequenza prevista. Così nessun lead resta in un file da scaricare a fine settimana."
+        }
+      ],
+      "related": [
+        "linkedin-aziendale",
+        "lead-generation",
+        "lead-nurturing",
+        "hubspot"
+      ],
+      "caseStudies": [],
+      "metaTitle": "LinkedIn Ads: campagne B2B per decisori | not4sale",
+      "metaDescription": "Campagne LinkedIn Ads B2B mirate per ruolo, settore e azienda, collegate al tuo CRM per misurare opportunità e contratti. Richiedi una prima analisi."
+    },
+    {
+      "slug": "youtube-ads",
+      "headline": "YouTube Ads: video advertising per notorietà e conversioni",
+      "short": "Campagne YouTube Ads per farti conoscere e vendere, con pubblici basati sulle ricerche Google e risultati misurati.",
+      "answer": "YouTube Ads sono annunci video mostrati prima, durante o accanto ai contenuti di YouTube, gestiti da Google Ads. not4sale li usa per farsi conoscere e per vendere: scegliamo il formato in base all'obiettivo, raggiungiamo persone in base a ciò che hanno cercato su Google e misuriamo conversioni e ricerche del brand generate.",
+      "problem": "Molte aziende hanno un video aziendale e lo caricano su YouTube come annuncio così com'è: due minuti, logo all'inizio, musica, il messaggio vero dopo quaranta secondi. Dopo cinque secondi compare il pulsante \"Salta\" e quasi tutti lo premono. Il budget va in visualizzazioni che nessuno ricorda.\n\nAltre volte il problema è il pubblico. Campagne impostate su interessi generici come \"appassionati di tecnologia\" mostrano l'annuncio a chiunque, mentre YouTube offre una possibilità che pochi usano: raggiungere persone in base a ciò che hanno cercato su Google di recente. È la differenza tra parlare a tutti e parlare a chi sta valutando un acquisto come il tuo.\n\nInfine la misurazione. YouTube spesso non porta il clic immediato: chi vede un video torna giorni dopo, cercando il tuo nome. Se si guarda solo il costo per clic, le campagne video sembrano inutili e vengono spente, senza sapere quanto avevano spinto le vendite arrivate da altri canali.",
+      "process": [
+        {
+          "title": "Obiettivo e formato",
+          "description": "Decidiamo se la campagna deve farti conoscere, far considerare il prodotto o portare conversioni, e scegliamo i formati di conseguenza."
+        },
+        {
+          "title": "Copione per il salto",
+          "description": "Scriviamo video costruiti per i primi cinque secondi: messaggio e marchio prima che compaia il pulsante Salta."
+        },
+        {
+          "title": "Pubblici per intento",
+          "description": "Costruiamo segmenti personalizzati basati sulle ricerche Google, sui siti visitati e sulle liste dei tuoi clienti."
+        },
+        {
+          "title": "Lancio e controllo",
+          "description": "Avviamo le campagne, controlliamo dove vengono mostrati gli annunci ed escludiamo canali e contenuti non adatti."
+        },
+        {
+          "title": "Misura dell'effetto",
+          "description": "Leggiamo conversioni, visualizzazioni complete e crescita delle ricerche del brand, poi aggiorniamo creatività e pubblici."
+        }
+      ],
+      "deliverables": [
+        "Piano di campagna con obiettivo, formati e pubblici per fase",
+        "Copioni dei video con varianti per i primi cinque secondi",
+        "Versioni montate per annuncio ignorabile, bumper e Shorts",
+        "Segmenti di pubblico personalizzati basati su ricerche e siti visitati",
+        "Elenco di esclusioni di contenuti e posizionamenti",
+        "Report con conversioni, visualizzazioni e andamento delle ricerche del brand"
+      ],
+      "body": "## A cosa servono davvero le YouTube Ads?\n\nLe YouTube Ads servono a mostrare un prodotto a persone che non lo conoscono ancora, o che lo stanno valutando, con il formato più completo che esista online: immagini, voce e movimento. Funzionano bene per prodotti che vanno spiegati o dimostrati, per lanci e per aziende che vogliono più ricerche del proprio nome su Google.\n\nNon sono il primo canale da attivare se non hai ancora campagne che convertono. Di solito arrivano dopo [Google Ads](/servizi/advertising/google-ads) sulla rete di ricerca o dopo [Meta Ads](/servizi/advertising/meta-ads), quando si vuole allargare il numero di persone che entrano nel funnel.\n\n## Quale formato di annuncio YouTube scegliere?\n\nIl formato dipende da cosa vuoi ottenere. I principali, oggi tutti gestiti da Google Ads:\n\n| Formato | Come funziona | Per cosa lo usiamo |\n|---|---|---|\n| In-stream ignorabile | Prima o durante un video, saltabile dopo 5 secondi | Conversioni e considerazione |\n| In-stream non ignorabile | Breve, non saltabile | Messaggi semplici da far vedere per intero |\n| Bumper | 6 secondi, non saltabile | Ricordo del marchio, richiamo di una campagna |\n| In-feed | Miniatura tra i risultati e i video consigliati | Video lunghi che le persone scelgono di guardare |\n| Shorts | Video verticale nel feed Shorts | Pubblici da smartphone, formati nativi brevi |\n\nSpesso combiniamo un video principale con versioni brevi che lo richiamano: chi ha visto il primo riceve il bumper, chi ha guardato metà riceve l'offerta.\n\n## Come costruire un video che non venga saltato\n\nUn video per YouTube Ads va scritto per i primi cinque secondi, quelli prima del pulsante Salta. Ci sono alcune regole che usiamo come punto di partenza:\n\n1. **il marchio o il prodotto si vede subito**, così anche chi salta si porta a casa qualcosa;\n2. **una persona o un problema riconoscibile** nella prima inquadratura, non un logo animato;\n3. **un solo messaggio** per video, non l'elenco di tutto ciò che fai;\n4. **sottotitoli**, perché una parte delle persone guarda senza audio;\n5. **un invito all'azione chiaro** verso la fine, collegato a una pagina coerente con il video.\n\nIl video lo possiamo produrre noi con il servizio [video e spot](/servizi/content/video-spot), oppure rimontare materiale che hai già in versioni pensate per l'annuncio.\n\n## Targeting per intento: raggiungere chi sta cercando su Google\n\nLa forza di YouTube rispetto ad altre piattaforme video è che appartiene a Google. Con i segmenti personalizzati puoi mostrare un annuncio a persone che hanno cercato su Google parole chiave legate al tuo prodotto, o che visitano siti simili al tuo. A questo si aggiungono le liste dei tuoi clienti, i visitatori del sito per il [retargeting](/servizi/advertising/retargeting) e i pubblici basati sugli interessi.\n\nTeniamo d'occhio anche dove l'annuncio viene mostrato: controlliamo i posizionamenti ed escludiamo contenuti e canali non adatti al tuo marchio, ad esempio i video per bambini o quelli con temi sensibili.\n\n## Come si misura il ritorno di una campagna video\n\nMisuriamo tre cose: le conversioni dirette e quelle avvenute dopo la visualizzazione, la percentuale di persone che guarda il video fino in fondo e l'andamento delle ricerche del tuo nome su Google nel periodo della campagna. Quest'ultimo dato, letto insieme alle vendite totali, dice se il video sta creando domanda anche quando il merito finale va a un altro canale. Per una lettura più solida serve un [modello di attribuzione](/servizi/data-analytics/attribuzione) condiviso.\n\nIl preventivo dipende dalla produzione dei video e dal numero di campagne: puoi stimarlo con il [calcolatore di preventivo](/preventivo).",
+      "faq": [
+        {
+          "question": "Quanto deve durare un video per YouTube Ads?",
+          "answer": "Non esiste una durata giusta in assoluto. Per gli annunci ignorabili conta soprattutto l'inizio: i primi cinque secondi devono contenere marchio e motivo per restare. Molti video che funzionano durano tra i quindici secondi e un minuto. I bumper sono di sei secondi per definizione. Spesso prepariamo più durate dello stesso contenuto e lasciamo decidere ai dati."
+        },
+        {
+          "question": "Pago anche quando qualcuno salta l'annuncio?",
+          "answer": "Dipende dalla strategia di offerta scelta. Con le offerte per visualizzazione, sugli annunci ignorabili di solito paghi solo se la persona guarda almeno trenta secondi, o tutto il video se è più breve, oppure se interagisce. Con le offerte orientate alle conversioni o alle impressioni il meccanismo cambia. Scegliamo la strategia in base all'obiettivo della campagna."
+        },
+        {
+          "question": "Serve un video professionale o basta girarlo con lo smartphone?",
+          "answer": "Dipende dal formato e dal pubblico. Per gli Shorts un video girato con lo smartphone, con il ritmo giusto, spesso funziona meglio di uno patinato. Per gli annunci in-stream conta più la chiarezza del messaggio che la qualità delle riprese, ma un audio pulito fa la differenza. Valutiamo il materiale che hai e proponiamo il livello di produzione sensato."
+        },
+        {
+          "question": "YouTube Ads ha senso per un'azienda B2B?",
+          "answer": "Sì, in alcuni casi. I segmenti basati sulle ricerche permettono di raggiungere chi ha cercato soluzioni tecniche o prodotti specifici, e i video dimostrativi aiutano a spiegare offerte complesse. Per raggiungere ruoli e aziende precise, però, LinkedIn resta più preciso. Spesso le due piattaforme lavorano insieme: video per farsi conoscere, LinkedIn per la conversione."
+        },
+        {
+          "question": "Come capisco se le campagne YouTube stanno funzionando?",
+          "answer": "Guardando più numeri insieme: conversioni tracciate, quota di visualizzazioni complete, crescita delle ricerche del marchio e andamento delle vendite totali nel periodo. Se il video porta attenzione ma nessuno di questi indicatori si muove dopo alcune settimane, cambiamo creatività o pubblico, oppure spostiamo il budget su canali che in quel momento rendono di più."
+        }
+      ],
+      "related": [
+        "video-spot",
+        "google-ads",
+        "retargeting",
+        "attribuzione"
+      ],
+      "caseStudies": [],
+      "metaTitle": "YouTube Ads: agenzia per campagne video | not4sale",
+      "metaDescription": "Campagne YouTube Ads per notorietà e conversioni: video pensati per i primi 5 secondi e pubblici basati sulle ricerche Google. Scopri come lavoriamo."
+    },
+    {
+      "slug": "amazon-ads",
+      "headline": "Amazon Ads: Sponsored Products e Brands con ACOS sotto controllo",
+      "short": "Campagne Amazon Ads su Sponsored Products, Brands e Display, gestite su ACOS e vendite totali, non solo su quelle pubblicitarie.",
+      "answer": "Amazon Ads è la piattaforma pubblicitaria di Amazon: Sponsored Products, Sponsored Brands e Sponsored Display mostrano i tuoi prodotti a chi sta già cercando e comprando sul marketplace. not4sale struttura le campagne per parole chiave e prodotti, tiene l'ACOS sotto controllo e misura l'effetto sulle vendite totali, non solo su quelle pubblicitarie.",
+      "problem": "Su Amazon i problemi delle campagne si vedono tutti nello stesso numero: l'ACOS, cioè la spesa pubblicitaria divisa per le vendite generate dagli annunci. Molti venditori lo vedono salire mese dopo mese senza capire perché.\n\nLe cause tipiche sono sempre quelle. Campagne automatiche lasciate girare senza mai leggere i termini di ricerca, che spendono su parole poco pertinenti. Offerte alte sulle ricerche del proprio marchio, dove si vendeva già senza pubblicità. Prodotti con poche recensioni o schede deboli spinti con budget elevato, quando il problema è la scheda e non la visibilità.\n\nC'è poi l'errore opposto: tagliare tutto perché l'ACOS sembra alto, senza guardare il TACOS, cioè la spesa pubblicitaria divisa per le vendite totali. Su Amazon la pubblicità fa vendere e le vendite migliorano la posizione organica del prodotto. Spegnere le campagne può far scendere anche le vendite non pubblicitarie, con un effetto che si nota solo settimane dopo, quando è difficile recuperare.",
+      "process": [
+        {
+          "title": "Analisi di catalogo e account",
+          "description": "Analizziamo prodotti, margini, schede, recensioni e storico delle campagne per capire dove la pubblicità può rendere."
+        },
+        {
+          "title": "ACOS obiettivo per prodotto",
+          "description": "Calcoliamo l'ACOS sostenibile in base al margine di ogni prodotto e decidiamo quali spingere e quali proteggere."
+        },
+        {
+          "title": "Struttura delle campagne",
+          "description": "Separiamo campagne automatiche di ricerca e manuali di resa, per parole chiave, prodotti concorrenti e marchio."
+        },
+        {
+          "title": "Ottimizzazione dei termini",
+          "description": "Ogni settimana spostiamo i termini che vendono nelle campagne manuali, escludiamo quelli che spendono senza vendere e aggiorniamo le offerte."
+        },
+        {
+          "title": "Lettura su vendite totali",
+          "description": "Ogni mese leggiamo ACOS e TACOS insieme, con l'andamento della posizione organica dei prodotti principali."
+        }
+      ],
+      "deliverables": [
+        "Analisi dell'account pubblicitario e del catalogo con priorità di intervento",
+        "Tabella di ACOS obiettivo per prodotto calcolata sui margini",
+        "Struttura di campagne Sponsored Products, Brands e Display configurata",
+        "Elenchi di parole chiave e di esclusioni aggiornati ogni settimana",
+        "Indicazioni di miglioramento delle schede prodotto che frenano le campagne",
+        "Report mensile con ACOS, TACOS, vendite totali e posizione dei prodotti chiave"
+      ],
+      "body": "## Come funziona la pubblicità su Amazon?\n\nLa pubblicità su Amazon funziona ad asta, come Google Ads: scegli parole chiave o prodotti, fai un'offerta per clic e il tuo annuncio compare nei risultati o nelle schede degli altri prodotti. La differenza è che chi è su Amazon ha già in mano la carta di credito. L'intenzione d'acquisto è altissima, e per questo la concorrenza nelle aste è forte.\n\nI formati principali sono tre:\n\n| Formato | Dove compare | A cosa serve |\n|---|---|---|\n| Sponsored Products | Nei risultati di ricerca e nelle schede prodotto | Vendere singoli prodotti, è la base |\n| Sponsored Brands | In cima ai risultati, con logo, titolo e più prodotti o un video | Far conoscere il marchio e la linea di prodotti |\n| Sponsored Display | Nelle schede prodotto e fuori da Amazon | Recuperare chi ha visto i tuoi prodotti, presidiare quelli concorrenti |\n\nSponsored Brands e alcune funzioni di Sponsored Display richiedono la registrazione del marchio con Amazon Brand Registry. Se non l'hai ancora fatto, è uno dei primi passi che ti consigliamo.\n\n## ACOS e TACOS: quali numeri contano davvero\n\nL'ACOS misura quanto spendi in pubblicità rispetto alle vendite attribuite agli annunci. Il TACOS misura la spesa pubblicitaria rispetto a tutte le vendite, incluse quelle organiche. Servono entrambi:\n\n1. **l'ACOS** dice se le singole campagne rendono rispetto al margine del prodotto;\n2. **il TACOS** dice se la pubblicità sta facendo crescere il business nel suo insieme;\n3. **se l'ACOS sale ma il TACOS scende**, la pubblicità sta trascinando le vendite organiche: spesso è un buon segno;\n4. **se entrambi salgono**, stai pagando vendite che non crescono: va rivista la strategia.\n\nPer ogni prodotto calcoliamo l'ACOS di pareggio, cioè la percentuale oltre la quale ogni vendita pubblicitaria è in perdita. Per i lanci accettiamo di stare sopra per un periodo limitato, per i prodotti maturi no.\n\n## Come strutturiamo le campagne Amazon Ads\n\nLavoriamo con una struttura che separa la ricerca dalla resa. Le campagne automatiche servono a scoprire quali termini usano gli acquirenti; quando un termine vende con continuità, lo spostiamo in una campagna manuale a corrispondenza esatta, dove possiamo controllare l'offerta. Nella campagna automatica lo escludiamo, così i due non si fanno concorrenza.\n\nA queste si aggiungono campagne dedicate al tuo marchio, per difenderlo dai concorrenti che comprano il tuo nome, e campagne che mostrano i tuoi prodotti nelle schede dei concorrenti. Ognuna ha un obiettivo e un ACOS diverso, quindi le leggiamo separate.\n\n## La pubblicità non sistema una scheda prodotto debole\n\nSu Amazon una scheda con foto mediocri, titolo confuso e poche recensioni converte poco, e la pubblicità la rende solo più costosa. Prima di alzare i budget controlliamo i punti che influenzano la conversione: immagini, titolo, punti elenco, contenuti A+, prezzo rispetto ai concorrenti, disponibilità a magazzino. Se la scheda è il problema, te lo diciamo.\n\nPer tutto ciò che riguarda apertura dell'account, logistica, gestione del catalogo e delle schede, il lavoro si fa con il servizio [Marketplace e Amazon](/servizi/ecommerce/marketplace-amazon). Se vendi anche sul tuo sito, valuta di affiancare [Google Shopping](/servizi/advertising/google-shopping), per non dipendere da un solo canale.\n\n## Per chi è e da dove si parte\n\nAmazon Ads ha senso per brand e produttori che vendono già su Amazon, o che stanno per farlo, con margini che lasciano spazio alla pubblicità. È meno adatto ai rivenditori che vendono lo stesso prodotto di altri decine di venditori, dove la pubblicità serve a poco se non si vince la Buy Box.\n\nIl preventivo dipende dal numero di prodotti e di mercati Amazon gestiti. Puoi stimarlo con il [calcolatore di preventivo](/preventivo) o raccontarci il tuo caso dalla pagina [contatti](/contatti).",
+      "faq": [
+        {
+          "question": "Qual è un ACOS buono su Amazon?",
+          "answer": "Non esiste un valore valido per tutti. Un ACOS buono è quello che resta sotto il margine del prodotto, al netto di costi Amazon, logistica e resi. Un prodotto con margine alto può reggere un ACOS che per un altro sarebbe in perdita. Per questo calcoliamo un ACOS di pareggio e un ACOS obiettivo per ogni prodotto, invece di usare una soglia unica."
+        },
+        {
+          "question": "Gestite anche l'account Amazon, non solo la pubblicità?",
+          "answer": "Sì, con il servizio [Marketplace e Amazon](/servizi/ecommerce/marketplace-amazon) seguiamo apertura, catalogo, schede e logistica. Possiamo anche lavorare solo sulla pubblicità se il resto lo gestisci tu o un altro fornitore. In quel caso ti segnaliamo i problemi delle schede che frenano le campagne, perché pubblicità e scheda prodotto lavorano insieme."
+        },
+        {
+          "question": "Serve il Brand Registry per fare pubblicità su Amazon?",
+          "answer": "Per gli Sponsored Products no: bastano un account venditore professionale e prodotti idonei. Per Sponsored Brands, per i contenuti A+ e per alcune funzioni di Sponsored Display serve la registrazione del marchio. Se hai un marchio registrato, iscriverlo al Brand Registry di solito conviene anche per proteggere le schede da modifiche di altri venditori."
+        },
+        {
+          "question": "In quanto tempo si vedono i risultati delle campagne Amazon?",
+          "answer": "I primi dati sui termini di ricerca arrivano in pochi giorni, ma servono alcune settimane per avere abbastanza vendite e capire quali parole chiave rendono. L'effetto sulla posizione organica dei prodotti è più lento ancora. Per i lanci di nuovi prodotti consideriamo una prima fase con ACOS più alto, concordata prima, per raccogliere vendite e recensioni."
+        },
+        {
+          "question": "Lavorate anche sui marketplace Amazon esteri?",
+          "answer": "Sì, possiamo gestire campagne su più marketplace europei. Ogni paese ha parole chiave, concorrenti e prezzi diversi, quindi non basta tradurre le campagne italiane: le ricerche vanno studiate mercato per mercato. Di solito partiamo dal mercato che vende già di più e allarghiamo quando la struttura funziona."
+        }
+      ],
+      "related": [
+        "marketplace-amazon",
+        "google-shopping",
+        "gestione-ecommerce"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Amazon Ads: gestione campagne e ACOS | not4sale",
+      "metaDescription": "Gestione Amazon Ads: Sponsored Products, Brands e Display con ACOS obiettivo per prodotto e lettura delle vendite totali. Richiedi un'analisi del tuo account."
+    },
+    {
+      "slug": "google-shopping",
+      "headline": "Google Shopping: feed prodotti e campagne per e-commerce",
+      "short": "Feed prodotti ottimizzato su Merchant Center e campagne Shopping o Performance Max per vendere di più dal catalogo.",
+      "answer": "Google Shopping mostra i tuoi prodotti con foto, prezzo e nome del negozio direttamente nei risultati di Google. not4sale lavora su entrambi i pezzi che lo fanno funzionare: il feed prodotti in Google Merchant Center, che decide per quali ricerche compari, e le campagne Shopping o Performance Max, gestite sul ritorno della spesa pubblicitaria.",
+      "problem": "Su Google Shopping non scegli le parole chiave: è Google a decidere per quali ricerche mostrare un prodotto, leggendo il feed. Se il feed contiene titoli copiati dal gestionale, come \"ART. 4471 BLU TG M\", il prodotto compare per poche ricerche o per quelle sbagliate. Molti e-commerce spendono tempo sulle offerte mentre il vero problema è nei dati.\n\nPoi ci sono i prodotti rifiutati in Merchant Center per immagini, prezzi non coincidenti o codici GTIN mancanti, che nessuno controlla e che restano fuori dalle campagne per mesi.\n\nInfine la struttura. Una sola campagna su tutto il catalogo tratta allo stesso modo il prodotto che fa margine e quello in liquidazione, il best seller e l'articolo che non vende da un anno. Il budget va dove Google trova vendite facili, non dove ti conviene. Il risultato è un ritorno medio che sembra accettabile e nasconde prodotti in perdita e prodotti che potresti spingere molto di più.",
+      "process": [
+        {
+          "title": "Diagnosi di feed e Merchant Center",
+          "description": "Controlliamo errori, prodotti rifiutati, avvisi, qualità di titoli, immagini e attributi, e la coerenza tra feed e sito."
+        },
+        {
+          "title": "Ottimizzazione del feed",
+          "description": "Riscriviamo titoli e descrizioni secondo come le persone cercano, completiamo gli attributi e aggiungiamo etichette personalizzate."
+        },
+        {
+          "title": "Segmentazione del catalogo",
+          "description": "Dividiamo i prodotti per margine, prezzo e rendimento, per dare a ciascun gruppo budget e obiettivi diversi."
+        },
+        {
+          "title": "Campagne e offerte",
+          "description": "Impostiamo campagne Shopping standard o Performance Max con obiettivi di ritorno coerenti con i margini."
+        },
+        {
+          "title": "Revisione continua",
+          "description": "Ogni settimana controlliamo termini di ricerca, prodotti senza impressioni e rifiuti; ogni mese aggiorniamo la segmentazione."
+        }
+      ],
+      "deliverables": [
+        "Diagnosi scritta del feed e dell'account Merchant Center",
+        "Feed ottimizzato o feed supplementare con titoli, attributi ed etichette personalizzate",
+        "Regole di feed per mantenere l'ottimizzazione automatica nel tempo",
+        "Campagne Shopping o Performance Max segmentate per margine e rendimento",
+        "Elenco delle esclusioni e controllo settimanale dei prodotti rifiutati",
+        "Report mensile per gruppo di prodotti con ricavi, spesa e ritorno"
+      ],
+      "body": "## Come funziona Google Shopping per un e-commerce?\n\nGoogle Shopping funziona a partire da un feed prodotti: un file, o una connessione con la piattaforma del negozio, che invia a Google Merchant Center nome, prezzo, immagini, disponibilità e caratteristiche di ogni articolo. Google usa questi dati per decidere a quali ricerche abbinare i prodotti. Le campagne pubblicitarie poi stabiliscono quanto offrire e con quale obiettivo.\n\nEsistono due strade:\n\n- **le schede gratuite**, che mostrano i prodotti nella scheda Shopping senza costi per clic, con visibilità limitata;\n- **gli annunci a pagamento**, con campagne Shopping standard o Performance Max, che compaiono anche in cima ai risultati di ricerca.\n\nLe schede gratuite le attiviamo sempre: non costano nulla e danno dati utili. Ma per la maggior parte dei negozi il volume vero arriva dagli annunci.\n\n## Perché il feed prodotti decide i risultati di Google Shopping\n\nIl feed è per Google Shopping ciò che le parole chiave sono per la rete di ricerca. Gli interventi che spostano di più i risultati:\n\n1. **titoli scritti come cercano le persone**: marca, tipo di prodotto, caratteristica principale, taglia o colore, nell'ordine che conta nel tuo settore;\n2. **GTIN e codici produttore corretti**, che permettono a Google di abbinare il prodotto alle ricerche specifiche;\n3. **categoria e tipo di prodotto** precisi, per evitare abbinamenti sbagliati;\n4. **immagini pulite e conformi**, senza scritte promozionali sovrapposte;\n5. **etichette personalizzate** con margine, stagionalità e rendimento, che usiamo per segmentare le campagne.\n\nQuando il gestionale non permette di cambiare i dati alla fonte, lavoriamo con un feed supplementare o con regole di feed in Merchant Center, così le modifiche restano anche quando il catalogo si aggiorna. Se il negozio è su [Shopify](/servizi/ecommerce/shopify) o [WooCommerce](/servizi/ecommerce/woocommerce), partiamo dalle integrazioni native della piattaforma.\n\n## Shopping standard o Performance Max: cosa conviene?\n\nDipende da volume di conversioni e controllo che vuoi mantenere.\n\n| | Shopping standard | Performance Max |\n|---|---|---|\n| Dove compaiono gli annunci | Shopping e risultati di ricerca | Tutta la rete Google, Shopping incluso |\n| Controllo sui termini di ricerca | Alto, con esclusioni | Limitato |\n| Dati necessari | Funziona anche con pochi ordini | Rende meglio con conversioni regolari |\n| Ideale per | Cataloghi piccoli, test, nicchie | Cataloghi ampi con storico di vendite |\n\nSpesso usiamo entrambe: Performance Max sui gruppi di prodotti con più storico e Shopping standard per testare nuovi prodotti o proteggere quelli a margine basso. Il lavoro di fondo resta comunque nel feed e nel tracciamento delle vendite, che curiamo insieme a [Google Ads](/servizi/advertising/google-ads).\n\n## Segmentare il catalogo per margine, non solo per categoria\n\nUn ritorno sulla spesa uguale per tutto il catalogo non ha senso, perché i margini non sono uguali. Dividiamo i prodotti in gruppi: quelli che fanno margine e vanno spinti, quelli che vendono molto a margine basso, quelli che non ricevono impressioni, quelli che spendono senza vendere. Ogni gruppo ha un obiettivo di ritorno diverso.\n\nÈ anche il modo per scoprire prodotti trascurati: articoli con poche impressioni ma buona conversione, che con un budget dedicato possono crescere. Al contrario, i prodotti che spendono senza vendere li isoliamo con un budget minimo o li togliamo, finché non cambia qualcosa su prezzo, foto o disponibilità. Lo stesso dato serve alla [SEO per e-commerce](/servizi/seo/seo-ecommerce), per decidere su quali categorie investire nel lungo periodo.\n\nIl preventivo dipende dalla dimensione del catalogo e dallo stato del feed: puoi stimarlo con il [calcolatore di preventivo](/preventivo).",
+      "faq": [
+        {
+          "question": "Perché alcuni miei prodotti non compaiono su Google Shopping?",
+          "answer": "Le cause più comuni sono prodotti rifiutati in Merchant Center, per esempio per prezzo diverso tra feed e sito, immagini non conformi o codici GTIN mancanti, oppure prodotti approvati ma con titoli che non corrispondono alle ricerche. A volte sono esclusi dalle campagne per errore. La diagnosi iniziale parte proprio da qui: ogni prodotto escluso è una vendita possibile persa."
+        },
+        {
+          "question": "Devo cambiare i titoli dei prodotti anche sul sito?",
+          "answer": "Non necessariamente. Il titolo nel feed può essere diverso da quello mostrato sul sito, purché descriva correttamente lo stesso prodotto. Quando il gestionale o la piattaforma non permettono modifiche dirette, usiamo un feed supplementare o regole in Merchant Center. Così ottimizziamo per Google Shopping senza toccare le schede del negozio."
+        },
+        {
+          "question": "Google Shopping funziona anche con pochi prodotti?",
+          "answer": "Sì. Con un catalogo piccolo la segmentazione è più semplice e ogni prodotto può avere un lavoro dedicato su titolo, immagini e offerta. Conta di più quanto sono competitivi prezzo e proposta rispetto agli altri negozi che vendono prodotti simili. Se il prezzo è molto più alto della media, Shopping porta clic ma poche vendite, e te lo diciamo."
+        },
+        {
+          "question": "Quanto tempo serve per ottimizzare un feed?",
+          "answer": "Dipende dalla dimensione del catalogo e da com'è strutturato il gestionale. Per cataloghi piccoli e medi la prima ottimizzazione richiede in genere qualche settimana, con le correzioni più urgenti, come i prodotti rifiutati, fatte subito. Poi il lavoro continua: ogni nuovo prodotto e ogni cambio di stagione richiedono controlli, che automatizziamo con regole dove possibile."
+        },
+        {
+          "question": "Le schede gratuite di Google Shopping bastano?",
+          "answer": "Sono un buon inizio e conviene attivarle, perché non costano nulla. Però la loro visibilità è limitata: compaiono soprattutto nella scheda Shopping e meno nei risultati principali, dove gli annunci a pagamento occupano le posizioni più viste. Per un e-commerce che vuole crescere servono quasi sempre anche le campagne a pagamento, con un feed curato."
+        }
+      ],
+      "related": [
+        "google-ads",
+        "seo-ecommerce",
+        "shopify",
+        "retargeting"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Google Shopping: feed e campagne per e-commerce | not4sale",
+      "metaDescription": "Gestione Google Shopping: feed prodotti ottimizzato in Merchant Center e campagne Shopping o Performance Max segmentate per margine. Chiedi un'analisi."
+    },
+    {
+      "slug": "retargeting",
+      "headline": "Retargeting: riporta a comprare chi ha già visitato il sito",
+      "short": "Campagne di retargeting su Google, Meta e altre piattaforme per recuperare visitatori interessati, con frequenza e consenso sotto controllo.",
+      "answer": "Il retargeting, o remarketing, mostra annunci a chi ha già visitato il tuo sito, aperto la tua app o interagito con i tuoi contenuti, per riportarlo a completare un acquisto o una richiesta. not4sale imposta campagne di retargeting su Google, Meta e altre piattaforme con pubblici segmentati, frequenza limitata e rispetto del consenso.",
+      "problem": "La maggior parte delle persone che visita un sito per la prima volta se ne va senza comprare né lasciare un contatto. È normale: stanno confrontando, si distraggono, non sono ancora pronte. Il retargeting serve a ritrovarle. Il problema è come viene fatto di solito.\n\nIl caso tipico è un unico pubblico \"tutti i visitatori degli ultimi 180 giorni\" con lo stesso annuncio per tutti. Chi ha letto solo la home e chi ha abbandonato il carrello ricevono lo stesso messaggio. Chi ha già comprato continua a vedere l'annuncio del prodotto che ha in mano. Senza limiti di frequenza, la stessa persona vede il banner ovunque per settimane e finisce per associare il tuo marchio a un fastidio.\n\nPoi c'è la misurazione. Il retargeting tende a prendersi il merito di vendite che sarebbero arrivate comunque, perché raggiunge persone già vicine all'acquisto. Se guardi solo i risultati riportati dalla piattaforma, sembra il canale più redditizio. Spesso è quello che gonfia di più i numeri.",
+      "process": [
+        {
+          "title": "Mappa del percorso",
+          "description": "Individuiamo le tappe che indicano interesse: pagine viste, prodotti, carrello, moduli iniziati, video guardati."
+        },
+        {
+          "title": "Pubblici e consenso",
+          "description": "Costruiamo pubblici per tappa e per tempo trascorso, verificando che la raccolta dei dati rispetti il consenso dato dagli utenti."
+        },
+        {
+          "title": "Messaggi per tappa",
+          "description": "Prepariamo annunci diversi per ogni pubblico: chi ha solo guardato riceve una prova, chi ha abbandonato il carrello una risposta alle obiezioni."
+        },
+        {
+          "title": "Frequenza ed esclusioni",
+          "description": "Limitiamo quante volte una persona vede gli annunci ed escludiamo chi ha già comprato o contattato."
+        },
+        {
+          "title": "Test di incrementalità",
+          "description": "Dove i volumi lo permettono, confrontiamo gruppi esposti e non esposti per misurare le vendite davvero aggiuntive."
+        }
+      ],
+      "deliverables": [
+        "Mappa delle tappe del percorso e dei relativi pubblici di retargeting",
+        "Pubblici configurati su Google Ads e Meta con durate ed esclusioni",
+        "Annunci dedicati a ogni tappa, inclusi annunci dinamici di prodotto per gli e-commerce",
+        "Regole di frequenza e di esclusione documentate",
+        "Verifica della raccolta dei dati rispetto al consenso cookie",
+        "Report con risultati per pubblico e stima delle vendite incrementali"
+      ],
+      "body": "## Cos'è il retargeting e quando serve davvero?\n\nIl retargeting è una tecnica pubblicitaria che mostra annunci a persone che hanno già avuto un contatto con il tuo marchio, sul sito, sui social o in app. Serve quando hai un buon volume di visitatori interessati che non concludono al primo passaggio: e-commerce con carrelli abbandonati, servizi con un ciclo di decisione di giorni o settimane, strutture ricettive dove si confrontano più opzioni prima di prenotare.\n\nServe poco se il sito ha pochissimo traffico, perché i pubblici sono troppo piccoli per essere raggiunti, o se il problema è il sito stesso: riportare persone su una pagina che non converte significa pagare due volte per lo stesso abbandono. In quel caso conviene prima lavorare su [funnel e CRO](/servizi/growth/funnel-cro).\n\n## Dove si fa retargeting: Google, Meta e le altre piattaforme\n\nSi può fare su quasi tutte le piattaforme pubblicitarie. Scegliamo in base a dove il tuo pubblico passa il tempo e al tipo di messaggio:\n\n| Piattaforma | Come raggiunge chi ti conosce | Punti di forza |\n|---|---|---|\n| [Meta Ads](/servizi/advertising/meta-ads) | Visitatori del sito, chi ha interagito con profili e video | Annunci dinamici di prodotto, formati visivi |\n| [Google Ads](/servizi/advertising/google-ads) | Visitatori su rete Display, YouTube, Gmail e ricerca | Raggiungere chi torna a cercare su Google |\n| [YouTube Ads](/servizi/advertising/youtube-ads) | Chi ha visto i tuoi video o visitato il sito | Raccontare il prodotto a chi è già interessato |\n| LinkedIn e TikTok | Visitatori e chi ha interagito con i contenuti | Utile nel B2B o con pubblici giovani |\n\nPer gli e-commerce gli annunci dinamici sono spesso il punto di partenza: mostrano a ogni persona proprio i prodotti che ha guardato, leggendo il catalogo collegato alla piattaforma.\n\n## Come si costruisce un retargeting che non infastidisce\n\nIl retargeting non infastidisce quando segue tre regole: messaggi diversi per persone in momenti diversi, frequenza limitata e una fine. In pratica:\n\n1. **pubblici per tappa**: chi ha visto una pagina, chi ha visto un prodotto, chi ha messo nel carrello, chi ha iniziato un modulo;\n2. **finestre di tempo**: chi ha visitato ieri è in un momento diverso da chi ha visitato un mese fa, e lo trattiamo diversamente;\n3. **messaggi che rispondono a un dubbio**: recensioni, garanzie di reso, tempi di consegna, risposte alle obiezioni più comuni, non la stessa foto ripetuta;\n4. **limiti di frequenza** e una durata massima dei pubblici, oltre la quale smettiamo di inseguire;\n5. **esclusione di chi ha già comprato**, a cui semmai parliamo con messaggi diversi o tramite [email marketing](/servizi/crm-email/email-marketing).\n\n## Retargeting, privacy e consenso: cosa cambia\n\nIl retargeting si basa sui dati di navigazione, quindi in Europa richiede il consenso dell'utente ai cookie di profilazione. Chi rifiuta non entra nei pubblici, e i browser come Safari limitano la durata dei cookie. Questo riduce le dimensioni delle liste: è normale e va messo in conto.\n\nPer recuperare parte del segnale nel rispetto del consenso lavoriamo su Consent Mode, sull'invio di eventi dal server con il [server-side tracking](/servizi/data-analytics/server-side-tracking) e sugli elenchi di clienti caricati con il loro permesso, come Customer Match su Google o i pubblici personalizzati su Meta.\n\n## Come misuriamo se il retargeting porta vendite in più\n\nIl retargeting si misura sulle vendite aggiuntive, non su quelle attribuite dalla piattaforma. Dove i volumi lo permettono usiamo gli strumenti di test delle piattaforme, che confrontano un gruppo esposto agli annunci con uno che non li vede: la differenza è la vendita davvero portata dal retargeting. Dove i volumi sono più piccoli, confrontiamo periodi e pubblici e lo diciamo chiaramente nei report.\n\nNei nostri [casi studio](/case-studies), come quello DTC wellness, il performance marketing funziona quando è collegato al CRM: è lì che il retargeting trova il suo posto, come un pezzo del sistema e non come una campagna isolata. Il preventivo dipende da piattaforme, pubblici e creatività: puoi stimarlo con il [calcolatore di preventivo](/preventivo).",
+      "faq": [
+        {
+          "question": "Quanti visitatori servono per fare retargeting?",
+          "answer": "Le piattaforme richiedono un numero minimo di persone in un pubblico per mostrare gli annunci, e con pochi visitatori le liste restano troppo piccole o vengono esaurite in pochi giorni. In generale il retargeting ha senso quando il sito riceve un traffico costante, magari portato da SEO o da altre campagne. Nell'analisi iniziale verifichiamo le dimensioni reali dei pubblici."
+        },
+        {
+          "question": "Il retargeting è legale con il GDPR?",
+          "answer": "Sì, se rispetta il consenso. In Europa i cookie e i pixel usati per il retargeting richiedono il consenso esplicito dell'utente tramite il banner cookie, e chi rifiuta non va inserito nei pubblici. Gli elenchi di clienti si possono usare solo se la raccolta dei dati lo permette. Verifichiamo questi aspetti tecnici, mentre per gli aspetti legali è bene coinvolgere il tuo consulente privacy."
+        },
+        {
+          "question": "Per quanto tempo conviene mostrare annunci a chi ha visitato il sito?",
+          "answer": "Dipende da quanto dura la decisione d'acquisto nel tuo settore. Per un prodotto da pochi minuti di riflessione bastano pochi giorni; per un mobile, una vacanza o un servizio B2B può servire più tempo. Impostiamo finestre diverse per pubblico e accorciamo quelle in cui i dati mostrano che gli annunci non portano più risultati."
+        },
+        {
+          "question": "Che differenza c'è tra retargeting ed email per carrelli abbandonati?",
+          "answer": "L'email raggiunge solo chi ti ha lasciato l'indirizzo, costa poco ed è molto efficace. Il retargeting raggiunge anche chi non si è registrato, ma si paga per ogni impressione o clic. Funzionano meglio insieme: email a chi è identificato, annunci a chi non lo è, con regole che evitino di colpire la stessa persona da tutti i lati."
+        },
+        {
+          "question": "Come evitate che il retargeting diventi invadente?",
+          "answer": "Con limiti di frequenza, durata massima dei pubblici ed esclusione di chi ha già comprato o contattato. Variamo anche i messaggi, così chi vede più annunci riceve informazioni nuove e non la stessa immagine ripetuta. Se i dati mostrano commenti negativi o un calo dei risultati all'aumentare della frequenza, riduciamo la pressione."
+        }
+      ],
+      "related": [
+        "meta-ads",
+        "google-ads",
+        "email-marketing",
+        "server-side-tracking"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Retargeting: campagne su Google e Meta | not4sale",
+      "metaDescription": "Campagne di retargeting su Google e Meta per riportare a comprare chi ha visitato il sito, con pubblici per tappa e frequenza limitata. Scopri come."
+    }
+  ]
+}

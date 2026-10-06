@@ -1,0 +1,550 @@
+{
+  "area": {
+    "slug": "ai-search",
+    "headline": "AI Search, AEO e GEO: farsi citare da ChatGPT, Perplexity e Google AI",
+    "short": "Le persone non cercano più, chiedono. Lavoriamo perché le AI rispondano citando te, non il tuo concorrente.",
+    "answer": "AI Search, AEO e GEO sono le attività che rendono un'azienda visibile nelle risposte di ChatGPT, Perplexity e Google AI Overviews. not4sale, studio di marketing di Cattolica, lavora su contenuti citabili, dati strutturati, autorevolezza del brand e accesso dei crawler AI, poi misura quanto e come le AI ti citano rispetto ai concorrenti.",
+    "body": "## Cos'è l'AI Search e perché riguarda anche la tua azienda\n\nL'AI Search è il modo in cui le persone trovano informazioni facendo una domanda a un assistente invece di scorrere dieci link blu. Chi chiede a ChatGPT \"che gestionale mi conviene per un hotel da 40 camere\" o a Perplexity \"migliori fornitori di imballaggi in Romagna\" riceve una risposta già confezionata, a volte con le fonti, a volte senza. Se il tuo nome non c'è, per quella persona non esisti.\n\nNon è fantascienza e non è nemmeno la fine della SEO. Google ha portato le AI Overviews anche in Italia nel 2025, ChatGPT e Perplexity fanno ricerche sul web in tempo reale e mostrano link alle fonti. Il cambiamento vero è un altro: il clic non è più garantito. La risposta arriva prima della visita, quindi conta essere dentro la risposta.\n\n## AEO e GEO: che differenza c'è?\n\nSono due facce dello stesso lavoro e il mercato usa le sigle in modo un po' disordinato. Noi le distinguiamo così:\n\n| | AEO · Answer Engine Optimization | GEO · Generative Engine Optimization |\n|---|---|---|\n| Domanda chiave | La mia pagina è la risposta migliore a questa domanda? | Il mio brand è un'entità che le AI conoscono e di cui si fidano? |\n| Dove si lavora | Sul tuo sito: struttura, testi, formati | Sul tuo sito e fuori: menzioni, recensioni, fonti terze, coerenza |\n| Unità di misura | Pagina e domanda | Brand e categoria |\n| Esempio | Una guida che risponde in modo netto a \"quanto costa ristrutturare un bagno\" | Comparire tra i nomi suggeriti quando qualcuno chiede \"chi ristruttura bagni a Rimini\" |\n\nL'[Answer Engine Optimization](/servizi/ai-search/answer-engine-optimization) rende le tue pagine facili da estrarre e citare. La [Generative Engine Optimization](/servizi/ai-search/generative-engine-optimization) lavora sulla reputazione del brand nel web che i modelli leggono. Servono entrambe, in proporzioni diverse a seconda del settore.\n\n## I servizi dell'area, e come si combinano\n\nPochi clienti hanno bisogno di tutto. Di solito si parte da una diagnosi e si sceglie dove mettere le mani.\n\n- **Per piattaforma.** Ogni motore ha le sue regole documentate e le sue abitudini osservabili. Lavoriamo in modo specifico sulla [visibilità su ChatGPT](/servizi/ai-search/visibilita-chatgpt), sulle [Google AI Overviews](/servizi/ai-search/google-ai-overviews) e su [Perplexity](/servizi/ai-search/perplexity).\n- **Fondamenta tecniche.** I [dati strutturati Schema.org](/servizi/ai-search/dati-strutturati) dicono a motori e AI chi sei, cosa vendi, dove operi. Senza, tutto il resto lavora in salita.\n- **Misurazione.** Il [monitoraggio delle citazioni AI](/servizi/ai-search/monitoraggio-ai) risponde alla domanda che conta: le AI parlano di te? Quanto, come, rispetto a chi?\n\n## Come lavoriamo sull'AI Search\n\nIl metodo è lo stesso che usiamo ovunque: ipotesi, prototipo, test, dato, decisione. Su un terreno giovane come questo è ancora più importante, perché nessuno conosce i dettagli interni dei modelli e chi ti promette \"la formula\" sta improvvisando.\n\n1. **Fotografia di partenza.** Definiamo le domande che i tuoi clienti fanno davvero e le poniamo alle AI. Registriamo chi viene citato, con quali fonti, con quali errori.\n2. **Diagnosi.** Controlliamo se i crawler AI possono leggere il sito, come sono strutturate le pagine, quali dati strutturati mancano, dove il brand è assente o descritto male nel web.\n3. **Interventi.** Riscrittura e creazione di contenuti, schema, lavoro su fonti terze. Partiamo da ciò che ha più impatto con meno sforzo.\n4. **Misura e iterazione.** Ripetiamo le stesse domande a intervalli regolari e confrontiamo. Teniamo ciò che sposta le citazioni, scartiamo il resto.\n\nUn risultato concreto, ottenuto per un cliente B2B SaaS: 63% di share-of-voice su Perplexity nelle domande del suo mercato, prima dei concorrenti. Lo trovi tra i [casi studio](/case-studies).\n\n## AI Search e SEO: si sostituiscono?\n\nNo. La gran parte dei sistemi di risposta che fanno ricerca sul web parte da pagine indicizzate e da contenuti che già funzionano nei motori di ricerca. Una buona [SEO tecnica](/servizi/seo/seo-tecnico) resta la base: se Google o Bing non leggono bene il tuo sito, difficilmente un assistente lo userà come fonte. L'AI Search aggiunge un livello sopra, con obiettivi e misure diverse. Se vuoi approfondire le differenze, abbiamo scritto [cosa cambia tra AEO e SEO](/blog/aeo-vs-seo-cosa-cambia).\n\n## Per chi ha senso\n\nHa senso se i tuoi clienti fanno domande prima di comprare: servizi B2B, software, turismo, sanità privata, formazione, prodotti tecnici, attività locali che vivono di passaparola. Ha meno senso se vendi solo su gara o se il tuo mercato non usa il web per informarsi: in quel caso te lo diciamo prima, non dopo. Lavoriamo con aziende di Cattolica, Rimini, Pesaro e di tutta Italia da remoto. Il preventivo dipende da quante domande e piattaforme vuoi presidiare e da quanto contenuto va prodotto: puoi farti un'idea con il [calcolatore di preventivo](/preventivo).",
+    "faq": [
+      {
+        "question": "Si può garantire di comparire nelle risposte di ChatGPT o di Google AI?",
+        "answer": "No, e diffida di chi lo fa. Le risposte dei modelli cambiano da utente a utente e da un giorno all'altro, e nessuna azienda esterna controlla gli algoritmi. Quello che si può fare è aumentare in modo misurabile la probabilità di essere citati: contenuti chiari, segnali di autorevolezza, dati strutturati, presenza nelle fonti che le AI consultano. Poi si misura, con lo stesso set di domande, prima e dopo."
+      },
+      {
+        "question": "Quanto tempo serve per vedere i primi risultati?",
+        "answer": "Dipende da dove si interviene. Le modifiche al sito vengono lette dalle AI che fanno ricerca in tempo reale non appena le pagine vengono riscansionate, quindi in qualche settimana si vedono i primi segnali. Il lavoro sulla reputazione del brand, menzioni e fonti terze, richiede mesi. Per questo impostiamo da subito una misurazione regolare: così vedi cosa si muove e quando."
+      },
+      {
+        "question": "Ho già un fornitore SEO: devo cambiarlo?",
+        "answer": "No. AEO e GEO si appoggiano alla SEO, non la sostituiscono. Possiamo lavorare accanto al tuo fornitore, condividendo la diagnosi e dividendo i compiti: lui sul posizionamento classico, noi su contenuti citabili, dati strutturati e monitoraggio delle citazioni AI. Ci serve solo un accesso a Search Console e la possibilità di proporre modifiche al sito."
+      },
+      {
+        "question": "Da cosa dipende il costo di un progetto di AI Search?",
+        "answer": "Da tre fattori: quante domande e quanti mercati vuoi presidiare, su quante piattaforme lavoriamo, quanto contenuto va riscritto o creato da zero. Un'azienda locale con un catalogo semplice ha esigenze diverse da un software B2B con cinque concorrenti agguerriti. Con il calcolatore su /preventivo ottieni una stima, poi la affiniamo con una chiamata."
+      },
+      {
+        "question": "Come faccio a sapere se le AI parlano già della mia azienda?",
+        "answer": "Il modo più semplice è chiederglielo, ma in modo sistematico. Una domanda singola non dice nulla, perché le risposte variano. Serve un elenco di domande realistiche, poste più volte su più piattaforme, registrando chi viene nominato e con quali fonti. È il primo passo di ogni nostro progetto e ti restituisce una fotografia chiara: dove ci sei, dove mancano i tuoi concorrenti, dove ci sono errori."
+      }
+    ],
+    "metaTitle": "AI Search, AEO e GEO: visibilità nelle AI | not4sale",
+    "metaDescription": "AI Search, AEO e GEO a Cattolica e in tutta Italia: contenuti citabili, dati strutturati e monitoraggio per comparire nelle risposte delle AI. Parliamone."
+  },
+  "services": [
+    {
+      "slug": "answer-engine-optimization",
+      "headline": "AEO, Answer Engine Optimization: diventa la risposta che le AI citano",
+      "short": "Pagine riscritte per rispondere in modo netto alle domande dei clienti, così ChatGPT, Perplexity e Google le usano come fonte.",
+      "answer": "L'Answer Engine Optimization (AEO) è l'ottimizzazione dei contenuti di un sito perché i motori di risposta, come ChatGPT, Perplexity e Google AI Overviews, li usino come fonte. not4sale individua le domande reali dei clienti, ristruttura le pagine in risposte chiare ed estraibili, aggiunge dati strutturati e misura le citazioni ottenute.",
+      "problem": "Il tuo sito probabilmente è scritto per presentarsi, non per rispondere. Pagine \"Chi siamo\" piene di valori, schede servizio che dicono \"soluzioni personalizzate\", un blog con articoli lunghi in cui la risposta arriva al sesto paragrafo, se arriva.\n\nUn motore di risposta legge la tua pagina cercando un passaggio che risponda alla domanda dell'utente in modo chiaro e verificabile. Se non lo trova, prende quello di un altro. E quell'altro diventa il nome che il tuo potenziale cliente legge per primo, magari con un link.\n\nIl costo è doppio. Perdi la visita, perché la risposta l'ha già data l'AI. E perdi la reputazione, perché l'esperto citato non sei tu. Nel frattempo continui a pagare contenuti che nessuno estrae, e a chiederti perché il traffico informativo scende mentre le impressioni su Google tengono.",
+      "process": [
+        {
+          "title": "Mappa delle domande",
+          "description": "Raccogliamo le domande vere dei clienti da commerciale, assistenza, Search Console e ricerche correlate, e le raggruppiamo per intento e fase d'acquisto."
+        },
+        {
+          "title": "Test sulle AI",
+          "description": "Poniamo quelle domande a ChatGPT, Perplexity e Google e registriamo chi viene citato, con quali pagine e con quali errori."
+        },
+        {
+          "title": "Audit dei contenuti",
+          "description": "Confrontiamo le tue pagine con le fonti citate: struttura, chiarezza della risposta, dati verificabili, segnali di autore e aggiornamento."
+        },
+        {
+          "title": "Riscrittura e nuove pagine",
+          "description": "Riscriviamo le pagine esistenti con risposta in apertura e creiamo quelle mancanti, con dati strutturati coerenti."
+        },
+        {
+          "title": "Misura e revisione",
+          "description": "Ripetiamo il test a intervalli fissi e aggiustiamo le pagine che non vengono ancora citate."
+        }
+      ],
+      "deliverables": [
+        "Mappa delle domande dei clienti, raggruppate per intento e priorità",
+        "Report di partenza: chi citano oggi le AI sulle tue domande e con quali fonti",
+        "Audit AEO delle pagine principali con interventi in ordine di impatto",
+        "Pagine riscritte o nuove, pronte da pubblicare, con blocchi di risposta e FAQ",
+        "Markup Schema.org per le pagine ottimizzate",
+        "Linee guida di scrittura AEO per chi produce contenuti in azienda",
+        "Report di confronto a 90 giorni sulle stesse domande"
+      ],
+      "body": "## Cos'è l'Answer Engine Optimization, in pratica\n\nL'AEO è il lavoro che trasforma una pagina web in una risposta. Non cambia l'argomento delle tue pagine, cambia il modo in cui l'informazione è organizzata, così che un sistema automatico la trovi, la capisca e la possa riportare senza travisarla.\n\nUn motore di risposta non legge la pagina come una persona che ha tempo. Cerca un passaggio che risponda alla domanda, valuta se la fonte è credibile, e lo sintetizza. Più il passaggio è autosufficiente, più è facile da usare. Per questo diciamo che \"le persone non cercano più, chiedono\": e le domande vanno prese alla lettera.\n\n## Come si scrive una pagina che le AI possono citare?\n\nSi mette la risposta all'inizio e la si rende comprensibile anche fuori contesto. Il resto della pagina serve ad approfondire e a dimostrare che sai di cosa parli. Le regole che applichiamo sono poche e concrete:\n\n1. **Una domanda per sezione.** Titoli formulati come le persone chiedono (\"Quanto dura un impianto fotovoltaico?\"), non come etichette (\"Durata\").\n2. **Risposta nelle prime due frasi.** Netta, con il dato o la condizione principale. Le sfumature dopo.\n3. **Passaggi autosufficienti.** Niente \"come detto sopra\": ogni blocco deve reggere da solo, perché verrà estratto da solo.\n4. **Fatti verificabili.** Numeri con la loro fonte, norme citate per nome, esempi reali. Le affermazioni vaghe non si citano.\n5. **Formati che si estraggono bene.** Elenchi per i passaggi, tabelle per i confronti, definizioni brevi per i termini tecnici.\n6. **Chi lo dice e quando.** Autore riconoscibile, data di aggiornamento visibile, pagina \"chi siamo\" che spiega perché sei titolato a parlarne.\n\nNulla di questo è un trucco. Sono le stesse cose che rendono un testo utile a un lettore umano frettoloso, che è esattamente ciò che un motore di risposta simula.\n\n## Quali domande presidiare per prime?\n\nQuelle vicine all'acquisto, dove il tuo nome può fare la differenza. Una domanda come \"cos'è un preventivo\" porta poco; \"quanto costa un impianto di climatizzazione per un negozio di 80 mq e da cosa dipende\" porta clienti. Ordiniamo le domande su tre criteri: valore commerciale, possibilità reale di essere la fonte migliore, distanza dei concorrenti. Le fonti per trovarle sono più concrete di quanto pensi: le email che ricevi, le obiezioni che sente il tuo commerciale, le query lunghe in Search Console, le domande correlate che Google mostra.\n\nLe domande fatte a voce hanno la stessa logica, con frasi ancora più colloquiali: se ti interessa quel canale, guarda anche la [SEO per ricerca vocale](/servizi/seo/voice-search).\n\n## AEO e contenuti: cosa cambia rispetto al solito blog?\n\nCambia il punto di partenza. Il blog tradizionale nasce da una parola chiave e da un volume di ricerca; la pagina AEO nasce da una domanda e dalla risposta migliore possibile. Spesso significa scrivere meno articoli e più pagine di riferimento, aggiornate nel tempo, invece di inseguire il calendario editoriale. Se ti serve un piano di produzione continuo, lo integriamo con il [content marketing](/servizi/content/content-marketing); se ti servono testi che oltre a farsi citare convertano, con il [copywriting](/servizi/content/copywriting).\n\nC'è poi il livello tecnico. Le pagine devono essere scansionabili, veloci e leggibili anche senza eseguire JavaScript complesso, e devono avere [dati strutturati](/servizi/ai-search/dati-strutturati) coerenti con il testo. Un contenuto ottimo che il crawler non riesce a leggere non esiste.\n\n## Come misuriamo l'AEO\n\nCon le stesse domande, ripetute nel tempo. Partiamo da un set di domande fisso, lo poniamo alle principali piattaforme più volte, registriamo se e come vieni citato. Dopo gli interventi ripetiamo lo stesso test. Affianchiamo i dati di Search Console e il traffico di referral dalle piattaforme AI in Google Analytics, che però raccontano solo una parte della storia: molte risposte non generano clic. Per un monitoraggio continuo e confrontato con i concorrenti c'è il servizio di [monitoraggio delle citazioni AI](/servizi/ai-search/monitoraggio-ai).\n\nUn esempio di ciò che si ottiene lavorando bene su domande, contenuti e fonti: per un cliente B2B SaaS siamo arrivati al 63% di share-of-voice su Perplexity nel suo mercato. Il dettaglio è nei [casi studio](/case-studies).",
+      "faq": [
+        {
+          "question": "L'AEO è diverso dalla SEO o è solo un nome nuovo?",
+          "answer": "È diverso nell'obiettivo, simile negli strumenti. La SEO punta a posizionare una pagina tra i risultati; l'AEO punta a far estrarre un passaggio di quella pagina dentro una risposta. Molte basi coincidono, come scansionabilità, qualità e autorevolezza. Cambiano la struttura dei testi, il modo di scegliere gli argomenti e soprattutto le metriche: non posizioni e clic, ma citazioni e menzioni."
+        },
+        {
+          "question": "Devo riscrivere tutto il sito?",
+          "answer": "Quasi mai. Partiamo dalle pagine che rispondono, o dovrebbero rispondere, alle domande con più valore commerciale: di solito sono tra dieci e trenta. Molte si sistemano con una ristrutturazione, cioè risposta in apertura, sezioni a domanda e dati più precisi. Poi si creano le pagine mancanti. Il resto del sito si adegua nel tempo, con le linee guida che ti lasciamo."
+        },
+        {
+          "question": "Cosa serve da parte mia?",
+          "answer": "Due cose: conoscenza e accessi. La conoscenza la prendiamo da te e dal tuo commerciale con un paio di interviste, perché le risposte migliori contengono dettagli che solo chi fa il mestiere conosce. Gli accessi sono quelli al CMS del sito, a Search Console e a Google Analytics. Ti chiediamo anche una persona di riferimento che validi i testi prima della pubblicazione."
+        },
+        {
+          "question": "L'AEO funziona anche per un'attività locale?",
+          "answer": "Sì, ma il lavoro si sposta. Per un'attività locale le domande sono spesso del tipo \"dove\", \"chi\", \"quanto costa qui\", e le AI pescano molto da schede aziendali, recensioni e directory oltre che dal sito. Quindi l'AEO va fatta insieme alla SEO locale: pagine servizio con risposte precise, scheda Google curata, informazioni coerenti ovunque. A Cattolica, Rimini o Pesaro fa la differenza tra essere suggeriti o no."
+        },
+        {
+          "question": "Se le AI rispondono al posto mio, perdo traffico. Perché dovrei aiutarle?",
+          "answer": "Perché la risposta verrà data comunque, con o senza di te. La scelta reale è tra essere la fonte citata, con nome e spesso link, o lasciare quel posto a un concorrente. Il traffico informativo generico cala, è vero, ma le visite che arrivano da una citazione sono di persone che hanno già letto di te e cercano un approfondimento o un contatto."
+        },
+        {
+          "question": "Ogni quanto vanno aggiornate le pagine ottimizzate?",
+          "answer": "Quando cambia la risposta, e comunque con un controllo periodico. Prezzi indicativi, normative, tempi e prodotti invecchiano, e una pagina con dati superati perde credibilità sia per i lettori sia per i sistemi che la valutano. Consigliamo una revisione trimestrale delle pagine principali, con data di aggiornamento visibile, e un intervento subito dopo ogni cambiamento rilevante del tuo settore."
+        }
+      ],
+      "related": [
+        "generative-engine-optimization",
+        "dati-strutturati",
+        "content-marketing",
+        "voice-search"
+      ],
+      "caseStudies": [
+        "cs-002"
+      ],
+      "metaTitle": "AEO, Answer Engine Optimization in Italia | not4sale",
+      "metaDescription": "AEO, Answer Engine Optimization: pagine che ChatGPT, Perplexity e Google AI usano come fonte. Domande reali, testi chiari, citazioni misurate."
+    },
+    {
+      "slug": "generative-engine-optimization",
+      "headline": "GEO, Generative Engine Optimization: il tuo brand nelle risposte AI",
+      "short": "Lavoriamo su menzioni, fonti terze e coerenza del brand perché i modelli generativi ti nominino quando si parla del tuo settore.",
+      "answer": "La Generative Engine Optimization (GEO) è il lavoro che aumenta la probabilità che un brand venga nominato e descritto correttamente dai modelli generativi come ChatGPT, Gemini e Perplexity. not4sale interviene su coerenza dell'entità, menzioni in fonti terze, recensioni, contenuti originali e confronti, e misura come cambia la presenza del brand nelle risposte.",
+      "problem": "Chiedi a un'AI \"quali sono le migliori aziende che fanno quello che fai tu\" e leggi la risposta. Spesso ci trovi due o tre concorrenti, a volte nemmeno i più bravi, solo i più raccontati. Tu non ci sei, oppure ci sei con informazioni vecchie: un servizio che non offri più, una sede sbagliata, una fascia di prezzo che non è la tua.\n\nIl motivo raramente è il tuo sito. I modelli generativi si fanno un'idea di un brand da tutto ciò che leggono: articoli, directory, recensioni, forum, confronti, profili social. Se di te si parla poco, o in modo incoerente, il modello non ha abbastanza materiale per nominarti con sicurezza.\n\nIl conto lo paghi nella fase più delicata: quando il cliente sta ancora costruendo la lista dei fornitori da contattare. Chi non è in quella lista non riceve la richiesta di preventivo, e non saprà mai di averla persa.",
+      "process": [
+        {
+          "title": "Audit del brand",
+          "description": "Chiediamo alle AI chi sei, cosa fai e chi sono i tuoi concorrenti, e annotiamo omissioni, errori e fonti usate."
+        },
+        {
+          "title": "Mappa delle fonti",
+          "description": "Individuiamo i siti, le directory, le testate e le community che compaiono nelle risposte del tuo settore."
+        },
+        {
+          "title": "Coerenza dell'entità",
+          "description": "Allineiamo nome, descrizione, servizi e dati aziendali su sito, profili e schede, e li colleghiamo con dati strutturati."
+        },
+        {
+          "title": "Menzioni e contenuti",
+          "description": "Produciamo contenuti originali citabili e lavoriamo per ottenere menzioni nelle fonti che contano."
+        },
+        {
+          "title": "Misura periodica",
+          "description": "Ripetiamo l'audit sullo stesso set di domande e confrontiamo presenza, posizione e correttezza."
+        }
+      ],
+      "deliverables": [
+        "Audit GEO: come le AI descrivono il tuo brand e i concorrenti oggi",
+        "Mappa delle fonti terze più presenti nelle risposte del tuo settore",
+        "Scheda di identità del brand da usare ovunque (nome, descrizione, servizi, dati)",
+        "Elenco di correzioni su profili, directory e schede aziendali",
+        "Piano di menzioni e digital PR con obiettivi e testate",
+        "Uno o più contenuti originali citabili (dati, guida di riferimento, confronto)",
+        "Report di confronto periodico su presenza e accuratezza nelle risposte"
+      ],
+      "body": "## Cos'è la GEO e da dove viene\n\nLa GEO è l'ottimizzazione della presenza di un brand nelle risposte dei motori generativi. Il termine si è diffuso dopo un paper accademico del 2023 intitolato proprio \"GEO: Generative Engine Optimization\", che studiava come diversi accorgimenti nei contenuti cambiassero la visibilità delle fonti nelle risposte generate. Da lì il mercato l'ha adottato, a volte allargandolo fino a renderlo un sinonimo di qualunque cosa abbia a che fare con l'AI.\n\nNoi lo usiamo in un senso preciso: mentre l'[AEO](/servizi/ai-search/answer-engine-optimization) lavora sulla singola pagina e sulla singola domanda, la GEO lavora sul brand come entità. La domanda non è \"questa pagina risponde bene?\" ma \"quando un modello pensa alla mia categoria, pensa anche a me, e mi descrive in modo corretto?\".\n\n## Come si fa a farsi nominare dalle AI?\n\nSi dà ai modelli materiale abbondante, coerente e credibile su chi sei. Non c'è una leva unica, e nessuno fuori da OpenAI, Google o Perplexity conosce i pesi esatti. Ma ci sono cose verificabili che rendono un brand più facile da riconoscere e da citare:\n\n- **Un'identità coerente.** Stesso nome, stessa descrizione, stessi servizi su sito, Google, LinkedIn, directory di settore, registri. Le incoerenze generano risposte confuse.\n- **Menzioni in fonti indipendenti.** Articoli di testate di settore, interviste, elenchi curati, confronti, citazioni in ricerche. Un brand di cui parlano solo i propri canali resta un'autodichiarazione.\n- **Recensioni e opinioni reali.** Piattaforme di recensioni e community dove i clienti parlano di te. Contano quantità, continuità e contenuto, non solo le stelle.\n- **Contenuti originali.** Dati tuoi, una ricerca, un listino spiegato, una guida che nessun altro ha scritto. Le AI riportano più volentieri ciò che non trovano altrove.\n- **Collegamenti espliciti tra i profili.** Con i [dati strutturati](/servizi/ai-search/dati-strutturati), in particolare la proprietà sameAs, dichiari che sito, profili social e schede sono la stessa entità.\n\n## Perché la GEO è soprattutto un lavoro fuori dal sito\n\nPerché i modelli si fidano più di ciò che altri dicono di te che di ciò che dici tu. È lo stesso principio della reputazione offline: un fornitore consigliato da un cliente vale più di dieci brochure.\n\nIn pratica significa lavoro di relazione: proporre contenuti e dati a testate e portali di settore, farsi includere in confronti e guide, curare la presenza nelle directory che compaiono davvero nelle risposte, stimolare recensioni dopo ogni lavoro ben fatto. È parente stretto della [link building e digital PR](/servizi/seo/link-building), con una differenza: qui conta anche la menzione senza link, purché in una fonte autorevole e con un contesto chiaro.\n\nPrima di tutto, però, mappiamo quali fonti compaiono nelle risposte del tuo settore. Non ha senso inseguire una testata nazionale se le AI, sulle domande dei tuoi clienti, citano sempre due portali verticali e un forum. Lo scopriamo ponendo le domande e guardando le fonti dichiarate, dove le piattaforme le mostrano.\n\n## Cosa fare quando le AI dicono cose sbagliate su di te?\n\nSi corregge alla fonte, non al modello. Non esiste un modulo per chiedere a un modello di aggiornare l'idea che ha di un'azienda; esistono le fonti da cui quell'idea viene. Se un'AI ti attribuisce un servizio dismesso o una sede vecchia, di solito quell'informazione è ancora scritta da qualche parte: una directory abbandonata, un vecchio comunicato, una scheda non aggiornata. La troviamo, la correggiamo o la superiamo con fonti più recenti e più autorevoli. Le AI che fanno ricerca in tempo reale recepiscono prima; quelle che rispondono dalla memoria del modello richiedono più tempo.\n\n## Per chi è la GEO\n\nÈ utile soprattutto in tre situazioni: mercati in cui il cliente confronta più fornitori prima di contattarli, come software, servizi B2B, consulenza e turismo; brand nuovi o riposizionati, di cui le AI hanno un'idea vecchia o nessuna idea; aziende con un concorrente che domina le risposte senza meritarlo. Lavora bene insieme a un [posizionamento di brand](/servizi/strategia/brand-positioning) chiaro: se non sai dire in una frase chi sei e per chi, non lo saprà dire neanche un modello.\n\nIl caso più vicino che possiamo raccontare è un software B2B arrivato al 63% di share-of-voice su Perplexity nelle domande del suo mercato: lo trovi nei [casi studio](/case-studies).",
+      "faq": [
+        {
+          "question": "Che differenza c'è tra GEO e AEO?",
+          "answer": "L'AEO ottimizza le singole pagine perché vengano usate come risposta a domande precise. La GEO lavora sul brand nel suo insieme: come i modelli lo conoscono, lo descrivono e lo associano alla sua categoria. L'AEO si fa soprattutto sul tuo sito, la GEO soprattutto fuori, tra menzioni, recensioni e fonti terze. Nei progetti reali le facciamo quasi sempre insieme, con pesi diversi."
+        },
+        {
+          "question": "Si possono pagare le AI per essere citati?",
+          "answer": "Nelle risposte organiche no: non esiste un modo documentato per comprare una citazione dentro la risposta di un modello. Alcune piattaforme stanno sperimentando formati pubblicitari, ma sono spazi separati e dichiarati come tali. La GEO lavora sulla parte organica, quella che il cliente percepisce come un consiglio neutrale, ed è proprio per questo che vale di più."
+        },
+        {
+          "question": "Quanto tempo serve per vedere un cambiamento?",
+          "answer": "Le correzioni di dati e profili si riflettono abbastanza presto nelle AI che fanno ricerca sul web, spesso in poche settimane. Le menzioni in fonti terze e le recensioni richiedono mesi di lavoro costante. La memoria interna dei modelli cambia ancora più lentamente, solo quando vengono aggiornati. Per questo misuriamo a intervalli regolari e ti mostriamo l'andamento, non una fotografia sola."
+        },
+        {
+          "question": "Le recensioni contano davvero per la GEO?",
+          "answer": "Contano come fonte di informazioni sul brand, soprattutto per attività locali, e-commerce e servizi. Nelle risposte delle AI capita spesso di leggere sintesi di ciò che i clienti dicono, quindi il contenuto delle recensioni pesa più del voto medio. Non scriviamo recensioni false e non le compriamo: ti aiutiamo a impostare un processo per chiederle ai clienti reali al momento giusto."
+        },
+        {
+          "question": "Siamo un'azienda piccola: abbiamo qualche possibilità contro i grandi?",
+          "answer": "Sì, se scegli bene il terreno. Sulle domande generiche i grandi brand partono avvantaggiati. Sulle domande specifiche, come una nicchia, un territorio, un problema tecnico preciso, una piccola azienda con contenuti originali e menzioni nelle fonti giuste può comparire al loro fianco o al loro posto. Il lavoro sta proprio nell'individuare quelle domande."
+        },
+        {
+          "question": "Cosa serve da parte nostra?",
+          "answer": "Accesso ai profili aziendali, come scheda Google, LinkedIn e directory, per correggerli. Disponibilità a condividere dati o competenze che rendano originali i contenuti. Una persona che possa rispondere a giornalisti o partner quando arriva un'opportunità di menzione. E la pazienza di guardare un indicatore che si muove in mesi, non in giorni."
+        }
+      ],
+      "related": [
+        "answer-engine-optimization",
+        "link-building",
+        "brand-positioning",
+        "monitoraggio-ai"
+      ],
+      "caseStudies": [
+        "cs-002"
+      ],
+      "metaTitle": "GEO, Generative Engine Optimization | not4sale",
+      "metaDescription": "GEO, Generative Engine Optimization: lavoriamo su menzioni, fonti terze e coerenza del brand perché le AI ti nominino nel tuo settore. Scopri come."
+    },
+    {
+      "slug": "visibilita-chatgpt",
+      "headline": "Visibilità su ChatGPT: fai comparire il tuo brand nelle sue risposte",
+      "short": "Quando ChatGPT consiglia aziende del tuo settore, il tuo nome deve esserci. Lavoriamo su accesso, fonti e contenuti per arrivarci.",
+      "answer": "La visibilità su ChatGPT è il lavoro che aumenta la probabilità che il tuo brand venga nominato e citato quando gli utenti chiedono consigli sul tuo settore. not4sale verifica che i crawler di OpenAI possano leggere il sito, rafforza le fonti esterne da cui ChatGPT attinge e misura le risposte su un set fisso di domande.",
+      "problem": "Sempre più persone aprono ChatGPT prima di Google. Chiedono \"che commercialista mi consigli per una startup\", \"miglior software per gestire un B&B\", \"dove comprare attrezzatura per pasticceria all'ingrosso\". ChatGPT risponde con nomi, spesso con una breve motivazione per ciascuno.\n\nSe il tuo nome non c'è, quella persona costruisce la sua lista di fornitori senza di te. E non lo vedi in nessun report: non c'è un'impressione persa in Search Console, non c'è un clic mancato in Analytics. Semplicemente non arriva la richiesta.\n\nA volte il problema è banale: il sito blocca i crawler di OpenAI nel robots.txt per un'impostazione presa anni fa, o il tuo sito non è indicizzato bene nei motori di ricerca che ChatGPT usa quando cerca sul web. Altre volte è più profondo: di te si parla troppo poco fuori dal tuo sito perché il modello ti consideri una risposta sicura.",
+      "process": [
+        {
+          "title": "Test delle domande",
+          "description": "Costruiamo un set di domande realistiche del tuo mercato e le poniamo a ChatGPT più volte, con e senza ricerca web."
+        },
+        {
+          "title": "Controllo accessi",
+          "description": "Verifichiamo robots.txt, firewall e CDN per i crawler documentati da OpenAI e lo stato di indicizzazione del sito."
+        },
+        {
+          "title": "Analisi delle fonti",
+          "description": "Guardiamo quali siti ChatGPT cita quando cerca sul tuo settore e dove il tuo brand manca o è descritto male."
+        },
+        {
+          "title": "Interventi mirati",
+          "description": "Pagine di riferimento più chiare, correzioni sui profili esterni, menzioni nelle fonti che ChatGPT usa davvero."
+        },
+        {
+          "title": "Nuova misurazione",
+          "description": "Ripetiamo le stesse domande e confrontiamo presenza, posizione nell'elenco e correttezza della descrizione."
+        }
+      ],
+      "deliverables": [
+        "Set di domande di test per il tuo mercato, riutilizzabile nel tempo",
+        "Report di partenza: risposte di ChatGPT, concorrenti nominati, fonti citate",
+        "Verifica tecnica dell'accesso dei crawler OpenAI con le modifiche da applicare",
+        "Elenco delle fonti esterne prioritarie con azioni concrete per ciascuna",
+        "Pagine chiave del sito riscritte per essere citabili",
+        "Segmento in Google Analytics per il traffico in arrivo da chatgpt.com",
+        "Report di confronto dopo gli interventi"
+      ],
+      "body": "## Come decide ChatGPT quali aziende consigliare?\n\nNessuno fuori da OpenAI lo sa nel dettaglio, ma due meccanismi sono chiari e documentati. Quando risponde senza cercare sul web, ChatGPT usa ciò che il modello ha appreso durante l'addestramento: un'idea generale di chi esiste e di cosa si dice di chi. Quando invece cerca sul web, cosa che accade sempre più spesso per domande commerciali e locali, legge pagine in tempo reale e mostra le fonti con un link.\n\nQuesto significa che per essere visibili su ChatGPT servono due cose diverse. Per la ricerca web: pagine accessibili, ben indicizzate e chiare, presenti nelle fonti che il sistema consulta. Per la memoria del modello: una presenza solida e coerente del brand nel web nel suo complesso, che si costruisce nel tempo. La prima si migliora in settimane, la seconda in mesi.\n\n## Il tuo sito è leggibile da ChatGPT?\n\nIl primo controllo è tecnico e capita più spesso di quanto pensi che sia lui il problema. OpenAI documenta pubblicamente i suoi crawler, con funzioni diverse:\n\n| Crawler | A cosa serve |\n|---|---|\n| OAI-SearchBot | Rendere le pagine disponibili nei risultati di ricerca di ChatGPT |\n| ChatGPT-User | Visitare una pagina quando un utente lo chiede durante una conversazione |\n| GPTBot | Raccogliere contenuti che possono essere usati per addestrare i modelli |\n\nSi possono gestire separatamente nel robots.txt. Molte aziende hanno bloccato tutto per timore dell'addestramento e così si sono tolte anche dalla ricerca. Noi ti spieghiamo la differenza e decidi tu: si può, per esempio, escludere l'addestramento e restare visibili nelle risposte. Controlliamo anche firewall e CDN, che a volte bloccano i bot senza che nessuno lo sappia, e che le informazioni importanti non dipendano da JavaScript pesante. OpenAI dichiara inoltre di appoggiarsi anche a fornitori di ricerca terzi: per questo verifichiamo l'indicizzazione non solo su Google ma anche su Bing, tramite Bing Webmaster Tools. Le basi tecniche sono le stesse della [SEO tecnica](/servizi/seo/seo-tecnico).\n\n## Quali contenuti aiutano a comparire su ChatGPT?\n\nContenuti che rispondono alle domande di confronto e scelta, perché sono quelle su cui ChatGPT fa nomi. Le domande \"migliori X per Y\", \"alternativa a Z\", \"quanto costa\", \"come scegliere\" sono il terreno decisivo. Servono pagine che dicano chiaramente per chi è il tuo servizio, cosa include, in cosa ti distingui, con dati concreti invece di aggettivi. È il lavoro tipico dell'[Answer Engine Optimization](/servizi/ai-search/answer-engine-optimization), orientato alle domande commerciali.\n\nPoi ci sono le fonti esterne. Quando ChatGPT cerca sul web per il tuo settore, cita spesso gli stessi tipi di siti: portali di confronto, directory specializzate, articoli di testate, liste curate, piattaforme di recensioni. Le individuiamo con test ripetuti e lavoriamo per esserci: correggere la scheda dove c'è, ottenere l'inclusione dove manca, proporre contenuti dove ha senso. È il lato [GEO](/servizi/ai-search/generative-engine-optimization) del progetto.\n\n## Come si misura la visibilità su ChatGPT?\n\nCon test ripetuti, perché una singola risposta non vuol dire nulla. ChatGPT risponde in modo diverso a utenti diversi, in momenti diversi, e può tener conto della cronologia della conversazione. Per questo usiamo un set fisso di domande, le poniamo più volte in sessioni pulite, e calcoliamo quante volte compari e in che posizione. Così un cambiamento lo vedi come tendenza, non come aneddoto.\n\nA questo si aggiunge il traffico: le visite che arrivano da chatgpt.com si possono isolare in Google Analytics 4 come referral. Sono di solito poche rispetto alle citazioni, perché molti leggono la risposta senza cliccare, ma sono visite di qualità da tenere d'occhio. Se vuoi un controllo continuativo su più piattaforme e contro i concorrenti, c'è il [monitoraggio delle citazioni AI](/servizi/ai-search/monitoraggio-ai); per impostare bene il tracciamento, la configurazione di [Google Analytics 4](/servizi/data-analytics/google-analytics-4).\n\n## Per chi vale la pena lavorarci\n\nPer chi vende qualcosa che le persone scelgono dopo averci pensato: software, servizi professionali, formazione, strutture turistiche, prodotti con un prezzo che richiede un confronto. Se sei a Cattolica o in Romagna e lavori con clienti che arrivano da fuori, ChatGPT è sempre più spesso il primo consulente che interpellano. Meglio sapere cosa dice di te.",
+      "faq": [
+        {
+          "question": "Si può pagare ChatGPT per essere consigliati?",
+          "answer": "Nelle risposte organiche no: non esiste un programma che permetta di comprare un posto nell'elenco dei consigli. Se e quando compaiono formati pubblicitari, sono spazi distinti e segnalati, non citazioni dentro la risposta. Il nostro lavoro riguarda la parte organica: rendere il tuo brand una risposta credibile, verificabile e facile da trovare."
+        },
+        {
+          "question": "Se blocco GPTBot sparisco da ChatGPT?",
+          "answer": "Non necessariamente. GPTBot riguarda la raccolta di contenuti per l'addestramento; la visibilità nella ricerca di ChatGPT dipende da OAI-SearchBot, che si gestisce separatamente. Puoi quindi escludere l'addestramento e restare nelle risposte con ricerca web. Bloccare tutti i bot di OpenAI, invece, toglie il sito dalle fonti che ChatGPT può mostrare quando cerca. Valutiamo insieme la scelta più adatta."
+        },
+        {
+          "question": "ChatGPT dice cose sbagliate sulla mia azienda: come si corregge?",
+          "answer": "Si interviene sulle fonti. Se l'errore compare nelle risposte con ricerca web, di solito arriva da una pagina specifica, che troviamo tra le fonti citate e facciamo correggere o superare con informazioni più recenti. Se arriva dalla memoria del modello, serve una presenza corretta e diffusa che emerga nelle versioni successive. Intanto rafforziamo il sito ufficiale come fonte più chiara."
+        },
+        {
+          "question": "Quanto ci vuole per comparire nelle risposte?",
+          "answer": "Per le risposte con ricerca web, i primi effetti di interventi tecnici e sui contenuti si vedono in genere nel giro di settimane, una volta che le pagine vengono riscansionate. Per entrare stabilmente negli elenchi di consigli serve una presenza costruita in mesi, soprattutto nei settori affollati. Ti mostriamo i progressi con lo stesso set di domande, misurato a intervalli regolari."
+        },
+        {
+          "question": "Funziona anche per un'attività locale?",
+          "answer": "Sì. Per le domande con un luogo, come \"ristorante di pesce a Cattolica\" o \"dentista a Pesaro\", ChatGPT tende a cercare sul web e a usare schede aziendali, recensioni e directory. In quel caso conta molto avere informazioni coerenti ovunque, una scheda Google curata e recensioni recenti. Il lavoro si sovrappone in buona parte alla SEO locale, e lo coordiniamo insieme."
+        },
+        {
+          "question": "Devo creare un file llms.txt?",
+          "answer": "Non è una priorità. Il file llms.txt è una proposta per indicare ai modelli i contenuti principali di un sito, ma non è uno standard adottato e i grandi operatori non hanno confermato di usarlo per le risposte. Se il sito è già in ordine, crearlo costa poco e non fa danni. Ma prima vengono accesso dei crawler, indicizzazione e contenuti chiari."
+        }
+      ],
+      "related": [
+        "answer-engine-optimization",
+        "monitoraggio-ai",
+        "seo-tecnico",
+        "seo-locale"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Visibilità su ChatGPT per aziende | not4sale",
+      "metaDescription": "Visibilità su ChatGPT: verifichiamo l'accesso dei crawler OpenAI, rafforziamo fonti e contenuti e misuriamo quando ChatGPT nomina il tuo brand. Parliamone."
+    },
+    {
+      "slug": "google-ai-overviews",
+      "headline": "Google AI Overviews: diventa una fonte delle risposte AI su Google",
+      "short": "Le AI Overviews rispondono in cima a Google. Lavoriamo perché le tue pagine siano tra le fonti linkate, non sotto la risposta.",
+      "answer": "Ottimizzare per le Google AI Overviews significa rendere le pagine di un sito idonee e competitive per comparire tra le fonti linkate nei riepiloghi generati da Google in cima ai risultati. not4sale lavora su indicizzazione, contenuti che rispondono in modo netto, dati strutturati e autorevolezza, e misura l'effetto con Search Console.",
+      "problem": "Fai una ricerca su Google e la risposta arriva prima dei risultati: un riepilogo scritto dall'AI, con alcuni link alle fonti. Le AI Overviews sono arrivate anche in Italia nel 2025 e compaiono soprattutto sulle ricerche informative e su quelle più articolate, proprio quelle con cui tanti siti costruivano traffico.\n\nPer molte aziende l'effetto si vede in Search Console senza che sia chiaro il perché: le impressioni tengono o crescono, i clic calano. La risposta è stata letta sulla pagina di Google, e la persona non ha avuto bisogno di scendere fino al tuo risultato.\n\nIl punto non è più solo essere primo nei risultati organici. Sulle ricerche dove compare una AI Overview, conta essere tra le fonti che quel riepilogo cita. Lì il tuo nome si vede prima di tutto il resto. Se invece le fonti sono i tuoi concorrenti o un portale generico, stai pagando la SEO per stare sotto la piega.",
+      "process": [
+        {
+          "title": "Mappa delle query",
+          "description": "Individuiamo le ricerche del tuo mercato in cui compaiono AI Overviews e registriamo quali fonti vengono linkate."
+        },
+        {
+          "title": "Verifica di idoneità",
+          "description": "Controlliamo indicizzazione, direttive sugli snippet, qualità tecnica e dati strutturati delle pagine coinvolte."
+        },
+        {
+          "title": "Ottimizzazione pagine",
+          "description": "Riorganizziamo i contenuti con risposte chiare, approfondimenti che coprono le domande collegate e segnali di affidabilità."
+        },
+        {
+          "title": "Nuovi contenuti",
+          "description": "Creiamo le pagine che mancano per le domande dove nessuna tua pagina è candidabile come fonte."
+        },
+        {
+          "title": "Monitoraggio",
+          "description": "Controlliamo periodicamente presenza tra le fonti, impressioni e clic in Search Console."
+        }
+      ],
+      "deliverables": [
+        "Elenco delle query con AI Overview nel tuo settore e fonti attualmente citate",
+        "Verifica tecnica di idoneità delle pagine principali (indicizzazione, snippet, schema)",
+        "Piano di interventi pagina per pagina, in ordine di valore commerciale",
+        "Pagine ottimizzate o nuove, pronte da pubblicare",
+        "Markup Schema.org coerente con i contenuti visibili",
+        "Report periodico su presenza tra le fonti e andamento in Search Console"
+      ],
+      "body": "## Cosa sono le Google AI Overviews\n\nLe AI Overviews sono riepiloghi generati con l'intelligenza artificiale che Google mostra in cima ad alcune pagine di risultati, con link alle pagine web usate come fonti. Non compaiono su tutte le ricerche: Google le mostra quando ritiene che un riepilogo aggiunga valore, tipicamente su domande informative, complesse o con più sfaccettature.\n\nPer un'azienda cambiano due cose. La prima: una parte delle persone trova la risposta senza cliccare. La seconda: le fonti linkate nel riepilogo ottengono una visibilità superiore a quella dei normali risultati, perché stanno sopra e sono presentate come riferimento.\n\n## Cosa serve per comparire nelle AI Overviews?\n\nSecondo la documentazione di Google, non servono requisiti tecnici speciali: una pagina deve essere indicizzata e idonea a mostrare uno snippet nei risultati. Valgono le stesse buone pratiche della ricerca classica. Detto così sembra semplice, ma da qui discendono controlli molto concreti:\n\n- **Indicizzazione.** Le pagine che contano sono effettivamente nell'indice? Search Console lo dice, pagina per pagina.\n- **Direttive sugli snippet.** Un nosnippet o un max-snippet troppo restrittivo, a volte messo da un plugin, limitano anche l'uso del contenuto nelle funzionalità AI di Google.\n- **Contenuto visibile.** Le informazioni chiave devono stare nel testo della pagina, non solo in immagini, PDF o elementi caricati dopo un'interazione.\n- **Dati strutturati coerenti.** Lo schema deve descrivere ciò che l'utente vede davvero. Ci occupiamo di questo con il servizio di [dati strutturati](/servizi/ai-search/dati-strutturati).\n- **Base SEO solida.** Velocità, architettura, link interni: le fondamenta della [SEO tecnica](/servizi/seo/seo-tecnico) restano il punto di partenza.\n\nGoogle ha anche indicato che le sue funzioni AI possono scomporre una domanda in più ricerche correlate per costruire la risposta. In pratica: una pagina che copre bene l'argomento principale e le domande vicine ha più occasioni di essere usata come fonte di una pagina che risponde solo alla domanda esatta.\n\n## Come si scrive una pagina adatta alle AI Overviews?\n\nSi scrive per la domanda e per quelle che la seguono. Prendiamo una ricerca tipica: \"come scegliere un impianto di depurazione per un'azienda alimentare\". Una pagina candidabile come fonte apre con una risposta chiara su quali criteri contano, poi dedica una sezione a ciascuno (capacità, normativa, spazi, manutenzione), con dati verificabili e un confronto tra le opzioni. Chi l'ha scritta e quando è stata aggiornata si vede.\n\nRispetto al lavoro di [AEO](/servizi/ai-search/answer-engine-optimization) su più piattaforme, qui siamo più legati alla SERP di Google: partiamo dalle query dove l'AI Overview compare davvero, guardiamo quali fonti cita oggi e perché sono state scelte, e costruiamo una pagina migliore di quelle. Per le aziende che vendono online, lo stesso approccio si applica a guide d'acquisto e pagine di categoria, insieme alla [SEO per e-commerce](/servizi/seo/seo-ecommerce).\n\n## Come si misura l'effetto delle AI Overviews?\n\nIn parte con Search Console e in parte con osservazione diretta. Google include i dati delle funzionalità AI nel rapporto Prestazioni di Search Console, ma non li separa dal resto della ricerca web: non trovi una riga \"AI Overviews\". Per questo affianchiamo tre cose:\n\n1. **Controllo diretto** delle query prioritarie, per registrare se compare un'AI Overview e quali fonti cita.\n2. **Andamento di impressioni, clic e CTR** delle pagine coinvolte, letto insieme a quel controllo.\n3. **Conversioni** da traffico organico in Analytics, perché alla fine conta chi ti contatta, non chi ti legge.\n\nUn CTR in calo su una query con AI Overview non è per forza una cattiva notizia, se intanto sei tra le fonti e le richieste di contatto tengono. È per questo che non ci fermiamo ai clic.\n\n## Quando ha senso partire\n\nSe Search Console mostra pagine con impressioni stabili e clic in calo, se il tuo settore vive di ricerche informative (salute, finanza, tecnica, turismo, formazione) o se i tuoi concorrenti compaiono già tra le fonti, ha senso partire ora. Se lavori solo su ricerche brevi e transazionali, dove le AI Overviews compaiono meno, te lo diciamo e mettiamo le energie altrove.",
+      "faq": [
+        {
+          "question": "Si può impedire a Google di usare il mio sito nelle AI Overviews?",
+          "answer": "Si può limitare, ma con un costo. Le direttive nosnippet e max-snippet riducono o impediscono l'uso dei contenuti anche nelle funzioni AI, però agiscono pure sugli snippet nei risultati classici. Il token Google-Extended, invece, secondo Google non riguarda la Ricerca e quindi non toglie il sito dalle AI Overviews. Prima di bloccare qualcosa conviene valutare cosa si perde."
+        },
+        {
+          "question": "Se sono primo su Google compaio automaticamente nelle AI Overviews?",
+          "answer": "No. Essere ben posizionati aiuta, ma le fonti di una AI Overview non coincidono necessariamente con i primi risultati organici. Il riepilogo può citare pagine più in basso che rispondono meglio a una parte specifica della domanda. Per questo lavoriamo sia sul posizionamento sia sulla chiarezza delle risposte e sulla copertura delle domande collegate."
+        },
+        {
+          "question": "Le AI Overviews mi stanno togliendo traffico: cosa posso fare?",
+          "answer": "Prima si verifica che sia davvero quello il motivo, confrontando le query che hanno perso clic con la presenza di AI Overviews. Poi si lavora su due fronti: diventare una delle fonti citate su quelle query, e spostare l'attenzione su ricerche più vicine all'acquisto, dove la persona ha bisogno di contattarti. Il traffico informativo puro è il più esposto."
+        },
+        {
+          "question": "Servono dati strutturati speciali per le AI Overviews?",
+          "answer": "Google non richiede markup specifici per le AI Overviews. I dati strutturati restano utili perché aiutano a capire con precisione di cosa parla una pagina e chi c'è dietro, e abilitano i risultati avanzati classici. L'importante è che descrivano fedelmente il contenuto visibile: un markup che dice cose diverse dalla pagina è un problema, non un vantaggio."
+        },
+        {
+          "question": "Quanto tempo serve per entrare tra le fonti?",
+          "answer": "Le modifiche vengono considerate dopo che Google riscansiona le pagine, quindi per una pagina già indicizzata e autorevole possono bastare alcune settimane. Per argomenti competitivi o siti con poca autorità servono mesi, perché bisogna costruire anche la reputazione del dominio. Ti diamo una stima per gruppo di query dopo l'analisi iniziale, non prima."
+        },
+        {
+          "question": "E la modalità AI di Google?",
+          "answer": "La modalità AI è un'esperienza di ricerca conversazionale separata, che Google sta estendendo a più paesi e lingue. Secondo la documentazione di Google, le buone pratiche per comparire come fonte sono le stesse delle AI Overviews. Il lavoro che facciamo vale quindi per entrambe, e nel monitoraggio controlliamo anche le risposte della modalità AI dove è disponibile."
+        }
+      ],
+      "related": [
+        "answer-engine-optimization",
+        "dati-strutturati",
+        "seo-tecnico",
+        "audit-seo"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Google AI Overviews: diventa una fonte | not4sale",
+      "metaDescription": "Google AI Overviews: rendiamo le tue pagine idonee e competitive per comparire tra le fonti delle risposte AI in cima a Google. Misura in Search Console."
+    },
+    {
+      "slug": "perplexity",
+      "headline": "Visibilità su Perplexity: entra tra le fonti che cita nelle risposte",
+      "short": "Perplexity mostra sempre le sue fonti. Lavoriamo perché tra quei numeri ci sia il tuo sito, o chi parla bene di te.",
+      "answer": "La visibilità su Perplexity è il lavoro che porta un sito e un brand tra le fonti citate nelle risposte di Perplexity, il motore di risposta che cerca sul web e mostra i link usati. not4sale verifica l'accesso di PerplexityBot, ottimizza le pagine per le domande del tuo mercato e lavora sulle fonti esterne che Perplexity cita più spesso.",
+      "problem": "Perplexity è usato soprattutto da chi deve informarsi bene prima di decidere: responsabili acquisti, tecnici, consulenti, professionisti che confrontano fornitori o soluzioni. Pochi utenti rispetto a Google, ma spesso con un'intenzione molto seria.\n\nIl bello di Perplexity è anche il suo rischio: mostra sempre le fonti, numerate, accanto a ogni affermazione. Chi legge vede chi è stato citato e ci clicca. Se le fonti del tuo settore sono il sito di un concorrente, un portale di confronto dove non ci sei o un articolo vecchio che ti descrive male, quella è la versione dei fatti che arriva a chi deve scegliere.\n\nMolte aziende non sanno nemmeno se Perplexity riesce a leggere il loro sito. Un blocco nel robots.txt o nel firewall, messo per altri motivi, basta a toglierti dalla partita senza che nessuno se ne accorga.",
+      "process": [
+        {
+          "title": "Domande e fonti",
+          "description": "Poniamo a Perplexity le domande del tuo mercato e registriamo quali fonti cita, quante volte e per quali affermazioni."
+        },
+        {
+          "title": "Accesso tecnico",
+          "description": "Verifichiamo che PerplexityBot possa scansionare il sito e che le pagine chiave siano leggibili e veloci."
+        },
+        {
+          "title": "Pagine di riferimento",
+          "description": "Creiamo o riscriviamo le pagine che possono diventare fonte: dati, confronti, spiegazioni tecniche aggiornate."
+        },
+        {
+          "title": "Fonti esterne",
+          "description": "Lavoriamo sui siti terzi che Perplexity cita nel tuo settore: schede, correzioni, contributi, menzioni."
+        },
+        {
+          "title": "Share of voice",
+          "description": "Misuriamo periodicamente quante volte sei citato rispetto ai concorrenti sullo stesso set di domande."
+        }
+      ],
+      "deliverables": [
+        "Analisi delle fonti citate da Perplexity nel tuo settore, con frequenza",
+        "Verifica tecnica dell'accesso di PerplexityBot con le correzioni necessarie",
+        "Pagine di riferimento nuove o riscritte, pronte da pubblicare",
+        "Piano d'azione sulle fonti esterne prioritarie",
+        "Report di share of voice su Perplexity rispetto ai concorrenti",
+        "Segmento in Google Analytics per il traffico da perplexity.ai"
+      ],
+      "body": "## Perché Perplexity merita un lavoro dedicato\n\nPerché è il motore di risposta più trasparente sulle fonti, e quindi quello dove il lavoro si vede e si misura meglio. Ogni risposta di Perplexity nasce da una ricerca sul web e riporta i link usati, con riferimenti numerati alle singole affermazioni. Non devi indovinare da dove arriva un'informazione: è scritto.\n\nQuesto lo rende un ottimo banco di prova per tutta la strategia di AI Search e un canale con un pubblico interessante, spesso professionale e in fase di ricerca approfondita. È anche il canale su cui abbiamo il risultato più chiaro da raccontare: per un cliente B2B SaaS siamo arrivati al 63% di share-of-voice su Perplexity nelle domande del suo mercato, prima dei concorrenti. Il caso è tra i nostri [casi studio](/case-studies).\n\n## Perplexity riesce a leggere il tuo sito?\n\nÈ il primo controllo, e si fa in mezz'ora. Perplexity documenta il proprio crawler, PerplexityBot, usato per far comparire i siti nei risultati di ricerca, e un agente che visita le pagine su richiesta degli utenti. Verifichiamo:\n\n- che il robots.txt non blocchi PerplexityBot, magari dentro una regola generica contro \"i bot AI\";\n- che firewall, CDN o servizi anti-bot non respingano le richieste;\n- che i contenuti principali siano nel codice della pagina e non caricati solo con script pesanti;\n- che le pagine siano veloci e restituiscano errori corretti quando non esistono.\n\nSono controlli che si sovrappongono alla [SEO tecnica](/servizi/seo/seo-tecnico), ma con un'attenzione in più per i bot che la SEO tradizionale non considerava.\n\n## Quali fonti sceglie Perplexity?\n\nNon c'è una regola pubblica, ma osservando le citazioni si vedono tendenze chiare, e sono le stesse che rendono un contenuto utile a un lettore esperto:\n\n1. **Pagine che rispondono in modo diretto** alla domanda posta, con la risposta vicina all'inizio.\n2. **Dati e fatti precisi**: numeri, specifiche, norme, date. Perplexity cita affermazioni puntuali, e le affermazioni vaghe non sono citabili.\n3. **Contenuti aggiornati**, soprattutto su temi che cambiano. Una data di aggiornamento visibile aiuta il lettore a fidarsi, e una pagina ferma da anni difficilmente regge il confronto.\n4. **Fonti terze autorevoli**: testate di settore, documentazione, community di professionisti, portali di confronto.\n\nLa conseguenza pratica è che su Perplexity puoi vincere in due modi: essere tu la fonte, con pagine di riferimento solide, oppure essere nominato bene nelle fonti che Perplexity sceglie. Facciamo entrambe le cose. La prima è lavoro di [Answer Engine Optimization](/servizi/ai-search/answer-engine-optimization) e di [content marketing](/servizi/content/content-marketing); la seconda è vicina alle digital PR.\n\n## Che tipo di contenuti funzionano meglio su Perplexity?\n\nQuelli che un professionista salverebbe nei preferiti. Pagine di confronto oneste tra soluzioni, incluse quelle dei concorrenti. Guide tecniche con specifiche e casi d'uso. Dati originali: un'indagine tra i tuoi clienti, i numeri del tuo settore che conosci solo tu, un listino spiegato. Glossari e definizioni per i termini del tuo mercato.\n\nPer un'azienda B2B, per esempio, una pagina \"come scegliere un software di gestione magazzino: 7 criteri e come pesarli\" con una tabella di confronto è molto più citabile di una pagina prodotto che parla solo di sé. Le pagine prodotto restano importanti, ma per chi è già convinto.\n\n## Come misuriamo i risultati su Perplexity\n\nCon lo share of voice: su un set fisso di domande, quante volte il tuo sito o il tuo brand compare tra le fonti e nel testo, rispetto ai concorrenti. Lo misuriamo a intervalli regolari, ripetendo le domande, perché anche qui le risposte variano. Affianchiamo il traffico di referral da perplexity.ai in Google Analytics: poche visite, di solito, ma da persone che hanno già letto di te. Se vuoi lo stesso controllo su tutte le piattaforme insieme, c'è il [monitoraggio delle citazioni AI](/servizi/ai-search/monitoraggio-ai).",
+      "faq": [
+        {
+          "question": "Perplexity è abbastanza usato in Italia da valerne la pena?",
+          "answer": "Ha meno utenti di ChatGPT e Google, ma un pubblico più spostato verso professionisti e ricerche approfondite. Per un'azienda B2B o con prodotti tecnici è spesso un canale con poche persone ma molto qualificate. Inoltre il lavoro fatto per Perplexity, cioè pagine chiare, fonti aggiornate e menzioni autorevoli, giova anche sulle altre piattaforme. Se il tuo pubblico non lo usa, te lo diciamo."
+        },
+        {
+          "question": "Perplexity cita il sito di un concorrente sulla mia specialità: cosa possiamo fare?",
+          "answer": "Prima capiamo perché lo cita: di solito ha una pagina che risponde in modo più diretto, più aggiornato o con dati più precisi. Poi costruiamo una pagina migliore su quella domanda specifica, non una copia. In parallelo cerchiamo le altre fonti citate sullo stesso tema, per far comparire anche il tuo nome lì. Lo share of voice si sposta un pezzo alla volta."
+        },
+        {
+          "question": "Devo permettere a PerplexityBot di scansionare il sito?",
+          "answer": "Se vuoi comparire tra le fonti delle sue risposte, sì: è il crawler che Perplexity usa per i risultati di ricerca. Puoi comunque escludere sezioni riservate o non utili, come aree clienti, filtri e pagine duplicate. Valutiamo insieme cosa aprire e cosa no, tenendo conto anche di eventuali contenuti a pagamento che non vuoi esporre."
+        },
+        {
+          "question": "Quanto contenuto nuovo serve?",
+          "answer": "Meno di quanto pensi, ma di qualità superiore. Spesso bastano cinque o dieci pagine di riferimento ben fatte sulle domande decisive del tuo mercato, più l'aggiornamento di quelle esistenti. Conta più la profondità che il volume: una guida con dati originali vale più di venti articoli generici. Il numero preciso lo stabiliamo dopo l'analisi delle fonti citate oggi."
+        },
+        {
+          "question": "In quanto tempo si vedono le prime citazioni?",
+          "answer": "Perplexity lavora su ricerche in tempo reale, quindi una pagina nuova o aggiornata, una volta scansionata, può essere citata in tempi brevi, anche poche settimane. Diventare una fonte stabile su molte domande richiede più tempo e più contenuti. Il primo report di confronto lo facciamo di solito dopo un paio di mesi dagli interventi."
+        }
+      ],
+      "related": [
+        "answer-engine-optimization",
+        "monitoraggio-ai",
+        "content-marketing",
+        "link-building"
+      ],
+      "caseStudies": [
+        "cs-002"
+      ],
+      "metaTitle": "Visibilità su Perplexity: diventa una fonte | not4sale",
+      "metaDescription": "Visibilità su Perplexity: accesso di PerplexityBot, pagine di riferimento e fonti esterne per farti citare nelle risposte. Share of voice misurato."
+    },
+    {
+      "slug": "dati-strutturati",
+      "headline": "Dati strutturati e Schema.org: fai capire a motori e AI chi sei",
+      "short": "Markup Schema.org in JSON-LD che descrive azienda, servizi, prodotti e persone in un linguaggio che motori di ricerca e AI leggono senza ambiguità.",
+      "answer": "I dati strutturati sono un codice, di solito in formato JSON-LD secondo il vocabolario Schema.org, che descrive in modo esplicito chi è un'azienda, cosa offre, dove opera e chi ci lavora. not4sale progetta, implementa e valida il markup del sito, collegandolo ai profili esterni, così motori di ricerca e AI identificano il brand senza ambiguità.",
+      "problem": "Per una persona è ovvio che \"not4sale, Via Lungo Tavollo, Cattolica\" sia un'azienda, che quella sia la sua sede e che il nome in fondo all'articolo sia l'autore. Per un software no: vede testo, e deve indovinare.\n\nQuando indovina male nascono i problemi che vedi in giro: un'AI che confonde la tua azienda con un'omonima di un'altra città, orari o indirizzi sbagliati nelle risposte, prodotti senza prezzo o disponibilità nei risultati, articoli attribuiti a nessuno. Oppure, più semplicemente, motori e AI che ti capiscono meno bene di un concorrente che ha descritto se stesso con precisione.\n\nSpesso il sito i dati strutturati ce li ha già, generati da un tema o da un plugin. Il guaio è che sono incompleti, duplicati o in contraddizione tra loro: tre \"Organization\" diverse, un LocalBusiness con l'indirizzo vecchio, un markup FAQ che non corrisponde a nessuna FAQ visibile. Un segnale confuso è quasi peggio di nessun segnale.",
+      "process": [
+        {
+          "title": "Audit del markup",
+          "description": "Estraiamo e verifichiamo i dati strutturati esistenti su tutte le tipologie di pagina, con errori, duplicati e incoerenze."
+        },
+        {
+          "title": "Modello dell'entità",
+          "description": "Disegniamo come descrivere azienda, sedi, servizi, prodotti e persone, e come collegarli tra loro e ai profili esterni."
+        },
+        {
+          "title": "Implementazione",
+          "description": "Scriviamo il markup in JSON-LD per ogni modello di pagina e lo integriamo nel CMS, in modo che si aggiorni con i contenuti."
+        },
+        {
+          "title": "Validazione",
+          "description": "Controlliamo con gli strumenti di validazione ufficiali e con Search Console che tutto sia letto correttamente."
+        },
+        {
+          "title": "Manutenzione",
+          "description": "Verifichiamo periodicamente il markup dopo aggiornamenti del sito, del CMS o delle linee guida dei motori."
+        }
+      ],
+      "deliverables": [
+        "Audit dei dati strutturati esistenti con elenco di errori e incoerenze",
+        "Modello dell'entità aziendale: tipi Schema.org, proprietà, identificativi e collegamenti",
+        "Markup JSON-LD per ogni tipologia di pagina (home, servizi, prodotti, articoli, sedi)",
+        "Integrazione nel CMS o istruzioni tecniche per il tuo sviluppatore",
+        "Report di validazione e controllo dei rapporti in Search Console",
+        "Elenco dei profili esterni da collegare e allineare"
+      ],
+      "body": "## Cosa sono i dati strutturati, in parole semplici\n\nSono un'etichetta leggibile dalle macchine, aggiunta alla pagina, che dice esplicitamente cosa c'è scritto. Invece di lasciare che un motore deduca dal testo che \"Via Lungo Tavollo\" è un indirizzo, glielo dichiari: questa è un'organizzazione, questo è il suo indirizzo, questi sono i suoi profili ufficiali, questo è il servizio descritto nella pagina.\n\nIl vocabolario più usato è Schema.org, nato nel 2011 da un'iniziativa comune di Google, Microsoft, Yahoo e Yandex. Il formato raccomandato da Google è JSON-LD: un blocco di codice separato dal contenuto visibile, più semplice da gestire e da aggiornare rispetto alle alternative.\n\n## A cosa servono per l'AI Search?\n\nServono a ridurre l'ambiguità su chi sei. Nessuna piattaforma AI dichiara un peso preciso dei dati strutturati nelle sue risposte, e non te lo racconteremo. Quello che è verificabile è che i motori di ricerca li usano per capire le pagine e per i risultati avanzati, e che i sistemi di risposta si appoggiano in larga parte a quei motori e ai loro indici. Un'entità descritta in modo coerente e collegata alle sue fonti è più facile da riconoscere, distinguere dalle omonime e citare correttamente.\n\nIl pezzo più importante per l'AI Search non è il singolo markup ma il grafo dell'entità:\n\n- **Organization o LocalBusiness** con nome legale, logo, contatti, indirizzo e area servita;\n- **sameAs** verso i profili ufficiali (LinkedIn, social, scheda Google, eventuale voce Wikidata), per dichiarare che sono la stessa entità;\n- **identificativi stabili** (la proprietà @id) che collegano azienda, sito, pagine, persone e servizi in un unico insieme coerente;\n- **Person** per autori e soci, con il loro ruolo, perché chi scrive conta quanto cosa scrive.\n\nÈ la base tecnica del lavoro di [GEO](/servizi/ai-search/generative-engine-optimization): coerenza del brand dentro il sito e fuori.\n\n## Quali tipi di Schema.org servono alla tua azienda?\n\nDipende da cosa fai. Non mettiamo tutto il vocabolario su ogni pagina; scegliamo i tipi che descrivono davvero il contenuto.\n\n| Tipo di azienda | Tipi Schema.org principali |\n|---|---|\n| Attività locale (negozio, studio, ristorante) | LocalBusiness o sottotipo specifico, OpeningHoursSpecification, Review dove consentito |\n| Azienda di servizi B2B | Organization, Service, Person per i referenti, Article per i contenuti |\n| E-commerce | Product, Offer, AggregateRating, BreadcrumbList, MerchantReturnPolicy |\n| Struttura turistica | LodgingBusiness o Hotel, Place, Event per le iniziative |\n| Editoria e blog aziendale | Article, Person, Organization come editore |\n\nPer un'attività di Rimini o di Pesaro con più sedi, per esempio, ogni sede diventa un'entità a sé, collegata all'organizzazione principale. È un pezzo chiave anche della [SEO locale](/servizi/seo/seo-locale).\n\n## Cosa i dati strutturati non fanno\n\nNon fanno salire un sito nei risultati da soli e non garantiscono un risultato avanzato: Google dice chiaramente che il markup rende una pagina idonea, non che la mostrerà in un certo modo. E non servono se descrivono cose che sulla pagina non ci sono, anzi: markup ingannevole o non visibile viola le linee guida e può portare ad azioni manuali.\n\nVa anche tenuto aggiornato. Le regole cambiano: nel 2023 Google ha limitato i risultati avanzati FAQ ai siti governativi e sanitari autorevoli e ha ritirato quelli HowTo. Il markup FAQ resta valido come descrizione del contenuto, ma chi lo aveva messo solo per ottenere spazio in SERP ha visto sparire l'effetto. Per questo preferiamo un markup onesto e completo a uno costruito per inseguire l'ultima funzione.\n\n## Come lo implementiamo\n\nLo integriamo nel modello delle pagine, non a mano pagina per pagina. Se il sito usa un CMS, il markup si genera dai campi dei contenuti: cambi un indirizzo o un prezzo, e lo schema si aggiorna da solo. Se il sito lo gestisce un altro fornitore, gli consegniamo specifiche precise e verifichiamo il risultato. Se stai rifacendo il sito, è il momento migliore: lo progettiamo insieme alla [realizzazione del sito web](/servizi/web-app/siti-web) o insieme alla [SEO tecnica](/servizi/seo/seo-tecnico), invece di aggiungerlo dopo.",
+      "faq": [
+        {
+          "question": "Il mio sito ha già un plugin SEO che genera lo schema: basta?",
+          "answer": "Spesso è un buon punto di partenza, ma raramente basta. I plugin generano markup generico: un'organizzazione con nome e logo, gli articoli, il breadcrumb. Di solito mancano servizi, sedi, persone, collegamenti ai profili esterni e identificativi coerenti. A volte tema e plugin generano due markup in conflitto. Facciamo un audit, teniamo ciò che funziona e completiamo o sostituiamo il resto."
+        },
+        {
+          "question": "I dati strutturati migliorano il posizionamento su Google?",
+          "answer": "Non direttamente. Google non li considera un fattore di ranking in sé. Aiutano però a far capire con precisione il contenuto e possono rendere la pagina idonea a risultati avanzati, come prezzi, valutazioni o breadcrumb, che cambiano l'aspetto del risultato e spesso il numero di clic. Per l'AI Search il valore principale è la chiarezza sull'entità."
+        },
+        {
+          "question": "Chi deve mettere le mani sul codice del sito?",
+          "answer": "Dipende da come è fatto il sito. Su molti CMS possiamo intervenire noi direttamente, con un accesso amministrativo. Se il sito è sviluppato su misura da un altro fornitore, prepariamo specifiche dettagliate, con esempi di codice per ogni modello di pagina, e verifichiamo la messa online. In entrambi i casi ti lasciamo documentazione per gestire le modifiche future."
+        },
+        {
+          "question": "Serve creare una voce su Wikipedia o Wikidata?",
+          "answer": "Non è obbligatorio e non sempre è possibile. Wikipedia ha criteri di rilevanza che molte PMI non soddisfano, e una voce creata forzatamente viene cancellata. Wikidata ha regole meno restrittive, ma serve comunque che l'entità sia documentata da fonti. Se c'è una voce legittima, la colleghiamo con sameAs. Se non c'è, puntiamo su profili ufficiali e fonti autorevoli."
+        },
+        {
+          "question": "Quanto tempo richiede il lavoro?",
+          "answer": "Per un sito aziendale con poche tipologie di pagina, audit e implementazione si completano in qualche settimana. Un e-commerce con migliaia di prodotti o un sito con molte sedi richiede più tempo, soprattutto per integrare il markup con catalogo e gestionale. La parte più lunga, di solito, è allineare i dati aziendali che non coincidono tra sito, schede e profili."
+        },
+        {
+          "question": "Come verifico che i dati strutturati funzionino?",
+          "answer": "Con gli strumenti ufficiali: il Test dei risultati avanzati di Google e lo Schema Markup Validator di Schema.org controllano le singole pagine, mentre Search Console segnala nel tempo errori e avvisi per tipo di markup su tutto il sito. Nel report finale ti mostriamo questi controlli, e nella manutenzione li ripetiamo dopo ogni modifica importante del sito."
+        }
+      ],
+      "related": [
+        "seo-tecnico",
+        "seo-locale",
+        "generative-engine-optimization",
+        "siti-web"
+      ],
+      "caseStudies": [],
+      "metaTitle": "Dati strutturati e Schema.org per AI e SEO | not4sale",
+      "metaDescription": "Dati strutturati Schema.org: descriviamo azienda, servizi e prodotti perché motori di ricerca e AI ti riconoscano senza errori. Richiedi un audit."
+    },
+    {
+      "slug": "monitoraggio-ai",
+      "headline": "Monitoraggio citazioni AI: quanto e come le AI parlano del tuo brand",
+      "short": "Misuriamo nel tempo se ChatGPT, Perplexity e Google AI citano il tuo brand, con quali fonti e rispetto a quali concorrenti.",
+      "answer": "Il monitoraggio delle citazioni AI misura con regolarità quanto spesso e in che modo ChatGPT, Perplexity, Google AI Overviews e altri assistenti nominano un brand, con quali fonti e rispetto ai concorrenti. not4sale definisce un set fisso di domande, le ripete nel tempo e restituisce un report con share of voice, accuratezza e azioni consigliate.",
+      "problem": "Le AI parlano già della tua categoria, ogni giorno, con persone che stanno per scegliere un fornitore. Ma tu non hai un rapporto che te lo dica. Search Console mostra le ricerche su Google, Analytics le visite: nessuno dei due ti dice se ChatGPT ti ha consigliato ieri a cento persone, o se ha consigliato il tuo concorrente.\n\nCosì le decisioni si prendono a sensazione. Qualcuno in azienda prova una domanda su ChatGPT, vede il proprio nome e si rassicura; il giorno dopo un collega rifà la stessa domanda e il nome non c'è. Nessuno dei due ha torto: le risposte cambiano davvero da una volta all'altra.\n\nSenza una misura sistematica non sai se il problema esiste, non sai se gli interventi funzionano e non sai quando un concorrente ti sta superando. E rischi di spendere in contenuti e PR senza poter dire cosa hanno prodotto.",
+      "process": [
+        {
+          "title": "Set di domande",
+          "description": "Definiamo con te le domande che contano: di categoria, di confronto, locali, sul brand. Restano fisse per essere confrontabili."
+        },
+        {
+          "title": "Concorrenti e piattaforme",
+          "description": "Scegliamo i concorrenti da tracciare e le piattaforme su cui misurare, in base a dove si informa il tuo pubblico."
+        },
+        {
+          "title": "Rilevazione ripetuta",
+          "description": "Poniamo ogni domanda più volte su ogni piattaforma, a intervalli regolari, e registriamo menzioni, posizione e fonti."
+        },
+        {
+          "title": "Analisi e report",
+          "description": "Calcoliamo share of voice, accuratezza delle descrizioni e fonti ricorrenti, e le trasformiamo in priorità."
+        }
+      ],
+      "deliverables": [
+        "Set di domande di monitoraggio condiviso e documentato",
+        "Rilevazione di partenza su tutte le piattaforme scelte",
+        "Report periodico con share of voice sul brand e sui concorrenti",
+        "Elenco delle fonti più citate nelle risposte del tuo settore",
+        "Registro delle informazioni errate o superate sul brand, con la fonte probabile",
+        "Integrazione del traffico da piattaforme AI nella dashboard di Google Analytics",
+        "Azioni consigliate per il periodo successivo, in ordine di priorità"
+      ],
+      "body": "## Perché serve un monitoraggio delle citazioni AI\n\nPerché è l'unico modo di sapere cosa dicono le AI di te, ed è un'informazione che nessuno strumento classico ti dà. Search Console include l'attività delle funzioni AI di Google nei dati generali ma non la separa; Analytics vede solo chi clicca, e la maggior parte di chi legge una risposta AI non clicca. Il resto, cioè ChatGPT, Perplexity, Gemini, Copilot, non ti manda nessun rapporto.\n\nIl monitoraggio serve a tre decisioni concrete: capire se hai un problema di visibilità AI e quanto grande; capire se gli interventi di [AEO](/servizi/ai-search/answer-engine-optimization) e [GEO](/servizi/ai-search/generative-engine-optimization) stanno funzionando; accorgerti presto se un concorrente ti sta superando o se circolano informazioni sbagliate su di te.\n\n## Cosa misuriamo, esattamente?\n\nMisuriamo come compare il tuo brand dentro le risposte, non solo se compare. Le metriche che usiamo sono poche e leggibili da un imprenditore:\n\n| Metrica | Cosa ti dice |\n|---|---|\n| Tasso di menzione | Su quante risposte, sul totale, il tuo brand viene nominato |\n| Share of voice | La tua quota di menzioni rispetto ai concorrenti tracciati |\n| Posizione | Se sei il primo nome suggerito, in mezzo all'elenco o in fondo |\n| Citazioni del sito | Quante volte una tua pagina è tra le fonti linkate |\n| Accuratezza | Se servizi, sede, prezzi e caratteristiche descritti sono corretti |\n| Fonti ricorrenti | Quali siti terzi le AI usano quando parlano del tuo settore |\n\nL'ultima metrica è spesso la più utile, perché si trasforma subito in azione: se una directory o una testata compare in metà delle risposte, sai dove lavorare.\n\n## Come si misura una cosa che cambia ogni volta?\n\nRipetendo. Le risposte dei modelli non sono deterministiche: la stessa domanda può produrre elenchi diversi a distanza di minuti, e possono pesare la cronologia dell'utente, la lingua, la posizione. Una singola prova non è un dato, è un aneddoto.\n\nPer questo il metodo è rigido:\n\n1. **Domande fisse**, scritte come le scriverebbe un cliente vero, in italiano, con le varianti che contano (con e senza città, con e senza budget).\n2. **Più ripetizioni** di ogni domanda per ogni rilevazione, in sessioni pulite, senza cronologia e senza essere loggati con l'account aziendale.\n3. **Stesse condizioni** nel tempo, così il confronto tra un mese e l'altro è onesto.\n4. **Lettura delle tendenze**, non dei singoli valori: una variazione piccola tra due rilevazioni può essere rumore, un movimento che si conferma per più periodi no.\n\nPer la raccolta usiamo strumenti di mercato o procedure automatizzate nostre, a seconda del numero di domande e piattaforme; per volumi piccoli una parte si fa anche a mano, con lo stesso protocollo.\n\n## Cosa trovi nel report\n\nUn documento che si legge in dieci minuti. In apertura i numeri chiave e come si sono mossi; poi le domande dove hai guadagnato o perso terreno, con esempi di risposte reali; poi le fonti emergenti e le informazioni sbagliate da correggere; in fondo, cosa faremmo nel periodo successivo. Niente vanity metric: se un dato non porta a una decisione, non lo mettiamo.\n\nIl traffico da chatgpt.com, perplexity.ai e altre piattaforme lo integriamo nella [dashboard di reportistica](/servizi/data-analytics/dashboard) insieme alle conversioni, così vedi anche l'effetto sul business, non solo sulle risposte. È lo stesso tipo di misura con cui abbiamo seguito il 63% di share-of-voice su Perplexity raggiunto da un cliente B2B SaaS, descritto nei [casi studio](/case-studies).\n\n## Monitoraggio AI e social listening: che differenza c'è?\n\nIl [social listening](/servizi/social/social-listening) ascolta cosa dicono le persone del tuo brand su social, forum e testate. Il monitoraggio AI ascolta cosa dicono le macchine che quelle persone interrogano. Sono complementari: spesso ciò che si legge nelle conversazioni online, prima o poi, si riflette nelle risposte delle AI. Chi li guarda insieme vede prima i problemi di reputazione.",
+      "faq": [
+        {
+          "question": "Ogni quanto si fa la rilevazione?",
+          "answer": "Per la maggior parte delle aziende una rilevazione mensile è il giusto compromesso: abbastanza frequente per vedere le tendenze, abbastanza distanziata da lasciare tempo agli interventi di produrre effetti. Durante un lancio, un riposizionamento o una crisi di reputazione può avere senso passare a rilevazioni più ravvicinate. La frequenza la decidiamo insieme e incide sul preventivo."
+        },
+        {
+          "question": "Quante domande servono per avere un dato affidabile?",
+          "answer": "Dipende da quanto è vario il tuo mercato. Un'attività locale con pochi servizi può partire da qualche decina di domande; un'azienda B2B con più linee di prodotto e più mercati ne richiede di più. Conta più la qualità che il numero: domande vere, scritte come le scriverebbe un cliente, con le varianti che fanno davvero cambiare la risposta."
+        },
+        {
+          "question": "Posso farlo da solo chiedendo a ChatGPT ogni tanto?",
+          "answer": "Puoi farti un'idea, ma non avrai un dato. Le risposte cambiano da una sessione all'altra e risentono della tua cronologia: se usi spesso ChatGPT parlando della tua azienda, la vedrai citata più di quanto accada a un estraneo. Senza domande fisse, ripetizioni e sessioni pulite rischi di prendere decisioni su un'impressione sbagliata, positiva o negativa."
+        },
+        {
+          "question": "Quali piattaforme monitorate?",
+          "answer": "Quelle che usa il tuo pubblico. Di base ChatGPT, Perplexity e le AI Overviews di Google, a cui si possono aggiungere Gemini, Copilot e la modalità AI di Google dove disponibile. Per un pubblico di professionisti Perplexity pesa di più; per il consumatore finale contano soprattutto Google e ChatGPT. Scegliamo insieme, per non pagare misure su piattaforme che i tuoi clienti non usano."
+        },
+        {
+          "question": "Il monitoraggio da solo migliora la visibilità?",
+          "answer": "No, misura e indica dove intervenire. È come una bilancia: non fa dimagrire, ma senza non sai se la dieta funziona. Molti clienti partono dal monitoraggio per capire la situazione, poi decidono se intervenire con contenuti, dati strutturati o lavoro sulle fonti esterne. Altri lo affiancano a un progetto già in corso per misurarne l'effetto."
+        },
+        {
+          "question": "Cosa succede se scopriamo informazioni sbagliate su di noi?",
+          "answer": "Le registriamo con la risposta esatta in cui compaiono e, dove la piattaforma mostra le fonti, con la pagina da cui probabilmente arrivano. Poi ti proponiamo come correggerle: aggiornare un profilo, contattare un portale, pubblicare una pagina ufficiale più chiara. Nei report successivi verifichiamo se l'errore scompare. Su questo lavoriamo spesso insieme alla GEO."
+        }
+      ],
+      "related": [
+        "generative-engine-optimization",
+        "social-listening",
+        "dashboard",
+        "visibilita-chatgpt"
+      ],
+      "caseStudies": [
+        "cs-002"
+      ],
+      "metaTitle": "Monitoraggio citazioni AI e share of voice | not4sale",
+      "metaDescription": "Monitoraggio citazioni AI: misuriamo come ChatGPT, Perplexity e Google AI citano il tuo brand rispetto ai concorrenti. Report chiari, azioni concrete."
+    }
+  ]
+}
