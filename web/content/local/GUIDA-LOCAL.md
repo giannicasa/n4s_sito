@@ -163,3 +163,13 @@ Vincoli: `process` 4–5 passi specifici del settore; `faq` 5–6; totale almeno
 ## Servizi in città aggiuntivi
 
 `piano.json → localServicesExtra` elenca i servizi in città nati dall'analisi (es. video maker a Rimini). Per i comuni che hanno già un file in `servizi-citta/`, le nuove voci vanno **aggiunte in fondo** a `items`, senza toccare quelle esistenti. Per un comune nuovo (es. Misano Adriatico) si crea il file con le sole voci previste.
+
+## Città del resto d'Italia (`scope: "italia"`)
+
+Valgono tutte le regole delle pagine comune, con queste differenze. Servono a non promettere una presenza che non c'è:
+
+- **Niente finta presenza locale.** Lo studio è a Cattolica e non ha sedi altrove. In queste città lavoriamo **a distanza**: videochiamate, strumenti condivisi, report, con **trasferte per i momenti chiave** (avvio del progetto, shooting, workshop, fiere). Va detto in modo chiaro e positivo, almeno una volta nel body e in una FAQ ("Come lavorate con un'azienda di {città} se siete a Cattolica?"). Mai "il nostro ufficio di …", "siamo a due passi", "conosciamo ogni via".
+- **Il valore sta nella lettura del territorio.** Economia della città e della provincia, distretti, settori forti, flussi turistici, università, porti, fiere: fatti verificati sul web. Le sfide di marketing tipiche delle imprese di lì. Questo rende ogni pagina unica.
+- **Campi:** `province` è la sigla della provincia (MI, RM, NA…; per San Marino `SM`), `region` il nome della regione ("Lombardia", "Trentino-Alto Adige"…; per San Marino "San Marino"), `scope: "italia"`, `zone` facoltativa (es. "Brianza", "Riviera ligure di Ponente"). `distanceKm` e `travelMinutes` da Cattolica restano obbligatori: il sito li usa per decidere se mostrare la distanza.
+- **`nearby`:** 3–5 città vicine scelte tra quelle in `MAPPA-URL-LOCAL.md` (anche di altri gruppi).
+- **Concorrenza:** nelle grandi città la ricerca è affollata. Non promettere posizionamenti e non denigrare le agenzie locali. Il nostro argomento è il metodo, il team senior unico e la misurazione.

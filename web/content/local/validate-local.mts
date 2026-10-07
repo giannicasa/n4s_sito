@@ -11,8 +11,8 @@ import { TAXONOMY } from '../../src/seed/taxonomy'
 const here = path.dirname(fileURLToPath(import.meta.url))
 const plan = JSON.parse(readFileSync(path.join(here, 'piano.json'), 'utf8'))
 
-const COMUNI = new Map<string, { batch: string; province: string; name: string }>()
-for (const [batch, b] of Object.entries<any>(plan.batches)) for (const name of b.comuni) COMUNI.set(slugify(name), { batch, province: b.province, name })
+const COMUNI = new Map<string, { batch: string; province: string; name: string; scope: string }>()
+for (const [batch, b] of Object.entries<any>(plan.batches)) for (const name of b.comuni) COMUNI.set(slugify(name), { batch, province: b.province, name, scope: b.scope ?? 'territorio' })
 const SECTORS = new Set<string>(Object.values<any>(plan.sectors).flat().map(([s]: string[]) => s))
 const SERVICES = new Set(TAXONOMY.flatMap((a) => a.services.map((s) => s.slug)))
 const SERVICE_URL = new Map(TAXONOMY.flatMap((a) => a.services.map((s) => [s.slug, `/servizi/${a.slug}/${s.slug}`])))
@@ -32,6 +32,8 @@ const VALID_URLS = new Set<string>([
   ...[...SECTORS].map((s) => `/settori/${s}`),
   ...[...new Set([...LS_CITIES, ...Object.keys(LS_EXTRA)])].flatMap((c) => lsFor(c).map((s) => `/agenzia-marketing/${c}/${s}`)),
   ...SS_PAIRS.map(([sec, svc]) => `/settori/${sec}/${svc}`),
+  // pagine regione: Emilia-Romagna e Marche per i comuni del territorio, più le regioni delle città italiane
+  ...['Emilia-Romagna', 'Marche', ...Object.values<any>(plan.batches).map((b) => b.region).filter(Boolean)].map((r: string) => `/agenzia-marketing/regione/${slugify(r)}`),
 ])
 const CASES = ['cs-001', 'cs-002', 'cs-003', 'cs-004', 'cs-005']
 const BANNED = [/a 360 gradi/i, /nell'era digitale/i, /in continua evoluzione/i, /partner ideale/i, /google partner/i, /la nostra sede di (?!cattolica)/i, /nostr[oa] client[ei] (di|a) /i]
@@ -105,7 +107,12 @@ for (const rel of targets) {
       const where = `comune:${l.slug}`
       common(where, l, 4, 5)
       const info = COMUNI.get(l.slug)
-      if (info && l.province !== info.province) err(where, `provincia ${l.province}, attesa ${info.province}`)
+      if (info?.scope === 'italia') {
+        // città fuori zona: sigla di provincia libera, regione obbligatoria, ambito "italia"
+        if (!/^[A-Z]{2}$/.test(l.province ?? '')) err(where, `sigla provincia non valida: ${l.province}`)
+        if (!l.region) err(where, 'manca region')
+        if (l.scope !== 'italia') err(where, 'scope deve essere "italia"')
+      } else if (info && l.province !== info.province) err(where, `provincia ${l.province}, attesa ${info.province}`)
       if (info && l.name !== info.name) err(where, `nome "${l.name}", atteso "${info.name}"`)
       if (!l.answer?.includes(l.name)) err(where, 'answer non nomina il comune')
       const ew = words(l.economy), cw = words(l.challenges), bw = words(l.body)
@@ -115,7 +122,8 @@ for (const rel of targets) {
       if ((l.body?.match(/^## /gm) ?? []).length < 2) err(where, 'body con meno di 2 sezioni ##')
       if (!Array.isArray(l.highlights) || l.highlights.length < 4 || l.highlights.length > 6) err(where, `highlights ${l.highlights?.length} (4–6)`)
       if (!(l.distanceKm >= 0) || !(l.travelMinutes > 0) && l.slug !== 'cattolica') err(where, 'distanceKm/travelMinutes mancanti')
-      if (!(l.geo?.lat > 43 && l.geo?.lat < 44.3 && l.geo?.lng > 12 && l.geo?.lng < 13.2)) err(where, `coordinate fuori zona: ${JSON.stringify(l.geo)}`)
+      const box = info?.scope === 'italia' ? [35.4, 47.2, 6.5, 18.6] : [43, 44.3, 12, 13.2]
+      if (!(l.geo?.lat > box[0] && l.geo?.lat < box[1] && l.geo?.lng > box[2] && l.geo?.lng < box[3])) err(where, `coordinate fuori zona: ${JSON.stringify(l.geo)}`)
       for (const s of l.sectors ?? []) if (!SECTORS.has(s)) err(where, `settore non valido: ${s}`)
       if ((l.sectors ?? []).length < 2 || l.sectors.length > 4) err(where, `sectors ${l.sectors?.length} (2–4)`)
       for (const s of l.services ?? []) if (!SERVICES.has(s)) err(where, `servizio non valido: ${s}`)

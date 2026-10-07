@@ -430,11 +430,22 @@ export interface CaseStudy {
 export interface Location {
   id: string;
   name: string;
-  province: 'RN' | 'PU';
+  /**
+   * Es. RN, PU, MI, RM. SM per San Marino.
+   */
+  province: string;
+  /**
+   * Es. Emilia-Romagna, Lombardia
+   */
+  region?: string | null;
   /**
    * Es. Valconca, Riviera, Montefeltro
    */
   zone?: string | null;
+  /**
+   * Le città fuori zona non mostrano la distanza da Cattolica e compaiono nella sezione "In tutta Italia".
+   */
+  scope?: ('territorio' | 'italia') | null;
   headline?: string | null;
   short: string;
   /**
@@ -1226,7 +1237,9 @@ export interface ServicesSelect<T extends boolean = true> {
 export interface LocationsSelect<T extends boolean = true> {
   name?: T;
   province?: T;
+  region?: T;
   zone?: T;
+  scope?: T;
   headline?: T;
   short?: T;
   answer?: T;

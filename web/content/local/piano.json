@@ -116,6 +116,442 @@
         "Piobbico",
         "Frontone"
       ]
+    },
+    "it-piemonte-1": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Piemonte",
+      "comuni": [
+        "Torino",
+        "Alessandria",
+        "Asti"
+      ]
+    },
+    "it-piemonte-2": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Piemonte",
+      "comuni": [
+        "Biella",
+        "Cuneo",
+        "Novara"
+      ]
+    },
+    "it-piemonte-3": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Piemonte",
+      "comuni": [
+        "Verbania",
+        "Vercelli"
+      ]
+    },
+    "it-valle-d-aosta": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Valle d'Aosta",
+      "comuni": [
+        "Aosta"
+      ]
+    },
+    "it-lombardia-1": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Lombardia",
+      "comuni": [
+        "Milano",
+        "Bergamo",
+        "Brescia"
+      ]
+    },
+    "it-lombardia-2": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Lombardia",
+      "comuni": [
+        "Como",
+        "Cremona",
+        "Lecco"
+      ]
+    },
+    "it-lombardia-3": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Lombardia",
+      "comuni": [
+        "Lodi",
+        "Mantova",
+        "Monza"
+      ]
+    },
+    "it-lombardia-4": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Lombardia",
+      "comuni": [
+        "Pavia",
+        "Sondrio",
+        "Varese"
+      ]
+    },
+    "it-trentino-alto-adige": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Trentino-Alto Adige",
+      "comuni": [
+        "Trento",
+        "Bolzano"
+      ]
+    },
+    "it-veneto-1": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Veneto",
+      "comuni": [
+        "Venezia",
+        "Belluno",
+        "Padova"
+      ]
+    },
+    "it-veneto-2": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Veneto",
+      "comuni": [
+        "Rovigo",
+        "Treviso",
+        "Verona"
+      ]
+    },
+    "it-veneto-3": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Veneto",
+      "comuni": [
+        "Vicenza"
+      ]
+    },
+    "it-friuli-venezia-giulia-1": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Friuli-Venezia Giulia",
+      "comuni": [
+        "Trieste",
+        "Gorizia",
+        "Pordenone"
+      ]
+    },
+    "it-friuli-venezia-giulia-2": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Friuli-Venezia Giulia",
+      "comuni": [
+        "Udine"
+      ]
+    },
+    "it-liguria-1": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Liguria",
+      "comuni": [
+        "Genova",
+        "Imperia",
+        "La Spezia"
+      ]
+    },
+    "it-liguria-2": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Liguria",
+      "comuni": [
+        "Savona"
+      ]
+    },
+    "it-emilia-romagna-1": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Emilia-Romagna",
+      "comuni": [
+        "Bologna",
+        "Ferrara",
+        "Forlì"
+      ]
+    },
+    "it-emilia-romagna-2": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Emilia-Romagna",
+      "comuni": [
+        "Cesena",
+        "Modena",
+        "Parma"
+      ]
+    },
+    "it-emilia-romagna-3": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Emilia-Romagna",
+      "comuni": [
+        "Piacenza",
+        "Ravenna",
+        "Reggio Emilia"
+      ]
+    },
+    "it-toscana-1": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Toscana",
+      "comuni": [
+        "Firenze",
+        "Arezzo",
+        "Grosseto"
+      ]
+    },
+    "it-toscana-2": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Toscana",
+      "comuni": [
+        "Livorno",
+        "Lucca",
+        "Massa"
+      ]
+    },
+    "it-toscana-3": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Toscana",
+      "comuni": [
+        "Carrara",
+        "Pisa",
+        "Pistoia"
+      ]
+    },
+    "it-toscana-4": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Toscana",
+      "comuni": [
+        "Prato",
+        "Siena"
+      ]
+    },
+    "it-umbria": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Umbria",
+      "comuni": [
+        "Perugia",
+        "Terni"
+      ]
+    },
+    "it-marche-1": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Marche",
+      "comuni": [
+        "Ancona",
+        "Ascoli Piceno",
+        "Fermo"
+      ]
+    },
+    "it-marche-2": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Marche",
+      "comuni": [
+        "Macerata",
+        "Senigallia",
+        "Jesi"
+      ]
+    },
+    "it-marche-3": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Marche",
+      "comuni": [
+        "Civitanova Marche"
+      ]
+    },
+    "it-lazio-1": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Lazio",
+      "comuni": [
+        "Roma",
+        "Frosinone",
+        "Latina"
+      ]
+    },
+    "it-lazio-2": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Lazio",
+      "comuni": [
+        "Rieti",
+        "Viterbo"
+      ]
+    },
+    "it-abruzzo-1": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Abruzzo",
+      "comuni": [
+        "L'Aquila",
+        "Chieti",
+        "Pescara"
+      ]
+    },
+    "it-abruzzo-2": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Abruzzo",
+      "comuni": [
+        "Teramo"
+      ]
+    },
+    "it-molise": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Molise",
+      "comuni": [
+        "Campobasso",
+        "Isernia"
+      ]
+    },
+    "it-campania-1": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Campania",
+      "comuni": [
+        "Napoli",
+        "Avellino",
+        "Benevento"
+      ]
+    },
+    "it-campania-2": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Campania",
+      "comuni": [
+        "Caserta",
+        "Salerno"
+      ]
+    },
+    "it-puglia-1": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Puglia",
+      "comuni": [
+        "Bari",
+        "Barletta",
+        "Andria"
+      ]
+    },
+    "it-puglia-2": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Puglia",
+      "comuni": [
+        "Trani",
+        "Brindisi",
+        "Foggia"
+      ]
+    },
+    "it-puglia-3": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Puglia",
+      "comuni": [
+        "Lecce",
+        "Taranto"
+      ]
+    },
+    "it-basilicata": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Basilicata",
+      "comuni": [
+        "Potenza",
+        "Matera"
+      ]
+    },
+    "it-calabria-1": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Calabria",
+      "comuni": [
+        "Catanzaro",
+        "Cosenza",
+        "Crotone"
+      ]
+    },
+    "it-calabria-2": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Calabria",
+      "comuni": [
+        "Reggio Calabria",
+        "Vibo Valentia"
+      ]
+    },
+    "it-sicilia-1": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Sicilia",
+      "comuni": [
+        "Palermo",
+        "Agrigento",
+        "Caltanissetta"
+      ]
+    },
+    "it-sicilia-2": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Sicilia",
+      "comuni": [
+        "Catania",
+        "Enna",
+        "Messina"
+      ]
+    },
+    "it-sicilia-3": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Sicilia",
+      "comuni": [
+        "Ragusa",
+        "Siracusa",
+        "Trapani"
+      ]
+    },
+    "it-sardegna-1": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Sardegna",
+      "comuni": [
+        "Cagliari",
+        "Sassari",
+        "Nuoro"
+      ]
+    },
+    "it-sardegna-2": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "Sardegna",
+      "comuni": [
+        "Oristano",
+        "Olbia",
+        "Carbonia"
+      ]
+    },
+    "it-san-marino": {
+      "province": "IT",
+      "scope": "italia",
+      "region": "San Marino",
+      "comuni": [
+        "San Marino"
+      ]
     }
   },
   "sectors": {
@@ -216,6 +652,725 @@
     ],
     "misano-adriatico": [
       "siti-web"
+    ],
+    "torino": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "google-ads",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting",
+      "shopify"
+    ],
+    "alessandria": [
+      "siti-web",
+      "gestione-social",
+      "google-ads",
+      "logo-identita-visiva"
+    ],
+    "asti": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva"
+    ],
+    "biella": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "cuneo": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "novara": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "verbania": [
+      "gestione-social"
+    ],
+    "vercelli": [
+      "gestione-social",
+      "logo-identita-visiva"
+    ],
+    "aosta": [
+      "gestione-social",
+      "logo-identita-visiva"
+    ],
+    "milano": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "google-ads",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting",
+      "shopify"
+    ],
+    "bergamo": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "brescia": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "google-ads",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting",
+      "shopify"
+    ],
+    "como": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "google-ads",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "cremona": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "lecco": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "lodi": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva"
+    ],
+    "mantova": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "monza": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "copywriting"
+    ],
+    "pavia": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "sondrio": [
+      "gestione-social",
+      "logo-identita-visiva"
+    ],
+    "varese": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "trento": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "bolzano": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "copywriting"
+    ],
+    "venezia": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "belluno": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva"
+    ],
+    "padova": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "google-ads",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting",
+      "shopify"
+    ],
+    "rovigo": [
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva"
+    ],
+    "treviso": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "google-ads",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "verona": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "vicenza": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "google-ads",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "trieste": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "gorizia": [
+      "gestione-social"
+    ],
+    "pordenone": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "udine": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "genova": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "imperia": [
+      "siti-web",
+      "gestione-social"
+    ],
+    "la-spezia": [
+      "gestione-social",
+      "video-spot"
+    ],
+    "savona": [
+      "gestione-social",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "bologna": [
+      "gestione-social",
+      "seo-locale",
+      "google-ads",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting",
+      "shopify"
+    ],
+    "ferrara": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "forli": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva"
+    ],
+    "cesena": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva"
+    ],
+    "modena": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting",
+      "shopify"
+    ],
+    "parma": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting",
+      "shopify"
+    ],
+    "piacenza": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "ravenna": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "reggio-emilia": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "firenze": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "google-ads",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "arezzo": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "shopify"
+    ],
+    "grosseto": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva"
+    ],
+    "livorno": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "lucca": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "massa": [
+      "gestione-social"
+    ],
+    "carrara": [
+      "gestione-social"
+    ],
+    "pisa": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "pistoia": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva"
+    ],
+    "prato": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "shopify"
+    ],
+    "siena": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva"
+    ],
+    "perugia": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "terni": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "ancona": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "shopify"
+    ],
+    "ascoli-piceno": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva",
+      "video-spot",
+      "shopify"
+    ],
+    "fermo": [
+      "siti-web",
+      "gestione-social"
+    ],
+    "macerata": [
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva"
+    ],
+    "senigallia": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva"
+    ],
+    "jesi": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva"
+    ],
+    "civitanova-marche": [
+      "gestione-social",
+      "logo-identita-visiva"
+    ],
+    "roma": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "google-ads",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting",
+      "shopify"
+    ],
+    "frosinone": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "latina": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "google-ads",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "rieti": [
+      "gestione-social",
+      "seo-locale"
+    ],
+    "viterbo": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "l-aquila": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva"
+    ],
+    "chieti": [
+      "siti-web",
+      "gestione-social",
+      "shopify"
+    ],
+    "pescara": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "teramo": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "shopify"
+    ],
+    "campobasso": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva"
+    ],
+    "isernia": [
+      "gestione-social"
+    ],
+    "napoli": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "google-ads",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting",
+      "shopify"
+    ],
+    "avellino": [
+      "siti-web",
+      "gestione-social"
+    ],
+    "benevento": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva"
+    ],
+    "caserta": [
+      "siti-web",
+      "gestione-social",
+      "video-spot"
+    ],
+    "salerno": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "shopify"
+    ],
+    "bari": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "google-ads",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting",
+      "shopify"
+    ],
+    "barletta": [
+      "gestione-social",
+      "logo-identita-visiva"
+    ],
+    "andria": [
+      "gestione-social"
+    ],
+    "trani": [
+      "gestione-social",
+      "seo-locale"
+    ],
+    "brindisi": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale"
+    ],
+    "foggia": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva",
+      "video-spot",
+      "shopify"
+    ],
+    "lecce": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting",
+      "shopify"
+    ],
+    "taranto": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "potenza": [
+      "siti-web",
+      "gestione-social",
+      "copywriting"
+    ],
+    "matera": [
+      "gestione-social",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "catanzaro": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva"
+    ],
+    "cosenza": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "video-spot"
+    ],
+    "crotone": [
+      "gestione-social",
+      "logo-identita-visiva"
+    ],
+    "reggio-calabria": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "vibo-valentia": [
+      "gestione-social"
+    ],
+    "palermo": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "agrigento": [
+      "siti-web",
+      "gestione-social",
+      "video-spot"
+    ],
+    "caltanissetta": [
+      "siti-web",
+      "gestione-social",
+      "video-spot"
+    ],
+    "catania": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "google-ads",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting"
+    ],
+    "enna": [
+      "siti-web"
+    ],
+    "messina": [
+      "siti-web",
+      "gestione-social",
+      "video-spot",
+      "shopify"
+    ],
+    "ragusa": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "siracusa": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "trapani": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "video-spot"
+    ],
+    "cagliari": [
+      "siti-web",
+      "gestione-social",
+      "seo-locale",
+      "google-ads",
+      "logo-identita-visiva",
+      "video-spot",
+      "copywriting",
+      "shopify"
+    ],
+    "sassari": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva",
+      "video-spot",
+      "shopify"
+    ],
+    "nuoro": [
+      "siti-web",
+      "gestione-social"
+    ],
+    "oristano": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva"
+    ],
+    "olbia": [
+      "siti-web",
+      "gestione-social",
+      "logo-identita-visiva",
+      "video-spot"
+    ],
+    "carbonia": [
+      "gestione-social"
+    ],
+    "san-marino": [
+      "gestione-social",
+      "logo-identita-visiva"
     ]
   },
   "sectorServices": {

@@ -167,8 +167,8 @@ export const cityPlace = (l: Location) => ({
   ...(l.geo?.lat && l.geo?.lng ? { geo: { '@type': 'GeoCoordinates', latitude: l.geo.lat, longitude: l.geo.lng } } : {}),
   containedInPlace: {
     '@type': 'AdministrativeArea',
-    name: PROVINCE[l.province as keyof typeof PROVINCE],
-    containedInPlace: { '@type': 'Country', name: 'Italia' },
+    name: PROVINCE[l.province as keyof typeof PROVINCE] ?? l.region ?? l.province,
+    containedInPlace: { '@type': 'Country', name: l.province === 'SM' ? 'San Marino' : 'Italia' },
   },
 })
 

@@ -67,6 +67,8 @@ for (const l of only ? [] : locations) {
       slug: l.slug,
       name: l.name,
       province: l.province,
+      region: l.region,
+      scope: l.scope ?? 'territorio',
       zone: l.zone,
       headline: l.headline,
       short: l.short,

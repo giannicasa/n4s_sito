@@ -8,6 +8,7 @@ import { cache } from 'react'
 
 import type { Author, CaseStudy, Category, Company, LocalService, Location, Post, Sector, SectorService, Service, ServiceArea } from '@/payload-types'
 import type { Locale } from './paths'
+import { regionOf } from './regions'
 
 // Accesso ai contenuti per le pagine pubbliche.
 // Ogni query è in cache con un tag; gli hook afterChange delle collezioni invalidano il tag
@@ -31,7 +32,7 @@ const published: Where = { _status: { equals: 'published' } }
 const LINK_FIELDS = {
   services: { title: true, slug: true, short: true, area: true, _status: true },
   'service-areas': { title: true, slug: true, code: true },
-  locations: { name: true, slug: true, province: true, zone: true, geo: true, _status: true },
+  locations: { name: true, slug: true, province: true, region: true, scope: true, zone: true, geo: true, _status: true },
   sectors: { title: true, slug: true, short: true, _status: true },
   'case-studies': { code: true, industry: true, title: true, metric: true, excerpt: true, _status: true },
 } as const
@@ -206,7 +207,7 @@ export const getLocations = query('locations', ['local'], async (draft) => {
     depth: 0,
     limit: 500,
     pagination: false,
-    select: { name: true, slug: true, province: true, zone: true, short: true, _status: true },
+    select: { name: true, slug: true, province: true, region: true, scope: true, zone: true, short: true, _status: true },
   })
   return res.docs as Location[]
 })
@@ -333,7 +334,7 @@ export const getPublishedIndex = unstable_cache(
       // versione inglese: serve solo a sapere quali pagine hanno davvero un testo in EN
       p.find({ collection: 'service-areas', where: published, locale: 'en', depth: 0, limit: 500, pagination: false }),
       p.find({ collection: 'services', where: published, locale: 'en', depth: 0, limit: 2000, pagination: false }),
-      p.find({ collection: 'locations', where: published, depth: 0, limit: 500, pagination: false, select: { slug: true, updatedAt: true } }),
+      p.find({ collection: 'locations', where: published, depth: 0, limit: 500, pagination: false, select: { slug: true, updatedAt: true, region: true, province: true } }),
       p.find({ collection: 'sectors', where: published, depth: 0, limit: 200, pagination: false, select: { slug: true, updatedAt: true } }),
       p.find({ collection: 'local-services', where: published, depth: 1, limit: 2000, pagination: false }),
       p.find({ collection: 'sector-services', where: published, depth: 1, limit: 2000, pagination: false }),
@@ -354,7 +355,7 @@ export const getPublishedIndex = unstable_cache(
         })),
       posts: (posts.docs as Post[]).map((p) => ({ slug: p.slug!, updatedAt: p.updatedAt })),
       categories: (categories.docs as Category[]).map((c) => ({ slug: c.slug!, updatedAt: c.updatedAt })),
-      locations: (locations.docs as Location[]).map((l) => ({ slug: l.slug!, updatedAt: l.updatedAt })),
+      locations: (locations.docs as Location[]).map((l) => ({ slug: l.slug!, updatedAt: l.updatedAt, region: regionOf(l) })),
       sectors: (sectors.docs as Sector[]).map((x) => ({ slug: x.slug!, updatedAt: x.updatedAt })),
       localServices: (localServices.docs as LocalService[])
         .filter((ls) => typeof ls.location === 'object' && typeof ls.service === 'object')

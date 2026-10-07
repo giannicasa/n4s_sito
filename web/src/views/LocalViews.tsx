@@ -3,11 +3,13 @@ import Link from 'next/link'
 
 import { JsonLd } from '@/components/cms/JsonLd'
 import { hasRichText, RichText } from '@/components/cms/RichText'
+import ItalyMap, { type MapRegion } from '@/components/site/ItalyMap'
 import { Reveal, RevealLines } from '@/components/site/Reveal'
-import { Chips, Container, Kicker, LinkCard } from '@/components/site/ui'
+import { Chips, Container, Crumbs, Kicker, LinkCard } from '@/components/site/ui'
 import { getLocalService, getLocalServices, getLocation, getLocations, getSector, getSectors, getSectorService, getSectorServices } from '@/lib/cms'
 import { absolute, paths } from '@/lib/paths'
 import { notFoundOrRedirect } from '@/lib/redirects'
+import { regionOf, regionSlug } from '@/lib/regions'
 import { breadcrumbNode, faqNode, graph, localServiceNode, locationNode, sectorNode, sectorServiceNode } from '@/lib/schema'
 import { buildMetadata } from '@/lib/seo'
 import type { CaseStudy, LocalService, Location, Sector, SectorService, Service } from '@/payload-types'
@@ -43,17 +45,20 @@ const TwoCol = ({ kicker, children, aside, tone = 'dark' }: { kicker: string; ch
 export const locationsHubMetadata = () =>
   buildMetadata({
     locale: 'it',
-    title: 'Agenzia di marketing in Romagna e Marche: dove lavoriamo',
+    title: 'Agenzia di marketing in Romagna, Marche e in tutta Italia: dove lavoriamo',
     description:
-      'Da Cattolica lavoriamo con le imprese di tutti i comuni delle province di Rimini e di Pesaro e Urbino. Incontri di persona, strategie pensate per il territorio.',
+      'Da Cattolica lavoriamo con le imprese dei comuni delle province di Rimini e di Pesaro e Urbino e con aziende delle principali città italiane. Strategie pensate per ogni territorio.',
     path: paths.locations(),
     ogKicker: 'Dove lavoriamo',
   })
 
 export const LocationsHub = async () => {
   const locations = await getLocations()
+  const local = locations.filter((l) => l.scope !== 'italia')
+  const national = locations.filter((l) => l.scope === 'italia')
+  const regions = [...new Set(national.map((l) => l.region || 'Altre città'))].sort((a, b) => a.localeCompare(b, 'it'))
   const byProvince = (['RN', 'PU'] as const).map((p) => {
-    const list = locations.filter((l) => l.province === p)
+    const list = local.filter((l) => l.province === p)
     const zones = [...new Set(list.map((l) => l.zone || 'Altri comuni'))]
     return { p, zones: zones.map((z) => ({ z, list: list.filter((l) => (l.zone || 'Altri comuni') === z) })) }
   })
@@ -70,16 +75,23 @@ export const LocationsHub = async () => {
       <section className="relative pt-40 pb-20 md:pt-56 md:pb-28 grain">
         <Container>
           <Reveal className="text-[10px] font-mono uppercase tracking-[0.32em] text-violet-400 mb-6">
-            Dove lavoriamo · {locations.length} comuni
+            Dove lavoriamo · {locations.length} città e comuni
           </Reveal>
           <h1 className="h-display text-white text-5xl sm:text-7xl md:text-[9vw]">
             <RevealLines lines={['dalla riviera', <span key="2" className="stroke-text-violet">all'appennino.</span>]} />
           </h1>
           <Reveal delay={0.3} className="mt-10 max-w-3xl text-lg md:text-xl text-neutral-300 leading-relaxed">
             Siamo a Cattolica, sul confine tra Romagna e Marche. Lavoriamo con le imprese di tutti i comuni delle province di Rimini e di
-            Pesaro e Urbino, dalla costa ai borghi del Montefeltro, e le incontriamo di persona. Scegli il tuo comune: trovi come lavoriamo lì
-            e cosa serve davvero alle aziende del territorio.
+            Pesaro e Urbino, dalla costa ai borghi del Montefeltro, e le incontriamo di persona. Seguiamo anche aziende delle principali città
+            italiane, a distanza e con trasferte per i momenti che contano. Scegli la tua città: trovi come lavoriamo lì e cosa serve davvero
+            alle aziende del territorio.
           </Reveal>
+        </Container>
+      </section>
+
+      <section className="py-16 md:py-24 border-t border-white/5">
+        <Container>
+          <ItalyMap regions={mapRegions(locations)} />
         </Container>
       </section>
 
@@ -108,6 +120,111 @@ export const LocationsHub = async () => {
           </section>
         ) : null,
       )}
+
+      {national.length > 0 && (
+        <section className="py-20 md:py-28 border-t border-white/5">
+          <Container>
+            <h2 className="h-display text-white text-4xl md:text-6xl mb-12">In tutta Italia</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+              {regions.map((r) => (
+                <div key={r}>
+                  <Kicker className="mb-4">{r}</Kicker>
+                  <ul className="space-y-2">
+                    {national
+                      .filter((l) => (l.region || 'Altre città') === r)
+                      .map((l) => (
+                        <li key={l.id}>
+                          <Link href={paths.location(l.slug!)} className="group inline-flex items-center gap-2 text-lg text-neutral-200 hover:text-violet-400 transition-colors">
+                            <MapPin size={14} className="text-violet-500" /> {l.name}
+                          </Link>
+                        </li>
+                      ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </Container>
+        </section>
+      )}
+    </>
+  )
+}
+
+// Dati per la mappa: una voce per ogni regione che ha almeno un comune pubblicato.
+const mapRegions = (locations: Location[]): MapRegion[] => {
+  const groups = new Map<string, Location[]>()
+  for (const l of locations) groups.set(regionOf(l), [...(groups.get(regionOf(l)) ?? []), l])
+  return [...groups].map(([name, list]) => ({
+    slug: regionSlug(name),
+    name,
+    href: paths.region(regionSlug(name)),
+    cities: list.map((l) => ({ name: l.name, href: paths.location(l.slug!) })),
+  }))
+}
+
+// ─── /agenzia-marketing/regione/{regione} ──────────────────────────────────
+
+const regionData = async (slug: string) => {
+  const locations = await getLocations()
+  const list = locations.filter((l) => regionSlug(regionOf(l)) === slug)
+  return list.length ? { name: regionOf(list[0]), list, locations } : null
+}
+
+export const regionMetadata = async (slug: string) => {
+  const r = await regionData(slug)
+  if (!r) return {}
+  return buildMetadata({
+    locale: 'it',
+    title: `Agenzia di marketing in ${r.name}: le città in cui lavoriamo`,
+    description: `Marketing, siti web, SEO e social per le aziende in ${r.name}: ${r.list
+      .slice(0, 6)
+      .map((l) => l.name)
+      .join(', ')}${r.list.length > 6 ? ' e altre città' : ''}. Lavoriamo da Cattolica, di persona e a distanza.`.slice(0, 160),
+    path: paths.region(slug),
+    ogKicker: 'Dove lavoriamo',
+  })
+}
+
+export const RegionView = async ({ slug }: { slug: string }) => {
+  const r = await regionData(slug)
+  if (!r) return notFoundOrRedirect(paths.region(slug))
+  const local = r.list.every((l) => l.scope !== 'italia')
+  return (
+    <>
+      <JsonLd
+        data={graph(breadcrumbNode([HOME, WHERE, { name: r.name, path: paths.region(slug) }]), {
+          '@type': 'ItemList',
+          name: `Città in ${r.name}`,
+          itemListElement: r.list.map((l, i) => ({ '@type': 'ListItem', position: i + 1, name: l.name, url: absolute(paths.location(l.slug!)) })),
+        })}
+      />
+      <section className="relative pt-40 pb-16 md:pt-56 md:pb-20 grain">
+        <Container>
+          <Crumbs items={[{ label: 'Dove lavoriamo', href: paths.locations() }, { label: r.name }]} />
+          <h1 className="h-display text-white text-5xl sm:text-7xl md:text-[8vw] leading-[0.88]">
+            <RevealLines lines={[<span key="1">Marketing in {r.name}<span className="text-violet-500">.</span></span>]} />
+          </h1>
+          <Reveal delay={0.3} className="mt-10 max-w-3xl text-lg md:text-xl text-neutral-300 leading-relaxed">
+            {local
+              ? `Da Cattolica lavoriamo con le imprese di ${r.list.length} comuni in ${r.name}, e le incontriamo di persona. Per ogni comune trovi l'economia del territorio, le sfide tipiche delle aziende e i servizi che servono davvero.`
+              : `Seguiamo aziende in ${r.name} da Cattolica: strategia e lavoro operativo a distanza, con trasferte per gli incontri che contano. Per ogni città trovi il contesto economico, le sfide delle imprese e i servizi più utili.`}
+          </Reveal>
+        </Container>
+      </section>
+      <section className="py-16 md:py-24 border-t border-white/5">
+        <Container>
+          <ItalyMap regions={mapRegions(r.locations)} active={slug} />
+        </Container>
+      </section>
+      <section className="pb-24 md:pb-32">
+        <Container>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-t border-l border-white/10">
+            {r.list.map((l) => (
+              <LinkCard key={l.id} href={paths.location(l.slug!)} code={l.zone || l.province} title={l.name} text={l.short} />
+            ))}
+          </div>
+        </Container>
+      </section>
     </>
   )
 }
@@ -150,12 +267,16 @@ export const LocationView = async ({ slug }: { slug: string }) => {
 
       <section className="pb-16 -mt-8">
         <Container className="flex flex-wrap items-center gap-x-8 gap-y-3 text-xs font-mono uppercase tracking-[0.2em] text-neutral-400">
-          {l.zone && (
+          {(l.zone || l.region) && (
             <span className="inline-flex items-center gap-2">
-              <MapPin size={14} className="text-violet-500" /> {l.zone} · {PROVINCE_NAME[l.province as 'RN' | 'PU']}
+              <MapPin size={14} className="text-violet-500" /> {[l.zone, PROVINCE_NAME[l.province as 'RN' | 'PU'] ?? l.region].filter(Boolean).join(' · ')}
             </span>
           )}
-          {l.slug !== 'cattolica' && l.travelMinutes ? (
+          {l.scope === 'italia' && (l.distanceKm ?? 0) > 120 ? (
+            <span className="inline-flex items-center gap-2">
+              <Car size={14} className="text-violet-500" /> a distanza, con trasferte per gli incontri chiave
+            </span>
+          ) : l.slug !== 'cattolica' && l.travelMinutes ? (
             <span className="inline-flex items-center gap-2">
               <Car size={14} className="text-violet-500" /> {l.distanceKm} km · circa {l.travelMinutes} minuti da Cattolica
             </span>
@@ -164,7 +285,7 @@ export const LocationView = async ({ slug }: { slug: string }) => {
               <Car size={14} className="text-violet-500" /> la nostra sede
             </span>
           )}
-          <span>Incontri di persona</span>
+          {(l.scope !== 'italia' || (l.distanceKm ?? 0) <= 120) && <span>Incontri di persona</span>}
         </Container>
       </section>
 
