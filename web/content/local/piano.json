@@ -275,6 +275,104 @@
         "siti-web",
         "logo-identita-visiva"
       ]
+    },
+    "settori-e": {
+      "hotel": [
+        "meta-ads",
+        "logo-identita-visiva"
+      ],
+      "ristorazione": [
+        "meta-ads"
+      ],
+      "studi-professionali": [
+        "meta-ads"
+      ],
+      "sanita-privata": [
+        "google-ads",
+        "meta-ads"
+      ],
+      "wellness": [
+        "seo-locale",
+        "google-ads",
+        "meta-ads"
+      ]
+    },
+    "settori-f": {
+      "immobiliare": [
+        "seo-locale",
+        "google-ads",
+        "meta-ads"
+      ],
+      "moda": [
+        "siti-web",
+        "seo-locale",
+        "google-ads",
+        "meta-ads"
+      ]
+    },
+    "settori-g": {
+      "edilizia": [
+        "seo-locale",
+        "gestione-social",
+        "google-ads",
+        "meta-ads"
+      ],
+      "agroalimentare": [
+        "seo-locale",
+        "gestione-social",
+        "google-ads",
+        "meta-ads"
+      ]
+    },
+    "settori-h": {
+      "manifatturiero": [
+        "siti-web",
+        "seo-locale",
+        "gestione-social",
+        "google-ads",
+        "meta-ads",
+        "logo-identita-visiva"
+      ]
+    },
+    "settori-i": {
+      "arredamento": [
+        "siti-web",
+        "seo-locale",
+        "gestione-social",
+        "google-ads",
+        "meta-ads",
+        "logo-identita-visiva"
+      ]
+    },
+    "settori-j": {
+      "nautica": [
+        "siti-web",
+        "seo-locale",
+        "gestione-social",
+        "google-ads",
+        "meta-ads",
+        "logo-identita-visiva"
+      ]
+    },
+    "settori-k": {
+      "stabilimenti-balneari": [
+        "siti-web",
+        "seo-locale",
+        "gestione-social",
+        "google-ads",
+        "meta-ads",
+        "logo-identita-visiva"
+      ]
+    },
+    "settori-l": {
+      "automotive": [
+        "siti-web",
+        "seo-locale",
+        "gestione-social",
+        "google-ads",
+        "meta-ads",
+        "logo-identita-visiva"
+      ]
     }
   }
 }

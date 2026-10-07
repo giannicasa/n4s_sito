@@ -1,0 +1,499 @@
+{
+  "items": [
+    {
+      "sector": "hotel",
+      "service": "meta-ads",
+      "headline": "Facebook Ads per hotel: campagne sulle date che vuoi riempire",
+      "short": "Facebook e Instagram Ads per hotel: ex ospiti, retargeting sulle date cercate nel booking engine, campagne per mercato e periodo.",
+      "answer": "Facebook Ads per hotel significa usare Facebook e Instagram per far nascere la voglia di una vacanza nella tua struttura e poi riportare sul sito chi ha già cercato delle date. not4sale collega il booking engine a Meta, costruisce pubblici di ex ospiti e campagne per periodo e mercato, e misura il ricavo delle prenotazioni dirette.",
+      "problem": "Molti hotel usano Meta in un solo modo: il pulsante \"metti in evidenza\" sotto la foto della piscina, a maggio, con il pubblico \"Italia, 25-65 anni\". Arrivano like, qualche commento di ex ospiti nostalgici e nessuna prenotazione riconoscibile.\n\nIl guaio è che Facebook e Instagram, per un albergo, fanno un lavoro diverso da Google. Chi apre Instagram non sta cercando un hotel: sta scorrendo. È il canale giusto per farsi scegliere prima del confronto, e per riprendere chi ha guardato le camere senza prenotare. Ma per fare questo servono tre cose che di solito mancano: un booking engine che comunica a Meta le date cercate e le prenotazioni, una lista degli ospiti passati usata con i consensi giusti, e creatività diverse per chi non ti conosce e per chi c'è già stato.\n\nSenza queste basi l'algoritmo ottimizza su chi mette like, non su chi prenota. E l'albergatore conclude che \"i social non portano clienti\", proprio mentre i portali comprano pubblicità su quegli stessi ospiti.",
+      "process": [
+        {
+          "title": "Eventi dal booking engine",
+          "description": "Verifichiamo che ricerca disponibilità, avvio prenotazione e prenotazione completata arrivino a Meta con date e valore, anche lato server."
+        },
+        {
+          "title": "Pubblici degli ospiti",
+          "description": "Prepariamo le liste di ex ospiti con il consenso al marketing e i pubblici di chi ha interagito con profili e video."
+        },
+        {
+          "title": "Campagne per periodo",
+          "description": "Separiamo prenotazioni anticipate, ponti, eventi e bassa stagione, ognuna con il suo budget, mercato e messaggio."
+        },
+        {
+          "title": "Creatività girate in hotel",
+          "description": "Produciamo video verticali di camere, colazione e persone, con versioni diverse per chi non ti conosce e chi è già stato tuo ospite."
+        },
+        {
+          "title": "Ricavo per campagna",
+          "description": "Ogni mese leggiamo prenotazioni, notti e ricavo arrivati da Meta, e li confrontiamo con quanto paghi ai portali."
+        }
+      ],
+      "body": "## Cosa possono fare le Facebook Ads per un hotel\n\nPossono fare due lavori: creare domanda tra chi non ti conosce e chiudere la prenotazione di chi ha già guardato il sito. Google intercetta chi sta già cercando \"hotel a Riccione con piscina\"; Meta arriva prima, quando una famiglia sta ancora decidendo dove andare, e dopo, quando ha visto le camere e ha chiuso la pagina.\n\nPer una struttura ricettiva le campagne utili sono di solito tre:\n\n| Campagna | A chi parla | Cosa mostra |\n|---|---|---|\n| Scoperta | Persone simili ai tuoi ospiti, nei mercati da cui arrivano | Video della struttura e del territorio, per chi è pensato l'hotel |\n| Ritorno degli ospiti | Ex ospiti con consenso, follower, chi ha visto i tuoi video | Novità, date di apertura, vantaggi di chi prenota sul sito |\n| Recupero delle date | Chi ha cercato disponibilità senza prenotare | Le date che ha cercato, la tipologia di camera, un motivo per decidere ora |\n\nLe basi di creatività, struttura e test sono quelle della nostra gestione [Meta Ads](/servizi/advertising/meta-ads). Per un albergo cambiano i segnali da passare all'algoritmo e il calendario.\n\n## Retargeting sulle date: il segnale che vale di più\n\nIl pubblico più prezioso di un hotel è chi ha cercato delle date nel booking engine. Se il motore di prenotazione invia a Meta gli eventi di ricerca e di avvio prenotazione con data di arrivo e di partenza, puoi parlare a chi ha cercato la seconda settimana di luglio in modo diverso da chi cercava un weekend di settembre. Meta prevede parametri specifici per i viaggi, come le date di check-in e check-out, e un catalogo hotel per gli annunci dinamici, utile soprattutto a chi gestisce più strutture o tipologie di camera molto diverse.\n\nIl primo controllo che facciamo è proprio questo: il tuo booking engine passa le date o solo una visualizzazione di pagina? Molti fornitori hanno un'integrazione con il pixel, meno inviano gli eventi anche dal server con la Conversions API. Quando l'integrazione è parziale, la completiamo con il [server-side tracking](/servizi/data-analytics/server-side-tracking) dove il fornitore lo consente.\n\n## Ex ospiti, consenso e pubblici simili\n\nGli ospiti degli anni passati sono il pubblico che costa meno convincere. Caricare la lista su Meta, però, richiede che quelle persone abbiano dato il consenso a ricevere comunicazioni di marketing, e che l'informativa lo preveda. Non diamo pareri legali: verifichiamo con te come sono stati raccolti i contatti e, se serve, partiamo dagli ospiti che hanno dato il consenso al check-in o in fase di prenotazione.\n\nDa quella lista nascono due usi:\n\n- **ritorno**: annunci a chi c'è già stato, quando aprono le prenotazioni per la stagione successiva;\n- **somiglianza**: Meta cerca persone con caratteristiche simili ai tuoi ospiti, utile per allargare il pubblico senza indovinare interessi.\n\nIl lavoro sui contatti diretti, email e messaggi, vive accanto alle campagne: lo seguiamo con l'[email marketing](/servizi/crm-email/email-marketing).\n\n## Mercati, lingue e CIN negli annunci\n\nUn hotel della Riviera che lavora con ospiti tedeschi, svizzeri o austriaci deve fare campagne separate per paese e lingua, con creatività tradotte bene e pagine di arrivo nella stessa lingua. Mescolare mercati in un'unica campagna lascia decidere a Meta dove spendere, e di solito sceglie il mercato più economico, non quello più redditizio.\n\nC'è poi un vincolo tutto italiano: il codice identificativo nazionale della struttura va indicato negli annunci che promuovono i soggiorni. Lo inseriamo nel testo delle inserzioni come facciamo con prezzi e condizioni.\n\n## Come misurare le Facebook Ads per un hotel\n\nSi misurano sulle prenotazioni e sul ricavo, ma con un occhio diverso da Google. Meta lavora spesso a inizio percorso: una persona vede il video a febbraio e prenota ad aprile cercando il nome dell'hotel. Per questo leggiamo insieme le conversioni attribuite da Meta, le ricerche del nome su Google e le prenotazioni dirette nel booking engine, stagione su stagione. Seguiamo strutture tra Romagna e Marche da Cattolica e altre in tutta Italia da remoto. Il quadro delle altre leve per un albergo lo trovi nella pagina sul [marketing per hotel](/settori/hotel).",
+      "faq": [
+        {
+          "question": "Meglio Facebook o Instagram per pubblicizzare un hotel?",
+          "answer": "Non serve scegliere: le campagne Meta escono su entrambi e l'algoritmo distribuisce il budget dove rende di più. Cambiano i formati. Su Instagram contano Reel e storie verticali, su Facebook funzionano ancora bene i video più lunghi e i caroselli delle camere, soprattutto con un pubblico più adulto. Prepariamo le creatività in modo che si adattino a tutti e due."
+        },
+        {
+          "question": "Posso caricare su Meta la lista dei miei ex ospiti?",
+          "answer": "Sì, se quelle persone hanno dato il consenso a ricevere comunicazioni di marketing e l'informativa privacy prevede questo uso. Meta riceve i dati in forma cifrata per trovare la corrispondenza con gli account. Prima di caricare qualsiasi lista verifichiamo con te come sono stati raccolti i contatti. Per i dubbi interpretativi il riferimento resta il tuo consulente privacy."
+        },
+        {
+          "question": "Il mio booking engine funziona con il pixel di Meta?",
+          "answer": "Quasi tutti i booking engine consentono di inserire il pixel, ma non tutti inviano le date del soggiorno, il valore della prenotazione o gli eventi lato server. Lo verifichiamo con una prenotazione di prova prima di attivare qualsiasi campagna. Se l'integrazione è incompleta, valutiamo con il fornitore cosa si può aggiungere o se conviene lavorare su un altro segnale."
+        },
+        {
+          "question": "Quando conviene fare pubblicità su Meta per un hotel stagionale?",
+          "answer": "Quando i tuoi ospiti decidono, non quando arrivano. Per le famiglie che prenotano l'estate in anticipo i mesi chiave sono spesso inverno e inizio primavera; per i weekend e i ponti la finestra è più corta. Guardiamo le date di prenotazione degli anni passati nel gestionale e costruiamo il calendario delle campagne su quelle, non su sensazioni."
+        },
+        {
+          "question": "Le Facebook Ads sostituiscono Google Ads per un hotel?",
+          "answer": "No, fanno un lavoro diverso. Google raccoglie chi cerca già un hotel o il tuo nome; Meta crea interesse in chi non ti conosce e riprende chi ha guardato le camere. Per molte strutture la combinazione funziona meglio di uno solo dei due. Decidiamo il peso di ciascun canale guardando prenotazioni e ricavo, non clic o copertura."
+        }
+      ],
+      "metaTitle": "Facebook Ads per hotel: prenotazioni dirette | not4sale",
+      "metaDescription": "Facebook Ads per hotel: retargeting sulle date cercate, campagne per ex ospiti e mercati esteri, prenotazioni misurate dal booking engine. Scrivici."
+    },
+    {
+      "sector": "hotel",
+      "service": "logo-identita-visiva",
+      "headline": "Logo per hotel: un'identità che si distingue dall'albergo accanto",
+      "short": "Logo e identità visiva per hotel, B&B e residence: nome distintivo, marchio leggibile sui portali, sistema pronto per la struttura.",
+      "answer": "Un logo per hotel deve far riconoscere la struttura in spazi minuscoli, come l'anteprima di un portale o l'icona del profilo, e su supporti grandi, come facciata e ombrelloni. not4sale progetta logo e identità visiva per alberghi, B&B e residence partendo dal tipo di ospite, e li prova su insegna, booking engine, chiavi e biancheria.",
+      "problem": "Fai un giro su un lungomare qualsiasi della Riviera e conta quanti hotel si chiamano Miramare, Bellavista o Splendid. Ognuno ha un logo con una conchiglia, un'onda o tre stelline dorate, e un carattere corsivo che sulla tabella dell'insegna si legge bene solo da vicino. Per l'ospite che li vede in fila su un portale di prenotazione sono intercambiabili, e quando sono intercambiabili si sceglie sul prezzo.\n\nIl problema non è estetico. Un marchio indistinto lavora contro tutto il resto: le recensioni finiscono attribuite all'omonimo del paese vicino, chi cerca il tuo nome su Google trova tre strutture, chi ti ha visto su Instagram non ti riconosce quando ti ritrova sul portale. E dopo una ristrutturazione importante, con camere rifatte e un prezzo medio più alto, il logo di vent'anni fa continua a raccontare l'albergo di prima.\n\nPoi c'è l'uso quotidiano. Un hotel stampa e ricama il proprio marchio su decine di oggetti, dai cartellini delle chiavi agli asciugamani della spiaggia. Se il logo è nato solo per lo schermo, ogni fornitore lo interpreta a modo suo.",
+      "process": [
+        {
+          "title": "Ospite e posizionamento",
+          "description": "Partiamo da chi vuoi ospitare e a che prezzo: famiglie, coppie, sportivi, lavoro. Il carattere del marchio discende da lì."
+        },
+        {
+          "title": "Verifica del nome",
+          "description": "Controlliamo omonimi nella zona, sui portali e tra i marchi registrati, prima di disegnare qualsiasi cosa."
+        },
+        {
+          "title": "Proposte sulla struttura",
+          "description": "Mostriamo le direzioni applicate a facciata, anteprima del portale, booking engine e profilo social, non su un foglio bianco."
+        },
+        {
+          "title": "Sistema per i reparti",
+          "description": "Declinazioni per ristorante, spa, spiaggia convenzionata e listini, coerenti ma riconoscibili tra loro."
+        },
+        {
+          "title": "Kit per i fornitori",
+          "description": "File per stampa, ricamo, incisione e insegna, con colori e misure minime, da girare a tipografie e lavanderie."
+        }
+      ],
+      "body": "## Cosa deve fare un logo per hotel\n\nDeve funzionare piccolissimo e grandissimo, e ricordare all'ospite perché ha scelto te. Sui portali e su Google l'hotel compare come una miniatura con il nome; sul booking engine il logo sta in un angolo, spesso su fondo bianco; su Instagram diventa un cerchio di pochi millimetri. Nello stesso tempo il marchio va sull'insegna in facciata, sugli ombrelloni, sul furgoncino della navetta. Un disegno pieno di dettagli regge in una delle due situazioni, quasi mai in entrambe.\n\nLe regole generali del nostro lavoro sono nella pagina su [logo e identità visiva](/servizi/branding/logo-identita-visiva). Per un albergo aggiungiamo tre prove obbligatorie: leggibilità del nome in miniatura, resa su tessuto ricamato e visibilità dell'insegna di sera, quando l'ospite arriva in auto e cerca l'ingresso.\n\n## Stelle, conchiglie e nomi già visti: cosa evitare\n\nAlcune scelte sembrano ovvie e costano care nel tempo.\n\n- **Le stelle nel logo.** La classificazione alberghiera è stabilita dalle regole regionali e può cambiare dopo una ristrutturazione o una verifica. Legare il marchio a un numero di stelle significa rifarlo quando cambia la categoria. La classificazione si indica accanto al logo, non dentro.\n- **I simboli del mare e del sole.** Onda, conchiglia, faro, gabbiano: sulla costa li usano in tanti, e quindi non distinguono nessuno. Funzionano solo se reinterpretati in modo davvero personale.\n- **Il nome generico.** Se in zona esistono altre strutture con lo stesso nome, il logo da solo non risolve la confusione. A volte basta un elemento aggiuntivo stabile nel nome, a volte conviene un [naming](/servizi/branding/naming) nuovo, da decidere prima di disegnare.\n- **Il corsivo sottile.** Elegante sul biglietto da visita, illeggibile ricamato su un accappatoio o a dieci metri su un'insegna luminosa.\n\nSui marchi non diamo pareri legali: per la registrazione ti indichiamo cosa verificare e ti appoggi al consulente in proprietà industriale.\n\n## Dove vive l'identità di un albergo\n\nUn hotel è uno dei pochi settori in cui l'ospite vive dentro il marchio per giorni. L'identità visiva va progettata per tutti i punti in cui lo incontra:\n\n| Momento | Dove compare il marchio |\n|---|---|\n| Scelta | Portali, scheda Google, profilo Instagram, sito e booking engine |\n| Arrivo | Insegna, segnaletica del parcheggio, desk della reception |\n| Soggiorno | Chiavi o tessere, cartellini delle camere, menu del ristorante, teli della spiaggia |\n| Dopo la partenza | Email di conferma e di ringraziamento, fattura, newsletter |\n\nPer gli alberghi con ristorante aperto agli esterni, spa o spiaggia convenzionata, progettiamo un'architettura di marchio: lo stesso sistema, con varianti che permettono a ciascun reparto di comunicare da solo senza sembrare un'altra azienda. Le regole di utilizzo finiscono nelle [brand guidelines](/servizi/branding/brand-guidelines), così anche chi stampa i menu della prossima stagione le rispetta.\n\n## Gestori, proprietari e passaggi di mano\n\nIn Riviera molte strutture sono affidate in gestione per alcune stagioni, e questo cambia le domande da farsi sul marchio. Se rifai il logo come gestore, è giusto chiarire nel contratto a chi resta il nome, il dominio del sito, i profili social e il marchio alla fine della gestione. Se sei il proprietario che rientra o cambia gestore, conviene sapere cosa ti verrà riconsegnato. Non è una questione grafica, ma incide su quanto vale l'investimento.\n\nLo stesso vale per i passaggi generazionali. Il figlio che prende in mano l'albergo di famiglia spesso vuole cambiare tutto; gli ospiti affezionati vogliono ritrovare l'hotel di sempre. Un restyling che tiene un elemento riconoscibile, come un colore storico o la forma del nome, accompagna il cambiamento senza strappi.\n\n## Come capire se il nuovo logo funziona\n\nIl segnale più concreto arriva dalle ricerche del nome: dopo un cambio di identità ben comunicato, le ricerche su Google e i messaggi diretti devono riconoscerti senza confusione con altre strutture. Poi contano la coerenza tra portali, sito e profili, e la facilità con cui fornitori e collaboratori usano i file. Lavoriamo da Cattolica, con molte strutture tra Romagna e Marche, e incontriamo gli albergatori in hotel, meglio fuori stagione. Le altre leve per far crescere le prenotazioni dirette sono nella pagina sul [marketing per hotel](/settori/hotel).",
+      "faq": [
+        {
+          "question": "Posso mettere le stelle dell'hotel nel logo?",
+          "answer": "Si può, ma lo sconsigliamo. Le stelle indicano una classificazione che dipende dalle regole regionali e può cambiare dopo lavori o verifiche, e a quel punto il marchio andrebbe rifatto su insegne, divise e stampati. Meglio tenere il logo pulito e indicare la categoria accanto, dove si aggiorna senza toccare l'identità."
+        },
+        {
+          "question": "Il mio hotel ha un nome comune: devo cambiarlo?",
+          "answer": "Non sempre. Se nella tua località ci sono strutture omonime e gli ospiti vi confondono, nelle recensioni o nelle ricerche, il problema è reale e un logo da solo non lo risolve. A volte basta aggiungere un elemento distintivo stabile al nome; altre volte conviene un nome nuovo. Lo valutiamo con una verifica degli omonimi prima di partire."
+        },
+        {
+          "question": "Serve un logo diverso per il ristorante o la spa dell'hotel?",
+          "answer": "Serve un sistema, non loghi scollegati. Se ristorante o spa lavorano anche con clienti esterni, hanno bisogno di una variante che possa comunicare da sola. Se servono solo gli ospiti, di solito basta una declinazione del marchio principale. Progettiamo le varianti in modo che si riconosca sempre la stessa casa."
+        },
+        {
+          "question": "Cosa ricevo alla fine del progetto?",
+          "answer": "Il logo in tutte le versioni e nei formati per schermo, stampa, ricamo e insegna; palette e caratteri; le applicazioni principali già pronte, come segnaletica, chiavi, menu e modelli per i social; una guida d'uso da girare ai fornitori. Indichiamo anche le misure minime sotto le quali il marchio non va usato."
+        },
+        {
+          "question": "Quanto tempo serve per il nuovo logo di un hotel?",
+          "answer": "Dipende da quante applicazioni servono e da quanto è rapido il confronto con la proprietà. Il consiglio è partire in autunno: così il marchio è pronto quando si ristampano listini, si aggiornano portali e sito e si ordinano biancheria e insegne per la stagione successiva. Per una stima del costo c'è il calcolatore di preventivo sul sito."
+        }
+      ],
+      "metaTitle": "Logo per hotel: identità che si distingue | not4sale",
+      "metaDescription": "Logo per hotel, B&B e residence: nome verificato, marchio leggibile sui portali, sistema per insegna, spa, spiaggia e ricami. Parla con not4sale."
+    },
+    {
+      "sector": "ristorazione",
+      "service": "meta-ads",
+      "headline": "Facebook Ads per ristoranti: campagne che riempiono serate e sale",
+      "short": "Facebook e Instagram Ads per ristoranti, pizzerie e bar: aperture, serate a tema, cene di gruppo e asporto, con coperti contati.",
+      "answer": "Facebook Ads per ristoranti significa usare Facebook e Instagram per obiettivi precisi del locale: far conoscere un'apertura, riempire una serata a tema, raccogliere richieste per cene di gruppo e feste, spingere l'asporto. not4sale imposta campagne con un obiettivo per volta, collega messaggi e prenotazioni e misura quanti coperti arrivano davvero dagli annunci.",
+      "problem": "Il ristoratore tipo arriva alle campagne Meta da due strade. La prima è il post in evidenza: la foto della tagliata, due giorni, il pubblico suggerito dall'app. La seconda è l'agenzia che propone \"più follower\" come obiettivo. In entrambi i casi il risultato si misura in cuori, e i cuori non si siedono a tavola.\n\nIl problema vero è che un locale ha esigenze molto diverse durante l'anno, e una sola campagna non può servirle tutte. Lanciare un'apertura, vendere i posti della cena di pesce del giovedì, raccogliere richieste per comunioni e cene aziendali, far ordinare la pizza da asporto il martedì: sono quattro lavori, con quattro pubblici e quattro modi di misurare.\n\nPoi c'è il buco della misurazione. Le prenotazioni arrivano al telefono, su WhatsApp, dalle app di prenotazione, in direct. Nessuno chiede \"come ci ha conosciuto?\", e a fine mese non si sa se la campagna ha portato venti tavoli o nessuno. Senza questo dato il budget pubblicitario diventa la prima voce da tagliare, anche quando funzionava.",
+      "process": [
+        {
+          "title": "Obiettivi del locale",
+          "description": "Mettiamo in fila i momenti che contano nei prossimi mesi: aperture, serate, stagione dei gruppi, mesi lenti dell'asporto."
+        },
+        {
+          "title": "Un canale per prenotare",
+          "description": "Scegliamo dove far arrivare la persona, messaggi, modulo o prenotazione online, e lo colleghiamo alle campagne."
+        },
+        {
+          "title": "Riprese in sala e in cucina",
+          "description": "Giriamo video brevi di piatti, mani e persone, pensati come annunci e non come post riciclati."
+        },
+        {
+          "title": "Campagne per occasione",
+          "description": "Una campagna per ogni obiettivo, con inizio e fine, pubblico vicino e messaggio legato a una data."
+        },
+        {
+          "title": "Coperti contati",
+          "description": "Contiamo richieste, prenotazioni e coperti arrivati dagli annunci, con codici e domande semplici al momento della prenotazione."
+        }
+      ],
+      "body": "## Quando servono le Facebook Ads per ristoranti\n\nServono quando c'è un'occasione precisa da vendere e un pubblico abbastanza vicino da venire. Per un locale le campagne Meta rendono di più in quattro situazioni:\n\n1. **Apertura o cambio di gestione**: far sapere a chi vive e lavora intorno che esisti, con il locale, il menu e le persone.\n2. **Serate ed eventi**: la cena con degustazione, la serata a tema, il menu di San Valentino. Posti limitati, data fissa, un motivo per prenotare subito.\n3. **Gruppi e feste**: comunioni, compleanni, cene aziendali di dicembre. Qui l'annuncio raccoglie richieste, che poi gestisci tu al telefono.\n4. **Asporto e consegna diretta**: spingere gli ordini sui tuoi canali nei giorni deboli della settimana.\n\nPer la visibilità di tutti i giorni e i contenuti del profilo c'è il lavoro sui [social media per ristoranti](/settori/ristorazione/gestione-social); questa pagina parla delle campagne a pagamento, che seguono le regole di base della nostra gestione [Meta Ads](/servizi/advertising/meta-ads).\n\n## Messaggi, moduli o prenotazione online: dove portare il clic\n\nUn ristorante non vende online come un negozio, quindi la scelta della destinazione dell'annuncio decide quasi tutto.\n\n| Destinazione | Quando funziona | Attenzione a |\n|---|---|---|\n| Messaggi su WhatsApp, Messenger o direct | Gruppi, feste, richieste con domande | Qualcuno deve rispondere entro poche ore |\n| Modulo istantaneo di Meta | Cene aziendali e preventivi per eventi | Aggiungere una domanda su data e numero di persone |\n| Prenotazione online | Serate con posti limitati, tavoli del weekend | Il sistema deve funzionare bene da telefono |\n| Pagina del menu da asporto | Ordini diretti senza commissioni | Tempi di consegna e zone chiari |\n\nLa destinazione sbagliata più comune è il profilo Instagram: bello da vedere, ma lascia la persona a un passo dalla prenotazione senza un pulsante chiaro. Se gli annunci portano a una pagina, va costruita per quella sola azione, come una [landing page](/servizi/web-app/landing-page) con menu della serata e prenotazione.\n\n## Vino, cocktail e regole delle piattaforme\n\nSe l'annuncio mostra o cita alcolici, Meta chiede di rispettare le leggi locali e di escludere almeno i minorenni dal pubblico. Vale per il cocktail bar, ma anche per la cena con abbinamento di vini o l'aperitivo in spiaggia. Le impostazioni di età vanno quindi fissate prima di pubblicare, non corrette dopo un rifiuto.\n\nSui contenuti la prudenza è semplice: niente associazione tra alcol e guida, sport o successo personale, niente inviti a bere di più, nessun ragazzo che sembri minorenne nelle riprese. Non diamo pareri legali sulla pubblicità degli alcolici: in caso di dubbi su una promozione specifica, il riferimento è il tuo consulente o la tua associazione di categoria.\n\n## Creatività per un ristorante: cosa fa fermare il pollice\n\nNei feed fermano lo scorrimento il movimento e le persone: la pizza che esce dal forno, il piatto finito in tre secondi, il cameriere che versa il vino, la sala piena. Le foto statiche dei piatti funzionano meno, a meno che siano davvero ottime. Due accorgimenti pratici:\n\n- **un annuncio, un'occasione**: la serata del giovedì ha il suo video e la sua data scritta, non una foto generica del locale;\n- **testo leggibile senza audio**: molti guardano con il volume a zero, quindi il messaggio chiave va in sovrimpressione.\n\nPer le riprese ci appoggiamo al servizio di [video e spot](/servizi/content/video-spot): mezza giornata in cucina prima di un servizio produce materiale per più campagne.\n\n## Come misurare le Facebook Ads per un ristorante\n\nSi misura in coperti e richieste, non in copertura. I metodi semplici funzionano meglio di quelli sofisticati: un nome di serata o un codice da citare alla prenotazione, la domanda \"come ci ha conosciuto?\" fatta dal personale, i messaggi ricevuti nei giorni della campagna, le prenotazioni online con il parametro della campagna. A fine mese confrontiamo questi numeri con la spesa. Lavoriamo con locali tra Romagna e Marche partendo da Cattolica, e con ristoratori di tutta Italia da remoto. Il quadro completo, dalla scheda Google ai clienti abituali, è nella pagina sul [marketing per ristoranti](/settori/ristorazione).",
+      "faq": [
+        {
+          "question": "Quanto devo spendere in Facebook Ads per un ristorante?",
+          "answer": "Dipende dall'occasione e dal bacino. Una serata a tema con pochi posti richiede un budget piccolo e concentrato in pochi giorni; il lancio di un nuovo locale chiede qualche settimana di presenza continua. Più del totale contano la durata e il pubblico vicino. Il budget pubblicitario lo paghi direttamente a Meta, separato dalla gestione che stimi con il calcolatore di preventivo."
+        },
+        {
+          "question": "Posso sponsorizzare la serata con degustazione di vini?",
+          "answer": "Sì, con qualche attenzione. Meta ammette gli annunci che promuovono alcolici se rispettano le leggi del paese e se il pubblico esclude i minorenni. Nel testo e nelle immagini evitiamo inviti al consumo eccessivo e accostamenti con guida o sport. Impostiamo età e contenuti prima di pubblicare, così l'annuncio non viene bloccato a ridosso della data."
+        },
+        {
+          "question": "Meglio i moduli di Meta o i messaggi su WhatsApp per le cene di gruppo?",
+          "answer": "Dipende da chi risponde. I messaggi sono più naturali e convertono bene, ma richiedono che qualcuno del locale risponda in fretta, anche nei giorni di servizio. Il modulo raccoglie data, numero di persone e recapito in modo ordinato, e puoi richiamare con calma. Spesso partiamo dai messaggi e passiamo al modulo nei periodi di picco."
+        },
+        {
+          "question": "Come faccio a sapere se un cliente è arrivato dalla pubblicità?",
+          "answer": "Con metodi semplici e costanti: un codice o il nome della serata da citare alla prenotazione, una domanda del personale al tavolo, i parametri sui link della prenotazione online. Non sono perfetti, ma dopo qualche settimana danno un'indicazione affidabile. Senza nessuna misura, invece, si finisce per decidere a sensazione."
+        },
+        {
+          "question": "Le Facebook Ads funzionano anche per una pizzeria di quartiere?",
+          "answer": "Sì, se il pubblico è davvero vicino e il messaggio è concreto: la pizza del mese, l'asporto del martedì, la serata per le famiglie. Una pizzeria lavora su un raggio piccolo e su clienti che tornano, quindi bastano campagne brevi e frequenti. Non conviene invece pagare per far crescere i follower senza un motivo per venire."
+        }
+      ],
+      "metaTitle": "Facebook Ads per ristoranti: tavoli e serate | not4sale",
+      "metaDescription": "Facebook Ads per ristoranti e pizzerie: campagne per aperture, serate, cene di gruppo e asporto, con coperti e prenotazioni misurati. Parla con not4sale."
+    },
+    {
+      "sector": "studi-professionali",
+      "service": "meta-ads",
+      "headline": "Facebook Ads per avvocati e commercialisti: quando servono e come",
+      "short": "Facebook e Instagram Ads per studi legali, commercialisti e consulenti: materie per privati, incontri informativi, ricerca di collaboratori.",
+      "answer": "Facebook Ads per avvocati e commercialisti funzionano su obiettivi precisi: far conoscere lo studio ai privati di una zona su materie come successioni o partite IVA, riempire un incontro informativo, trovare collaboratori. not4sale imposta campagne con testi informativi, moduli che filtrano le richieste e regole di piattaforma rispettate, e misura i primi appuntamenti, non i clic.",
+      "problem": "Molti professionisti hanno provato una volta le sponsorizzate su Facebook e ne sono usciti delusi. Il copione è quasi sempre lo stesso: un post sulla novità fiscale del mese, messo in evidenza per una settimana, che porta qualche like di colleghi e nessuna telefonata. Oppure un modulo di contatto aperto a tutti, che si riempie di richieste di consulenze gratuite e di persone fuori zona.\n\nIl problema non è il canale. Su Facebook e Instagram nessuno sta cercando un avvocato: le persone scorrono il telefono la sera. Un annuncio che dice \"Studio legale, competenza e professionalità\" non ha motivo di fermarle. Funziona invece quando parla di una situazione concreta, che il lettore riconosce come sua, e propone un passo piccolo: una guida, un incontro, una prima chiamata conoscitiva.\n\nC'è poi un doppio vincolo che gli altri settori non hanno. Le regole del tuo ordine chiedono un'informazione corretta e non suggestiva; quelle di Meta vietano gli annunci che lasciano intendere di conoscere la situazione personale di chi legge. Chi improvvisa rischia di violare le prime, di vedersi bloccare dalle seconde, o tutte e due le cose.",
+      "process": [
+        {
+          "title": "Materie adatte a Meta",
+          "description": "Scegliamo le aree che hanno clienti privati o micro imprese nel raggio dello studio, e lasciamo le altre a Google e LinkedIn."
+        },
+        {
+          "title": "Testi informativi",
+          "description": "Scriviamo annunci che descrivono il servizio senza promettere esiti e senza parlare della situazione di chi legge, rivisti dal professionista."
+        },
+        {
+          "title": "Modulo che filtra",
+          "description": "Impostiamo moduli con due o tre domande sulla materia, sulla zona e sui tempi, per far arrivare solo richieste in target."
+        },
+        {
+          "title": "Campagne a tempo",
+          "description": "Lavoriamo per finestre: scadenze fiscali, incontri informativi, ricerca di praticanti, lancio di un nuovo servizio."
+        },
+        {
+          "title": "Appuntamenti contati",
+          "description": "Misuriamo richieste valide, primi incontri e incarichi, con un controllo mensile insieme alla segreteria."
+        }
+      ],
+      "body": "## Facebook Ads per avvocati e commercialisti: quando hanno senso\n\nHanno senso quando il cliente è un privato o una piccola impresa e si può raggiungere per zona, età o fase della vita, non per qualifica professionale. Qualche esempio concreto:\n\n- il commercialista che apre un servizio per chi avvia una partita IVA o per i forfettari della provincia;\n- lo studio che segue successioni e passaggi di proprietà degli immobili, utile a famiglie con genitori anziani;\n- il consulente del lavoro che si propone ai titolari di piccole attività stagionali prima dell'apertura;\n- l'avvocato che organizza un incontro aperto su un tema di diritto di famiglia o del condominio.\n\nQuando invece il cliente è un direttore finanziario o il titolare di una media impresa, Meta raggiunge male il decisore: lì conviene [LinkedIn Ads](/servizi/advertising/linkedin-ads), con il targeting per ruolo e settore. E chi cerca già \"avvocato successioni\" su Google va intercettato con le [campagne Google Ads per studi professionali](/settori/studi-professionali/google-ads), che lavorano sulla domanda esistente.\n\n## Gli annunci che Meta non accetta (e quelli che il tuo ordine non vorrebbe)\n\nLe regole di Meta vietano di presumere caratteristiche personali di chi legge: situazione finanziaria, problemi legali, stato civile, salute. \"Hai debiti con il fisco?\" o \"Stai divorziando?\" sono formulazioni a rischio di rifiuto, perché sembrano rivolte a una persona di cui si conosce la condizione. \"Rateizzazione dei debiti fiscali: come funziona, incontro gratuito a Pesaro\" descrive invece un servizio e un'occasione.\n\nQuesta impostazione va d'accordo con la deontologia: niente promesse di risultato, niente superlativi, niente confronti con altri studi, contenuti verificabili. Non diamo pareri deontologici né legali: impostiamo testi prudenti e li facciamo approvare dal professionista responsabile, che per i dubbi resta in contatto con il proprio ordine. Le regole generali della comunicazione degli studi le trovi nella pagina sul [marketing per studi professionali](/settori/studi-professionali).\n\nDue accortezze in più. Se lo studio promuove prodotti finanziari o di credito, in alcuni paesi Meta richiede di dichiarare una categoria speciale, con opzioni di pubblico ridotte. E per le materie più delicate, come penale o famiglia, evitiamo di costruire pubblici da chi ha visitato quelle pagine del sito: anche quando è tecnicamente possibile, inseguire una persona con annunci sul suo divorzio non è il modo di guadagnarne la fiducia.\n\n## Moduli, guide e incontri: il passo piccolo che funziona\n\nUn professionista non si sceglie da un annuncio. Si sceglie dopo averlo sentito parlare, aver letto qualcosa di suo, averlo visto rispondere bene a una domanda. Per questo le campagne che rendono di più offrono un primo contatto a basso impegno:\n\n| Offerta | Per chi | Cosa misuriamo |\n|---|---|---|\n| Guida scaricabile su un tema | Privati che si informano con calma | Contatti, poi richieste di appuntamento |\n| Incontro informativo in presenza o online | Gruppi di persone con la stessa esigenza | Iscritti, presenti, colloqui successivi |\n| Prima chiamata conoscitiva | Chi ha un'esigenza concreta e vicina | Chiamate fissate e incarichi |\n\nI moduli istantanei di Meta sono comodi ma raccolgono anche curiosi. Due o tre domande di qualificazione, come materia, comune e urgenza, riducono il volume e alzano la qualità. Chi lascia il contatto per una guida riceve poi una breve sequenza di email utili, impostata con il [lead nurturing](/servizi/crm-email/lead-nurturing).\n\n## Cercare praticanti e collaboratori con Meta\n\nUno degli usi più sottovalutati è il reclutamento. Trovare un praticante, un dipendente per l'ufficio paghe o un collaboratore esperto è diventato difficile per molti studi, e un annuncio ben scritto su Instagram raggiunge laureati e professionisti della zona che non guardano i portali del lavoro. Meta tratta gli annunci di lavoro come categoria speciale in diversi paesi, con limiti su età, genere e raggio: lo impostiamo nel rispetto delle opzioni consentite e con un testo che racconta davvero com'è lavorare nello studio.\n\n## Come misurare le Facebook Ads di uno studio\n\nSi misurano sugli appuntamenti e sugli incarichi, a distanza di settimane. Il costo per contatto da solo inganna: cento richieste di consulenza gratuita valgono meno di cinque colloqui con clienti in target. Per questo, insieme alla segreteria, classifichiamo ogni richiesta e ogni mese leggiamo quante sono diventate incontri. La base tecnica è quella della nostra gestione [Meta Ads](/servizi/advertising/meta-ads). Seguiamo studi tra Romagna e Marche da Cattolica e professionisti di tutta Italia da remoto.",
+      "faq": [
+        {
+          "question": "Un avvocato può fare pubblicità su Facebook e Instagram?",
+          "answer": "In generale l'informazione sull'attività professionale è ammessa con qualsiasi mezzo, purché corretta, veritiera e rispettosa del decoro. Contano il contenuto e i toni, non la piattaforma. Restano esclusi promesse di esito, confronti e messaggi suggestivi. Non diamo pareri deontologici: per i dubbi specifici il riferimento è il tuo ordine, e i testi li approva sempre il professionista."
+        },
+        {
+          "question": "Perché Meta mi ha rifiutato un annuncio sulle cartelle esattoriali?",
+          "answer": "Probabilmente perché il testo sembrava rivolto a una persona di cui si conosce la situazione, per esempio con una domanda diretta sui suoi debiti. Meta vieta gli annunci che presumono caratteristiche personali come condizione finanziaria o problemi legali. Riformulando l'annuncio come descrizione del servizio, senza rivolgersi alla situazione di chi legge, di solito viene approvato."
+        },
+        {
+          "question": "Ricevo richieste di consulenze gratuite: come le filtro?",
+          "answer": "Con il modulo e con il testo. Nell'annuncio chiariamo cosa offre lo studio e a chi si rivolge; nel modulo chiediamo materia, comune e tempi, così le richieste fuori zona o fuori ambito si riconoscono subito. Se la prima chiamata è gratuita, va detto quanto dura e cosa comprende, per evitare aspettative di un parere completo."
+        },
+        {
+          "question": "Meglio Facebook Ads o LinkedIn per un commercialista?",
+          "answer": "Dipende dai clienti che cerchi. Per privati, partite IVA individuali e piccole attività locali Meta raggiunge più persone a costi più bassi. Per imprese strutturate, dove decide un titolare o un responsabile amministrativo, LinkedIn è più preciso. Molti studi usano entrambi, con messaggi diversi, e lasciano a Google chi sta già cercando un professionista."
+        },
+        {
+          "question": "Quanto tempo serve per vedere i primi appuntamenti?",
+          "answer": "Le prime richieste arrivano di solito nelle prime settimane, se il budget è sufficiente e l'offerta è chiara. Gli incarichi richiedono più tempo, perché tra il contatto e la decisione passano colloqui e preventivi. Per giudicare una campagna di uno studio serve almeno un paio di mesi, letto insieme alla segreteria."
+        }
+      ],
+      "metaTitle": "Facebook Ads per avvocati e commercialisti | not4sale",
+      "metaDescription": "Facebook Ads per avvocati e commercialisti: testi informativi, moduli che filtrano, incontri e ricerca di collaboratori, misurati sugli appuntamenti."
+    },
+    {
+      "sector": "sanita-privata",
+      "service": "google-ads",
+      "headline": "Google Ads per dentisti e studi medici: pazienti che cercano adesso",
+      "short": "Google Ads per studi dentistici e medici: ricerche per prestazione, annunci informativi, prenotazioni misurate senza dati sanitari.",
+      "answer": "Google Ads per dentisti e studi medici significa comparire quando una persona cerca una prestazione o un'urgenza nella tua zona, con annunci informativi che rispettano le regole della pubblicità sanitaria e le policy di Google. not4sale sceglie le prestazioni su cui investire, esclude le ricerche inutili e misura chiamate e prenotazioni senza inviare dati sanitari alla piattaforma.",
+      "problem": "Il conto Google Ads di uno studio dentistico che riceviamo in analisi ha spesso gli stessi segni. Una sola campagna con \"dentista\" e il nome della città, che spende su chi cerca \"dentista convenzionato ASL\", \"corso assistente alla poltrona\" o \"mal di denti rimedi della nonna\". Annunci con \"promo igiene a prezzo speciale\" copiati da qualche catena, che nella sanità privata sono un rischio. E una conversione misurata sul clic del numero di telefono, che non dice se la persona ha poi prenotato.\n\nIntanto la concorrenza sugli annunci è cresciuta: catene, centri che lavorano solo sul prezzo, portali di prenotazione che comprano le ricerche delle prestazioni. Lo studio con un nome solido e una buona reputazione locale si trova a pagare clic su ricerche che non gli interessano e a perdere quelle che vorrebbe.\n\nC'è poi un limite che molti scoprono tardi: per diverse prestazioni sanitarie Google non permette il remarketing e le liste di clienti. Chi imposta le campagne come per un negozio si ritrova annunci disapprovati o pubblici bloccati, e non capisce perché.",
+      "process": [
+        {
+          "title": "Prestazioni da spingere",
+          "description": "Scegliamo con il direttore sanitario le prestazioni con posti in agenda e margine, e quelle da lasciare al passaparola."
+        },
+        {
+          "title": "Ricerche ed esclusioni",
+          "description": "Separiamo urgenze, prestazioni e nome dello studio, ed escludiamo dall'inizio lavoro, corsi, rimedi casalinghi e servizio pubblico."
+        },
+        {
+          "title": "Annunci rivisti dal medico",
+          "description": "Scriviamo testi informativi su prestazione, professionisti, sede e orari, e li facciamo approvare prima di pubblicarli."
+        },
+        {
+          "title": "Pagina per prestazione",
+          "description": "Ogni gruppo di annunci porta alla pagina della prestazione cercata, con chi la esegue e come si prenota."
+        },
+        {
+          "title": "Prenotazioni senza dati sanitari",
+          "description": "Misuriamo chiamate, richieste e prenotazioni come eventi generici, senza far arrivare a Google informazioni sulla salute."
+        }
+      ],
+      "body": "## Google Ads per dentisti: le ricerche che valgono\n\nValgono le ricerche di chi ha bisogno di una prestazione precisa, in una zona precisa, a breve. Le dividiamo in tre famiglie, ognuna con la sua campagna:\n\n| Famiglia | Esempi di ricerca | Cosa conta nell'annuncio |\n|---|---|---|\n| Urgenze | \"dentista urgenza oggi\", \"dentista aperto sabato\" | Orari reali, telefono, tempi di risposta |\n| Prestazioni | \"implantologia\", \"ortodonzia invisibile adulti\", \"fisioterapia spalla\" | Chi la esegue, come si svolge la prima visita |\n| Nome dello studio o del medico | Il nome della struttura, \"dott. Rossi dentista\" | Prenotazione diretta, sede, parcheggio |\n\nLe urgenze sono preziose nelle località turistiche: d'estate sulla costa tra Romagna e Marche chi è in vacanza con un dente rotto cerca dal telefono e chiama il primo studio che risponde. In quei mesi una campagna con estensioni di chiamata e orari estivi aggiornati vale più di qualsiasi annuncio sulle prestazioni programmabili.\n\nLe esclusioni sono metà del lavoro. Per uno studio privato escludiamo in genere ricerche legate a lavoro e formazione, servizio pubblico e convenzioni che non hai, rimedi casalinghi, sintomi cercati per curiosità. Il metodo di base delle campagne è quello della nostra gestione [Google Ads](/servizi/advertising/google-ads).\n\n## Annunci sanitari: cosa si può scrivere\n\nIn Italia la pubblicità delle strutture sanitarie private e dei professionisti deve avere carattere informativo, senza leve promozionali o suggestive. Negli annunci questo significa: niente sconti e offerte a tempo, niente \"il miglior dentista di Rimini\", niente promesse di risultato o di assenza di dolore. Si possono indicare in modo corretto la prestazione, i professionisti e i loro titoli, le tecnologie usate, la sede, gli orari e il modo di prenotare. Non siamo un ufficio legale e non diamo pareri: il testo finale lo approva il direttore sanitario, che per i dubbi fa riferimento al proprio ordine.\n\nGoogle aggiunge regole sue. Non accetta annunci per trattamenti sperimentali o non dimostrati, limita la promozione dei farmaci da prescrizione e controlla le affermazioni sulla salute. Un annuncio sobrio e preciso passa le verifiche e, spesso, convince anche di più.\n\n## Remarketing e liste di pazienti: perché spesso non si possono usare\n\nGoogle considera la salute una categoria sensibile per la pubblicità personalizzata. Quando una campagna promuove servizi legati a condizioni di salute o a procedure invasive, come chirurgia, impianti o iniezioni, la piattaforma non consente pubblici costruiti dall'inserzionista: remarketing sui visitatori del sito, liste di pazienti caricate, segmenti simili. Restano disponibili la geolocalizzazione, i dati demografici e i segmenti predefiniti di Google.\n\nIn pratica una campagna sanitaria vive di ricerche e di zona, non di inseguimento. È anche una tutela per lo studio: nessun paziente deve ritrovarsi annunci su un trattamento solo perché ha letto una pagina. Per le stesse ragioni impostiamo il [tracking con Google Tag Manager](/servizi/data-analytics/tracking-gtm) in modo che a Google arrivi \"richiesta inviata\" e non \"richiesta per impianto dentale\".\n\n## Dove portare il clic e cosa misurare\n\nIl clic va portato alla pagina della prestazione cercata, non alla home. Chi cerca ortodonzia per adulti vuole sapere chi la fa, come si svolge la prima visita e come prenotare, senza scorrere l'elenco di tutte le specialità. Se le pagine non ci sono, sono il primo lavoro da fare, spesso insieme al [sito per lo studio medico](/settori/sanita-privata/siti-web).\n\nMisuriamo poche cose, ma vere:\n\n1. chiamate dagli annunci e dal sito, con una durata minima che esclude i clic per errore;\n2. richieste dal modulo e prenotazioni online completate;\n3. prime visite effettivamente fissate, che la segreteria conferma ogni mese;\n4. costo per prima visita, per famiglia di prestazioni.\n\nCon questi numeri si decide dove spostare il budget: su una prestazione con agenda libera, via da una che ha già liste d'attesa. Il quadro delle altre leve di comunicazione per studi e centri medici è nella pagina sul [marketing per la sanità privata](/settori/sanita-privata).",
+      "faq": [
+        {
+          "question": "Un dentista può fare pubblicità su Google Ads?",
+          "answer": "Sì, purché gli annunci abbiano carattere informativo: prestazioni, professionisti, sede, orari, modalità di prenotazione. Restano fuori sconti, promozioni, superlativi e promesse di risultato. Anche Google ha regole proprie sui contenuti sanitari. Non diamo pareri legali: impostiamo testi prudenti e li fa approvare il direttore sanitario, che per i dubbi si rivolge al proprio ordine."
+        },
+        {
+          "question": "Posso fare remarketing su chi ha visitato la pagina degli impianti?",
+          "answer": "Di solito no. Google considera la salute una categoria sensibile e, per servizi legati a condizioni di salute o procedure invasive, non permette remarketing, liste di clienti e segmenti simili. Le campagne si basano quindi sulle ricerche e sulla zona. Anche dove una restrizione non scatta, per una struttura sanitaria inseguire i pazienti con annunci personalizzati è una scelta da evitare."
+        },
+        {
+          "question": "Posso scrivere i prezzi negli annunci?",
+          "answer": "Indicare il costo di una prestazione in modo trasparente non è di per sé vietato, ma presentarlo come offerta, sconto o occasione rientra nelle leve promozionali da evitare nella comunicazione sanitaria. Nei testi preferiamo informazioni su prestazione, professionisti e prima visita. Se vuoi pubblicare un listino, ne parliamo con il direttore sanitario prima di metterlo online."
+        },
+        {
+          "question": "Conviene Google Ads se sono già su un portale di prenotazioni?",
+          "answer": "Spesso sì, perché lavorano su ricerche diverse. Il portale ti mostra a chi lo usa per confrontare medici; Google Ads ti porta chi cerca la prestazione o il tuo nome direttamente su Google e prenota con te, senza intermediari. Confrontiamo il costo di una prima visita arrivata dagli annunci con quanto paghi al portale e decidiamo sui numeri."
+        },
+        {
+          "question": "Quanto budget serve per Google Ads per uno studio dentistico?",
+          "answer": "Dipende dalle prestazioni, dalla concorrenza della zona e dai posti liberi in agenda. Una campagna sul nome e sulle urgenze richiede in genere un investimento contenuto; prestazioni molto cercate come l'implantologia nei centri più grandi costano di più per clic. Partiamo da un budget di prova su poche prestazioni e lo allarghiamo dove il costo per prima visita regge."
+        }
+      ],
+      "metaTitle": "Google Ads per dentisti e studi medici | not4sale",
+      "metaDescription": "Google Ads per dentisti e studi medici: ricerche per prestazione, annunci informativi, prime visite misurate senza dati sanitari. Parla con not4sale."
+    },
+    {
+      "sector": "sanita-privata",
+      "service": "meta-ads",
+      "headline": "Facebook Ads per dentisti e studi medici: cosa si può fare oggi",
+      "short": "Facebook e Instagram Ads per studi dentistici e medici, impostate sulle restrizioni di Meta per la salute e sulla pubblicità sanitaria.",
+      "answer": "Facebook Ads per dentisti e studi medici oggi servono soprattutto a far conoscere una struttura, una nuova sede o un professionista alle persone della zona, perché Meta limita i dati di navigazione degli inserzionisti sanitari. not4sale imposta campagne di notorietà e moduli senza domande cliniche, con testi informativi rivisti dal medico e risultati misurati su richieste e prime visite.",
+      "problem": "Fino a qualche anno fa la ricetta sembrava semplice: pixel sul sito, pubblico di chi aveva visitato la pagina dello sbiancamento, annuncio con l'offerta del mese. Oggi quella ricetta non funziona più, e per due ragioni diverse.\n\nLa prima è normativa. La comunicazione sanitaria in Italia deve informare e non promuovere, quindi le offerte, i pacchetti e i toni da campagna commerciale sono da escludere a prescindere dalla piattaforma.\n\nLa seconda è tecnica. Meta classifica come sensibili molti inserzionisti del settore salute e, soprattutto nell'Unione europea, limita l'uso dei dati che arrivano dal sito: eventi del pixel, pubblici costruiti sui visitatori, ottimizzazione sulle conversioni. Molti studi se ne accorgono dalla dashboard: le conversioni non si registrano più, i pubblici personalizzati risultano non disponibili, la campagna ottimizzata sui contatti spende ma non impara.\n\nIl risultato è che chi continua a lavorare come prima spende senza capire cosa succede, e chi si arrende rinuncia a un canale che, usato nel modo giusto, fa ancora bene una cosa: far conoscere la tua struttura alle persone che vivono vicino, prima che abbiano bisogno di te.",
+      "process": [
+        {
+          "title": "Verifica dell'account",
+          "description": "Controlliamo come Meta ha classificato l'account e quali eventi, pubblici e obiettivi restano disponibili per la tua struttura."
+        },
+        {
+          "title": "Obiettivi possibili",
+          "description": "Scegliamo tra notorietà locale, traffico verso pagine informative e moduli sulla piattaforma, in base a cosa la policy consente."
+        },
+        {
+          "title": "Video del professionista",
+          "description": "Giriamo brevi video in cui il medico spiega una prestazione o presenta la struttura, con testi approvati da lui."
+        },
+        {
+          "title": "Moduli senza dati clinici",
+          "description": "I moduli chiedono solo recapito, sede e fascia oraria preferita: nessuna domanda su sintomi o patologie."
+        },
+        {
+          "title": "Misura fuori dalla piattaforma",
+          "description": "Contiamo richieste, chiamate e prime visite con la segreteria, e osserviamo le ricerche del nome dello studio."
+        }
+      ],
+      "body": "## Facebook Ads per dentisti: cosa è cambiato con le regole di Meta\n\nÈ cambiato soprattutto quello che Meta può sapere del tuo sito. Per gli account che la piattaforma riconosce come sanitari, le restrizioni sui dati riducono o bloccano gli eventi che arrivano dalle pagine web, i pubblici personalizzati basati sui visitatori e i segmenti simili costruiti su di loro. Le campagne ottimizzate sugli acquisti o sui contatti del sito, in questi casi, perdono il segnale su cui imparare.\n\nLe regole vengono aggiornate spesso e non si applicano a tutti allo stesso modo: dipendono dalla classificazione dell'account, dal paese e dal tipo di evento. Per questo il primo lavoro è una verifica dell'account, non una campagna. Ci dice cosa resta possibile per la tua struttura e su quale obiettivo conviene lavorare. Le basi tecniche di creatività e test sono quelle della nostra gestione [Meta Ads](/servizi/advertising/meta-ads); qui cambia il punto di partenza.\n\n## Le campagne che funzionano ancora per uno studio medico\n\nFunzionano le campagne che non hanno bisogno di inseguire nessuno. In pratica tre:\n\n| Campagna | Quando usarla | Cosa misurare |\n|---|---|---|\n| Notorietà locale | Nuova sede, nuovo professionista, nuova tecnologia, ampliamento degli orari | Persone raggiunte nella zona, ricerche del nome dello studio |\n| Traffico a pagine informative | Spiegare una prestazione: come si svolge, chi la fa, quanto dura | Visite alla pagina, chiamate e richieste nelle settimane successive |\n| Modulo sulla piattaforma | Raccogliere richieste di prima visita in modo semplice | Richieste valide, prime visite fissate |\n\nIl pubblico si definisce soprattutto per zona ed età, lasciando che sia il contenuto a selezionare le persone interessate. Un video di un minuto in cui l'ortodontista spiega a un genitore quando ha senso la prima visita del bambino trova da solo il pubblico giusto, senza bisogno di interessi dettagliati.\n\nPer le prestazioni estetiche, come lo sbiancamento o la medicina estetica, Meta chiede in più un pubblico maggiorenne e vieta i messaggi che fanno leva sull'insicurezza per l'aspetto. Le immagini prima e dopo sono un terreno doppiamente delicato, per le policy della piattaforma e per le regole sanitarie: in genere le evitiamo.\n\n## Moduli e dati sanitari: cosa non chiedere\n\nIl modulo istantaneo di Meta raccoglie i dati dentro la piattaforma, ed è una delle strade ancora percorribili. Proprio per questo non deve diventare una scheda anamnestica. Chiediamo nome, recapito, sede preferita e fascia oraria; la domanda \"per quale problema ci contatta?\" la fa la segreteria al telefono, non il modulo. Se serve indicare un'area, la formuliamo come scelta tra servizi della struttura, senza riferimenti a sintomi.\n\nI contatti arrivano poi al gestionale o al CRM dello studio con un'[automazione](/servizi/ai-automazione/automazioni-n8n) sicura, senza passaggi di file a mano. Il trattamento dei dati dei pazienti segue le regole del GDPR per i dati particolari: non diamo pareri legali, ma impostiamo gli strumenti in modo che il marketing veda solo ciò che gli serve, d'accordo con il tuo responsabile privacy.\n\n## Come misurare le Facebook Ads quando il pixel vede poco\n\nSi misura fuori da Meta, in modo semplice e costante. Le richieste dai moduli si contano da sole; per il resto servono la segreteria e un minimo di disciplina:\n\n1. la domanda \"come ci ha conosciuto?\" alla prima telefonata;\n2. il confronto delle richieste di prima visita nei periodi con e senza campagna;\n3. l'andamento delle ricerche del nome dello studio su Google, che una buona campagna di notorietà fa crescere;\n4. le prime visite fissate e svolte, mese per mese.\n\nNon è la precisione al centesimo dell'e-commerce, ma basta a decidere se continuare. Chi cerca già una prestazione la intercetti meglio con le [campagne Google Ads per studi medici](/settori/sanita-privata/google-ads); Meta lavora prima, sulla fiducia. Seguiamo strutture sanitarie tra Romagna e Marche da Cattolica e studi in tutta Italia da remoto. Il resto della comunicazione sanitaria lo trovi nella pagina sul [marketing per la sanità privata](/settori/sanita-privata).",
+      "faq": [
+        {
+          "question": "Perché le conversioni del mio studio non compaiono più su Meta?",
+          "answer": "Probabilmente perché Meta ha classificato l'account come sanitario e applica le restrizioni sui dati di navigazione, più severe nell'Unione europea. In quel caso alcuni eventi del sito non vengono più usati per misurare o ottimizzare, e i pubblici sui visitatori non sono disponibili. Lo verifichiamo nell'account e riorganizziamo le campagne su obiettivi che non dipendono da quei dati."
+        },
+        {
+          "question": "Posso pubblicare le foto prima e dopo dei trattamenti negli annunci?",
+          "answer": "Lo sconsigliamo. Meta ha regole specifiche per le procedure estetiche, tra cui il pubblico maggiorenne e il divieto di far leva sull'insicurezza per l'aspetto, e le regole cambiano spesso. In più la comunicazione sanitaria in Italia deve avere carattere informativo. Per una struttura sanitaria i video in cui il professionista spiega la prestazione sono più sicuri e spesso più efficaci."
+        },
+        {
+          "question": "I moduli di Meta sono sicuri per i dati dei pazienti?",
+          "answer": "Lo sono se chiedono solo ciò che serve per richiamare: nome, recapito, sede, orario preferito. Non vanno inserite domande su sintomi, patologie o terapie. I contatti vengono poi trasferiti allo studio con un collegamento automatico. Le scelte sul trattamento dei dati le condividiamo con il tuo responsabile privacy: non diamo pareri legali."
+        },
+        {
+          "question": "Ha senso Meta per un poliambulatorio con molte specialità?",
+          "answer": "Sì, soprattutto per far conoscere specialità nuove, professionisti appena arrivati o servizi poco noti, come la medicina dello sport o la fisioterapia dopo un intervento. Conviene una campagna per area, con un video del professionista di riferimento, invece di un annuncio generico sulla struttura. Il pubblico resta definito per zona, il contenuto fa la selezione."
+        },
+        {
+          "question": "Meglio Meta o Google Ads per uno studio dentistico?",
+          "answer": "Fanno due lavori diversi. Google Ads intercetta chi sta già cercando un dentista o una prestazione, quindi porta richieste più vicine alla prenotazione. Meta fa conoscere lo studio a chi abita vicino prima che ne abbia bisogno, e rafforza la fiducia. Se il budget è limitato, di solito si parte da Google e si aggiunge Meta per la notorietà locale."
+        }
+      ],
+      "metaTitle": "Facebook Ads per dentisti e studi medici | not4sale",
+      "metaDescription": "Facebook Ads per dentisti e studi medici: campagne locali dentro le regole di Meta sulla salute, moduli senza dati clinici, prime visite misurate."
+    },
+    {
+      "sector": "wellness",
+      "service": "seo-locale",
+      "headline": "SEO per centri estetici, palestre e spa: primi quando cercano vicino",
+      "short": "SEO locale per centri estetici, palestre e spa: categoria giusta su Google, pagine per trattamento e corso, recensioni pulite.",
+      "answer": "La SEO per centri estetici, palestre e spa serve a comparire su Google Maps e nei risultati quando qualcuno cerca un trattamento, un corso o una struttura vicino a casa. not4sale sistema categoria e servizi della scheda Google, crea pagine per i trattamenti e i corsi più cercati, gestisce le recensioni nel rispetto delle regole e misura chiamate e prenotazioni.",
+      "problem": "Chi cerca un'estetista o una palestra non scrive il nome di un centro: scrive \"laminazione ciglia\", \"pilates reformer\", \"massaggio decontratturante\" o \"palestra aperta la domenica\", spesso seguito da \"vicino a me\". Google risponde con una mappa e tre schede. Se la tua scheda ha la categoria sbagliata, nessun servizio elencato e le foto di cinque anni fa, quelle ricerche finiscono ai concorrenti, anche se il trattamento lo fai meglio tu.\n\nNel benessere il problema è amplificato da due fattori. Il primo è la varietà: un centro estetico offre decine di trattamenti, una palestra decine di corsi, e ognuno è una ricerca diversa. Un sito con una sola pagina \"servizi\" e un elenco puntato non si posiziona per nessuna. Il secondo è la concorrenza delle piattaforme di prenotazione e dei buoni regalo, che occupano i risultati con pagine molto ricche e si prendono una commissione su clienti che avrebbero potuto prenotare da te.\n\nIntanto le recensioni si accumulano in modo disordinato: tante dopo l'inaugurazione, poi silenzio. E per Google una scheda che non riceve recensioni da mesi è una scheda meno viva delle altre.",
+      "process": [
+        {
+          "title": "Ricerche per trattamento",
+          "description": "Mappiamo come le persone della tua zona cercano trattamenti, corsi e strutture, e quali risultati vedono oggi."
+        },
+        {
+          "title": "Categoria e servizi",
+          "description": "Scegliamo la categoria principale e quelle secondarie della scheda, e inseriamo servizi, orari dei corsi e collegamento alla prenotazione."
+        },
+        {
+          "title": "Pagine che si posizionano",
+          "description": "Scriviamo una pagina per ogni trattamento o corso che ha ricerche reali, con chi lo esegue, durata e come prenotare."
+        },
+        {
+          "title": "Recensioni costanti",
+          "description": "Impostiamo una richiesta di recensione dopo ogni appuntamento, senza incentivi, e un metodo per rispondere a tutte."
+        },
+        {
+          "title": "Misura delle azioni",
+          "description": "Ogni mese leggiamo chiamate, indicazioni stradali, clic sulla prenotazione e ricerche che portano alle pagine."
+        }
+      ],
+      "body": "## SEO per centri estetici: la categoria della scheda decide molto\n\nLa categoria principale del Profilo dell'attività su Google è uno dei segnali più forti per le ricerche locali, e nel benessere è facile sbagliarla. Centro estetico, salone di bellezza, spa, centro massaggi, palestra, studio di pilates, studio di yoga: sono categorie distinte, e Google le usa per decidere in quali ricerche mostrarti. Un centro che fa soprattutto trattamenti viso e corpo, ma ha scelto \"salone di bellezza\", può perdere visibilità proprio sulle ricerche che gli interessano.\n\nLa regola che seguiamo: la categoria principale descrive ciò che sei per la maggior parte dei clienti, le secondarie coprono le attività reali e continuative. Poi completiamo la scheda con quello che nel benessere conta di più:\n\n- **servizi con descrizione**, uno per trattamento o corso, con i nomi che usano i clienti;\n- **orari reali**, compresi quelli dei corsi serali e del sabato;\n- **collegamento alla prenotazione**, dal gestionale o dalla pagina del sito;\n- **foto degli ambienti e dello staff**, rinnovate quando cambia qualcosa.\n\nLe basi del lavoro su Maps sono quelle della nostra [SEO locale](/servizi/seo/seo-locale); qui contano le scelte specifiche del settore.\n\n## Una pagina per ogni trattamento che le persone cercano\n\nLe ricerche del benessere sono molto specifiche, quindi servono pagine specifiche. Non tutte: solo quelle dei trattamenti e dei corsi che hanno una domanda reale nella tua zona e che vuoi vendere. Ogni pagina risponde alle domande che il cliente farebbe in cabina o in reception:\n\n| Domanda | Cosa scrivere |\n|---|---|\n| Cos'è e a chi è adatto | Spiegazione semplice, senza promesse di risultato |\n| Quanto dura e cosa aspettarsi | Durata della seduta, eventuale ciclo consigliato, sensazioni |\n| Chi lo esegue | Nome e formazione dell'operatrice o dell'istruttore |\n| Come si prenota | Pulsante di prenotazione, telefono, WhatsApp |\n\nAttenzione al confine tra estetica e medicina. Trattamenti come filler e tossina botulinica sono atti medici: un centro estetico non deve creare pagine per posizionarsi su quelle ricerche, né lasciare intendere di eseguirli. Lo stesso vale per parole come \"cura\" o \"elimina definitivamente\". Un testo prudente protegge il centro e, spesso, convince di più.\n\nPer le palestre il ragionamento è simile: una pagina per corso con orari, livello e istruttore funziona meglio dell'immagine del calendario settimanale, che Google non legge e che da telefono non si ingrandisce.\n\n## Recensioni nel benessere: chiederle bene, senza regali\n\nLe recensioni pesano sulla posizione e, soprattutto, sulla scelta. Nel benessere la tentazione è offrire qualcosa in cambio: uno sconto sulla prossima seduta, un trattamento omaggio. Le regole di Google vietano gli incentivi per le recensioni, e le norme sulle pratiche commerciali scorrette vietano le recensioni false o comprate. Le regole italiane più recenti sulle recensioni riguardano soprattutto ristorazione e turismo, ma il principio vale per tutti: recensioni vere, di clienti veri, senza contropartite.\n\nCosa funziona invece: un messaggio dopo l'appuntamento con il link diretto alla scheda, il QR in reception, la richiesta fatta a voce da chi ha seguito il cliente. E le risposte, con il nome di chi risponde, senza mai citare dettagli del trattamento o della salute della persona, nemmeno per ringraziare.\n\n## Spa d'hotel, personal trainer e centri con più sedi\n\nAlcuni casi chiedono scelte su misura. Una spa d'hotel aperta agli esterni può avere una scheda propria, distinta da quella dell'hotel, quando ha ingresso, orari e servizi propri e le linee guida di Google lo consentono; così compare nelle ricerche di day spa dei residenti. Un personal trainer che lavora in più palestre non deve aprire schede con indirizzi che non gestisce, e punta più sul sito e sui contenuti. Un centro con due sedi ha bisogno di due schede e di due pagine sul sito, ciascuna con il proprio staff e i propri orari.\n\n## Come si misura la SEO di un centro benessere\n\nSi misura sulle azioni, non sulle posizioni. Ogni mese leggiamo dal Profilo dell'attività chiamate, richieste di indicazioni e clic verso la prenotazione, e da Search Console le ricerche che portano alle pagine dei trattamenti. Poi chiediamo al gestionale quante prenotazioni sono arrivate online e da quali pagine. Lavoriamo da Cattolica con centri tra Romagna e Marche, dove sulla costa le ricerche cambiano molto tra inverno ed estate, e con strutture di tutta Italia da remoto. Il resto del percorso, dall'acquisizione alla fidelizzazione, è nella pagina sul [marketing per il wellness](/settori/wellness), e il sito che ospita le pagine lo trovi nei [siti per palestre e centri estetici](/settori/wellness/siti-web).",
+      "faq": [
+        {
+          "question": "Quanto tempo serve per salire su Google Maps con un centro estetico?",
+          "answer": "I primi effetti delle correzioni alla scheda, come categoria, servizi e orari, si vedono spesso in poche settimane. Le pagine dei trattamenti e una crescita regolare delle recensioni richiedono qualche mese. Molto dipende dalla concorrenza: in un centro città con molti centri estetici serve più tempo che in un paese con due attività."
+        },
+        {
+          "question": "Posso regalare uno sconto a chi mi lascia una recensione?",
+          "answer": "No. Le regole di Google vietano di offrire incentivi in cambio di recensioni, e le norme sulle pratiche commerciali scorrette vietano le recensioni comprate o false. Una recensione ottenuta così può essere rimossa e mettere a rischio la scheda. Funziona meglio chiederla a ogni cliente soddisfatto, con un link diretto e senza contropartite."
+        },
+        {
+          "question": "La mia palestra fa anche fisioterapia: che categoria scelgo?",
+          "answer": "La categoria principale va scelta su ciò che sei per la maggior parte dei clienti, quindi probabilmente palestra. La fisioterapia può comparire come categoria secondaria solo se è un'attività reale e continuativa svolta da professionisti abilitati. Se ha un ingresso, orari e professionisti propri, valutiamo se le linee guida di Google consentono una scheda separata."
+        },
+        {
+          "question": "Conviene essere sulle piattaforme di prenotazione per l'estetica?",
+          "answer": "Possono portare clienti nuovi, soprattutto all'inizio, ma trattengono una commissione e tengono loro il rapporto con il cliente. La SEO lavora per far arrivare le persone direttamente alla tua scheda e al tuo sito. Molti centri tengono entrambe le strade e spostano gradualmente le prenotazioni verso i propri canali, misurando quanto arriva da ciascuno."
+        },
+        {
+          "question": "Serve un blog per la SEO di un centro estetico o di una palestra?",
+          "answer": "Non è il primo passo. Prima vengono la scheda Google completa e una pagina ben fatta per ogni trattamento o corso che vuoi vendere. Gli articoli hanno senso dopo, se rispondono a domande vere dei clienti, per esempio come prepararsi a un trattamento o come scegliere tra due corsi. Dieci articoli generici sul benessere non portano prenotazioni."
+        }
+      ],
+      "metaTitle": "SEO per centri estetici, palestre e spa | not4sale",
+      "metaDescription": "SEO per centri estetici, palestre e spa: scheda Google con la categoria giusta, pagine per trattamento e corso, recensioni senza incentivi. Scrivici."
+    },
+    {
+      "sector": "wellness",
+      "service": "google-ads",
+      "headline": "Google Ads per palestre e centri estetici: prove, trattamenti e regali",
+      "short": "Google Ads per palestre, centri estetici e spa: campagne per trattamento, corso e buono regalo, iscrizioni riportate dal gestionale.",
+      "answer": "Google Ads per palestre e centri estetici significa comparire quando qualcuno vicino a te cerca un corso, un trattamento o un regalo benessere, e portarlo a prenotare una prova o una seduta. not4sale divide le campagne per tipo di ricerca, esclude le ricerche inutili, rispetta le regole su salute ed estetica e misura iscrizioni e vendite, non solo i clic.",
+      "problem": "La campagna Google Ads tipica di una palestra o di un centro estetico è una sola, con parole chiave come \"palestra\" o \"centro estetico\" più il nome della città. Spende ogni giorno uguale, porta clic da chi cerca \"esercizi per addominali a casa\", \"corso per diventare estetista\" o \"palestra lavoro istruttore\", e manda tutti sulla home page. A fine mese il report mostra un costo per clic accettabile e nessuno sa quante persone si sono iscritte.\n\nIl benessere ha invece ricerche molto diverse tra loro, con intenzioni e valore diversi. Chi cerca \"pilates reformer\" sta scegliendo un corso, chi cerca \"massaggio decontratturante oggi\" vuole un appuntamento entro sera, chi cerca \"buono regalo spa coppia\" a dicembre sta facendo un regalo e vuole pagarlo online. Mescolarle in una campagna significa pagare tutto allo stesso modo e rispondere a tutti con lo stesso annuncio.\n\nC'è poi un errore di misura: la conversione è il modulo inviato. Ma per una palestra il valore sta nella prova che diventa abbonamento, e per una spa nel buono regalo venduto. Se queste informazioni non tornano a Google, le offerte automatiche continuano a cercare persone che compilano moduli, non clienti.",
+      "process": [
+        {
+          "title": "Ricerche per intenzione",
+          "description": "Separiamo corsi, trattamenti, appuntamenti in giornata e regali, ognuno con il suo budget e il suo annuncio."
+        },
+        {
+          "title": "Esclusioni del benessere",
+          "description": "Escludiamo da subito lavoro, formazione, esercizi da fare a casa, prodotti e ricerche informative senza intenzione di prenotare."
+        },
+        {
+          "title": "Pagina con una sola azione",
+          "description": "Ogni campagna porta a una pagina dedicata: prova gratuita, prenotazione del trattamento o acquisto del buono."
+        },
+        {
+          "title": "Iscrizioni dal gestionale",
+          "description": "Riportiamo in Google Ads le prove diventate abbonamenti e i buoni venduti, così l'algoritmo impara dal valore reale."
+        },
+        {
+          "title": "Calendario delle stagioni",
+          "description": "Spostiamo il budget su ripartenze, prova costume e regali, e lo riduciamo quando l'agenda è già piena."
+        }
+      ],
+      "body": "## Google Ads per palestre e centri estetici: quattro tipi di ricerca\n\nFunziona dividere le campagne secondo quello che la persona vuole fare adesso. Nel benessere le famiglie di ricerca sono quattro:\n\n| Ricerca | Esempi | Dove portare il clic |\n|---|---|---|\n| Corso o attività | \"pilates reformer\", \"crossfit principianti\", \"acquagym\" | Pagina del corso con orari e prova gratuita |\n| Trattamento | \"laminazione ciglia\", \"pressoterapia\", \"pulizia viso profonda\" | Pagina del trattamento con prenotazione |\n| Appuntamento in giornata | \"massaggio oggi\", \"estetista aperta sabato\" | Telefono o prenotazione con disponibilità visibile |\n| Regalo | \"buono regalo spa\", \"percorso benessere coppia\" | Pagina di acquisto del buono online |\n\nOgni famiglia ha costi e valori diversi, e merita un budget separato. Le ricerche di regalo, per esempio, si concentrano attorno a Natale, San Valentino e festa della mamma, e possono valere molto per una spa con vendita online dei buoni. Le basi di struttura, offerte e tracciamento sono quelle della nostra gestione [Google Ads](/servizi/advertising/google-ads).\n\n## Le ricerche da escludere nel fitness e nell'estetica\n\nNel benessere le ricerche inutili sono tantissime, perché le stesse parole servono a chi si informa, a chi cerca lavoro e a chi vuole fare da sé. L'elenco di esclusioni che prepariamo prima di accendere qualsiasi campagna contiene almeno:\n\n- **lavoro e formazione**: corsi per estetista, diploma di istruttore, offerte di lavoro nelle palestre;\n- **fai da te**: esercizi a casa, schede di allenamento, maschere naturali, video tutorial;\n- **prodotti**: creme, integratori, attrezzi da acquistare;\n- **servizi che non offri**: se non hai la piscina, \"palestra con piscina\" va escluso, anche se sembra pertinente.\n\nPoi c'è la zona. Una palestra di quartiere lavora su un raggio di pochi chilometri, una spa con percorso di coppia può attirare persone da più lontano, soprattutto nel fine settimana. Sulla costa tra Romagna e Marche, d'estate, conviene una campagna separata per chi è in vacanza e cerca un massaggio o un ingresso giornaliero.\n\n## Regole di Google su estetica, dimagrimento e medicina\n\nAlcune parole del benessere attirano l'attenzione delle policy. Google limita le affermazioni sulla salute non dimostrate e le promesse di risultati irrealistici: un annuncio del tipo \"meno cinque chili in due settimane\" rischia la disapprovazione e, comunque, attira i clienti sbagliati. Per i servizi che rientrano nelle procedure invasive, come le iniezioni della medicina estetica, la salute è una categoria sensibile per la pubblicità personalizzata: niente remarketing, niente liste di clienti, solo ricerche e targeting di base.\n\nC'è anche un confine da non oltrepassare. Filler e tossina botulinica sono atti medici: un centro estetico non deve comprare quelle parole chiave né lasciar intendere di eseguire quei trattamenti. Un ambulatorio di medicina estetica può farlo, con le regole della comunicazione sanitaria. Non diamo pareri legali: quando un trattamento sta sul confine, chiediamo al titolare di verificarlo con il proprio consulente prima di pubblicare.\n\n## Come misurare Google Ads per una palestra o un centro estetico\n\nSi misura sul valore che resta, non sul modulo. Il percorso che impostiamo è questo:\n\n1. ogni richiesta di prova o di prenotazione viene registrata come conversione con il tracciamento corretto;\n2. il gestionale segnala quali prove sono diventate abbonamenti e quali clienti hanno prenotato di nuovo;\n3. questi risultati tornano in Google Ads come conversioni offline, così le offerte automatiche imparano a cercare chi si iscrive davvero;\n4. per i buoni regalo il valore della vendita arriva direttamente dalla pagina di acquisto.\n\nQuando la base dei dati è solida, il confronto diventa semplice: quanto costa un nuovo iscritto arrivato da Google rispetto agli altri canali. Per le ricerche \"vicino a me\" la campagna lavora meglio se la scheda Google è curata, ed è il lavoro della [SEO per centri estetici e palestre](/settori/wellness/seo-locale). Il quadro completo, compreso come trattenere chi si è iscritto, è nella pagina sul [marketing per il wellness](/settori/wellness).",
+      "faq": [
+        {
+          "question": "Meglio Google Ads o le sponsorizzate su Instagram per una palestra?",
+          "answer": "Fanno due lavori diversi. Google Ads intercetta chi sta già cercando un corso o un trattamento, quindi porta richieste più vicine alla decisione. Instagram e Facebook creano il desiderio in chi non stava cercando, e funzionano bene nei periodi di ripartenza. Con un budget limitato di solito partiamo da Google sulle ricerche locali e aggiungiamo Meta quando i numeri lo giustificano."
+        },
+        {
+          "question": "Posso pubblicizzare su Google la medicina estetica nel mio centro?",
+          "answer": "Solo se i trattamenti sono eseguiti da un medico e la comunicazione segue le regole della pubblicità sanitaria. Un centro estetico non può proporre filler o tossina botulinica né lasciarlo intendere negli annunci. Inoltre per le procedure invasive Google non consente remarketing e liste di clienti. Non diamo pareri legali: i casi dubbi vanno verificati con il tuo consulente."
+        },
+        {
+          "question": "Conviene fare campagne per i buoni regalo della spa?",
+          "answer": "Sì, se il buono si può acquistare online e la pagina di vendita è semplice da telefono. Le ricerche di regalo si concentrano in pochi periodi dell'anno e hanno un valore chiaro, perché ogni vendita arriva con il suo importo. È uno dei casi in cui la misura del ritorno è più precisa, e aiuta anche a riempire le giornate dei mesi lenti."
+        },
+        {
+          "question": "Come faccio a sapere quante prove diventano iscrizioni?",
+          "answer": "Collegando le richieste arrivate dagli annunci al gestionale della palestra. Ogni contatto porta con sé un identificativo della campagna; quando la persona si iscrive, il gestionale lo segnala e il dato torna in Google Ads come conversione offline. Se il gestionale non lo permette, partiamo da un controllo mensile fatto a mano con la reception."
+        },
+        {
+          "question": "Quanto budget serve per Google Ads per un centro estetico?",
+          "answer": "Dipende dalla zona, dai trattamenti su cui vuoi investire e dalla concorrenza. In un centro città le ricerche più comuni costano di più per clic che in un paese. Di solito partiamo da poche campagne sui trattamenti con margine e posti liberi in agenda, e allarghiamo dove il costo per cliente regge. Per la gestione c'è il calcolatore di preventivo sul sito."
+        }
+      ],
+      "metaTitle": "Google Ads per palestre e centri estetici | not4sale",
+      "metaDescription": "Google Ads per palestre, centri estetici e spa: campagne per corso, trattamento e buono regalo, con iscrizioni riportate dal gestionale. Scrivici."
+    },
+    {
+      "sector": "wellness",
+      "service": "meta-ads",
+      "headline": "Facebook Ads per centri estetici e palestre: prove che diventano clienti",
+      "short": "Facebook e Instagram Ads per palestre, centri estetici e spa: moduli che filtrano, richiamo rapido, regole su estetica rispettate.",
+      "answer": "Facebook Ads per centri estetici e palestre servono a far provare la struttura a persone della zona che non stavano cercando, con annunci girati in sala e un modulo semplice per prenotare. not4sale imposta campagne nel rispetto delle regole di Meta su estetica e dimagrimento, organizza il richiamo dei contatti e misura quante prove diventano abbonamenti o clienti abituali.",
+      "problem": "Le campagne Meta di molte palestre e centri estetici producono un numero impressionante di contatti e una delusione altrettanto grande. Il modulo \"prova gratuita\" si riempie, la reception chiama e trova numeri che non rispondono, persone che non ricordano di essersi iscritte, curiosi che volevano solo sapere il prezzo. Dopo qualche settimana lo staff smette di richiamare e il titolare conclude che \"da Facebook arrivano solo perditempo\".\n\nIl problema è quasi sempre nel percorso, non nel canale. Un modulo che chiede solo nome e telefono, un'offerta troppo generica, un richiamo che arriva dopo tre giorni: ogni passaggio fa perdere una parte delle persone interessate. E l'algoritmo, che riceve come segnale \"modulo inviato\", impara a trovare altre persone che compilano moduli, non clienti.\n\nNel benessere si aggiunge un rischio specifico: le policy di Meta su estetica, dimagrimento e salute. Un annuncio con la foto della pancia pizzicata, una promessa di chili persi o un testo che fa sentire inadeguato chi legge viene rifiutato, e gli annunci respinti ripetutamente possono creare problemi all'account pubblicitario.",
+      "process": [
+        {
+          "title": "Offerta di ingresso",
+          "description": "Definiamo con te un primo passo concreto, come una prova, una valutazione o un primo trattamento, e cosa succede dopo."
+        },
+        {
+          "title": "Creatività conformi",
+          "description": "Giriamo video con istruttori e operatrici veri, senza promesse sul corpo e con il pubblico maggiorenne quando le regole lo chiedono."
+        },
+        {
+          "title": "Modulo che seleziona",
+          "description": "Aggiungiamo domande su obiettivo, orari preferiti e sede, per far arrivare in reception contatti già orientati."
+        },
+        {
+          "title": "Richiamo entro la giornata",
+          "description": "Colleghiamo il modulo a WhatsApp, email o al gestionale, così ogni contatto riceve risposta in poche ore."
+        },
+        {
+          "title": "Dal contatto all'abbonamento",
+          "description": "Contiamo prove prenotate, presenze e iscrizioni, e rimandiamo a Meta i contatti diventati clienti."
+        }
+      ],
+      "body": "## Facebook Ads per centri estetici e palestre: il percorso prima dell'annuncio\n\nPrima di scrivere un annuncio serve sapere cosa succede dopo il clic. Per una palestra o un centro estetico il percorso che funziona ha quattro tappe: l'annuncio mostra la struttura e le persone, il modulo raccoglie un contatto già orientato, la reception richiama in giornata, la prova viene vissuta come l'inizio di un percorso e non come un omaggio. Se una tappa manca, il costo per contatto può essere bassissimo e quello per cliente altissimo.\n\nIl modulo istantaneo di Meta è comodo perché si compila senza uscire da Instagram, ma proprio per questo attira anche chi tocca per sbaglio. Due o tre domande di selezione, come obiettivo, fascia oraria preferita e sede, abbassano il numero di contatti e alzano quelli che si presentano. Le regole generali di struttura e test sono quelle della nostra gestione [Meta Ads](/servizi/advertising/meta-ads).\n\n## Le regole di Meta su estetica, dimagrimento e salute\n\nMeta ha regole specifiche per gli annunci di salute e benessere, riviste più volte negli ultimi anni e aggiornate anche nel 2026. Alcuni punti sono stabili e conviene rispettarli sempre:\n\n- **pubblico maggiorenne** per gli annunci che promuovono dimagrimento, procedure e trattamenti estetici;\n- **niente leva sull'insicurezza**: i messaggi che fanno sentire inadeguato chi legge, o che indicano un corpo ideale a cui aspirare, vengono respinti;\n- **niente primi piani del grasso pizzicato** e niente promesse di risultati rapidi o garantiti;\n- **niente caratteristiche personali presunte**: \"Sei in sovrappeso?\" o \"Hai la cellulite?\" si rivolgono alla condizione di chi legge e non sono ammessi;\n- **prima e dopo con molta cautela**: per il dimagrimento e alcuni trattamenti restano vietati o a rischio, e in ogni caso richiedono il consenso scritto della cliente e immagini oneste.\n\nC'è poi il caso dei centri vicini al mondo sanitario, come gli ambulatori di medicina estetica o gli studi di nutrizione. Meta può classificare l'account come sanitario e limitare l'uso dei dati del sito, dagli eventi del pixel ai pubblici dei visitatori. Lo verifichiamo all'inizio, perché cambia il tipo di campagna che si può fare. Non diamo pareri legali sulle norme della pubblicità sanitaria: per i trattamenti medici il riferimento è il medico responsabile.\n\n## Creatività che funzionano nel benessere\n\nFunzionano le persone vere e le spiegazioni concrete. L'istruttrice che mostra in venti secondi come si svolge la prima lezione di pilates, l'operatrice che racconta cosa succede durante un trattamento viso, il titolare che presenta la sala pesi vuota alle sette del mattino a chi teme l'affollamento. Funzionano molto meno i corpi scolpiti e le immagini prese da archivi fotografici, che allontanano proprio chi deve iniziare.\n\nPer ogni campagna prepariamo più angoli: il primo passo facile, l'ambiente, lo staff, la testimonianza di una cliente che ha dato il consenso. Il materiale nasce spesso dalle stesse giornate di ripresa usate per i contenuti organici, gestiti con la [gestione social per centri estetici e palestre](/settori/wellness/gestione-social).\n\n## Ex iscritti e clienti: i pubblici che costano meno\n\nChi è già stato tuo cliente si riconvince più facilmente di uno sconosciuto. Con il consenso al marketing raccolto correttamente, le liste di ex iscritti e di clienti che non prenotano da mesi diventano pubblici per campagne di ritorno: una nuova attività, un corso appena aperto, un trattamento stagionale. Le stesse liste servono a escludere gli iscritti attivi dalle campagne di acquisizione, così non paghi per mostrare la prova gratuita a chi ha già l'abbonamento.\n\n## Come misurare le Facebook Ads per palestre e centri estetici\n\nSi misura lungo tutto il percorso: contatti, prove prenotate, prove svolte, iscrizioni o secondi appuntamenti. Quando il gestionale o il CRM lo permettono, rimandiamo a Meta l'informazione su quali contatti sono diventati clienti, così l'algoritmo impara a cercare persone simili a chi si iscrive e non a chi compila. Lavoriamo da Cattolica con strutture tra Romagna e Marche e con centri di tutta Italia da remoto. Le altre leve, dalla scheda Google alla fidelizzazione, sono nella pagina sul [marketing per il wellness](/settori/wellness).",
+      "faq": [
+        {
+          "question": "Perché dalle Facebook Ads arrivano contatti che non rispondono?",
+          "answer": "Di solito per tre motivi: un modulo troppo facile da inviare, un'offerta generica e un richiamo che arriva troppo tardi. Aggiungendo due domande di selezione, rendendo chiaro cosa comprende la prova e rispondendo entro poche ore, la quota di persone che si presentano cresce. Meno contatti in totale, ma più clienti."
+        },
+        {
+          "question": "Posso usare le foto prima e dopo delle mie clienti negli annunci?",
+          "answer": "Con molta cautela. Per il dimagrimento e per alcuni trattamenti estetici Meta le vieta o le considera a rischio, e le regole sono cambiate più volte. Quando sono ammesse servono il consenso scritto della cliente, immagini oneste con stessa luce e posa, e un pubblico maggiorenne. Spesso un video che spiega il trattamento funziona altrettanto bene, senza rischi."
+        },
+        {
+          "question": "Meta mi ha rifiutato un annuncio sul dimagrimento: cosa ho sbagliato?",
+          "answer": "Le cause più frequenti sono una promessa di risultato, come chili persi in un certo tempo, un testo che si rivolge alla condizione fisica di chi legge, un'immagine che punta su una parte del corpo, o un pubblico non limitato ai maggiorenni. Riscriviamo l'annuncio parlando del servizio e del percorso, non del corpo di chi guarda."
+        },
+        {
+          "question": "Ha senso Meta per un personal trainer o un piccolo studio?",
+          "answer": "Sì, con un pubblico molto locale e un'offerta chiara, come una valutazione iniziale o un mese di prova in piccolo gruppo. Il volto del trainer è il contenuto più forte, perché la scelta è personale. Bastano campagne piccole e costanti, purché ci sia sempre qualcuno pronto a rispondere ai messaggi in giornata."
+        },
+        {
+          "question": "Quando conviene investire di più nelle campagne?",
+          "answer": "Nei momenti in cui le persone decidono di ricominciare: la ripartenza dopo l'estate, l'inizio dell'anno e le settimane prima della bella stagione. Per centri estetici e spa contano anche i periodi dei regali. Fuori da queste finestre conviene ridurre l'acquisizione e lavorare su ex clienti e iscritti vicini alla scadenza."
+        }
+      ],
+      "metaTitle": "Facebook Ads per centri estetici e palestre | not4sale",
+      "metaDescription": "Facebook Ads per centri estetici, palestre e spa: annunci conformi alle regole Meta su estetica e dimagrimento, prove che diventano iscritti."
+    }
+  ]
+}

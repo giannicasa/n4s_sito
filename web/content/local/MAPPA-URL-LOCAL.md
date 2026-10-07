@@ -208,6 +208,63 @@ URL ammessi nei link Markdown delle pagine territoriali (oltre a quelli di conte
 - /settori/agroalimentare/siti-web
 - /settori/agroalimentare/logo-identita-visiva
 
+### Servizio per settore — griglia completa
+
+- /settori/hotel/meta-ads
+- /settori/hotel/logo-identita-visiva
+- /settori/ristorazione/meta-ads
+- /settori/studi-professionali/meta-ads
+- /settori/sanita-privata/google-ads
+- /settori/sanita-privata/meta-ads
+- /settori/wellness/seo-locale
+- /settori/wellness/google-ads
+- /settori/wellness/meta-ads
+- /settori/immobiliare/seo-locale
+- /settori/immobiliare/google-ads
+- /settori/immobiliare/meta-ads
+- /settori/moda/siti-web
+- /settori/moda/seo-locale
+- /settori/moda/google-ads
+- /settori/moda/meta-ads
+- /settori/edilizia/seo-locale
+- /settori/edilizia/gestione-social
+- /settori/edilizia/google-ads
+- /settori/edilizia/meta-ads
+- /settori/agroalimentare/seo-locale
+- /settori/agroalimentare/gestione-social
+- /settori/agroalimentare/google-ads
+- /settori/agroalimentare/meta-ads
+- /settori/manifatturiero/siti-web
+- /settori/manifatturiero/seo-locale
+- /settori/manifatturiero/gestione-social
+- /settori/manifatturiero/google-ads
+- /settori/manifatturiero/meta-ads
+- /settori/manifatturiero/logo-identita-visiva
+- /settori/arredamento/siti-web
+- /settori/arredamento/seo-locale
+- /settori/arredamento/gestione-social
+- /settori/arredamento/google-ads
+- /settori/arredamento/meta-ads
+- /settori/arredamento/logo-identita-visiva
+- /settori/nautica/siti-web
+- /settori/nautica/seo-locale
+- /settori/nautica/gestione-social
+- /settori/nautica/google-ads
+- /settori/nautica/meta-ads
+- /settori/nautica/logo-identita-visiva
+- /settori/stabilimenti-balneari/siti-web
+- /settori/stabilimenti-balneari/seo-locale
+- /settori/stabilimenti-balneari/gestione-social
+- /settori/stabilimenti-balneari/google-ads
+- /settori/stabilimenti-balneari/meta-ads
+- /settori/stabilimenti-balneari/logo-identita-visiva
+- /settori/automotive/siti-web
+- /settori/automotive/seo-locale
+- /settori/automotive/gestione-social
+- /settori/automotive/google-ads
+- /settori/automotive/meta-ads
+- /settori/automotive/logo-identita-visiva
+
 ## Indici
 
 - /agenzia-marketing

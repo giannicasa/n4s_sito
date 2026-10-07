@@ -1,0 +1,338 @@
+{
+  "items": [
+    {
+      "sector": "automotive",
+      "service": "siti-web",
+      "headline": "Siti web per concessionarie e autosaloni con lo stock sempre aggiornato",
+      "short": "Siti per concessionarie, autosaloni e officine: stock sincronizzato, schede veicolo complete, richieste di permuta e test drive tracciate.",
+      "answer": "I siti web per concessionarie e autosaloni che progettiamo in not4sale mostrano lo stock reale dei veicoli, sincronizzato con il gestionale, e trasformano ogni scheda in una richiesta precisa: prova su strada, valutazione della permuta, informazioni sul finanziamento, prenotazione in officina. Ogni contatto arriva al reparto giusto con il veicolo e la fonte già indicati.",
+      "problem": "Apri il sito di una concessionaria a caso e trovi quasi sempre la stessa scena. In home, lo slider con le immagini della casa madre. Nella sezione usato, una finestra incorporata dal portale di annunci, lenta e con il logo di qualcun altro. In fondo, un modulo \"contattaci\" uguale per tutto: chi vuole provare un'auto, chi vuole vendere la sua, chi deve fare il tagliando.\n\nIl risultato è un sito che lavora contro il salone. Chi cerca un usato preciso trova schede con tre foto e una descrizione copiata, oppure trova un'auto venduta due settimane fa e chiama per niente. Chi ha già un'auto da dare dentro non sa cosa scrivere e rimanda. Chi vuole capire quanto pagherebbe al mese non trova nulla e va a chiedere altrove.\n\nE dall'altra parte del modulo il venditore riceve un messaggio generico, senza sapere quale veicolo ha visto la persona né da dove arriva. Lo richiama tardi, gli chiede di ripetere tutto, e intanto il cliente ha già fissato una prova da un'altra parte. Il sito c'è, costa, ma il salone continua a vendere grazie ai portali e al passaparola.",
+      "process": [
+        {
+          "title": "Mappa dei reparti",
+          "description": "Elenchiamo cosa vende e cosa offre la sede: nuovo per marchio, usato, noleggio, officina, ricambi. Ogni reparto avrà il suo percorso e il suo destinatario."
+        },
+        {
+          "title": "Collegamento dello stock",
+          "description": "Colleghiamo il sito al gestionale o al flusso che già alimenta i portali, così un veicolo inserito o venduto si aggiorna ovunque senza doppio lavoro."
+        },
+        {
+          "title": "Schede e moduli",
+          "description": "Progettiamo la scheda veicolo e i moduli per prova, permuta, finanziamento e officina, con le domande che servono davvero al venditore."
+        },
+        {
+          "title": "Verifica dei testi",
+          "description": "Rivediamo con te e con la finanziaria i testi su prezzi e rate, e con il manuale della casa l'uso di loghi e immagini del marchio."
+        },
+        {
+          "title": "Richieste e vendite",
+          "description": "Tracciamo ogni richiesta per veicolo, reparto e fonte, e la colleghiamo al CRM per vedere quante diventano prove e contratti."
+        }
+      ],
+      "body": "## Siti web per concessionarie: cosa devono avere\n\nDeve fare tre cose meglio dei portali: mostrare lo stock completo e aggiornato, raccontare il salone e le persone, raccogliere richieste più precise. Rispetto a un normale [sito aziendale](/servizi/web-app/siti-web), il cuore è il catalogo dei veicoli, e attorno al catalogo girano tutti gli altri contenuti.\n\n- **Stock sincronizzato.** Il sito legge i veicoli dal gestionale del salone o dal flusso dati che già invii ai portali. Un'auto venduta sparisce in automatico, una nuova arriva con foto e dati senza che nessuno la ricarichi a mano.\n- **Filtri che usa chi compra.** Marca, modello, alimentazione, cambio, chilometri, anno, fascia di prezzo, pronta consegna. Su mobile devono stare in un pannello comodo, non in una colonna minuscola.\n- **Pagine dei modelli nuovi** con allestimenti, motorizzazioni disponibili in salone e tempi di consegna indicativi, invece di rimandare al configuratore della casa e perdere il contatto.\n- **Pagine per reparto**: usato, noleggio a breve e lungo termine, officina, carrozzeria, ricambi. Con orari, telefoni e referenti diversi, perché sono clienti diversi.\n- **Il salone e le persone**: foto vere della sede e dei venditori, come arrivare, servizi come la ricarica o l'area di attesa.\n\nSotto il cofano servono i [dati strutturati](/servizi/ai-search/dati-strutturati) sulle schede veicolo e sulla sede, per dare a Google e agli assistenti AI informazioni ordinate su cosa vendi e dove.\n\n## Permuta, finanziamento e prova su strada: moduli diversi per richieste diverse\n\nOgni richiesta ha bisogno di informazioni diverse, e un modulo unico le perde tutte. Le separiamo così:\n\n| Richiesta | Cosa chiediamo | A chi arriva |\n|---|---|---|\n| Prova su strada | Veicolo, giorno preferito, recapito | Venditore del marchio o dell'usato |\n| Valutazione permuta | Targa o modello, anno, chilometri, foto, stato | Responsabile usato |\n| Informazioni sul finanziamento | Veicolo, anticipo indicativo, durata desiderata | Addetto finanziamenti |\n| Prenotazione officina | Veicolo, intervento, data | Accettazione service |\n\nIl modulo di permuta è quello che sblocca più trattative: chi ha un'auto da dare dentro spesso non si muove finché non sa quanto vale. Qualche foto e i chilometri bastano al tuo responsabile usato per dare una prima indicazione e fissare la perizia.\n\nSu prezzi e rate serve prudenza. Un prezzo valido solo con un finanziamento va dichiarato in modo chiaro, e quando si indicano tassi o importi delle rate la normativa sul credito ai consumatori chiede informazioni precise, come il TAEG con un esempio rappresentativo. L'Antitrust è già intervenuta più volte nel settore su prezzi auto legati a un finanziamento non dichiarato bene. Noi non diamo pareri legali: impostiamo il sito perché i testi su prezzi e condizioni siano chiari e facili da aggiornare, e li facciamo validare dalla tua finanziaria o dal tuo consulente prima della pubblicazione.\n\n## Errori frequenti nei siti delle concessionarie\n\n- **L'usato dentro una finestra del portale.** Lento, poco leggibile da Google e con i contatti che a volte passano dal portale invece che da te.\n- **Auto vendute ancora online.** Fanno perdere tempo al cliente e fiducia nel salone.\n- **Solo foto della casa madre.** Le stesse immagini le hanno tutti i dealer del marchio: non ti distinguono e non dicono cosa hai in piazzale.\n- **Un solo numero di telefono** per vendita, officina e ricambi, con il centralino che rimbalza le chiamate.\n- **Moduli senza veicolo collegato**, per cui il venditore non sa di quale auto si parla.\n- **Officina invisibile**: niente prenotazione online, niente pagina su tagliandi, revisioni e cambio gomme.\n\n## Officine, carrozzerie e noleggi: cosa cambia\n\nPer un'officina o una carrozzeria il catalogo lascia il posto ai servizi. Contano le pagine per intervento (tagliando, freni, climatizzatore, revisione, sinistri), la prenotazione con scelta della data e, per le carrozzerie, un modulo che accetti le foto del danno. Le officine autorizzate di un marchio devono seguire le regole della casa su come presentarsi; quelle indipendenti possono dire quali marche trattano, senza far credere di essere la rete ufficiale.\n\nPer i noleggi, soprattutto in zone turistiche come la Riviera tra Rimini e Pesaro, il sito diventa un sistema di prenotazione: categorie di veicolo, date, ritiro e riconsegna, condizioni e cauzione scritte in chiaro.\n\n## Come misuriamo il sito di un salone\n\nContiamo le richieste per tipo e per veicolo, non le visite. Ogni modulo, ogni clic sul telefono e su WhatsApp porta con sé la fonte e la scheda da cui è partito. Collegando il sito al CRM vediamo quante richieste diventano prove, quante prove diventano contratti, e quali modelli generano interesse senza chiudere.\n\nQuesti dati servono anche alle campagne: se lanci [Google Ads per concessionarie](/settori/automotive/google-ads) sapere quali schede convertono cambia dove metti il budget. Per il quadro completo del settore c'è la pagina sul [marketing per l'automotive](/settori/automotive). Lavoriamo da Cattolica con saloni e officine di Romagna e Marche e da remoto con il resto d'Italia; per una stima dell'impegno puoi partire dal [preventivo online](/preventivo).",
+      "faq": [
+        {
+          "question": "Il sito può leggere lo stock dal mio gestionale o dai portali?",
+          "answer": "Nella maggior parte dei casi sì. Molti gestionali per concessionarie esportano già un flusso di dati verso i portali di annunci: lo stesso flusso, o un'esportazione dedicata, può alimentare il sito. Prima di preventivare verifichiamo con il fornitore del gestionale quali dati escono e con che frequenza, così sai in anticipo se l'aggiornamento sarà automatico o serve un passaggio intermedio."
+        },
+        {
+          "question": "Posso mostrare la rata mensile accanto al prezzo?",
+          "answer": "Si può, ma la rata va accompagnata dalle informazioni che la normativa sul credito ai consumatori richiede, come TAEG ed esempio rappresentativo, e deve essere chiaro se il prezzo vale solo con quel finanziamento. Per questo impostiamo i testi con la tua finanziaria e li facciamo verificare prima di pubblicarli. Spesso conviene un modulo di richiesta informazioni invece di una cifra fissa."
+        },
+        {
+          "question": "Se sono un dealer ufficiale posso usare loghi e immagini della casa?",
+          "answer": "Di solito sì, ma secondo le regole del contratto di concessione e del manuale di identità della casa madre, che stabiliscono come usare marchi, nomi dei modelli e immagini. Prima di progettare chiediamo quei documenti, perché a volte prevedono anche un sito ufficiale del dealer gestito dalla casa: in quel caso il nostro lavoro si concentra su usato, officina e servizi del gruppo."
+        },
+        {
+          "question": "Un autosalone di usato ha bisogno di un sito se è già sui portali?",
+          "answer": "I portali portano volume, ma ti mettono accanto a decine di concorrenti nella stessa pagina. Il sito è il posto dove chi ti ha già notato verifica chi sei, guarda tutto lo stock senza distrazioni e ti scrive direttamente. Serve anche alle campagne pubblicitarie, che funzionano molto meglio portando le persone su una scheda tua."
+        },
+        {
+          "question": "Si può integrare la prenotazione online dell'officina?",
+          "answer": "Sì. Possiamo inserire un calendario con gli slot disponibili oppure un modulo di richiesta che l'accettazione conferma con una chiamata o un messaggio. La scelta dipende da quanto è prevedibile il carico di lavoro. Se usi già un software di gestione dell'officina con un modulo di prenotazione, lo colleghiamo al sito invece di rifarlo."
+        },
+        {
+          "question": "Chi aggiorna foto e descrizioni dei veicoli?",
+          "answer": "Chi li inserisce già nel gestionale: il sito li riprende da lì. Quello che possiamo migliorare è il metodo, con una lista di scatti standard per ogni auto, un modello di descrizione con dotazioni e storia del veicolo e, se serve, una breve formazione a chi prepara le auto in piazzale. Così la qualità resta costante anche quando cambia chi scatta."
+        }
+      ],
+      "metaTitle": "Siti web per concessionarie e autosaloni | not4sale",
+      "metaDescription": "Siti web per concessionarie, autosaloni e officine: stock veicoli sincronizzato, moduli per permuta, prova e officina, richieste tracciate fino alla vendita."
+    },
+    {
+      "sector": "automotive",
+      "service": "seo-locale",
+      "headline": "SEO locale per concessionarie e officine: una scheda per ogni reparto",
+      "short": "Schede Google separate per vendita, officina e ricambi, recensioni per reparto e pagine locali: così concessionarie e officine escono su Maps.",
+      "answer": "La SEO locale per concessionarie e officine di not4sale organizza la presenza su Google Maps per reparto: vendita del nuovo per marchio, usato, officina, carrozzeria e ricambi, ciascuno con categoria, orari e recensioni propri quando le regole di Google lo consentono. Poi colleghiamo le schede a pagine locali del sito e misuriamo chiamate, indicazioni stradali e prenotazioni.",
+      "problem": "Cerca \"officina\" o \"concessionaria\" più il nome della tua città e guarda la mappa. Spesso compare una sola scheda per una sede che fa quattro mestieri diversi: vende auto nuove di due marchi, ha un piazzale di usato, un'officina e un banco ricambi. Una scheda con una categoria sola, un orario solo e un telefono solo.\n\nIl problema è che chi cerca \"tagliando\" e chi cerca \"concessionaria\" fanno ricerche diverse, in orari diversi, e Google sceglie quale scheda mostrare guardando categoria, pertinenza e recensioni. Se l'officina non ha una sua scheda, perde le ricerche di service a favore del meccanico indipendente sotto casa. Se la vendita ha l'orario dell'officina, il sabato pomeriggio risulta chiusa proprio quando la gente gira per saloni.\n\nPoi ci sono le recensioni. Quelle sulla consegna di un'auto nuova si mescolano a quelle sull'attesa in accettazione, e il voto medio non racconta bene nessuno dei due reparti. Infine le schede duplicate, aperte negli anni da un ex dipendente, dalla casa madre o da un portale, che confondono Google e i clienti.",
+      "process": [
+        {
+          "title": "Censimento delle schede",
+          "description": "Troviamo tutte le schede esistenti della sede, anche quelle aperte da altri o duplicate, e chiediamo l'accesso o l'unione."
+        },
+        {
+          "title": "Struttura per reparto",
+          "description": "Decidiamo quali reparti possono avere una scheda propria secondo le linee guida di Google per i concessionari, con categorie e orari corretti."
+        },
+        {
+          "title": "Pagine locali collegate",
+          "description": "Ogni scheda punta a una pagina dedicata del sito: vendita del marchio, usato, officina, carrozzeria, con indirizzo e servizi specifici."
+        },
+        {
+          "title": "Recensioni per reparto",
+          "description": "Impostiamo richieste di recensione dopo la consegna e dopo l'intervento in officina, verso la scheda giusta, e un metodo per rispondere."
+        },
+        {
+          "title": "Misura delle azioni",
+          "description": "Contiamo chiamate, indicazioni stradali e prenotazioni per scheda, e vediamo quali ricerche portano clienti in salone e in officina."
+        }
+      ],
+      "body": "## SEO locale per concessionarie: quante schede Google si possono avere?\n\nDipende da cosa vende la sede. Le linee guida di Google per i concessionari distinguono tra chi vende auto nuove come dealer ufficiale e chi vende solo usato, e il dettaglio va verificato sulla tua situazione prima di creare qualsiasi scheda. In sintesi:\n\n- **Concessionaria di auto nuove**: può avere la scheda principale di vendita e schede di reparto per officina e ricambi, ciascuna con una categoria diversa da quella principale. Se nella stessa sede si vendono più marchi nuovi, Google prevede schede distinte per marchio invece di un nome che li unisce tutti.\n- **Autosalone di solo usato**: una scheda per la vendita, senza schede per i marchi trattati. Se c'è un'officina interna, può avere la sua scheda di reparto.\n- **Officina o carrozzeria indipendente**: una scheda per sede, con la categoria che descrive meglio l'attività principale e le altre come categorie secondarie.\n\nAprire schede che le regole non consentono, o mettere parole chiave nel nome (\"Concessionaria Rossi Auto Usate Garantite Km 0\"), è il modo più rapido per vedere la scheda sospesa. Il nome resta quello reale dell'attività, come compare all'ingresso e nei documenti.\n\nQuesto è il punto in cui la [SEO locale](/servizi/seo/seo-locale) per l'automotive si allontana di più da quella degli altri settori: la struttura delle schede conta quanto la loro cura.\n\n## Orari, categorie e attributi: i dettagli che spostano le ricerche\n\nOgni reparto ha i suoi orari e vanno indicati scheda per scheda. L'officina che apre alle 8 e chiude il sabato, la vendita aperta il sabato pomeriggio, i ricambi con un orario ancora diverso. Le chiusure estive e festive si impostano come orari speciali, così Google non manda clienti davanti a un cancello chiuso.\n\nLe categorie fanno il resto. Per la vendita esistono categorie per i concessionari dei singoli marchi e per l'usato; per il service, officina, gommista, carrozzeria, centro revisioni. Scegliere quella principale giusta per ogni scheda è spesso la modifica che dà più risultato con meno lavoro. Completano il quadro servizi elencati, foto vere della sede e dell'officina, il link di prenotazione dove esiste.\n\n## Recensioni: separare la vendita dall'officina\n\nLe recensioni vanno chieste al momento giusto e verso la scheda giusta. Il cliente che ha appena ritirato l'auto nuova recensisce la vendita; quello che ha appena pagato un tagliando recensisce l'officina. Un messaggio automatico dopo la consegna o dopo la chiusura della commessa, con il link diretto alla scheda corretta, funziona molto meglio della richiesta a voce al banco.\n\nLe risposte contano quanto le recensioni. Su una recensione negativa sull'officina rispondi con i fatti, senza dettagli personali del cliente e senza polemica: chi legge è il prossimo cliente, non chi ha scritto. Le recensioni non si comprano e non si filtrano chiedendole solo ai clienti contenti: Google lo vieta e lo sanziona.\n\n## Le pagine del sito che sostengono le schede\n\nUna scheda forte punta a una pagina che conferma quello che promette. Per ogni reparto serve una pagina con indirizzo, orari, servizi, referenti e un modo per prenotare o chiedere un preventivo. Per un'officina valgono pagine dedicate agli interventi più cercati: tagliando, revisione, cambio gomme, climatizzatore, freni, ricarica e manutenzione di auto ibride ed elettriche se le segui. Per l'usato, la pagina dello stock con il nome della città nel titolo.\n\nIl sito va pensato insieme alle schede: ne parliamo nella pagina sui [siti web per concessionarie](/settori/automotive/siti-web). E se a un gruppo con più sedi serve un quadro unico, aggiungiamo i [dati strutturati](/servizi/ai-search/dati-strutturati) per sede e reparto.\n\n## Come misuriamo la SEO locale di un salone\n\nGuardiamo le azioni, non solo le visualizzazioni: chiamate, richieste di indicazioni stradali, clic sul sito e prenotazioni, scheda per scheda. Dalle statistiche delle schede vediamo anche con quali ricerche le persone ti trovano, e capiamo se l'officina compare per \"tagliando\" e \"revisione\" o solo per il tuo nome.\n\nDa Cattolica seguiamo concessionarie e officine tra Romagna e Marche, dove spesso il bacino di una sede attraversa il confine di provincia, e da remoto lavoriamo anche con gruppi di altre regioni. Per il contesto del settore c'è la pagina sul [marketing per concessionarie e officine](/settori/automotive); per una stima puoi usare il [preventivo online](/preventivo).",
+      "faq": [
+        {
+          "question": "La casa madre ha già creato la scheda della mia concessionaria: chi la gestisce?",
+          "answer": "Dipende dagli accordi con il marchio. Alcune case gestiscono centralmente le schede dei dealer o ne controllano una parte, come nome e categoria, altre lasciano piena autonomia. Prima di toccare qualcosa verifichiamo chi è proprietario della scheda e quali campi puoi modificare, così evitiamo conflitti con le regole del marchio e modifiche annullate."
+        },
+        {
+          "question": "Posso far comparire l'officina anche nei comuni vicini?",
+          "answer": "La scheda compare soprattutto vicino all'indirizzo reale, e non si può aprire una scheda in un comune dove non hai una sede con personale. Per allargare il bacino lavoriamo su pagine del sito dedicate ai servizi, sulla qualità delle recensioni e, quando serve una spinta, su campagne locali a pagamento che coprono i comuni vicini."
+        },
+        {
+          "question": "Le schede duplicate si possono eliminare?",
+          "answer": "Sì, nella maggior parte dei casi. Se la scheda duplicata è tua si unisce o si chiude dal pannello; se è stata aperta da altri si richiede la proprietà o si segnala a Google come duplicato. Va fatto con attenzione per non perdere le recensioni della scheda giusta: prima scegliamo quale tenere, poi chiudiamo le altre."
+        },
+        {
+          "question": "Conviene una scheda separata per la carrozzeria?",
+          "answer": "Se la carrozzeria è un reparto distinto, con personale, accettazione e orari propri, spesso sì, perché le ricerche di chi ha avuto un incidente sono diverse da quelle per un tagliando. Se invece è un servizio occasionale dell'officina, basta indicarla come categoria secondaria e nei servizi. Verifichiamo caso per caso cosa consentono le linee guida."
+        },
+        {
+          "question": "Quanto tempo ci vuole per vedere un effetto sulle ricerche?",
+          "answer": "Le correzioni di struttura, come categoria principale, orari e unione dei duplicati, possono avere effetto nel giro di alcune settimane. Recensioni e pagine locali lavorano più lentamente e si accumulano nei mesi. Non promettiamo posizioni: mostriamo ogni mese chiamate e richieste di indicazioni per scheda, così vedi se la direzione è quella giusta."
+        }
+      ],
+      "metaTitle": "SEO locale per concessionarie e officine | not4sale",
+      "metaDescription": "SEO locale per concessionarie e officine: schede Google per reparto e marchio, recensioni separate per vendita e service, pagine locali e azioni misurate."
+    },
+    {
+      "sector": "automotive",
+      "service": "gestione-social",
+      "headline": "Social media manager per concessionarie: video delle auto e persone vere",
+      "short": "Gestione social per concessionarie, autosaloni e officine: video delle auto in stock, consegne, officina e risposte rapide ai messaggi.",
+      "answer": "Il social media manager per concessionarie di not4sale trasforma lo stock e il lavoro quotidiano del salone in video brevi: presentazioni delle auto arrivate, consegne con il consenso del cliente, l'officina al lavoro, risposte alle domande più comuni. Pianifichiamo, giriamo con te o formiamo chi gira, pubblichiamo e gestiamo messaggi e commenti, misurando quante conversazioni diventano appuntamenti.",
+      "problem": "Il profilo social tipico di una concessionaria alterna tre cose: le grafiche della casa madre per il lancio del nuovo modello, uguali a quelle di tutti gli altri dealer del marchio; la foto dell'usato appena arrivato, scattata in piazzale con il cielo grigio e il cassonetto sullo sfondo; gli auguri di Natale.\n\nNessuna di queste cose fa venire voglia di passare in salone. Le grafiche ufficiali dicono che il modello esiste, non che tu sei il posto giusto dove comprarlo. Le foto dell'usato non mostrano niente che non ci sia già sul portale. E il venditore, che è il vero motivo per cui un cliente torna, non compare mai.\n\nNel frattempo i messaggi arrivano. \"Quanto viene?\", \"Prendete la mia in permuta?\", \"Avete il tagliando libero sabato?\". Restano senza risposta per un giorno, oppure ricevono un \"ci chiami\" che chiude la conversazione. I social diventano una bacheca che qualcuno aggiorna quando ha tempo, mentre potrebbero essere il canale che porta in salone chi sta pensando di cambiare auto nei prossimi mesi.",
+      "process": [
+        {
+          "title": "Ruoli e permessi",
+          "description": "Chiariamo cosa pubblica la casa madre, cosa puoi pubblicare tu e chi in salone risponde a messaggi su vendita, usato e officina."
+        },
+        {
+          "title": "Formati del salone",
+          "description": "Scegliamo pochi formati ricorrenti: arrivi in usato, consegne, prova su strada, officina spiegata, domande dei clienti."
+        },
+        {
+          "title": "Giornate di ripresa",
+          "description": "Giriamo in salone e in officina più contenuti in una mattina, oppure formiamo un venditore a girare con lo smartphone."
+        },
+        {
+          "title": "Messaggi e commenti",
+          "description": "Impostiamo risposte rapide e un passaggio chiaro al venditore, con regole su cosa scrivere di prezzi e condizioni."
+        },
+        {
+          "title": "Conversazioni e visite",
+          "description": "Contiamo i messaggi che diventano appuntamenti, prove e prenotazioni in officina, non solo i like."
+        }
+      ],
+      "body": "## Cosa pubblica un social media manager per concessionarie\n\nPubblica quello che solo il tuo salone può mostrare: le auto che hai davvero, le persone che ci lavorano, il servizio dopo la vendita. Il materiale della casa madre si usa, ma come contorno. Rispetto alla [gestione social](/servizi/social/gestione-social) di altri settori, qui il prodotto cambia ogni settimana e va raccontato mentre è disponibile.\n\nI formati che funzionano meglio, in genere:\n\n1. **Il giro dell'auto.** Un video verticale di un minuto su un usato appena arrivato: esterni, interni, un dettaglio che conta, chilometri e dotazioni principali. Con un invito a scrivere per una prova.\n2. **La consegna.** Il cliente che ritira l'auto, solo se è d'accordo e firma il consenso. Le targhe e i dati personali si oscurano.\n3. **La domanda del cliente.** Il venditore risponde in trenta secondi a una domanda vera: differenze tra ibrido e ibrido plug-in, come funziona la ricarica a casa, cosa controllare su un usato.\n4. **L'officina spiegata.** Il capo officina mostra cosa si controlla in un tagliando o perché le gomme invernali vanno cambiate in tempo.\n5. **Il nuovo modello, visto da te.** Il lancio della casa raccontato con l'auto in salone e un tuo venditore, non con il video ufficiale ripubblicato.\n\nPer produrre questi contenuti con regolarità aiuta una giornata di [video e riprese](/servizi/content/video-spot) al mese, da cui si ricavano molti contenuti brevi.\n\n## Instagram, Facebook, TikTok: dove ha senso una concessionaria\n\nFacebook resta utile per raggiungere un pubblico più adulto e per i gruppi locali, e molte richieste su usato e officina arrivano ancora da Messenger. [Instagram](/servizi/social/instagram) è il canale principale per i video brevi delle auto e per raccontare il salone. TikTok ha senso se hai un venditore o un tecnico che sta bene davanti alla telecamera e vuoi parlare a un pubblico più giovane, per esempio per neopatentati e usato di fascia accessibile.\n\nPer le moto, i noleggi turistici e le auto sportive il discorso cambia: il pubblico è appassionato, segue i contenuti tecnici e premia chi ne sa. Lungo la Riviera, dove la stagione porta noleggi di auto e scooter e grandi eventi motoristici, conviene pianificare i contenuti su quel calendario.\n\n## Regole del marchio, prezzi e messaggi: cosa sapere prima di pubblicare\n\nIl dealer ufficiale di solito ha un manuale della casa madre che regola l'uso di loghi, nomi dei modelli, immagini e a volte anche delle pagine social. Lo leggiamo prima di impostare il piano: alcune case forniscono contenuti pronti e chiedono di non modificarli, altre chiedono di non usare certe immagini fuori dalle campagne ufficiali.\n\nSu prezzi, rate e promozioni serve la stessa prudenza che vale per la pubblicità. Un post o un commento che indica una rata o un tasso deve riportare le informazioni richieste dalla normativa sul credito ai consumatori, e un prezzo che vale solo con un finanziamento va detto chiaramente. Per questo, nei messaggi privati e nei commenti, impostiamo risposte che portano la conversazione dal venditore invece di scrivere cifre senza condizioni.\n\n## Messaggi e commenti: il punto dove si perdono i clienti\n\nOgni messaggio sui social è una richiesta di preventivo scritta in modo informale. Va trattato con la stessa velocità di un modulo dal sito. Organizziamo:\n\n- **risposte rapide** per le domande frequenti (orari, permuta, prenotazione officina);\n- **passaggio al venditore** con nome, veicolo e recapito, entro un tempo stabilito;\n- **una casella unica** per Facebook e Instagram, così nessun messaggio si perde tra due app;\n- **toni e limiti chiari** per i commenti pubblici, soprattutto quando un cliente si lamenta dell'officina.\n\n## Come misuriamo i social di un salone\n\nContiamo le conversazioni avviate, quante diventano appuntamenti o prenotazioni e da quali contenuti partono. Le visualizzazioni servono a capire quali formati funzionano, ma il numero che conta è quante persone sono entrate in salone o in officina dopo averti scritto. Se vuoi spingere i contenuti migliori a chi abita nel tuo bacino, il passo successivo sono le [Meta Ads per concessionarie](/settori/automotive/meta-ads).\n\nLavoriamo da Cattolica con saloni e officine di Romagna e Marche, e ci piace venire a girare di persona. Il quadro generale è nella pagina sul [marketing per l'automotive](/settori/automotive); per una stima c'è il [preventivo online](/preventivo).",
+      "faq": [
+        {
+          "question": "Posso ripubblicare i contenuti ufficiali della casa madre?",
+          "answer": "In genere sì, ed è spesso previsto dal marchio, ma da soli non bastano: sono gli stessi che pubblicano tutti i dealer della rete. Li usiamo per i lanci e le campagne nazionali, affiancandoli a contenuti girati da te. Prima verifichiamo nel manuale della casa se ci sono limiti su modifiche, testi o uso fuori dal periodo della campagna."
+        },
+        {
+          "question": "Devo metterci la faccia io o i miei venditori?",
+          "answer": "Aiuta molto, perché chi compra un'auto sceglie anche la persona da cui comprarla. Non serve essere attori: bastano un venditore o un tecnico a proprio agio nel parlare di auto e una scaletta di poche righe. Se nessuno se la sente, si può lavorare con voce fuori campo e riprese di dettaglio, con risultati diversi ma comunque migliori delle foto statiche."
+        },
+        {
+          "question": "Come gestiamo le recensioni negative che arrivano nei commenti?",
+          "answer": "Si risponde in pubblico in modo breve e corretto, si invita a continuare in privato e si coinvolge il responsabile del reparto. Non si cancellano i commenti critici, a meno che non siano offensivi o contengano dati personali. Prepariamo con te una traccia di risposta per i casi più comuni, così chi gestisce la pagina sa come comportarsi."
+        },
+        {
+          "question": "Quanti contenuti servono ogni settimana?",
+          "answer": "Meno di quanto si pensa, se sono quelli giusti. Per un salone medio bastano due o tre video brevi a settimana, legati allo stock e al lavoro reale, più le storie nei giorni di consegne e arrivi. Conta la regolarità: un usato presentato bene il giorno in cui arriva vale più di dieci post generici a fine mese."
+        },
+        {
+          "question": "Ha senso fare social anche per un'officina indipendente?",
+          "answer": "Sì, con un obiettivo diverso: farsi ricordare e richiamare. Funzionano i video che spiegano un intervento, i consigli di stagione su gomme e climatizzatore, i lavori di carrozzeria prima e dopo con il consenso del cliente. Il pubblico è locale e fedele, e spesso il messaggio privato diventa la prenotazione del tagliando."
+        }
+      ],
+      "metaTitle": "Social media manager per concessionarie | not4sale",
+      "metaDescription": "Social media manager per concessionarie, autosaloni e officine: video delle auto in stock, consegne e officina, messaggi gestiti e appuntamenti misurati."
+    },
+    {
+      "sector": "automotive",
+      "service": "google-ads",
+      "headline": "Google Ads per concessionarie: campagne sullo stock e sul service",
+      "short": "Google Ads per concessionarie, autosaloni e officine: ricerche su modelli e usato, annunci con l'inventario veicoli, service e vendite tracciate.",
+      "answer": "Google Ads per concessionarie, con not4sale, significa campagne costruite sull'inventario reale: ricerche di modelli e usato nel tuo bacino, annunci che mostrano i veicoli in stock tramite il feed, campagne separate per officina e carrozzeria. Coordiniamo il lavoro con le campagne della casa madre e misuriamo le richieste fino alla prova e al contratto, non solo i clic.",
+      "problem": "Molti account Google Ads di concessionarie hanno la stessa storia. Una campagna aperta anni fa con il nome del salone, i nomi dei marchi e qualche parola generica come \"auto usate\". Annunci che mandano tutti alla home. Budget che finisce a metà mese su ricerche di persone a trecento chilometri o di chi cerca il manuale d'uso del proprio modello.\n\nIntanto succedono tre cose che nessuno controlla. La casa madre fa le sue campagne nazionali sugli stessi modelli, e a volte i dealer della rete si fanno concorrenza sulle stesse parole, alzando il costo per tutti. I portali di annunci comprano le ricerche sull'usato e intercettano chi cercava proprio un'auto del tuo piazzale. E l'officina, che ha margini costanti tutto l'anno, non ha nessuna campagna dedicata.\n\nIl risultato è un report pieno di clic e di \"conversioni\" che sono in realtà visite alla pagina contatti. Nessuno sa quante auto sono state vendute grazie a quegli annunci, e alla prima stagione difficile la campagna viene spenta.",
+      "process": [
+        {
+          "title": "Regole e confini",
+          "description": "Verifichiamo con te le regole della casa madre su marchi e parole chiave e quali campagne fa già la rete, per non sovrapporci."
+        },
+        {
+          "title": "Feed dello stock",
+          "description": "Prepariamo il flusso dei veicoli dal gestionale o dal sito, con dati e foto corretti, per gli annunci con l'inventario."
+        },
+        {
+          "title": "Campagne per reparto",
+          "description": "Separiamo nuovo, usato, noleggio e service, ciascuno con budget, raggio geografico e pagine di destinazione propri."
+        },
+        {
+          "title": "Tracciamento delle richieste",
+          "description": "Misuriamo moduli, chiamate e WhatsApp per reparto e importiamo dal CRM le richieste diventate prove e contratti."
+        },
+        {
+          "title": "Revisione mensile",
+          "description": "Ogni mese spostiamo il budget sulle campagne che portano vendite e appuntamenti in officina, con i numeri sul tavolo."
+        }
+      ],
+      "body": "## Come si impostano le Google Ads per concessionarie\n\nSi parte separando i reparti, perché vendere un'auto nuova, un usato e un tagliando sono tre mestieri con tre pubblici diversi. Rispetto a una normale campagna [Google Ads](/servizi/advertising/google-ads), qui il prodotto ha un'area geografica precisa, uno stock che cambia ogni settimana e un vincolo in più: il marchio che vendi non è tuo.\n\nUna struttura tipica:\n\n| Campagna | Cosa intercetta | Dove porta |\n|---|---|---|\n| Nome del salone | Chi cerca già te, e i concorrenti che comprano il tuo nome | Home o pagina della sede |\n| Modelli nuovi | Modello più città, km 0, pronta consegna | Pagina del modello con disponibilità in salone |\n| Usato | Marca e modello usato, fascia di prezzo, alimentazione | Stock filtrato o scheda del veicolo |\n| Inventario veicoli | Ricerche di auto con annunci visivi del tuo stock | Scheda del singolo veicolo |\n| Officina e carrozzeria | Tagliando, revisione, gomme, carrozzeria vicino a me | Pagina del servizio con prenotazione |\n\n## Annunci con l'inventario: lo stock dentro Google\n\nGoogle ha aperto di recente anche agli inserzionisti italiani gli annunci di veicoli: schede visive con foto, marca, modello, prezzo, chilometri e nome del venditore, che compaiono quando qualcuno cerca un'auto. Funzionano con un feed dei veicoli caricato in Merchant Center e una campagna Performance Max, un meccanismo simile a quello di [Google Shopping](/servizi/advertising/google-shopping) per i prodotti. Sono pensati per dealer e rivenditori, non per privati o intermediari.\n\nLa qualità del feed decide tutto. Foto vere e numerose, prezzo coerente con quello della scheda, chilometri e anno corretti, veicoli venduti tolti subito. Un feed trascurato porta clic su auto che non hai più, e la persona che chiama per nulla non torna. Per questo il feed lo costruiamo a partire dallo stesso flusso che aggiorna il sito, così le due cose non si contraddicono.\n\n## Marchi della casa madre e campagne della rete\n\nIl nome del marchio e dei modelli sono le parole che portano le ricerche migliori, ma l'uso nelle campagne dipende da due regole. La prima è di Google: il titolare di un marchio può limitarne l'uso nel testo degli annunci, e i rivenditori autorizzati in genere rientrano nelle eccezioni previste, da verificare caso per caso. La seconda è della casa: molti contratti di concessione e programmi di co-marketing stabiliscono come il dealer può usare marchio, nomi dei modelli e offerte, e a volte su quali parole chiave può fare pubblicità.\n\nPrima di aprire le campagne leggiamo quelle regole con te. Se la casa gestisce già campagne locali per conto della rete, concentriamo il tuo budget su quello che lei non copre: usato, km 0 in pronta consegna, service, promozioni del salone.\n\n## Prezzi, rate e promozioni negli annunci\n\nGli annunci con un prezzo o una rata funzionano, ma vanno scritti con attenzione. Se un prezzo vale solo con un finanziamento, l'annuncio e la pagina di destinazione devono dirlo in modo chiaro: l'Antitrust è intervenuta più volte nel settore su questo punto. Se si indica una rata o un tasso, la normativa sul credito ai consumatori richiede informazioni come il TAEG con un esempio rappresentativo. Google, a sua volta, ha regole proprie per gli annunci di servizi finanziari.\n\nLa nostra regola pratica: niente cifre di finanziamento nell'annuncio se la pagina di destinazione non riporta tutte le condizioni, e testi validati dalla finanziaria o dal tuo consulente prima della pubblicazione.\n\n## Come misuriamo le campagne di un salone\n\nContiamo le richieste per reparto e veicolo, e poi le seguiamo. Moduli, chiamate e messaggi arrivano con la loro fonte; dal CRM importiamo in Google Ads le richieste diventate prova su strada o contratto, così le campagne imparano a cercare chi compra e non chi compila moduli. Il [tracciamento con Tag Manager](/servizi/data-analytics/tracking-gtm) è la base di tutto questo.\n\nPer chi non è pronto subito, una sequenza di [marketing automation](/servizi/crm-email/marketing-automation) tiene vivo il contatto con aggiornamenti sullo stock. Lavoriamo da Cattolica con concessionarie e officine di Romagna e Marche e da remoto con il resto d'Italia. Il quadro del settore è nella pagina sul [marketing per concessionarie](/settori/automotive); per una stima c'è il [preventivo online](/preventivo).",
+      "faq": [
+        {
+          "question": "Se la casa madre fa già pubblicità su Google, conviene farla anche io?",
+          "answer": "Spesso sì, ma su cose diverse. Le campagne della casa spingono il marchio e i modelli a livello nazionale o regionale; le tue devono portare in salone chi abita nel tuo bacino. Usato, pronta consegna, officina e promozioni del dealer sono gli spazi dove il tuo budget rende di più e non entra in concorrenza con la rete."
+        },
+        {
+          "question": "Gli annunci di veicoli funzionano anche per un autosalone di solo usato?",
+          "answer": "Sì, sono pensati sia per i dealer ufficiali sia per i rivenditori di usato con uno stock proprio. Non sono ammessi invece privati e intermediari. Serve un feed dei veicoli completo e aggiornato e un sito con una scheda per ogni auto: se il sito non ce l'ha, conviene partire da lì prima di aprire la campagna."
+        },
+        {
+          "question": "Ha senso fare Google Ads per un'officina?",
+          "answer": "Sì, soprattutto per le ricerche con un bisogno immediato: revisione in scadenza, gomme da cambiare, spia accesa, carrozzeria dopo un incidente. Una campagna locale su queste ricerche, con un raggio realistico e una pagina che permette di prenotare, porta richieste per tutto l'anno. Il budget è in genere più contenuto di quello della vendita."
+        },
+        {
+          "question": "Come si evita di pagare clic da persone troppo lontane?",
+          "answer": "Impostando un raggio geografico basato su dove abitano davvero i tuoi clienti, che ricaviamo dagli indirizzi dei contratti e delle commesse in officina. Poi escludiamo le ricerche che non c'entrano, come manuali, ricambi fai da te o lavoro in concessionaria. Il raggio della vendita del nuovo è quasi sempre più ampio di quello dell'officina."
+        },
+        {
+          "question": "Quanto tempo serve per capire se le campagne funzionano?",
+          "answer": "Le richieste arrivano nei primi giorni, ma per valutare le vendite servono più settimane, perché tra la richiesta e il contratto passa tempo. Nel primo mese guardiamo la qualità delle richieste e i tempi di risposta del salone; dal secondo, quante sono diventate prove e contratti. Le decisioni sul budget le prendiamo su questi numeri."
+        }
+      ],
+      "metaTitle": "Google Ads per concessionarie e autosaloni | not4sale",
+      "metaDescription": "Google Ads per concessionarie e autosaloni: campagne su modelli e usato, annunci con l'inventario veicoli, service in officina e vendite misurate dal CRM."
+    },
+    {
+      "sector": "automotive",
+      "service": "meta-ads",
+      "headline": "Meta Ads per concessionarie: catalogo veicoli e video dal salone",
+      "short": "Meta Ads per concessionarie e autosaloni: catalogo dello stock su Facebook e Instagram, moduli che qualificano, video dal salone e vendite misurate.",
+      "answer": "Le Meta Ads per concessionarie che gestiamo in not4sale portano lo stock su Facebook e Instagram: annunci a catalogo che mostrano a ogni persona i veicoli simili a quelli che ha guardato, moduli di contatto che chiedono permuta e tempi d'acquisto, video girati in salone. Misuriamo quante richieste diventano prove su strada e contratti, non quante persone hanno messo un like.",
+      "problem": "Sui social le concessionarie fanno spesso pubblicità nel modo più semplice: il pulsante \"metti in evidenza\" sotto il post dell'usato appena arrivato. Pochi euro, un raggio intorno al salone, e qualche like da persone che non stanno cercando un'auto. Oppure campagne con un modulo di contatto istantaneo che raccoglie decine di nomi e numeri, la maggior parte dei quali, richiamati, non ricordano nemmeno di averlo compilato.\n\nIl problema non è il canale. Facebook e Instagram sono pieni di persone che stanno pensando di cambiare auto nei prossimi mesi e non hanno ancora cercato niente su Google. Il problema è il metodo: annunci che mostrano un'auto sola a tutti, moduli troppo facili che non filtrano nessuno, nessun collegamento tra chi ha visitato la scheda di un usato sul sito e quello che vede dopo sui social.\n\nE poi c'è il tracciamento. Se il pixel è installato male e nessuno riporta a Meta quali contatti sono diventati clienti, l'algoritmo impara a trovare le persone che compilano più moduli, non quelle che comprano. Il costo per contatto scende, le vendite no.",
+      "process": [
+        {
+          "title": "Catalogo dei veicoli",
+          "description": "Colleghiamo lo stock del sito o del gestionale a un catalogo Meta, con foto, prezzi e dati aggiornati in automatico."
+        },
+        {
+          "title": "Tracciamento lato server",
+          "description": "Installiamo pixel e Conversions API sulle schede veicolo e sui moduli, così Meta sa chi guarda cosa e chi chiede informazioni."
+        },
+        {
+          "title": "Moduli che filtrano",
+          "description": "Scriviamo moduli con domande su modello, permuta e tempi di acquisto, e un passaggio immediato al venditore."
+        },
+        {
+          "title": "Video in salone",
+          "description": "Giriamo con i venditori brevi video su usato, consegne e novità, da usare come creatività nelle campagne."
+        },
+        {
+          "title": "Esiti dal CRM",
+          "description": "Riportiamo a Meta le richieste diventate prove e contratti, e spostiamo il budget sulle campagne che vendono."
+        }
+      ],
+      "body": "## Come funzionano le Meta Ads per concessionarie\n\nLavorano in due momenti diversi: far scoprire il salone a chi non sta ancora cercando e riportare sullo stock chi lo ha già guardato. Rispetto a una campagna [Meta Ads](/servizi/advertising/meta-ads) di un e-commerce, qui la vendita avviene offline, l'area è locale e ogni prodotto è un pezzo unico che può sparire domani.\n\nPer questo una struttura tipica ha poche campagne, ma ciascuna con un compito preciso:\n\n- **Scoperta locale.** Video brevi dal salone, con un venditore riconoscibile, mostrati alle persone nel tuo bacino. Servono a farti conoscere prima che la persona cominci a confrontare preventivi.\n- **Catalogo dei veicoli.** Annunci che pescano dallo stock e mostrano a ciascuno le auto più vicine a quelle che ha guardato sul sito: stessa marca, stessa fascia, stessa alimentazione.\n- **Raccolta richieste.** Moduli istantanei o pagine del sito per prova su strada, valutazione permuta, pronta consegna.\n- **Service.** Promemoria stagionali per gomme e climatizzatore, verso chi abita vicino all'officina.\n\n## Annunci a catalogo con l'inventario veicoli\n\nMeta permette di caricare un catalogo di veicoli con foto, marca, modello, anno, chilometri e prezzo, e di usarlo per annunci che si compongono da soli. È la versione per l'automotive degli annunci a catalogo usati dagli e-commerce, e il caso d'uso più forte è il [retargeting](/servizi/advertising/retargeting): la persona che ha guardato tre SUV usati sul tuo sito rivede quei SUV, o modelli simili, nei giorni successivi.\n\nFunziona solo se il catalogo è affidabile. Un'auto venduta che continua a girare negli annunci genera telefonate inutili e una pessima impressione. Per questo il catalogo lo alimentiamo con lo stesso flusso che aggiorna il sito: ne parliamo nella pagina sui [siti web per concessionarie](/settori/automotive/siti-web).\n\n## Moduli istantanei: come evitare i contatti che non rispondono\n\nIl modulo istantaneo di Meta è comodo perché si compila senza uscire dall'app, ed è proprio questo il suo difetto: si compila anche per sbaglio. Lo rendiamo più selettivo con poche domande che servono al venditore:\n\n1. Quale modello o tipo di auto ti interessa?\n2. Hai un'auto da dare in permuta?\n3. Entro quanto pensi di cambiare auto?\n4. Preferisci essere richiamato o ricevere un messaggio?\n\nChi risponde \"entro un mese\" con una permuta va richiamato subito; chi risponde \"più avanti\" entra in una sequenza di aggiornamenti. I contatti arrivano direttamente nel CRM, con il nome della campagna e dell'annuncio.\n\n## Finanziamenti, credito e categorie speciali\n\nLe campagne che promuovono finanziamenti o condizioni di credito hanno regole più strette. In diversi paesi Meta chiede di dichiarare la categoria speciale dedicata ai prodotti finanziari, che limita alcune opzioni di targeting come età e raggio molto ristretto: prima di lanciare una promozione su rate o tassi verifichiamo come si applica al tuo caso. A questo si aggiungono gli obblighi della normativa sul credito ai consumatori e le indicazioni dell'Antitrust sui prezzi che valgono solo con un finanziamento.\n\nIn pratica teniamo separate le campagne sullo stock, che parlano di auto, da quelle sulle promozioni finanziarie, che hanno testi verificati dalla finanziaria e una pagina di destinazione con tutte le condizioni.\n\n## Tracciamento e misura: dalla richiesta al contratto\n\nSenza un tracciamento solido Meta ottimizza alla cieca. Il pixel da solo perde una parte dei segnali, per cui affianchiamo il [tracciamento lato server](/servizi/data-analytics/server-side-tracking) con Conversions API. Poi riportiamo gli esiti dal CRM: richiesta qualificata, prova su strada, contratto. Così le campagne imparano chi compra davvero.\n\nPer noleggi e concessionarie moto lungo la Riviera, dove la domanda si concentra tra primavera ed estate, pianifichiamo budget e creatività su quel calendario. Lavoriamo da Cattolica con saloni della Romagna e delle Marche. Il quadro del settore è nella pagina sul [marketing per concessionarie e officine](/settori/automotive); per una stima c'è il [preventivo online](/preventivo).",
+      "faq": [
+        {
+          "question": "Meglio i moduli istantanei o mandare le persone sul sito?",
+          "answer": "Dipende dall'obiettivo. I moduli istantanei portano più contatti a costo più basso ma di qualità variabile; la pagina del sito ne porta meno ma più convinti, perché la persona ha già visto la scheda dell'auto. Spesso usiamo entrambi: i moduli per la permuta e le promozioni, il sito per lo stock. Decidiamo guardando quanti contatti diventano prove su strada."
+        },
+        {
+          "question": "Serve un catalogo anche se ho poche auto in stock?",
+          "answer": "Con una decina di veicoli il catalogo funziona comunque, ma il vantaggio rispetto ad annunci fatti a mano è minore. Diventa indispensabile quando lo stock supera qualche decina di auto e ruota velocemente, perché aggiornare gli annunci uno per uno non è sostenibile. Per pochi veicoli, video curati delle singole auto rendono spesso di più."
+        },
+        {
+          "question": "Posso usare le immagini e i video della casa madre negli annunci?",
+          "answer": "Di solito sì, se sei un dealer ufficiale e rispetti le regole del marchio su testi, loghi e periodi delle campagne. Ma sono gli stessi materiali di tutti gli altri dealer e su Facebook e Instagram rendono meno dei video girati in salone. Li usiamo per i lanci dei nuovi modelli, affiancati da contenuti nostri per usato e service."
+        },
+        {
+          "question": "Le Meta Ads funzionano per officine e carrozzerie?",
+          "answer": "Funzionano come promemoria e per farsi conoscere nella zona, meno per intercettare chi ha un guasto oggi, che di solito cerca su Google. Rendono bene le campagne stagionali, come il cambio gomme, e quelle verso chi è già cliente, caricando la lista clienti nel rispetto del consenso privacy. Il budget resta contenuto rispetto alla vendita."
+        },
+        {
+          "question": "Cosa succede se Meta blocca un annuncio su una promozione?",
+          "answer": "Capita soprattutto con le promozioni finanziarie, quando la categoria speciale non è stata dichiarata o il testo contiene affermazioni che le regole non consentono. Leggiamo la motivazione, correggiamo testo o impostazione e chiediamo una revisione. Per ridurre il rischio verifichiamo in anticipo le promozioni con rate e tassi prima di pubblicarle."
+        }
+      ],
+      "metaTitle": "Meta Ads per concessionarie e autosaloni | not4sale",
+      "metaDescription": "Meta Ads per concessionarie: catalogo veicoli su Facebook e Instagram, moduli che qualificano permuta e tempi, video dal salone e vendite misurate dal CRM."
+    },
+    {
+      "sector": "automotive",
+      "service": "logo-identita-visiva",
+      "headline": "Logo per concessionarie, officine e autosaloni accanto ai marchi che vendi",
+      "short": "Logo e identità visiva per concessionarie, autosaloni e officine: un segno del gruppo che convive con i marchi delle case e funziona su insegne e piazzale.",
+      "answer": "Il logo per concessionarie, officine e autosaloni progettato da not4sale nasce per convivere con i marchi delle case che vendi o ripari, senza imitarli e senza violare le regole dei mandanti. Disegniamo il segno del gruppo o del salone e lo decliniamo su insegne, piazzale, cornici portatarga, divise, sito e social, con un manuale che chiarisce dove usarlo e dove no.",
+      "problem": "Nel settore auto l'identità visiva ha un problema che altri settori non hanno: il marchio più importante in vetrina non è il tuo. Il dealer ufficiale espone il logo della casa sull'insegna, sullo showroom, sulle divise, e spesso l'arredamento stesso segue un progetto deciso dal marchio. Il nome del salone finisce in piccolo, su un cartello aggiunto in un angolo, oppure scompare del tutto.\n\nFunziona finché il mandato dura. Quando la casa cambia rete, quando arriva un secondo marchio, quando il gruppo apre un piazzale di usato o un'officina multimarca, ci si accorge che i clienti ricordano il marchio dell'auto ma non il nome di chi gliel'ha venduta. Anni di fiducia accumulata restano attaccati a un logo che non appartiene al salone.\n\nAll'opposto, molti autosaloni di usato e officine indipendenti hanno un logo fatto in fretta: una sagoma d'auto generica, un pistone, una chiave inglese, i colori di un marchio famoso perché \"fa auto\". Sono segni che si confondono con quelli di decine di concorrenti e, nel caso peggiore, ricordano troppo da vicino un marchio registrato.",
+      "process": [
+        {
+          "title": "Regole dei mandanti",
+          "description": "Raccogliamo manuali e contratti delle case rappresentate per capire dove il tuo marchio può comparire e con quali distanze."
+        },
+        {
+          "title": "Ruolo del marchio",
+          "description": "Decidiamo se il logo firma il gruppo, il salone dell'usato o l'officina, e come si legge accanto ai marchi delle case."
+        },
+        {
+          "title": "Progetto e verifiche",
+          "description": "Disegniamo le proposte e controlliamo che non somiglino a marchi registrati del settore prima di sceglierne una."
+        },
+        {
+          "title": "Prove sul piazzale",
+          "description": "Simuliamo il logo su insegne, totem, cornici portatarga, divise e adesivi, a distanza e di notte."
+        },
+        {
+          "title": "Manuale d'uso",
+          "description": "Consegniamo file e regole per fornitori e collaboratori, con gli esempi di convivenza con i marchi delle case."
+        }
+      ],
+      "body": "## Come si progetta un logo per concessionarie con più marchi\n\nSi parte dal ruolo che il logo deve avere, perché in una concessionaria convivono marchi con pesi diversi. Rispetto a un normale progetto di [logo e identità visiva](/servizi/branding/logo-identita-visiva), qui c'è un vincolo esterno: i manuali di identità delle case mandanti, che regolano come il loro marchio appare in showroom, sulle insegne e nella comunicazione, e spesso anche come il nome del dealer può accompagnarlo.\n\nLe situazioni più comuni:\n\n| Situazione | Cosa deve fare il logo |\n|---|---|\n| Dealer di un solo marchio | Firmare il salone senza competere con il marchio della casa, spesso come nome del dealer in forma testuale |\n| Gruppo con più marchi e sedi | Tenere insieme sedi diverse con un segno comune, neutro rispetto ai marchi rappresentati |\n| Autosalone di usato | Essere il marchio principale, riconoscibile da lontano sul piazzale |\n| Officina o carrozzeria indipendente | Comunicare competenza e affidabilità senza sembrare un'officina autorizzata di un marchio |\n\nNel caso del dealer di un solo marchio, spesso il lavoro vero non è il logo ma l'identità di tutto ciò che la casa non regola: usato, officina, eventi, social.\n\n## Regole dei marchi mandanti: cosa si può fare\n\nLe regole cambiano da casa a casa e vanno lette sui documenti, non dedotte. In generale i marchi delle case si usano così come vengono forniti, senza modificarne forma, colori o proporzioni, rispettando le distanze dagli altri segni. Il tuo logo non deve imitare i loro colori o le loro forme al punto da sembrare parte del marchio ufficiale.\n\nPer le officine indipendenti la regola pratica è ancora più netta. Si può dire quali marche si trattano, in forma descrittiva, ma senza usare i loghi delle case come se fossero un'officina autorizzata e senza costruire un'identità che lo lasci intendere. Non diamo pareri legali: per i casi dubbi coinvolgiamo il tuo consulente, e prima di scegliere una proposta facciamo una verifica di somiglianza con i marchi già registrati nel settore.\n\n## Dove vive il logo di un salone: insegne, piazzale e targhe\n\nUn logo per l'automotive si vede soprattutto all'aperto, da lontano e in movimento. Per questo lo progettiamo partendo dai supporti più difficili:\n\n- **Insegna e totem stradale**, letti da un'auto che passa a cinquanta all'ora, di giorno e illuminati di notte.\n- **Cornici portatarga e adesivi sul lunotto**, dove il logo è piccolo, spesso in un solo colore, e gira per anni sulle auto dei clienti.\n- **Bandiere, cartelli prezzi e numerazione del piazzale**, che devono restare leggibili sotto il sole e la pioggia.\n- **Divise e materiali dell'officina**, dove il logo compare ricamato o stampato su tessuti tecnici.\n- **Sito, social e video**, accanto alle foto delle auto e alle grafiche fornite dalle case.\n\nSu ognuno simuliamo il risultato prima di produrre qualcosa. Per tenere insieme tutti questi materiali serve un [manuale del marchio](/servizi/branding/brand-guidelines) che anche il fornitore di insegne e il tipografo possono seguire, e un sistema di [immagine coordinata](/servizi/branding/immagine-coordinata) per preventivi, contratti e carta intestata.\n\n## Errori frequenti nei loghi dell'automotive\n\n- **La sagoma d'auto generica**, che dice il settore ma non chi sei.\n- **I colori di un marchio famoso**, scelti perché \"fanno auto\" e che creano confusione.\n- **Il nome della via o della città** come unico elemento distintivo, che non funziona quando si apre una seconda sede.\n- **Il logo illeggibile in piccolo**, che sparisce sulla cornice portatarga.\n- **Nessuna versione monocromatica**, che rende impossibili ricami e adesivi a un colore.\n\n## Quando conviene un nuovo logo\n\nConviene quando cambia la struttura dell'azienda: un nuovo mandato, un gruppo che unisce più sedi, l'apertura di un reparto usato con un nome proprio, un passaggio generazionale. È il momento di separare il valore del tuo nome da quello dei marchi che vendi. Ne parliamo anche nell'articolo sul perché la [brand strategy non è il logo](/blog/brand-strategy-non-e-il-logo).\n\nLavoriamo da Cattolica con saloni e officine tra Romagna e Marche, venendo di persona a vedere sede e piazzale. Il quadro del settore è nella pagina sul [marketing per l'automotive](/settori/automotive); per una stima puoi usare il [preventivo online](/preventivo).",
+      "faq": [
+        {
+          "question": "Sono dealer ufficiale: posso avere un logo mio?",
+          "answer": "Nella maggior parte dei casi sì, ma la sua presenza in showroom e sulle insegne dipende dal manuale e dal contratto della casa. Spesso il nome del dealer è ammesso in posizioni e dimensioni precise. Dove la casa non arriva, come usato, officina multimarca, eventi e social, il tuo logo può avere più spazio. Leggiamo insieme i documenti prima di disegnare."
+        },
+        {
+          "question": "Un gruppo con più marchi deve avere un logo neutro?",
+          "answer": "Conviene che sia neutro rispetto ai marchi rappresentati, cioè che non richiami colori o forme di nessuna casa in particolare. Così può stare accanto a tutti senza creare conflitti e resta valido se un mandato cambia. Il carattere del gruppo si esprime con il nome, la tipografia e il modo in cui il segno si applica alle sedi."
+        },
+        {
+          "question": "Un'officina indipendente può mettere i loghi delle marche sull'insegna?",
+          "answer": "È un terreno delicato. Dire in forma descrittiva quali marche si riparano è in genere possibile; usare i loghi ufficiali in modo che il cliente pensi a un'officina autorizzata può creare problemi con i titolari dei marchi. Preferiamo costruire un'identità forte dell'officina e indicare le marche trattate in testo. Per i casi dubbi coinvolgiamo il tuo consulente."
+        },
+        {
+          "question": "Quanto costa rifare insegne e piazzale dopo il nuovo logo?",
+          "answer": "Il costo del progetto e quello della produzione sono due voci diverse: il secondo dipende da quante insegne, totem e materiali hai, e lo preventiva il tuo fornitore. Per questo prepariamo un piano di sostituzione per fasi, partendo da sito, social e materiali economici, e arrivando alle insegne quando il budget lo consente."
+        },
+        {
+          "question": "Il logo funziona anche su cornici portatarga e adesivi?",
+          "answer": "Lo progettiamo apposta. Prepariamo una versione orizzontale compatta e una monocromatica, e le proviamo alla dimensione reale della cornice e dell'adesivo prima di approvare il progetto. È uno dei punti in cui molti loghi dell'automotive falliscono, perché sono stati pensati solo per lo schermo o per l'insegna grande."
+        }
+      ],
+      "metaTitle": "Logo per concessionarie, officine e autosaloni | not4sale",
+      "metaDescription": "Logo per concessionarie, officine e autosaloni: un segno del gruppo che convive con i marchi delle case, pensato per insegne, piazzale e cornici portatarga."
+    }
+  ]
+}

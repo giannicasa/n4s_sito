@@ -13,6 +13,9 @@ const BACKEND_ORIGIN = (process.env.BACKEND_ORIGIN || 'https://n4s-backend.verce
 const BACKEND_ROUTES = ['/api/contact', '/api/chat', '/api/chat/:path*', '/api/quote/:path*', '/api/health']
 
 const nextConfig: NextConfig = {
+  // Il database (Atlas condiviso) regge male molte query in parallelo: meno worker e più tempo per pagina in build.
+  staticPageGenerationTimeout: 180,
+  experimental: { cpus: 4 },
   images: {
     localPatterns: [{ pathname: '/api/media/file/**' }],
   },

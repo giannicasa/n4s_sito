@@ -1,0 +1,346 @@
+{
+  "items": [
+    {
+      "sector": "manifatturiero",
+      "service": "siti-web",
+      "headline": "Siti web per aziende manifatturiere: tecnici, multilingua, B2B",
+      "short": "Siti web per aziende manifatturiere con schede tecniche, file scaricabili, versioni estere e area riservata per clienti e rivenditori.",
+      "answer": "I siti web per aziende manifatturiere servono a farsi scegliere da un buyer che non ti conosce: prodotti organizzati per applicazione, schede tecniche e disegni scaricabili, versioni nelle lingue dei mercati, area riservata per clienti, agenti e rivenditori. not4sale li progetta insieme a ufficio tecnico e commerciale e li misura sulle richieste d'offerta, non sulle visite.",
+      "problem": "Il sito di molte aziende manifatturiere è stato fatto dieci anni fa, insieme al catalogo. Da allora i prodotti sono cambiati, il sito no. Le famiglie di prodotto portano i nomi dei codici interni, che fuori dall'azienda non capisce nessuno. Le schede tecniche sono un PDF di ottanta pagine da scaricare tutto per trovare un dato. La versione inglese l'ha tradotta qualcuno in ufficio, quella tedesca non c'è.\n\nIntanto il buyer di un'azienda che potrebbe diventare cliente apre il sito, cerca il diametro massimo lavorabile o il materiale della guarnizione, non lo trova e passa al fornitore successivo. Non ti scrive per chiederlo: semplicemente non ti mette nella lista.\n\nDall'altra parte, l'ufficio tecnico risponde ogni settimana alle stesse email: il manuale aggiornato, il file 3D del componente, il certificato del materiale. I rivenditori esteri chiedono foto e listini che stanno in una cartella condivisa che nessuno trova. Un sito che non lavora come strumento costa ore di persone qualificate, oltre ai clienti che non arrivano.",
+      "process": [
+        {
+          "title": "Mappa prodotti e applicazioni",
+          "description": "Rileggiamo il catalogo con l'ufficio tecnico: famiglie, varianti, settori d'impiego e i dati che il buyer usa davvero per confrontare."
+        },
+        {
+          "title": "Lingue e mercati",
+          "description": "Scegliamo le lingue che servono e chi rivede la terminologia tecnica di ogni versione, prima di scrivere una riga."
+        },
+        {
+          "title": "Schede e documentazione",
+          "description": "Progettiamo schede prodotto leggibili, con dati principali in pagina, file scaricabili e richiesta d'offerta già legata al prodotto."
+        },
+        {
+          "title": "Area riservata",
+          "description": "Definiamo cosa vedono clienti, agenti e rivenditori: manuali, ricambi, listini per paese, materiale per la rivendita."
+        },
+        {
+          "title": "Collaudo e misura",
+          "description": "Tracciamo download, richieste e lingua di provenienza, e colleghiamo ogni richiesta al CRM del commerciale."
+        }
+      ],
+      "body": "## Cosa deve avere un sito web per aziende manifatturiere\n\nUn sito web per aziende manifatturiere deve permettere a un tecnico di capire in pochi clic se il tuo prodotto risolve il suo problema, e a un responsabile acquisti di trovare le informazioni per metterti in gara. Le funzioni che fanno la differenza sono queste:\n\n- **Doppio accesso ai prodotti.** Per famiglia, come li pensi tu, e per applicazione o settore cliente, come li cerca chi compra. Chi produce componenti per l'alimentare e per l'automotive ha clienti con domande diverse sullo stesso pezzo.\n- **Filtri sui dati tecnici.** Portata, dimensioni, materiali, potenza, tolleranze: se il catalogo è ampio, il filtro è la funzione più usata del sito.\n- **Schede in pagina, PDF accanto.** I dati principali stanno nella pagina, leggibili da Google e dagli assistenti AI; il PDF completo resta scaricabile per chi deve allegarlo a una pratica interna.\n- **File tecnici.** Disegni 2D e modelli 3D nei formati più usati, come STEP o DXF, certificati dei materiali, dichiarazioni di conformità. Decidiamo con te cosa è libero e cosa richiede una registrazione: chiedere un'email per un modello 3D è un buon segnale commerciale, chiederla per una brochure fa solo scappare.\n- **Richiesta d'offerta intelligente.** Il modulo sa da quale prodotto parte e chiede solo i dati che servono al preventivo: quantità, materiale, paese di consegna.\n\nPer l'impianto generale, tecnologie e tempi, trovi tutto nella pagina sulla [realizzazione di siti web](/servizi/web-app/siti-web). La strategia complessiva per il settore è nella pagina [marketing per il manifatturiero](/settori/manifatturiero).\n\n## Siti multilingua per l'industria: tradurre non basta\n\nUn sito industriale multilingua funziona quando ogni versione sembra scritta nel paese in cui viene letta. Gli errori più frequenti sono sempre gli stessi:\n\n| Elemento | Errore tipico | Come lo impostiamo |\n|---|---|---|\n| Terminologia | Traduzione letterale di termini d'officina | Glossario tecnico condiviso, revisione di un madrelingua del settore |\n| Struttura | Tutte le lingue sullo stesso indirizzo | Una sottocartella per lingua, collegate tra loro con hreflang |\n| Unità e norme | Solo sistema metrico e norme europee | Indicazioni pensate per il mercato, dove il cliente le richiede |\n| Contatti | Un solo numero italiano | Referente o rivenditore del paese, con orari e lingua |\n\nLa parte di posizionamento all'estero la seguiamo con la [SEO internazionale](/servizi/seo/seo-internazionale): il sito nasce già con la struttura giusta, senza doverla rifare dopo.\n\n## Area riservata per clienti, agenti e rivenditori\n\nL'area riservata è la parte del sito che lavora dopo la vendita, e per un'azienda manifatturiera spesso vale quanto la parte pubblica. Ogni profilo vede cose diverse: il cliente trova manuali, esplosi e ricambi della sua macchina; l'agente trova listini e presentazioni aggiornate; il rivenditore estero scarica foto, testi tradotti e il marchio nei formati giusti.\n\nC'è anche una ragione normativa per pensarci adesso. Il nuovo Regolamento macchine (UE) 2023/1230, che sostituisce la direttiva macchine dal 20 gennaio 2027, ammette le istruzioni per l'uso in formato digitale, a patto che restino accessibili, scaricabili e stampabili per tutta la vita della macchina. Un archivio documentale ordinato per modello e matricola diventa quindi un pezzo dell'infrastruttura aziendale. Gli obblighi precisi li verifica il tuo consulente per la conformità; noi costruiamo l'archivio perché regga nel tempo.\n\nQuando l'area riservata deve dialogare con il gestionale, per esempio per mostrare lo stato degli ordini o i ricambi disponibili, la sviluppiamo come [web app su misura](/servizi/web-app/web-app).\n\n## Un solo archivio di dati prodotto\n\nIl problema che nessuno vede all'inizio è la manutenzione. Se i dati tecnici vivono nel gestionale, nel catalogo cartaceo e nel sito, prima o poi i tre dicono cose diverse. Dove possibile colleghiamo il sito alla fonte che l'azienda già usa, un'esportazione dal gestionale o un archivio prodotti dedicato, così una modifica fatta una volta compare ovunque, in tutte le lingue previste.\n\nLe richieste che arrivano dal sito finiscono nel CRM commerciale con prodotto, paese e lingua già compilati. Se usi un CRM come [HubSpot](/servizi/crm-email/hubspot), il commerciale vede anche quali schede ha scaricato il contatto prima di scrivere.\n\n## Come misuriamo un sito industriale\n\nLe visite contano poco. Misuriamo richieste d'offerta per famiglia di prodotto e per paese, download di schede e file 3D, accessi all'area riservata e, insieme al commerciale, quante richieste diventano offerte e quante ordini. Dopo qualche mese si vede quali mercati rispondono e quali versioni linguistiche vanno rinforzate.\n\nSe con il sito arriva anche il momento di rimettere ordine nei marchi, conviene partire da lì: un [logo per aziende manifatturiere](/settori/manifatturiero/logo-identita-visiva) progettato per targhe e imballi rende coerente tutto il resto. Lavoriamo da Cattolica con aziende meccaniche tra Romagna e Marche e, da remoto, con imprese industriali di tutta Italia.",
+      "faq": [
+        {
+          "question": "In quante lingue deve essere il sito?",
+          "answer": "In quelle dei mercati in cui vendi o vuoi entrare nei prossimi anni, non in tutte quelle possibili. Spesso si parte con inglese più una o due lingue strategiche e si aggiunge il resto quando i dati lo giustificano. Una lingua mantenuta male, con prodotti mancanti o schede vecchie, fa più danno di una lingua assente."
+        },
+        {
+          "question": "Conviene mettere i file 3D liberi da scaricare?",
+          "answer": "Dipende da quanto valgono per te i contatti e da quanto è riservato il disegno. Molte aziende chiedono una registrazione leggera, nome, azienda ed email, per i modelli 3D e lasciano libere schede e brochure. Il file scaricato diventa un segnale commerciale: chi inserisce il tuo componente nel suo progetto è un contatto da richiamare."
+        },
+        {
+          "question": "Possiamo collegare il sito al gestionale?",
+          "answer": "Sì, nella maggior parte dei casi. Si può partire da un'esportazione periodica dei dati prodotto, più semplice, oppure da un collegamento diretto per stato ordini, disponibilità o ricambi. Valutiamo con il vostro fornitore del gestionale cosa espone e con quali tempi, e scegliamo il livello di integrazione che ripaga il suo costo."
+        },
+        {
+          "question": "Chi scrive i testi tecnici?",
+          "answer": "Li scriviamo noi partendo da interviste brevi con l'ufficio tecnico, che poi controlla l'esattezza di dati e termini. Per le versioni estere lavoriamo con traduttori specializzati e, dove serve, con la revisione di un vostro agente o rivenditore madrelingua. Così il testo è corretto per un ingegnere e leggibile per un buyer."
+        },
+        {
+          "question": "Il sito deve avere anche una parte e-commerce?",
+          "answer": "Di solito non per le macchine, quasi sempre utile per ricambi e consumabili. Un ordine online dei ricambi, riservato ai clienti registrati e con i prezzi del loro listino, toglie lavoro all'ufficio assistenza e rende più veloce il servizio. Lo valutiamo insieme in base a quanti ordini ripetitivi gestite oggi a mano."
+        },
+        {
+          "question": "Quanto tempo serve per un sito industriale?",
+          "answer": "Il tempo dipende soprattutto dal catalogo e dalle lingue, più che dal design. Riordinare dati e documentazione richiede spesso più settimane dello sviluppo. Per accorciare i tempi si può pubblicare prima la struttura completa con le famiglie principali e aggiungere il resto del catalogo e le lingue secondarie a scaglioni."
+        }
+      ],
+      "metaTitle": "Siti web per aziende manifatturiere e industria | not4sale",
+      "metaDescription": "Siti web per aziende manifatturiere: schede tecniche, file 3D, versioni multilingua e area riservata per clienti e rivenditori. Richieste misurate."
+    },
+    {
+      "sector": "manifatturiero",
+      "service": "seo-locale",
+      "headline": "SEO per aziende manifatturiere: farsi trovare da buyer e uffici acquisti",
+      "short": "SEO per aziende manifatturiere: ricerche tecniche, lavorazioni conto terzi, mercati esteri e scheda Google dello stabilimento.",
+      "answer": "La SEO per aziende manifatturiere serve a comparire quando un buyer o un ufficio tecnico cerca su Google un fornitore, una lavorazione o un componente, in Italia o all'estero. not4sale lavora su pagine per lavorazione, materiale e settore cliente, schede tecniche indicizzabili, versioni linguistiche e, per la subfornitura vicina, sulla scheda Google dello stabilimento.",
+      "problem": "Quando si parla di SEO locale si pensa al ristorante o al dentista che vuole comparire sulla mappa. Un'azienda manifatturiera ha un problema diverso: chi la cerca non scrive \"vicino a me\", scrive il nome di una lavorazione, di un materiale, di un componente con le sue misure. E spesso lo scrive in inglese o in tedesco.\n\nIl risultato tipico è un sito che si posiziona solo per il nome dell'azienda. Lo trova chi la conosce già, cioè clienti e fornitori, e nessun altro. Le lavorazioni sono descritte con il gergo interno, le capacità produttive sono un elenco di macchinari senza contesto, i prodotti stanno in immagini e PDF che Google legge male.\n\nNel frattempo un concorrente con un sito più modesto ma con una pagina chiara per ogni lavorazione riceve le richieste dei buyer che cercano un nuovo terzista. Non perché lavori meglio, ma perché ha risposto alla domanda giusta nel posto in cui veniva fatta.\n\nC'è poi una parte locale vera, che quasi tutti trascurano: la scheda Google dello stabilimento, guardata da fornitori, trasportatori e soprattutto da chi sta pensando di venire a lavorare da te.",
+      "process": [
+        {
+          "title": "Ricerche dei buyer",
+          "description": "Raccogliamo dal commerciale e dalle richieste d'offerta le parole con cui i clienti descrivono ciò che comprano, in ogni lingua."
+        },
+        {
+          "title": "Pagine per lavorazione",
+          "description": "Progettiamo pagine per lavorazione, materiale e settore cliente, con capacità, limiti ed esempi concreti."
+        },
+        {
+          "title": "Schede indicizzabili",
+          "description": "Portiamo i dati tecnici dai PDF alle pagine, con dati strutturati e collegamenti interni ordinati."
+        },
+        {
+          "title": "Stabilimento su Google",
+          "description": "Sistemiamo la scheda dello stabilimento: categoria, foto, accessi, risposte alle recensioni di clienti ed ex dipendenti."
+        },
+        {
+          "title": "Misura per mercato",
+          "description": "Ogni mese leggiamo impressioni, posizioni e richieste per paese e per lavorazione, e decidiamo le pagine successive."
+        }
+      ],
+      "body": "## SEO per aziende manifatturiere: cosa cambia rispetto alla SEO locale\n\nLa SEO per aziende manifatturiere lavora su ricerche di fornitura, non di prossimità. La [SEO locale](/servizi/seo/seo-locale) classica, con mappa e recensioni, resta utile ma copre solo una parte del lavoro. Le ricerche che portano clienti a un'azienda industriale sono di quattro tipi, e ognuna chiede una risposta diversa:\n\n| Tipo di ricerca | Esempio plausibile | Cosa serve |\n|---|---|---|\n| Subfornitura vicina | \"zincatura a caldo Romagna\", \"carpenteria metallica conto terzi Pesaro\" | Scheda Google dello stabilimento e pagina della lavorazione con zona servita |\n| Prodotto o componente | \"valvola a sfera tre vie inox DN50\" | Scheda prodotto con dati in pagina, non solo in PDF |\n| Problema tecnico | \"come ridurre le vibrazioni nella fresatura di pareti sottili\" | Contenuto tecnico scritto con l'ufficio tecnico |\n| Mercato estero | \"CNC turning subcontractor Italy\" | Versione linguistica con pagine scritte per quel paese |\n\nLa prima riga è la vera SEO locale: chi cerca un terzista spesso preferisce un fornitore raggiungibile in giornata, per logistica e controlli. Le altre tre sono SEO nazionale e internazionale, ed è lì che di solito c'è più valore.\n\n## Pagine per lavorazione, materiale e settore\n\nUn'azienda che fa tornitura, fresatura e saldatura su acciaio, alluminio e titanio non ha bisogno di una pagina \"lavorazioni meccaniche\". Ha bisogno di una pagina per ogni lavorazione che vuole vendere, con dentro le cose che il buyer controlla: dimensioni massime, tolleranze ottenibili, lotti minimi e massimi, materiali trattati, controlli e certificazioni, settori serviti. Una foto vera del pezzo, se il cliente lo consente, vale più di tre paragrafi.\n\nLe ricerche tecniche hanno volumi bassi: gli strumenti per le parole chiave mostrano spesso zero ricerche per query che invece esistono e arrivano da persone con un budget. Per questo non ci fermiamo ai numeri degli strumenti. Usiamo le richieste d'offerta degli ultimi anni, le domande che il commerciale riceve in fiera e i dati di Search Console, che mostrano le ricerche reali per cui il sito compare già.\n\nI contenuti che rispondono ai problemi tecnici li produciamo con il [content marketing](/servizi/content/content-marketing), intervistando chi in azienda risolve quei problemi ogni giorno. La pagina [marketing per il manifatturiero](/settori/manifatturiero) spiega come questi contenuti si collegano a CRM e commerciale.\n\n## Lo stabilimento su Google: la parte locale che conta\n\nLa scheda Google dello stabilimento la guardano persone che il marketing di solito ignora. Il trasportatore che cerca l'ingresso merci. Il fornitore che viene per un collaudo. Il buyer che vuole vedere che aspetto ha la fabbrica prima della visita. E il candidato che sta decidendo se mandare il curriculum.\n\nPer questo la sistemiamo con cura: categoria più precisa disponibile, foto reali di reparti e piazzali, orari di uffici e ricevimento merci, indicazioni per l'ingresso corretto. Le recensioni in un'azienda B2B sono poche e spesso arrivano da ex dipendenti: rispondere con calma e nel merito conta più che averne molte. Se lo stabilimento è in una zona industriale tra Rimini e Pesaro, come molte aziende con cui parliamo, la scheda è anche il modo più rapido per farsi trovare dai terzisti della zona.\n\n## Ricerche tecniche, dati strutturati e assistenti AI\n\nSempre più spesso la prima selezione di fornitori passa da una domanda a un assistente AI o da un riassunto in cima a Google. Questi sistemi pescano da pagine chiare, con dati espliciti e un'entità aziendale ben definita. Lavoriamo su tre fronti:\n\n1. **Dati strutturati** per organizzazione, stabilimento e prodotti, coerenti tra sito e scheda Google;\n2. **Pagine che rispondono in apertura**, con capacità e limiti scritti in chiaro, senza giri di parole;\n3. **Versioni estere scritte per il mercato**, con la terminologia che quel buyer usa davvero, impostate con la [SEO internazionale](/servizi/seo/seo-internazionale).\n\nPer la parte specifica sugli assistenti AI trovi il servizio di [Answer Engine Optimization](/servizi/ai-search/answer-engine-optimization).\n\n## Come si misura la SEO industriale\n\nLa misura giusta è la richiesta d'offerta organica, divisa per lavorazione e per paese. Nei primi mesi guardiamo segnali intermedi: impressioni e posizioni sulle ricerche tecniche in Search Console, pagine che iniziano a ricevere visite da aziende nuove, download di schede. Poi, insieme al commerciale, contiamo quante richieste organiche diventano offerte. Con cicli di vendita lunghi, il giudizio vero si dà sull'anno, non sul mese.",
+      "faq": [
+        {
+          "question": "La SEO locale serve a un'azienda che vende in tutto il mondo?",
+          "answer": "Serve, ma per motivi diversi da quelli di un negozio. La scheda Google dello stabilimento aiuta trasportatori, visitatori e candidati, e porta richieste di subfornitura dalla zona. Il grosso del lavoro SEO, però, per un'azienda che esporta riguarda le pagine tecniche e le versioni estere del sito: è lì che passa la maggior parte dei nuovi contatti."
+        },
+        {
+          "question": "Le ricerche tecniche hanno volumi bassissimi: vale la pena?",
+          "answer": "Sì, perché il valore di una singola richiesta è alto. Dieci visite al mese da uffici acquisti che cercano esattamente la tua lavorazione valgono più di mille visite generiche. In più, le query tecniche hanno meno concorrenza: con pagine ben fatte si arriva in alto prima che su parole generiche contese da portali e grandi gruppi."
+        },
+        {
+          "question": "Pubblicare dati tecnici non aiuta la concorrenza?",
+          "answer": "I concorrenti di solito conoscono già le tue capacità, mentre i potenziali clienti no. Pubblichiamo ciò che il buyer usa per decidere, come dimensioni, materiali, tolleranze e certificazioni, e lasciamo fuori know-how di processo, nomi dei clienti senza permesso e dettagli riservati. Il confine lo decidiamo insieme all'ufficio tecnico, pagina per pagina."
+        },
+        {
+          "question": "In quanto tempo si vedono risultati?",
+          "answer": "Le prime pagine su lavorazioni di nicchia possono iniziare a posizionarsi in qualche mese, soprattutto se il sito ha già una storia. Per le versioni estere servono tempi più lunghi, perché si parte quasi da zero in ogni paese. Il contatore da guardare sono le richieste d'offerta, che arrivano dopo impressioni e visite: serve pazienza e misura costante."
+        },
+        {
+          "question": "Meglio investire in SEO o nelle fiere?",
+          "answer": "Non è un'alternativa. La fiera porta incontri in pochi giorni, la SEO porta richieste tutto l'anno da chi non va in fiera o cerca un fornitore all'improvviso. Spesso le due cose si aiutano: chi ti ha conosciuto allo stand ti cerca su Google nei giorni dopo, e deve trovare pagine che confermano quello che ha visto."
+        },
+        {
+          "question": "Serve molto tempo dell'ufficio tecnico?",
+          "answer": "Meno di quanto si teme. Lavoriamo con interviste brevi e programmate, una per lavorazione o famiglia di prodotto, e poi chiediamo una revisione dei testi. Scrivere resta compito nostro. Il contributo dei tecnici è quello che rende le pagine credibili per un lettore esperto, ed è la differenza rispetto a testi generici scritti da chi non ha mai visto il reparto."
+        }
+      ],
+      "metaTitle": "SEO per aziende manifatturiere e fornitori B2B | not4sale",
+      "metaDescription": "SEO per aziende manifatturiere: pagine per lavorazione e materiale, schede tecniche indicizzabili, mercati esteri e scheda dello stabilimento."
+    },
+    {
+      "sector": "manifatturiero",
+      "service": "gestione-social",
+      "headline": "Gestione social per aziende manifatturiere: LinkedIn, reparto e persone",
+      "short": "Social per aziende manifatturiere: LinkedIn per buyer e candidati, video dal reparto, profili dei manager e report su contatti veri.",
+      "answer": "La gestione social per aziende manifatturiere si gioca soprattutto su LinkedIn: pagina aziendale, profili di titolare, commerciali e tecnici, contenuti girati in reparto e offerte di lavoro. not4sale pianifica e produce i contenuti con chi lavora in azienda, usa YouTube per i video di macchine e processi e aggiunge Instagram o Facebook solo quando servono a trovare personale sul territorio.",
+      "problem": "Sulla pagina LinkedIn di molte aziende manifatturiere compaiono tre tipi di post: gli auguri di Natale, la foto dello stand in fiera e l'annuncio del nuovo capannone. In mezzo, mesi di silenzio. Il titolare non ha un profilo curato, i commerciali usano LinkedIn solo per cercare contatti, i tecnici non sanno nemmeno che l'azienda ha una pagina.\n\nNon è pigrizia. È che nessuno sa cosa si può pubblicare. Il prodotto è una macchina o un componente che non ha niente di fotogenico a prima vista, i clienti non vogliono comparire, in reparto ci sono lavorazioni riservate. E quando qualcuno prova a fare un video, scopre che l'operatore inquadrato non indossa gli occhiali di protezione.\n\nIntanto i buyer controllano la pagina prima di una visita, e trovano un'azienda che sembra ferma. E i candidati, che oggi scelgono il datore di lavoro quanto l'azienda sceglie loro, guardano lo stesso profilo e passano al concorrente che mostra persone, reparti e progetti. Per molte aziende del settore è proprio il personale tecnico, più dei clienti, il motivo per cui i social diventano urgenti.",
+      "process": [
+        {
+          "title": "Pubblici e canali",
+          "description": "Separiamo chi deve leggere: buyer, rivenditori, candidati, comunità locale. Per ognuno scegliamo il canale e la voce giusta."
+        },
+        {
+          "title": "Regole di riservatezza",
+          "description": "Con direzione e sicurezza fissiamo cosa si può riprendere in reparto, quali clienti si possono nominare e chi approva."
+        },
+        {
+          "title": "Giornate di ripresa",
+          "description": "Organizziamo sessioni in azienda per raccogliere foto e video di più mesi, senza fermare la produzione."
+        },
+        {
+          "title": "Voci interne",
+          "description": "Aiutiamo titolare, commerciali e tecnici a pubblicare dai propri profili, con bozze pronte e tempi minimi."
+        },
+        {
+          "title": "Report su contatti e candidature",
+          "description": "Ogni mese misuriamo visite al sito, richieste, candidature e pubblico raggiunto per settore e ruolo."
+        }
+      ],
+      "body": "## Gestione social per aziende manifatturiere: quali canali servono\n\nPer un'azienda manifatturiera il canale principale è LinkedIn, ma non da solo e non nello stesso modo per tutti gli obiettivi. Ecco come dividiamo il lavoro:\n\n| Canale | A cosa serve nel manifatturiero | Chi lo legge |\n|---|---|---|\n| Pagina LinkedIn aziendale | Credibilità, novità di prodotto, fiere, offerte di lavoro | Buyer, partner, candidati |\n| Profili LinkedIn delle persone | Relazione e autorevolezza tecnica | Decisori, colleghi di settore |\n| YouTube | Macchine in funzione, tutorial, manutenzione | Tecnici, clienti, rivenditori |\n| Instagram e Facebook | Vita in azienda, ricerca di personale vicino allo stabilimento | Comunità locale, candidati |\n\nI profili delle persone spesso rendono più della pagina aziendale, perché su LinkedIn si segue chi si conosce e si stima. Il lavoro sulla pagina e sui profili dei manager è descritto nel servizio [LinkedIn aziendale](/servizi/social/linkedin-aziendale); qui conta come lo inseriamo nella gestione mensile. Il metodo generale, con piano, approvazioni e report, è quello della [gestione social media](/servizi/social/gestione-social).\n\n## Cosa pubblicare quando il prodotto è una macchina o un componente\n\nIl materiale c'è, solo che nessuno lo vede come contenuto. Alcuni formati che funzionano nel settore:\n\n- **La macchina al lavoro.** Trenta secondi di ciclo reale, con il suono vero del reparto, dicono più di qualsiasi brochure.\n- **Il pezzo prima e dopo.** Il grezzo e il finito, una lavorazione difficile spiegata dal tecnico che l'ha impostata.\n- **Il collaudo.** I controlli prima della spedizione mostrano cura e metodo, ed è proprio ciò che un buyer vuole vedere.\n- **Le persone.** Chi sono i manutentori, chi programma le macchine, da dove vengono gli apprendisti. Funzionano con i clienti e ancora di più con i candidati.\n- **La risposta tecnica.** Una domanda che arriva spesso all'ufficio tecnico, con la risposta breve: utile, salvabile, inoltrabile.\n- **La fiera, prima e dopo.** Invito con padiglione e stand, poi cosa avete presentato e cosa avete imparato dai visitatori.\n\nNon servono contenuti ogni giorno. Servono contenuti regolari e veri, che un tecnico di un'altra azienda legge senza sorridere.\n\n## Riprendere in reparto: sicurezza, riservatezza e privacy\n\nUn video girato male in fabbrica può fare danni. Prima di ogni sessione di ripresa fissiamo tre cose con l'azienda:\n\n1. **Sicurezza visibile.** Chi compare indossa i dispositivi di protezione previsti per quella postazione, le protezioni delle macchine sono al loro posto, le vie di passaggio sono libere. Un video che mostra una situazione non conforme è un problema, anche se è stato girato in trenta secondi di pausa.\n2. **Segreti industriali.** Niente disegni sui monitor, niente pezzi dei clienti riconoscibili senza autorizzazione, attenzione alle attrezzature sviluppate internamente.\n3. **Consenso delle persone.** Chi compare firma una liberatoria per l'uso dell'immagine, e chi non vuole comparire non compare.\n\nPer le riprese più curate, come il video aziendale o la presentazione di una nuova macchina, ci appoggiamo al servizio [video e spot](/servizi/content/video-spot).\n\n## Social e ricerca di personale tecnico\n\nI social sono diventati uno strumento di selezione quanto di vendita. Su LinkedIn pubblichiamo le offerte con mansione, reparto, turni e cosa si produce, collegate a una pagina lavora con noi sul sito. Nelle zone industriali tra Romagna e Marche molti candidati per ruoli operativi stanno però su Facebook e Instagram, e lì li raggiungiamo con contenuti sulle persone e, se serve, con le [Meta Ads per aziende manifatturiere](/settori/manifatturiero/meta-ads).\n\nLe aziende che ottengono più candidature raccontano il lavoro com'è: il reparto, i turni, la formazione, chi ti affianca il primo mese. La strategia complessiva per il settore, dai buyer esteri al personale, è nella pagina [marketing per il manifatturiero](/settori/manifatturiero).\n\n## Come misuriamo i social di un'azienda industriale\n\nI like non pagano gli stipendi. Le statistiche della pagina LinkedIn mostrano settore, ruolo e dimensione aziendale di chi segue e di chi interagisce: è il primo indicatore per capire se stiamo parlando alle persone giuste. Poi contano le visite al sito arrivate dai social, le richieste di contatto, le candidature ricevute e la loro qualità. Ogni mese ti mandiamo un report breve con questi numeri e le decisioni per il mese successivo.",
+      "faq": [
+        {
+          "question": "Un'azienda che vende solo ad altre aziende deve stare su Instagram?",
+          "answer": "Non necessariamente per vendere. Instagram e Facebook servono a un'azienda manifatturiera soprattutto per farsi conoscere sul territorio e trovare personale operativo, che spesso usa quei canali più di LinkedIn. Se la ricerca di personale non è un problema, si può partire solo con LinkedIn e YouTube e aggiungere il resto quando serve."
+        },
+        {
+          "question": "Il titolare deve pubblicare dal suo profilo?",
+          "answer": "Conviene, perché su LinkedIn le persone seguono le persone. Non deve scrivere ogni giorno: bastano pochi post al mese su temi che conosce, come mercati, investimenti, persone. Prepariamo noi le bozze partendo da brevi conversazioni, lui le corregge con la sua voce e pubblica. Lo stesso vale per un commerciale o un tecnico disponibile."
+        },
+        {
+          "question": "Come facciamo se i clienti non vogliono comparire?",
+          "answer": "Si lavora su ciò che è tuo: lavorazioni, macchine, persone, controlli, problemi risolti descritti senza nomi. Un caso applicativo può raccontare il settore del cliente e il risultato tecnico senza dire chi è. Quando un cliente accetta di comparire lo valorizziamo, ma non è una condizione per fare una buona comunicazione."
+        },
+        {
+          "question": "Chi gira foto e video in azienda?",
+          "answer": "Organizziamo noi giornate di ripresa programmate, concordate con produzione e sicurezza, per raccogliere materiale per più mesi. Tra una sessione e l'altra un referente interno può mandarci foto e brevi video dallo smartphone, seguendo indicazioni semplici su inquadrature e luce. Li selezioniamo e li sistemiamo prima di pubblicarli."
+        },
+        {
+          "question": "Quanto tempo serve per vedere risultati su LinkedIn?",
+          "answer": "I primi segnali, come follower più qualificati e più interazioni da persone del settore, arrivano in qualche mese di pubblicazione costante. Le richieste commerciali arrivano più tardi e spesso in modo indiretto: un buyer segue la pagina per mesi e scrive quando ha un progetto. Per questo misuriamo anche visite al sito e candidature, che si muovono prima."
+        }
+      ],
+      "metaTitle": "Gestione social per aziende manifatturiere | not4sale",
+      "metaDescription": "Gestione social per aziende manifatturiere: LinkedIn, video dal reparto, profili dei manager e ricerca di personale tecnico. Report su contatti veri."
+    },
+    {
+      "sector": "manifatturiero",
+      "service": "google-ads",
+      "headline": "Google Ads per aziende manifatturiere: ricerche tecniche ad alto valore",
+      "short": "Google Ads per aziende manifatturiere: campagne Search su lavorazioni e componenti, per paese e lingua, misurate sulle offerte nel CRM.",
+      "answer": "Google Ads per aziende manifatturiere significa comparire sulle ricerche tecniche di chi deve acquistare: un componente, una lavorazione conto terzi, una macchina. Sono ricerche con pochi volumi e alto valore. not4sale costruisce campagne Search per paese e lingua, filtra studenti, privati e cercatori di lavoro e misura quante richieste diventano offerte nel CRM.",
+      "problem": "La frase che sentiamo più spesso dalle aziende manifatturiere è: \"Abbiamo provato Google Ads, non funziona per il nostro settore\". Quando apriamo l'account, la storia è quasi sempre la stessa. Parole chiave generiche come \"lavorazioni meccaniche\" a corrispondenza ampia. Nessuna parola negativa. Annunci mostrati in tutto il mondo, anche in paesi dove l'azienda non spedisce. Una campagna automatica che ha speso metà del budget su siti e app che nessun buyer frequenta.\n\nI clic arrivano, eccome: da studenti che cercano materiale per la tesi, da persone in cerca di lavoro, da hobbisti, da chi vuole il manuale gratuito di una macchina concorrente. Il modulo contatti si riempie di richieste inutili, il commerciale smette di guardarle, e la conclusione è che il canale non serve.\n\nIl problema non è Google. È che una campagna per l'industria va costruita al contrario rispetto a una campagna per i consumatori: pochi termini precisi, molte esclusioni, landing tecniche e una misurazione che non si ferma al modulo compilato ma arriva all'offerta.",
+      "process": [
+        {
+          "title": "Ricerche e negative",
+          "description": "Con il commerciale scegliamo le ricerche che precedono un acquisto e costruiamo da subito un elenco ampio di esclusioni."
+        },
+        {
+          "title": "Campagne per mercato",
+          "description": "Separiamo paesi e lingue, con budget e annunci propri, per sapere dove rende ogni euro."
+        },
+        {
+          "title": "Landing tecniche",
+          "description": "Ogni gruppo di annunci porta a una pagina con dati, capacità e richiesta d'offerta legata a quella lavorazione."
+        },
+        {
+          "title": "Conversioni dal CRM",
+          "description": "Riportiamo in Google Ads quali contatti sono diventati lead qualificati e offerte, così le offerte automatiche imparano."
+        },
+        {
+          "title": "Revisione mensile",
+          "description": "Ogni mese rivediamo termini di ricerca, costi per offerta e mercati, insieme a chi segue le trattative."
+        }
+      ],
+      "body": "## Google Ads per aziende manifatturiere: su quali ricerche investire\n\nSu Google Ads un'azienda manifatturiera deve pagare solo le ricerche che somigliano a una richiesta d'offerta. Le altre vanno escluse o lasciate alla SEO. Una prima selezione, con esempi plausibili:\n\n| Tipo di ricerca | Esempio | Cosa farne |\n|---|---|---|\n| Lavorazione con intento d'acquisto | \"taglio laser tubo conto terzi\" | Priorità, campagna Search dedicata |\n| Componente con specifica | \"riduttore epicicloidale ad alta coppia\" | Gruppi stretti, landing sulla famiglia di prodotto |\n| Prodotto più \"fornitore\" o \"produttore\" | \"produttore nastri trasportatori modulari\" | Priorità, spesso il segnale più chiaro |\n| Ricerca informativa | \"come funziona la tempra a induzione\" | Lasciata alla SEO e ai contenuti |\n| Lavoro, formazione, usato | \"operatore CNC offerte lavoro\", \"tornio usato\" | Esclusa, salvo obiettivi specifici |\n\nI volumi sono bassi e il costo per clic può essere alto, ma una sola commessa ripaga mesi di campagna. Per questo lavoriamo con corrispondenza a frase ed esatta sui termini principali e allarghiamo solo quando i dati lo permettono. Il metodo generale, dal tracciamento alle strategie di offerta, è quello della pagina [Google Ads](/servizi/advertising/google-ads).\n\n## Parole chiave negative, paesi e lingue\n\nLe esclusioni sono metà del lavoro in un account industriale. Prepariamo elenchi di parole negative per categorie, come lavoro e stage, tesi e università, gratis e PDF, fai da te, noleggio o usato se non li offri, e li aggiorniamo ogni settimana leggendo i termini di ricerca reali.\n\nSui mercati esteri le campagne vanno separate per paese, con annunci scritti nella lingua del buyer e landing nella stessa lingua. Nelle impostazioni di località conviene scegliere la presenza effettiva nel paese, e non anche l'interesse per quel paese, altrimenti gli annunci tedeschi compaiono a chi in Italia cerca informazioni sulla Germania. Se vendi solo dove hai rivenditori o assistenza, il targeting segue la mappa della tua rete, non le ambizioni.\n\n## Landing page tecniche e richiesta d'offerta\n\nMandare un clic da una ricerca specifica alla home è il modo più rapido per sprecarlo. Ogni gruppo di annunci porta a una pagina che parla solo di quella lavorazione o famiglia di prodotto: capacità, dimensioni, materiali, settori serviti, certificazioni, foto vere e una richiesta d'offerta con pochi campi utili. Le costruiamo con il servizio [landing page](/servizi/web-app/landing-page) o, quando il sito è già strutturato bene, usiamo direttamente le sue schede.\n\nUn dettaglio che pesa nel B2B: lasciare la possibilità di allegare un disegno o una specifica al modulo. Chi ha un progetto vero lo fa, e il commerciale capisce subito se la richiesta è seria.\n\n## Misurare offerte, non clic\n\nIl modulo compilato è un segnale debole: dentro ci sono anche fornitori che vogliono venderti qualcosa e studenti curiosi. Per far lavorare bene le offerte automatiche di Google colleghiamo la campagna al CRM. Con l'importazione delle conversioni offline o con le conversioni avanzate per i lead, Google Ads riceve l'informazione su quali contatti sono diventati lead qualificati, offerte e ordini, e da lì impara.\n\nI cicli di vendita lunghi creano un limite pratico: la finestra di conversione di Google Ads arriva al massimo a novanta giorni dal clic. Per questo importiamo come conversione principale una tappa intermedia, come il lead qualificato dal commerciale, e usiamo l'ordine per le analisi di ritorno. La parte tecnica si appoggia a [tracking e Google Tag Manager](/servizi/data-analytics/tracking-gtm) e a un CRM come [HubSpot](/servizi/crm-email/hubspot).\n\n## Performance Max e YouTube nell'industria\n\nPerformance Max può funzionare per un'azienda con molti prodotti a catalogo e molte conversioni, ma per chi riceve poche richieste di alto valore toglie controllo proprio dove serve. In genere partiamo da Search e la valutiamo solo dopo, con segnali di conversione puliti. YouTube invece è utile in un altro ruolo: mostrare la macchina al lavoro a chi ha già visitato il sito, durante i mesi in cui la trattativa matura. Il quadro completo del marketing per il settore è nella pagina [manifatturiero](/settori/manifatturiero).",
+      "faq": [
+        {
+          "question": "Con volumi di ricerca così bassi, Google Ads conviene?",
+          "answer": "Conviene quando il valore di un ordine è alto e le ricerche, anche se poche, indicano un acquisto. Bastano poche richieste giuste per ripagare la campagna. Non conviene se il prodotto è così di nicchia che nessuno lo cerca con parole riconoscibili: in quel caso LinkedIn, fiere e contatto diretto rendono di più, e te lo diciamo prima di partire."
+        },
+        {
+          "question": "Da cosa dipende il budget per una campagna industriale?",
+          "answer": "Da quanti mercati e lavorazioni vuoi coprire, da quanto costano i clic nel tuo settore e da quanti dati servono per capire cosa funziona. Si parte di solito da un mercato e da poche lavorazioni, si misura il costo per richiesta qualificata e si allarga. Una stima iniziale la puoi fare con il calcolatore su /preventivo."
+        },
+        {
+          "question": "Meglio Google Ads o LinkedIn Ads per un fornitore industriale?",
+          "answer": "Fanno cose diverse. Google Ads intercetta chi cerca adesso un fornitore per un'esigenza precisa. LinkedIn Ads raggiunge ruoli e aziende che ancora non ti cercano, utile per farsi conoscere da buyer e ingegneri di settori mirati. Spesso si parte da Google per la domanda esistente e si aggiunge LinkedIn per costruirne di nuova."
+        },
+        {
+          "question": "Possiamo fare annunci sul nome dei concorrenti?",
+          "answer": "Si può comparire sulle ricerche dei nomi dei concorrenti, ma non usare marchi altrui nel testo degli annunci se il titolare lo contesta. Nel settore industriale spesso rende poco: chi cerca un marchio preciso vuole quel marchio. Funziona meglio puntare sulla lavorazione o sul tipo di componente, dove la scelta del fornitore è ancora aperta."
+        },
+        {
+          "question": "Gestite campagne in lingue straniere?",
+          "answer": "Sì. Struttura e strategia le imposta il nostro team, gli annunci e le landing nelle altre lingue li scriviamo con traduttori specializzati e, dove possibile, li facciamo rivedere da un vostro agente o rivenditore madrelingua. Ogni paese ha campagne e budget separati, così si vede subito quale mercato risponde e quale no."
+        },
+        {
+          "question": "Quanto tempo serve per capire se le campagne funzionano?",
+          "answer": "Le prime settimane servono a pulire i termini di ricerca e a verificare il tracciamento. Dopo due o tre mesi si ha un'idea del costo per richiesta qualificata. Per sapere quante richieste diventano ordini, con cicli di vendita lunghi, serve più tempo: per questo concordiamo dall'inizio tappe intermedie da misurare."
+        }
+      ],
+      "metaTitle": "Google Ads per aziende manifatturiere e industria | not4sale",
+      "metaDescription": "Google Ads per aziende manifatturiere: campagne Search su lavorazioni e componenti, per paese e lingua, con conversioni importate dal CRM. Parliamone."
+    },
+    {
+      "sector": "manifatturiero",
+      "service": "meta-ads",
+      "headline": "Meta Ads per aziende manifatturiere: personale, fiere e territorio",
+      "short": "Meta Ads per aziende manifatturiere: annunci di lavoro per personale tecnico, inviti alle fiere e retargeting di chi ha visto il sito.",
+      "answer": "Meta Ads per aziende manifatturiere raramente servono a vendere macchinari: servono a trovare personale tecnico vicino allo stabilimento, a portare visitatori allo stand in fiera, a farsi conoscere nel territorio e a richiamare chi ha già visitato il sito. not4sale imposta campagne Facebook e Instagram con obiettivi realistici, rispettando le regole della categoria speciale per gli annunci di lavoro.",
+      "problem": "A molte aziende manifatturiere Meta Ads sono state proposte come macchina per i contatti commerciali: un modulo su Facebook, un'offerta generica, centinaia di nominativi a poco prezzo. I nominativi arrivano, ma sono privati, piccoli artigiani fuori target, persone che hanno cliccato per sbaglio. Il commerciale li chiama per un mese e poi smette.\n\nNel frattempo il problema vero dell'azienda è un altro. Mancano un manutentore elettrico, due operatori CNC, un saldatore. L'annuncio è sul sito e su un portale di lavoro, le candidature sono poche e spesso fuori zona. Le persone giuste ci sono, magari a pochi chilometri dallo stabilimento, ma non cercano attivamente: scorrono Facebook e Instagram la sera, e nessuno gli fa vedere che a due paesi di distanza c'è un'azienda che assume, forma e paga il giusto.\n\nC'è poi la fiera: mesi di preparazione, stand costoso, e gli inviti affidati a una newsletter che apre solo una parte dei clienti. Meta Ads, usate per quello che sanno fare, risolvono soprattutto questi due problemi.",
+      "process": [
+        {
+          "title": "Obiettivo per campagna",
+          "description": "Una campagna, un obiettivo: candidature, visite allo stand o richiamo di chi conosce già l'azienda. Mai tutto insieme."
+        },
+        {
+          "title": "Annuncio e pagina lavoro",
+          "description": "Scriviamo mansione, turni, contratto e cosa si produce, e prepariamo una pagina o un modulo di candidatura breve."
+        },
+        {
+          "title": "Creatività dal reparto",
+          "description": "Usiamo foto e video veri di reparti, persone e macchine, girati nel rispetto di sicurezza e riservatezza."
+        },
+        {
+          "title": "Candidature e follow-up",
+          "description": "Le candidature arrivano a chi seleziona con le informazioni essenziali, e ogni persona riceve una risposta."
+        },
+        {
+          "title": "Lettura dei risultati",
+          "description": "Misuriamo costo per candidatura utile, colloqui e assunzioni, oppure visite allo stand, e correggiamo."
+        }
+      ],
+      "body": "## Meta Ads per aziende manifatturiere: quando hanno senso\n\nLe Meta Ads per aziende manifatturiere funzionano quando il pubblico è fatto di persone, non di ruoli aziendali. Facebook e Instagram non permettono di scegliere con precisione il responsabile acquisti di un'azienda meccanica; permettono invece di raggiungere bene le persone che vivono in una zona, che hanno visitato il tuo sito o che conoscono già l'azienda.\n\n| Obiettivo | Ha senso su Meta? | Note |\n|---|---|---|\n| Ricerca di personale operativo e tecnico | Sì, spesso il primo uso | Categoria speciale Occupazione, regole dedicate |\n| Inviti a fiere ed eventi aziendali | Sì | Pubblici di chi conosce già l'azienda, zona della fiera |\n| Retargeting di chi ha visto il sito | Sì, con budget contenuti | Video di macchine e casi applicativi |\n| Notorietà nel territorio | Sì | Utile anche per il reclutamento futuro |\n| Vendita diretta a buyer industriali | Raramente | Meglio [LinkedIn Ads](/servizi/advertising/linkedin-ads) o Google Ads |\n\nFa eccezione chi ha anche un prodotto per il consumatore finale, per esempio un marchio di attrezzi o elettrodomestici: lì valgono le regole di un e-commerce. Il metodo generale di lavoro è descritto nella pagina [Meta Ads](/servizi/advertising/meta-ads).\n\n## Annunci di lavoro: la categoria speciale Occupazione\n\nGli annunci che promuovono offerte di lavoro, tirocini o percorsi di formazione professionale vanno dichiarati su Meta come categoria speciale Occupazione, anche in Europa. La dichiarazione comporta limiti precisi al targeting: niente selezione per età o genere, un raggio minimo attorno al luogo indicato, niente pubblici simili, opzioni dettagliate ridotte. Meta aggiorna queste regole periodicamente, e a ogni campagna verifichiamo quelle in vigore.\n\nCon un targeting così aperto, è l'annuncio a selezionare chi risponde. Per questo lavoriamo molto sul contenuto:\n\n- **Mansione chiara nel titolo**: \"cerchiamo un manutentore elettromeccanico\", non \"entra nel nostro team\";\n- **I fatti che contano per chi lavora**: turni, tipo di contratto, formazione prevista, distanza dai paesi vicini, cosa si produce;\n- **Facce e reparti veri**, con il collega che racconta in trenta secondi il suo primo anno;\n- **Una candidatura breve**: nome, telefono, mansione, esperienza in poche scelte. Il curriculum si chiede dopo, non prima.\n\nNelle aree produttive tra Romagna e Marche molte aziende cercano gli stessi profili negli stessi paesi: chi racconta meglio il proprio lavoro si fa notare per primo. Gli stessi contenuti alimentano anche la [gestione social per aziende manifatturiere](/settori/manifatturiero/gestione-social).\n\n## Fiere ed eventi: portare le persone giuste allo stand\n\nPrima di una fiera le Meta Ads servono a ricordare l'appuntamento a chi conosce già l'azienda: visitatori del sito, follower, e contatti dei clienti caricati come pubblico personalizzato, solo dove la base giuridica per farlo è in regola. L'annuncio dice padiglione, stand, cosa si vedrà e perché vale la deviazione. Durante i giorni di fiera si può restringere la zona attorno al quartiere fieristico, per chi è lì in quel momento.\n\nLo stand, i materiali e la raccolta contatti li seguiamo con la [grafica per fiere ed eventi](/servizi/branding/grafica-fiere): la campagna porta le persone, lo stand deve trasformarle in conversazioni.\n\n## Misurare candidature, colloqui e visite\n\nIl costo per clic dice poco. Per il reclutamento misuriamo il costo per candidatura, poi, insieme a chi seleziona, quante candidature erano pertinenti, quante sono diventate colloqui e quante assunzioni. Pixel e Conversions API registrano l'invio della candidatura dal sito; il resto lo aggiorniamo con te in un foglio condiviso.\n\nPer le fiere contiamo i contatti raccolti allo stand che citano la campagna o che erano nei pubblici raggiunti. Sono numeri piccoli ma onesti, e bastano per decidere se rifarlo alla fiera successiva. Il quadro complessivo, dai buyer esteri al personale, è nella pagina [marketing per il manifatturiero](/settori/manifatturiero).",
+      "faq": [
+        {
+          "question": "Facebook funziona davvero per trovare operai e tecnici?",
+          "answer": "Spesso sì, soprattutto per ruoli operativi e tecnici vicino allo stabilimento. Molte persone che non cercano lavoro attivamente usano Facebook e Instagram ogni giorno, e un annuncio chiaro su mansione, turni e ambiente le raggiunge. Non sostituisce scuole, agenzie e passaparola: allarga il bacino, in particolare tra chi oggi lavora altrove e valuta un cambio."
+        },
+        {
+          "question": "Posso scegliere l'età dei candidati negli annunci?",
+          "answer": "No. Con la categoria speciale Occupazione Meta non consente di selezionare età o genere, e anche il testo dell'annuncio deve evitare requisiti discriminatori. Il pubblico si qualifica con il contenuto: mansione precisa, competenze richieste, condizioni. È una regola che protegge anche l'azienda, perché un annuncio discriminatorio crea problemi ben oltre la piattaforma."
+        },
+        {
+          "question": "Si possono vendere macchinari con Facebook e Instagram?",
+          "answer": "Raramente in modo diretto, perché su Meta non si possono raggiungere con precisione ruoli come buyer o responsabile di produzione. Funzionano invece come supporto: retargeting di chi ha già visitato le schede prodotto, video della macchina al lavoro, inviti a demo e fiere. Per la generazione di contatti commerciali B2B in genere rendono di più LinkedIn e Google."
+        },
+        {
+          "question": "Chi risponde ai candidati?",
+          "answer": "Le candidature arrivano direttamente a chi si occupa della selezione in azienda, già ordinate con le informazioni essenziali. Possiamo impostare una risposta automatica di conferma e un messaggio per chi non viene selezionato. Rispondere a tutti conta: in una zona dove le aziende si conoscono, un candidato ignorato racconta la sua esperienza ad altri."
+        },
+        {
+          "question": "Quanto budget serve per una campagna di reclutamento?",
+          "answer": "Dipende dal numero di profili cercati, dall'ampiezza della zona e da quanto è richiesto quel mestiere. Di solito si parte con una campagna di alcune settimane su uno o due profili, si misura il costo per candidatura utile e si decide se continuare. Per una stima del lavoro di gestione c'è il calcolatore su /preventivo."
+        }
+      ],
+      "metaTitle": "Meta Ads per aziende manifatturiere e fiere | not4sale",
+      "metaDescription": "Meta Ads per aziende manifatturiere: annunci di lavoro per personale tecnico, inviti alle fiere e retargeting, con candidature misurate. Parliamone."
+    },
+    {
+      "sector": "manifatturiero",
+      "service": "logo-identita-visiva",
+      "headline": "Logo per aziende manifatturiere: marchi industriali e di prodotto",
+      "short": "Logo e identità visiva per aziende manifatturiere: marchi che reggono su targhe, macchine, imballi e interfacce, con un'architettura chiara.",
+      "answer": "Un logo per aziende manifatturiere deve funzionare dove i loghi soffrono: inciso su una targa, verniciato su una carrozzeria, stampato a un colore su un cartone, mostrato sullo schermo di comando della macchina. not4sale progetta identità visive per marchi industriali e linee di prodotto, con architettura di marca, varianti tecniche e file pronti per fornitori e rivenditori.",
+      "problem": "Il marchio di molte aziende manifatturiere ha la stessa età del primo capannone. È stato disegnato bene per il suo tempo, poi è stato ritoccato da chiunque: il tipografo che ha aggiunto un'ombra, il rivenditore estero che l'ha ridisegnato a mano, il fornitore delle targhe che ha scelto un colore simile perché l'originale non era specificato.\n\nNel frattempo l'azienda è cresciuta. Ha comprato un concorrente con il suo marchio storico, ha lanciato una linea di prodotto con un nome inventato in fretta per una fiera, ha aperto una filiale all'estero. Oggi sullo stesso stand convivono quattro loghi con quattro stili diversi, e il buyer non capisce se sta parlando con un gruppo o con quattro aziende.\n\nIl costo non si vede in bilancio, ma c'è. Ogni catalogo, ogni nuova macchina, ogni allestimento richiede discussioni su colori e versioni. I distributori fanno da soli, ognuno a modo suo. E il valore del marchio, che nel B2B si costruisce in decenni di affidabilità, si disperde in una comunicazione che sembra improvvisata.",
+      "process": [
+        {
+          "title": "Inventario dei marchi",
+          "description": "Raccogliamo tutte le versioni in uso, da targhe e cataloghi fino ai materiali dei rivenditori, e vediamo cosa è riconosciuto davvero."
+        },
+        {
+          "title": "Architettura di marca",
+          "description": "Decidiamo il rapporto tra marchio aziendale, marchi acquisiti e linee di prodotto, prima di disegnare."
+        },
+        {
+          "title": "Disegno e prove tecniche",
+          "description": "Proviamo il marchio in incisione, serigrafia, ricamo e stampa a un colore, non solo a schermo."
+        },
+        {
+          "title": "Applicazioni industriali",
+          "description": "Lo applichiamo a macchine, imballi, schermi di comando, stand e documentazione tecnica."
+        },
+        {
+          "title": "Manuale e transizione",
+          "description": "Consegniamo regole, file per i fornitori e un piano per sostituire il vecchio marchio senza sprechi."
+        }
+      ],
+      "body": "## Logo per aziende manifatturiere: i supporti che contano\n\nIl logo di un'azienda manifatturiera vive soprattutto su oggetti, e solo dopo su schermi e carta. Progettiamo partendo dall'elenco dei supporti reali:\n\n- **Targhe e marcature.** Incisione laser, stampa su alluminio anodizzato, punzonatura. Serve una versione a un solo colore, senza sfumature né dettagli sottili che spariscono nella lavorazione.\n- **Carrozzerie e colori di macchina.** Il colore istituzionale va definito in tutti i sistemi: RAL per la verniciatura, Pantone per la stampa, CMYK e RGB per cataloghi e schermi. Un blu scelto solo a monitor può diventare un altro blu sulla lamiera.\n- **Imballi e cartoni.** Spesso stampati in flessografia a uno o due colori su cartone ondulato: il marchio deve restare leggibile anche lì.\n- **Interfacce di comando.** Lo schermo della macchina è il punto in cui l'operatore del cliente vede il tuo marchio ogni giorno, per anni. Logo, colori e icone vanno pensati anche per quello spazio.\n- **Stand e documentazione tecnica.** Il marchio deve funzionare in grande su una parete e in piccolo sull'intestazione di un manuale di duecento pagine.\n\nIl metodo generale, dalle direzioni creative alla consegna dei file, è nella pagina [logo e identità visiva](/servizi/branding/logo-identita-visiva).\n\n## Marchio aziendale e marchi di prodotto: l'architettura di marca\n\nPrima del disegno serve una decisione: come si collegano tra loro azienda, marchi acquisiti e linee di prodotto. Le strade principali sono tre.\n\n| Modello | Come funziona | Quando ha senso |\n|---|---|---|\n| Marchio unico | Tutto si chiama come l'azienda, i prodotti hanno nomi descrittivi o sigle | Gamma coerente, un solo tipo di cliente |\n| Marchi di prodotto | Ogni linea ha un nome e un'identità propri | Mercati molto diversi, o marchi acquisiti con forte storia |\n| Modello misto | Marchi di prodotto firmati dal marchio aziendale | Gruppi cresciuti per acquisizioni che vogliono mostrarsi uniti |\n\nLa scelta ha conseguenze su sito, cataloghi, stand e targhe, quindi la prendiamo con la direzione partendo dalla [brand strategy](/servizi/branding/brand-strategy). Se una linea nuova ha bisogno di un nome, lo sviluppiamo con il servizio di [naming](/servizi/branding/naming), verificando fin da subito che sia registrabile nei mercati in cui vendi.\n\n## Restyling di un marchio industriale storico\n\nUn marchio presente da decenni sulle macchine dei clienti è un patrimonio: buyer, manutentori e rivenditori lo riconoscono a colpo d'occhio. Raramente conviene buttarlo. Più spesso si fa un restyling che ne conserva i tratti riconoscibili e risolve i problemi pratici: leggibilità in piccolo, versione monocromatica, colori specificati, caratteri disponibili.\n\nAnche la transizione va progettata. Le macchine installate continueranno ad avere la vecchia targa per anni, e va bene così. Di solito si cambia subito tutto ciò che è digitale, si sostituiscono imballi e stampati all'esaurimento delle scorte e si introduce la nuova targa sulla produzione da una certa data in avanti. Così il cambio non costa magazzino buttato e non confonde i clienti.\n\n## Marchio, marcatura CE e registrazione\n\nSulla targa di una macchina il tuo logo convive con segni che hanno regole proprie. La marcatura CE ha una forma e proporzioni fissate dalla normativa europea e un'altezza minima: non si ridisegna e non si avvicina al logo in modo da confondersi con esso. Anche i dati obbligatori di targa hanno priorità sul marchio. Progettiamo lo spazio della targa insieme all'ufficio tecnico, perché marchio e dati obbligatori stiano bene insieme.\n\nPer un'azienda che esporta, la registrazione del marchio è parte del progetto. Prima di chiudere il disegno conviene una ricerca di anteriorità; poi la registrazione può essere nazionale, europea presso l'EUIPO o internazionale con il sistema di Madrid, nelle classi che coprono i tuoi prodotti. La pratica la segue un consulente in proprietà industriale; noi consegniamo i file e le varianti nel formato che serve al deposito.\n\n## Come si mantiene coerente un'identità industriale\n\nIl manuale d'uso non basta se nessuno lo trova. Mettiamo a disposizione un kit con marchi, colori, caratteri, modelli per schede tecniche e presentazioni, da scaricare dall'area riservata del sito: rivenditori, agenti e fornitori prendono i file giusti senza chiedere. Su questo si lega il lavoro sui [siti web per aziende manifatturiere](/settori/manifatturiero/siti-web). Dopo qualche mese controlliamo i materiali in circolazione e correggiamo dove serve. Il quadro completo del marketing per il settore è nella pagina [manifatturiero](/settori/manifatturiero), e da Cattolica seguiamo aziende industriali tra Romagna e Marche e in tutta Italia.",
+      "faq": [
+        {
+          "question": "Dobbiamo cambiare il marchio storico?",
+          "answer": "Quasi mai da zero. Se il marchio è riconosciuto da clienti e rivenditori, conviene un restyling che conservi forma e colori principali e risolva i problemi tecnici, come la leggibilità in piccolo o l'assenza di una versione a un colore. Una nuova identità ha senso quando cambiano nome, proprietà o mercati in modo sostanziale."
+        },
+        {
+          "question": "Come gestiamo i marchi delle aziende acquisite?",
+          "answer": "Dipende dal valore che quei marchi hanno presso i loro clienti. Se sono forti in un mercato o in una nicchia, spesso conviene mantenerli e firmarli con il marchio del gruppo. Se sono deboli o si sovrappongono, conviene assorbirli gradualmente. È una decisione strategica, da prendere prima di qualsiasi lavoro grafico, con numeri di vendita alla mano."
+        },
+        {
+          "question": "Il logo deve funzionare anche sullo schermo della macchina?",
+          "answer": "Sì, ed è un punto spesso dimenticato. L'interfaccia di comando è vista dagli operatori del cliente ogni giorno, per anni. Prepariamo una versione del marchio adatta a schermi piccoli, colori leggibili in ambiente di reparto e indicazioni per icone e schermate di avvio, da passare a chi sviluppa il software della macchina."
+        },
+        {
+          "question": "Vi occupate anche della registrazione del marchio?",
+          "answer": "La registrazione è compito di un consulente in proprietà industriale o di un avvocato, che verifica anteriorità e classi di prodotto nei paesi che ti interessano. Noi lavoriamo in parallelo: consegniamo il marchio nei formati richiesti dal deposito e, se ci sono rischi di somiglianza emersi dalla ricerca, adattiamo il disegno prima che diventi definitivo."
+        },
+        {
+          "question": "Quanto tempo serve per rifare l'identità di un'azienda industriale?",
+          "answer": "Il disegno del marchio richiede alcune settimane. Il tempo vero lo prendono architettura di marca, prove sui supporti reali e transizione: targhe, imballi, cataloghi e materiali dei rivenditori. Per questo concordiamo un calendario per fasi, partendo dai supporti digitali e arrivando alle macchine con la produzione successiva a una data stabilita."
+        }
+      ],
+      "metaTitle": "Logo per aziende manifatturiere e industria | not4sale",
+      "metaDescription": "Logo e identità visiva per aziende manifatturiere: marchi per targhe, macchine, imballi e interfacce, architettura di marca e file pronti. Parliamone."
+    }
+  ]
+}

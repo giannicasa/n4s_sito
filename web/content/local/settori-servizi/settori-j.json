@@ -1,0 +1,350 @@
+{
+  "items": [
+    {
+      "sector": "nautica",
+      "service": "siti-web",
+      "headline": "Siti web per la nautica: schede modello, lingue e richieste vere",
+      "short": "Siti web per cantieri, subfornitori, rimessaggi e noleggi: schede modello, area broker, multilingua e richieste che arrivano complete.",
+      "answer": "I siti web per la nautica devono far capire a un armatore straniero, a un broker o a un diportista cosa costruisci, ripari o noleggi, nella sua lingua e con i dati che usa per decidere. not4sale realizza siti per cantieri, subfornitori, rimessaggi e noleggi con schede modello, video, area riservata e richieste tracciate fino alla trattativa.",
+      "problem": "Molti siti della nautica sono nati come brochure per il salone e sono rimasti lì: una home con un video in navigazione che pesa come un film, una pagina per modello con tre foto e un PDF, la versione inglese tradotta a metà e quella tedesca mai arrivata. Funzionano finché il cliente ti ha già stretto la mano in fiera. Per tutti gli altri sono un vicolo cieco.\n\nIl guaio è che sotto la parola \"nautica\" convivono pubblici che non si somigliano. Il broker vuole schede aggiornate e materiali da girare ai suoi clienti. L'armatore vuole capire spazi, versioni e tempi di consegna. Il responsabile acquisti di un cantiere cerca un subfornitore capace di lavorare il teak o di progettare un impianto, e vuole vedere lavori fatti. Chi noleggia vuole sapere se serve la patente e cosa include la giornata. Chi tiene la barca a secco chiede solo se c'è posto per l'inverno.\n\nUn sito che prova a parlare a tutti con le stesse pagine non risponde a nessuno. Le richieste arrivano vaghe, nella lingua sbagliata, oppure non arrivano, e tu continui a pensare che \"il web nel nostro settore non funziona\".",
+      "process": [
+        {
+          "title": "Pubblici e mercati",
+          "description": "Decidiamo chi deve trovare il sito, tra armatori, broker, cantieri clienti e diportisti, e in quali lingue, mercato per mercato."
+        },
+        {
+          "title": "Schede e dati tecnici",
+          "description": "Raccogliamo dati, versioni, foto e video di ogni modello o servizio in un formato unico, che si aggiorna da un pannello."
+        },
+        {
+          "title": "Lingue vere",
+          "description": "Impostiamo URL e hreflang per lingua e facciamo adattare i testi da chi conosce il lessico nautico, non da un traduttore automatico."
+        },
+        {
+          "title": "Percorsi di richiesta",
+          "description": "Moduli diversi per configurazione, preventivo di refit, posto barca o disponibilità di noleggio, ognuno con i campi che servono davvero."
+        },
+        {
+          "title": "Misura sulla trattativa",
+          "description": "Colleghiamo le richieste al CRM e contiamo quelle che diventano trattative, commesse o prenotazioni, non le visite."
+        }
+      ],
+      "body": "## Cosa deve avere un sito web per la nautica\n\nUn sito web per la nautica deve rispondere prima alle domande tecniche e solo dopo a quelle emotive. L'emozione la porta il video; la decisione si prende sui dati. Per questo progettiamo il sito a partire da tre cose:\n\n1. **Il catalogo**, che sia di modelli, di lavorazioni o di barche a noleggio, gestito come un database e non come una serie di pagine scritte a mano.\n2. **Le lingue dei mercati in cui vendi**, ognuna con le sue pagine e i suoi termini.\n3. **I percorsi di richiesta**, diversi per chi compra, per chi fa lavorare la barca e per chi la affitta per un giorno.\n\nLa pagina del settore [nautica](/settori/nautica) spiega come si muove il mercato tra saloni e stagione; qui entriamo nel dettaglio di come va costruito il sito per reggere quel ritmo.\n\n## Schede modello e configurazioni: il cuore del sito di un cantiere\n\nPer un cantiere la scheda modello è la pagina più importante del sito, e quasi sempre la più trascurata. Una scheda fatta bene contiene:\n\n- **dati principali** in un formato confrontabile: lunghezza fuori tutto, baglio, dislocamento, motorizzazioni disponibili, capacità dei serbatoi, posti letto, categoria di progettazione CE secondo la direttiva europea sulle unità da diporto;\n- **layout** di coperta e degli interni, con le varianti disponibili;\n- **video tour** degli interni e in navigazione, più una galleria ordinata per zona della barca;\n- **configurazioni e optional** spiegati con immagini, anche senza un configuratore 3D: spesso basta mostrare bene colori, essenze e pacchetti;\n- **documenti scaricabili** per broker e dealer, sempre all'ultima versione.\n\nQuando i modelli sono molti, i dati stanno in un unico archivio e le pagine si generano da lì. Cambi un valore una volta e cambia ovunque, in tutte le lingue. Per broker e dealer prevediamo un'area riservata con listini, schede stampabili, foto in alta risoluzione e video senza logo del sito, così non devono chiederti i file ogni volta.\n\n## Subfornitori, rimessaggi, noleggi: siti diversi per mestieri diversi\n\nNon tutta la nautica vende barche. Ogni mestiere ha un sito con un obiettivo diverso.\n\n| Chi sei | Chi arriva sul sito | Cosa deve trovare |\n|---|---|---|\n| Subfornitore (arredi, impianti, carpenteria, tappezzeria) | Ufficio tecnico e acquisti dei cantieri | Lavorazioni, materiali, capacità produttiva, lavori fatti con il permesso del committente |\n| Rimessaggio e refit | Armatore che vive lontano dal porto | Servizi, piazzale e capannoni, mezzi di alaggio, come si chiede un preventivo per l'inverno |\n| Noleggio e charter | Turista o diportista occasionale | Flotta, cosa è incluso, patente sì o no, con o senza skipper, disponibilità |\n| Broker dell'usato | Chi compra e chi vende | Barche in vendita con dati e storia, come funziona la mediazione, chi sei |\n\nPer i noleggi c'è un dettaglio che il sito deve chiarire: il Codice della nautica da diporto distingue la **locazione**, in cui conduci tu la barca, dal **noleggio**, in cui la barca resta al noleggiante con il suo equipaggio. Se offri entrambi, servono pagine e condizioni separate, scritte in modo che un cliente straniero capisca subito cosa sta prenotando.\n\n## Multilingua, video e peso delle pagine\n\nUn sito nautico vive di immagini enormi e video lunghi, ed è spesso consultato dal telefono, in banchina o in fiera. Due regole tengono tutto in piedi:\n\n- **I video non stanno sul server del sito.** Li ospitiamo su una piattaforma video e li carichiamo solo quando servono, con un'anteprima leggera.\n- **Ogni lingua ha le sue pagine e i suoi URL**, collegati con hreflang. Una traduzione caricata al volo con un plugin non viene trovata da chi cerca in tedesco o in francese.\n\nSe vendi soprattutto fuori dall'Italia, il lavoro sulle ricerche nei vari paesi si fa con la [SEO internazionale](/servizi/seo/seo-internazionale). Video tour e riprese in navigazione li produciamo con il servizio di [video e spot](/servizi/content/video-spot), pensando fin dall'inizio ai tagli per il sito.\n\n## Come misuriamo un sito nautico\n\nLe visite contano poco. Contiamo le richieste per tipo, modello, lingua e paese, e le seguiamo nel CRM fino all'esito: trattativa aperta, prova in mare, commessa, prenotazione. Per i cantieri, dove una trattativa dura mesi, prepariamo sequenze di [lead nurturing](/servizi/crm-email/lead-nurturing) che tengono vivo il contatto tra la richiesta e il salone successivo.\n\nPer l'impostazione tecnica generale, tempi e tecnologie, trovi tutto nella pagina sulla [realizzazione di siti web](/servizi/web-app/siti-web). Lavoriamo da Cattolica, sul canale del porto, con aziende nautiche tra Romagna e Marche e, da remoto, con cantieri di tutta Italia.",
+      "faq": [
+        {
+          "question": "Serve un configuratore online per le barche?",
+          "answer": "Non sempre. Un configuratore 3D ha senso quando le combinazioni sono tante e il cliente compra in modo abbastanza autonomo, come accade per alcuni gommoni e day cruiser. Per barche più grandi, dove la configurazione si chiude con il commerciale, bastano immagini chiare di colori, essenze e pacchetti, più un modulo che raccoglie le preferenze prima della chiamata."
+        },
+        {
+          "question": "In quante lingue deve essere il sito di un cantiere nautico?",
+          "answer": "In quelle dei mercati in cui vendi davvero o vuoi entrare nei prossimi anni, non in tutte quelle disponibili. Italiano e inglese sono la base. Le altre si aggiungono quando ci sono broker, dealer o clienti in quel paese, e quando qualcuno in azienda può rispondere alle richieste in quella lingua."
+        },
+        {
+          "question": "Conviene pubblicare l'usato sul sito oltre che sui portali?",
+          "answer": "Sì, se sei un broker o un cantiere che ritira usato. I portali internazionali portano visibilità, ma sul tuo sito la barca ha una scheda completa, con storia, manutenzioni e video, e la richiesta arriva solo a te. Le schede si possono generare dallo stesso archivio che alimenta i portali, per non inserire i dati due volte."
+        },
+        {
+          "question": "Posso dare ai broker un accesso riservato?",
+          "answer": "Sì. Prevediamo un'area con login per broker e dealer, dove trovano listini, schede stampabili, foto in alta risoluzione e video senza marchio del sito. Ogni accesso è personale, così sai chi scarica cosa e puoi togliere l'accesso a chi non lavora più con te, senza cambiare password a tutti."
+        },
+        {
+          "question": "Il sito di un noleggio deve avere la prenotazione online?",
+          "answer": "Dipende dalla flotta e da come lavori. Per gommoni e piccole barche senza patente una prenotazione con pagamento online riduce telefonate e messaggi. Per barche con skipper o settimane di charter funziona meglio una richiesta di disponibilità con date, persone ed esperienza, seguita da una risposta rapida e personale."
+        },
+        {
+          "question": "Chi aggiorna dati, foto e listini dopo il lancio?",
+          "answer": "Il tuo ufficio commerciale o tecnico, da un pannello semplice. I dati dei modelli stanno in un unico archivio e le pagine si aggiornano in tutte le lingue. Per testi nuovi in lingua straniera conviene una revisione di chi conosce il settore: un termine nautico sbagliato in un listino per broker si nota subito."
+        }
+      ],
+      "metaTitle": "Siti web per la nautica e cantieri nautici | not4sale",
+      "metaDescription": "Siti web per la nautica: schede modello, area broker, multilingua e moduli per cantieri, rimessaggi e noleggi. Richieste misurate. Parliamone."
+    },
+    {
+      "sector": "nautica",
+      "service": "seo-locale",
+      "headline": "SEO locale per la nautica: rimessaggi e noleggi trovati da chi arriva",
+      "short": "SEO locale per rimessaggi, officine, refit, noleggi e scuole: scheda Google, pagine per porto e recensioni in più lingue.",
+      "answer": "La SEO locale per la nautica rende visibili su Google e Maps rimessaggi, officine, refit, noleggi barche e scuole vela quando qualcuno cerca un servizio vicino a un porto. not4sale lavora su scheda Google, pagine per porto e servizio, recensioni in più lingue e ricerche stagionali, per portare richieste da diportisti e turisti che spesso vivono lontano.",
+      "problem": "Nella nautica il cliente locale non è quasi mai locale. L'armatore che tiene la barca nel tuo porto spesso vive in un'altra regione o all'estero, e decide dove fare il rimessaggio dal divano di casa, in autunno. Il turista che vuole noleggiare un gommone cerca il giorno prima, dall'hotel, in tedesco o in inglese. Il diportista di passaggio con un problema al motore cerca \"assistenza motori marini\" dalla banchina, con il telefono in mano.\n\nMolte aziende di servizi nautici, invece, sono rimaste al passaparola tra pontili. La scheda Google l'ha creata qualcuno anni fa, la categoria è generica, le foto sono tre e una è il logo. Gli orari non dicono nulla della stagione, e d'inverno il telefono squilla a vuoto. Le recensioni ci sono, ma nessuno risponde.\n\nIntanto i noleggi vedono crescere il peso dei portali di prenotazione, che portano clienti ma trattengono una commissione e si tengono il contatto. E chi fa refit o manutenzione resta invisibile proprio nei mesi in cui gli armatori scelgono a chi affidare la barca per l'inverno.",
+      "process": [
+        {
+          "title": "Mappa delle ricerche",
+          "description": "Raccogliamo come ti cercano per servizio, porto e lingua, distinguendo le ricerche d'autunno da quelle d'estate."
+        },
+        {
+          "title": "Scheda Google completa",
+          "description": "Categoria precisa, servizi, foto vere di piazzale e flotta, orari stagionali e domande frequenti nelle lingue utili."
+        },
+        {
+          "title": "Pagine per porto e servizio",
+          "description": "Sul sito creiamo pagine per ogni base o servizio reale, coerenti con la scheda e con i dati strutturati."
+        },
+        {
+          "title": "Recensioni a fine lavoro",
+          "description": "Un invito semplice dopo il varo, il ritiro della barca o l'uscita in mare, con risposta a ogni recensione."
+        },
+        {
+          "title": "Stagione a confronto",
+          "description": "Confrontiamo chiamate, richieste e indicazioni stradali per mese e per servizio, stagione dopo stagione."
+        }
+      ],
+      "body": "## SEO locale per la nautica: chi cerca e da dove\n\nLa SEO locale per la nautica parte da un fatto: chi cerca un servizio vicino al porto spesso non è vicino al porto. Le ricerche da intercettare hanno forme molto diverse a seconda del mestiere:\n\n- **Rimessaggio e refit**: \"rimessaggio barche\" seguito dal nome della località, \"alaggio e varo\", \"antivegetativa\", \"refit gommone\". Arrivano soprattutto a fine estate e in autunno, da persone che vivono lontano.\n- **Officine e assistenza**: \"meccanico nautico\", \"assistenza motori fuoribordo\", \"elettronica di bordo\". Spesso urgenti, fatte dal porto o da una barca ormeggiata.\n- **Noleggi**: \"noleggio barche\", \"noleggio gommone senza patente\", \"boat rental\" o \"Boot mieten\" con il nome della località. Concentrate in primavera ed estate, molte fatte da turisti già in vacanza.\n- **Scuole vela e patente nautica**: ricerche più distribuite nell'anno, fatte da chi abita in zona.\n\nPer ogni gruppo cambiano lingua, momento e dispositivo. Un unico profilo con la descrizione \"servizi nautici\" non intercetta nessuna di queste ricerche in modo convincente.\n\n## La scheda Google di un rimessaggio, di un'officina, di un noleggio\n\nIl Profilo dell'attività su Google è la prima cosa che vede chi cerca. Per un'azienda nautica le scelte che contano sono:\n\n- **la categoria principale giusta**, tra quelle specifiche per noleggio di barche, rimessaggio, riparazione o cantiere, più le categorie secondarie che descrivono davvero ciò che fai;\n- **foto vere** del piazzale, dei capannoni, del travel lift, delle lavorazioni e della flotta, aggiornate nel corso dell'anno;\n- **orari che seguono la stagione**, con orari speciali per i periodi di chiusura o per i giorni di varo, invece di un orario fisso che d'inverno nessuno rispetta;\n- **servizi elencati uno per uno**, con una breve descrizione, e domande frequenti come \"serve la patente?\" o \"fate anche il trasporto della barca?\".\n\nSe sei un manutentore che lavora in banchina senza un'officina aperta al pubblico, la scheda può mostrare le zone servite senza indirizzo. Se il noleggio ha basi in più porti, ogni base reale con personale e barche può avere la sua scheda; una scheda per un pontile dove non c'è nessuno, no.\n\n## Noleggio barche: farsi trovare prima dei portali, non contro di loro\n\nI portali di noleggio portano clienti, soprattutto stranieri, e per molti noleggi restano utili. Il problema nasce quando diventano l'unico canale: la commissione pesa su ogni prenotazione e il cliente resta del portale.\n\nLa SEO locale serve a riprendersi una parte delle prenotazioni dirette: scheda Google curata, recensioni raccolte anche in inglese e tedesco, una pagina per ogni base con flotta, prezzi indicativi o modalità di richiesta, e un contatto WhatsApp visibile. Chi ha trovato la tua scheda e letto le recensioni spesso preferisce scriverti direttamente.\n\nQuando la ricerca locale non basta a coprire le settimane di punta, la affianchiamo a campagne a pagamento: le trovi nella pagina su [Google Ads per la nautica](/settori/nautica/google-ads).\n\n## Pagine per porto e per servizio, nelle lingue di chi arriva\n\nIl sito deve confermare quello che dice la scheda. Creiamo pagine per ogni servizio reale e per ogni porto in cui operi, con indirizzo della base, foto, come arrivare, servizi disponibili e stagione di apertura, nelle lingue dei tuoi clienti. Le colleghiamo con i [dati strutturati](/servizi/ai-search/dati-strutturati) che descrivono attività, sede e servizi, così motori di ricerca e assistenti AI capiscono cosa fai e dove.\n\nLa pagina del settore [nautica](/settori/nautica) racconta il contesto della costa tra Romagna e Marche. Noi siamo a [Cattolica](/agenzia-marketing/cattolica), sul Tavollo, e conosciamo bene la differenza tra chi cerca un posto barca a novembre e chi cerca un gommone a Ferragosto.\n\n## Cosa misurare quando il cliente vive lontano dal porto\n\nContiamo chiamate, messaggi, richieste dal sito e indicazioni stradali generate dalla scheda, divise per servizio e per mese. Per rimessaggi e refit guardiamo soprattutto settembre, ottobre e novembre; per i noleggi la primavera e l'estate. Il confronto che conta è con la stessa stagione dell'anno prima, non con il mese precedente.\n\nIl metodo generale, tempi compresi, è nella pagina sulla [SEO locale](/servizi/seo/seo-locale).",
+      "faq": [
+        {
+          "question": "Un cantiere che vende soprattutto all'estero ha bisogno della SEO locale?",
+          "answer": "Meno di un rimessaggio o di un noleggio, ma una scheda Google curata serve comunque. La cercano broker e armatori prima di una visita, la vedono i fornitori, la usano i candidati che vogliono lavorare in cantiere. Foto vere, orari, categoria corretta e recensioni gestite bastano. Il grosso del lavoro sulle ricerche estere si fa con la SEO internazionale."
+        },
+        {
+          "question": "Ho la base del noleggio in porto e la sede legale altrove: che indirizzo uso?",
+          "answer": "Quello dove i clienti ti incontrano davvero, cioè la base in porto, se lì c'è personale negli orari indicati. La sede legale non va in scheda se nessuno riceve clienti lì. Nome, indirizzo e telefono devono coincidere tra scheda, sito e portali, altrimenti Google fa fatica a capire quale sia il dato giusto."
+        },
+        {
+          "question": "Come gestisco la scheda Google di un'attività aperta solo d'estate?",
+          "answer": "Con orari aggiornati e orari speciali per i periodi di chiusura, invece di lasciare quelli estivi tutto l'anno. Se d'inverno rispondi su appuntamento, scrivilo nella descrizione e lascia un contatto. Pubblicare qualche foto o novità anche nei mesi fermi aiuta a far vedere che l'attività è viva e pronta per la stagione."
+        },
+        {
+          "question": "Le recensioni in inglese e tedesco contano?",
+          "answer": "Sì, soprattutto per noleggi e servizi usati dai turisti. Un cliente straniero si fida di più leggendo la sua lingua, e recensioni in più lingue mostrano che sai lavorare con chi arriva da fuori. Rispondi nella lingua della recensione, anche con poche righe: chi legge giudica anche come rispondi."
+        },
+        {
+          "question": "Un manutentore senza officina aperta al pubblico può avere la scheda?",
+          "answer": "Sì, come attività che serve una zona. In questo caso l'indirizzo resta nascosto e la scheda mostra i porti e i comuni in cui lavori. Servono comunque un telefono a cui rispondi, foto vere dei lavori e recensioni dei proprietari. È la soluzione corretta per chi lavora in banchina o a bordo."
+        }
+      ],
+      "metaTitle": "SEO locale per la nautica: rimessaggi e noleggi | not4sale",
+      "metaDescription": "SEO locale per la nautica: scheda Google, pagine per porto e recensioni in più lingue per rimessaggi, officine, noleggi e scuole vela. Parliamone."
+    },
+    {
+      "sector": "nautica",
+      "service": "gestione-social",
+      "headline": "Gestione social per la nautica: video in mare, saloni e stagione",
+      "short": "Gestione social per cantieri, subfornitori, rimessaggi e noleggi: video in mare e in cantiere, saloni nautici e un canale per ogni pubblico.",
+      "answer": "La gestione social per la nautica serve a mostrare barche, lavorazioni e uscite in mare a chi non può ancora salirci a bordo. not4sale pianifica e produce contenuti per cantieri, subfornitori, rimessaggi e noleggi: video in navigazione e in cantiere, copertura dei saloni nautici, canali scelti per pubblico e lingua, con report sulle richieste generate.",
+      "problem": "Il profilo social tipico di un'azienda nautica alterna due modalità. Da settembre a gennaio, durante i saloni, pubblica tre volte al giorno: lo stand, la barca in banchina, la stretta di mano. Poi silenzio fino al varo successivo. Chi lo segue non capisce cosa fa l'azienda nel resto dell'anno, e l'algoritmo se ne accorge.\n\nIl secondo problema sono i video. Si gira tanto, perché la barca in mare è bellissima, ma si gira per un solo uso: il filmato emozionale di tre minuti con la musica epica. Poi non c'è materiale per un Reel verticale, per un tour degli interni su YouTube o per un post tecnico su LinkedIn.\n\nE c'è il tema della riservatezza. Molti armatori non vogliono comparire né far vedere la propria barca, e chi gestisce i social se ne accorge dopo aver pubblicato. Per i subfornitori vale lo stesso con i cantieri clienti: non sempre si possono mostrare i lavori fatti per loro.\n\nIl risultato è che il settore con le immagini più belle ha spesso social che non portano nulla, perché nessuno ha deciso a chi parlano e cosa devono ottenere.",
+      "process": [
+        {
+          "title": "Pubblici e canali",
+          "description": "Decidiamo chi deve seguirti, tra armatori, broker, cantieri, diportisti e turisti, e su quali piattaforme lo trovi."
+        },
+        {
+          "title": "Calendario nautico",
+          "description": "Pianifichiamo i contenuti attorno a costruzione, vari, saloni e stagione dei noleggi, mese per mese."
+        },
+        {
+          "title": "Giornate di ripresa",
+          "description": "Una giornata in cantiere o in mare produce materiale per più formati: verticale, orizzontale, foto e clip brevi."
+        },
+        {
+          "title": "Permessi e riservatezza",
+          "description": "Prima di pubblicare raccogliamo il consenso di armatori e committenti, e scegliamo cosa mostrare e cosa no."
+        },
+        {
+          "title": "Report su richieste",
+          "description": "Ogni mese contiamo messaggi, richieste di brochure, prove in mare e prenotazioni arrivate dai social."
+        }
+      ],
+      "body": "## Gestione social per la nautica: un canale per ogni pubblico\n\nNella gestione social per la nautica il primo errore è usare tutti i canali per tutti. Ogni piattaforma ha un pubblico preciso e un formato che funziona:\n\n| Canale | Chi trovi | Cosa pubblicare |\n|---|---|---|\n| Instagram | Armatori, aspiranti armatori, turisti | Reel in navigazione, dettagli di finiture, uscite del noleggio, storie dai saloni |\n| YouTube | Chi sta scegliendo una barca, broker | Tour completi degli interni, prove in mare, confronti tra versioni |\n| LinkedIn | Cantieri, uffici tecnici, fornitori, candidati | Lavorazioni, progetti, innovazione, ricerca di personale |\n| Facebook | Diportisti della zona, community del porto | Novità del rimessaggio, eventi, uscite di gruppo, scuola vela |\n| TikTok | Pubblico giovane del noleggio | Giornate in barca, come si guida un gommone, dietro le quinte |\n\nUn cantiere che vende all'estero punta su Instagram, YouTube e LinkedIn. Un subfornitore può vivere quasi solo di [LinkedIn aziendale](/servizi/social/linkedin-aziendale), perché i suoi clienti sono lì. Un noleggio balneare sta su Instagram e TikTok, e usa Facebook per chi abita in zona.\n\n## Il calendario della nautica: costruzione, vari, saloni e stagione\n\nL'anno nautico ha un ritmo preciso, e i social devono seguirlo invece di subirlo:\n\n1. **Inverno**: cantiere e rimessaggio. È il momento della costruzione, del refit, delle lavorazioni. Contenuti tecnici, dietro le quinte, persone al lavoro. Per i noleggi, è il momento di preparare la stagione e raccogliere contatti.\n2. **Primavera**: vari, prove in mare, prime uscite. I noleggi aprono le prenotazioni, le scuole vela partono con i corsi.\n3. **Estate**: il mare. Contenuti dei clienti, uscite, disponibilità dell'ultimo minuto nelle storie.\n4. **Fine estate e autunno**: i saloni. Prima si annuncia cosa porterai e dove, durante si racconta lo stand e le novità, dopo si pubblicano le prove e si richiamano i contatti.\n\nPer i saloni prepariamo i contenuti insieme alla [grafica per fiere ed eventi](/servizi/branding/grafica-fiere), così stand, inviti e post hanno la stessa voce.\n\n## Girare in mare e in cantiere: droni, armatori e permessi\n\nUna giornata di riprese in mare costa fatica e dipende dal meteo, quindi va sfruttata bene. Prepariamo una lista di inquadrature per ogni formato: verticale per Reel e storie, orizzontale per YouTube e sito, foto per i post, clip brevi per le campagne. Con il servizio di [video e spot](/servizi/content/video-spot) organizziamo barca di appoggio, operatore e montaggio.\n\nLe riprese con drone si fanno nel rispetto delle regole ENAC e delle limitazioni delle aree portuali, con operatori registrati. Le barche dei clienti si pubblicano solo con il consenso scritto dell'armatore, e su richiesta copriamo nome della barca e volti. Per i subfornitori concordiamo con il cantiere committente cosa si può mostrare e quando, spesso dopo il varo.\n\nC'è poi un dettaglio pratico: gli account aziendali non possono usare liberamente qualsiasi brano musicale. Usiamo musica con licenza o le librerie commerciali delle piattaforme, per non vedersi bloccare un video il giorno del salone.\n\n## Social per noleggi e charter: riempire le date libere\n\nPer chi noleggia, i social sono un canale di vendita a breve termine. Le storie con le barche disponibili nei giorni successivi, le condizioni del mare, le foto dei clienti della mattina (con il loro permesso) fanno arrivare messaggi diretti. Serve qualcuno che risponda in fretta, anche in inglese e tedesco: un messaggio senza risposta per mezza giornata è una prenotazione persa. Quando serve spingere un periodo preciso, i post migliori diventano campagne: ne parliamo nella pagina su [Meta Ads per la nautica](/settori/nautica/meta-ads).\n\n## Come misuriamo i social di un'azienda nautica\n\nFollower e like dicono poco. Per un cantiere contiamo richieste di brochure, appuntamenti fissati al salone e contatti di broker. Per un noleggio, messaggi e prenotazioni arrivati dai social. Per un subfornitore, contatti da uffici tecnici e candidature. La pagina del settore [nautica](/settori/nautica) spiega dove finiscono questi contatti; il metodo generale della [gestione social media](/servizi/social/gestione-social) è nella sua pagina. Lavoriamo da Cattolica, a pochi passi dal porto, e per le riprese ci muoviamo lungo la costa tra Rimini e Fano.",
+      "faq": [
+        {
+          "question": "Chi gira i video in mare?",
+          "answer": "Li organizziamo noi con operatori video e, quando serve, una barca di appoggio e un drone con pilota registrato. Pianifichiamo la giornata con te in base al meteo e alla disponibilità della barca, e prepariamo prima la lista delle inquadrature. Se in azienda qualcuno gira già con lo smartphone, gli diamo indicazioni per i contenuti quotidiani."
+        },
+        {
+          "question": "Possiamo pubblicare le barche dei nostri clienti?",
+          "answer": "Solo con il consenso dell'armatore, meglio se raccolto per iscritto alla consegna o all'inizio dei lavori. Molti armatori accettano se la barca non è riconoscibile per nome o se non compaiono persone. Altri preferiscono la massima riservatezza, e allora si mostrano lavorazioni e dettagli senza la barca intera."
+        },
+        {
+          "question": "Ha senso LinkedIn per un subfornitore della nautica?",
+          "answer": "Spesso è il canale più utile. Responsabili tecnici, buyer dei cantieri e progettisti sono lì, e un subfornitore che mostra lavorazioni, materiali e persone viene ricordato quando si apre una nuova commessa. Funziona meglio se al profilo aziendale si affiancano quelli del titolare e dei tecnici."
+        },
+        {
+          "question": "In che lingua pubblichiamo?",
+          "answer": "Nella lingua di chi deve leggere. Un cantiere che vende all'estero di solito pubblica in inglese, con qualche contenuto in italiano per la filiera e i candidati. Un noleggio parla italiano ai clienti della zona e aggiunge sottotitoli o testi in inglese e tedesco per i turisti. Video senza parlato e con sottotitoli aiutano molto."
+        },
+        {
+          "question": "Cosa pubblichiamo d'inverno, quando i noleggi sono fermi?",
+          "answer": "Il dietro le quinte: manutenzione della flotta, nuove barche in arrivo, preparazione della stagione, corsi in aula per la patente. È anche il momento di raccogliere contatti per l'estate, con offerte per chi prenota presto o iscrizioni a una lista d'attesa. Pubblicare meno va bene, sparire del tutto no."
+        },
+        {
+          "question": "Come coprite un salone nautico sui social?",
+          "answer": "In tre fasi. Prima del salone annunciamo cosa porterai, il numero dello stand e come fissare un appuntamento. Durante pubblichiamo storie e brevi video della barca, delle persone e delle visite. Dopo pubblichiamo i contenuti migliori con calma, e li usiamo nelle email ai contatti raccolti in fiera."
+        }
+      ],
+      "metaTitle": "Gestione social per la nautica: video e saloni | not4sale",
+      "metaDescription": "Gestione social per la nautica: video in mare e in cantiere, saloni, LinkedIn per subfornitori e storie per noleggi. Report sulle richieste. Parliamone."
+    },
+    {
+      "sector": "nautica",
+      "service": "google-ads",
+      "headline": "Google Ads per la nautica: campagne per noleggi, refit e cantieri",
+      "short": "Google Ads per noleggio barche, rimessaggi, refit, broker e cantieri: stagione, lingue, paesi e conversioni misurate fino alla commessa.",
+      "answer": "Google Ads per la nautica significa comparire quando qualcuno cerca un noleggio barche, un rimessaggio, un refit o un modello preciso, nel paese e nella lingua giusti. not4sale imposta campagne separate per mestiere e stagione, misura le richieste e le collega alle trattative nel CRM, così il budget va dove nascono prenotazioni e commesse.",
+      "problem": "L'account Google Ads tipico di un'azienda nautica ha una campagna sola, che mescola tutto: il nome del cantiere, \"barche\", \"yacht\", \"noleggio\", \"rimessaggio\". Gira tutto l'anno con lo stesso budget, mostra annunci a chi cerca lavoro come marinaio e a chi vuole un gommone gonfiabile da spiaggia, e conta come conversione chiunque clicchi sul numero di telefono.\n\nPer i noleggi il problema è il tempo. Le campagne partono a giugno, quando i concorrenti e i portali hanno già preso le prenotazioni di chi pianifica in anticipo, e si spengono ad agosto, proprio quando arrivano le ricerche dell'ultimo minuto dei turisti già in zona.\n\nPer cantieri e broker il problema è opposto: le ricerche sono poche, la trattativa dura mesi e la vendita avviene offline, magari al salone. Google non sa quale clic ha portato una commessa, quindi ottimizza su moduli compilati da curiosi. Il report mensile mostra clic e costo per clic, e nessuno sa dire se le campagne abbiano mai portato una barca venduta.",
+      "process": [
+        {
+          "title": "Mestieri e obiettivi",
+          "description": "Separiamo noleggio, rimessaggio, refit, usato e nuovo: ognuno ha campagne, budget e conversioni proprie."
+        },
+        {
+          "title": "Parole, paesi, lingue",
+          "description": "Scegliamo le ricerche da coprire per mercato, con annunci nella lingua di chi cerca e località impostate con cura."
+        },
+        {
+          "title": "Calendario delle campagne",
+          "description": "Budget distribuito sulla stagione reale: autunno per il rimessaggio, primavera ed estate per i noleggi, saloni per i cantieri."
+        },
+        {
+          "title": "Pagine dedicate",
+          "description": "Ogni campagna atterra su una pagina che parla di quel servizio, in quella lingua, con un modulo adatto."
+        },
+        {
+          "title": "Conversioni dal CRM",
+          "description": "Importiamo in Google Ads le richieste diventate trattative o commesse, così le offerte imparano dalle vendite vere."
+        }
+      ],
+      "body": "## Google Ads per la nautica: cinque mestieri, cinque campagne\n\nGoogle Ads per la nautica funziona quando ogni mestiere ha la sua campagna. Le ricerche, i tempi e il valore di un contatto sono troppo diversi per stare insieme:\n\n| Mestiere | Ricerche tipiche | Quando | Cosa conta come conversione |\n|---|---|---|---|\n| Noleggio e charter | \"noleggio barche\" + località, \"gommone senza patente\", \"boat rental\" | Primavera ed estate | Prenotazione o richiesta con date |\n| Rimessaggio e refit | \"rimessaggio barche\" + zona, \"refit\", \"antivegetativa\" | Fine estate e autunno | Richiesta di preventivo con tipo di barca |\n| Officine e assistenza | \"meccanico nautico\", \"assistenza fuoribordo\" | Stagione estiva | Chiamata dalla scheda o dall'annuncio |\n| Broker dell'usato | nome modello + \"usato\" o \"for sale\" | Tutto l'anno | Richiesta su una barca specifica |\n| Cantiere | nome del cantiere, nomi dei modelli, tipologia di barca | Attorno ai saloni | Richiesta di brochure, appuntamento, prova in mare |\n\nIl nome del tuo cantiere e dei tuoi modelli va protetto con una campagna di brand a parte: costa poco ed evita che chi ti cerca trovi prima un concorrente o un portale.\n\n## Noleggio barche: stagione, località e chi cerca da lontano\n\nPer un noleggio barche la campagna si gioca su due momenti. Nei mesi prima dell'estate cerca chi pianifica la vacanza da casa, spesso in un'altra regione o all'estero. In estate cerca chi è già in zona e vuole uscire domani.\n\nGoogle Ads permette di scegliere se mostrare gli annunci a chi si trova in una località o anche a chi mostra interesse per quella località. Per un noleggio la seconda opzione è quella che intercetta il turista che sta organizzando le ferie; la prima serve per le campagne dell'ultimo minuto, con annunci che mostrano la chiamata e le barche libere. Separare le due cose in campagne diverse rende chiaro quale funziona.\n\nLingue: se i tuoi clienti sono tedeschi, austriaci o svizzeri, servono annunci e pagine in tedesco, non un annuncio italiano mostrato a chi parla un'altra lingua.\n\n## Cantieri e broker: ricerche rare, trattative lunghe\n\nPer chi costruisce o vende barche le ricerche sono poche e preziose. Lavoriamo su:\n\n- **ricerche sui modelli**, tuoi e della tua categoria, nei paesi dove hai broker o dealer;\n- **campagne attorno ai saloni**, con annunci che invitano a fissare un appuntamento allo stand;\n- **video su [YouTube Ads](/servizi/advertising/youtube-ads)**, mostrati a chi ha già visitato le schede modello: un tour degli interni lavora meglio di un annuncio di testo per chi sta confrontando due barche.\n\nGli annunci atterrano su [landing page](/servizi/web-app/landing-page) del singolo modello o della singola barca usata, con dati, video e un modulo breve che chiede paese, esperienza e tempi di acquisto.\n\n## Conversioni che contano: dalla richiesta alla commessa\n\nIl punto debole di quasi tutti gli account nautici è il tracciamento. Prima delle campagne sistemiamo il [tracciamento con Google Tag Manager](/servizi/data-analytics/tracking-gtm), poi colleghiamo il CRM: quando una richiesta diventa trattativa, prova in mare o contratto, quel dato torna in Google Ads come conversione offline. Da lì le offerte smettono di inseguire i moduli dei curiosi e iniziano a premiare le ricerche che portano clienti.\n\nPer noleggi e rimessaggi il ciclo è più breve, ma vale la stessa regola: una prenotazione confermata vale più di dieci clic sul numero di telefono.\n\n## Errori tipici negli account della nautica\n\n- Parole troppo generiche come \"barca\" o \"yacht\", che portano studenti, curiosi e cercatori di lavoro.\n- Nessuna parola esclusa: \"gonfiabile\", \"giocattolo\", \"lavoro\", \"affitto posto auto\".\n- La stessa pagina di atterraggio per tutte le campagne, quasi sempre la home.\n- Budget piatto tutto l'anno invece che concentrato nelle settimane in cui le persone decidono.\n\nLa pagina del settore [nautica](/settori/nautica) spiega come si incastrano campagne, saloni e CRM; per la gestione generale degli account c'è la pagina su [Google Ads](/servizi/advertising/google-ads). Lavoriamo da Cattolica con aziende nautiche della costa romagnola e marchigiana e con cantieri di tutta Italia.",
+      "faq": [
+        {
+          "question": "Ha senso Google Ads per vendere barche di fascia alta?",
+          "answer": "Sì, ma con obiettivi diversi da un e-commerce. Le ricerche sono poche e la vendita si chiude di persona, quindi le campagne servono a intercettare chi cerca il tuo modello o la tua categoria e a portarlo a un appuntamento, una prova in mare o una visita al salone. Si misurano sulle trattative aperte, non sui clic."
+        },
+        {
+          "question": "Quando far partire le campagne di un noleggio barche?",
+          "answer": "Prima dell'estate, quando le persone organizzano le ferie, con un budget che cresce verso giugno. Poi si affianca una campagna per l'ultimo minuto, rivolta a chi è già in zona. Partire a stagione iniziata significa lasciare ai concorrenti e ai portali chi prenota in anticipo, spesso i clienti con il valore più alto."
+        },
+        {
+          "question": "Posso raggiungere clienti tedeschi, austriaci o svizzeri?",
+          "answer": "Sì, con campagne dedicate per paese e lingua, annunci scritti in tedesco e pagine di atterraggio tradotte bene. Conviene anche impostare le località per includere chi mostra interesse per la tua zona, non solo chi ci si trova. Senza una pagina nella loro lingua il costo per contatto sale e le richieste calano."
+        },
+        {
+          "question": "Chi cerca il nome del mio modello trova un concorrente: cosa faccio?",
+          "answer": "Attiva una campagna sul tuo marchio e sui nomi dei modelli, con annunci che portano alla scheda giusta. Costa poco, perché il tuo sito è il risultato più pertinente per quelle ricerche. Se un concorrente usa il tuo marchio nel testo dei suoi annunci, Google prevede una procedura di segnalazione per i marchi registrati."
+        },
+        {
+          "question": "Da cosa dipende il budget per Google Ads nella nautica?",
+          "answer": "Dai paesi in cui vuoi comparire, dalla concorrenza sulle ricerche, dalla durata della stagione e dal valore di un cliente. Un noleggio locale e un cantiere che punta a tre mercati esteri hanno esigenze molto diverse. Partiamo da un budget di prova, misuriamo il costo per richiesta valida e decidiamo insieme. Per un'idea dei costi c'è il calcolatore di preventivo sul sito."
+        },
+        {
+          "question": "Meglio Google Ads o i portali di noleggio?",
+          "answer": "Non è una scelta secca. I portali portano clienti stranieri e prenotazioni senza lavoro tecnico, ma trattengono una commissione e il contatto resta loro. Google Ads porta prenotazioni dirette, ma richiede sito, pagine e gestione. Molti noleggi usano entrambi, e con i dati di una stagione si decide dove spostare il budget."
+        }
+      ],
+      "metaTitle": "Google Ads per la nautica e il noleggio barche | not4sale",
+      "metaDescription": "Google Ads per la nautica: campagne per noleggio barche, rimessaggi, refit, usato e cantieri, divise per stagione e paese, misurate sulle vendite."
+    },
+    {
+      "sector": "nautica",
+      "service": "meta-ads",
+      "headline": "Meta Ads per la nautica: barche scoperte scorrendo, contatti veri",
+      "short": "Meta Ads per cantieri, broker, noleggi e charter: video in mare, inviti ai saloni, pubblici esteri e moduli che filtrano i curiosi.",
+      "answer": "Meta Ads per la nautica significa far vedere una barca, un charter o un servizio su Facebook e Instagram a persone che ancora non lo cercano, in Italia e all'estero. not4sale gestisce campagne per cantieri, broker, noleggi e saloni nautici con video in mare, pubblici costruiti dai tuoi contatti e moduli che separano gli armatori dai curiosi.",
+      "problem": "Su Facebook e Instagram una barca in navigazione raccoglie like come poche altre immagini. È proprio questo il problema: like e commenti arrivano da chiunque sogni il mare, e chi gestisce le campagne di un cantiere scambia l'entusiasmo per interesse d'acquisto. Il costo per contatto sembra ottimo, poi il commerciale richiama e scopre studenti, appassionati e persone che volevano solo la brochure.\n\nIl secondo errore è credere che basti scegliere \"persone ricche\" come pubblico. In Europa le opzioni di targeting dettagliato si sono ridotte molto negli anni, e gli interessi come \"yacht\" o \"barche di lusso\" includono milioni di persone che una barca non la compreranno mai. Il lavoro di selezione si è spostato sulla creatività, sui dati che hai già e sulle domande del modulo.\n\nPer i noleggi la trappola è diversa: campagne accese tutta l'estate con la stessa foto, rivolte a tutta Italia, quando il cliente utile è il turista che si trova a pochi chilometri o sta prenotando le vacanze in quella zona. E per tutti c'è il tracciamento: se nessuno collega la richiesta arrivata da Meta alla trattativa chiusa mesi dopo, ogni decisione sul budget è un'opinione.",
+      "process": [
+        {
+          "title": "Dati e tracciamento",
+          "description": "Pixel, Conversions API e CRM collegati, così sappiamo quali richieste arrivano da Meta e cosa diventano."
+        },
+        {
+          "title": "Pubblici di partenza",
+          "description": "Liste di clienti e contatti dei saloni con consenso, visitatori del sito e chi ha guardato i video fino in fondo."
+        },
+        {
+          "title": "Video per ogni fase",
+          "description": "Clip verticali per farsi notare, tour degli interni per chi confronta, prove sociali per chi sta per decidere."
+        },
+        {
+          "title": "Moduli che filtrano",
+          "description": "Domande su paese, esperienza, tempi e tipo di barca per separare armatori, broker e semplici appassionati."
+        },
+        {
+          "title": "Budget sul calendario",
+          "description": "Campagne concentrate attorno a saloni, lanci e settimane di stagione, poi verifica su trattative e prenotazioni."
+        }
+      ],
+      "body": "## Meta Ads per la nautica: quando la barca la scopri scorrendo\n\nMeta Ads per la nautica lavora sulla domanda che non esiste ancora. Nessuno cerca su Google il nome di un modello che non conosce; su Instagram lo vede passare in un Reel e se lo ricorda. Per questo le campagne Meta servono soprattutto in tre momenti:\n\n- **lancio di un nuovo modello o di una nuova linea**, per farla conoscere a chi già naviga e a chi sta pensando alla prima barca;\n- **saloni nautici**, per portare allo stand le persone giuste;\n- **stagione dei noleggi e dei charter**, per riempire date precise.\n\nPer cantieri e broker la pubblicità su Meta prepara il terreno; la richiesta vera arriva spesso dopo, da una ricerca su Google o da una visita in fiera. Per i noleggi, invece, una campagna ben fatta porta prenotazioni dirette in pochi giorni.\n\n## Pubblici esteri e alto spendenti: cosa si può davvero targettizzare\n\nChi compra una barca di fascia alta non si trova scegliendo un interesse dal menu. Le leve che funzionano sono altre:\n\n1. **I tuoi dati.** Clienti, contatti dei saloni e richieste degli anni passati, caricati come pubblico personalizzato solo se raccolti con il consenso adeguato. Da lì Meta può trovare persone simili nei paesi che scegli.\n2. **Chi ha già mostrato interesse.** Visitatori delle schede modello e persone che hanno guardato buona parte di un video in navigazione: un pubblico piccolo ma caldo, da raggiungere con il [retargeting](/servizi/advertising/retargeting).\n3. **La creatività che seleziona.** Un video che mostra dettagli tecnici, dimensioni e contesto d'uso parla a chi sa cosa sta guardando e annoia chi cerca solo una bella immagine.\n\nPer i pubblici esteri, Meta permette di caricare più versioni linguistiche dello stesso annuncio e mostrare a ciascuno la sua. Ma la lingua deve continuare anche dopo il clic: modulo, pagina e risposta del commerciale.\n\n## Saloni nautici: prima, durante e dopo con Meta Ads\n\nUn salone è l'investimento più grande dell'anno per molti cantieri, e le campagne servono a non sprecarlo:\n\n1. **Prima**: annunci a clienti, broker e pubblici simili nei paesi di provenienza dei visitatori, con un invito a fissare un appuntamento allo stand.\n2. **Durante**: campagne geolocalizzate sulla città del salone, con la barca esposta e il numero dello stand.\n3. **Dopo**: annunci a chi ha visitato lo stand o la pagina dell'evento, con il video completo della barca e un invito alla prova in mare.\n\nLo stand e gli annunci devono sembrare parte della stessa campagna: per questo lavoriamo insieme alla [grafica per fiere ed eventi](/servizi/branding/grafica-fiere).\n\n## Noleggi e charter: campagne brevi, date precise\n\nPer un noleggio barche le campagne Meta funzionano a finestre: un ponte di primavera, una settimana di giugno ancora libera, il fine settimana con il meteo buono. Il pubblico è chi si trova in zona o vive nelle città da cui arrivano i tuoi clienti. Le creatività migliori sono spesso i contenuti già usati nella [gestione social per la nautica](/settori/nautica/gestione-social): clienti veri in barca, con il loro permesso, la costa vista dal mare, il gommone che parte dal porto. Il pulsante porta a WhatsApp o a una pagina con le date disponibili, non alla home.\n\n## Lead dal modulo istantaneo: come non riempire il CRM di curiosi\n\nI moduli istantanei di Meta sono comodi, a volte troppo: due tocchi e il contatto è inviato, anche da chi non sa cosa ha chiesto. Per la nautica aggiungiamo domande che qualificano, come paese, esperienza di navigazione, barca attuale, tempi di acquisto, e una schermata di conferma che spiega cosa succederà dopo. I contatti arrivano meno numerosi, ma il commerciale richiama persone vere.\n\nIl tracciamento si regge su Pixel e Conversions API, meglio se con [tracciamento server-side](/servizi/data-analytics/server-side-tracking), e su un CRM che restituisce a Meta le richieste diventate trattative. La pagina del settore [nautica](/settori/nautica) inquadra il mercato; il metodo generale è nella pagina su [Meta Ads](/servizi/advertising/meta-ads).",
+      "faq": [
+        {
+          "question": "Meta Ads funziona per vendere barche di fascia alta?",
+          "answer": "Funziona per farle conoscere e per portare contatti qualificati, non per venderle con un clic. Le campagne fanno vedere il modello alle persone giuste, invitano al salone o alla prova in mare e nutrono chi sta confrontando più barche. La vendita si chiude di persona, quindi misuriamo appuntamenti e trattative aperte, non il costo per contatto."
+        },
+        {
+          "question": "Posso caricare la lista dei contatti raccolti al salone?",
+          "answer": "Sì, se al momento della raccolta hai informato le persone e ottenuto il consenso per usare i dati anche a fini pubblicitari. In quel caso la lista diventa un pubblico personalizzato, utile per mostrare la barca vista allo stand e per trovare persone simili. Se il consenso manca, meglio sistemare prima il modulo di raccolta del salone successivo."
+        },
+        {
+          "question": "Per un noleggio barche è meglio Meta o Google?",
+          "answer": "Fanno due lavori diversi. Google intercetta chi cerca già un noleggio in quella località; Meta fa venire voglia di uscire in barca a chi non ci aveva pensato, o ricorda la tua offerta a chi ha visitato il sito. Per riempire date precise in stagione Meta è spesso più rapido; per la domanda costante Google resta la base."
+        },
+        {
+          "question": "Servono video nuovi o bastano quelli del cantiere?",
+          "answer": "Quasi sempre si parte da quelli esistenti, tagliati e rimontati in verticale, con i primi secondi ripensati per chi scorre veloce. Poi servono contenuti nuovi a intervalli regolari, perché le creatività si consumano. Una giornata di riprese pianificata bene produce materiale per diversi mesi di campagne."
+        },
+        {
+          "question": "Su quali paesi conviene puntare?",
+          "answer": "Su quelli dove hai già broker, dealer o clienti, e dove puoi rispondere nella lingua locale. Allargare a tutta Europa con un budget piccolo disperde la spesa. Meglio partire da due o tre mercati, misurare costo e qualità dei contatti, e aggiungere paesi quando i numeri lo giustificano."
+        },
+        {
+          "question": "Come capisco se una vendita arriva da Meta?",
+          "answer": "Collegando la richiesta al CRM fin dal primo momento, con la fonte registrata, e seguendola fino all'esito. Quando la trattativa si chiude, il dato si può rimandare a Meta come evento offline. Non sarà mai una misura perfetta, perché chi compra una barca passa da più canali, ma basta per capire dove il budget lavora meglio."
+        }
+      ],
+      "metaTitle": "Meta Ads per la nautica: cantieri e noleggi | not4sale",
+      "metaDescription": "Meta Ads per la nautica: video in mare, inviti ai saloni, pubblici esteri e moduli che filtrano i curiosi, per cantieri, broker e noleggi. Parliamone."
+    },
+    {
+      "sector": "nautica",
+      "service": "logo-identita-visiva",
+      "headline": "Logo per cantieri nautici: marchi che reggono scafo, vento e saloni",
+      "short": "Logo e identità visiva per cantieri nautici, subfornitori, rimessaggi, noleggi e broker: dallo scafo alla bandiera, registrabili all'estero.",
+      "answer": "Un logo per cantieri nautici deve funzionare sullo scafo, su una bandiera al vento, su un ricamo e sullo schermo di un broker straniero. not4sale progetta marchi di cantiere e di modello, identità per subfornitori, rimessaggi, noleggi e broker, provandoli sulle applicazioni reali e preparando i file per incisione, adesivo e ricamo.",
+      "problem": "Molti marchi della nautica sono nati in cantiere, disegnati da chi costruiva le barche, e per anni hanno funzionato benissimo. Poi sono arrivati il sito, i social, i saloni esteri, i modelli nuovi, e il logo ha iniziato a mostrare i suoi limiti: illeggibile quando diventa un'icona per Instagram, impossibile da ricamare, sfumature che non si tagliano in un adesivo, un nome di modello scritto ogni volta con un carattere diverso.\n\nC'è poi il tema dell'architettura. Un cantiere con più linee spesso non ha mai deciso se il marchio forte è quello del cantiere o quello del modello. Così ogni nuova barca riceve un nome e un logo improvvisati per il salone, che nessuno sa bene come affiancare al marchio principale.\n\nI servizi nautici hanno il problema opposto. Rimessaggi, officine e noleggi usano spesso un'ancora, un timone o un'onda in blu, esattamente come i loro concorrenti dello stesso porto. Un cliente che ha lasciato la barca da te non ricorda il tuo nome, ricorda \"quello con l'ancora\". Sono tutti quelli con l'ancora.",
+      "process": [
+        {
+          "title": "Mestiere e mercati",
+          "description": "Chiariamo cosa vendi e dove, chi deve riconoscerti e se il marchio forte sarà quello del cantiere o del modello."
+        },
+        {
+          "title": "Architettura dei marchi",
+          "description": "Decidiamo come convivono marchio di cantiere, linee e modelli, con regole per i nomi futuri."
+        },
+        {
+          "title": "Ricerca di anteriorità",
+          "description": "Prima di innamorarti di un segno verifichiamo marchi simili nelle classi della nautica e nei paesi dove vendi."
+        },
+        {
+          "title": "Prove sul campo",
+          "description": "Proviamo il logo su scafo, bandiera, ricamo, stand, scheda modello e icona social prima di chiudere."
+        },
+        {
+          "title": "File di produzione",
+          "description": "Consegniamo versioni per incisione, taglio adesivo, ricamo, stampa e schermo, con le istruzioni d'uso."
+        }
+      ],
+      "body": "## Logo per cantieri nautici: marchio di cantiere e marchi di modello\n\nIl primo lavoro su un logo per cantieri nautici non è grafico, è di architettura. Le strade possibili sono tre:\n\n- **Marchio unico**: il cantiere è il protagonista e i modelli hanno un nome scritto sempre nello stesso carattere. È la scelta più semplice e rafforza il marchio a ogni barca venduta.\n- **Linee con identità propria**: il cantiere firma, ma ogni linea ha un segno riconoscibile, utile quando le linee si rivolgono a pubblici diversi, per esempio sportivo e da crociera.\n- **Modelli come marchi**: quando un modello ha una storia così forte da essere conosciuto più del cantiere. Funziona, ma costa di più in registrazioni e coerenza.\n\nDecidere prima evita il caos di nomi e loghi aggiunti un salone alla volta. Quando serve trovare il nome di un nuovo modello o di una nuova linea, lo facciamo con il servizio di [naming](/servizi/branding/naming), verificando come suona nelle lingue dei tuoi mercati.\n\n## Dallo scafo alla bandiera: dove deve funzionare il logo\n\nPochi settori mettono un logo alla prova come la nautica. Prima di chiudere, lo proviamo su tutte le applicazioni reali:\n\n| Supporto | Cosa chiede al logo |\n|---|---|\n| Scafo e specchio di poppa | Lettere singole in acciaio o adesivo, leggibilità da lontano, forma che segue la linea della barca |\n| Bandiera e guidone | Pochi colori pieni, segno che si riconosce anche mosso dal vento |\n| Divise, cuscinerie, teli | Versione per ricamo, senza dettagli troppo sottili |\n| Plancia e strumenti | Versione monocromatica piccola, anche incisa |\n| Stand ai saloni | Grande formato, abbinato a immagini e grafica dell'esposizione |\n| Sito, schede modello, icona social | Versione compatta leggibile in pochi pixel |\n\nIl colore è un capitolo a parte. Il blu navy è ovunque, e il bianco su bianco di uno scafo non si vede. Lavoriamo su versioni positive e negative, e su un colore distintivo che sopravviva al sole e al sale.\n\n## Subfornitori, rimessaggi, noleggi e broker: identità diverse\n\nNon tutti hanno bisogno della stessa cosa:\n\n- **Subfornitori**: il logo vive su offerte, disegni tecnici, imballi e a volte sul componente stesso, con una targhetta o un'incisione. Deve comunicare precisione, non vacanza.\n- **Rimessaggi e servizi portuali**: insegna, mezzi, travel lift, divise del personale, cartelli del piazzale. Il marchio si vede soprattutto dal vivo e va pensato per la segnaletica.\n- **Noleggi e charter**: la flotta è il tuo cartellone. Il marchio va sulle barche, sulle mute, sulle magliette, sugli adesivi a bordo con le istruzioni, e deve funzionare come avatar su Instagram e nei portali di prenotazione.\n- **Broker dell'usato**: il logo compare accanto alle foto delle barche sui portali, quindi deve essere sobrio e credibile, e non coprire le immagini.\n\nPer tutti, le regole d'uso finiscono nelle [brand guidelines](/servizi/branding/brand-guidelines), così cantiere, carrozziere, ricamatore e allestitore dello stand applicano il marchio nello stesso modo.\n\n## Registrare il marchio quando vendi all'estero\n\nSe vendi fuori dall'Italia, il marchio va protetto nei paesi in cui operi. Nella classificazione internazionale dei prodotti e servizi le classi più usate dalla nautica sono la 12 per le imbarcazioni, la 37 per costruzione navale, manutenzione e refit, la 39 per noleggio e rimessaggio. Prima di scegliere un segno facciamo una verifica preliminare di marchi simili nelle classi che ti interessano; il deposito vero e proprio lo segue un consulente in proprietà industriale.\n\n## Ancore, timoni e blu navy: i cliché da evitare\n\nAncora, timone, rosa dei venti, onda stilizzata, gabbiano: sono simboli che dicono \"mare\" ma non dicono chi sei. Non sono vietati, ma vanno usati solo se raccontano qualcosa di tuo. Spesso funziona meglio un marchio tipografico ben disegnato, una forma presa dalla tua storia o dal profilo di una tua barca.\n\nIl metodo generale è nella pagina su [logo e identità visiva](/servizi/branding/logo-identita-visiva); la pagina del settore [nautica](/settori/nautica) inquadra mercato e pubblici. Lo studio è a Cattolica, sul canale del porto: per i progetti della costa tra Romagna e Marche veniamo a vedere scafi e piazzali di persona.",
+      "faq": [
+        {
+          "question": "Il nome di un modello va registrato come marchio?",
+          "answer": "Se il modello resterà in catalogo per anni e lo vendi all'estero, conviene valutarlo. Prima si verifica che nessuno usi un nome simile nelle classi della nautica, poi il consulente in proprietà industriale indica dove depositarlo. Per serie brevi o versioni speciali spesso basta il marchio del cantiere seguito da una sigla."
+        },
+        {
+          "question": "Quanto deve essere grande il logo sullo scafo?",
+          "answer": "Dipende dalla lunghezza della barca, dalla linea della murata e da dove verrà guardato: in banchina, in navigazione o in foto. Lo proviamo su disegni e foto reali del modello, insieme all'ufficio tecnico, e prepariamo versioni per diverse dimensioni di scafo. Una regola fissa non esiste, ma lettere troppo sottili da lontano spariscono."
+        },
+        {
+          "question": "Rifare il marchio storico del cantiere è un rischio?",
+          "answer": "È un rischio se si butta via ciò che i clienti riconoscono. Spesso basta un restyling: si ridisegna il segno mantenendo forma e colori, si sistemano proporzioni e caratteri, si creano le versioni che mancano. Così broker e armatori ritrovano il marchio che conoscono, e tu hai finalmente file adatti a ogni supporto."
+        },
+        {
+          "question": "Cosa ricevo alla fine del progetto?",
+          "answer": "Il marchio in tutte le versioni, positive, negative e monocromatiche, nei formati per stampa, schermo, incisione, taglio adesivo e ricamo. Insieme ricevi colori con i riferimenti per vernici e tessuti, caratteri tipografici, regole d'uso e le prove sulle applicazioni principali, dallo scafo alla scheda modello."
+        },
+        {
+          "question": "Un piccolo noleggio ha bisogno di una vera identità visiva?",
+          "answer": "Non di un manuale da cento pagine, ma di un marchio riconoscibile sì. Le barche del noleggio sono in foto su social, recensioni e portali, e un segno chiaro su scafo, magliette e avatar ti distingue dai concorrenti dello stesso porto. Si può partire con un progetto essenziale e completarlo quando la flotta cresce."
+        }
+      ],
+      "metaTitle": "Logo per cantieri nautici e marchi di modello | not4sale",
+      "metaDescription": "Logo per cantieri nautici, subfornitori, rimessaggi e noleggi: marchi di cantiere e di modello provati su scafo, bandiere e ricami. Parliamone."
+    }
+  ]
+}
