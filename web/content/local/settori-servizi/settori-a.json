@@ -1,0 +1,499 @@
+{
+  "items": [
+    {
+      "sector": "hotel",
+      "service": "siti-web",
+      "headline": "Siti web per hotel che portano prenotazioni dirette",
+      "short": "Siti per hotel costruiti attorno al booking engine: camere chiare, prezzi visibili e ogni prenotazione diretta tracciata.",
+      "answer": "I siti web per hotel che realizza not4sale sono costruiti attorno a un solo obiettivo: la prenotazione diretta. Booking engine integrato e comodo da smartphone, schede camera complete, condizioni migliori di quelle sulle OTA, versioni in più lingue e un tracciamento che collega ogni prenotazione alla sua fonte. Lavoriamo con alberghi, residence e B&B in tutta Italia.",
+      "problem": "Fai una prova: apri il sito del tuo hotel dal telefono e prenota una camera per agosto. Conta i tocchi. Spesso il motore di prenotazione si apre in una finestra con un'altra grafica, chiede di nuovo le date, mostra tariffe con nomi incomprensibili (\"Standard NR BB\") e al pagamento sembra un sito diverso. Nel frattempo l'ospite ha aperto in un'altra scheda la stessa struttura su Booking, dove tutto è familiare.\n\nGli altri sintomi li conosci:\n\n- camere descritte come \"confortevoli e luminose\", senza metri quadri, letti, vista o piano;\n- foto di dieci stagioni fa, o peggio di repertorio;\n- offerte scadute ancora in home page e un listino in PDF;\n- Google Analytics che vede le visite ma non le prenotazioni, perché il booking engine sta su un altro dominio.\n\nOgni ospite che arriva sul sito, si confonde e torna sull'OTA è una commissione pagata su un cliente che avevi già portato fino alla porta. Il sito non è una brochure: è il tuo canale di vendita senza intermediari.",
+      "process": [
+        {
+          "title": "Prova di prenotazione",
+          "description": "Prenotiamo davvero da smartphone sul tuo sito e sulle OTA, contando passaggi e tempi e confrontando prezzi, condizioni e servizi inclusi."
+        },
+        {
+          "title": "Pagine per tipo di ospite",
+          "description": "Organizziamo camere, servizi e offerte in base a chi ospiti davvero: famiglie, coppie, sportivi, chi viaggia per lavoro o per una fiera."
+        },
+        {
+          "title": "Booking engine integrato",
+          "description": "Colleghiamo il motore di prenotazione che usi già, o ti aiutiamo a sceglierlo, con grafica coerente e ricerca delle date sempre a portata di pollice."
+        },
+        {
+          "title": "Contenuti e lingue",
+          "description": "Schede camera precise, foto vere, traduzioni curate per i mercati che contano e dati strutturati che Google sa leggere."
+        },
+        {
+          "title": "Misura per canale",
+          "description": "Prenotazioni e ricavi diretti letti per fonte, confrontati a fine stagione con quelli arrivati dagli intermediari."
+        }
+      ],
+      "body": "## Cosa deve avere un sito web per hotel\n\nUn sito web per hotel deve far prenotare in pochi tocchi chi ha già deciso e convincere chi sta ancora confrontando. Tutto il resto viene dopo. In pratica servono:\n\n- **Ricerca date sempre visibile**, in ogni pagina e non solo in home, con il calendario che mostra subito disponibilità e prezzo.\n- **Schede camera da vendita, non da catalogo**: metratura, composizione dei letti, vista, piano, bagno, foto di quella tipologia e cosa include la tariffa.\n- **Informazioni pratiche in chiaro**: parcheggio, animali, orari di check-in, distanza dal mare, dal centro o dal quartiere fieristico, politiche di cancellazione.\n- **Il vantaggio di prenotare sul sito**, scritto vicino al pulsante: colazione inclusa, parcheggio, cancellazione più flessibile, un upgrade quando disponibile.\n- **Il CIN**, il codice identificativo nazionale che dal 2025 le strutture ricettive, alberghiere ed extralberghiere, devono esporre anche in ogni annuncio online.\n\nSul prezzo, molti albergatori hanno ancora un dubbio: posso vendere sul mio sito a meno che sulle OTA? Sì. In Italia la legge sulla concorrenza del 2017 ha vietato le clausole di parità tariffaria nei contratti con i portali, e dal 2024 il Digital Markets Act le vieta a Booking.com in tutto lo Spazio economico europeo. Come usare questa libertà è una scelta commerciale, ma non è più un vincolo.\n\n## Booking engine, channel manager e sito: chi fa cosa\n\nLa confusione su questi tre strumenti è all'origine di metà dei problemi. Ognuno ha un compito preciso:\n\n| Strumento | Cosa fa | Chi lo sceglie |\n|---|---|---|\n| Sito | Convince e porta alla prenotazione | Tu, con chi lo progetta |\n| Booking engine | Calendario, tariffe, pagamento della prenotazione diretta | Tu, spesso insieme al gestionale |\n| Channel manager | Sincronizza disponibilità e prezzi con le OTA | Chi gestisce le tariffe |\n| Gestionale (PMS) | Arrivi, conti, dati degli ospiti | La reception |\n\nNoi non ti chiediamo di cambiare gestionale. Lavoriamo con il fornitore che hai, verifichiamo che il booking engine si integri bene nel sito e che passi i dati di prenotazione al sistema di misura. C'è anche un motivo in più per scegliere bene il motore: se il tuo fornitore è un partner di connettività di Google, le tue tariffe possono comparire gratuitamente nei risultati hotel di Google accanto a quelle dei portali. Ne parliamo nella pagina su [Google Ads per hotel](/settori/hotel/google-ads).\n\n## Gli errori che vediamo più spesso\n\n1. **Home page con video pesante a tutto schermo** che su rete mobile in spiaggia non parte e copre il pulsante di prenotazione.\n2. **Traduzioni automatiche** lasciate senza revisione: l'ospite straniero se ne accorge e si fida meno.\n3. **Solo prenotazione immediata o solo richiesta di preventivo.** In Riviera molte famiglie per soggiorni lunghi vogliono ancora scrivere e chiedere: servono entrambe le strade, ben separate.\n4. **Pagine offerte che nessuno aggiorna**, con pacchetti di due stagioni fa ancora indicizzati su Google.\n5. **Nessun collegamento tra sito e strategia**: il sito parla di \"relax e cortesia\" mentre la clientela reale è fatta di squadre sportive e congressisti.\n\n## Come si misura il rendimento del sito di un hotel\n\nSi misura in prenotazioni e ricavi diretti, non in visite. Per farlo bisogna seguire l'ospite anche quando passa dal sito al booking engine, che quasi sempre vive su un altro dominio: senza un tracciamento cross-domain impostato con cura, GA4 attribuisce le prenotazioni a una fonte sbagliata o non le vede. Questa parte la seguiamo con il servizio di [tracking e Google Tag Manager](/servizi/data-analytics/tracking-gtm).\n\nI numeri che guardiamo con te a fine stagione sono pochi: quota di prenotazioni dirette sul totale, tasso di conversione del booking engine, richieste di preventivo, abbandoni al passaggio di pagamento e ricavo medio per prenotazione diretta rispetto a quello netto delle OTA. È da lì che si decide dove intervenire.\n\nIl metodo generale con cui progettiamo i siti è descritto nella pagina sulla [realizzazione di siti web](/servizi/web-app/siti-web); qui conta come si applica a una struttura ricettiva, che è un'attività con regole proprie. Lavorando da Cattolica, in mezzo agli alberghi della Riviera, abbiamo imparato che un sito d'hotel si rifà in autunno, non a maggio. Per il quadro completo del marketing alberghiero trovi la pagina dedicata al [settore hotel](/settori/hotel).",
+      "faq": [
+        {
+          "question": "Posso tenere il booking engine che uso già?",
+          "answer": "Quasi sempre sì. Prima verifichiamo che funzioni bene da smartphone, che si possa adattare alla grafica del sito e che permetta di tracciare le prenotazioni con il loro valore. Se uno di questi tre punti manca e il fornitore non può risolverlo, te lo diciamo e confrontiamo con te le alternative, tenendo conto del gestionale e del channel manager che usi."
+        },
+        {
+          "question": "Sul sito devo avere prezzi più bassi che su Booking?",
+          "answer": "Puoi, perché le clausole di parità tariffaria non sono più ammesse, ma non è l'unica leva. Spesso funziona meglio dare a parità di prezzo qualcosa che il portale non offre: colazione, parcheggio, cancellazione flessibile, check-out posticipato. L'importante è che il vantaggio sia scritto chiaramente vicino al pulsante di prenotazione, non nascosto in una pagina offerte."
+        },
+        {
+          "question": "In quante lingue va fatto il sito di un hotel?",
+          "answer": "Nelle lingue dei mercati da cui arrivano o vuoi far arrivare gli ospiti, non in tutte quelle possibili. Meglio tre lingue curate da madrelingua che sei tradotte in automatico. Guardiamo i dati del gestionale per capire da dove arrivano gli ospiti, e impostiamo le versioni linguistiche in modo che Google mostri a ciascuno quella giusta."
+        },
+        {
+          "question": "Quanto tempo serve per rifare il sito di un hotel?",
+          "answer": "Dipende da numero di camere, lingue e integrazioni, ma il punto vero è il calendario. Il sito nuovo deve essere online prima che parta il grosso delle prenotazioni per la stagione, quindi per un hotel balneare conviene iniziare in autunno. Lanciare a stagione aperta significa correggere errori mentre l'hotel è pieno e nessuno ha tempo di guardarli."
+        },
+        {
+          "question": "Da cosa dipende il costo di un sito per hotel?",
+          "answer": "Dalle tipologie di camera e dalle pagine da costruire, dal numero di lingue, dalla complessità dell'integrazione con booking engine e gestionale, e dal fatto che servano o no un servizio fotografico e i testi. Un B&B di poche stanze e un hotel con centro congressi non hanno lo stesso progetto. Per una prima stima puoi usare il calcolatore di preventivo sul sito."
+        }
+      ],
+      "metaTitle": "Siti web per hotel: prenotazioni dirette | not4sale",
+      "metaDescription": "Siti web per hotel costruiti attorno al booking engine: schede camera chiare, più lingue e prenotazioni dirette tracciate. Chiedi un preventivo a not4sale."
+    },
+    {
+      "sector": "hotel",
+      "service": "gestione-social",
+      "headline": "Social media manager per hotel: contenuti che fanno scegliere te",
+      "short": "Instagram, Facebook e TikTok dell'hotel gestiti sulla finestra di prenotazione, con contenuti girati in struttura e link tracciati.",
+      "answer": "Il social media manager per hotel di not4sale gestisce Instagram, Facebook e TikTok della tua struttura con un obiettivo preciso: farti scegliere prima del confronto prezzi e portare chi ti segue a prenotare sul sito. Calendario costruito sulla finestra di prenotazione, riprese in struttura, risposte ai messaggi e report legato alle prenotazioni, non ai like.",
+      "problem": "Scorri i profili degli hotel della tua zona: tramonti, buffet della colazione, piscina dall'alto, \"buongiorno da noi!\". Sono quasi tutti uguali, e il tuo rischia di esserlo. L'ospite che sta scegliendo tra cinque strutture sullo stesso lungomare non trova un solo motivo per preferirne una.\n\nPoi c'è il tempismo. Molti hotel pubblicano tanto a luglio, quando sono pieni e il personale ha tempo solo per una storia veloce, e spariscono tra gennaio e aprile, cioè proprio quando famiglie e coppie decidono dove andare. I contenuti arrivano dopo la decisione, non prima.\n\nE i messaggi. Qualcuno scrive su Instagram \"avete una tripla libera dal 10 al 17 agosto?\" e riceve risposta dopo tre giorni, o mai. Nel frattempo ha prenotato altrove, magari su un portale. Il link in bio porta alla home page invece che alla prenotazione, e nessuno sa quante camere siano arrivate davvero dai social. Così la gestione dei profili diventa un costo fisso di cui non si conosce il ritorno.",
+      "process": [
+        {
+          "title": "Calendario sulle prenotazioni",
+          "description": "Pianifichiamo i contenuti sui mesi in cui i tuoi ospiti decidono e prenotano, non solo su quelli in cui soggiornano."
+        },
+        {
+          "title": "Riprese in struttura",
+          "description": "Organizziamo giornate di ripresa prima dell'apertura e in stagione, per avere camere, spazi e persone vere in archivio."
+        },
+        {
+          "title": "Contenuti degli ospiti",
+          "description": "Raccogliamo foto e video pubblicati dagli ospiti, chiediamo il permesso e li ripubblichiamo nel rispetto della privacy."
+        },
+        {
+          "title": "Messaggi che prenotano",
+          "description": "Impostiamo risposte rapide e link tracciati al booking engine, così una domanda in direct diventa una prenotazione sul sito."
+        },
+        {
+          "title": "Report sulle prenotazioni",
+          "description": "Ogni mese clic verso il booking engine, richieste ricevute e prenotazioni attribuite ai social, con le decisioni per il mese dopo."
+        }
+      ],
+      "body": "## Cosa fa un social media manager per hotel\n\nUn social media manager per hotel lavora sul ciclo di vita dell'ospite, che non coincide con la stagione. Prima del viaggio c'è l'ispirazione, poi il confronto, la prenotazione, il soggiorno e il ricordo. Ogni fase chiede contenuti diversi:\n\n- **Ispirazione e confronto** (spesso mesi prima): cosa ti rende diverso dagli hotel accanto, per chi sei pensato, come sono davvero le camere.\n- **Prenotazione**: offerte per periodi precisi, disponibilità residua, il vantaggio di prenotare sul sito.\n- **Soggiorno**: storie in tempo reale su meteo, spiaggia, eventi della settimana, che parlano anche a chi sta decidendo all'ultimo momento.\n- **Ricordo**: contenuti che gli ospiti ricondividono e che preparano il ritorno l'anno dopo.\n\nLa differenza con una gestione social generica è questa: ogni contenuto ha un posto nel percorso verso la prenotazione. Il metodo di base è quello della nostra [gestione social media](/servizi/social/gestione-social); per un hotel cambiano i tempi, i formati e soprattutto il punto di arrivo, che è il booking engine.\n\n## I contenuti che funzionano per una struttura ricettiva\n\nFunzionano i contenuti che rispondono alle domande che l'ospite farebbe alla reception. Qualche esempio concreto:\n\n1. **Il giro della camera reale**, girato in verticale con luce naturale: \"questa è una tripla vista mare, ecco dove dorme il bambino\".\n2. **Le domande frequenti in video**: dove si parcheggia, come funziona con il cane, a che ora finisce la colazione, quanto si cammina fino alla spiaggia.\n3. **Le persone**: chi ti accoglie, chi prepara le torte della colazione, il bagnino della spiaggia convenzionata. Le facce fanno più fiducia degli ambienti vuoti.\n4. **I dintorni**: borghi, eventi, percorsi in bici, ristoranti consigliati. Ti posizionano come chi conosce il territorio.\n5. **Il dietro le quinte della riapertura**: lavori, novità, camere rinnovate. Danno un motivo a chi è già stato da te per tornare.\n\nSu Instagram e TikTok i Reel di questo tipo raggiungono anche persone che non ti seguono ancora. Per approfondire i formati del canale principale trovi la pagina su [Instagram marketing](/servizi/social/instagram).\n\n## Regole da conoscere: CIN, foto degli ospiti e collaborazioni\n\nUn profilo d'hotel ha qualche vincolo che una pagina aziendale qualsiasi non ha.\n\n- **CIN negli annunci.** Il codice identificativo nazionale va riportato in ogni annuncio della struttura, ovunque pubblicato. Quando un post diventa una sponsorizzata che promuove soggiorni, conviene inserirlo nel testo.\n- **Foto e video degli ospiti.** Ripubblicare un contenuto in cui un ospite ti ha taggato richiede il suo permesso. Con i minori la prudenza è doppia: niente volti riconoscibili senza il consenso dei genitori.\n- **Collaborazioni con creator.** Un soggiorno offerto in cambio di contenuti è una collaborazione commerciale e va dichiarata come tale nei post. Prima dell'arrivo si fissano per iscritto cosa viene pubblicato e quando. Se ti interessa questa strada, la seguiamo con il servizio di [influencer marketing](/servizi/social/influencer-marketing).\n\n## Come si misura: dai like alle prenotazioni\n\nSi misura seguendo il clic fino al booking engine. Ogni link che pubblichiamo, dalla bio alle storie, porta parametri che permettono di riconoscere in GA4 le prenotazioni arrivate dai social. A questo si aggiungono le richieste ricevute in direct e via WhatsApp, che contiamo e classifichiamo.\n\nI numeri del report mensile sono pochi: clic verso la prenotazione, richieste di disponibilità, prenotazioni attribuite, copertura su persone che non ti seguono. Quando i contenuti organici funzionano, ha senso spingerli con [Meta Ads](/servizi/advertising/meta-ads) verso chi ha già visitato il sito o interagito con il profilo, nei mesi in cui si prenota. In Riviera, dove molti ospiti fissano le vacanze estive con mesi di anticipo, è spesso in quella finestra che i social rendono di più.\n\nPer il quadro completo di canali e strategie per le strutture ricettive trovi la pagina sul [marketing per hotel](/settori/hotel).",
+      "faq": [
+        {
+          "question": "Quale social conta di più per un hotel?",
+          "answer": "Per la maggior parte delle strutture leisure Instagram resta il canale principale, perché è lì che gli ospiti guardano foto, storie e commenti prima di prenotare. Facebook conta ancora per un pubblico più adulto e per i gruppi. TikTok ha senso se hai contenuti forti da mostrare e un target giovane o famiglie con figli grandi. Meglio due canali curati che quattro trascurati."
+        },
+        {
+          "question": "Chi gira i video se non siete in hotel ogni giorno?",
+          "answer": "Una parte la giriamo noi in giornate di ripresa programmate, prima dell'apertura e nei momenti chiave della stagione. Il resto, le storie quotidiane, lo produce una persona del tuo staff con lo smartphone, seguendo indicazioni semplici che le prepariamo. Così abbiamo materiale curato per i contenuti principali e freschezza per quelli di ogni giorno."
+        },
+        {
+          "question": "Rispondete voi ai messaggi degli ospiti?",
+          "answer": "Possiamo gestire la prima risposta e le domande ricorrenti, con testi concordati e link tracciati alla prenotazione. Le richieste che toccano tariffe speciali, gruppi o casi particolari le passiamo alla reception in tempo reale. Decidiamo insieme fin dove arriviamo noi, perché chi risponde a nome dell'hotel deve conoscere bene regole e disponibilità."
+        },
+        {
+          "question": "Ha senso TikTok per un albergo?",
+          "answer": "Può averlo, soprattutto per strutture con qualcosa di molto visivo da raccontare: una posizione particolare, un servizio insolito, persone che bucano lo schermo. TikTok premia il contenuto più dei follower, quindi anche un hotel piccolo può farsi vedere. Non lo consigliamo se non c'è nessuno in struttura disposto a metterci la faccia con una certa regolarità."
+        },
+        {
+          "question": "I social portano prenotazioni o solo visibilità?",
+          "answer": "Portano entrambe, e la parte delle prenotazioni si può misurare se i link sono tracciati e il booking engine passa i dati a GA4. Molti ospiti però vedono un contenuto oggi e prenotano settimane dopo cercando il nome dell'hotel su Google. Per questo nel report affianchiamo le prenotazioni attribuite direttamente alle ricerche sul nome della struttura."
+        }
+      ],
+      "metaTitle": "Social media manager per hotel | not4sale",
+      "metaDescription": "Social media manager per hotel: contenuti girati in struttura, calendario sulle prenotazioni e messaggi che portano al booking engine. Parla con not4sale."
+    },
+    {
+      "sector": "hotel",
+      "service": "seo-locale",
+      "headline": "SEO per hotel: farsi trovare su Google, Maps e nelle risposte AI",
+      "short": "Scheda hotel su Google, pagine per le ricerche reali degli ospiti e dati chiari per le AI: la SEO che porta prenotazioni dirette.",
+      "answer": "La SEO per hotel di not4sale lavora su tre fronti: la scheda della struttura su Google e Maps, un sito con pagine pensate per le ricerche reali degli ospiti (hotel per famiglie, con parcheggio, vicino alla fiera) e informazioni coerenti che le AI usano per consigliare dove dormire. L'obiettivo sono visite che diventano prenotazioni dirette.",
+      "problem": "Cerca su Google \"hotel\" seguito dal nome della tua città. In cima trovi il modulo hotel di Google con mappa e prezzi, poi Booking, Expedia, Tripadvisor e qualche portale locale. Il sito di un singolo albergo, su quella ricerca, parte quasi sempre dietro. Molti albergatori concludono che la SEO non fa per loro e lasciano tutto in mano ai portali.\n\nÈ una conclusione sbagliata, perché parte dalla ricerca sbagliata. Gli ospiti non cercano solo \"hotel Rimini\": cercano \"hotel con piscina per bambini\", \"albergo vicino al Palacongressi\", \"hotel che accetta cani sul mare\". Ricerche più lunghe, più precise e molto più vicine alla prenotazione, dove i portali sono meno forti e una struttura con le pagine giuste può comparire.\n\nIl problema è che il sito tipico di un hotel ha una sola pagina \"Camere\" e una \"Servizi\" con un elenco di icone. Non c'è niente che risponda a quelle domande. E la scheda su Google, quella che conta di più, ha servizi incompleti, foto caricate dagli ospiti e recensioni lasciate senza risposta da mesi.",
+      "process": [
+        {
+          "title": "Mappa delle ricerche",
+          "description": "Raccogliamo le ricerche reali per tipo di ospite, servizio, evento e lingua, e scegliamo quelle in cui la tua struttura può davvero competere."
+        },
+        {
+          "title": "Scheda hotel su Google",
+          "description": "Completiamo servizi, foto, descrizione e collegamenti con il booking engine, e impostiamo un metodo per rispondere alle recensioni."
+        },
+        {
+          "title": "Pagine che rispondono",
+          "description": "Creiamo pagine per famiglie, sportivi, ospiti con animali, fiere ed eventi, ciascuna con contenuti e foto propri."
+        },
+        {
+          "title": "Dati strutturati e coerenza",
+          "description": "Marcatura schema per l'hotel e informazioni allineate tra sito, scheda Google e portali, così motori e AI non trovano contraddizioni."
+        },
+        {
+          "title": "Misura in Search Console",
+          "description": "Leggiamo clic e impressioni per gruppo di ricerche e li colleghiamo alle prenotazioni arrivate dal traffico organico."
+        }
+      ],
+      "body": "## Come funziona la SEO per hotel\n\nLa SEO per hotel si gioca su due campi diversi: il modulo hotel di Google, che compare in cima alle ricerche di alloggio, e i risultati organici classici, dove competi con i portali. Nel primo contano la scheda della struttura, le recensioni e i prezzi che il tuo booking engine invia a Google, che appaiono con l'etichetta del sito ufficiale accanto a quelli delle OTA. Nel secondo contano le pagine del sito e la loro capacità di rispondere a ricerche precise.\n\nInseguire i portali sulla ricerca generica \"hotel più città\" con i soli contenuti è poco realistico: hanno migliaia di pagine e un'autorità costruita in anni. Il lavoro sensato è un altro. Presidiare il nome della struttura, essere completi e convincenti nel modulo hotel, e vincere le ricerche di nicchia in cui sei la risposta migliore. Le basi della disciplina le trovi nella pagina sulla [SEO locale](/servizi/seo/seo-locale); qui guardiamo cosa cambia quando l'attività vende notti, non prodotti.\n\n## Le ricerche su cui un hotel può vincere\n\nNon tutte le ricerche valgono uguale. Questa è la mappa da cui partiamo:\n\n| Tipo di ricerca | Esempio | Dove deve rispondere |\n|---|---|---|\n| Nome della struttura | \"hotel [nome] Cattolica\" | Home, scheda Google, campagna sul brand |\n| Tipo di ospite | \"hotel per famiglie con animazione\" | Pagina dedicata con servizi e foto |\n| Servizio specifico | \"hotel con parcheggio\", \"hotel pet friendly\" | Pagina servizio, attributi della scheda |\n| Evento o luogo | \"hotel vicino alla fiera di Rimini\" | Pagina evento con distanze e orari |\n| Altre lingue | ricerche in tedesco, inglese, francese | Versioni linguistiche curate |\n\nOgni pagina deve avere contenuti propri: distanze vere, foto di quel servizio, condizioni chiare. Se il pubblico estero pesa sul tuo fatturato, le versioni linguistiche vanno impostate come un progetto di [SEO internazionale](/servizi/seo/seo-internazionale), non come una traduzione automatica attaccata in fondo.\n\n## Recensioni: cosa cambia con la nuova legge\n\nLe recensioni restano il segnale più visibile nella scheda di un hotel, e dal 7 aprile 2026 in Italia hanno regole precise. La legge annuale sulle PMI, per ristorazione e strutture turistiche, considera lecita una recensione solo se scritta da chi ha davvero usufruito del servizio ed entro trenta giorni, e vieta di comprarle o di ottenerle in cambio di sconti o altri vantaggi.\n\nIn pratica: chiedere una recensione al check-out o con un'email dopo la partenza va benissimo, offrire un drink o uno sconto sulla prossima prenotazione in cambio no. Le recensioni false si possono segnalare alla piattaforma per la rimozione. E rispondere resta importante, sia a quelle positive sia a quelle critiche, perché chi sta scegliendo legge come gestisci i problemi.\n\n## Dati strutturati, AI e coerenza delle informazioni\n\nSempre più persone chiedono a un assistente AI \"un hotel tranquillo per coppie a Pesaro con parcheggio\". Gli assistenti mettono insieme informazioni dal tuo sito, dalla scheda Google, dai portali e dalle recensioni. Se trovano dati contraddittori, come un parcheggio gratuito sul sito e a pagamento su Booking, si fidano meno di te.\n\nPer questo lavoriamo su due livelli. Il primo è la marcatura schema di tipo Hotel, con servizi, orari di check-in e check-out, animali ammessi e categoria: la impostiamo con il servizio di [dati strutturati](/servizi/ai-search/dati-strutturati). Il secondo è la coerenza: un elenco unico dei servizi e delle condizioni da usare ovunque, dal sito ai portali.\n\n## Come si misura la SEO di un hotel\n\nSi misura in tre numeri: clic dalla ricerca organica divisi per gruppo di ricerche in Search Console, azioni dalla scheda Google (chiamate, clic sul sito, indicazioni) e prenotazioni dirette attribuite al traffico organico nel booking engine. Le posizioni sono un mezzo, non il fine. Da Cattolica seguiamo strutture della Riviera e dell'entroterra, e il primo controllo è sempre lo stesso: quante prenotazioni arrivano oggi da chi ha cercato il tuo nome. Per il quadro del marketing alberghiero completo c'è la pagina sul [settore hotel](/settori/hotel).",
+      "faq": [
+        {
+          "question": "Posso superare Booking su Google?",
+          "answer": "Sulla ricerca generica con il nome della città, quasi mai e non conviene provarci. Sulla ricerca del nome del tuo hotel sì, e anzi devi: lì il primo risultato organico deve essere il tuo sito. Sulle ricerche di nicchia, come un servizio particolare o un evento vicino, una pagina ben fatta può comparire davanti ai portali, che su quelle ricerche sono meno specifici."
+        },
+        {
+          "question": "Quanto tempo serve per vedere risultati con la SEO per hotel?",
+          "answer": "La sistemazione della scheda Google e delle informazioni di base dà effetti già in poche settimane. Le pagine nuove per target, servizi ed eventi impiegano di solito qualche mese a posizionarsi. Per questo conviene lavorarci in bassa stagione: le pagine pubblicate in autunno sono pronte quando gli ospiti iniziano a cercare per l'estate successiva."
+        },
+        {
+          "question": "Serve un blog per un hotel?",
+          "answer": "Non un blog con articoli generici sul relax. Servono contenuti utili a chi organizza il viaggio: cosa fare nei dintorni con i bambini, come arrivare alla fiera, quali eventi ci sono in un certo mese. Se rispondono a domande reali e portano verso la prenotazione, fanno bene alla SEO. Se sono scritti solo per esserci, sono lavoro sprecato."
+        },
+        {
+          "question": "Devo rispondere a tutte le recensioni?",
+          "answer": "Idealmente sì, almeno a tutte quelle con un testo. Alle positive basta una risposta breve e personale, non un copia e incolla. Alle negative conviene rispondere con calma, ringraziare, spiegare cosa è stato fatto senza polemiche. Chi legge le recensioni prima di prenotare guarda anche le risposte, e una gestione seria vale spesso più di qualche stella in più."
+        },
+        {
+          "question": "Il sito in più lingue aiuta la SEO di un hotel?",
+          "answer": "Sì, se ogni lingua è curata e impostata correttamente, con indicazioni che dicono a Google quale versione mostrare a quale utente. Una versione tedesca fatta bene ti fa comparire nelle ricerche fatte in tedesco, dove i concorrenti locali spesso sono assenti. Una traduzione automatica mai rivista rischia invece di fare peggio che non averla."
+        }
+      ],
+      "metaTitle": "SEO per hotel: Google, Maps e risposte AI | not4sale",
+      "metaDescription": "SEO per hotel: scheda Google curata, pagine per le ricerche reali degli ospiti e dati coerenti per le AI. Più prenotazioni dirette con not4sale."
+    },
+    {
+      "sector": "hotel",
+      "service": "google-ads",
+      "headline": "Google Ads per hotel: campagne che portano prenotazioni sul sito",
+      "short": "Campagna sul nome dell'hotel, annunci per le date da riempire e Performance Max per i viaggi, misurati sul ricavo delle prenotazioni.",
+      "answer": "Google Ads per hotel significa presidiare le ricerche di chi sta scegliendo dove dormire: la campagna sul nome della struttura, annunci per le date e i target da riempire, Performance Max per obiettivi di viaggio e prezzi nel modulo hotel. not4sale collega le campagne al booking engine e misura costo e ricavo di ogni prenotazione diretta.",
+      "problem": "Cerca su Google il nome del tuo hotel. Se sopra il tuo sito compare l'annuncio di un portale che vende le tue camere, conosci già il problema: un ospite che ti stava cercando per nome viene intercettato da un intermediario, e su quella prenotazione paghi la commissione.\n\nPoi ci sono le campagne fatte male. Un account aperto anni fa con parole chiave come \"hotel Rimini\" a corrispondenza generica, che consuma il budget in maggio su ricerche di chi cerca lavoro stagionale o un hotel in un'altra zona. Budget uguale tutto l'anno, quando invece le prenotazioni si concentrano in finestre precise. E soprattutto nessuna conversione misurata, perché il booking engine sta su un altro dominio e Google Ads non vede chi prenota.\n\nIn queste condizioni le strategie di offerta automatiche lavorano al buio. Il report mostra clic e costi, l'albergatore vede un'uscita fissa e nessuno sa dire se una camera venduta tramite Google sia costata più o meno della commissione di un portale. È l'unico confronto che conta davvero.",
+      "process": [
+        {
+          "title": "Conversioni dal booking engine",
+          "description": "Colleghiamo il motore di prenotazione a Google Ads, così ogni prenotazione arriva con il suo valore e non solo come clic."
+        },
+        {
+          "title": "Campagna sul nome",
+          "description": "Proteggiamo le ricerche del nome dell'hotel con una campagna dedicata, a basso costo, per non lasciarle ai portali."
+        },
+        {
+          "title": "Calendario delle prenotazioni",
+          "description": "Distribuiamo il budget sulle settimane in cui i tuoi ospiti prenotano, con campagne dedicate a periodi, target ed eventi."
+        },
+        {
+          "title": "Annunci hotel e viaggi",
+          "description": "Valutiamo con il tuo fornitore di booking engine la presenza nel modulo hotel e le campagne Performance Max per obiettivi di viaggio."
+        },
+        {
+          "title": "Confronto con le OTA",
+          "description": "A fine stagione confrontiamo il costo per prenotazione delle campagne con la commissione media pagata ai portali."
+        }
+      ],
+      "body": "## Perché un hotel deve fare Google Ads sul proprio nome\n\nPerché chi cerca il nome del tuo hotel è già quasi un ospite, e quella ricerca è contesa. I portali e i metamotori comprano spesso annunci sulle ricerche dei nomi delle strutture che vendono: se tu non ci sei, il primo risultato cliccabile è il loro. Una campagna sul brand costa poco, perché la pertinenza è massima, e sposta verso il sito prenotazioni che altrimenti pagheresti a commissione.\n\nL'annuncio sul nome deve fare una cosa in più rispetto al risultato organico: dire perché prenotare direttamente. Colazione inclusa, parcheggio, cancellazione flessibile, miglior prezzo garantito sul sito ufficiale. Senza un vantaggio esplicito, l'ospite non ha motivo di preferire il tuo link a quello del portale.\n\n## Search, annunci hotel, Performance Max e link gratuiti: che differenza c'è\n\nGoogle offre agli hotel più strumenti diversi, e conviene sapere cosa fa ciascuno:\n\n| Strumento | Dove compare | Cosa serve |\n|---|---|---|\n| Campagne Search | Risultati di ricerca, sopra gli organici | Parole chiave, annunci, pagine di destinazione |\n| Annunci hotel | Modulo hotel su Ricerca e Maps, con il tuo prezzo | Feed di tariffe e disponibilità tramite un partner collegato a Google |\n| Performance Max per obiettivi di viaggio | Ricerca, Maps, YouTube, Display e altri canali in una sola campagna | Account collegato alla struttura, immagini, testi, conversioni affidabili |\n| Link di prenotazione senza costi | Modulo hotel, accanto ai portali | Booking engine partner di connettività di Google |\n\nI link di prenotazione senza costi non sono annunci: Google non chiede pagamenti per il posizionamento o per i clic. Richiedono però che il tuo booking engine invii a Google tariffe e disponibilità corrette, e Google controlla che il prezzo mostrato coincida con quello sulla pagina di destinazione. È il primo passo da verificare con il tuo fornitore, prima ancora di investire in pubblicità.\n\nLe basi su Search e Performance Max le trovi nella pagina generale su [Google Ads](/servizi/advertising/google-ads); per un hotel la differenza la fa la combinazione con il feed delle tariffe.\n\n## Quando accendere le campagne: la finestra di prenotazione\n\nIl budget va speso quando gli ospiti prenotano, non quando soggiornano. Un hotel per famiglie in Riviera riceve molte prenotazioni per l'estate mesi prima; un albergo che lavora con le fiere vede le prenotazioni legate alle date dei singoli eventi; una struttura urbana vive di prenotazioni ravvicinate. Per questo impostiamo campagne separate per periodo e target, ciascuna con il suo budget e il suo messaggio.\n\nDue regole pratiche. Primo: le date che si vendono da sole non hanno bisogno di pubblicità, e il budget va spostato sui periodi da riempire. Secondo: chi ha visitato il sito senza prenotare va ricontattato con criterio, con il [retargeting](/servizi/advertising/retargeting) sulle date che ha cercato e non con lo stesso annuncio per settimane.\n\n## Come misurare Google Ads per un hotel\n\nSi misura sul ricavo, non sui clic. Per farlo il booking engine deve passare a Google Ads ogni prenotazione con il suo valore, attraverso un tracciamento cross-domain e con la modalità di consenso configurata, obbligatoria per chi fa pubblicità a utenti europei. Questa base la impostiamo con il servizio di [tracking e Google Tag Manager](/servizi/data-analytics/tracking-gtm).\n\nCon i dati puliti, il confronto diventa semplice: quanto costa una prenotazione arrivata da Google rispetto alla commissione media pagata ai portali, al netto delle cancellazioni. Se costa meno, si investe di più; se costa di più, si corregge o si sposta il budget. Seguiamo hotel da Cattolica, tra Romagna e Marche, e anche strutture lontane da remoto. Per il quadro delle altre leve trovi la pagina sul [marketing per hotel](/settori/hotel).",
+      "faq": [
+        {
+          "question": "Quanto budget serve per Google Ads per un hotel?",
+          "answer": "Dipende da numero di camere, periodi da riempire, concorrenza della zona e mercati che vuoi raggiungere. La campagna sul nome richiede in genere un investimento contenuto, perché le ricerche sono poche e molto pertinenti. Le campagne per target e periodi si dimensionano sugli obiettivi di occupazione. Il calcolatore di preventivo sul sito ti dà una prima idea della gestione."
+        },
+        {
+          "question": "Le OTA possono fare annunci sul nome del mio hotel?",
+          "answer": "Spesso lo fanno, e usare un nome come parola chiave è in generale consentito dalle regole di Google. Alcuni contratti con i portali contengono clausole su questo punto, quindi vale la pena rileggerli. La difesa più efficace resta comunque essere presenti con un tuo annuncio, più pertinente e con un vantaggio chiaro per chi prenota sul sito ufficiale."
+        },
+        {
+          "question": "Mi serve un booking engine particolare per comparire nel modulo hotel?",
+          "answer": "Per i prezzi nel modulo hotel, sia a pagamento sia con i link senza costi, serve che il tuo booking engine o il channel manager sia collegato a Google come partner e invii tariffe e disponibilità. Molti fornitori lo sono già. Se il tuo non lo è, valutiamo insieme se conviene cambiare o se partire dalle campagne Search, che funzionano con qualsiasi motore."
+        },
+        {
+          "question": "Meglio Google Ads o i metamotori come Trivago?",
+          "answer": "Non sono alternativi. I metamotori confrontano prezzi tra portali e sito ufficiale, e funzionano se le tue tariffe dirette sono competitive. Google Ads ti permette in più di intercettare ricerche per nome, target ed eventi con annunci tuoi. Di solito si parte dal presidio di Google, che è dove la maggior parte delle ricerche comincia, e si valutano gli altri canali sui dati."
+        },
+        {
+          "question": "Ha senso fare campagne anche in inverno se l'hotel è chiuso?",
+          "answer": "Spesso sì, perché è in quei mesi che molti ospiti scelgono dove passare l'estate. Una campagna attiva durante la chiusura, collegata a un booking engine aperto e a un'offerta per chi prenota presto, raccoglie prenotazioni anticipate che altrimenti finirebbero sui portali. Va però impostata con messaggi e pagine pensati per chi prenota con anticipo."
+        }
+      ],
+      "metaTitle": "Google Ads per hotel: prenotazioni dirette | not4sale",
+      "metaDescription": "Google Ads per hotel: campagna sul nome contro le OTA, annunci per le date da riempire e prenotazioni tracciate dal booking engine. Parla con not4sale."
+    },
+    {
+      "sector": "ristorazione",
+      "service": "siti-web",
+      "headline": "Siti web per ristoranti: menu, prenotazioni e mappa in due tocchi",
+      "short": "Siti per ristoranti e pizzerie con menu aggiornabile, allergeni, prenotazione del tavolo integrata e ordini da asporto senza commissioni.",
+      "answer": "I siti web per ristoranti che realizza not4sale partono da tre cose: un menu leggibile da smartphone e facile da aggiornare, la prenotazione del tavolo collegata al sistema che usi in sala e le informazioni per arrivare. Poi aggiungiamo allergeni, lingue per i turisti, ordini da asporto e dati strutturati che Google sa leggere.",
+      "problem": "Il sito di molti ristoranti è nato così: qualcuno ha preparato una home con una foto della sala, una pagina \"Chi siamo\" con la storia della famiglia e un menu in PDF da otto megabyte, lo stesso stampato dalla tipografia. Poi nessuno lo ha più toccato.\n\nIl cliente che lo apre sabato alle sette di sera, in macchina o dall'ombrellone, vuole sapere tre cose: cosa si mangia, quanto costa più o meno, se c'è posto stasera. Il PDF non si legge sul telefono, i prezzi sono vecchi di due stagioni, gli orari non dicono che il martedì sei chiuso. Il modulo \"prenota\" manda un'email che nessuno leggerà prima di lunedì.\n\nRisultato: il cliente chiude il sito e prenota dove può farlo in un tocco, magari tramite un'app che trattiene una parte del conto e tiene per sé il suo contatto. Oppure ti chiama nel momento peggiore, con la sala piena e il telefono che squilla a vuoto. Un sito così non è neutro: lavora contro di te proprio quando il cliente ha già deciso di mangiare fuori.",
+      "process": [
+        {
+          "title": "Come prenotano i tuoi clienti",
+          "description": "Guardiamo da dove arrivano oggi tavoli e ordini: telefono, WhatsApp, app, scheda Google, e cosa succede nelle ore di punta."
+        },
+        {
+          "title": "Menu con una sola fonte",
+          "description": "Impostiamo un menu aggiornabile da te in pochi minuti, che alimenta sito, QR in sala e informazioni su Google."
+        },
+        {
+          "title": "Prenotazione integrata",
+          "description": "Colleghiamo al sito il software di prenotazione che usi in sala, o ti aiutiamo a sceglierne uno, perché ogni tavolo finisca nello stesso posto."
+        },
+        {
+          "title": "Pagine per le occasioni",
+          "description": "Asporto, eventi, cene private, pranzi di lavoro: ogni occasione che ti porta fatturato ha la sua pagina e il suo modo di contattarti."
+        },
+        {
+          "title": "Misura delle azioni",
+          "description": "Contiamo clic su prenota, chiamate, richieste di indicazioni e ordini, così sai cosa porta il sito ogni mese."
+        }
+      ],
+      "body": "## Cosa deve avere un sito web per ristoranti\n\nUn sito web per ristoranti deve permettere a chi ha fame di decidere in meno di un minuto. Le pagine possono essere poche, ma devono essere quelle giuste:\n\n- **Menu in pagina web**, non in PDF, con piatti, prezzi e indicazioni chiare su allergeni e opzioni vegetariane o senza glutine.\n- **Prenota un tavolo** visibile in ogni pagina, collegato alla disponibilità reale, con conferma automatica.\n- **Orari, chiusure e indirizzo** sempre giusti, compresi i cambi di stagione e le ferie, con il collegamento alla mappa e indicazioni su parcheggio e accessibilità.\n- **Foto vere** dei piatti, della sala e delle persone. Per un ristorante la [fotografia](/servizi/content/fotografia) non è un dettaglio estetico: è il menu che si vede.\n- **Pagine per le occasioni**: eventi privati, pranzi aziendali, asporto, buoni regalo. Spesso valgono più della cena di coppia del martedì.\n\nIl tutto veloce da smartphone, perché quasi nessuno sceglie un ristorante dal computer di casa. Il metodo generale con cui progettiamo i siti lo trovi nella pagina sulla [realizzazione di siti web](/servizi/web-app/siti-web); qui conta come si applica a un locale.\n\n## Il menu online: formato, allergeni e aggiornamenti\n\nIl menu è la pagina più visitata del sito di un ristorante, e quella fatta peggio. Tre regole:\n\n1. **Una sola fonte.** Se il menu è scritto in un pannello semplice, lo stesso contenuto alimenta la pagina del sito e il QR in sala. Cambi un piatto una volta e cambia ovunque.\n2. **Allergeni chiari.** Il regolamento europeo 1169/2011 obbliga chi somministra alimenti a informare sui quattordici allergeni principali. Se vendi da asporto o a domicilio con ordine online, le informazioni obbligatorie vanno rese disponibili prima che l'acquisto sia concluso, quindi sul sito, non solo sul cartaceo in sala.\n3. **Lingue per chi arriva da fuori.** In una località turistica una versione inglese, e dove serve tedesca, del menu fa la differenza tra un tavolo e un passante che tira dritto.\n\nUn menu in HTML ha anche un vantaggio di visibilità: Google e gli assistenti AI capiscono che cucina proponi, a che prezzi e con quali piatti, e possono mostrarti a chi cerca proprio quello.\n\n## Prenotazioni e ordini: cosa gestire sul sito e cosa lasciare alle piattaforme\n\nNon serve scegliere un solo canale, serve sapere quanto costa ognuno e chi possiede il contatto del cliente:\n\n| Canale | Vantaggio | Limite |\n|---|---|---|\n| Telefono | Diretto, personale | Squilla quando sei pieno, nessun dato |\n| Prenotazione dal sito | Contatto tuo, nessuna commissione sul tavolo | Va collegata a un software affidabile |\n| Pulsante di prenotazione su Google | Il cliente prenota da Maps senza uscire | Richiede un software di prenotazione partner di Google |\n| App e portali di prenotazione | Visibilità verso clienti nuovi | Costi per coperto o abbonamento, dati condivisi |\n| Piattaforme di delivery | Ordini da chi non ti conosce | Commissioni sull'ordine, cliente della piattaforma |\n| Ordine diretto dal sito | Margine pieno sull'asporto | Serve organizzazione in cucina e al ritiro |\n\nIl pulsante di Google è un buon esempio di integrazione intelligente: Google non chiede commissioni su quella prenotazione, il costo è quello del software che usi. Se il software è già collegato, il tavolo prenotato da Maps finisce nella stessa agenda di quelli arrivati dal sito.\n\n## Come si misura un sito di ristorante\n\nCon le azioni che portano persone a tavola: prenotazioni completate, clic sul numero di telefono, richieste di indicazioni, ordini da asporto, richieste per eventi. Le impostiamo come conversioni in GA4 fin dal primo giorno. Dopo qualche mese è chiaro quali pagine lavorano e quali no, e se il sito sta togliendo prenotazioni alle app o solo aggiungendone.\n\nLavoriamo da Cattolica, tra locali della Riviera e trattorie dell'entroterra, e incontriamo i ristoratori fuori dall'orario di servizio, che è l'unico momento in cui si riesce a ragionare. Per il quadro completo del marketing per locali trovi la pagina sul [settore della ristorazione](/settori/ristorazione).",
+      "faq": [
+        {
+          "question": "Posso aggiornare il menu da solo?",
+          "answer": "Sì, è uno dei requisiti del progetto. Il menu viene gestito da un pannello semplice, dove cambi piatti, prezzi e allergeni dal telefono o dal computer in pochi minuti. Le modifiche valgono subito sul sito e sul QR in sala. Ti mostriamo come fare in un incontro breve e ti lasciamo una guida scritta da tenere in cucina."
+        },
+        {
+          "question": "Serve un sito se sono già sulle app di prenotazione?",
+          "answer": "Sì, perché le app sono una vetrina condivisa con i tuoi concorrenti e i contatti dei clienti restano in gran parte a loro. Il sito è il posto dove il cliente abituale prenota senza intermediari e dove raccogli i dati per farlo tornare. Le due cose convivono bene, purché la disponibilità dei tavoli sia gestita in un unico sistema."
+        },
+        {
+          "question": "Il menu online deve essere tradotto?",
+          "answer": "Se lavori con turisti stranieri, conviene almeno in inglese, e nelle località frequentate da ospiti di lingua tedesca anche in tedesco. Le traduzioni dei piatti vanno curate, perché i nomi tipici spesso non si traducono e vanno spiegati. Anche le indicazioni sugli allergeni devono essere comprensibili a chi legge, non solo presenti."
+        },
+        {
+          "question": "Posso vendere l'asporto dal sito senza commissioni?",
+          "answer": "Sì, con un sistema di ordini online collegato al sito: il cliente sceglie, paga o prenota il ritiro, e tu ricevi l'ordine senza intermediari. Il costo è quello del software e dei pagamenti. Funziona se la cucina riesce a gestire tempi di ritiro affidabili nelle ore di punta; se no, meglio partire con l'ordine telefonico ben organizzato."
+        },
+        {
+          "question": "Quanto tempo serve per fare il sito di un ristorante?",
+          "answer": "Per un sito con menu, prenotazioni e poche pagine di solito bastano alcune settimane, a patto di avere foto e contenuti pronti. Il tempo vero lo prende il servizio fotografico, che va fatto con il menu della stagione. Conviene organizzarsi prima dei mesi di punta, così il sito è pronto quando arrivano i clienti e non durante."
+        }
+      ],
+      "metaTitle": "Siti web per ristoranti: menu e prenotazioni | not4sale",
+      "metaDescription": "Siti web per ristoranti e pizzerie: menu aggiornabile con allergeni, prenotazione del tavolo integrata e asporto senza commissioni. Parla con not4sale."
+    },
+    {
+      "sector": "ristorazione",
+      "service": "gestione-social",
+      "headline": "Social media manager per ristoranti: più tavoli prenotati, non solo like",
+      "short": "Instagram, Facebook e TikTok del locale: riprese in cucina, calendario su menu ed eventi, messaggi gestiti e sponsorizzate nel raggio giusto.",
+      "answer": "Il social media manager per ristoranti di not4sale si occupa di Instagram, Facebook e TikTok del tuo locale: giornate di ripresa in cucina e in sala, calendario legato a menu, stagioni ed eventi, risposte a chi scrive per prenotare e sponsorizzate nel raggio di pochi chilometri. Misuriamo prenotazioni, chiamate e richieste, non solo follower.",
+      "problem": "Nella maggior parte dei ristoranti i social li gestisce il titolare a fine servizio, a mezzanotte, con le mani che sanno ancora di fritto. Oppure un'agenzia lontana che non ha mai assaggiato un piatto, pubblica grafiche con frasi sul \"gusto autentico\" e foto che potrebbero essere di qualsiasi locale d'Italia.\n\nIn entrambi i casi i contenuti si staccano dalla realtà del locale. Il piatto in foto non è più in carta da un mese, la serata a tema viene annunciata il giorno stesso, il menu del pranzo di lavoro non lo conosce nessuno. Chi ti segue non ha un motivo preciso per venire questa settimana.\n\nPoi ci sono i messaggi. \"Avete posto stasera per quattro?\" arriva in direct alle otto e mezza, quando nessuno guarda il telefono. La risposta parte il giorno dopo. E le collaborazioni: il food creator invitato a cena senza accordi, che pubblica una storia e sparisce, lasciandoti il conto e nessun dato. Il tempo e i soldi spesi sui social ci sono; il collegamento con i tavoli pieni no.",
+      "process": [
+        {
+          "title": "Assaggio e sopralluogo",
+          "description": "Veniamo a mangiare da te, parliamo con cucina e sala e capiamo cosa rende il locale diverso da quello accanto."
+        },
+        {
+          "title": "Giornate di ripresa",
+          "description": "Una o più sessioni al mese in cucina e in sala, programmate fuori dal servizio, per avere materiale curato da usare per settimane."
+        },
+        {
+          "title": "Calendario su menu ed eventi",
+          "description": "Pianifichiamo i contenuti sui cambi di carta, le stagioni, le serate e le occasioni che portano fatturato."
+        },
+        {
+          "title": "Messaggi e prenotazioni",
+          "description": "Impostiamo risposte rapide e un link unico di prenotazione, così chi scrive in direct trova subito come prenotare."
+        },
+        {
+          "title": "Sponsorizzate e report",
+          "description": "Campagne locali nei giorni e negli orari giusti e un report mensile su prenotazioni, chiamate e richieste arrivate dai social."
+        }
+      ],
+      "body": "## Cosa fa un social media manager per ristoranti (e cosa resta a te)\n\nUn social media manager per ristoranti si occupa di tutto quello che si può pianificare, e ti lascia solo quello che può fare solo chi è in cucina. In concreto noi pensiamo il calendario, giriamo e montiamo i contenuti principali, scriviamo i testi, pubblichiamo, rispondiamo ai commenti e misuriamo.\n\nA te e allo staff chiediamo poco ma con regolarità: una storia quando arriva il pescato o esce dal forno qualcosa di speciale, una segnalazione quando cambia un piatto, l'approvazione del calendario una volta al mese. La divisione dei compiti la fissiamo all'inizio, per iscritto, così nessuno aspetta l'altro. Il metodo generale è quello della nostra [gestione social media](/servizi/social/gestione-social); per un locale cambiano ritmo, tempi di produzione e il tipo di risultato da misurare.\n\n## Il contenuto che riempie i tavoli questa settimana\n\nIl contenuto che funziona per un ristorante dà un motivo concreto per venire adesso, non solo un'immagine piacevole. Pensalo come un piccolo invito:\n\n- **Il piatto che c'è solo in questi giorni**: la prima carbonara di carciofi, il brodetto del venerdì, i funghi appena arrivati.\n- **La serata con una data**: degustazione, musica dal vivo, menu a tema, annunciati con almeno una settimana di anticipo e ricordati il giorno prima.\n- **L'occasione che non ti aspetti**: pranzo veloce per chi lavora in zona, tavolo per compleanni, sala privata per aziende.\n- **Le persone**: lo chef che spiega un piatto in trenta secondi, il cameriere che c'è da vent'anni, il fornitore di fiducia.\n\nMolte persone, soprattutto più giovani, cercano dove mangiare direttamente su Instagram e TikTok. Per questo testi e didascalie devono contenere le parole che userebbero: tipo di cucina, piatti, zona. È un piccolo accorgimento che rende il profilo trovabile oltre che bello.\n\n## Food creator e collaborazioni: come farle bene\n\nLe collaborazioni con creator locali funzionano quando sono scelte sui numeri e regolate da un accordo, non quando si invita a cena chi ha più follower. Prima di tutto si guarda dove vive il pubblico del creator: centomila persone sparse in tutta Italia valgono meno di diecimila che abitano nel raggio di venti chilometri. Poi si fissano per iscritto contenuti, date e diritti di riutilizzo.\n\nUna cena offerta in cambio di contenuti è una collaborazione commerciale, e va dichiarata come tale nei post. È una tutela anche per te. Se vuoi lavorare con più creator in modo continuativo, lo seguiamo con il servizio di [influencer marketing](/servizi/social/influencer-marketing).\n\n## Sponsorizzate per ristoranti: raggio, orari e occasioni\n\nPer un locale le sponsorizzate funzionano quando sono strette. Raggio di pochi chilometri, giorni e orari in cui le persone decidono dove andare a cena, messaggio legato a un'occasione precisa. In una località di mare conviene distinguere chi abita in zona, a cui parlare tutto l'anno, da chi è in vacanza, che va intercettato nei giorni in cui c'è. Le campagne le gestiamo con [Meta Ads](/servizi/advertising/meta-ads), coordinate con il calendario dei contenuti.\n\n## Come misuriamo il lavoro sui social di un ristorante\n\nContiamo quello che porta persone a tavola: clic sul link di prenotazione, con parametri che lo rendono riconoscibile, messaggi con richieste di tavolo, chiamate, adesioni agli eventi. Chiediamo anche alla sala di annotare per qualche settimana come i clienti nuovi hanno conosciuto il locale: è un dato semplice e prezioso.\n\nNel report mensile trovi questi numeri e le decisioni conseguenti, non un elenco di like. Seguiamo locali dalla Riviera all'entroterra, partendo da Cattolica, e incontriamo i ristoratori fuori dal servizio. Per il quadro completo di canali e strategie c'è la pagina sul [marketing per la ristorazione](/settori/ristorazione).",
+      "faq": [
+        {
+          "question": "Dovete venire nel locale per fare i contenuti?",
+          "answer": "Sì, almeno per le giornate di ripresa: i contenuti migliori nascono in cucina e in sala, con la luce e le persone vere del locale. Le programmiamo fuori dagli orari di servizio o in momenti tranquilli, così non intralciamo il lavoro. Per i locali lontani da Cattolica alterniamo sessioni in presenza e materiale girato dallo staff con le nostre indicazioni."
+        },
+        {
+          "question": "Rispondete voi ai messaggi di chi vuole prenotare?",
+          "answer": "Possiamo gestire commenti e messaggi con risposte concordate e il link unico di prenotazione. Le richieste che dipendono dalla disponibilità reale, come un tavolo per stasera o un evento privato, le giriamo subito a chi gestisce la sala, oppure le indirizziamo al sistema di prenotazione. L'obiettivo è che nessuno aspetti una risposta fino al giorno dopo."
+        },
+        {
+          "question": "Ha senso TikTok per una trattoria o una pizzeria?",
+          "answer": "Può averlo, soprattutto se c'è qualcuno in cucina o in sala che sta volentieri davanti alla telecamera. TikTok distribuisce i contenuti anche a chi non ti segue, quindi un video ben fatto può far scoprire il locale a molte persone della zona. Se nessuno vuole metterci la faccia, conviene concentrarsi su Instagram e farlo bene."
+        },
+        {
+          "question": "Possiamo ripubblicare le foto dei clienti?",
+          "answer": "Sì, chiedendo prima il permesso a chi le ha pubblicate, di solito con un messaggio diretto. È un piccolo passaggio che evita problemi e spesso fa piacere al cliente. Con le foto in cui compaiono altre persone o bambini serve più attenzione. Ti prepariamo un messaggio standard da usare ogni volta, così la cosa diventa un'abitudine."
+        },
+        {
+          "question": "Quanto devo investire in sponsorizzate?",
+          "answer": "Per molti locali bastano budget contenuti, concentrati su eventi, periodi lenti e lanci di nuovi menu, perché il raggio è piccolo e il pubblico limitato. Più che la cifra conta la regolarità e il collegamento con un'occasione concreta. Il budget pubblicitario è separato dalla gestione: il calcolatore di preventivo sul sito ti aiuta a stimare quest'ultima."
+        }
+      ],
+      "metaTitle": "Social media manager per ristoranti | not4sale",
+      "metaDescription": "Social media manager per ristoranti e pizzerie: riprese in cucina, calendario su menu ed eventi, sponsorizzate locali e prenotazioni misurate. Scrivi a not4sale."
+    },
+    {
+      "sector": "ristorazione",
+      "service": "seo-locale",
+      "headline": "SEO per ristoranti: farsi scegliere su Google Maps e nelle ricerche",
+      "short": "Scheda Google completa, menu leggibile dai motori, recensioni gestite secondo le nuove regole e pagine per piatti e occasioni.",
+      "answer": "La SEO per ristoranti di not4sale serve a comparire quando qualcuno cerca dove mangiare nella tua zona: su Google Maps, nei risultati di ricerca e nelle risposte degli assistenti AI. Lavoriamo sulla scheda Google, sul menu leggibile dai motori, sulle recensioni gestite nel rispetto delle nuove regole e su pagine dedicate a cucina, piatti e occasioni.",
+      "problem": "Chi cerca un ristorante non scrive quasi mai \"ristorante\". Scrive \"pizzeria aperta ora\", \"dove mangiare il brodetto a Fano\", \"ristorante senza glutine vicino a me\", \"trattoria con camino\", \"sushi da asporto\". Ogni ricerca è un cliente con un desiderio preciso, e Google prova ad abbinarlo al locale che sembra rispondere meglio.\n\nIl guaio è che Google può proporre solo ciò che sa di te. Se la scheda ha una categoria generica e nessun attributo, se il menu è una foto sfocata, se il sito non dice da nessuna parte che fai pizza al tegamino o pesce crudo, per quelle ricerche il tuo locale non esiste. Vince chi ha scritto le stesse cose in modo chiaro, anche se cucina peggio.\n\nC'è poi la parte delle recensioni, che molti ristoratori gestiscono con il QR sul conto e la promessa di un amaro in cambio delle cinque stelle. Da aprile 2026 è una pratica vietata in Italia. E mentre il locale sbaglia le basi, il concorrente sulla stessa via raccoglie le prenotazioni della domenica a pranzo.",
+      "process": [
+        {
+          "title": "Mappa delle ricerche",
+          "description": "Raccogliamo come le persone cercano un locale come il tuo: cucina, piatti, occasioni, orari, esigenze alimentari, zona."
+        },
+        {
+          "title": "Scheda Google completa",
+          "description": "Categoria principale e secondarie, attributi, menu, foto, pulsanti di prenotazione e ordine, risposte alle recensioni."
+        },
+        {
+          "title": "Pagine per piatti e occasioni",
+          "description": "Sul sito creiamo pagine per cucina, specialità, eventi e asporto, con contenuti che solo il tuo locale può scrivere."
+        },
+        {
+          "title": "Coerenza ovunque",
+          "description": "Allineiamo informazioni e orari su sito, scheda, portali e guide, e aggiungiamo i dati strutturati di tipo ristorante."
+        },
+        {
+          "title": "Misura delle azioni",
+          "description": "Chiamate, indicazioni stradali, clic su prenota e menu, letti mese per mese insieme alle ricerche che li hanno generati."
+        }
+      ],
+      "body": "## Come funziona la SEO per ristoranti\n\nLa SEO per ristoranti consiste nel far capire a Google, in modo inequivocabile, cosa servi, dove, quando e per chi. Il motore abbina ogni ricerca ai locali più pertinenti, vicini e conosciuti; la vicinanza non la scegli, ma la pertinenza dipende quasi tutta da come descrivi il locale. Le basi generali le trovi nella pagina sulla [SEO locale](/servizi/seo/seo-locale); qui vediamo cosa cambia quando l'attività è un ristorante.\n\nLa differenza principale è il numero di ricerche specifiche. Un idraulico viene cercato quasi sempre come \"idraulico\". Un ristorante viene cercato per tipo di cucina, singolo piatto, fascia di prezzo, occasione, orario, esigenza alimentare. Ognuna di queste è una porta d'ingresso, e ognuna va aperta con informazioni precise.\n\n## Le ricerche dei clienti e dove rispondere\n\n| Ricerca tipica | Cosa la intercetta |\n|---|---|\n| Tipo di cucina (\"ristorante di pesce\", \"pizzeria napoletana\") | Categoria principale e secondarie della scheda, titolo e testi del sito |\n| Piatto specifico (\"cappelletti al ragù\", \"crudo di mare\") | Menu in testo su scheda e sito, foto con descrizione, recensioni che lo citano |\n| Esigenza (\"senza glutine\", \"vegano\", \"con dehors\") | Attributi della scheda e una pagina dedicata sul sito |\n| Occasione (\"cena di laurea\", \"pranzo aziendale\") | Pagine per eventi e sale private |\n| Momento (\"aperto ora\", \"aperto a pranzo la domenica\") | Orari sempre aggiornati, festività comprese |\n\nIl menu è il punto in cui si guadagna di più. Un menu scritto in testo, sul sito e nella scheda, permette a Google di collegare il tuo locale alle ricerche dei singoli piatti. Un menu fotografato o in PDF no. Se il sito va rifatto, ne parliamo nella pagina sui [siti web per ristoranti](/settori/ristorazione/siti-web).\n\n## Recensioni dei ristoranti: le regole dal 2026\n\nDal 7 aprile 2026 è in vigore la legge annuale sulle PMI, che per ristoranti e strutture turistiche fissa regole precise sulle recensioni online. È considerata legittima la recensione di chi ha consumato davvero nel locale, pubblicata entro trenta giorni. È vietato acquistarle, venderle e ottenerle promettendo sconti, omaggi o altri vantaggi.\n\nCosa resta permesso e utile:\n\n1. chiedere la recensione a fine pasto, a voce o con un QR sul conto, senza offrire nulla in cambio;\n2. inviare un messaggio di ringraziamento a chi ha prenotato online, con il link diretto alla scheda;\n3. rispondere a tutte le recensioni, con il nome di chi risponde e un tono da padrone di casa;\n4. segnalare le recensioni false alla piattaforma, chiedendone la rimozione.\n\nLe recensioni contano anche per il contenuto: quando i clienti citano un piatto, aiutano Google ad associare il locale a quella ricerca.\n\n## Guide, portali e risposte delle AI\n\nOltre a Google, i clienti consultano Tripadvisor, i portali di prenotazione e le guide gastronomiche. Non serve essere ovunque, ma dove sei le informazioni devono coincidere: stesso nome, stesso indirizzo, stessi orari. Gli assistenti AI, quando qualcuno chiede \"dove mangiare pesce fresco a Cattolica\", incrociano proprio queste fonti, e un locale descritto in modo coerente ha più probabilità di essere citato.\n\nSul sito aggiungiamo i [dati strutturati](/servizi/ai-search/dati-strutturati) di tipo ristorante: cucina servita, fascia di prezzo, orari, collegamento al menu e alla prenotazione. È un modo per dire le stesse cose ai motori nel loro linguaggio.\n\n## Come si misura la SEO di un ristorante\n\nSi misura in azioni: chiamate dalla scheda, richieste di indicazioni, clic sul menu e sul pulsante di prenotazione, visite al sito dalle ricerche locali. Le leggiamo ogni mese insieme alle ricerche che le hanno generate, così vedi quali piatti e occasioni ti portano clienti. Lavoriamo con locali tra Romagna e Marche partendo da Cattolica. Per il quadro delle altre leve trovi la pagina sul [marketing per la ristorazione](/settori/ristorazione).",
+      "faq": [
+        {
+          "question": "Il QR per chiedere le recensioni è ancora permesso?",
+          "answer": "Sì. Chiedere una recensione è lecito, anche con un QR sul conto o sul tavolo. Quello che le nuove regole vietano è offrire qualcosa in cambio, come uno sconto, un dolce o un amaro, e naturalmente comprare recensioni. Il QR deve portare direttamente alla scheda, e la richiesta funziona meglio se la fa a voce chi ha servito il tavolo."
+        },
+        {
+          "question": "Quanto tempo serve per migliorare la posizione su Maps?",
+          "answer": "Le correzioni alla scheda, come categorie, attributi, orari e menu, possono dare effetti nel giro di qualche settimana. La crescita delle recensioni e delle pagine sul sito richiede qualche mese di lavoro costante. Per un locale stagionale conviene partire prima dei mesi di punta, così la scheda è al massimo quando arrivano i turisti."
+        },
+        {
+          "question": "Tripadvisor conta ancora per un ristorante?",
+          "answer": "Per molti locali in zone turistiche sì, perché una parte dei visitatori, soprattutto stranieri, lo consulta ancora prima di scegliere. Non è un sostituto della scheda Google, che resta il punto di partenza. Il consiglio è tenere il profilo completo e coerente, rispondere alle recensioni e non disperdere energie su decine di portali minori."
+        },
+        {
+          "question": "Ho un menu senza glutine: come lo faccio sapere a Google?",
+          "answer": "Con tre mosse coordinate: l'attributo dedicato nella scheda Google, se disponibile per la tua categoria, il menu in testo con i piatti indicati chiaramente, e una pagina sul sito che spiega come gestisci la cucina senza glutine. Se hai certificazioni o collaborazioni con associazioni, vanno citate. Chi ha questa esigenza cerca informazioni precise, non uno slogan."
+        },
+        {
+          "question": "Ho due locali: serve una scheda per ciascuno?",
+          "answer": "Sì, una scheda per ogni sede, con indirizzo, orari, foto e menu propri, e una pagina dedicata sul sito per ognuna. Se i due locali hanno cucine o formule diverse, i contenuti devono raccontarle in modo diverso. Accorpare tutto in una scheda o in una pagina sola fa perdere visibilità a entrambi."
+        }
+      ],
+      "metaTitle": "SEO per ristoranti: Google Maps e ricerche | not4sale",
+      "metaDescription": "SEO per ristoranti e pizzerie: scheda Google completa, menu leggibile dai motori, recensioni secondo le nuove regole e pagine per piatti e occasioni."
+    },
+    {
+      "sector": "ristorazione",
+      "service": "google-ads",
+      "headline": "Google Ads per ristoranti: annunci per chi cerca dove mangiare ora",
+      "short": "Campagne per ristoranti e pizzerie su raggio, orari e occasioni: tavoli, asporto, eventi privati. Misurate in chiamate e prenotazioni.",
+      "answer": "Google Ads per ristoranti significa comparire in cima a Ricerca e Maps quando qualcuno nella tua zona cerca dove mangiare, ordinare o organizzare una cena. not4sale imposta campagne con raggio, orari e occasioni precise, collegate alla scheda Google e al sistema di prenotazione, e le misura in chiamate, tavoli prenotati e richieste per eventi.",
+      "problem": "Molti ristoratori hanno provato Google Ads una volta e hanno smesso. La storia è quasi sempre la stessa: campagna creata in autonomia con la procedura guidata, parola chiave \"ristorante\", area di mezza provincia, budget acceso tutto il giorno. In due settimane sono arrivati clic da chi cercava ricette, offerte di lavoro per camerieri, ristoranti in un'altra città. Prenotazioni attribuite: nessuna, anche perché nessuno le misurava.\n\nL'errore opposto è non provarci affatto, pensando che Google Ads sia roba da catene o da e-commerce. Eppure alcune ricerche valgono molto per un locale: \"pizzeria asporto\" il venerdì alle sette, \"ristorante per cena aziendale\", \"sala per battesimo\", \"ristorante aperto a Ferragosto\". Chi le fa ha già deciso di spendere, e sceglie tra i primi risultati.\n\nIn mezzo c'è il problema dei periodi. D'estate in Riviera i tavoli si riempiono anche senza pubblicità, e spendere lì è spesso uno spreco. A novembre, quando la sala è mezza vuota, la campagna non c'è. Così il budget lavora nel momento sbagliato e il ristoratore ne conclude che non funziona.",
+      "process": [
+        {
+          "title": "Ricerche che valgono",
+          "description": "Separiamo le ricerche da tavolo, asporto ed eventi, ciascuna con il suo valore, ed escludiamo quelle che non portano clienti."
+        },
+        {
+          "title": "Raggio e orari",
+          "description": "Impostiamo zona, giorni e fasce orarie in cui le persone decidono davvero dove mangiare o ordinare."
+        },
+        {
+          "title": "Collegamento alla scheda",
+          "description": "Colleghiamo la scheda Google per mostrare indirizzo, distanza e chiamata negli annunci, anche su Maps."
+        },
+        {
+          "title": "Misura di chiamate e tavoli",
+          "description": "Tracciamo chiamate, prenotazioni dal sito, richieste di indicazioni e moduli per eventi come conversioni separate."
+        },
+        {
+          "title": "Budget sui mesi lenti",
+          "description": "Spostiamo l'investimento sui periodi e sulle occasioni da riempire, e lo riduciamo quando la sala si riempie da sola."
+        }
+      ],
+      "body": "## Quando Google Ads conviene a un ristorante\n\nGoogle Ads per ristoranti conviene quando c'è una domanda da intercettare che la sola presenza organica non copre: un periodo lento da riempire, un servizio con alto valore come eventi e catering, una zona con molta concorrenza su Maps, un locale nuovo che non ha ancora recensioni. Conviene meno per il tavolo singolo in alta stagione, quando la sala è già piena.\n\nLe occasioni su cui vediamo più senso, per valore e intenzione:\n\n- **Eventi privati e ricorrenze**: battesimi, comunioni, lauree, cene aziendali, feste di Natale. Una sola richiesta può valere decine di coperti.\n- **Asporto e consegna diretta**: ricerche fatte all'ora di cena da chi vuole ordinare subito, soprattutto per pizzerie e cucine da asporto.\n- **Ricerche di nicchia**: cucina specifica, esigenze alimentari, aperture festive, dove la concorrenza è minore.\n- **Fuori stagione**: pranzi di lavoro, menu del weekend, serate a tema per chi abita in zona.\n\nI principi generali delle campagne sono descritti nella pagina su [Google Ads](/servizi/advertising/google-ads); qui conta come si declinano per un locale.\n\n## Come si imposta una campagna per un ristorante\n\nSi imposta stretta: poche parole chiave ad alta intenzione, zona e orari precisi, un annuncio che dice subito cosa offri e come prenotare.\n\n| Impostazione | Scelta tipica per un ristorante | Perché |\n|---|---|---|\n| Zona | Raggio di pochi chilometri, o comuni precisi | Chi è lontano non viene a cena |\n| Opzione di località | Persone presenti o abitualmente nella zona | Evita chi cerca da lontano senza intenzione di venire |\n| Orari | Fasce in cui si decide: tardo pomeriggio, sera, weekend | Non pagare clic a mezzanotte |\n| Estensioni | Indirizzo dalla scheda Google, chiamata, link a menu e prenotazione | Il cliente agisce senza passare dal sito |\n| Parole escluse | Ricetta, lavoro, corso, gratis e simili | Toglie i clic che non portano nessuno |\n\nLe campagne locali di Google sono confluite dal 2022 in Performance Max, che con la scheda collegata può mostrare gli annunci anche su Maps. Funziona bene per locali con più sedi o volumi importanti; per un ristorante singolo spesso si parte dalla rete di ricerca, più controllabile, e si aggiunge Performance Max quando ci sono dati sufficienti.\n\n## Su cosa portare il clic: sito, scheda o telefono\n\nDipende da cosa vuoi che succeda. Per l'asporto il clic deve arrivare all'ordine o alla chiamata, senza passaggi. Per il tavolo, alla prenotazione online o al numero di telefono, con orari ben visibili. Per gli eventi privati serve una [landing page](/servizi/web-app/landing-page) dedicata, con sale, menu di esempio e un modulo di richiesta, perché chi organizza una comunione vuole dettagli prima di telefonare.\n\nL'errore classico è mandare tutti alla home page, dove il cliente deve cercare da solo il menu e il modo di prenotare. Ogni passaggio in più è un tavolo che può andare altrove.\n\n## Come misurare Google Ads per un ristorante\n\nSi misura su azioni concrete, distinte per valore: prenotazioni completate, chiamate di durata minima, richieste per eventi, ordini da asporto, indicazioni stradali. Per le chiamate configuriamo il monitoraggio dagli annunci e dal sito, così sappiamo quali telefonate sono partite dalle campagne. Per le prenotazioni serve che il software passi l'informazione al sistema di misura, che impostiamo con il servizio di [tracking e Google Tag Manager](/servizi/data-analytics/tracking-gtm).\n\nA fine mese il confronto è semplice: quanto è costata ogni richiesta, quante sono diventate tavoli o eventi, quanto hanno lasciato in cassa. Da Cattolica seguiamo locali della costa e dell'entroterra, dove gli stessi strumenti si usano in modo molto diverso. Come si combinano campagne, social e scheda Google lo spieghiamo nella pagina sul [marketing per la ristorazione](/settori/ristorazione).",
+      "faq": [
+        {
+          "question": "Google Ads conviene anche a un ristorante piccolo?",
+          "answer": "Sì, se lo usi su ricerche precise e nei momenti giusti. Un locale piccolo non deve presidiare la parola ristorante su tutta la provincia: gli basta comparire su poche ricerche ad alta intenzione nel suo raggio, per esempio asporto, aperture festive o eventi. Con un budget contenuto e ben indirizzato si può capire in poche settimane se il canale rende."
+        },
+        {
+          "question": "Meglio Google Ads o le sponsorizzate su Instagram?",
+          "answer": "Fanno lavori diversi. Google Ads intercetta chi sta già cercando dove mangiare o ordinare, quindi è vicino alla decisione. Le sponsorizzate su Instagram creano il desiderio in chi non stava cercando, e funzionano bene per eventi e novità. Per molti locali ha senso partire da Google sulle ricerche di valore e usare Instagram per raccontare."
+        },
+        {
+          "question": "Posso comparire in cima a Google Maps a pagamento?",
+          "answer": "Sì, con annunci collegati alla scheda Google, che possono comparire nei risultati di Maps e nella ricerca locale con indirizzo e distanza. Non sostituiscono il lavoro sulla scheda: se le recensioni sono poche o le informazioni incomplete, l'annuncio porta clic che poi non si trasformano in tavoli. Funziona meglio quando la scheda è già curata."
+        },
+        {
+          "question": "Come so se un cliente è arrivato dagli annunci?",
+          "answer": "Per chiamate e prenotazioni online lo sappiamo dal tracciamento: chiamate monitorate dagli annunci e conversioni collegate al software di prenotazione. Per chi arriva senza prenotare il dato è meno preciso, e lo integriamo chiedendo alla sala di annotare per qualche settimana come i clienti nuovi hanno trovato il locale. Insieme, i due dati danno un quadro affidabile."
+        },
+        {
+          "question": "Quando conviene spegnere le campagne?",
+          "answer": "Quando il locale è pieno senza aiuto, come spesso succede nei weekend d'estate in zona turistica: lì ogni clic pagato porta un cliente che sarebbe arrivato comunque o che non trovi posto per servire. Non spegniamo tutto, però: le campagne per eventi e asporto possono restare attive, perché lavorano su date e servizi diversi dal tavolo della sera."
+        }
+      ],
+      "metaTitle": "Google Ads per ristoranti e pizzerie | not4sale",
+      "metaDescription": "Google Ads per ristoranti: campagne su raggio, orari e occasioni, annunci su Maps e risultati misurati in chiamate, prenotazioni ed eventi. Scrivi a not4sale."
+    },
+    {
+      "sector": "ristorazione",
+      "service": "logo-identita-visiva",
+      "headline": "Logo per ristoranti: un'identità che si riconosce dall'insegna al menu",
+      "short": "Logo e identità visiva per ristoranti, pizzerie e bar, provati su insegna, menu, cartoni da asporto, divise e profili social.",
+      "answer": "Un logo per ristoranti deve funzionare sull'insegna vista da lontano, sul cartone della pizza, sul ricamo del grembiule e nel tondo minuscolo del profilo Instagram. not4sale progetta logo e identità visiva per ristoranti, pizzerie e bar partendo da cucina, prezzo e clientela, e li prova su tutte queste applicazioni prima di consegnarli.",
+      "problem": "Il logo di molti locali nasce in fretta, prima dell'apertura, insieme all'insegna. Lo disegna l'insegnista, un parente con un programma di grafica o un sito di loghi pronti. Il risultato è spesso lo stesso: forchetta e coltello incrociati, un cappello da cuoco, una spiga di grano, un carattere corsivo che vuole sembrare elegante. Potrebbe essere il logo di mille altri ristoranti.\n\nPoi arrivano i problemi pratici. Sul menu stampato regge, ma nel cerchio della foto profilo su Instagram e sulle app di delivery diventa una macchia illeggibile. Sul grembiule ricamato i dettagli si perdono. Sul cartone della pizza la tipografia lo stampa in un colore diverso, perché nessuno ha mai deciso il colore esatto.\n\nE c'è un problema meno visibile: l'identità non dice niente su cosa aspettarsi. Un'osteria di cucina tradizionale con un logo da cocktail bar, o una pizzeria gourmet che sembra una tavola calda, confondono il cliente prima ancora che entri. Chi sceglie da un'insegna o da una foto profilo decide in un istante, e un'identità sbagliata porta al tavolo le persone sbagliate o non ne porta affatto.",
+      "process": [
+        {
+          "title": "Assaggio e posizionamento",
+          "description": "Partiamo da cucina, prezzo medio, clientela e atmosfera del locale, e fissiamo cosa l'identità deve comunicare a colpo d'occhio."
+        },
+        {
+          "title": "Ricerca dei concorrenti",
+          "description": "Guardiamo insegne e profili dei locali della tua zona e del tuo genere, per evitare cliché e somiglianze."
+        },
+        {
+          "title": "Proposte già applicate",
+          "description": "Ti mostriamo ogni direzione sull'insegna, sul menu, sul cartone da asporto e sull'avatar dei social, non su un foglio bianco."
+        },
+        {
+          "title": "Declinazioni del sistema",
+          "description": "Sviluppiamo la direzione scelta su menu, divise, packaging, vetrofanie, buoni regalo e materiali per i social."
+        },
+        {
+          "title": "Kit per i fornitori",
+          "description": "Consegniamo file e indicazioni pronti per tipografia, insegnista, ricamificio e fornitore di packaging."
+        }
+      ],
+      "body": "## Cosa deve fare un logo per ristoranti\n\nUn logo per ristoranti deve far capire in un istante che tipo di locale sei, prima ancora del nome. Il cliente che passa in macchina, che scorre una mappa o una lista di locali su un'app, vede il tuo marchio per un attimo e decide se approfondire. In quell'attimo deve cogliere almeno tre cose: il genere di cucina, la fascia di prezzo, l'atmosfera.\n\nQuesti segnali passano soprattutto da elementi diversi dal disegno del simbolo:\n\n- **Il carattere tipografico**: un bastoni pulito, un graziato classico, una scritta a mano raccontano locali molto diversi.\n- **I colori**: palette calde e terrose, colori vivaci, nero e oro non parlano allo stesso pubblico.\n- **Il tono del nome** e il modo in cui è composto: tutto maiuscolo, minuscolo, con o senza la parola \"osteria\" o \"pizzeria\".\n\nPer questo il logo non si disegna partendo da un simbolo del cibo. Si parte dal posizionamento del locale, e il simbolo, se serve, arriva dopo. Il metodo generale è descritto nella pagina su [logo e identità visiva](/servizi/branding/logo-identita-visiva); qui conta come si applica a un ristorante.\n\n## Dove vive l'identità di un ristorante\n\nUn locale usa il proprio marchio in più posti di quanto si pensi, e ognuno ha vincoli propri:\n\n| Applicazione | Vincolo principale |\n|---|---|\n| Insegna | Leggibile da lontano e di sera, spesso illuminata, nel rispetto dei regolamenti comunali |\n| Avatar social, scheda Google e app di delivery | Un cerchio o un quadrato di pochi millimetri sullo schermo |\n| Menu e carta dei vini | Lettura comoda, anche con luce bassa |\n| Cartoni pizza, sacchetti, contenitori da asporto | Stampa a uno o due colori su materiali poveri |\n| Divise e grembiuli | Ricamo, che non regge linee sottili e sfumature |\n| Vetrofanie, tovagliette, buoni regalo | Formati e materiali molto diversi tra loro |\n\nPer questo progettiamo una famiglia di versioni: una completa per insegna e menu, una compatta per il profilo social e le app, una monocromatica per ricami e stampe economiche. Il cartone della pizza e il sacchetto da asporto, in particolare, viaggiano per le case dei clienti e funzionano da pubblicità: vale la pena curarli, anche con un lavoro di [packaging](/servizi/branding/packaging) dedicato quando l'asporto pesa sul fatturato.\n\n## Nome, marchio e insegna: cosa verificare prima\n\nPrima di investire in un'identità conviene verificare che il nome sia libero. Ristoranti, pizzerie e bar ricadono nella classe 43 della classificazione internazionale dei marchi, quella dei servizi di ristorazione. Una ricerca di anteriorità evita di scoprire, dopo aver stampato insegna e menu, che un altro locale ha già registrato un nome uguale o simile. Se il nome è ancora da trovare, il lavoro parte dal [naming](/servizi/branding/naming).\n\nL'insegna, poi, va autorizzata dal Comune secondo il suo regolamento, che in alcune zone e nei centri storici può porre limiti a dimensioni, colori e illuminazione. Meglio saperlo prima di innamorarsi di un'insegna al neon rosso in un borgo storico.\n\n## Restyling di un locale storico: cambiare senza perdere i clienti\n\nMolti ristoranti hanno decenni di storia e clienti affezionati al vecchio marchio. In questi casi raramente si riparte da zero. Si tiene ciò che la gente riconosce, che sia un colore, una forma o il modo di scrivere il nome, e si sistema il resto: leggibilità, versioni per i social, coerenza tra menu e insegna. Il cambio si comunica, magari in occasione di una riapertura o di un nuovo menu.\n\nTra Romagna e Marche, partendo da Cattolica, lavoriamo con trattorie, pizzerie e locali di costa, spesso presentando le proposte di persona nel locale, dove si vede subito se un'identità sta bene sulle pareti. Per il quadro completo del marketing per locali c'è la pagina sul [settore della ristorazione](/settori/ristorazione).",
+      "faq": [
+        {
+          "question": "Il logo di un ristorante deve rappresentare un piatto?",
+          "answer": "No, e spesso è meglio evitarlo. Forchette, cappelli da cuoco, spighe e pizze stilizzate sono i simboli più usati e rendono il locale simile a tanti altri. A comunicare il tipo di cucina bastano spesso carattere tipografico, colori e nome. Un simbolo ha senso quando racconta qualcosa di specifico del locale: un luogo, una storia, un ingrediente davvero identitario."
+        },
+        {
+          "question": "Devo registrare il marchio del mio ristorante?",
+          "answer": "Se il nome è importante per la tua attività e pensi di investirci, conviene valutarlo. La registrazione riguarda la classe dei servizi di ristorazione e protegge il nome dall'uso di altri nella stessa categoria. Prima ancora della registrazione, serve una ricerca di anteriorità per capire se il nome è libero. Per la parte legale ti indirizziamo a un consulente specializzato."
+        },
+        {
+          "question": "Posso rinnovare il logo di un locale storico senza perdere clienti?",
+          "answer": "Sì, se il restyling conserva gli elementi che i clienti riconoscono. Di solito si mantiene un colore, una forma o il modo di scrivere il nome, e si interviene su leggibilità, versioni per i social e coerenza dei materiali. Comunicare il cambiamento, per esempio con una riapertura o un menu nuovo, aiuta i clienti a viverlo come un'evoluzione e non come una rottura."
+        },
+        {
+          "question": "Cosa ricevo alla fine del progetto?",
+          "answer": "Il logo nelle sue versioni, completa, compatta e monocromatica, in formati vettoriali per la stampa e in formati per il web e i social. Poi palette, caratteri e le declinazioni concordate, come menu, cartone da asporto, divise e vetrofanie. Infine un documento con le regole d'uso, da passare a tipografia, insegnista e ricamificio senza dover spiegare ogni volta."
+        },
+        {
+          "question": "Da cosa dipende il costo di un logo per ristoranti?",
+          "answer": "Dal punto di partenza, cioè se c'è da creare tutto o fare un restyling, dal numero di applicazioni da progettare e dal fatto che servano anche naming, packaging o fotografie. Una piadineria con insegna e menu ha esigenze diverse da un ristorante con asporto, buoni regalo e divise. Il calcolatore di preventivo sul sito ti dà un ordine di grandezza in pochi minuti."
+        }
+      ],
+      "metaTitle": "Logo per ristoranti e pizzerie | not4sale",
+      "metaDescription": "Logo per ristoranti, pizzerie e bar: un'identità visiva provata su insegna, menu, cartoni da asporto, divise e social prima della consegna. Scrivi a not4sale."
+    }
+  ]
+}

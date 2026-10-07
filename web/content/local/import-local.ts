@@ -7,18 +7,22 @@ import path from 'node:path'
 import { getPayload } from 'payload'
 
 const root = path.resolve(process.cwd(), 'content/local')
+// --only=sector-services importa solo le pagine servizio per settore (le altre restano come sono)
+const only = process.argv.find((a) => a.startsWith('--only='))?.slice('--only='.length)
+const pause = () => new Promise((r) => setTimeout(r, 250))
 const ctx = { disableRevalidate: true }
 
-const withRetry = async <T>(fn: () => Promise<T>, attempts = 6): Promise<T> => {
+const withRetry = async <T>(fn: () => Promise<T>, attempts = 8): Promise<T> => {
   for (let i = 1; ; i++) {
     try {
       return await fn()
     } catch (err: any) {
-      const transient = /WriteConflict|TransientTransaction|AtlasError|MaxTimeMSExpired|catalog changes|quota/i.test(
-        String(err?.message ?? err) + JSON.stringify(err?.data ?? ''),
+      // si guardano nome e messaggio: le cadute di rete del driver hanno un nome chiaro ma un messaggio generico
+      const transient = /WriteConflict|TransientTransaction|AtlasError|MaxTimeMSExpired|catalog changes|quota|PoolCleared|Network|ECONNRESET|timeout|timed out|Server selection/i.test(
+        `${err?.name ?? ''} ${err?.cause?.name ?? ''} ${String(err?.message ?? err)} ${JSON.stringify(err?.data ?? '')}`,
       )
       if (!transient || i >= attempts) throw err
-      await new Promise((r) => setTimeout(r, 1500 * i))
+      await new Promise((r) => setTimeout(r, 3000 * i))
     }
   }
 }
@@ -33,7 +37,7 @@ const readDir = (dir: string) =>
         .map((f) => JSON.parse(readFileSync(path.join(root, dir, f), 'utf8')))
     : []
 
-type Coll = 'locations' | 'sectors' | 'services' | 'case-studies' | 'local-services'
+type Coll = 'locations' | 'sectors' | 'services' | 'case-studies' | 'local-services' | 'sector-services'
 
 const idsBySlug = async (collection: Coll) => {
   const res = await withRetry(() => payload.find({ collection, limit: 5000, pagination: false, depth: 0, draft: true }))
@@ -41,6 +45,8 @@ const idsBySlug = async (collection: Coll) => {
 }
 
 const save = async (collection: Coll, existingId: string | undefined, data: Record<string, unknown>) => {
+  // il cluster Atlas gratuito limita le operazioni al secondo: una piccola pausa evita le cadute di connessione
+  await pause()
   const args = { collection, depth: 0, context: ctx, draft: false, data: { ...data, _status: 'published' } } as any
   return withRetry(async () =>
     existingId ? payload.update({ ...args, id: existingId }) : payload.create(args),
@@ -50,10 +56,11 @@ const save = async (collection: Coll, existingId: string | undefined, data: Reco
 const locations = readDir('comuni').flatMap((f) => f.locations)
 const sectors = readDir('settori').flatMap((f) => f.sectors)
 const cityFiles = readDir('servizi-citta')
+const sectorServiceFiles = readDir('settori-servizi')
 
 // 1. Comuni e settori, senza relazioni (si collegano dopo, quando esistono tutti)
 let locIds = await idsBySlug('locations')
-for (const l of locations) {
+for (const l of only ? [] : locations) {
   locIds.set(
     l.slug,
     await save('locations', locIds.get(l.slug), {
@@ -79,7 +86,7 @@ for (const l of locations) {
 payload.logger.info(`Comuni: ${locations.length}`)
 
 let sectorIds = await idsBySlug('sectors')
-for (const [i, x] of sectors.entries()) {
+for (const [i, x] of (only ? [] : sectors).entries()) {
   sectorIds.set(
     x.slug,
     await save('sectors', sectorIds.get(x.slug), {
@@ -104,14 +111,14 @@ const serviceIds = await idsBySlug('services')
 const caseIds = await idsBySlug('case-studies')
 const map = (ids: Map<string, string>, slugs?: string[]) => (slugs ?? []).map((s) => ids.get(s)).filter(Boolean)
 
-for (const l of locations) {
+for (const l of only ? [] : locations) {
   await save('locations', locIds.get(l.slug), {
     sectors: map(sectorIds, l.sectors),
     services: map(serviceIds, l.services),
     nearby: map(locIds, l.nearby),
   })
 }
-for (const x of sectors) {
+for (const x of only ? [] : sectors) {
   await save('sectors', sectorIds.get(x.slug), {
     services: map(serviceIds, x.services),
     locations: map(locIds, x.locations),
@@ -122,7 +129,7 @@ payload.logger.info('Relazioni collegate')
 
 // 3. Servizi in città (chiave: comune + servizio)
 let localCount = 0
-for (const f of cityFiles) {
+for (const f of only ? [] : cityFiles) {
   const locationId = locIds.get(f.location)
   if (!locationId) {
     payload.logger.error(`Comune non trovato per servizi in città: ${f.location}`)
@@ -159,4 +166,41 @@ for (const f of cityFiles) {
   }
 }
 payload.logger.info(`Servizi in città: ${localCount}`)
+
+// 4. Servizi per settore (chiave: settore + servizio)
+let ssCount = 0
+for (const f of sectorServiceFiles) {
+  for (const it of f.items) {
+    const sectorId = sectorIds.get(it.sector)
+    const serviceId = serviceIds.get(it.service)
+    if (!sectorId || !serviceId) {
+      payload.logger.error(`Settore o servizio non trovato: ${it.sector} / ${it.service}`)
+      continue
+    }
+    const existing = await withRetry(() =>
+      payload.find({
+        collection: 'sector-services',
+        where: { and: [{ sector: { equals: sectorId } }, { service: { equals: serviceId } }] },
+        limit: 1,
+        depth: 0,
+        draft: true,
+      }),
+    )
+    await save('sector-services', existing.docs[0] ? String(existing.docs[0].id) : undefined, {
+      title: `${it.service} · ${it.sector}`,
+      sector: sectorId,
+      service: serviceId,
+      headline: it.headline,
+      short: it.short,
+      answer: it.answer,
+      problem: md(it.problem),
+      process: it.process,
+      body: md(it.body),
+      faq: it.faq,
+      meta: { title: it.metaTitle, description: it.metaDescription },
+    })
+    ssCount++
+  }
+}
+payload.logger.info(`Servizi per settore: ${ssCount}`)
 process.exit(0)

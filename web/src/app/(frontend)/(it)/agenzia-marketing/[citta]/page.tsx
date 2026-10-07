@@ -1,10 +1,11 @@
-import { getPublishedIndex } from '@/lib/cms'
 import { LocationView, locationMetadata } from '@/views/LocalViews'
 
 type Props = { params: Promise<{ citta: string }> }
 
+// Pagine numerose: generate alla prima visita e poi servite dalla cache (ISR), così la build non dipende dal database.
+export const dynamicParams = true
 export async function generateStaticParams() {
-  return (await getPublishedIndex()).locations.map((l) => ({ citta: l.slug }))
+  return []
 }
 
 export async function generateMetadata({ params }: Props) {

@@ -165,6 +165,106 @@ URL ammessi nei link Markdown delle pagine territoriali (oltre a quelli di conte
 - Meta Ads a urbino — /agenzia-marketing/urbino/meta-ads
 - Logo e identità visiva a urbino — /agenzia-marketing/urbino/logo-identita-visiva
 
+## Servizi in città aggiuntivi (da analisi delle ricerche)
+
+- /agenzia-marketing/rimini/video-spot
+- /agenzia-marketing/rimini/copywriting
+- /agenzia-marketing/pesaro/video-spot
+- /agenzia-marketing/fano/video-spot
+- /agenzia-marketing/riccione/video-spot
+- /agenzia-marketing/misano-adriatico/siti-web
+
+## Servizio per settore → /settori/{settore}/{servizio}
+
+- /settori/hotel/siti-web
+- /settori/hotel/gestione-social
+- /settori/hotel/seo-locale
+- /settori/hotel/google-ads
+- /settori/ristorazione/siti-web
+- /settori/ristorazione/gestione-social
+- /settori/ristorazione/seo-locale
+- /settori/ristorazione/google-ads
+- /settori/ristorazione/logo-identita-visiva
+- /settori/studi-professionali/siti-web
+- /settori/studi-professionali/seo-locale
+- /settori/studi-professionali/google-ads
+- /settori/studi-professionali/gestione-social
+- /settori/studi-professionali/logo-identita-visiva
+- /settori/sanita-privata/siti-web
+- /settori/sanita-privata/seo-locale
+- /settori/sanita-privata/gestione-social
+- /settori/sanita-privata/logo-identita-visiva
+- /settori/wellness/gestione-social
+- /settori/wellness/siti-web
+- /settori/wellness/logo-identita-visiva
+- /settori/immobiliare/siti-web
+- /settori/immobiliare/gestione-social
+- /settori/immobiliare/logo-identita-visiva
+- /settori/moda/logo-identita-visiva
+- /settori/moda/gestione-social
+- /settori/moda/shopify
+- /settori/edilizia/logo-identita-visiva
+- /settori/edilizia/siti-web
+- /settori/agroalimentare/siti-web
+- /settori/agroalimentare/logo-identita-visiva
+
+### Servizio per settore — griglia completa
+
+- /settori/hotel/meta-ads
+- /settori/hotel/logo-identita-visiva
+- /settori/ristorazione/meta-ads
+- /settori/studi-professionali/meta-ads
+- /settori/sanita-privata/google-ads
+- /settori/sanita-privata/meta-ads
+- /settori/wellness/seo-locale
+- /settori/wellness/google-ads
+- /settori/wellness/meta-ads
+- /settori/immobiliare/seo-locale
+- /settori/immobiliare/google-ads
+- /settori/immobiliare/meta-ads
+- /settori/moda/siti-web
+- /settori/moda/seo-locale
+- /settori/moda/google-ads
+- /settori/moda/meta-ads
+- /settori/edilizia/seo-locale
+- /settori/edilizia/gestione-social
+- /settori/edilizia/google-ads
+- /settori/edilizia/meta-ads
+- /settori/agroalimentare/seo-locale
+- /settori/agroalimentare/gestione-social
+- /settori/agroalimentare/google-ads
+- /settori/agroalimentare/meta-ads
+- /settori/manifatturiero/siti-web
+- /settori/manifatturiero/seo-locale
+- /settori/manifatturiero/gestione-social
+- /settori/manifatturiero/google-ads
+- /settori/manifatturiero/meta-ads
+- /settori/manifatturiero/logo-identita-visiva
+- /settori/arredamento/siti-web
+- /settori/arredamento/seo-locale
+- /settori/arredamento/gestione-social
+- /settori/arredamento/google-ads
+- /settori/arredamento/meta-ads
+- /settori/arredamento/logo-identita-visiva
+- /settori/nautica/siti-web
+- /settori/nautica/seo-locale
+- /settori/nautica/gestione-social
+- /settori/nautica/google-ads
+- /settori/nautica/meta-ads
+- /settori/nautica/logo-identita-visiva
+- /settori/stabilimenti-balneari/siti-web
+- /settori/stabilimenti-balneari/seo-locale
+- /settori/stabilimenti-balneari/gestione-social
+- /settori/stabilimenti-balneari/google-ads
+- /settori/stabilimenti-balneari/meta-ads
+- /settori/stabilimenti-balneari/logo-identita-visiva
+- /settori/automotive/siti-web
+- /settori/automotive/seo-locale
+- /settori/automotive/gestione-social
+- /settori/automotive/google-ads
+- /settori/automotive/meta-ads
+- /settori/automotive/logo-identita-visiva
+
 ## Indici
 
 - /agenzia-marketing

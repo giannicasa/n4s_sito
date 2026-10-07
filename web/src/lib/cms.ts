@@ -6,7 +6,7 @@ import { draftMode } from 'next/headers'
 import { getPayload, type Where } from 'payload'
 import { cache } from 'react'
 
-import type { Author, CaseStudy, Category, Company, LocalService, Location, Post, Sector, Service, ServiceArea } from '@/payload-types'
+import type { Author, CaseStudy, Category, Company, LocalService, Location, Post, Sector, SectorService, Service, ServiceArea } from '@/payload-types'
 import type { Locale } from './paths'
 
 // Accesso ai contenuti per le pagine pubbliche.
@@ -282,11 +282,50 @@ export const getSector = query('sector', ['local', 'services', 'case-studies'], 
   return (res.docs[0] as Sector | undefined) ?? null
 })
 
+export const getSectorServices = query(
+  'sector-services',
+  ['local', 'services'],
+  async (draft, filter: { sector?: string; service?: string }) => {
+    const and: Where[] = []
+    if (filter.sector) and.push({ sector: { equals: filter.sector } })
+    if (filter.service) and.push({ service: { equals: filter.service } })
+    const res = await (await payload()).find({
+      collection: 'sector-services',
+      where: withStatus(and.length ? { and } : undefined, draft),
+      draft,
+      depth: 2,
+      populate: LINK_FIELDS,
+      select: { title: true, sector: true, service: true, headline: true, short: true, _status: true },
+      limit: 500,
+      pagination: false,
+    })
+    return res.docs as SectorService[]
+  },
+)
+
+export const getSectorService = query('sector-service', ['local', 'services'], async (draft, sectorSlug: string, serviceSlug: string) => {
+  const p = await payload()
+  const [sec, svc] = await Promise.all([
+    p.find({ collection: 'sectors', where: withStatus({ slug: { equals: sectorSlug } }, draft), draft, depth: 0, limit: 1 }),
+    p.find({ collection: 'services', where: withStatus({ slug: { equals: serviceSlug } }, draft), draft, depth: 0, limit: 1 }),
+  ])
+  if (!sec.docs[0] || !svc.docs[0]) return null
+  const res = await p.find({
+    collection: 'sector-services',
+    where: withStatus({ and: [{ sector: { equals: sec.docs[0].id } }, { service: { equals: svc.docs[0].id } }] }, draft),
+    draft,
+    depth: 2,
+    populate: LINK_FIELDS,
+    limit: 1,
+  })
+  return (res.docs[0] as SectorService | undefined) ?? null
+})
+
 // Per sitemap e generateStaticParams: solo slug pubblicati, senza cache di richiesta.
 export const getPublishedIndex = unstable_cache(
   async () => {
     const p = await payload()
-    const [areas, services, posts, categories, areasEn, servicesEn, locations, sectors, localServices] = await Promise.all([
+    const [areas, services, posts, categories, areasEn, servicesEn, locations, sectors, localServices, sectorServices] = await Promise.all([
       p.find({ collection: 'service-areas', where: published, depth: 0, limit: 500, pagination: false }),
       p.find({ collection: 'services', where: published, depth: 1, limit: 2000, pagination: false }),
       p.find({ collection: 'posts', where: published, depth: 0, limit: 2000, pagination: false }),
@@ -297,6 +336,7 @@ export const getPublishedIndex = unstable_cache(
       p.find({ collection: 'locations', where: published, depth: 0, limit: 500, pagination: false, select: { slug: true, updatedAt: true } }),
       p.find({ collection: 'sectors', where: published, depth: 0, limit: 200, pagination: false, select: { slug: true, updatedAt: true } }),
       p.find({ collection: 'local-services', where: published, depth: 1, limit: 2000, pagination: false }),
+      p.find({ collection: 'sector-services', where: published, depth: 1, limit: 2000, pagination: false }),
     ])
     const hasEn = (docs: { id: string | number; answer?: string | null }[]) =>
       new Set(docs.filter((d) => d.answer).map((d) => String(d.id)))
@@ -323,6 +363,9 @@ export const getPublishedIndex = unstable_cache(
           service: (ls.service as Service).slug!,
           updatedAt: ls.updatedAt,
         })),
+      sectorServices: (sectorServices.docs as SectorService[])
+        .filter((x) => typeof x.sector === 'object' && typeof x.service === 'object')
+        .map((x) => ({ sector: (x.sector as Sector).slug!, service: (x.service as Service).slug!, updatedAt: x.updatedAt })),
     }
   },
   ['published-index'],

@@ -1,4 +1,4 @@
-import type { Author, Company, LocalService, Location, Post, Sector, Service, ServiceArea } from '@/payload-types'
+import type { Author, Company, LocalService, Location, Post, Sector, SectorService, Service, ServiceArea } from '@/payload-types'
 import { absolute, paths, SITE_URL, type Locale } from './paths'
 
 // Dati strutturati schema.org. Ogni pagina emette un @graph che rimanda
@@ -208,6 +208,18 @@ export const sectorNode = (x: Sector): Node => ({
     { '@type': 'AdministrativeArea', name: PROVINCE.RN },
     { '@type': 'AdministrativeArea', name: PROVINCE.PU },
   ],
+})
+
+export const sectorServiceNode = (x: SectorService, sec: Sector, svc: Service): Node => ({
+  '@type': 'Service',
+  '@id': `${absolute(paths.sectorService(sec.slug!, svc.slug!))}#service`,
+  name: x.headline,
+  serviceType: svc.title,
+  description: x.answer || x.short,
+  url: absolute(paths.sectorService(sec.slug!, svc.slug!)),
+  provider: { '@id': ORG_ID },
+  audience: { '@type': 'BusinessAudience', name: sec.title },
+  areaServed: { '@type': 'Country', name: 'Italia' },
 })
 
 export const graph = (...nodes: (Node | null | undefined)[]) => ({

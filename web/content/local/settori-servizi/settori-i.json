@@ -1,0 +1,342 @@
+{
+  "items": [
+    {
+      "sector": "arredamento",
+      "service": "siti-web",
+      "headline": "Siti web per arredamento: per chi produce mobili e per chi li vende",
+      "short": "Siti per aziende di arredamento: collezioni, finiture e area rivenditori per i produttori; progetti e appuntamenti per gli showroom.",
+      "answer": "I siti web per arredamento devono far scegliere un ambiente prima ancora di un mobile. not4sale realizza siti per produttori di mobili e cucine, con collezioni, finiture, area rivenditori e materiali per progettisti, e per showroom e negozi di arredamento, con progetti realizzati e richiesta di appuntamento. Lavoriamo da Cattolica, a pochi chilometri dal distretto pesarese.",
+      "problem": "Il sito tipico di un produttore di mobili è un catalogo sfogliabile messo online. Foto bellissime e pesanti, che sul telefono si caricano a fatica, modelli senza misure, finiture citate a parole e un modulo \"contattaci\" che finisce in una casella che nessuno legge. Il privato non capisce dove comprare, il rivenditore non trova le immagini in alta risoluzione, l'architetto non trova la scheda tecnica e chiama, se va bene.\n\nIl sito dello showroom ha il difetto opposto: una fila di loghi dei marchi trattati e le stesse foto che si trovano sul sito di ogni produttore e di ogni altro negozio. Niente dice chi progetta, quali case ha arredato, come si lavora dal rilievo delle misure al montaggio.\n\nEntrambi perdono soldi in silenzio. Chi sta scegliendo una cucina confronta decine di siti prima di prendere un appuntamento, e lo prende con chi gli ha fatto capire meglio cosa succede dopo il primo contatto.",
+      "process": [
+        {
+          "title": "Tre ingressi separati",
+          "description": "Distinguiamo chi compra per casa, chi rivende e chi progetta: ognuno ha il suo percorso, il suo linguaggio e le sue pagine."
+        },
+        {
+          "title": "Modelli e finiture in ordine",
+          "description": "Trasformiamo modelli, varianti, essenze, laccature e misure in dati strutturati, riusabili su sito, cataloghi e campagne."
+        },
+        {
+          "title": "Immagini leggere e ambientate",
+          "description": "Selezioniamo foto e render, li ottimizziamo per lo smartphone e aggiungiamo i dettagli che il cliente vuole ingrandire."
+        },
+        {
+          "title": "Richiesta che avvia un progetto",
+          "description": "Il modulo chiede ambiente, misure indicative, tempi e showroom preferito, così il primo incontro parte già informato."
+        },
+        {
+          "title": "Misura per pubblico",
+          "description": "Tracciamo richieste, download e appuntamenti separando privati, rivenditori e studi di progettazione."
+        }
+      ],
+      "body": "## Siti web per arredamento: cosa cambia tra produttore e showroom\n\nUn sito per un'azienda che produce mobili e uno per un negozio che li vende hanno obiettivi diversi, anche quando mostrano gli stessi prodotti. Il primo deve far desiderare un marchio e poi passare il cliente alla rete; il secondo deve trasformare una visita online in un appuntamento in negozio.\n\n| | Produttore | Showroom o negozio |\n|---|---|---|\n| Obiettivo principale | Far scegliere il marchio e la collezione | Ottenere un appuntamento con il progettista |\n| Pagine chiave | Collezioni, finiture, trova rivenditore, area riservata | Progetti realizzati, marchi trattati, metodo, contatti |\n| Pubblici | Privati, rivenditori, architetti, contract, estero | Privati della zona, a volte imprese e tecnici |\n| Cosa si misura | Contatti girati alla rete, download, richieste dall'estero | Appuntamenti, chiamate, preventivi avviati |\n\nIl metodo con cui progettiamo qualsiasi sito è nella pagina sulla [realizzazione di siti web](/servizi/web-app/siti-web). Qui raccontiamo cosa diventa specifico quando il cliente è nell'arredo.\n\n## Collezioni, finiture e configuratori: fin dove spingersi\n\nLa scheda di un modello deve rispondere alle domande che il cliente farebbe in showroom: misure e moduli disponibili, materiali, finiture abbinabili, tempi indicativi, cosa è su misura e cosa no. Le finiture funzionano meglio come filtri che come elenchi: chi ha già in mente un rovere chiaro vuole vedere solo i modelli in cui esiste.\n\nSui configuratori 3D siamo prudenti. Hanno senso quando il prodotto è modulare, le combinazioni sono tante e il risultato si vede bene anche sullo schermo di un telefono. Esiste anche una via più leggera: la visualizzazione in realtà aumentata direttamente dal browser, con modelli 3D nei formati supportati da iPhone (USDZ) e da Android (glTF), che permette di vedere una poltrona o un tavolo nella propria stanza senza installare app. Prima di investire, verifichiamo che i modelli 3D esistano già o che costi poco produrli.\n\nPer i produttori aggiungiamo quasi sempre due aree:\n\n- **Area progettisti**: schede tecniche, file per il disegno, modelli 3D, testi di capitolato. Gli studi tornano dove trovano tutto in un clic.\n- **Area riservata rivenditori**: listini, immagini in alta risoluzione, materiali per il punto vendita, aggiornamenti di collezione. Toglie decine di email al mese all'ufficio commerciale.\n\nIl materiale fotografico fa metà del lavoro: se manca, conviene partire da una sessione di [fotografia di prodotto](/servizi/content/fotografia) prima ancora di disegnare le pagine.\n\n## Vendere mobili online: quando sì e con quali cautele\n\nVendere online ha senso per complementi, illuminazione, tessili e arredi con poche varianti e misure standard. Per cucine e armadi su misura il sito serve a generare un progetto, non un carrello. C'è anche un aspetto legale da tenere presente: il Codice del consumo esclude il diritto di recesso per i beni confezionati su misura o chiaramente personalizzati, quindi le condizioni di vendita devono dirlo in modo chiaro prima dell'ordine. Consegna al piano, montaggio e ritiro dell'usato vanno spiegati con la stessa chiarezza, perché sono le domande che bloccano l'acquisto. Per chi decide di vendere, valutiamo un negozio [Shopify](/servizi/ecommerce/shopify) collegato al sito.\n\nChi esporta ha bisogno di versioni linguistiche vere, non tradotte in automatico: una cucina si descrive e si cerca in modo diverso in Germania e in Francia. Ne parliamo nella pagina sulla [SEO internazionale](/servizi/seo/seo-internazionale).\n\n## Showroom: il sito come seconda vetrina del negozio\n\nPer un negozio di arredamento la pagina più importante è quella dei progetti consegnati: ambienti reali, con il comune, lo stile, i marchi usati e due righe sul problema risolto (una cucina in un sottotetto, una zona giorno da ricavare in pochi metri). Le pagine dei marchi trattati vanno scritte con parole vostre, raccontando come li proponete, perché i testi copiati dai produttori sono gli stessi su ogni sito concorrente. Il contatto migliore non è un modulo generico ma la prenotazione di una consulenza con il progettista, con una data scelta dal cliente. Il passo successivo, farsi trovare nella propria zona, lo trattiamo nella pagina sulla [SEO per arredamento](/settori/arredamento/seo-locale).\n\n## Come capire se il sito funziona\n\nMisuriamo azioni, non visite: richieste di appuntamento, clic su \"trova il rivenditore\", download di schede e cataloghi, chiamate da smartphone, registrazioni all'area riservata. Le impostiamo come eventi in [Google Analytics 4](/servizi/data-analytics/google-analytics-4) e, dove possibile, le colleghiamo al gestionale o al CRM per sapere quali richieste sono diventate un ordine. Un quadro più ampio del marketing nel settore è nella pagina dedicata all'[arredamento](/settori/arredamento).",
+      "faq": [
+        {
+          "question": "Meglio un catalogo PDF scaricabile o le schede prodotto sul sito?",
+          "answer": "Tutti e due, con ruoli diversi. Il PDF serve al rivenditore e all'architetto che vogliono tutto in un file. Le schede servono a chi arriva da Google o dai social: si leggono dal telefono, si aggiornano senza ristampare e possono essere trovate dai motori di ricerca. Un sito fatto solo di PDF è quasi invisibile e difficile da consultare in mobilità."
+        },
+        {
+          "question": "Ha senso un configuratore 3D per le nostre cucine?",
+          "answer": "Dipende da quanto è modulare il prodotto e da come lavora la rete. Una cucina progettata su misura in showroom difficilmente si chiude con un configuratore online; un sistema di moduli componibili sì. Spesso conviene partire da una galleria di composizioni filtrabili e dalla realtà aumentata per i singoli pezzi, e valutare il configuratore dopo aver visto come lo usano i clienti."
+        },
+        {
+          "question": "Possiamo vendere online mobili su misura?",
+          "answer": "Si può, ma va impostato bene. Per i beni realizzati su misura o personalizzati il Codice del consumo esclude il diritto di recesso, e il cliente deve saperlo prima di pagare. Servono poi rilievo delle misure, conferma tecnica e tempi chiari. Per molte aziende il modello più efficace resta: progetto online, acconto e firma dopo un confronto con il progettista."
+        },
+        {
+          "question": "Vendiamo tramite rivenditori: dobbiamo mostrare i prezzi?",
+          "answer": "Non è obbligatorio, e spesso la rete preferisce di no. Si possono indicare fasce o un \"a partire da\" per orientare il cliente, oppure nessun prezzo e un rimando allo showroom più vicino. Listini e condizioni per i rivenditori vanno invece in un'area riservata, così restano aggiornati e non girano in versioni vecchie via email."
+        },
+        {
+          "question": "Lo showroom può usare le foto fornite dai produttori?",
+          "answer": "Di solito sì, entro le regole d'uso che ogni produttore indica, ma non bastano. Sono le stesse immagini che usano tutti i rivenditori dello stesso marchio, quindi non ti distinguono e non dicono nulla del tuo lavoro. Affianchiamo sempre foto dei progetti che hai consegnato, anche semplici, purché vere e con il permesso del cliente."
+        }
+      ],
+      "metaTitle": "Siti web per arredamento, mobilifici e showroom | not4sale",
+      "metaDescription": "Siti web per arredamento: collezioni, finiture e area rivenditori per chi produce mobili, progetti e appuntamenti per gli showroom. Parliamone."
+    },
+    {
+      "sector": "arredamento",
+      "service": "seo-locale",
+      "headline": "SEO per arredamento: showroom su Google Maps e prodotti trovati",
+      "short": "SEO per negozi di arredamento e produttori di mobili: scheda Google, recensioni dopo il montaggio e pagine per le ricerche di prodotto.",
+      "answer": "La SEO per arredamento lavora su due tipi di ricerca: quelle di zona, come \"negozio di cucine\" vicino a casa, e quelle di prodotto, come \"divano letto con contenitore\". not4sale cura per showroom e negozi di arredamento scheda Google, recensioni e pagine locali, e per i produttori di mobili le pagine di modello e la rete dei rivenditori.",
+      "problem": "Uno showroom di arredamento ha un problema di SEO che un bar non ha: il cliente compra una cucina o un divano ogni molti anni. Le recensioni arrivano col contagocce, la scheda Google mostra la facciata del capannone e tre foto dell'inaugurazione, e chi cerca \"cucine su misura\" nella tua zona trova prima la catena con decine di recensioni.\n\nIl produttore, invece, di solito compare solo quando qualcuno digita il suo nome. Per le ricerche di chi non sa ancora cosa vuole (\"cucina con isola in poco spazio\", \"armadio scorrevole per mansarda\") escono riviste, marketplace e grandi gruppi. Il prodotto c'è, ma nessuna pagina risponde a quella domanda.\n\nIn mezzo ci sono gli attriti tra produttore e rete: rivenditori che copiano gli stessi testi del catalogo e si fanno concorrenza su Google tra loro, oppure il sito del produttore che si prende le ricerche locali senza poi dire al cliente dove andare. Ogni ricerca persa così è un progetto che entra nel negozio di qualcun altro.",
+      "process": [
+        {
+          "title": "Mappa delle ricerche",
+          "description": "Separiamo ricerche di zona, di marchio e di prodotto, e assegniamo a ognuna la pagina che deve rispondere."
+        },
+        {
+          "title": "Scheda Google curata",
+          "description": "Sistemiamo categorie, servizi, prodotti, orari e foto del Profilo dell'attività di ogni showroom."
+        },
+        {
+          "title": "Pagine di ambiente e modello",
+          "description": "Per i negozi, pagine per ambiente e marchio trattato; per i produttori, pagine per tipologia, stile e misura."
+        },
+        {
+          "title": "Recensioni dopo il montaggio",
+          "description": "Chiediamo la recensione a lavoro consegnato, quando il cliente è soddisfatto e ha voglia di mostrare la casa."
+        },
+        {
+          "title": "Mappa, chiamate e contatti",
+          "description": "Misuriamo posizioni in mappa, telefonate, richieste di indicazioni e contatti arrivati dalla ricerca organica."
+        }
+      ],
+      "body": "## SEO per arredamento: due ricerche, due lavori diversi\n\nLa SEO per arredamento parte da una distinzione semplice: c'è chi cerca un posto dove andare e chi cerca un oggetto da capire. Le ricerche hanno forme molto diverse:\n\n- **di zona**: \"negozio di arredamento\" seguito da un comune, \"cucine su misura vicino a me\", \"showroom divani\";\n- **di prodotto**: \"tavolo allungabile per otto persone\", \"cameretta per due fratelli\", \"cucina ad angolo piccola\";\n- **di marchio o modello**: il nome di un produttore o di una collezione, spesso con \"prezzo\" o \"rivenditore\" accanto.\n\nLe prime si vincono con la [SEO locale](/servizi/seo/seo-locale) e riguardano soprattutto gli showroom. Le seconde con pagine di contenuto ben costruite, e interessano anche i produttori. Le terze sono il punto dove produttore e rivenditore devono mettersi d'accordo.\n\n## Per lo showroom: la scheda Google come vetrina dei progetti\n\nPer un negozio di mobili la scheda Google è spesso la prima immagine che il cliente vede. Ecco cosa curiamo:\n\n1. **Categoria principale** il più specifica possibile rispetto a ciò che vendi di più, e categorie secondarie per il resto: chi è forte sulle cucine non deve presentarsi come un generico negozio di mobili.\n2. **Foto di ambienti consegnati**, aggiornate con regolarità, insieme a interni dello showroom e parcheggio. Le persone vogliono capire lo stile prima di uscire di casa.\n3. **Prodotti e servizi** compilati: progettazione, rilievo misure, montaggio, smaltimento del vecchio arredo.\n4. **Una scheda per ogni punto vendita**, se ne hai più d'uno, collegata a una pagina del sito dedicata a quella sede.\n\nSe vendi anche articoli pronti a magazzino, come complementi, illuminazione o tessili, il collegamento tra Merchant Center e Profilo dell'attività permette di mostrare su Google i prodotti disponibili nel tuo negozio con le schede di prodotto locali senza costi.\n\nLe recensioni sono il punto debole del settore, perché gli acquisti sono rari. La soluzione è chiederle nel momento giusto: alla fine del montaggio, con un messaggio personale e un link diretto, e invitando il cliente a caricare una foto dell'ambiente finito. Una recensione con la foto di una cucina vera vale più di dieci stelle senza testo.\n\n## Per il produttore: pagine che rispondono alle domande di prodotto\n\nChi produce mobili si posiziona sulle ricerche di prodotto con pagine che aiutano davvero a scegliere: tipologie (cucine con isola, con penisola, lineari), stili, soluzioni per spazi piccoli, guide alle misure e ai materiali. Ogni pagina rimanda ai modelli adatti e allo showroom più vicino. I [dati strutturati](/servizi/ai-search/dati-strutturati) aiutano Google e gli assistenti AI a capire che cosa è un prodotto, quali varianti ha e chi lo vende.\n\nPer i mercati esteri vale lo stesso lavoro, ma per lingua e per paese: le ricerche cambiano, e servono pagine pensate per ciascun mercato con la [SEO internazionale](/servizi/seo/seo-internazionale).\n\nAttenzione alle pagine \"rivenditore a [città]\" create in serie con lo stesso testo: Google le tratta come pagine civetta. Ha senso una pagina per rivenditore solo se contiene informazioni vere su quel negozio, come indirizzo, composizioni esposte, servizi offerti.\n\n## Quando lo showroom vende marchi famosi\n\nSul nome di un marchio noto vince quasi sempre il sito del produttore. Il negozio può però vincere sulla combinazione marchio più territorio, a patto di avere una pagina vera: quali composizioni sono esposte, quali progetti ha realizzato con quel marchio, chi li segue. Con i produttori del distretto di [Pesaro](/agenzia-marketing/pesaro) e i loro rivenditori lavoriamo spesso proprio su questo equilibrio: il produttore porta la domanda, lo showroom la chiude.\n\nCome deve essere fatto il sito che ospita queste pagine lo spieghiamo nella pagina sui [siti web per arredamento](/settori/arredamento/siti-web); una visione d'insieme del marketing per il settore è nella pagina sull'[arredamento](/settori/arredamento).\n\n## Cosa misuriamo\n\nPer lo showroom: posizione nella mappa sulle ricerche principali in diversi punti della zona, chiamate, richieste di indicazioni stradali e clic sul sito dalla scheda. Per il produttore: traffico organico sulle pagine di prodotto, ricerche del marchio nel tempo e clic sul trova rivenditore. In entrambi i casi chiediamo a chi riceve il cliente come ci ha trovato, perché la statistica da sola non dice chi ha firmato il contratto.",
+      "faq": [
+        {
+          "question": "Il nostro showroom è in zona industriale: è uno svantaggio su Google?",
+          "answer": "La distanza dal punto di ricerca conta, ma non decide tutto. Molti showroom di arredamento sono fuori dai centri abitati, e le persone sono disposte a fare strada per una cucina. Pesano di più pertinenza della scheda, recensioni e foto. Aiuta anche spiegare bene sul sito e sulla scheda come arrivare e dove parcheggiare."
+        },
+        {
+          "question": "Come raccogliamo recensioni se il cliente compra una cucina ogni vent'anni?",
+          "answer": "Chiedendole a ogni consegna, senza eccezioni, nel momento in cui il cliente vede il lavoro finito. Il montatore o il progettista manda un messaggio personale con il link diretto alla scheda. Si può chiedere anche ai clienti degli ultimi mesi. Non si possono offrire sconti o regali in cambio: le regole di Google lo vietano."
+        },
+        {
+          "question": "Possiamo posizionarci sui nomi dei marchi che vendiamo?",
+          "answer": "Sulle ricerche del solo marchio difficilmente, perché il sito del produttore ha più autorità. Sulle ricerche che uniscono marchio e territorio sì, se hai una pagina con contenuti tuoi: composizioni esposte, progetti realizzati, servizi. Copiare il testo del catalogo non serve, perché lo stesso testo è già su decine di altri siti."
+        },
+        {
+          "question": "Un produttore che non vende al pubblico ha bisogno della scheda Google?",
+          "answer": "Se nello stabilimento o nello showroom aziendale ricevi clienti negli orari indicati, sì, ed è utile anche per chi cerca il nome dell'azienda. Se non ricevi nessuno, le regole di Google non prevedono la scheda. In quel caso la priorità sono le schede dei rivenditori e un trova rivenditore chiaro sul sito."
+        },
+        {
+          "question": "In quanto tempo si vedono risultati?",
+          "answer": "Le correzioni alla scheda Google producono effetti spesso in qualche settimana. Le pagine di prodotto e di contenuto richiedono più tempo, di solito alcuni mesi, perché devono essere scoperte e valutate da Google. Le recensioni sono un lavoro continuo: per un negozio di arredamento contano più la costanza e la qualità che un picco iniziale."
+        }
+      ],
+      "metaTitle": "SEO per arredamento: showroom e mobilifici | not4sale",
+      "metaDescription": "SEO per arredamento: scheda Google e recensioni per showroom e negozi di mobili, pagine di prodotto per i produttori. Richiedi un'analisi."
+    },
+    {
+      "sector": "arredamento",
+      "service": "gestione-social",
+      "headline": "Gestione social per arredamento: Instagram, Pinterest e rete vendita",
+      "short": "Gestione social per aziende di arredamento e showroom: Instagram, Pinterest e LinkedIn con contenuti da case vere e kit per la rete.",
+      "answer": "La gestione social per arredamento serve a farsi salvare e ricordare mentre le persone immaginano la casa nuova. not4sale segue Instagram, Pinterest, Facebook e LinkedIn per produttori di mobili e per showroom: piano editoriale, foto e video di ambienti, contenuti per rivenditori e progettisti, report su salvataggi, messaggi e richieste di appuntamento.",
+      "problem": "I profili social di molte aziende del mobile vivono a scatti. Un'ondata di render del nuovo catalogo, le foto dello stand in fiera, poi mesi di silenzio. Belle immagini, ma tutte uguali: ambienti perfetti, nessuna persona, nessuna storia, niente che spinga a fermarsi.\n\nGli showroom fanno l'errore opposto. Ripubblicano i contenuti dei marchi che vendono, così il loro profilo è identico a quello di ogni altro rivenditore dello stesso produttore, e in mezzo mettono volantini con sconti e \"ultimi giorni\". Il cliente non scopre mai chi progetta, come lavora, quali case ha arredato in zona.\n\nIntanto Pinterest resta quasi sempre scoperto, anche se è uno dei posti dove le persone raccolgono idee per la casa per mesi prima di comprare. E i risultati si misurano in like, che non dicono nulla su quanti appuntamenti sono arrivati.",
+      "process": [
+        {
+          "title": "Ruolo di ogni canale",
+          "description": "Decidiamo cosa fa Instagram, cosa fa Pinterest e cosa fanno Facebook e LinkedIn, diversamente per produttore e negozio."
+        },
+        {
+          "title": "Archivio immagini ordinato",
+          "description": "Organizziamo foto e video per collezione, ambiente e finitura, con i diritti d'uso chiari per sito, social e rete."
+        },
+        {
+          "title": "Riprese in showroom e a domicilio",
+          "description": "Pianifichiamo giornate di riprese su consegne, montaggi, laboratorio e dettagli di lavorazione."
+        },
+        {
+          "title": "Kit per i rivenditori",
+          "description": "Prepariamo post, storie e testi pronti che i rivenditori adattano al proprio negozio senza snaturare il marchio."
+        },
+        {
+          "title": "Salvataggi e richieste",
+          "description": "Leggiamo salvataggi, clic, messaggi e richieste di appuntamento, e spostiamo il piano su ciò che porta contatti."
+        }
+      ],
+      "body": "## Gestione social per arredamento: Pinterest e Instagram fanno due lavori diversi\n\nNella gestione social per arredamento ogni canale ha un compito preciso, e confonderli è il primo spreco di tempo.\n\n- **Pinterest** funziona come un motore di ricerca per idee: le persone cercano \"cucina verde salvia\" o \"camera da letto con boiserie\" e salvano le immagini in bacheche che consultano per mesi. Un pin ben descritto continua a portare visite al sito molto dopo la pubblicazione. Pinterest permette anche di caricare il catalogo prodotti e trasformarlo in pin di prodotto, e lo strumento Pinterest Trends mostra cosa cresce nelle ricerche, utile per scegliere quali finiture spingere.\n- **Instagram** è il posto della prova e della personalità: Reel di montaggi, carousel sulle finiture, storie dal laboratorio o dallo showroom. Con i post in collaborazione un contenuto può comparire insieme sul profilo del produttore, del rivenditore o dell'architetto che ha firmato il progetto.\n- **Facebook** resta utile soprattutto per gli showroom, per raggiungere il pubblico della zona e promuovere eventi in negozio.\n- **LinkedIn** è il canale per il contract e per i rapporti con studi di architettura e general contractor: ne parliamo nella pagina sul [LinkedIn aziendale](/servizi/social/linkedin-aziendale).\n\nIl metodo generale con cui gestiamo i profili è descritto nella pagina sulla [gestione social media](/servizi/social/gestione-social); qui ci concentriamo su ciò che cambia nell'arredo.\n\n## Per il produttore: contenuti che anche la rete può usare\n\nUn produttore ha due pubblici sui social: il cliente finale e i propri rivenditori. Il secondo è spesso trascurato, ma è quello che moltiplica la diffusione. Per questo ogni mese prepariamo un piccolo kit: immagini nei formati giusti, testi brevi da personalizzare, indicazioni su come taggare il marchio. Così le novità di collezione arrivano sui profili di decine di negozi nella stessa settimana, con un aspetto coerente.\n\nI contenuti che rendono di più raccontano ciò che il catalogo non mostra: la lavorazione di un'anta, la prova di un cassetto, la scelta di un'essenza, la persona che controlla un pezzo prima della spedizione. Il distretto pesarese ha alle spalle decenni di saper fare: farlo vedere è un vantaggio che molti concorrenti non hanno. Quando servono riprese più strutturate, ci appoggiamo al servizio [video e spot](/servizi/content/video-spot).\n\nAnche le fiere vanno pianificate: contenuti prima per annunciare le novità, durante per chi non c'è, dopo per riprendere i contatti raccolti allo stand.\n\n## Per lo showroom: raccontare progetti, non volantini\n\nUn negozio di arredamento si distingue sui social con ciò che solo lui ha: i progetti consegnati e le persone che li hanno seguiti. Funzionano bene:\n\n1. il prima e dopo di un ambiente, con il problema di partenza spiegato in una frase;\n2. il progettista che mostra come ha risolto un angolo difficile;\n3. il montaggio accelerato in un Reel;\n4. il dettaglio di una finitura toccata con mano in showroom;\n5. le domande che i clienti fanno più spesso, con risposte brevi.\n\nPer le foto nelle case dei clienti serve sempre il loro consenso scritto, ed è buona norma non mostrare indirizzi, targhe o elementi che rendano riconoscibile l'abitazione. Molti clienti accettano volentieri se si spiega che verrà mostrato solo l'ambiente. Un profilo [Instagram](/servizi/social/instagram) costruito così diventa il portfolio che il venditore mostra anche al tavolo.\n\n## Quali numeri guardiamo\n\nNell'arredo i like contano poco. Guardiamo i salvataggi, che indicano chi sta raccogliendo idee per un acquisto, le condivisioni, i clic verso il sito, i messaggi privati e le richieste di appuntamento. In showroom chiediamo a ogni nuovo cliente come ci ha conosciuto, per collegare i social alle vendite. Quando serve dare spinta ai contenuti migliori, li coordiniamo con le campagne descritte nella pagina su [Meta Ads per arredamento](/settori/arredamento/meta-ads). Il quadro generale del settore è nella pagina sull'[arredamento](/settori/arredamento).",
+      "faq": [
+        {
+          "question": "Pinterest serve davvero a un'azienda di mobili italiana?",
+          "answer": "Sì, se il tuo prodotto ha una componente estetica forte e il sito è pronto a ricevere visite. Su Pinterest le persone pianificano la casa per mesi e salvano idee da realizzare. Funziona bene per produttori con collezioni riconoscibili e per showroom con molti progetti fotografati. Serve costanza: i risultati crescono lentamente, ma durano."
+        },
+        {
+          "question": "Possiamo usare i render al posto delle foto?",
+          "answer": "I render vanno bene per presentare una collezione nuova o una finitura che non è ancora stata fotografata. Sui social, però, le persone si fidano di più di ciò che sembra reale: ambienti abitati, luce naturale, piccole imperfezioni. Consigliamo un equilibrio, con i render per il catalogo e le foto di case vere per raccontare il lavoro."
+        },
+        {
+          "question": "Chi va a fotografare nelle case dei clienti?",
+          "answer": "Organizziamo noi le sessioni, con un fotografo o un videomaker, raggruppando più consegne nella stessa giornata. In alternativa formiamo il tuo montatore o il progettista a scattare foto e video semplici con il telefono, seguendo poche regole su luce e inquadrature. Per molti showroom la soluzione migliore è un mix delle due."
+        },
+        {
+          "question": "I rivenditori possono pubblicare i nostri contenuti?",
+          "answer": "Sì, ed è uno degli obiettivi. Prepariamo contenuti pensati per essere riusati, con indicazioni su come adattarli al negozio e su come citare il marchio. Così la rete pubblica materiali di qualità invece di foto fatte in fretta, e il tuo marchio appare coerente ovunque. Il kit si aggiorna a ogni novità di collezione."
+        },
+        {
+          "question": "Quanto spesso bisogna pubblicare?",
+          "answer": "Meno di quanto si pensi, ma con regolarità. Per uno showroom bastano spesso due o tre contenuti a settimana su Instagram e una presenza costante su Pinterest. Per un produttore conta di più la qualità dei contenuti di collezione e la loro diffusione nella rete. Fissiamo la frequenza in base al materiale che riusciamo a produrre bene."
+        },
+        {
+          "question": "Ha senso TikTok per l'arredamento?",
+          "answer": "Può averlo, soprattutto per marchi che si rivolgono a un pubblico giovane o per showroom con personale disposto a mettersi davanti alla telecamera. I format che funzionano sono trasformazioni di ambienti, consigli pratici e dietro le quinte. Lo proponiamo come test dopo aver sistemato Instagram e Pinterest, non come primo canale."
+        }
+      ],
+      "metaTitle": "Gestione social per arredamento e showroom | not4sale",
+      "metaDescription": "Gestione social per arredamento: Instagram, Pinterest e LinkedIn per produttori di mobili e showroom, con contenuti veri e kit per i rivenditori."
+    },
+    {
+      "sector": "arredamento",
+      "service": "google-ads",
+      "headline": "Google Ads per arredamento: richieste di progetto e visite in showroom",
+      "short": "Google Ads per negozi di arredamento e produttori di mobili: ricerche giuste, raggio realistico e conversioni misurate sui progetti avviati.",
+      "answer": "Google Ads per arredamento significa comparire quando qualcuno cerca una cucina, un divano o uno showroom vicino, e trasformare quel clic in un appuntamento o in un contatto per il rivenditore. not4sale gestisce campagne Search, Performance Max e Shopping per negozi di arredamento e produttori di mobili, misurandole sui progetti avviati e non sui clic.",
+      "problem": "Nell'arredo tra la prima ricerca e la firma passano settimane, a volte mesi. Le campagne impostate come per un e-commerce qualunque non lo sanno: ottimizzano sul clic o sul modulo compilato, e l'algoritmo impara a portare i contatti più facili, cioè curiosi, studenti, chi vuole solo un prezzo per confrontarlo altrove.\n\nPoi ci sono le ricerche sbagliate. Con le parole chiave a corrispondenza generica un negozio di cucine su misura finisce per pagare clic su \"mobili usati\", \"cucina fai da te\", \"mobili gratis\" o sul nome di una catena low cost. Performance Max lasciata senza controlli può spendere una parte del budget su siti e app che non portano nessuno in showroom.\n\nPer i produttori il rischio è diverso: comprare clic sul proprio marchio in concorrenza con i propri rivenditori, alzando il costo per tutti, o portare traffico a un sito che non dice al cliente dove andare a vedere il prodotto. In tutti i casi manca il dato che conta: quanti di quei contatti sono diventati un contratto.",
+      "process": [
+        {
+          "title": "Intenti di ricerca",
+          "description": "Separiamo chi cerca ispirazione, chi cerca un negozio e chi cerca un modello preciso, con budget e messaggi diversi."
+        },
+        {
+          "title": "Raggio realistico",
+          "description": "Disegniamo l'area sulle zone da cui arrivano davvero i clienti e sul raggio in cui fai consegna e montaggio."
+        },
+        {
+          "title": "Conversioni con un peso",
+          "description": "Distinguiamo appuntamento, chiamata, richiesta di preventivo e contratto, dando a ciascuno un valore diverso."
+        },
+        {
+          "title": "Annunci per ambiente",
+          "description": "Costruiamo gruppi e pagine di atterraggio per cucine, zona giorno, zona notte e camerette."
+        },
+        {
+          "title": "Esiti dal gestionale",
+          "description": "Riportiamo in Google Ads quali contatti hanno firmato, così le offerte imparano a cercare clienti simili."
+        }
+      ],
+      "body": "## Google Ads per arredamento: quali ricerche valgono un clic\n\nCon Google Ads per arredamento non tutte le ricerche meritano lo stesso budget. Prima di scrivere un annuncio classifichiamo le ricerche del tuo mercato:\n\n| Tipo di ricerca | Esempio | Cosa fare |\n|---|---|---|\n| Ispirazione | \"idee cucina open space\" | Poco budget, meglio SEO e Pinterest |\n| Negozio in zona | \"negozio cucine\" seguito dal comune | Priorità alta per lo showroom |\n| Prodotto | \"divano angolare sfoderabile\" | Search o Shopping, se c'è un prezzo |\n| Marchio | nome del produttore o della collezione | Coordinare produttore e rivenditori |\n\nAccanto alle parole chiave serve una lista di esclusioni costruita sul settore: usato, fai da te, gratis, noleggio, lavoro, nomi di catene che non c'entrano con la tua fascia, progetti scolastici. La rivediamo ogni settimana nei primi mesi leggendo i termini di ricerca reali. Le regole generali con cui lavoriamo sono nella pagina su [Google Ads](/servizi/advertising/google-ads).\n\n## Showroom: campagne locali con obiettivo appuntamento\n\nPer un negozio di arredamento la campagna deve portare una persona a sedersi con il progettista. Le impostazioni che facciamo sempre:\n\n- **Area per presenza**: Google Ads permette di mostrare gli annunci solo a chi si trova o si trova abitualmente nella zona scelta, e non a chi l'ha soltanto cercata. Per uno showroom è quasi sempre l'opzione giusta.\n- **Estensioni di località e di chiamata**, collegate al Profilo dell'attività, così l'annuncio mostra distanza, indirizzo e numero.\n- **Pagine di atterraggio per ambiente**, con progetti realizzati e un calendario per prenotare la consulenza. Una [landing page](/servizi/web-app/landing-page) dedicata converte molto più della home.\n- **Annunci di inventario locale**, se vendi articoli pronti a magazzino: collegando Merchant Center al Profilo dell'attività, Google mostra che quel prodotto è disponibile nel tuo negozio.\n\nPerformance Max può funzionare anche per gli showroom, con obiettivi di visita in negozio, ma solo quando le conversioni sono misurate bene e il materiale creativo è di qualità. Altrimenti partiamo da campagne sulla rete di ricerca, più controllabili.\n\n## Produttori: marchio, rete vendita ed export\n\nUn produttore che vende tramite rivenditori usa Google Ads per tre cose: proteggere il proprio marchio, intercettare ricerche di prodotto e mandare il cliente allo showroom giusto. Conviene concordare con la rete chi compra cosa: se produttore e rivenditori fanno offerte sulle stesse ricerche di marchio, pagano di più tutti.\n\nLe campagne Shopping richiedono prodotti con un prezzo e la possibilità di acquistarli online o in un negozio fisico. Chi non vende direttamente e non pubblica prezzi lavora con annunci di ricerca, Demand Gen e YouTube, portando le persone su pagine di collezione con il trova rivenditore in evidenza. Per l'export le campagne si separano per paese e lingua, con annunci scritti da madrelingua e pagine di destinazione nella stessa lingua.\n\n## Finanziamenti, promozioni e regole da rispettare\n\nMolti negozi di arredamento promuovono pagamenti rateali. Se l'annuncio o la pagina citano un tasso o una cifra sul costo del credito, il Testo unico bancario impone di riportare le informazioni di base dell'offerta, compreso il TAEG, in modo chiaro. Lo stesso vale per sconti e promozioni: il prezzo di riferimento e le condizioni devono essere veri e verificabili. Meglio un messaggio su progettazione e servizio che un \"meno 50%\" difficile da giustificare.\n\n## Come misurare campagne con un ciclo lungo\n\nLa conversione che conta, il contratto, arriva settimane dopo il clic. Per questo impostiamo un [tracciamento con Google Tag Manager](/servizi/data-analytics/tracking-gtm) che registra appuntamenti e chiamate, e poi importiamo in Google Ads gli esiti dei preventivi dal gestionale o dal CRM, con le conversioni avanzate per i lead. Ogni mese leggiamo insieme il costo per appuntamento e il costo per progetto firmato. Per vedere come Google Ads si inserisce nel marketing del settore c'è la pagina sull'[arredamento](/settori/arredamento); per il lavoro sulla domanda che non si cerca ancora, guarda [Meta Ads per arredamento](/settori/arredamento/meta-ads).",
+      "faq": [
+        {
+          "question": "Il ciclo d'acquisto è lungo: come capiamo se Google Ads funziona?",
+          "answer": "Guardando due numeri in sequenza. Nel breve, il costo per appuntamento o per richiesta qualificata, che si legge già dopo poche settimane. Nel medio periodo, quanti di quegli appuntamenti diventano contratti, che richiede di segnare l'esito nel gestionale. Senza questo secondo passaggio si rischia di premiare le campagne che portano curiosi."
+        },
+        {
+          "question": "Conviene fare annunci sul nome dei marchi che vendiamo?",
+          "answer": "Può convenire, se hai una pagina dedicata a quel marchio con progetti ed esposizione. Nell'Unione europea Google permette in generale di usare marchi altrui come parole chiave, mentre l'uso nel testo dell'annuncio può essere limitato su richiesta del titolare. Prima di partire conviene verificare gli accordi con il produttore, che a volte regolano proprio questo."
+        },
+        {
+          "question": "Quanto lontano mostrare gli annunci dello showroom?",
+          "answer": "Tanto quanto il raggio da cui arrivano davvero i tuoi clienti e in cui fai consegna e montaggio. Per un negozio di cucine può essere più ampio che per un negozio di complementi. Partiamo dai dati dei clienti degli ultimi anni, dai comuni dei contratti firmati, e allarghiamo o restringiamo dopo aver visto il costo per appuntamento per zona."
+        },
+        {
+          "question": "Siamo un produttore senza e-commerce: ha senso Google Ads?",
+          "answer": "Sì, con obiettivi diversi dalla vendita diretta. Le campagne servono a proteggere il marchio, a farsi trovare sulle ricerche di prodotto e a portare il cliente verso il rivenditore. Si misurano sui clic al trova rivenditore, sulle richieste girate alla rete e, se i rivenditori collaborano, sugli appuntamenti generati."
+        },
+        {
+          "question": "Da cosa dipende il budget da investire?",
+          "answer": "Dalla concorrenza nella tua zona o nei tuoi mercati, dal numero di ricerche, dal valore medio di un progetto e da quanti appuntamenti riesci a gestire. Uno showroom di cucine in una città con molti concorrenti ha esigenze diverse da un negozio di provincia. Il calcolatore su /preventivo ti dà un ordine di grandezza per la gestione."
+        }
+      ],
+      "metaTitle": "Google Ads per arredamento: showroom e mobilifici | not4sale",
+      "metaDescription": "Google Ads per arredamento: campagne per showroom e produttori di mobili misurate su appuntamenti e progetti firmati, non sui clic. Parliamone."
+    },
+    {
+      "sector": "arredamento",
+      "service": "meta-ads",
+      "headline": "Meta Ads per arredamento: lead per progetti d'arredo su Facebook e Instagram",
+      "short": "Facebook e Instagram Ads per showroom e produttori di mobili: video da case vere, moduli che filtrano e contatti misurati fino al progetto.",
+      "answer": "Meta Ads per arredamento significa usare Facebook e Instagram per raggiungere chi sta per rifare casa prima ancora che cerchi un negozio. not4sale imposta per showroom e produttori di mobili campagne con video di ambienti, moduli che raccolgono misure e tempi, cataloghi dinamici e Conversions API, misurando appuntamenti e progetti avviati, non solo contatti.",
+      "problem": "Le Facebook Ads per arredamento hanno una fama altalenante, e spesso per colpa del modo in cui vengono impostate. La campagna più comune è un modulo con nome e telefono e un'immagine con \"cucina completa a prezzo bloccato\". I contatti arrivano, anche tanti, ma al telefono metà non ricorda di averlo compilato e l'altra metà voleva solo un prezzo da confrontare.\n\nIl venditore richiama dopo due giorni, quando il cliente ha già parlato con altri tre negozi. Dopo qualche settimana la conclusione è che \"Facebook porta solo perditempo\" e il budget si sposta su volantini o radio.\n\nI produttori, dal canto loro, investono in campagne di notorietà che non hanno nessun collegamento con la rete vendita: belle visualizzazioni, nessuna traccia di chi è poi entrato in uno showroom. In entrambi i casi il problema non è il canale, ma cosa gli si chiede di ottimizzare e cosa succede dopo il contatto.",
+      "process": [
+        {
+          "title": "Il momento del cambio",
+          "description": "Partiamo da cosa spinge i tuoi clienti a rifare un ambiente: casa nuova, ristrutturazione, famiglia che cresce."
+        },
+        {
+          "title": "Creatività da case vere",
+          "description": "Video di montaggi, prima e dopo, dettagli di finiture e la voce del progettista che spiega una scelta."
+        },
+        {
+          "title": "Modulo che filtra",
+          "description": "Domande su ambiente, comune, tempi e stato della casa, con la versione a maggiore intenzione quando serve."
+        },
+        {
+          "title": "Richiamo entro poche ore",
+          "description": "Colleghiamo i contatti al CRM o al telefono dello showroom con un avviso immediato e uno script di prima chiamata."
+        },
+        {
+          "title": "Esito del progetto",
+          "description": "Riportiamo a Meta appuntamenti e contratti, per ottimizzare sulle persone che comprano davvero."
+        }
+      ],
+      "body": "## Meta Ads per arredamento: intercettare chi sta per rifare casa\n\nGoogle raccoglie chi cerca già. Meta Ads per arredamento lavora prima: raggiunge chi ha appena comprato casa, sta ristrutturando o pensa di cambiare la cucina, e gli mostra il tuo lavoro mentre scorre Instagram la sera. Il targeting dettagliato per interessi e situazioni di vita è stato molto ridotto negli anni; oggi a selezionare il pubblico è soprattutto la creatività, all'interno di un'area geografica definita attorno allo showroom. Un video che mostra come è stata ricavata una cucina in un monolocale troverà da solo chi vive in pochi metri quadrati.\n\nLe basi del metodo, dalla struttura delle campagne ai test creativi, sono nella pagina su [Meta Ads](/servizi/advertising/meta-ads). Qui ci concentriamo su ciò che serve a chi vende arredo.\n\n## Lead per progetti d'arredo: il modulo decide la qualità\n\nI moduli istantanei di Meta sono comodi perché si compilano senza uscire dall'app, con i dati già precompilati. Proprio per questo vanno resi un po' meno comodi. Le scelte che facciamo:\n\n1. **Domande che qualificano**: quale ambiente, in quale comune, quando sarà disponibile la casa, se esiste già una planimetria. Sono domande che il cliente motivato compila volentieri.\n2. **Tipo di modulo a maggiore intenzione**, che aggiunge una schermata di conferma prima dell'invio e riduce i contatti compilati per sbaglio.\n3. **Promessa chiara**: una consulenza con il progettista, un sopralluogo per le misure, non un generico \"ti richiamiamo\".\n\nQuando il negozio ha un buon sistema di prenotazione, mandiamo il traffico su una pagina con il calendario invece che sul modulo: meno contatti, ma più appuntamenti presi. Il resto lo fa la velocità. Un contatto richiamato in giornata vale molto di più di uno richiamato dopo il fine settimana: per questo colleghiamo i moduli al CRM o a un sistema di avvisi e, dove serve, impostiamo [marketing automation](/servizi/crm-email/marketing-automation) con messaggi che confermano l'appuntamento e ricordano cosa portare (misure, foto, planimetria).\n\n## Produttori: catalogo, video e rete vendita\n\nUn produttore di mobili ha due strade, che spesso si sommano:\n\n- **Catalogo collegato a Meta**, per chi vende online complementi o arredi standard: gli annunci dinamici mostrano a chi ha visitato il sito proprio i prodotti che ha guardato.\n- **Video di collezione e retargeting verso la rete**: prima si mostra la collezione a un pubblico ampio, poi a chi ha guardato buona parte del video si propone lo showroom più vicino o un evento presso un rivenditore.\n\nFunzionano bene anche le campagne co-finanziate con i rivenditori, in cui il produttore fornisce creatività e budget e lo showroom riceve i contatti della sua zona. Vanno regolate con un accordo semplice su chi gestisce il contatto e come si riporta l'esito.\n\n## Creatività che funzionano nell'arredo\n\nI contenuti più efficaci sono quelli che mostrano il servizio, non solo il mobile: il rilievo misure, il progetto su schermo che diventa ambiente vero, il montaggio accelerato, la cliente che apre il cassetto e sorride. I render di catalogo funzionano meno, perché sembrano pubblicità di chiunque. Se in un annuncio citi rate o tassi di un finanziamento, ricorda che anche sui social valgono gli obblighi di trasparenza della pubblicità del credito ai consumatori.\n\n## Come misuriamo\n\nInstalliamo il pixel e la Conversions API, possibilmente con un [tracciamento server-side](/servizi/data-analytics/server-side-tracking), per non perdere eventi tra blocchi dei cookie e browser. Poi rimandiamo a Meta le fasi successive del contatto: appuntamento fissato, preventivo consegnato, contratto firmato. È il modo per far imparare all'algoritmo la differenza tra chi compila e chi compra. Per il quadro completo del settore c'è la pagina sull'[arredamento](/settori/arredamento); per intercettare chi cerca già, la pagina su [Google Ads per arredamento](/settori/arredamento/google-ads).",
+      "faq": [
+        {
+          "question": "Meglio i moduli di Meta o una pagina sul sito?",
+          "answer": "I moduli di Meta portano più contatti a costo più basso, ma di qualità più variabile. Una pagina sul sito con calendario porta meno contatti, più decisi. Per uno showroom con poco tempo per richiamare conviene la pagina; per uno con un addetto dedicato può convenire il modulo con domande filtro. Spesso le testiamo entrambe per qualche settimana."
+        },
+        {
+          "question": "Che raggio usare intorno allo showroom?",
+          "answer": "Quello in cui fai davvero consegne e montaggi, e da cui i clienti sono disposti a venire. Per cucine e zone giorno le persone fanno anche molti chilometri, per i complementi molti meno. Partiamo dai comuni dei clienti degli ultimi anni e confrontiamo poi il costo per appuntamento tra le diverse zone."
+        },
+        {
+          "question": "Meta Ads funziona anche per l'arredo di fascia alta?",
+          "answer": "Sì, ma con creatività e aspettative diverse. Per la fascia alta servono contenuti curati, tempi più lunghi e un obiettivo che non sia il contatto immediato: per esempio un invito a una serata in showroom o a una consulenza riservata. Il pubblico è più piccolo, quindi conta molto il retargeting di chi ha già visto i tuoi video."
+        },
+        {
+          "question": "Arrivano molti contatti ma di scarsa qualità: cosa cambiamo?",
+          "answer": "Di solito tre cose. Il messaggio, togliendo offerte che attirano solo chi cerca il prezzo più basso. Il modulo, aggiungendo domande filtro e la conferma finale. E l'obiettivo di ottimizzazione, riportando a Meta quali contatti diventano appuntamenti. In parallelo verifichiamo i tempi di richiamo, che spesso pesano quanto la campagna."
+        },
+        {
+          "question": "Un produttore può fare campagne per conto dei rivenditori?",
+          "answer": "Sì, ed è un buon modo per sostenere la rete. Il produttore prepara creatività e budget, segmenta le campagne per zona e gira i contatti allo showroom competente. Serve un accordo chiaro su tempi di risposta e riscontro degli esiti. Senza riscontro il produttore non sa quali zone rendono e la collaborazione si spegne in pochi mesi."
+        }
+      ],
+      "metaTitle": "Meta Ads per arredamento: Facebook e Instagram | not4sale",
+      "metaDescription": "Meta Ads per arredamento: campagne Facebook e Instagram per showroom e produttori di mobili, con lead per progetti d'arredo misurati fino al contratto."
+    },
+    {
+      "sector": "arredamento",
+      "service": "logo-identita-visiva",
+      "headline": "Logo per mobilifici e aziende di arredamento: marchio e collezioni",
+      "short": "Logo per mobilifici e negozi di arredamento: marchio aziendale, marchi di collezione e prove su prodotto, catalogo e showroom.",
+      "answer": "Un logo per mobilifici e aziende di arredamento deve reggere sul prodotto, nel catalogo, in fiera e nello showroom del rivenditore accanto ad altri marchi. not4sale progetta marchio aziendale, marchi di collezione e identità visiva per produttori di mobili e cucine e per negozi di arredamento, provandoli su placche, cartelle campioni e insegne prima della consegna.",
+      "problem": "Molti mobilifici hanno ancora il logo nato con l'azienda: il cognome del fondatore, la parola \"mobili\" e magari un albero stilizzato. Ha una storia, ma non dice nulla dello stile di ciò che produci oggi, e accanto ai marchi dei grandi gruppi sembra quello di un laboratorio.\n\nNegli anni poi si aggiungono le collezioni, ognuna con un nome e un lettering scelto al momento. Il risultato è un catalogo con cinque grafiche diverse, rivenditori che non sanno quale marchio mettere in vetrina e clienti che ricordano il nome del modello ma non quello dell'azienda.\n\nChi vende al pubblico ha il problema inverso. Lo showroom espone dieci marchi, ognuno con le sue regole e i suoi espositori, e il logo del negozio scompare in mezzo. Il cliente esce dicendo \"sono stato a vedere le cucine di quel marchio\", senza ricordare dove. Infine c'è il tema della tutela: nomi di collezione usati per anni senza verificare se fossero registrabili, o registrati solo in Italia mentre si vende all'estero.",
+      "process": [
+        {
+          "title": "Architettura dei marchi",
+          "description": "Decidiamo il rapporto tra marchio aziendale, collezioni e linee per il contract: un'unica famiglia, marchi autonomi o collezioni firmate."
+        },
+        {
+          "title": "Verifica dei nomi",
+          "description": "Prima di affezionarci a un nome, facciamo controllare al tuo consulente in proprietà industriale i marchi simili nelle classi e nei paesi che contano."
+        },
+        {
+          "title": "Prove sul prodotto",
+          "description": "Proviamo il segno inciso, impresso a fuoco, su placca metallica, su etichetta tessile e sull'interno di un cassetto."
+        },
+        {
+          "title": "Prove nello spazio",
+          "description": "Lo vediamo su insegna, corner nello showroom del rivenditore, cartella campioni e parete dello stand in fiera."
+        },
+        {
+          "title": "Regole per la rete",
+          "description": "Consegniamo file e un breve manuale d'uso per rivenditori, agenti e progettisti, con le misure minime."
+        }
+      ],
+      "body": "## Logo per mobilifici: dove vive il marchio di chi fa mobili\n\nIl primo criterio per un logo per mobilifici è la varietà di superfici su cui deve comparire. Pochi settori ne hanno così tante:\n\n- **Sul prodotto**: incisione laser su legno, marchio a fuoco, placca in metallo, etichetta cucita su un divano, adesivo all'interno di un'anta. Spesso piccolo, spesso in un solo colore, a volte a rilievo senza colore.\n- **Su imballi e documenti di trasporto**: il primo contatto fisico del cliente con il prodotto è spesso un cartone in cantiere.\n- **Su cataloghi, listini e cartelle campioni**, che passano di mano tra agente, rivenditore e architetto.\n- **Nello showroom del rivenditore**: corner dedicati, espositori, cartellini delle composizioni, dove il tuo segno sta accanto a quelli dei concorrenti.\n- **In fiera**, dove deve farsi notare da lontano in un padiglione pieno di stand: per questo lo proviamo anche sulla [grafica per fiere](/servizi/branding/grafica-fiere).\n\nIl metodo con cui progettiamo ogni identità è descritto nella pagina su [logo e identità visiva](/servizi/branding/logo-identita-visiva). Qui spieghiamo cosa cambia nell'arredo.\n\n## Marchi di collezione: quando servono e quando confondono\n\nLe collezioni sono il modo in cui un produttore di mobili racconta stili diversi. Ma ogni nuovo nome è un marchio da far conoscere, e il budget non si moltiplica. Proponiamo tre modelli, da scegliere in base alla strategia:\n\n| Modello | Come funziona | Quando ha senso |\n|---|---|---|\n| Marchio unico | Le collezioni sono solo nomi, scritti con il carattere aziendale | Aziende piccole o con uno stile coerente |\n| Collezioni firmate | Ogni collezione ha un suo segno, sempre accompagnato dal marchio aziendale | Linee di stile diverso vendute dagli stessi rivenditori |\n| Marchi autonomi | Linee con identità propria, legame con l'azienda discreto | Fasce di prezzo o canali che non devono mescolarsi |\n\nPer chi esporta il nome conta quanto il segno: deve essere pronunciabile nelle lingue dei mercati principali e non avere significati imbarazzanti. È un lavoro di [naming](/servizi/branding/naming) che conviene fare prima di disegnare, non dopo.\n\n## Registrazione e tutela: marchio e design sono due cose diverse\n\nUn logo e un nome di collezione si proteggono con la registrazione del marchio: in Italia presso l'Ufficio italiano brevetti e marchi, nell'Unione europea presso l'EUIPO, in altri paesi anche con la procedura internazionale gestita dall'OMPI. Nella classificazione internazionale i mobili rientrano nella classe 20, mentre i servizi di vendita al dettaglio stanno nella classe 35: un negozio e un produttore registrano quindi in classi diverse.\n\nLa forma di un mobile, invece, non si tutela con il marchio ma con la registrazione di disegni e modelli. Non siamo consulenti in proprietà industriale e non sostituiamo il loro parere: il nostro compito è progettare segni distintivi, evitare quelli troppo simili a marchi esistenti e preparare i file per il deposito.\n\n## Il logo dello showroom: farsi ricordare accanto ai marchi che vendi\n\nUn negozio di arredamento ha bisogno di un'identità che non entri in competizione con i marchi esposti, ma che resti in testa al cliente quando torna a casa. Per questo lavoriamo su un sistema sobrio e riconoscibile: un logotipo leggibile da lontano, un colore che faccia da filo conduttore tra insegna, cartellini, preventivi e furgone, e uno stile fotografico coerente per i progetti pubblicati. I marchi dei produttori vanno usati secondo le loro regole, spesso indicate nei contratti di distribuzione, e senza far sembrare il negozio un punto vendita monomarca se non lo è. Anche l'insegna richiede di norma un'autorizzazione del comune: conviene saperlo prima di stamparla.\n\nPer portare la nuova identità su moduli e documenti c'è l'[immagine coordinata](/servizi/branding/immagine-coordinata); per mantenerla coerente nel tempo, le [brand guidelines](/servizi/branding/brand-guidelines). Il marketing del settore nel suo complesso è descritto nella pagina sull'[arredamento](/settori/arredamento), e come raccontare la nuova identità sui social nella pagina sulla [gestione social per arredamento](/settori/arredamento/gestione-social).",
+      "faq": [
+        {
+          "question": "Ogni collezione deve avere un proprio logo?",
+          "answer": "No, e spesso è meglio di no. Un segno per collezione ha senso quando le linee hanno stili, prezzi o canali molto diversi. Negli altri casi basta un nome scritto con il carattere aziendale, così ogni investimento in comunicazione rafforza un solo marchio. Decidiamo il modello prima di disegnare, guardando come vendono i tuoi rivenditori."
+        },
+        {
+          "question": "Il marchio va registrato anche all'estero?",
+          "answer": "Se vendi o intendi vendere in altri paesi, conviene valutarlo con un consulente in proprietà industriale. La registrazione italiana vale solo in Italia; quella dell'Unione europea copre tutti gli stati membri; per i paesi extra UE si può estendere la tutela con la procedura internazionale. Meglio pensarci prima di presentare una collezione in una fiera estera."
+        },
+        {
+          "question": "Come si applica il logo su un mobile senza rovinarne l'estetica?",
+          "answer": "Con discrezione e con la tecnica giusta per il materiale: incisione o marchio a fuoco sul legno, placca piccola sul metallo, etichetta interna sui tessuti. Progettiamo una versione del segno pensata per queste applicazioni, con spessori adatti e senza dettagli che si perdono. Spesso il posto migliore è nascosto ma facile da trovare, come l'interno di un cassetto."
+        },
+        {
+          "question": "Abbiamo un mobilificio storico: dobbiamo cambiare logo?",
+          "answer": "Non per forza. Se il nome è conosciuto da clienti, rivenditori e fornitori, conviene quasi sempre un restyling che mantenga il legame con il marchio storico e lo renda leggibile sulle applicazioni di oggi. Un cambio radicale ha senso quando cambiano proprietà, prodotto o mercati, ed è bene accompagnarlo con una comunicazione ai rivenditori."
+        },
+        {
+          "question": "Uno showroom che vende marchi famosi ha bisogno di un logo curato?",
+          "answer": "Sì, proprio per questo. Il cliente visita più negozi che espongono gli stessi marchi, e alla fine sceglie quello di cui si ricorda e di cui si fida. Un'identità chiara sull'insegna, sui preventivi e sui social ti fa riconoscere come lo studio che progetta, non come uno dei tanti punti vendita."
+        },
+        {
+          "question": "Da cosa dipende il costo del progetto?",
+          "answer": "Dal numero di marchi da progettare, cioè azienda più eventuali collezioni, dal fatto che si tratti di un restyling o di un'identità nuova, dalle applicazioni da provare (prodotto, imballi, fiera, showroom) e dai materiali da consegnare alla rete. Il calcolatore su /preventivo ti dà un primo ordine di grandezza."
+        }
+      ],
+      "metaTitle": "Logo per mobilifici e aziende di arredamento | not4sale",
+      "metaDescription": "Logo per mobilifici e aziende di arredamento: marchio e collezioni provati su prodotto, cataloghi, fiere e showroom dei rivenditori. Parliamone."
+    }
+  ]
+}

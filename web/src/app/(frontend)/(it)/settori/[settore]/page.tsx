@@ -1,10 +1,11 @@
-import { getPublishedIndex } from '@/lib/cms'
 import { SectorView, sectorMetadata } from '@/views/LocalViews'
 
 type Props = { params: Promise<{ settore: string }> }
 
+// Pagine numerose: generate alla prima visita e poi servite dalla cache (ISR), così la build non dipende dal database.
+export const dynamicParams = true
 export async function generateStaticParams() {
-  return (await getPublishedIndex()).sectors.map((x) => ({ settore: x.slug }))
+  return []
 }
 
 export async function generateMetadata({ params }: Props) {

@@ -39,6 +39,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...idx.localServices.map((x) => entry(() => paths.localService(x.location, x.service), { lastModified: x.updatedAt, priority: 0.7, en: false })),
     entry(paths.sectors, { priority: 0.8, en: false }),
     ...idx.sectors.map((x) => entry(() => paths.sector(x.slug), { lastModified: x.updatedAt, priority: 0.8, en: false })),
+    ...idx.sectorServices.map((x) => entry(() => paths.sectorService(x.sector, x.service), { lastModified: x.updatedAt, priority: 0.8, en: false })),
     entry(paths.caseStudies, { priority: 0.7 }),
     entry(paths.about, { priority: 0.6 }),
     entry(paths.contact, { priority: 0.6 }),

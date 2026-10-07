@@ -1,10 +1,11 @@
-import { getPublishedIndex } from '@/lib/cms'
 import { LocalServiceView, localServiceMetadata } from '@/views/LocalViews'
 
 type Props = { params: Promise<{ citta: string; servizio: string }> }
 
+// Pagine numerose: generate alla prima visita e poi servite dalla cache (ISR), così la build non dipende dal database.
+export const dynamicParams = true
 export async function generateStaticParams() {
-  return (await getPublishedIndex()).localServices.map((x) => ({ citta: x.location, servizio: x.service }))
+  return []
 }
 
 export async function generateMetadata({ params }: Props) {

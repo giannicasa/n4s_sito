@@ -129,3 +129,37 @@ Vincoli: `faq` 4–5; totale almeno 700 parole; la pagina generale del servizio 
 ## Validazione
 
 `npx tsx content/local/validate-local.mts [file ...]` controlla struttura, lunghezze, slug, link e frasi duplicate. Correggi finché stampa "Tutto valido".
+
+## Servizio per settore — formato (pagine nate dall'analisi delle ricerche)
+
+Queste pagine rispondono a ricerche reali e **nazionali** confermate dai suggerimenti di Google, ad esempio "siti web per hotel", "marketing per avvocati", "siti web per dentisti", "social media manager per centri estetici", "logo per abbigliamento", "logo per imprese edili". La keyword principale è **"{servizio} per {settore}"** (es. "siti web per hotel", "social media manager per ristoranti"): deve stare nell'H1, nel metaTitle, nella prima frase dell'answer e in un H2.
+
+Non sono pagine locali: il pubblico è tutta Italia. Il territorio (Riviera, Pesaro, Romagna e Marche) si cita 1–2 volte come esperienza diretta di uno studio che lavora da Cattolica, non come limite.
+
+File `content/local/settori-servizi/{batch}.json` (batch e ordine in `piano.json → sectorServices`):
+
+```json
+{
+  "items": [
+    {
+      "sector": "hotel",
+      "service": "siti-web",
+      "headline": "Siti web per hotel che portano prenotazioni dirette",
+      "short": "max 140 caratteri",
+      "answer": "40–60 parole: cosa serve a un sito di quel settore e cosa facciamo.",
+      "problem": "Markdown 120–250 parole: perché i siti/social/ads del settore spesso non funzionano. Niente H2.",
+      "process": [{ "title": "…", "description": "…" }],
+      "body": "Markdown 600–900 parole, 3–5 sezioni ##: cosa deve avere il servizio in quel settore (funzioni, contenuti, vincoli normativi o di piattaforma), errori tipici, come misurarlo. Link alla pagina del servizio e alla pagina del settore (obbligatori), più altri link utili.",
+      "faq": [{ "question": "…", "answer": "…" }],
+      "metaTitle": "…",
+      "metaDescription": "…"
+    }
+  ]
+}
+```
+
+Vincoli: `process` 4–5 passi specifici del settore; `faq` 5–6; totale almeno 1.000 parole. Non ripetere la pagina generale del servizio né la pagina del settore: qui conta l'**incrocio** (cosa cambia nei siti web quando il cliente è un hotel). Le pagine dello stesso settore non devono ripetersi tra loro.
+
+## Servizi in città aggiuntivi
+
+`piano.json → localServicesExtra` elenca i servizi in città nati dall'analisi (es. video maker a Rimini). Per i comuni che hanno già un file in `servizi-citta/`, le nuove voci vanno **aggiunte in fondo** a `items`, senza toccare quelle esistenti. Per un comune nuovo (es. Misano Adriatico) si crea il file con le sole voci previste.
