@@ -1,0 +1,831 @@
+{
+ "Torino": {
+  "comune": 18,
+  "siti-web": 1,
+  "gestione-social": 6,
+  "seo-locale": 3,
+  "google-ads": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 3,
+  "ecommerce": 2
+ },
+ "Alessandria": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "google-ads": 1,
+  "logo-identita-visiva": 1
+ },
+ "Asti": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1
+ },
+ "Biella": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Cuneo": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Novara": {
+  "comune": 4,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Verbania": {
+  "comune": 3,
+  "gestione-social": 1
+ },
+ "Aosta": {
+  "comune": 3,
+  "gestione-social": 2,
+  "logo-identita-visiva": 1
+ },
+ "Milano": {
+  "comune": 24,
+  "siti-web": 2,
+  "gestione-social": 5,
+  "seo-locale": 5,
+  "google-ads": 4,
+  "logo-identita-visiva": 5,
+  "video-spot": 1,
+  "copywriting": 5,
+  "ecommerce": 1
+ },
+ "Bergamo": {
+  "comune": 10,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "logo-identita-visiva": 2,
+  "video-spot": 1,
+  "copywriting": 2
+ },
+ "Brescia": {
+  "comune": 11,
+  "siti-web": 1,
+  "gestione-social": 5,
+  "seo-locale": 2,
+  "google-ads": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 1,
+  "ecommerce": 1
+ },
+ "Como": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 8,
+  "seo-locale": 2,
+  "google-ads": 10,
+  "logo-identita-visiva": 1,
+  "video-spot": 7,
+  "copywriting": 10
+ },
+ "Cremona": {
+  "comune": 3,
+  "siti-web": 2,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Lecco": {
+  "comune": 4,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Lodi": {
+  "comune": 4,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1
+ },
+ "Mantova": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Monza": {
+  "comune": 6,
+  "siti-web": 1,
+  "gestione-social": 2,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1,
+  "copywriting": 2
+ },
+ "Pavia": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Sondrio": {
+  "comune": 3,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1
+ },
+ "Varese": {
+  "comune": 4,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 1
+ },
+ "Trento": {
+  "comune": 11,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "logo-identita-visiva": 2,
+  "video-spot": 1,
+  "copywriting": 1
+ },
+ "Bolzano": {
+  "comune": 5,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "logo-identita-visiva": 1,
+  "copywriting": 1
+ },
+ "Venezia": {
+  "comune": 8,
+  "siti-web": 1,
+  "gestione-social": 3,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 1
+ },
+ "Belluno": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1
+ },
+ "Padova": {
+  "comune": 7,
+  "siti-web": 1,
+  "gestione-social": 2,
+  "seo-locale": 2,
+  "google-ads": 2,
+  "logo-identita-visiva": 2,
+  "video-spot": 1,
+  "copywriting": 3,
+  "ecommerce": 1
+ },
+ "Rovigo": {
+  "comune": 3,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "logo-identita-visiva": 1
+ },
+ "Treviso": {
+  "comune": 8,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "google-ads": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 2
+ },
+ "Verona": {
+  "comune": 8,
+  "siti-web": 1,
+  "gestione-social": 4,
+  "seo-locale": 2,
+  "logo-identita-visiva": 3,
+  "video-spot": 1,
+  "copywriting": 2
+ },
+ "Vicenza": {
+  "comune": 5,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "google-ads": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 1
+ },
+ "Trieste": {
+  "comune": 5,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Gorizia": {
+  "comune": 3,
+  "gestione-social": 1
+ },
+ "Pordenone": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 2,
+  "video-spot": 1
+ },
+ "Udine": {
+  "comune": 5,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 1
+ },
+ "Genova": {
+  "comune": 13,
+  "siti-web": 2,
+  "gestione-social": 2,
+  "seo-locale": 2,
+  "logo-identita-visiva": 2,
+  "video-spot": 1,
+  "copywriting": 1
+ },
+ "La Spezia": {
+  "comune": 3,
+  "gestione-social": 1,
+  "video-spot": 1
+ },
+ "Savona": {
+  "comune": 3,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Bologna": {
+  "comune": 11,
+  "gestione-social": 5,
+  "seo-locale": 3,
+  "google-ads": 2,
+  "logo-identita-visiva": 3,
+  "video-spot": 1,
+  "copywriting": 2,
+  "ecommerce": 1
+ },
+ "Ferrara": {
+  "comune": 4,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Forlì": {
+  "comune": 4,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1
+ },
+ "Cesena": {
+  "comune": 5,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1
+ },
+ "Modena": {
+  "comune": 8,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 1,
+  "ecommerce": 1
+ },
+ "Parma": {
+  "comune": 5,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "logo-identita-visiva": 3,
+  "video-spot": 1,
+  "copywriting": 1,
+  "ecommerce": 1
+ },
+ "Piacenza": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Ravenna": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Reggio Emilia": {
+  "comune": 6,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 1
+ },
+ "Firenze": {
+  "comune": 12,
+  "siti-web": 1,
+  "gestione-social": 3,
+  "seo-locale": 2,
+  "google-ads": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 1
+ },
+ "Arezzo": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "ecommerce": 1
+ },
+ "Grosseto": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "logo-identita-visiva": 1
+ },
+ "Livorno": {
+  "comune": 4,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Lucca": {
+  "comune": 4,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 1
+ },
+ "Massa": {
+  "comune": 5,
+  "gestione-social": 1
+ },
+ "Carrara": {
+  "comune": 3,
+  "gestione-social": 2
+ },
+ "Pisa": {
+  "comune": 4,
+  "siti-web": 3,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 1
+ },
+ "Pistoia": {
+  "comune": 4,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1
+ },
+ "Prato": {
+  "comune": 6,
+  "siti-web": 1,
+  "gestione-social": 2,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "ecommerce": 1
+ },
+ "Siena": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "logo-identita-visiva": 1
+ },
+ "Perugia": {
+  "comune": 5,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 1
+ },
+ "Terni": {
+  "comune": 4,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Ancona": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "ecommerce": 1
+ },
+ "Fermo": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1
+ },
+ "Macerata": {
+  "comune": 3,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "logo-identita-visiva": 1
+ },
+ "Senigallia": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1
+ },
+ "Jesi": {
+  "comune": 2,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 2
+ },
+ "Civitanova Marche": {
+  "comune": 3,
+  "gestione-social": 1,
+  "logo-identita-visiva": 2
+ },
+ "Roma": {
+  "comune": 19,
+  "siti-web": 4,
+  "gestione-social": 4,
+  "seo-locale": 7,
+  "google-ads": 3,
+  "logo-identita-visiva": 3,
+  "video-spot": 1,
+  "copywriting": 3,
+  "ecommerce": 2
+ },
+ "Frosinone": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Latina": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 3,
+  "seo-locale": 2,
+  "google-ads": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Viterbo": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "L'Aquila": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1
+ },
+ "Pescara": {
+  "comune": 8,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "logo-identita-visiva": 2,
+  "video-spot": 1
+ },
+ "Teramo": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "ecommerce": 1
+ },
+ "Campobasso": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 2,
+  "logo-identita-visiva": 1
+ },
+ "Napoli": {
+  "comune": 12,
+  "siti-web": 1,
+  "gestione-social": 4,
+  "seo-locale": 2,
+  "google-ads": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 1,
+  "ecommerce": 1
+ },
+ "Avellino": {
+  "comune": 4,
+  "siti-web": 1,
+  "gestione-social": 1
+ },
+ "Benevento": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "logo-identita-visiva": 1
+ },
+ "Caserta": {
+  "comune": 4,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "video-spot": 1
+ },
+ "Salerno": {
+  "comune": 6,
+  "siti-web": 2,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "ecommerce": 1
+ },
+ "Bari": {
+  "comune": 14,
+  "siti-web": 2,
+  "gestione-social": 2,
+  "seo-locale": 2,
+  "google-ads": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 1,
+  "ecommerce": 1
+ },
+ "Barletta": {
+  "comune": 3,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1
+ },
+ "Andria": {
+  "comune": 3,
+  "gestione-social": 1
+ },
+ "Trani": {
+  "comune": 3,
+  "gestione-social": 1,
+  "seo-locale": 1
+ },
+ "Brindisi": {
+  "comune": 5,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 1
+ },
+ "Foggia": {
+  "comune": 5,
+  "siti-web": 4,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "ecommerce": 1
+ },
+ "Lecce": {
+  "comune": 7,
+  "siti-web": 1,
+  "gestione-social": 2,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 1,
+  "ecommerce": 1
+ },
+ "Taranto": {
+  "comune": 5,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 1
+ },
+ "Potenza": {
+  "comune": 4,
+  "siti-web": 2,
+  "gestione-social": 1,
+  "copywriting": 1
+ },
+ "Matera": {
+  "comune": 3,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Catanzaro": {
+  "comune": 4,
+  "siti-web": 1,
+  "gestione-social": 3,
+  "seo-locale": 1,
+  "logo-identita-visiva": 1
+ },
+ "Cosenza": {
+  "comune": 4,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "video-spot": 1
+ },
+ "Crotone": {
+  "comune": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1
+ },
+ "Reggio Calabria": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Vibo Valentia": {
+  "comune": 2,
+  "gestione-social": 1
+ },
+ "Palermo": {
+  "comune": 6,
+  "siti-web": 1,
+  "gestione-social": 2,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 1
+ },
+ "Agrigento": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "video-spot": 1
+ },
+ "Caltanissetta": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "video-spot": 1
+ },
+ "Catania": {
+  "comune": 12,
+  "siti-web": 1,
+  "gestione-social": 2,
+  "seo-locale": 3,
+  "google-ads": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "copywriting": 2
+ },
+ "Messina": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 2,
+  "video-spot": 1,
+  "ecommerce": 2
+ },
+ "Ragusa": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Siracusa": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1
+ },
+ "Trapani": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 1,
+  "video-spot": 1
+ },
+ "Cagliari": {
+  "comune": 6,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "seo-locale": 2,
+  "google-ads": 3,
+  "logo-identita-visiva": 2,
+  "video-spot": 1,
+  "copywriting": 1,
+  "ecommerce": 1
+ },
+ "Sassari": {
+  "comune": 4,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 2,
+  "video-spot": 1,
+  "ecommerce": 1
+ },
+ "Oristano": {
+  "comune": 3,
+  "siti-web": 1,
+  "gestione-social": 2,
+  "logo-identita-visiva": 1
+ },
+ "Olbia": {
+  "comune": 4,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 2,
+  "video-spot": 1
+ },
+ "San Marino": {
+  "comune": 5,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1
+ },
+ "Vercelli": {
+  "comune": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1
+ },
+ "Imperia": {
+  "comune": 2,
+  "siti-web": 1,
+  "gestione-social": 1
+ },
+ "Ascoli Piceno": {
+  "comune": 2,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "logo-identita-visiva": 1,
+  "video-spot": 1,
+  "ecommerce": 1
+ },
+ "Chieti": {
+  "comune": 2,
+  "siti-web": 1,
+  "gestione-social": 1,
+  "ecommerce": 1
+ },
+ "Rieti": {
+  "comune": 1,
+  "gestione-social": 1,
+  "seo-locale": 1
+ },
+ "Enna": {
+  "siti-web": 1
+ },
+ "Nuoro": {
+  "siti-web": 1,
+  "gestione-social": 1
+ },
+ "Isernia": {
+  "gestione-social": 1
+ },
+ "Carbonia": {
+  "gestione-social": 1
+ }
+}

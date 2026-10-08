@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next'
 
 import { getPublishedIndex } from '@/lib/cms'
 import { absolute, paths, type Locale } from '@/lib/paths'
+import { regionSlug } from '@/lib/regions'
 
 // Sitemap generata dal CMS: ogni pagina pubblicata con l'alternativa nell'altra lingua.
 export const revalidate = 3600
@@ -35,6 +36,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...idx.posts.map((p) => entry((l) => paths.post(p.slug, l), { lastModified: p.updatedAt, priority: 0.7, changeFrequency: 'monthly' })),
     // territorio: solo italiano
     entry(paths.locations, { priority: 0.8, en: false }),
+    ...[...new Set(idx.locations.map((l) => l.region))].map((r) => entry(() => paths.region(regionSlug(r)), { priority: 0.7, en: false })),
     ...idx.locations.map((l) => entry(() => paths.location(l.slug), { lastModified: l.updatedAt, priority: 0.7, en: false })),
     ...idx.localServices.map((x) => entry(() => paths.localService(x.location, x.service), { lastModified: x.updatedAt, priority: 0.7, en: false })),
     entry(paths.sectors, { priority: 0.8, en: false }),

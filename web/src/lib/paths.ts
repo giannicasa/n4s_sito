@@ -16,6 +16,7 @@ export const paths = {
   // pagine territoriali: solo in italiano
   locations: () => '/agenzia-marketing',
   location: (slug: string) => `/agenzia-marketing/${slug}`,
+  region: (slug: string) => `/agenzia-marketing/regione/${slug}`,
   localService: (location: string, service: string) => `/agenzia-marketing/${location}/${service}`,
   sectors: () => '/settori',
   sector: (slug: string) => `/settori/${slug}`,
