@@ -45,9 +45,12 @@ type QueryFn<A extends unknown[], R> = (draft: boolean, ...args: A) => Promise<R
 // Esegue la query in cache (pubblico) o diretta (anteprima).
 // Rete di sicurezza: anche senza invalidazione (es. import da riga di comando) i dati si rinnovano ogni ora.
 const MAX_AGE = 3600
+// La Data Cache di Vercel sopravvive ai deploy: con la stessa chiave un deploy che cambia i campi letti (select)
+// riceverebbe i dati salvati dal codice precedente. La chiave include quindi il commit del deploy.
+const BUILD = process.env.VERCEL_GIT_COMMIT_SHA ?? 'local'
 
 const query = <A extends unknown[], R>(key: string, tags: string[], fn: QueryFn<A, R>) => {
-  const cached = unstable_cache((...args: A) => fn(false, ...args), [key], { tags, revalidate: MAX_AGE })
+  const cached = unstable_cache((...args: A) => fn(false, ...args), [key, BUILD], { tags, revalidate: MAX_AGE })
   return async (...args: A): Promise<R> => ((await isDraft()) ? fn(true, ...args) : cached(...args))
 }
 
